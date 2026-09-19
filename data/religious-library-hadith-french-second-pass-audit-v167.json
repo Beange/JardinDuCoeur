@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V167",
+  "auditId": "french-second-pass-v167",
+  "purpose": "Second passage ciblé des structures françaises en attente.",
+  "promotedCanonicalIds": [
+    "N-069",
+    "N-082",
+    "N-084"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "N-069",
+      "primaryRef": "Sahih Muslim 2721a",
+      "narrator": "Abdullah ibn Masʿud",
+      "publishedFrenchTranslation": "Ibn Masʽûd (qu'Allah l'agrée) relate que le Prophète (sur lui la paix et le salut) disait : « Ô Allah je Te demande la guidée, la crainte, la vertu et le contentement. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3596",
+      "sourceHadithId": 3596,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Rapporté par Muslim; Sahih Muslim 2721 confirmé sur la fiche EN du même hadith 3596",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Muslim",
+      "identityEvidence": "Même matn arabe, même rapporteur Ibn Masʿûd et même collection Muslim; la fiche EN du même identifiant HadeethEnc 3596 affiche explicitement Sahih Muslim 2721, correspondant à la structure canonique 2721a.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-082",
+      "primaryRef": "Sahih al-Bukhari 2072",
+      "narrator": "Al-Miqdam ibn Maʿdikarib",
+      "publishedFrenchTranslation": "Al-Miqdâm ibn Ma'dyakarib (qu'Allah l'agrée) relate que le Messager d'Allah (sur lui la paix et le salut) a dit : « Nul n'a jamais mangé de nourriture meilleure que celle procurée par le travail de ses mains. Certes, le Prophète Dâwud (sur lui la paix) ne mangeait que le fruit du travail de ses mains. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3752",
+      "sourceHadithId": 3752,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Rapporté par Al-Bukhârî",
+      "sourceGradeDisplayed": "Authentique dans ses deux versions; Rapporté par Al-Bukhârî",
+      "identityEvidence": "La fiche française contient deux versions; la seconde est exactement celle d’Al-Miqdâm ibn Maʿdikarib retenue par N-082, avec le même matn arabe et attribution à Al-Bukhârî. La référence canonique Bukhari 2072 appartient à cette version.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-084",
+      "primaryRef": "Sahih al-Bukhari 7280",
+      "narrator": "Abû Hurayrah",
+      "publishedFrenchTranslation": "Aboû Hourayrah (qu'Allah l'agrée) relate que le Messager d'Allah (qu'Allah le couvre d'éloges et le préserve) a dit :\n« Tous les membres de ma communauté entreront au Paradis, excepté ceux qui auront refusé. Ils [Les Compagnons] demandèrent : \" Ô Messager d’Allah ! Et qui donc refuserait ? \" Il répondit : \" Quiconque m’aura obéi entrera au Paradis et quiconque m'aura désobéi, aura refusé. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4947",
+      "sourceHadithId": 4947,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 7280",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al Bukhârî",
+      "identityEvidence": "Correspondance directe du matn arabe, du rapporteur Abû Hurayrah et de la référence Bukhari 7280 explicitement affichée.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "held": [],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "runtimeChanged": false
+  }
+}

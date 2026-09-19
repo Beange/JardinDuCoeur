@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V126",
+  "targetRelease": "V127",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH20-V1",
+  "verificationDate": "2026-09-16",
+  "purpose": "Twentieth externally verified candidate batch, promoted after full-canon structural and thematic audit in V127.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 129,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 11,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-075",
+      "primaryRef": "Sahih al-Bukhari 660",
+      "inBookReference": "Book 10, Hadith 54",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Seven categories of people granted shade by Allah on the Day when there is no other shade.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:660",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V127",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-018",
+          "N-058"
+        ],
+        "relatedReferences": [
+          "Sahih al-Bukhari 1427",
+          "Sahih Muslim 2567a"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Bukhari 660 contains secret charity and love for Allah among seven distinct categories granted shade; RC-018 concerns discreet charity and N-058 concerns visiting a brother for love of Allah, but neither is the seven-category narration."
+      }
+    },
+    {
+      "id": "N-076",
+      "primaryRef": "Sahih al-Bukhari 5351",
+      "inBookReference": "Book 69, Hadith 1",
+      "narrator": "Abu Masud Al-Ansari",
+      "themeVerified": "Spending on one’s family while seeking Allah’s reward is counted as charity.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:5351",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V127",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-020"
+        ],
+        "relatedReferences": [
+          "Sahih Muslim 1055"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both concern family provision, but Bukhari 5351 states that intentional spending on one’s family is charity, whereas Muslim 1055 concerns sufficient subsistence for the Prophet’s family."
+      }
+    },
+    {
+      "id": "N-077",
+      "primaryRef": "Sahih al-Bukhari 2457",
+      "inBookReference": "Book 46, Hadith 18",
+      "narrator": "Aisha",
+      "themeVerified": "The most hated person in Allah’s sight is the most obstinately quarrelsome person.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:2457",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V127",
+      "canonicalCountImpact": 1
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

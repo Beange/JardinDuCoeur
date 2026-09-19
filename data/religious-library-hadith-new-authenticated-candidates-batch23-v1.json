@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V132",
+  "targetRelease": "V133",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH23-V1",
+  "verificationDate": "2026-09-16",
+  "purpose": "Twenty-third externally verified candidate batch, promoted after full-canon structural and thematic audit in V133.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 138,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 2,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-084",
+      "primaryRef": "Sahih al-Bukhari 7280",
+      "inBookReference": "Book 96, Hadith 12",
+      "narrator": "Abu Huraira",
+      "themeVerified": "All followers of the Prophet will enter Paradise except those who refuse; obeying him leads to Paradise, while disobeying him constitutes refusal.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:7280",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V133",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "N-062",
+          "N-080"
+        ],
+        "relatedReferences": [
+          "Sahih Muslim 2956",
+          "Sahih al-Bukhari 3244"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "The entries share a general Paradise theme, but Bukhari 7280 concerns obedience to the Prophet as the distinction between accepting and refusing entry, while Muslim 2956 contrasts worldly conditions and Bukhari 3244 describes the unimaginable reward prepared in Paradise."
+      }
+    },
+    {
+      "id": "N-085",
+      "primaryRef": "Sahih al-Bukhari 2363",
+      "inBookReference": "Book 42, Hadith 11",
+      "narrator": "Abu Huraira",
+      "themeVerified": "A man gave water to a very thirsty dog, and Allah accepted the deed and forgave him; there is a reward for serving every living creature.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:2363",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V133",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "N-023",
+          "N-081"
+        ],
+        "relatedReferences": [
+          "Sahih al-Bukhari 6012",
+          "Sahih Muslim 1955a"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "The entries share concern for living creatures, but Bukhari 2363 recounts giving water to a thirsty dog and the resulting forgiveness, whereas Bukhari 6012 concerns planting as charity and Muslim 1955a prescribes excellence in slaughter."
+      }
+    },
+    {
+      "id": "N-086",
+      "primaryRef": "Sahih Muslim 1349a",
+      "inBookReference": "Book 15, Hadith 493",
+      "narrator": "Abu Huraira",
+      "themeVerified": "One Umra to the next expiates the sins committed between them, and an accepted Hajj has no reward other than Paradise.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:1349a",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V133",
+      "canonicalCountImpact": 1
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

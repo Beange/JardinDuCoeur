@@ -1,0 +1,20 @@
+Jardin du Cœur — validation ciblée de la release V117
+
+Résultat : PASS
+Contrôles : 59
+Réussites : 59
+Échecs : 0
+
+Points contrôlés :
+- promotion canonique structurelle de N-060, N-061 et N-062 ;
+- occurrence canonique unique de chaque nouvelle identité ;
+- 117/140 structures hadith matérialisées, 23 positions restantes ;
+- 160/183 structures religieuses matérialisées ;
+- aucun H-ID historique attribué aux trois nouvelles structures ;
+- traduction française publiée toujours absente et productionReady=false ;
+- R-077 toujours quarantiné ;
+- index.html inchangé ;
+- manifeste V117 cohérent et tous les fichiers JSON analysables.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 59 | PASS: 59 | FAIL: 0

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V139",
+  "registerId": "JDC-HADITH-FRENCH-EXTERNAL-SOURCE-AUDIT-BATCH1-V1",
+  "purpose": "Audit externe des sources françaises publiées pour RC-001 à RC-005, sans promotion tant que les exigences de réutilisation et de stabilité éditoriale ne sont pas toutes satisfaites.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "publisherPolicyUrl": "https://hadeethenc.com/fr/home",
+  "publisherReuseRequirementsObserved": [
+    "Ne pas modifier, ajouter ou retrancher le contenu.",
+    "Citer clairement l’éditeur et HadeethEnc.com.",
+    "Mentionner le numéro de version lors de la republication.",
+    "Conserver les informations de transcription.",
+    "Maintenir la traduction à jour selon la dernière version publiée."
+  ],
+  "counts": {
+    "canonicalStructuresAudited": 5,
+    "exactFrenchReferencePagesLocated": 3,
+    "pagesWithExplicitRevisionWarning": 2,
+    "pagesWithoutRecoverableDisplayedVersionNumber": 3,
+    "translationsPromoted": 0,
+    "entriesStillPending": 5
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-001",
+      "primaryRef": "Sahih al-Bukhari 10",
+      "sourceLocated": false,
+      "decision": "PENDING_EXACT_PUBLISHED_FRENCH_SOURCE",
+      "reason": "Aucune page française éditorialement exploitable et reliée sans ambiguïté à la référence exacte n’a été retenue dans ce lot.",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-002",
+      "primaryRef": "Sahih al-Bukhari 6114",
+      "sourceLocated": true,
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5351",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 6114",
+      "sourceGradeDisplayed": "Authentique; rapporté par Al Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "displayedTranslationVersionNumber": null,
+      "decision": "EXACT_SOURCE_FOUND_PENDING_REQUIRED_VERSION_METADATA",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-003",
+      "primaryRef": "Sahih Muslim 2564c",
+      "sourceLocated": true,
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4555",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 2564",
+      "sourceGradeDisplayed": "Authentique; rapporté par Muslim",
+      "explicitRevisionWarningObserved": true,
+      "displayedTranslationVersionNumber": null,
+      "decision": "EXACT_SOURCE_FOUND_NOT_PROMOTED_REVISION_WARNING_AND_VERSION_MISSING",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-004",
+      "primaryRef": "Sahih al-Bukhari 1413",
+      "sourceLocated": false,
+      "decision": "PENDING_EXACT_PUBLISHED_FRENCH_SOURCE",
+      "reason": "Aucune page française éditorialement exploitable et reliée sans ambiguïté à la référence exacte n’a été retenue dans ce lot.",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-005",
+      "primaryRef": "Sahih Muslim 1907a",
+      "sourceLocated": true,
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4560",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 1907",
+      "sourceGradeDisplayed": "Authentique; rapporté par Al Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": true,
+      "displayedTranslationVersionNumber": null,
+      "decision": "EXACT_SOURCE_FOUND_NOT_PROMOTED_REVISION_WARNING_AND_VERSION_MISSING",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "webTextCopiedIntoCanonicalRegister": false,
+    "translationSynthesized": false,
+    "sourceWarningsIgnored": false,
+    "reuseConditionsClaimedSatisfied": false,
+    "canonicalReligiousStructuresChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

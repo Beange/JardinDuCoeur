@@ -1,0 +1,18 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V12
+
+Base reconstruction ..................... V11 corrected
+Candidats bruts ......................... 82
+Familles documentées .................... 30
+Candidats hors famille .................. 18
+Candidats présents dans >1 famille ...... 19
+Familles parallèles à forte priorité .... 11
+
+OBJECTIF
+Commencer à mesurer la bibliothèque réellement distincte au lieu
+d'ajouter seulement des références brutes.
+
+GARDE-FOUS
+Aucun R-ID converti en ancien H-ID ....... PASS
+Aucune fusion canonique automatique ...... PASS
+Traduction française publiée ............. PENDING
+Migration index.html ..................... NON EFFECTUÉE

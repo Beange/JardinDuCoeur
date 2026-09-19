@@ -1,0 +1,27 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V34
+
+Lot: amour du Messager / douceur de la foi.
+
+R-031 — Sahih al-Bukhari 15
+- Référence vérifiée sur Sunnah.com.
+- Anas: le Messager ﷺ doit être plus aimé que le père, l'enfant et tous les gens.
+- Sahih Muslim 44b transmet le même noyau et la même énumération centrale.
+- Décision: RC-060; Muslim 44b route parallèle +0.
+
+R-032 — Sahih al-Bukhari 16
+- Référence vérifiée sur Sunnah.com.
+- Anas: trois qualités associées à la douceur de la foi.
+- Sahih Muslim 43a et 43b, ainsi que Sahih al-Bukhari 6041, transmettent le même ensemble central avec variations de route/formulation.
+- Décision: RC-061; ces références sont des routes parallèles +0.
+
+RC-060 et RC-061 restent distincts: le premier porte sur l'amour du Messager comme condition formulée séparément; le second est le hadith composite des trois qualités de la douceur de la foi. Relation thématique, pas fusion.
+
+Aucune correction de numéro de référence dans ce lot.
+
+Comptage après V34:
+- R-ID absorbés: 72/82
+- R-ID restants: 10
+- structures canoniques confirmées: 61 = 48 reconstruction + 13 historiques
+- traduction française publiée: PENDING
+- productionReady: false
+- index.html: non modifié

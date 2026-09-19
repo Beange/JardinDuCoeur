@@ -1,0 +1,26 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V32
+
+Lot: oppression / fraternité / entraide.
+
+R-018 — Sahih al-Bukhari 2444
+- Référence vérifiée sur Sunnah.com.
+- Anas: aider l’opprimé; aider l’oppresseur en l’empêchant d’opprimer.
+- Bukhari 2443: même noyau d’Anas, route courte parallèle +0.
+- Décision: RC-055 distinct.
+
+R-025 — Sahih Muslim 2580
+- Référence vérifiée sur Sunnah.com.
+- Ibn Umar: fraternité, absence d’oppression/abandon, besoin, détresse, dissimulation des fautes.
+- Bukhari 2442: parallèle direct, même Compagnon et chaîne commune Ibn Umar → Salim → al-Zuhri → Uqayl → al-Layth.
+- Décision: RC-056; Bukhari 2442 parallèle +0.
+
+RC-055 et RC-056 ne sont pas fusionnés: Compagnons, chaînes et développements distincts; relatedRefs seulement.
+Aucune correction de numéro de référence dans ce lot.
+
+Comptage après V32:
+- R-ID absorbés: 67/82
+- R-ID restants: 15
+- structures canoniques confirmées: 56 = 43 reconstruction + 13 historiques
+- traduction française publiée: PENDING
+- productionReady: false
+- index.html: non modifié

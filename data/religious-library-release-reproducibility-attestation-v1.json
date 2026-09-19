@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Machine-readable contract for post-build deterministic ZIP evidence. The observed SHA-256 pair is emitted as an external companion report to avoid archive self-reference.",
+  "verifier": "tools/verify_release_reproducibility.py",
+  "externalReportName": "Jardin-du-Coeur-PWA-hadith-consolidation-v108-reproducibility-report.json",
+  "sourceBoundary": {
+    "fileSetContract": "data/religious-library-release-archive-fileset-v1.json",
+    "exactFileSetRequired": true,
+    "archiveRoot": "jdc_v79"
+  },
+  "evidenceRequirements": {
+    "independentBuildCount": 2,
+    "compareArchiveSha256": true,
+    "compareEntryLists": true,
+    "expectedByteIdentical": true,
+    "reportStoredOutsideArchive": true,
+    "reason": "avoid SHA-256 self-reference recursion",
+    "crossToolchainBitIdentityClaimed": false
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "productionReady": false
+  }
+}

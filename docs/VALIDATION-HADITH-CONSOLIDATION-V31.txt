@@ -1,0 +1,25 @@
+JARDIN DU COEUR — VALIDATION HADITH CONSOLIDATION V31
+
+Lot: ma‘ruf / bonnes actions
+
+R-ID vérifiés et absorbés:
+- R-051 — Sahih al-Bukhari 2631 — référence confirmée — RC-052 distinct.
+- R-052 — Sahih al-Bukhari 6022 — référence confirmée — RC-053 distinct. Le résumé historique a été corrigé éditorialement; aucune nouvelle référence n’a été inventée.
+- R-053 — Sahih Muslim 2626 — référence confirmée — RC-054 distinct.
+
+Décision de consolidation:
+- Aucun de ces trois textes n’est déclaré parallèle à un autre: les Compagnons, chaînes, formulations et structures diffèrent.
+- Les proximités sont conservées uniquement via relatedRefs.
+
+Comptage après V31:
+- R-ID absorbés: 65/82
+- R-ID restant à consolider: 17
+- Structures canoniques confirmées: 54
+  - reconstruction: 41
+  - H-ID historiques récupérés: 13
+
+Politique de traduction française: PENDING
+productionReady: false
+index.html modifié: NON
+
+Sources vérifiées: Sunnah.com — Bukhari 2631; Bukhari 6022; Muslim 2626.

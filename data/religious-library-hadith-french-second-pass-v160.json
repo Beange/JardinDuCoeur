@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V160",
+  "auditId": "religious-library-hadith-french-second-pass-v160",
+  "purpose": "Second passage ciblé des entrées en attente; promotion uniquement des traductions françaises HadeethEnc vérifiées sans avertissement explicite de révision.",
+  "counts": {
+    "newlyPromoted": 2,
+    "publishedFrenchCanonicalEntries": 40,
+    "pendingPublishedFrenchCanonicalEntries": 100
+  },
+  "promoted": [
+    {
+      "canonicalId": "RC-011",
+      "primaryRef": "Sahih al-Bukhari 6133",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4928",
+      "sourceHadithId": 4928,
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "RC-025",
+      "primaryRef": "Sahih al-Bukhari 6307",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4808",
+      "sourceHadithId": 4808,
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "heldForRevisionWarning": [
+    {
+      "canonicalId": "RC-006",
+      "primaryRef": "Sahih al-Bukhari 13",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4717",
+      "reason": "La page française affiche explicitement que la traduction a besoin de plus de révision et de vérification."
+    },
+    {
+      "canonicalId": "RC-007",
+      "primaryRef": "Sahih al-Bukhari 6018",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5437",
+      "reason": "La page française correspondant au même matn affiche explicitement que la traduction a besoin d'être davantage révisée et vérifiée."
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

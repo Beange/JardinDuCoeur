@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V148",
+  "registerId": "JDC-HADITH-FRENCH-MULTISOURCE-REAUDIT-BATCH8-V1",
+  "purpose": "Réaduit des pending avec identité par matn arabe, rapporteur, collection et famille de référence; aucune traduction synthétisée.",
+  "auditDate": "2026-09-16",
+  "sourcePolicy": {
+    "tier1": [
+      "HadeethEnc français (texte publié verbatim)",
+      "collection primaire pour contrôle du matn/référence"
+    ],
+    "tier2": [
+      "IslamHouse français seulement si traduction/édition traçable"
+    ],
+    "promotionRule": "Le numéro exact sur la page française n’est pas obligatoire si l’identité est établie sans ambiguïté par matn arabe exact + rapporteur + collection + famille de référence."
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-015",
+      "primaryRef": "Sahih Muslim 2865d",
+      "hadeethEncId": 5497,
+      "frenchUrl": "https://hadeethenc.com/fr/browse/hadith/5497",
+      "decision": "VERIFIED_PUBLISHED_FRENCH_BY_EXACT_MATN_CROSSWALK",
+      "evidence": [
+        "HadeethEnc FR affiche le matn arabe ciblé, Iyâḍ ibn Ḥimâr, Authentique, Rapporté par Muslim.",
+        "Le même extrait arabe est présent dans Sahih Muslim 2865d; la famille 2865 est donc établie sans inférence textuelle française."
+      ],
+      "productionReady": true
+    },
+    {
+      "canonicalId": "RC-014",
+      "primaryRef": "Sahih al-Bukhari 2079",
+      "decision": "PENDING_SOURCE",
+      "evidence": [
+        "Référence primaire et matn arabe confirmés.",
+        "Aucune traduction française publiée suffisamment traçable du même matn n’a été établie dans cette passe."
+      ],
+      "productionReady": false
+    }
+  ],
+  "counts": {
+    "reaudited": 2,
+    "newlyVerifiedFrench": 1,
+    "stillPending": 1
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "crossLanguageIdentityGuessed": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

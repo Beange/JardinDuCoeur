@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V110",
+  "targetRelease": "V111",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH12-V1",
+  "verificationDate": "2026-09-13",
+  "purpose": "Twelfth externally verified batch, promoted after exact-reference and relation adjudication.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 108,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 32,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-051",
+      "primaryRef": "Sahih al-Bukhari 6306",
+      "inBookReference": "Book 80, Hadith 3",
+      "narrator": "Shaddad bin Aus",
+      "themeVerified": "The most superior way of asking Allah for forgiveness; the narration also states the consequence for one who says it with firm faith and dies before evening or morning.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6306",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V111",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-052",
+      "primaryRef": "Sahih Muslim 2720",
+      "inBookReference": "Book 48, Hadith 96",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Supplication asking Allah to set right one's religion, worldly life and Hereafter, to make life an increase in good and death a relief from evil.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2720",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V111",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-053",
+      "primaryRef": "Sahih Muslim 2696",
+      "inBookReference": "Book 48, Hadith 43",
+      "narrator": "Mus'ab bin Sa'd, on the authority of his father",
+      "themeVerified": "A desert Arab is taught words of glorification, then a personal supplication for pardon, mercy, guidance and sustenance.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2696",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "relationReview": {
+        "candidateRelatedTo": "N-026",
+        "relatedReference": "Sahih Muslim 2697a",
+        "classification": "RELATED_NOT_AUTOMATIC_PARALLEL",
+        "reason": "The personal supplication overlaps, but Muslim 2696 preserves a distinct narrative setting and a longer preceding dhikr passage."
+      },
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V111",
+      "canonicalCountImpact": 1
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

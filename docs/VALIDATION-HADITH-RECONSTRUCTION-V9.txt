@@ -1,0 +1,12 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V9
+
+H-ID historiques récupérés: 13/140
+H-ID historiques non retrouvés: 127/140
+Candidats reconstruction bruts: 74/127
+Nouveaux V9: 8
+Places brutes restantes: 53
+Aucun ancien H-ID inventé: PASS
+countsAsEntry=false: PASS
+productionReady=false: PASS
+randomHome=false: PASS
+provenance française: PENDING

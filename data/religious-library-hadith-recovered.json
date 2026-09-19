@@ -1,0 +1,400 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "status": "source-mappings-recovered-and-reference-verified",
+  "important": "Ces 13 entrées sont les seuls H-ID dont la correspondance exacte est récupérée dans le journal de transmission. Les références sont revérifiées; le texte français canonique reste PENDING tant qu’une politique/provenance française publiée n’est pas arrêtée.",
+  "materialized": {
+    "hadithMappings": 13,
+    "targetHadith": 140,
+    "quranCanonical": 43,
+    "canonicalTargetTotal": 183
+  },
+  "entries": [
+    {
+      "id": "H-025",
+      "primaryRef": "Sahih Muslim 2759a,b",
+      "collection": "Sahih Muslim",
+      "inBookReference": "Book 50, Hadith 36",
+      "theme": [
+        "repentir"
+      ],
+      "summaryFr": "Repentir de nuit et de jour jusqu’au lever du soleil à l’ouest.",
+      "variantRefs": [
+        "Muslim 2759b"
+      ],
+      "parallelRefs": [],
+      "safetyFlags": [
+        "noAutomatedGuilt",
+        "noUserSinDiagnosis"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/muslim:2759a",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-038",
+      "primaryRef": "Sahih al-Bukhari 5027",
+      "collection": "Sahih al-Bukhari",
+      "inBookReference": "Book 66, Hadith 49",
+      "theme": [
+        "quran",
+        "enseignement"
+      ],
+      "summaryFr": "Apprendre le Qurʾān et l’enseigner.",
+      "variantRefs": [],
+      "parallelRefs": [
+        "Bukhari 5028"
+      ],
+      "safetyFlags": [
+        "noMeritComparison",
+        "noQuranLeaderboard",
+        "noStudyStreak",
+        "noUserKnowledgeRanking"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/bukhari:5027",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-043",
+      "primaryRef": "Sahih al-Bukhari 6406",
+      "collection": "Sahih al-Bukhari",
+      "inBookReference": "Book 80, Hadith 101",
+      "theme": [
+        "dhikr",
+        "tasbih"
+      ],
+      "summaryFr": "Deux formules de tasbīḥ légères sur la langue, lourdes dans la balance et aimées du Tout Miséricordieux.",
+      "variantRefs": [],
+      "parallelRefs": [
+        "Muslim 2694"
+      ],
+      "safetyFlags": [
+        "noDhikrScore",
+        "noWeightVisualization",
+        "noMeritMeter",
+        "noReligiousLeaderboard"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/bukhari:6406",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-051",
+      "primaryRef": "Sahih Muslim 2723a",
+      "collection": "Sahih Muslim",
+      "inBookReference": "Book 48, Hadith 100",
+      "theme": [
+        "invocation",
+        "soir"
+      ],
+      "summaryFr": "Invocation du soir rapportée d’après ʿAbd Allāh b. Masʿūd.",
+      "variantRefs": [
+        "Muslim 2723b",
+        "Muslim 2723c"
+      ],
+      "parallelRefs": [],
+      "safetyFlags": [
+        "doNotSilentlyMergeWording"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/muslim:2723a",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-071",
+      "primaryRef": "Sahih Muslim 1017e",
+      "collection": "Sahih Muslim",
+      "inBookReference": "Book 47, Hadith 26",
+      "theme": [
+        "sadaqah",
+        "bonne-pratique"
+      ],
+      "summaryFr": "Contexte de nécessiteux et de ṣadaqah, puis enseignement sur l’initiative d’une bonne ou mauvaise pratique.",
+      "variantRefs": [
+        "Muslim 1017f",
+        "Muslim 1017g",
+        "Muslim 1017h"
+      ],
+      "parallelRefs": [],
+      "safetyFlags": [
+        "preserveCharityContext",
+        "noBidahShortcut",
+        "noViralRewardGamification",
+        "noDonationPressure",
+        "noMeritLeaderboard"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/muslim:1017e",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-074",
+      "primaryRef": "Sahih al-Bukhari 2079",
+      "collection": "Sahih al-Bukhari",
+      "inBookReference": "Book 34, Hadith 32",
+      "theme": [
+        "commerce",
+        "verite",
+        "transparence"
+      ],
+      "summaryFr": "Vérité et transparence dans la transaction sont associées à la bénédiction; mensonge et dissimulation à sa disparition.",
+      "variantRefs": [],
+      "parallelRefs": [
+        "Bukhari 2082"
+      ],
+      "relatedRefs": [
+        "Bukhari 2087",
+        "Bukhari 2088"
+      ],
+      "rejectedRelations": [
+        "Bukhari 2086"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/bukhari:2079",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": []
+    },
+    {
+      "id": "H-088",
+      "primaryRef": "Sahih Muslim 2865d",
+      "collection": "Sahih Muslim",
+      "inBookReference": "Book 53, Hadith 79",
+      "theme": [
+        "humilite"
+      ],
+      "summaryFr": "Clause attestée sur l’humilité mutuelle, sans orgueil ni transgression de supériorité.",
+      "variantRefs": [
+        "Muslim 2865a",
+        "Muslim 2865b",
+        "Muslim 2865c"
+      ],
+      "parallelRefs": [],
+      "safetyFlags": [
+        "preserveSermonContext"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/muslim:2865d",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-095",
+      "primaryRef": "Sahih al-Bukhari 6133",
+      "collection": "Sahih al-Bukhari",
+      "inBookReference": "Book 78, Hadith 160",
+      "theme": [
+        "prudence",
+        "experience"
+      ],
+      "summaryFr": "Le croyant n’est pas piqué deux fois du même trou.",
+      "variantRefs": [],
+      "parallelRefs": [
+        "Muslim 2998a",
+        "Muslim 2998b"
+      ],
+      "safetyFlags": [],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/bukhari:6133",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-113",
+      "primaryRef": "Sahih Muslim 2749",
+      "collection": "Sahih Muslim",
+      "inBookReference": "Book 50, Hadith 13",
+      "theme": [
+        "repentir",
+        "pardon"
+      ],
+      "summaryFr": "Enseignement sur les humains qui commettent des péchés, demandent pardon à Allah et reçoivent Son pardon.",
+      "variantRefs": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "Muslim 2748b"
+      ],
+      "safetyFlags": [
+        "noPermissionToSin",
+        "noAutomatedGuilt",
+        "noUserSinDiagnosis"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/muslim:2749",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false
+    },
+    {
+      "id": "H-124",
+      "primaryRef": "Sahih al-Bukhari 6023",
+      "collection": "Sahih al-Bukhari",
+      "inBookReference": "Book 78, Hadith 54",
+      "theme": [
+        "sadaqah",
+        "bonne-parole"
+      ],
+      "summaryFr": "Se préserver du Feu même par une demi-datte donnée en charité, ou par une bonne parole.",
+      "variantRefs": [],
+      "parallelRefs": [],
+      "rejectedOldRef": "1016",
+      "safetyFlags": [
+        "noDonationPressure",
+        "noFearNotification"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/bukhari:6023",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-129",
+      "primaryRef": "Sahih al-Bukhari 1427, 1428",
+      "collection": "Sahih al-Bukhari",
+      "inBookReference": "Book 24, Hadith 31",
+      "theme": [
+        "sadaqah",
+        "dependants",
+        "suffisance"
+      ],
+      "summaryFr": "Main supérieure, priorité aux personnes à charge, charité sur le surplus et recherche de suffisance.",
+      "variantRefs": [
+        "Bukhari 1428"
+      ],
+      "parallelRefs": [],
+      "safetyFlags": [
+        "noPovertyShaming",
+        "noHelpSeekingShame",
+        "noDonationPressure"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/bukhari:1427",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-135",
+      "primaryRef": "Sunan Abi Dawud 4811",
+      "collection": "Sunan Abi Dawud",
+      "inBookReference": "Book 43, Hadith 39",
+      "grade": "Sahih (Al-Albani)",
+      "theme": [
+        "gratitude"
+      ],
+      "summaryFr": "Celui qui ne remercie pas les gens ne remercie pas Allah.",
+      "variantRefs": [],
+      "parallelRefs": [
+        "Tirmidhi 1954"
+      ],
+      "safetyFlags": [
+        "noGratitudeScore"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/abudawud:4811",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    },
+    {
+      "id": "H-140",
+      "primaryRef": "Sahih Muslim 1055",
+      "collection": "Sahih Muslim",
+      "inBookReference": "Book 12, Hadith 164",
+      "theme": [
+        "subsistance",
+        "suffisance"
+      ],
+      "summaryFr": "Invocation demandant pour la famille de Muhammad ﷺ une subsistance suffisante pour vivre.",
+      "variantRefs": [],
+      "parallelRefs": [],
+      "safetyFlags": [
+        "noProsperityGospelFraming",
+        "noPovertyShaming"
+      ],
+      "kind": "hadith",
+      "countsAsEntry": true,
+      "sourceUrl": "https://sunnah.com/muslim:1055",
+      "referenceVerified": true,
+      "arabicStatus": "notStored",
+      "frenchTextStatus": "pendingPublishedFrenchProvenance",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "relatedRefs": []
+    }
+  ]
+}

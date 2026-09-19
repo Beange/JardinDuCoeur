@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V177",
+  "auditId": "french-bulk-fourth-pass-v177",
+  "purpose": "Poursuite du passage groupé sur les structures françaises en attente; promotion seulement après concordance non ambiguë du matn, du rapporteur et de la famille de référence, avec traduction française publiée complète et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-027",
+      "RC-028",
+      "RC-029",
+      "RC-030",
+      "RC-033",
+      "RC-041",
+      "RC-042",
+      "RC-043",
+      "RC-046",
+      "RC-047",
+      "RC-048",
+      "RC-049",
+      "RC-050",
+      "RC-051",
+      "RC-052",
+      "RC-053",
+      "RC-055",
+      "RC-056",
+      "RC-057",
+      "RC-065"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "RC-027",
+    "RC-042"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-027",
+      "primaryRef": "Sahih al-Bukhari 6478",
+      "narrator": "Abu Huraira",
+      "publishedFrenchTranslation": "Abû Hurayrah (qu'Allah l'agrée) relate que le Prophète (sur lui la paix et le salut) a dit : « Le serviteur peut certes, sans y prêter attention, prononcer une parole lui valant la satisfaction d'Allah et grâce à laquelle Allah l'élèvera de plusieurs degrés. Il se peut également qu'il prononce, sans y prêter attention, une parole provoquant la colère d'Allah, laquelle parole le précipitera en Enfer. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3608",
+      "sourceHadithId": 3608,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Rapporté par Al-Bukhârî",
+      "sourceGradeDisplayed": "Authentique (version d’Abû Hurayrah); Rapporté par Al-Bukhârî",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "RC-042",
+      "primaryRef": "Sahih Muslim 1053a",
+      "narrator": "Abu Sa’id al-Khudri",
+      "publishedFrenchTranslation": "Abû Sa’îd Al-Khudrî (qu’Allah l’agrée) relate que certains Anṣâr sollicitèrent le Messager d’Allah (sur lui la paix et le salut) et qu'il leur donna. Ensuite, ils redemandèrent et il leur accorda à nouveau. Lorsque s’épuisa ce dont il disposait, il déclara : « Jamais je ne vous refuserai un bien que je possède. Mais celui qui s’abstient de demander à autrui, Allah lui accordera la retenue.\nCelui qui se passe d’autrui, Allah l’enrichira, et celui qui s’arme de patience, Allah lui accordera davantage de patience. Or, personne ne reçoit de don qui soit meilleur et plus grand que la patience. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4967",
+      "sourceHadithId": 4967,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-028",
+    "RC-029",
+    "RC-030",
+    "RC-033",
+    "RC-041",
+    "RC-043",
+    "RC-046",
+    "RC-047",
+    "RC-048",
+    "RC-049",
+    "RC-050",
+    "RC-051",
+    "RC-052",
+    "RC-053",
+    "RC-055",
+    "RC-056",
+    "RC-057",
+    "RC-065"
+  ],
+  "heldCount": 18,
+  "notes": [
+    "RC-027: identité établie par concordance exacte du matn arabe, du rapporteur Abû Hurayrah et de l’attribution à Al-Bukhârî; le numéro 6478 n’est pas affiché sur la fiche HadeethEnc.",
+    "RC-042: identité établie par concordance du matn, du rapporteur Abû Sa’îd al-Khudrî et de l’attribution conjointe Al-Bukhârî/Muslim; la structure canonique conserve Muslim 1053a.",
+    "Les autres structures de ce lot ne sont pas promues sans preuve française répondant à tous les critères."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 73,
+    "pendingPublishedFrenchCanonicalEntries": 67
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

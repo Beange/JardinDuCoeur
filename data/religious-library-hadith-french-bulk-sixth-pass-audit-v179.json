@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V179",
+  "auditId": "french-bulk-sixth-pass-v179",
+  "purpose": "Ré-audit groupé de 20 structures encore en attente; promotion uniquement sur traduction française publiée, complète, traçable et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-049",
+      "RC-050",
+      "RC-051",
+      "RC-052",
+      "RC-053",
+      "RC-055",
+      "RC-056",
+      "RC-061",
+      "RC-069",
+      "N-058",
+      "N-064",
+      "N-070",
+      "N-075",
+      "N-078",
+      "N-080",
+      "N-083",
+      "N-086",
+      "N-011",
+      "N-013",
+      "RC-035"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "RC-035"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-035",
+      "primaryRef": "Sahih Muslim 2593",
+      "narrator": "ʽÂ’ishah",
+      "publishedFrenchTranslation": "ʽÂ’ishah (qu'Allah l'agrée) a dit : « Le Messager d’Allah (sur lui la paix et le salut) a dit : \" Allah est Doux et Il aime la douceur en toute chose. \" » Elle a aussi relaté que le Prophète (sur lui la paix et le salut) a dit : « Allah est Doux et Il aime la douceur. Il octroie, en contrepartie de la douceur, ce qu’Il n'octroie pas en contrepartie de la rudesse ou de quoi que ce soit d’autre. »",
+      "sourcePublisher": "Encyclopédie des paroles prophétiques traduites (Sunnah.global / HadeethEnc corpus)",
+      "sourceUrl": "https://www.sunnah.global/hadeeth/fr/pdf/5797",
+      "sourceHadithId": 5797,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "sunnah.global-fr-pdf",
+      "sourceReferenceDisplayed": "Authentique; Rapporté par Muslim - Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-049",
+    "RC-050",
+    "RC-051",
+    "RC-052",
+    "RC-053",
+    "RC-055",
+    "RC-056",
+    "RC-061",
+    "RC-069",
+    "N-058",
+    "N-064",
+    "N-070",
+    "N-075",
+    "N-078",
+    "N-080",
+    "N-083",
+    "N-086",
+    "N-011",
+    "N-013"
+  ],
+  "heldCount": 19,
+  "notes": [
+    "RC-035: publication française actuelle retrouvée dans l’Encyclopédie des paroles prophétiques traduites, hadith 5797; ʽÂ’ishah, matn complet de la douceur, classement authentique et attribution Muslim / Bukhârî-Muslim.",
+    "Les 19 autres structures de ce lot ne sont pas promues sans preuve française satisfaisant simultanément identité, complétude, provenance et absence d’avertissement explicite de révision."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 75,
+    "pendingPublishedFrenchCanonicalEntries": 65
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

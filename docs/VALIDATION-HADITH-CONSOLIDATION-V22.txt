@@ -1,0 +1,47 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V22
+
+BASE
+V21 ............................................ REPRISE SANS MODIFIER index.html
+R-ID non absorbés au départ .................... 47 / 82
+
+LOT AUDITÉ : MISÉRICORDE
+RC-031 : R-036 Bukhari 5997
+         + R-034 Bukhari 5997 (candidat doublon)
+         + R-035 Muslim 2318a .................. CONFIRMÉ
+RC-032 : R-017 Bukhari 6013
+         + R-045 Bukhari 7376 .................. CONFIRMÉ
+
+CORRECTIONS DE RÉFÉRENCE
+R-034 : Bukhari 6011 -> Bukhari 5997 .......... CORRIGÉ
+R-035 : Muslim 2319a -> Muslim 2318a .......... CORRIGÉ
+R-077 : Bukhari 6014 ........................... MISMATCH CONFIRMÉ; REMAPPING NON DEVINÉ
+
+JUSTIFICATION SOURCE PAR SOURCE
+- Bukhari 5997 contient l’épisode al-Hasan / al-Aqraʿ et la formule sur la miséricorde.
+  https://sunnah.com/bukhari:5997
+- Muslim 2318a contient le même épisode al-Hasan / al-Aqraʿ.
+  https://sunnah.com/muslim:2318a
+- Bukhari 6013 rapporte de Jarir: celui qui ne fait pas miséricorde ne reçoit pas miséricorde.
+  https://sunnah.com/bukhari:6013
+- Bukhari 7376 rapporte de Jarir la route parallèle: Allah ne fait pas miséricorde à qui ne fait pas miséricorde aux gens.
+  https://sunnah.com/bukhari:7376
+- Bukhari 6011 est le hadith des croyants comme un seul corps; il ne correspond pas au résumé R-034.
+  https://sunnah.com/bukhari:6011
+- Muslim 2319a est la parole de Jarir sur la miséricorde envers les gens; il ne correspond pas à l’épisode résumé dans R-035.
+  https://sunnah.com/muslim:2319a
+- Bukhari 6014 concerne la recommandation de Jibril au sujet du voisin; il ne correspond pas au résumé R-077.
+  https://sunnah.com/bukhari:6014
+
+BILAN
+Structures canoniques confirmées ............... 32
+- historiques récupérées ....................... 13
+- reconstruction ............................... 19
+R-ID absorbés .................................. 40 / 82
+R-ID restant à consolider ...................... 42
+H-ID historiques inventés ...................... 0
+Traduction française publiée ................... PENDING
+productionReady ................................. false
+Migration index.html ........................... NON
+
+NOTE
+R-077 reste volontairement non consolidé et sans nouvelle référence: le mismatch est prouvé, mais le remapping exact n’est pas établi avec assez de certitude pour être assigné.

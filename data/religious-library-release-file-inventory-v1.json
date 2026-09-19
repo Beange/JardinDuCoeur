@@ -1,0 +1,268 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Reproducible inventory of selected stable/admin inputs for V89 after current-state coherence-graph closure.",
+  "files": [
+    {
+      "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+      "sha256": "fcf2bbba51ab6d5e337d9ae2560e93c9aa57d0a26058471ff9fbef379f33b60a",
+      "bytes": 50594
+    },
+    {
+      "path": "data/religious-library-current-audit-coverage-v1.json",
+      "sha256": "b02bee23bdab865905b7252c55237228a9ea1161fec4a4d6e0b20fba93eb6de7",
+      "bytes": 903
+    },
+    {
+      "path": "data/religious-library-current-path-integrity-v1.json",
+      "sha256": "262f5c5ddb588db8517bb003e0985f81bbfcbed561c0b0e729eb9b8bd415722d",
+      "bytes": 684
+    },
+    {
+      "path": "data/religious-library-current-state-coherence-v1.json",
+      "sha256": "cf00265a73a62a503e53398ceccfac59693a38eab88e8adc589af53fa1d3e953",
+      "bytes": 1759
+    },
+    {
+      "path": "data/religious-library-data-contract-v1.json",
+      "sha256": "f2e6ffb30b3d1981e84b6aa7733a10d8b73cb7c0c038ac8394d31926897a567e",
+      "bytes": 5119
+    },
+    {
+      "path": "data/religious-library-hadith-canonical-consolidation-v44.json",
+      "sha256": "2b6f4346ca9c48c18556604d88d7583e268345c735a25914f2b2e145229e11a5",
+      "bytes": 59780
+    },
+    {
+      "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+      "sha256": "a058620bebb4b1ae7c619bd6a9011f3198a4d08b0e4462b5b4714844eb865077",
+      "bytes": 22952
+    },
+    {
+      "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+      "sha256": "5595c6b670347c3d3fc69fba2820d216f994ea892b760310701236e526e4d3cb",
+      "bytes": 25737
+    },
+    {
+      "path": "data/religious-library-hadith-decision-residue-audit-v1.json",
+      "sha256": "a52daddb750d3be87507f66439b89f2d7ec518a9f45c5f05b48e8a097c62e307",
+      "bytes": 3653
+    },
+    {
+      "path": "data/religious-library-hadith-gap-recovery-audit-v1.json",
+      "sha256": "2c34d30c8c2a96e27eb1a83f538ca2752ba94ad5d3fac60e6675354db640f810",
+      "bytes": 85545
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-batch10-external-verification-v1.json",
+      "sha256": "eae375390f9600f5028d1e1d1c93e032e0ecf0224b349d95c270faeb1ee3d98f",
+      "bytes": 1883
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-batch11-external-verification-v1.json",
+      "sha256": "e7498104e0098f139d364e49b941df9d2d659b13dde1bcc80815c368d5302b86",
+      "bytes": 2885
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch10-v1.json",
+      "sha256": "27d171f07843423d0b7c94f099e2eec0c297f7650b1dd64d062eb9405b2ad1a8",
+      "bytes": 5435
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch11-v1.json",
+      "sha256": "66dc02b420b09f05c68c21a67bc1f7e9d3f14983cea133a129bf2955333a4806",
+      "bytes": 3775
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch2-v1.json",
+      "sha256": "70d119df8617884ace8a99b392b1426d1d1b42e5dc528fcd8d50b99b1267d5f5",
+      "bytes": 8295
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch3-v1.json",
+      "sha256": "e9a1ebd8db6b7975dce3880fb42fed633eebcc5258c99eb6b8c8bc722fe79152",
+      "bytes": 7310
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch4-v1.json",
+      "sha256": "aff215b328ac708f81f8ad1f98438bc5a35a3bdb000546c35d788b208b7110ea",
+      "bytes": 5360
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch5-v1.json",
+      "sha256": "cde36d7089f5b933ceac128ca92543dcbd707139692923a361b359fb03d3d86a",
+      "bytes": 5376
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch6-v1.json",
+      "sha256": "243e7afffacd35b7d1c32755f44fec638a0fb016530476663f97617c2b644b8e",
+      "bytes": 5411
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch7-v1.json",
+      "sha256": "bd9358510dd8b1bcc00eb415cbc40e0c4687bc492458529d2057dba9794a13a3",
+      "bytes": 5361
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch8-v1.json",
+      "sha256": "a26a9064a901191d5c9cbc1aa40cb4af70b7be57c85279ff36173abccaf3d214",
+      "bytes": 4355
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch9-v1.json",
+      "sha256": "c814d1174f0e1d912ea5907573d986a12a5cd09d4eb33a6e032e0c91a160ed08",
+      "bytes": 5034
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-candidates-v1.json",
+      "sha256": "100ad5a0630a201e6c7accd6fd7565557df1e2570d1dc7e2f4b3e469880ec5b3",
+      "bytes": 8372
+    },
+    {
+      "path": "data/religious-library-hadith-new-authenticated-canonical-supplement-v1.json",
+      "sha256": "931937cefe08864642f8240055a23e874de21e09207e296255be67d49824f8cf",
+      "bytes": 31471
+    },
+    {
+      "path": "data/religious-library-hadith-r077-evidence-audit-v1.json",
+      "sha256": "c99d5418de5013a15f143bbbfd487fbfa78f6746c3393b987b5cdeb0926354ef",
+      "bytes": 5164
+    },
+    {
+      "path": "data/religious-library-hadith-reconstruction-v11.json",
+      "sha256": "a5ec82eac8fd0545e9fdc7c244e7a01ea2348b062969800497b1d2d2f5cbb6af",
+      "bytes": 85692
+    },
+    {
+      "path": "data/religious-library-hadith-reference-context-semantics-v1.json",
+      "sha256": "cd94175621aa2a677418a3c294799b290ce0b8885b51577267980031d6d236b4",
+      "bytes": 12414
+    },
+    {
+      "path": "data/religious-library-hadith-reference-provenance-ledger-v1.json",
+      "sha256": "27e93299628586cfaeb08c4886e580a225cb5fb607b0feb5de2411ef69cdfbde",
+      "bytes": 10427
+    },
+    {
+      "path": "data/religious-library-hadith-related-ref-semantics-v1.json",
+      "sha256": "98121c21be62680cbd9cf00bfbc4a8403adbe20c20de7932b5fe51fbd29651c3",
+      "bytes": 13058
+    },
+    {
+      "path": "data/religious-library-hadith-unmapped-closure-audit-v1.json",
+      "sha256": "34a3f9a16046199051cb58887416b8e65b04e4a46f07868fad88a3eaad91297b",
+      "bytes": 4258
+    },
+    {
+      "path": "data/religious-library-hadith-v12-audit-closure-v1.json",
+      "sha256": "f8bdd3c19be639776672034de23f5ef3dd183f7aa25e25e41cc1e77825e0f87e",
+      "bytes": 10636
+    },
+    {
+      "path": "data/religious-library-internal-provenance-exhaustion-v1.json",
+      "sha256": "50c22f82d29b08bcfd977c8b7e2e0316784778164d543bfb10cc75c3d72db970",
+      "bytes": 2160
+    },
+    {
+      "path": "data/religious-library-provenance-summary-integrity-v1.json",
+      "sha256": "65ee7bcee9f07d9d9157086cd0afafff77e01838128daa9604ba1cc39f64a98a",
+      "bytes": 1439
+    },
+    {
+      "path": "data/religious-library-quran-canonical.json",
+      "sha256": "20fc0c151720e960693d1229e9ccf4ac3a7f1dea43f1a6090bf4062a59522293",
+      "bytes": 72951
+    },
+    {
+      "path": "data/religious-library-referential-integrity-v1.json",
+      "sha256": "7887b4cb45c5b1a31d4c816301dbac0ce0b2474d6891ecaf4d2a4353ebb1fa2e",
+      "bytes": 73973
+    },
+    {
+      "path": "data/religious-library-release-archive-fileset-v1.json",
+      "sha256": "2e7432e51cbaf21ecee6301739780239d1d493a17ca83a23895b70d4e5b91336",
+      "bytes": 13267
+    },
+    {
+      "path": "data/religious-library-release-build-v1.json",
+      "sha256": "1bdd75e490dc55ed0a2e5a06c55bf90727bb2e28e1e9c9f679edeb7059ee64d9",
+      "bytes": 7395
+    },
+    {
+      "path": "data/religious-library-release-coherence-v1.json",
+      "sha256": "8d8a3486d325f973c2f55133b61a7dd3bdec8699a9b1688a5b4b9c390c8e011d",
+      "bytes": 8002
+    },
+    {
+      "path": "data/religious-library-release-delta-v1.json",
+      "sha256": "3bb62a3f6dbb78c254aa181bb3deb6d5aa84fdf2ac6d6fc6a75b65e4f2aac03e",
+      "bytes": 5700
+    },
+    {
+      "path": "data/religious-library-release-json-integrity-v1.json",
+      "sha256": "db50a59fc6747cc6b3890ed25c4635d8846f063e845139254639514c24b17e95",
+      "bytes": 7131
+    },
+    {
+      "path": "data/religious-library-release-package-hygiene-v1.json",
+      "sha256": "61585e501de4f571fa5ce6ad6b171131a0582aa43729eed5d533ed78e9e94920",
+      "bytes": 669
+    },
+    {
+      "path": "data/religious-library-release-protection-set-audit-v1.json",
+      "sha256": "5dcfa73bcc3ce7b941a698261589bdc4996ea7999baca00bc04a260c6bda0b9a",
+      "bytes": 1381
+    },
+    {
+      "path": "data/religious-library-release-reproducibility-attestation-v1.json",
+      "sha256": "7e55fafe8b1cdc1fae3d815c78f66c16cbc8fe60da91f85e05f145200e4cba22",
+      "bytes": 1096
+    },
+    {
+      "path": "data/religious-library-release-semantic-digest-v1.json",
+      "sha256": "caa16f91e410123722e0676854160b3b9e4fef3c3323436a82d3b527c172e9f5",
+      "bytes": 2767
+    },
+    {
+      "path": "data/religious-library-release-semantic-integrity-v1.json",
+      "sha256": "02c89c64091d60a800402f6a7aec987a8a454add9df6cbdb68de46645348c074",
+      "bytes": 18986
+    },
+    {
+      "path": "data/religious-library-release-zip-reproducibility-v1.json",
+      "sha256": "55a5ded76b79af3aabb274aa04503acd50e2bc4aafe2d102c3de80dfa1e4499b",
+      "bytes": 1208
+    },
+    {
+      "path": "data/religious-library-target-manifest.json",
+      "sha256": "efaf2e97193f01dc60638eeaf36503290bf883dd1456f570bb5905d20288a0c3",
+      "bytes": 13872
+    },
+    {
+      "path": "historique/07-index-final-consolide.html",
+      "sha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+      "bytes": 706831
+    },
+    {
+      "path": "index.html",
+      "sha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+      "bytes": 706831
+    },
+    {
+      "path": "tools/build_release_zip.py",
+      "sha256": "d789f13ec8d2d8a39514fd8e625e1af50bc97b00f5a200070130a51e81735703",
+      "bytes": 3232
+    },
+    {
+      "path": "tools/validate_project.py",
+      "sha256": "1eeb23adfa54878d7c7ca77b2aca628691353f25f4f0c1448a9a4469c375d948",
+      "bytes": 2734
+    },
+    {
+      "path": "tools/verify_release_reproducibility.py",
+      "sha256": "5a30c6d0e275a8d42d92a776d8f7a027d60ae35130c58b4e6fa92be986744270",
+      "bytes": 2663
+    }
+  ]
+}

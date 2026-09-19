@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V188",
+  "auditId": "french-multisource-continuation-v188",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-001",
+      "RC-005",
+      "RC-007",
+      "RC-014"
+    ],
+    "reviewedCount": 4
+  },
+  "promotedCanonicalIds": [],
+  "heldCanonicalIds": [
+    "RC-001",
+    "RC-005",
+    "RC-007",
+    "RC-014"
+  ],
+  "findings": [
+    {
+      "canonicalId": "RC-001",
+      "primaryRef": "Sahih al-Bukhari 10",
+      "decision": "HELD",
+      "reason": "Identité canonique vérifiée par référence et matn arabe, mais aucune traduction française publiée admissible et traçable n’a été établie dans cette passe."
+    },
+    {
+      "canonicalId": "RC-005",
+      "primaryRef": "Sahih Muslim 1907a",
+      "decision": "HELD",
+      "reason": "Identité canonique vérifiée (Umar ibn al-Khattab, hadith des intentions), mais aucune traduction française publiée admissible et traçable n’a été établie dans cette passe."
+    },
+    {
+      "canonicalId": "RC-007",
+      "primaryRef": "Sahih al-Bukhari 6018",
+      "decision": "HELD",
+      "reason": "Identité canonique vérifiée (Abu Hurayrah, voisin/hôte/parole bonne ou silence), mais aucune traduction française publiée admissible et traçable n’a été établie dans cette passe."
+    },
+    {
+      "canonicalId": "RC-014",
+      "primaryRef": "Sahih al-Bukhari 2079",
+      "decision": "HELD",
+      "reason": "Identité canonique vérifiée (Hakim ibn Hizam, vendeur/acheteur et bénédiction de la transaction), mais aucune traduction française publiée admissible et traçable n’a été établie dans cette passe."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 81,
+    "pendingPublishedFrenchCanonicalEntries": 59
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

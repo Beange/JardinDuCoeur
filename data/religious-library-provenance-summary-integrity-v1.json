@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V81",
+  "purpose": "Synchroniser les résumés dérivés de provenance avec les contrats autoritatifs courants; aucune donnée religieuse modifiée.",
+  "finding": {
+    "classification": "STALE_DERIVED_RELEASE_SUMMARY",
+    "staleFields": [
+      {
+        "field": "buildManifest.phaseCount",
+        "prior": 24,
+        "authoritative": 25
+      },
+      {
+        "field": "jsonIntegrity.fileCount",
+        "prior": 71,
+        "authoritative": 73
+      },
+      {
+        "field": "semanticIntegrity.datasetCount",
+        "prior": 18,
+        "authoritative": 19
+      },
+      {
+        "field": "archiveFileSet.entryCount",
+        "prior": 185,
+        "authoritativeAtV80": 192
+      },
+      {
+        "field": "reproducibilityAttestation.externalReport",
+        "prior": "Jardin-du-Coeur-PWA-hadith-consolidation-v77-reproducibility-report.json",
+        "authoritativeAtV80": "Jardin-du-Coeur-PWA-hadith-consolidation-v80-reproducibility-report.json"
+      }
+    ],
+    "impact": "Administrative/provenance summary drift only; underlying contracts, religious corpus and runtime were not changed."
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

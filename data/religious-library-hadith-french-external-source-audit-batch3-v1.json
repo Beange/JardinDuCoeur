@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V143",
+  "registerId": "JDC-HADITH-FRENCH-EXTERNAL-SOURCE-AUDIT-BATCH3-V1",
+  "purpose": "Audit externe des sources françaises publiées pour RC-008 et RC-009; promotion uniquement lorsque le texte publié peut être conservé verbatim avec provenance, version et référence exacte.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "sourceTranslationVersion": "v1.17.0",
+  "counts": {
+    "canonicalStructuresAudited": 2,
+    "officialFrenchPagesLocated": 2,
+    "exactPrimaryReferencesDisplayed": 2,
+    "pagesWithExplicitRevisionWarning": 0,
+    "translationsPromoted": 1,
+    "translationsPendingVerbatimCapture": 1
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-008",
+      "primaryRef": "Sahih al-Bukhari 5027",
+      "sourceHadithId": 5913,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/5913",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 5027",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al Bukhârî",
+      "explicitRevisionWarningObserved": false,
+      "decision": "PROMOTED_EXACT_SOURCE_NO_REVISION_WARNING",
+      "publishedFrenchTranslation": "Le meilleur d'entre vous est celui qui a appris le Coran et l'a enseigné.",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "RC-009",
+      "primaryRef": "Sahih al-Bukhari 6406",
+      "parallelRef": "Sahih Muslim 2694",
+      "sourceHadithId": 5507,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/5507/1000",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 6406",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "decision": "EXACT_SOURCE_FOUND_PENDING_VERBATIM_CAPTURE",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

@@ -1,0 +1,19 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V7
+
+H-ID historiques récupérés .............. 13/140
+H-ID historiques non retrouvés ......... 127/140
+
+Candidats reconstruction bruts ......... 58/127
+Nouveaux V7 ............................. 7
+Places brutes restantes ................ 69
+
+Déduplication ajoutée :
+RF-18 ṣadaqah / bonne parole
+RF-19 demi-datte / bonne parole
+RF-20 portée de la parole
+
+Aucun ancien H-ID inventé ............... PASS
+countsAsEntry=false ..................... PASS
+productionReady=false ................... PASS
+randomHome=false ........................ PASS
+provenance française .................... PENDING

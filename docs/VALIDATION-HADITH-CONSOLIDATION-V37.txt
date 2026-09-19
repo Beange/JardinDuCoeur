@@ -1,0 +1,23 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V37
+Date: 2026-09-12
+
+LOT AUDITÉ
+- R-005 / Sahih Muslim 2326 -> RC-068
+- R-046 / Sahih al-Bukhari 7377 -> RC-069
+- R-077 / ancienne référence Sahih al-Bukhari 6014 -> NON CONSOLIDÉ
+
+VÉRIFICATIONS
+- Muslim 2326: référence et contenu concordants avec R-005.
+- Bukhari 7377: référence et contenu concordants avec R-046.
+- Bukhari 1284 et Muslim 923a: même récit d'Usama b. Zayd; routes parallèles +0 de RC-069.
+- Bukhari 6014: texte sur Jibril et le voisin; discordant avec le résumé hérité de R-077. Aucun remplacement conjectural.
+
+COMPTAGE STRUCTUREL
+- R-ID absorbés: 81/82
+- R-ID restant: R-077
+- Structures canoniques: 69 = 56 reconstruction + 13 historiques
+
+POLITIQUE
+- publishedFrenchTranslation: PENDING
+- productionReady: false
+- index.html: non modifié

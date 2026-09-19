@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V155",
+  "registerId": "JDC-HADITH-FRENCH-BULK-AUDIT-SUPPLEMENT-N001-N023-V1",
+  "purpose": "Premier lot groupé du supplément canonique: 20 structures auditées selon la politique française multi-source renforcée; promotion uniquement sur traduction française publiée, identité canonique établie et absence d’avertissement explicite de révision.",
+  "auditDate": "2026-09-16",
+  "scope": {
+    "from": "N-001",
+    "to": "N-023",
+    "count": 20,
+    "canonicalIds": [
+      "N-001",
+      "N-002",
+      "N-003",
+      "N-004",
+      "N-005",
+      "N-006",
+      "N-007",
+      "N-008",
+      "N-009",
+      "N-011",
+      "N-013",
+      "N-015",
+      "N-016",
+      "N-017",
+      "N-018",
+      "N-019",
+      "N-020",
+      "N-021",
+      "N-022",
+      "N-023"
+    ]
+  },
+  "newlyVerified": [
+    {
+      "canonicalId": "N-018",
+      "primaryRef": "Sahih Muslim 2588",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5512",
+      "identityEvidence": "Référence explicite Muslim 2588, Abu Huraira et matn arabe concordant.",
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "stillEnAttente": [
+    "N-001",
+    "N-002",
+    "N-003",
+    "N-004",
+    "N-005",
+    "N-006",
+    "N-007",
+    "N-008",
+    "N-009",
+    "N-011",
+    "N-013",
+    "N-015",
+    "N-016",
+    "N-017",
+    "N-019",
+    "N-020",
+    "N-021",
+    "N-022",
+    "N-023"
+  ],
+  "notes": {
+    "N-004": "Une fiche HadeethEnc correspondant à Muslim 2162 a été repérée en anglais, mais aucune promotion française sans fiche française qualifiée établie dans cette passe.",
+    "N-005": "La famille Muslim 2586 est identifiée sur HadeethEnc, mais aucune promotion française qualifiée établie dans cette passe.",
+    "N-008": "La famille Muslim 2664 est identifiée sur HadeethEnc, mais aucune promotion française qualifiée établie dans cette passe."
+  },
+  "counts": {
+    "audited": 20,
+    "newlyVerifiedReusableFrench": 1,
+    "stillEnAttente": 19
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

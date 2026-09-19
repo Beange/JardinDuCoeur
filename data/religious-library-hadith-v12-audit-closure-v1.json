@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V79",
+  "status": "V12_PENDING_FAMILIES_STRUCTURALLY_CLOSED",
+  "purpose": "Close the 11 historical V12 high-confidence family decisions that were still labelled PENDING_SOURCE_BY_SOURCE_CONSOLIDATION by comparing their R-ID members with the current V44 canonical structural register. This is retrospective accounting only and creates no religious identity.",
+  "sourceAudit": "data/religious-library-hadith-consolidation-audit-v12.json",
+  "canonicalRegister": "data/religious-library-hadith-canonical-consolidation-v44.json",
+  "counts": {
+    "historicalPendingFamilies": 11,
+    "resolvedFamilies": 11,
+    "resolvedAsSingleCanonicalStructure": 9,
+    "resolvedAsDistinctCanonicalStructures": 2,
+    "unresolvedFamilies": 0,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0
+  },
+  "families": [
+    {
+      "familyId": "RF-05",
+      "label": "intention-hijra",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-003",
+          "canonicalId": "RC-005",
+          "role": "primary",
+          "reference": "Sahih Muslim 1907a"
+        },
+        {
+          "reconstructionId": "R-019",
+          "canonicalId": "RC-005",
+          "role": "parallel",
+          "reference": "Sahih al-Bukhari 1"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-005"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-06",
+      "label": "aimer-pour-son-frere",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-011",
+          "canonicalId": "RC-006",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 13"
+        },
+        {
+          "reconstructionId": "R-023",
+          "canonicalId": "RC-006",
+          "role": "parallel",
+          "reference": "Sahih Muslim 45a"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-006"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-07",
+      "label": "voisin-hospitalite-parole",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-012",
+          "canonicalId": "RC-007",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 6018"
+        },
+        {
+          "reconstructionId": "R-024",
+          "canonicalId": "RC-007",
+          "role": "parallel",
+          "reference": "Sahih Muslim 47a"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-007"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-09",
+      "label": "langue-et-main",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-029",
+          "canonicalId": "RC-001",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 10"
+        },
+        {
+          "reconstructionId": "R-030",
+          "canonicalId": "RC-001",
+          "role": "parallel",
+          "reference": "Sahih Muslim 40"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-001"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-12",
+      "label": "force-et-colere",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-039",
+          "canonicalId": "RC-002",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 6114"
+        },
+        {
+          "reconstructionId": "R-040",
+          "canonicalId": "RC-002",
+          "role": "parallel",
+          "reference": "Sahih Muslim 2609a"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-002"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-16",
+      "label": "coeurs-actes-apparence",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-047",
+          "canonicalId": "RC-003",
+          "role": "primary",
+          "reference": "Sahih Muslim 2564c"
+        },
+        {
+          "reconstructionId": "R-048",
+          "canonicalId": "RC-003",
+          "role": "parallel",
+          "reference": "Sunan Ibn Majah 4143"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-003"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-19",
+      "label": "demi-datte-et-bonne-parole",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-055",
+          "canonicalId": "RC-004",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 1413"
+        },
+        {
+          "reconstructionId": "R-056",
+          "canonicalId": "RC-004",
+          "role": "parallel",
+          "reference": "Sahih Muslim 1016a"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-004"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-20",
+      "label": "poids-de-la-parole",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-057",
+          "canonicalId": "RC-027",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 6478"
+        },
+        {
+          "reconstructionId": "R-058",
+          "canonicalId": "RC-021",
+          "role": "parallel",
+          "reference": "Sahih Muslim 2988a"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-027",
+        "RC-021"
+      ],
+      "disposition": "RESOLVED_BY_LATER_AUDIT_AS_DISTINCT_CANONICAL_STRUCTURES",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-21",
+      "label": "invocation-de-guerison",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-059",
+          "canonicalId": "RC-022",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 5675"
+        },
+        {
+          "reconstructionId": "R-060",
+          "canonicalId": "RC-022",
+          "role": "parallel",
+          "reference": "Sahih Muslim 2191a"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-022"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-22",
+      "label": "maladie-et-expiation",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-028",
+          "canonicalId": "RC-023",
+          "role": "parallel",
+          "reference": "Sahih al-Bukhari 5641"
+        },
+        {
+          "reconstructionId": "R-061",
+          "canonicalId": "RC-023",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 5641, 5642"
+        },
+        {
+          "reconstructionId": "R-062",
+          "canonicalId": "RC-023",
+          "role": "parallel",
+          "reference": "Sahih Muslim 2573"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-023"
+      ],
+      "disposition": "RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    },
+    {
+      "familyId": "RF-23",
+      "label": "inscription-des-actions-expanded",
+      "historicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION",
+      "members": [
+        {
+          "reconstructionId": "R-001",
+          "canonicalId": "RC-047",
+          "role": "primary",
+          "reference": "Sahih Muslim 130"
+        },
+        {
+          "reconstructionId": "R-002",
+          "canonicalId": "RC-048",
+          "role": "primary",
+          "reference": "Sahih Muslim 131a"
+        },
+        {
+          "reconstructionId": "R-065",
+          "canonicalId": "RC-024",
+          "role": "primary",
+          "reference": "Sahih al-Bukhari 6491"
+        },
+        {
+          "reconstructionId": "R-066",
+          "canonicalId": "RC-024",
+          "role": "parallel",
+          "reference": "Sahih Muslim 131a/131b"
+        }
+      ],
+      "resolvedCanonicalIds": [
+        "RC-047",
+        "RC-048",
+        "RC-024"
+      ],
+      "disposition": "RESOLVED_BY_LATER_AUDIT_AS_DISTINCT_CANONICAL_STRUCTURES",
+      "note": "Historical V12 pending state is preserved in its source file; this closure records the later verified structural outcome without rewriting history."
+    }
+  ],
+  "assertions": {
+    "sourceV12PreservedUnmodified": true,
+    "allV12HighConfidencePendingFamiliesAccountedFor": true,
+    "noRIdPromotedToHistoricalHId": true,
+    "noGapIdentityInvented": true,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

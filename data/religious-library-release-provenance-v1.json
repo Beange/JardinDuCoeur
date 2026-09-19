@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "V89 provenance: synchronizes derived release-summary counts and external reproducibility report name; corpus/runtime unchanged.",
+  "parentRelease": {
+    "release": "V107",
+    "archive": "Jardin-du-Coeur-PWA-hadith-consolidation-v107.zip",
+    "sha256": "509b1e776215f5baa2e2bcd69dd7edf0136961c18e6ca931101d58501d562bdc"
+  },
+  "releaseInventory": {
+    "path": "data/religious-library-release-file-inventory-v1.json",
+    "sha256": "f2a2c8c6f2499d10961a584e0b6d2f0a97697695e59ef8fe7161c187246ed004",
+    "fileCount": 51
+  },
+  "runtimeContinuity": {
+    "indexSha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+    "historicalFinalSnapshotSha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+    "indexEqualsHistoricalFinalSnapshot": true,
+    "runtimeModifiedInV61": false,
+    "runtimeModifiedInV62": false,
+    "runtimeModifiedInV63": false
+  },
+  "corpusState": {
+    "integritySnapshot": "data/religious-library-corpus-integrity-v1.json",
+    "quranDossiers": 43,
+    "hadithCanonicalStructures": 108,
+    "hadithCoverageGaps": 32,
+    "materializedStructuresTotal": 151,
+    "canonicalTargetTotal": 183,
+    "absorbedReconstructionIds": 81,
+    "quarantinedReconstructionIds": [
+      "R-077"
+    ],
+    "globalCoverageLedger": "data/religious-library-corpus-coverage-ledger-v1.json",
+    "globalCoverageSlots": 183,
+    "dataContract": "data/religious-library-data-contract-v1.json",
+    "referentialIntegrity": "data/religious-library-referential-integrity-v1.json",
+    "hadithCoverageGapRecords": 71
+  },
+  "rules": {
+    "full183ObjectSerialization": "PENDING",
+    "productionReady": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true
+  },
+  "buildManifest": {
+    "path": "data/religious-library-release-build-v1.json",
+    "sha256": "08033d128cee5036063d8579eb1eb30d10a50be98d57af02338c5852a2b6a6b9",
+    "phaseCount": 25
+  },
+  "releaseDelta": {
+    "path": "data/religious-library-release-delta-v1.json",
+    "sha256": "394921d0bf9a433b6a021ae6ef06a422cf48bac7b57f020dbd1ba5b4f3136938",
+    "stableFileCount": 7
+  },
+  "releaseCoherence": {
+    "path": "data/religious-library-release-coherence-v1.json",
+    "sha256": "3e5009bec20adab7ebe3afd67843a9130caf3f675c6a8934c3a20e06cc184ea2"
+  },
+  "dataContract": {
+    "path": "data/religious-library-data-contract-v1.json",
+    "sha256": "3b45453804eeda73e11b04f3051313db9752060c168de11419fed209cb6593d3",
+    "datasetCount": 9
+  },
+  "referentialIntegrity": {
+    "path": "data/religious-library-referential-integrity-v1.json",
+    "sha256": "88406fc881aa10fc9041a78ce6db89a7a19ab38dc45ea423cbb8eb6615201fb8"
+  },
+  "packageHygiene": {
+    "path": "data/religious-library-release-package-hygiene-v1.json",
+    "sha256": "72bf2a6e688e10b1969bb3492416a6d21478bf74669fceacc49249714f216978"
+  },
+  "jsonIntegrity": {
+    "path": "data/religious-library-release-json-integrity-v1.json",
+    "sha256": "84ab8716feda530eedcc4fdf23613575eb6f4b46d2e852ee13794af260dc2c10",
+    "fileCount": 93
+  },
+  "semanticIntegrity": {
+    "path": "data/religious-library-release-semantic-integrity-v1.json",
+    "sha256": "2e73824f1220cc40bb480f0cd27025e6eaa91fb2b3bba92779faf5e6e2dd5264",
+    "datasetCount": 39
+  },
+  "semanticDigest": {
+    "path": "data/religious-library-release-semantic-digest-v1.json",
+    "sha256": "5e861babdbfd1f63f26c4f2abe266c0928599d604e5e4b15e08e48880b5ce3f6",
+    "datasetCount": 6,
+    "algorithm": "PROJECT_CANONICAL_JSON_SHA256_V1"
+  },
+  "archiveFileSet": {
+    "path": "data/religious-library-release-archive-fileset-v1.json",
+    "sha256": "85b11df36095fcf3544b9624b888808ed4059760140a700d267a827c96777286",
+    "entryCount": 240
+  },
+  "zipReproducibility": {
+    "path": "data/religious-library-release-zip-reproducibility-v1.json",
+    "sha256": "78d96afd56b8604e22e6eb28e4efa57a55f2a57e2c79eae6517fa17dc2325e41",
+    "builder": "tools/build_release_zip.py",
+    "builderSha256": "d789f13ec8d2d8a39514fd8e625e1af50bc97b00f5a200070130a51e81735703"
+  },
+  "reproducibilityAttestation": {
+    "path": "data/religious-library-release-reproducibility-attestation-v1.json",
+    "sha256": "34c6fe13e40430b4ab8b16690de7c03a319a71200ea26692a1cf24173cc0f541",
+    "verifier": "tools/verify_release_reproducibility.py",
+    "verifierSha256": "5a30c6d0e275a8d42d92a776d8f7a027d60ae35130c58b4e6fa92be986744270",
+    "externalReport": "Jardin-du-Coeur-PWA-hadith-consolidation-v108-reproducibility-report.json"
+  },
+  "gapRecoveryAudit": {
+    "path": "data/religious-library-hadith-gap-recovery-audit-v1.json",
+    "sha256": "2c34d30c8c2a96e27eb1a83f538ca2752ba94ad5d3fac60e6675354db640f810"
+  },
+  "unmappedClosureAudit": {
+    "path": "data/religious-library-hadith-unmapped-closure-audit-v1.json",
+    "sha256": "34a3f9a16046199051cb58887416b8e65b04e4a46f07868fad88a3eaad91297b",
+    "candidateCount": 10,
+    "structurallyRepresented": 10,
+    "historicalHIdsRecovered": 0,
+    "gapsAssigned": 0
+  },
+  "v12AuditClosure": {
+    "path": "data/religious-library-hadith-v12-audit-closure-v1.json",
+    "sha256": "f8bdd3c19be639776672034de23f5ef3dd183f7aa25e25e41cc1e77825e0f87e",
+    "historicalPendingFamilies": 11,
+    "resolvedFamilies": 11,
+    "unresolvedFamilies": 0
+  },
+  "decisionResidueAudit": {
+    "path": "data/religious-library-hadith-decision-residue-audit-v1.json",
+    "sha256": "a52daddb750d3be87507f66439b89f2d7ec518a9f45c5f05b48e8a097c62e307",
+    "structuresWithRelatedRefs": 25,
+    "structuresWithRejectedRefs": 2,
+    "activeUnresolved": [
+      "R-077"
+    ]
+  },
+  "r077EvidenceAudit": {
+    "path": "data/religious-library-hadith-r077-evidence-audit-v1.json",
+    "sha256": "c99d5418de5013a15f143bbbfd487fbfa78f6746c3393b987b5cdeb0926354ef",
+    "reconstructionId": "R-077",
+    "disposition": "REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED",
+    "replacementReference": null
+  }
+}

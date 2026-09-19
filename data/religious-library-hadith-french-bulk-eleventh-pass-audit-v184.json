@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V184",
+  "auditId": "french-bulk-eleventh-pass-v184",
+  "purpose": "Ré-audit groupé de 20 structures encore en attente; promotion uniquement sur traduction française publiée, complète, traçable et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-056",
+      "RC-057",
+      "RC-061",
+      "RC-065",
+      "RC-069",
+      "N-005",
+      "N-006",
+      "N-009",
+      "N-011",
+      "N-013",
+      "N-015",
+      "N-016",
+      "N-017",
+      "N-020",
+      "N-023",
+      "N-026",
+      "N-027",
+      "N-029",
+      "N-030",
+      "RC-004"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "N-013"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "N-013",
+      "primaryRef": "Sahih al-Bukhari 30",
+      "narrator": "Al-Ma’rûr ibn Suwayd",
+      "publishedFrenchTranslation": "Al-Ma’rûr ibn Suwayd a dit : « J’ai vu Abû Dharr (qu’Allah l’agrée) qui portait le même manteau que son esclave. Quand je l’interrogeai à ce sujet, il me raconta qu’à l’époque du Messager d’Allah (sur lui la paix et le salut), il avait insulté un homme en parlant de sa mère. Alors, le Prophète (sur lui la paix et le salut) lui avait dit : « Tu es quelqu’un en qui l'on trouve encore des [comportements d'avant l'Islam (« Al-jâhiliyah ») ] ! Ceux-là sont vos frères et des bienfaits divins qu’Allah a mis en votre possession. Quiconque, donc, détient l’un de ses frères, qu’il le nourrisse comme il se nourrit et qu’il l’habille comme il s’habille ! Ne leur imposez pas ce qu’ils ne peuvent accomplir et si vous devez le faire, alors aidez-les ! »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/6407",
+      "sourceHadithId": 6407,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-056",
+    "RC-057",
+    "RC-061",
+    "RC-065",
+    "RC-069",
+    "N-005",
+    "N-006",
+    "N-009",
+    "N-011",
+    "N-015",
+    "N-016",
+    "N-017",
+    "N-020",
+    "N-023",
+    "N-026",
+    "N-027",
+    "N-029",
+    "N-030",
+    "RC-004"
+  ],
+  "heldCount": 19,
+  "notes": [
+    "N-013: HadeethEnc français 6407 retrouvé; Al-Ma’rûr ibn Suwayd, récit complet d’Abû Dharr sur les comportements de la Jâhiliyah et le traitement des personnes placées sous autorité, degré Authentique et attribution conjointe Al-Bukhârî/Muslim.",
+    "La structure canonique locale est Sahih al-Bukhari 30; concordance établie par rapporteur + matn + collection. La page française consultée ne contient pas d’avertissement explicite de révision.",
+    "Les 19 autres structures du lot restent en attente; aucune traduction française n’a été synthétisée, complétée ou reformulée."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 80,
+    "pendingPublishedFrenchCanonicalEntries": 60
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

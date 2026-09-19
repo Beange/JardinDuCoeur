@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V186",
+  "auditId": "JDC-HADITH-FRENCH-MULTISOURCE-PROTOCOL-V2",
+  "purpose": "Élargir prudemment la recherche de traductions françaises publiées sans fabriquer ni fusionner de traduction et sans considérer la réputation générale d'un site comme preuve suffisante pour un hadith individuel.",
+  "sources": [
+    {
+      "sourceId": "HADEETHENC",
+      "status": "AUTHORIZED_PRIMARY",
+      "evidence": "Le portail français se présente comme une encyclopédie de traductions de paroles prophétiques authentiques et publie des conditions de republication imposant absence de modification, attribution et version.",
+      "url": "https://hadeethenc.com/fr"
+    },
+    {
+      "sourceId": "ISLAMHOUSE",
+      "status": "AUTHORIZED_CONDITIONAL_PER_DOCUMENT",
+      "evidence": "La section française publie des ressources avec métadonnées de traduction/révision et notamment une ressource de 3000 hadiths/citations tirés d'Al-Bukhari attribuée à un traducteur nommé. Chaque hadith doit néanmoins être vérifié individuellement.",
+      "url": "https://islamhouse.com/fr/main/"
+    },
+    {
+      "sourceId": "SUNNATY",
+      "status": "AUTHORIZED_CROSSCHECK_NOT_SOLE_OVERRIDE",
+      "evidence": "Le site expose des pages structurées de hadith avec collection, numéro, texte arabe et référence; utilisé comme recoupement. Une page anglaise Bukhari 6416 a été vérifiée pendant l'établissement du protocole; la présence d'une traduction française doit être établie par cas avant toute promotion.",
+      "url": "https://www.sunnatyapp.com/"
+    }
+  ],
+  "decisionRules": [
+    "Aucune traduction automatique, synthétique, fusionnée ou reformulée n'est admise comme texte publié.",
+    "Une promotion exige une publication française verbatim et une identité canonique suffisamment établie.",
+    "HadeethEnc sans avertissement explicite peut rester source primaire selon les règles existantes.",
+    "IslamHouse n'est admissible qu'au niveau du document/hadith avec provenance de traduction ou révision et concordance canonique vérifiable.",
+    "Sunnaty sert de source de recoupement; il ne neutralise pas seul un avertissement HadeethEnc.",
+    "En cas de divergence substantielle ou de provenance insuffisante, le hadith reste en attente."
+  ],
+  "countsBefore": {
+    "publishedFrenchCanonicalEntries": 80,
+    "pendingPublishedFrenchCanonicalEntries": 60
+  },
+  "countsAfter": {
+    "publishedFrenchCanonicalEntries": 80,
+    "pendingPublishedFrenchCanonicalEntries": 60
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "existingFrenchTranslationsModified": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V176",
+  "auditId": "french-bulk-third-pass-v176",
+  "purpose": "Passage groupé sur 20 structures encore en attente; promotion seulement avec concordance non ambiguë du matn, rapporteur et famille de référence, traduction française publiée complète et absence d’avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-004",
+      "RC-010",
+      "RC-014",
+      "RC-017",
+      "RC-018",
+      "RC-019",
+      "RC-020",
+      "RC-021",
+      "RC-022",
+      "RC-026",
+      "RC-027",
+      "RC-028",
+      "RC-029",
+      "RC-030",
+      "RC-033",
+      "RC-035",
+      "RC-037",
+      "RC-038",
+      "RC-041",
+      "RC-042"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "RC-021"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-021",
+      "primaryRef": "Sahih al-Bukhari 6477",
+      "narrator": "Abu Huraira",
+      "publishedFrenchTranslation": "Abû Hurayrah (qu'Allah l'agrée) relate que le Messager d'Allah (sur lui la paix et le salut) a dit : « Il arrive que le serviteur prononce une parole, sans se rendre compte de sa gravité, qui le plonge en Enfer à une profondeur plus grande que la distance entre l'Orient et l'Occident. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3479",
+      "sourceHadithId": 3479,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-004",
+    "RC-010",
+    "RC-014",
+    "RC-017",
+    "RC-018",
+    "RC-019",
+    "RC-020",
+    "RC-022",
+    "RC-026",
+    "RC-027",
+    "RC-028",
+    "RC-029",
+    "RC-030",
+    "RC-033",
+    "RC-035",
+    "RC-037",
+    "RC-038",
+    "RC-041",
+    "RC-042"
+  ],
+  "heldCount": 19,
+  "notes": {
+    "RC-004": "HadeethEnc historical PDF confirms the Arabic identity and contains a French title/explanation, but the retrieved evidence does not expose a complete direct French translation of the full canonical matn; held rather than synthesizing from the explanation.",
+    "otherHeld": "No additional candidate in this pass met all promotion requirements with sufficiently direct published-French evidence; previous warning/mismatch/reuse holds remain in force where applicable."
+  },
+  "countsAfter": {
+    "verified": 71,
+    "waiting": 69
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "explicitRevisionWarningIgnored": false,
+    "runtimeChanged": false
+  }
+}

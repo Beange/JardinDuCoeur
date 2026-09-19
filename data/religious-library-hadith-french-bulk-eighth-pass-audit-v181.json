@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V181",
+  "auditId": "french-bulk-eighth-pass-v181",
+  "purpose": "Ré-audit groupé de 20 structures encore en attente; promotion uniquement sur traduction française publiée, complète, traçable et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-041",
+      "RC-001",
+      "RC-004",
+      "RC-005",
+      "RC-006",
+      "RC-007",
+      "RC-010",
+      "RC-014",
+      "RC-017",
+      "RC-018",
+      "RC-019",
+      "RC-020",
+      "RC-022",
+      "RC-026",
+      "RC-028",
+      "RC-029",
+      "RC-030",
+      "RC-033",
+      "RC-037",
+      "RC-038"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "RC-041"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-041",
+      "primaryRef": "Sahih al-Bukhari 6009",
+      "narrator": "Abû Hurayrah",
+      "publishedFrenchTranslation": "Abû Hurayrah (qu'Allah l'agrée) relate : « Pendant qu’un homme parcourait un chemin, il eut une grande soif. Il trouva un puits et y descendit pour se désaltérer. Ensuite, il remonta et c’est alors qu’il vit un chien haleter en léchant le sable humide à cause de sa soif intense. L’homme s’est alors dit : \" Ce chien a aussi soif que moi ! \" Il redescendit donc dans le puits, remplit sa chaussure d’eau, la saisit entre ses dents, puis donna à boire au chien. Allah lui en sut gré et lui pardonna ses péchés.\nLes Compagnons demandèrent : \" Ô Messager d’Allah ! Serons-nous [aussi] rétribués pour les bienfaits dispensés aux animaux ? \" Alors, le Prophète (sur lui la paix et le salut) leur répondit : \" Oui ! Tout bienfait dispensé à un être vivant sera récompensé. \" »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/10100",
+      "sourceHadithId": 10100,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Authentique; Rapporté par Al-Bûkhârî - Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-001",
+    "RC-004",
+    "RC-005",
+    "RC-006",
+    "RC-007",
+    "RC-010",
+    "RC-014",
+    "RC-017",
+    "RC-018",
+    "RC-019",
+    "RC-020",
+    "RC-022",
+    "RC-026",
+    "RC-028",
+    "RC-029",
+    "RC-030",
+    "RC-033",
+    "RC-037",
+    "RC-038"
+  ],
+  "heldCount": 19,
+  "notes": [
+    "RC-041: page française HadeethEnc 10100 retrouvée; Abû Hurayrah, matn de l’homme qui abreuve le chien, attribution authentique à Al-Bukhârî et Muslim. La concordance exacte avec Sahih al-Bukhari 6009 est confirmée par le même rapporteur et le même matn arabe.",
+    "Aucun avertissement explicite de révision n’est observé sur la page française consultée.",
+    "Les 19 autres structures du lot restent en attente; aucune traduction française n’a été synthétisée, complétée ou reformulée."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 77,
+    "pendingPublishedFrenchCanonicalEntries": 63
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

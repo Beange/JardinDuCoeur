@@ -1,0 +1,14 @@
+Jardin du Cœur — validation consolidation hadith V43
+
+- Structures hadith confirmées: 69/140
+- Lacunes de couverture: 71
+- GAP-ID administratifs: 71 (GAP-001..GAP-071)
+- GAP-ID avec référence religieuse assignée: 0
+- GAP-ID avec H-ID/R-ID assigné: 0
+- R-ID absorbés: 81/82
+- R-077: REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED
+- Structures Qur’an: 43/43
+- Couverture globale structurelle: 112/183
+- publishedFrenchTranslation: PENDING
+- productionReady: false
+- index.html: non modifié

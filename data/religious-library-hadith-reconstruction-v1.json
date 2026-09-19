@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "registerId": "hadith-reconstruction-v1",
+  "status": "RECONSTRUCTION_CANDIDATES_NOT_CANONICAL",
+  "important": "Ce registre ne restaure PAS les anciens H-ID perdus. Il ré-audite des références explicitement documentées dans le journal de transmission. Aucune entrée ne compte dans les 140 tant qu'une décision canonique explicite n'est pas prise.",
+  "counts": {
+    "reconstructionCandidates": 10,
+    "canonicalHadithRecovered": 13,
+    "canonicalHadithTarget": 140,
+    "countsTowardCanonicalTarget": 0
+  },
+  "families": [
+    {
+      "id": "RF-01",
+      "label": "intention-et-inscription-des-actions",
+      "members": [
+        "R-001",
+        "R-002"
+      ],
+      "relationStatus": "related-not-merged",
+      "note": "Même champ thématique et même chapitre de Muslim; narrations distinctes, aucune fusion de texte."
+    },
+    {
+      "id": "RF-02",
+      "label": "constance-moderation-capacite",
+      "members": [
+        "R-006",
+        "R-007",
+        "R-008",
+        "R-009",
+        "R-010"
+      ],
+      "relationStatus": "related-family-review-required",
+      "note": "Formulations et chaînes apparentées autour de la constance/modération. Ne pas transformer automatiquement en variantRefs/parallelRefs sans audit de relation."
+    }
+  ],
+  "entries": [
+    {
+      "id": "R-001",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 130",
+      "sourceUrl": "https://sunnah.com/muslim:130",
+      "inBookReference": "Book 1, Hadith 244",
+      "themes": [
+        "intention",
+        "bonnes-actions",
+        "mauvaises-actions"
+      ],
+      "auditSummaryFr": "Abu Hurayra; inscription d'une bonne intention/action et d'une mauvaise intention/action.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousScore",
+        "noMeritMeter",
+        "noXP",
+        "noMultiplierGamification",
+        "noScrupulosityFraming"
+      ]
+    },
+    {
+      "id": "R-002",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 131a",
+      "sourceUrl": "https://sunnah.com/muslim:131a",
+      "inBookReference": "Book 1, Hadith 245",
+      "themes": [
+        "intention",
+        "bonnes-actions",
+        "mauvaises-actions"
+      ],
+      "auditSummaryFr": "Ibn ʿAbbās; hadith qudsī sur l'inscription des bonnes et mauvaises actions.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousScore",
+        "noMeritMeter",
+        "noXP",
+        "noMultiplierGamification",
+        "noScrupulosityFraming"
+      ]
+    },
+    {
+      "id": "R-003",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 1907a",
+      "sourceUrl": "https://sunnah.com/muslim:1907a",
+      "inBookReference": "Book 33, Hadith 222",
+      "themes": [
+        "intention",
+        "hijra"
+      ],
+      "auditSummaryFr": "ʿUmar b. al-Khaṭṭāb; valeur des actes selon l'intention et exemple de l'émigration.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noNiyyahScore",
+        "noUserIntentDiagnosis",
+        "noReligiousScore"
+      ]
+    },
+    {
+      "id": "R-004",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 1053a",
+      "sourceUrl": "https://sunnah.com/muslim:1053a",
+      "inBookReference": "Book 12, Hadith 161",
+      "themes": [
+        "suffisance",
+        "endurance",
+        "demande"
+      ],
+      "auditSummaryFr": "Abū Saʿīd al-Khudrī; demandes des Anṣār, recherche de suffisance et endurance.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noPovertyShaming",
+        "noHelpSeekingShame",
+        "noPainMinimization",
+        "noAbusePressure"
+      ]
+    },
+    {
+      "id": "R-005",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 2326",
+      "sourceUrl": "https://sunnah.com/muslim:2326",
+      "inBookReference": "Book 43, Hadith 102",
+      "themes": [
+        "humilite",
+        "disponibilite",
+        "vulnerabilite"
+      ],
+      "auditSummaryFr": "Anas; disponibilité du Prophète ﷺ envers une femme décrite dans la transmission comme ayant une difficulté mentale.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noMentalHealthDiagnosis",
+        "noUserDiagnosis",
+        "preserveNarrativeContext"
+      ]
+    },
+    {
+      "id": "R-006",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6464",
+      "sourceUrl": "https://sunnah.com/bukhari:6464",
+      "inBookReference": "Book 81, Hadith 53",
+      "themes": [
+        "moderation",
+        "constance",
+        "misericorde"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; modération, œuvres seules insuffisantes pour entrer au Paradis, constance même petite.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noConsistencyScore",
+        "noSalvationScore",
+        "noMeritMeter"
+      ]
+    },
+    {
+      "id": "R-007",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6465",
+      "sourceUrl": "https://sunnah.com/bukhari:6465",
+      "inBookReference": "Book 81, Hadith 54",
+      "themes": [
+        "constance",
+        "capacite"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; œuvres les plus régulières même petites et ne prendre que ce que l'on peut supporter.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noConsistencyScore",
+        "noUserCapacityDiagnosis",
+        "noAutomatedGuilt"
+      ]
+    },
+    {
+      "id": "R-008",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 783b",
+      "sourceUrl": "https://sunnah.com/muslim:783b",
+      "inBookReference": "Book 6, Hadith 258",
+      "themes": [
+        "constance"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; actes aimés d'Allah accomplis continuellement même s'ils sont petits.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noConsistencyScore",
+        "noLongestStreak",
+        "noPushNotificationGuilt"
+      ]
+    },
+    {
+      "id": "R-009",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 2818a",
+      "sourceUrl": "https://sunnah.com/muslim:2818a",
+      "inBookReference": "Book 52, Hadith 75",
+      "themes": [
+        "moderation",
+        "misericorde",
+        "constance"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; modération, miséricorde d'Allah et constance des œuvres.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noSalvationScore",
+        "noMeritMeter",
+        "noAutomatedGuilt"
+      ]
+    },
+    {
+      "id": "R-010",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6466",
+      "sourceUrl": "https://sunnah.com/bukhari:6466",
+      "inBookReference": "Book 81, Hadith 55",
+      "themes": [
+        "constance",
+        "pratique-prophetique"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; pratique régulière du Prophète ﷺ et absence de jours artificiellement spécialisés.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noExhaustionImitation",
+        "preserveNarrativeContext"
+      ]
+    }
+  ]
+}

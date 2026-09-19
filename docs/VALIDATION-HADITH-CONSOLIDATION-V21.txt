@@ -1,0 +1,28 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V21
+
+CORRECTION CANONIQUE MAJEURE
+RC-021 ancien regroupement R-057/R-058 ........ CORRIGÉ
+RC-021 nouveau : R-075 Bukhari 6477
+                 + R-058 Muslim 2988a,b ........ CONFIRMÉ
+RC-027 : R-057 Bukhari 6478 .................... DOSSIER DISTINCT
+
+FAMILLE ŒUVRES RÉGULIÈRES
+RC-028 : R-006 Bukhari 6464
+         + R-009 Muslim 2818a .................. CONFIRMÉ
+RC-029 : R-007 Bukhari 6465
+         + R-008 Muslim 783b ................... CONFIRMÉ
+RC-030 : R-010 Bukhari 6466
+         + Muslim 783a (sans R-ID) ............. CONFIRMÉ
+
+Structures canoniques confirmées ............... 30
+- historiques récupérées ....................... 13
+- reconstruction ............................... 17
+
+R-ID absorbés .................................. 35 / 82
+R-ID restant à consolider ...................... 47
+
+Double comptage variantes/parallèles ........... INTERDIT
+H-ID historiques inventés ...................... 0
+Traduction française publiée ................... PENDING
+productionReady ................................. false
+Migration index.html ........................... NON

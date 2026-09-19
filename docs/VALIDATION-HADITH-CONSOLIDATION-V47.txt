@@ -1,0 +1,87 @@
+VALIDATION HADITH CONSOLIDATION V47
+
+Objet: snapshot d’intégrité machine-readable des fichiers critiques et des compteurs consolidés.
+Aucun contenu religieux n’est ajouté ni remappé.
+
+JARDIN DU CŒUR — VALIDATION CONSOLIDÉE
+PASS  file:index.html — 706831 bytes
+PASS  file:manifest.webmanifest — 700 bytes
+PASS  file:sw.js — 937 bytes
+PASS  file:icons/icon-192.png — 1881 bytes
+PASS  file:icons/icon-512.png — 5493 bytes
+PASS  file:icons/maskable-512.png — 5493 bytes
+PASS  file:ETAT-DU-PROJET.md — 32462 bytes
+PASS  manifest:name — 'Jardin du Cœur'
+PASS  manifest:start_url — './'
+PASS  manifest-icon:icons/icon-192.png — icons/icon-192.png
+PASS  manifest-icon:icons/icon-512.png — icons/icon-512.png
+PASS  manifest-icon:icons/maskable-512.png — icons/maskable-512.png
+PASS  html:manifest-link
+PASS  html:service-worker-registration
+PASS  html:storage-key
+PASS  html:pwa-version
+PASS  sw:cache-version
+PASS  home-id:dailyHero
+PASS  home-id:dailyLandscape
+PASS  home-id:dailyQuoteCard
+PASS  home-id:dailyQuoteRef
+PASS  home-id:dailyQuoteText
+PASS  home-id:homeMuhasabahBtn
+PASS  home-id:intentionHelpBtn
+PASS  home-id:startDayBtn
+PASS  function:renderDuas
+PASS  function:renderCycle
+PASS  function:renderReflection
+PASS  function:renderProfileName
+PASS  function:exportData
+PASS  function:renderHomeDaily
+PASS  function:openDailyQuote
+PASS  function:dailyQuoteFor
+PASS  function:dailySceneFor
+PASS  religious-library:implemented-count — count=30 len=30
+PASS  religious-library:no-empty-ref
+PASS  religious-library:target-count
+PASS  religious-library:serialization-pending
+PASS  hadith-v45:canonical-source-present
+PASS  hadith-v45:gaps-present
+PASS  hadith-v45:ledger-present
+PASS  hadith-v45:canonical-69 — count=69
+PASS  hadith-v45:gaps-71 — count=71
+PASS  hadith-v45:ledger-140 — count=140
+PASS  hadith-v45:ledger-split — confirmed=69 gaps=71
+PASS  hadith-v45:gaps-no-religious-identity
+PASS  hadith-v45:r-members-81 — count=81
+PASS  hadith-v45:r077-not-absorbed
+PASS  corpus-v46:quran-source-present
+PASS  corpus-v46:quran-43 — count=43
+PASS  corpus-v46:ledger-slot-sequence
+PASS  corpus-v46:ledger-confirmed-pointers-exact
+PASS  corpus-v46:ledger-gap-pointers-exact
+PASS  corpus-v46:ledger-pointer-exclusivity
+PASS  corpus-v46:global-materialized-112 — quran=43 hadith=69
+PASS  corpus-v46:global-target-183 — target=183 calc=183
+PASS  corpus-v46:manifest-hadith-coverage — '69/140 structures canoniques confirmées; 71 non matérialisées'
+PASS  corpus-v46:manifest-quran-coverage — '43/43 dossiers constitués'
+PASS  corpus-v46:manifest-global-coverage — '112/183'
+PASS  integrity-v47:snapshot-present
+PASS  integrity-v47:snapshot-version — 'V47'
+PASS  integrity-v47:counts-core — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077']}
+PASS  integrity-v47:counts-global — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077']}
+PASS  integrity-v47:r-register — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077']}
+PASS  integrity-v47:serialization-pending
+PASS  integrity-v47:production-false
+PASS  integrity-v47:runtime-flag
+PASS  integrity-v47:critical-file-count — count=7
+PASS  integrity-v47:critical-hashes-match
+PASS  integrity-v47:critical-sizes-match
+PASS  integrity-v47:manifest-pointer — 'data/religious-library-corpus-integrity-v1.json'
+PASS  integrity-v47:manifest-status — 'CURRENT_FOR_V47'
+PASS  source-react:package
+PASS  source-react:main
+PASS  history:final-snapshot
+PASS  history:final-equals-root
+
+Checks: 76 | PASS: 76 | FAIL: 0
+
+STATUS: PASS (structure du paquet consolidé)
+NOTE: ce PASS ne valide PAS un corpus religieux complet de 183 objets; sa matérialisation reste PENDING.

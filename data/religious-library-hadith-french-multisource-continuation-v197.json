@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V197",
+  "auditId": "HADITH_FRENCH_MULTISOURCE_CONTINUATION_V197",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-061",
+      "RC-057",
+      "RC-065",
+      "RC-004"
+    ],
+    "reviewedCount": 4
+  },
+  "promotedCanonicalIds": [
+    "RC-061"
+  ],
+  "heldCanonicalIds": [
+    "RC-057",
+    "RC-065",
+    "RC-004"
+  ],
+  "findings": [
+    {
+      "canonicalId": "RC-061",
+      "primaryRef": "Sahih al-Bukhari 16",
+      "decision": "PROMOTE",
+      "sourceUrl": "https://islamhouse.com/read/fr/3-000-hadiths-et-citations-coraniques-tir%C3%A9s-du-recueil-de-al-boukhary-173247",
+      "crossCheckUrl": "https://sunnah.com/bukhari:16",
+      "reason": "IslamHouse publie une traduction française attribuée à Mohammed Yacine KASSAB dans son recueil du Sahih d’El Bokhari. Narrateur et trois qualités distinctives concordent avec Bukhari 16; source indépendante admissible selon le protocole V186."
+    },
+    {
+      "canonicalId": "RC-057",
+      "primaryRef": "Sahih al-Bukhari 6416",
+      "decision": "HOLD",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4704",
+      "reason": "La fiche française porte explicitement un avertissement de révision/vérification; aucune résolution indépendante suffisante établie dans cette passe."
+    },
+    {
+      "canonicalId": "RC-065",
+      "primaryRef": "Sahih Muslim 2564a",
+      "decision": "HOLD",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4706?note=1",
+      "reason": "La fiche française porte explicitement un avertissement de révision/vérification; aucune résolution indépendante suffisante établie dans cette passe."
+    },
+    {
+      "canonicalId": "RC-004",
+      "primaryRef": "Sahih al-Bukhari 1413",
+      "decision": "HOLD",
+      "sourceUrl": "https://sunnah.com/bukhari:1413",
+      "reason": "Référence et matn canoniques confirmés, mais aucune publication française admissible avec provenance suffisante établie dans cette passe."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 85,
+    "pendingPublishedFrenchCanonicalEntries": 55
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "revisionWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

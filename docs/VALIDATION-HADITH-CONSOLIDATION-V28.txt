@@ -1,0 +1,10 @@
+JARDIN DU COEUR — VALIDATION HADITH CONSOLIDATION V28
+
+Lot: R-001, R-002
+References verified against Sunnah.com on 2026-09-12.
+- R-001: Sahih Muslim 130 — Abu Hurayra; good intention/action and bad intention/action.
+- R-002: Sahih Muslim 131a — Ibn Abbas; hadith qudsi on recording good and evil.
+Decision: keep as two distinct structures RC-047 and RC-048. Muslim 130 says an unrealized evil intention is not recorded against the person; Muslim 131a says it is recorded as one complete good deed. Therefore relatedRefs, not parallelRefs.
+Arithmetic correction: V27 metadata said 57/82 consumed, but direct distinct-R-ID recomputation from V27 canonicalStructuralEntries gives 54/82. V28 adds 2 => 56/82 consumed, 26 remaining.
+Counts: 48 canonical structures total (35 reconstruction + 13 historical).
+French published translation: PENDING. productionReady: false. index.html not modified.

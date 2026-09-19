@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V172",
+  "auditId": "second-pass-french-n079-v1",
+  "purpose": "Second passage ciblé des structures françaises en attente; promotion de N-079 après concordance HadeethEnc française directe.",
+  "promotions": [
+    {
+      "canonicalId": "N-079",
+      "primaryRef": "Sahih Muslim 2569",
+      "narrator": "Abu Huraira",
+      "publishedFrenchTranslation": "Allah, à Lui la Puissance et la Grandeur, dira le Jour de le Résurrection : \" Ô fils d’Adam ! J’étais malade et tu ne m’as pas rendu visite ! - La personne demandera : Ô mon Seigneur ! Comment aurais-je pu Te rendre visite alors que Tu es le Seigneur des mondes ? - Il répondra : N’as-tu pas su qu’untel parmi Mes serviteurs était malade et tu ne lui as pas rendu visite ? N’as-tu pas su que si tu lui avais rendu visite, tu M’aurais trouvé auprès de lui ? Ô fils d’Adam ! Je t’ai demandé de Me nourrir et tu ne l’as pas fait ! - La personne demandera : - Ô mon Seigneur ! Comment aurais-je pu Te nourrir alors que Tu es le Seigneur des mondes ? - Il répondra : N’as-tu pas su qu’untel parmi Mes serviteurs t’a demandé à manger et tu ne lui as pas donné ? N’as-tu pas su que si tu l’avais nourri, tu aurais trouvé cela auprès de Moi ? Ô fils d’Adam ! Je t’ai demandé à boire et tu ne M’as pas abreuvé ! - La personne demandera : Ô mon Seigneur ! Comment aurais-je pu T’abreuver alors que Tu es le Seigneur des mondes ? - Il répondra : Untel parmi Mes serviteurs t’a demandé à boire et tu ne l’as pas abreuvé ; si tu l’avais abreuvé, tu aurais trouvé cela auprès de Moi. \"",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5544",
+      "sourceHadithId": 5544,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 2569",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "counts": {
+    "promotedThisPass": 1,
+    "publishedFrenchCanonicalEntries": 65,
+    "pendingPublishedFrenchCanonicalEntries": 75
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false
+  }
+}

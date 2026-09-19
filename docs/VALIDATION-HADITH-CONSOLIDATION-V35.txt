@@ -1,0 +1,31 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V35
+
+Lot: licite/douteux — compréhension religieuse — facilité dans l’enseignement.
+
+R-020 — Sahih al-Bukhari 52
+- Référence vérifiée sur Sunnah.com.
+- Al-Nu‘man ibn Bashir: licite et illicite clairs; entre eux, affaires douteuses; image du pâturage réservé et mention du cœur.
+- Sahih Muslim 1599a transmet le même noyau détaillé; Muslim 1599d renvoie explicitement à la même transmission de fond.
+- Décision: RC-062; Muslim 1599a et 1599d routes parallèles +0.
+
+R-021 — Sahih al-Bukhari 71
+- Référence vérifiée sur Sunnah.com.
+- Mu‘awiya: compréhension de la religion lorsqu’Allah veut du bien; le Messager distribue et Allah donne.
+- Bukhari 3116 et 7312 transmettent le même noyau de Mu‘awiya avec formulation très proche.
+- Décision: RC-063; Bukhari 3116 et 7312 routes parallèles +0.
+
+R-022 — Sahih al-Bukhari 69
+- Référence vérifiée sur Sunnah.com.
+- Anas: faciliter, ne pas rendre difficile, annoncer de bonnes nouvelles et ne pas repousser.
+- Bukhari 6125 transmet le même noyau d’Anas via Shu‘ba et Abu al-Tayyah avec légère variation de formulation.
+- Décision: RC-064; Bukhari 6125 route parallèle +0.
+
+Aucune correction de numéro de référence dans ce lot.
+
+Comptage après V35:
+- R-ID absorbés: 75/82
+- R-ID restants: 7
+- structures canoniques confirmées: 64 = 51 reconstruction + 13 historiques
+- traduction française publiée: PENDING
+- productionReady: false
+- index.html: non modifié

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V175",
+  "auditId": "french-bulk-second-pass-v175",
+  "purpose": "Passage groupé sur les structures françaises encore en attente; promotions uniquement après concordance matn + rapporteur + collection/famille de référence et contrôle de la page française publiée.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "N-026",
+      "N-027",
+      "N-029",
+      "N-030",
+      "N-034",
+      "N-035",
+      "N-050",
+      "N-051",
+      "N-053",
+      "N-054",
+      "N-055",
+      "N-056",
+      "N-058",
+      "N-060",
+      "N-064",
+      "N-066",
+      "N-070",
+      "N-075",
+      "N-078",
+      "N-087"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "N-035",
+    "N-087"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "N-035",
+      "primaryRef": "Sahih al-Bukhari 6094",
+      "narrator": "Abdullah ibn Mas’ud",
+      "publishedFrenchTranslation": "Abdallah ibn Mas’ûd (qu’Allah l’agrée) relate que le Prophète (sur lui la paix et le salut) a dit : « Soyez véridiques, car la véracité mène à la piété et la piété mène au Paradis. L’homme ne cesse d’être véridique jusqu’à ce qu’il soit inscrit, auprès d’Allah, comme un grand véridique. Prenez garde au mensonge, car le mensonge mène au vice et le vice mène en Enfer. L’homme ne cesse de mentir jusqu’à ce qu’il soit inscrit, auprès d’Allah, comme un grand menteur. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5504",
+      "sourceHadithId": 5504,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 2607; Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-087",
+      "primaryRef": "Sahih al-Bukhari 5534",
+      "narrator": "Abu Musa",
+      "publishedFrenchTranslation": "Abû Mûsâ Al-Ash’arî (qu’Allah l’agrée) relate que le Prophète (sur lui la paix et le salut) a dit : « L'exemple du compagnon vertueux et du mauvais compagnon n'est autre que celui du vendeur de musc et du forgeron. Le vendeur de musc soit il t’en offrira, soit il t’en vendra, soit tu sentiras une odeur agréable émaner de lui. Quant au forgeron, soit il brûlera tes vêtements, soit tu sentiras une odeur désagréable émaner de lui. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3127",
+      "sourceHadithId": 3127,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 2628; Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCount": 18,
+  "countsAfter": {
+    "verified": 70,
+    "waiting": 70
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "explicitRevisionWarningIgnored": false,
+    "runtimeChanged": false
+  }
+}

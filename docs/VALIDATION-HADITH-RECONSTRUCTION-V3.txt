@@ -1,0 +1,20 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V3
+
+H-ID anciens réellement récupérés ...... 13/140
+H-ID anciens toujours non retrouvés ..... 127/140
+
+Candidats du registre de remplacement .. 28/127
+Nouveaux candidats V3 .................. 10
+Places brutes restantes ................ 99
+
+ATTENTION DÉDUPLICATION
+Certaines transmissions du registre de reconstruction sont parallèles.
+Le nombre de candidats n'est donc PAS encore un nombre canonique final.
+Familles nouvellement marquées : intention/hijra, aimer pour son frère,
+voisin/hospitalité/parole, oppression/fraternité.
+
+Ancien H-ID inventé ..................... 0
+countsAsEntry dans les 140 .............. 0
+productionReady ......................... false
+randomHome .............................. false
+provenance traduction française ......... PENDING

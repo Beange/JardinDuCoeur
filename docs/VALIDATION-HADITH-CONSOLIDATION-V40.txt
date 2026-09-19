@@ -1,0 +1,14 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V40
+Date: 2026-09-12
+
+Objet: clôture contrôlée de la phase de reconstruction.
+- R-077: REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED.
+- Bukhari 6014 vérifié: recommandation de Jibril concernant le voisin; incompatible avec le résumé hérité R-077.
+- Bukhari 7376 vérifié: miséricorde envers les gens; déjà affecté à R-045; aucune preuve d’identité avec R-077.
+- Aucun remappage conjectural.
+- Recomptage strict primary + parallels: 81/82.
+- Restant: R-077 uniquement.
+- Structures canoniques: 69 = 56 reconstruction + 13 historiques.
+- publishedFrenchTranslation: PENDING.
+- productionReady: false.
+- index.html: non modifié.

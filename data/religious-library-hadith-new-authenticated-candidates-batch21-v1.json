@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V128",
+  "targetRelease": "V129",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH21-V1",
+  "verificationDate": "2026-09-16",
+  "purpose": "Twenty-first externally verified candidate batch, promoted after full-canon structural and thematic audit in V129.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 132,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 8,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-078",
+      "primaryRef": "Sahih al-Bukhari 5678",
+      "inBookReference": "Book 76, Hadith 1",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Allah has not created a disease without also creating its treatment.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:5678",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V129",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-023"
+        ],
+        "relatedReferences": [
+          "Sahih al-Bukhari 5641, 5642"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both concern illness, but Bukhari 5678 affirms that every disease has a treatment, whereas RC-023 concerns trials, illness and expiation."
+      }
+    },
+    {
+      "id": "N-079",
+      "primaryRef": "Sahih Muslim 2569",
+      "inBookReference": "Book 45, Hadith 54",
+      "narrator": "Abu Huraira",
+      "themeVerified": "On the Day of Resurrection, neglecting to visit a sick servant or provide food or drink is confronted through the reward that would have been found with Allah.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2569",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V129",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "N-017"
+        ],
+        "relatedReferences": [
+          "Sahih Muslim 2568a"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both concern visiting the sick, but Muslim 2569 is a distinct hadith qudsi combining failure to visit the sick with failure to provide food and drink and the reward found with Allah."
+      }
+    },
+    {
+      "id": "N-080",
+      "primaryRef": "Sahih al-Bukhari 3244",
+      "inBookReference": "Book 59, Hadith 55",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Allah has prepared for His righteous servants in Paradise what no eye has seen, no ear has heard, and no human heart has conceived.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:3244",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V129",
+      "canonicalCountImpact": 1
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

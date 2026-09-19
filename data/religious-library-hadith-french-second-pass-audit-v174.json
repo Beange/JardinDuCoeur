@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V174",
+  "auditId": "JDC-HADITH-FRENCH-SECOND-PASS-AUDIT-V174",
+  "purpose": "Second passage ciblé sur les structures encore en attente; matérialisation d’une traduction française publiée après concordance matn + rapporteur + collection.",
+  "promoted": [
+    {
+      "canonicalId": "RC-012",
+      "primaryRef": "Sahih Muslim 2759a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4318",
+      "sourceHadithId": 4318,
+      "sourceReferenceDisplayed": "Sahîh Muslim - 2759",
+      "identityBasis": [
+        "matn arabe concordant",
+        "rapporteur Abû Mûsâ concordant",
+        "collection Muslim concordante",
+        "numéro de famille 2759 concordant; suffixe a non distingué par HadeethEnc"
+      ],
+      "explicitRevisionWarningObserved": false,
+      "decision": "PROMOTE"
+    }
+  ],
+  "countsAfter": {
+    "verified": 68,
+    "waiting": 72,
+    "target": 140
+  },
+  "notes": [
+    "Aucune traduction française synthétisée ou retraduite.",
+    "Le suffixe de sous-numérotation 2759a n’est pas affiché par HadeethEnc; identité établie sans ambiguïté par matn + rapporteur + collection + famille de référence."
+  ]
+}

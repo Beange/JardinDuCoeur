@@ -1,0 +1,181 @@
+JARDIN DU CŒUR — VALIDATION CONSOLIDÉE
+PASS  file:index.html — 706831 bytes
+PASS  file:manifest.webmanifest — 700 bytes
+PASS  file:sw.js — 937 bytes
+PASS  file:icons/icon-192.png — 1881 bytes
+PASS  file:icons/icon-512.png — 5493 bytes
+PASS  file:icons/maskable-512.png — 5493 bytes
+PASS  file:ETAT-DU-PROJET.md — 36507 bytes
+PASS  manifest:name — 'Jardin du Cœur'
+PASS  manifest:start_url — './'
+PASS  manifest-icon:icons/icon-192.png — icons/icon-192.png
+PASS  manifest-icon:icons/icon-512.png — icons/icon-512.png
+PASS  manifest-icon:icons/maskable-512.png — icons/maskable-512.png
+PASS  html:manifest-link
+PASS  html:service-worker-registration
+PASS  html:storage-key
+PASS  html:pwa-version
+PASS  sw:cache-version
+PASS  home-id:dailyHero
+PASS  home-id:dailyLandscape
+PASS  home-id:dailyQuoteCard
+PASS  home-id:dailyQuoteRef
+PASS  home-id:dailyQuoteText
+PASS  home-id:homeMuhasabahBtn
+PASS  home-id:intentionHelpBtn
+PASS  home-id:startDayBtn
+PASS  function:renderDuas
+PASS  function:renderCycle
+PASS  function:renderReflection
+PASS  function:renderProfileName
+PASS  function:exportData
+PASS  function:renderHomeDaily
+PASS  function:openDailyQuote
+PASS  function:dailyQuoteFor
+PASS  function:dailySceneFor
+PASS  religious-library:implemented-count — count=30 len=30
+PASS  religious-library:no-empty-ref
+PASS  religious-library:target-count
+PASS  religious-library:serialization-pending
+PASS  hadith-v45:canonical-source-present
+PASS  hadith-v45:gaps-present
+PASS  hadith-v45:ledger-present
+PASS  hadith-v45:canonical-69 — count=69
+PASS  hadith-v45:gaps-71 — count=71
+PASS  hadith-v45:ledger-140 — count=140
+PASS  hadith-v45:ledger-split — confirmed=69 gaps=71
+PASS  hadith-v45:gaps-no-religious-identity
+PASS  hadith-v45:r-members-81 — count=81
+PASS  hadith-v45:r077-not-absorbed
+PASS  corpus-v46:quran-source-present
+PASS  corpus-v46:quran-43 — count=43
+PASS  corpus-v46:ledger-slot-sequence
+PASS  corpus-v46:ledger-confirmed-pointers-exact
+PASS  corpus-v46:ledger-gap-pointers-exact
+PASS  corpus-v46:ledger-pointer-exclusivity
+PASS  corpus-v46:global-materialized-112 — quran=43 hadith=69
+PASS  corpus-v46:global-target-183 — target=183 calc=183
+PASS  corpus-v46:manifest-hadith-coverage — '69/140 structures canoniques confirmées; 71 non matérialisées'
+PASS  corpus-v46:manifest-quran-coverage — '43/43 dossiers constitués'
+PASS  corpus-v46:manifest-global-coverage — '112/183'
+PASS  coverage183-v55:file-present
+PASS  coverage183-v55:target — target=183 slots=183
+PASS  coverage183-v55:slot-sequence
+PASS  coverage183-v55:quran-count
+PASS  coverage183-v55:quran-pointers
+PASS  coverage183-v55:quran-exclusivity
+PASS  coverage183-v55:hadith-count
+PASS  coverage183-v55:hadith-ledger-mirror
+PASS  coverage183-v55:hadith-canonical-pointers
+PASS  coverage183-v55:hadith-gap-pointers
+PASS  coverage183-v55:hadith-pointer-exclusivity
+PASS  coverage183-v55:counts — {'quranDossiers': 43, 'hadithCoverageSlots': 140, 'hadithCanonicalStructures': 69, 'hadithAdministrativeGaps': 71, 'materializedReligiousStructures': 112, 'unmaterializedPositions': 71}
+PASS  coverage183-v55:policy — {'administrativeIndexOnly': True, 'full183ReligiousObjectSerialization': False, 'noInventedHistoricalMappings': True, 'noInventedGapIdentity': True, 'gapSlotsCarryNoReferenceNarratorOrMatn': True, 'productionReady': False}
+PASS  coverage183-v55:manifest-pointer — 'data/religious-library-corpus-coverage-ledger-v1.json'
+PASS  coverage183-v55:manifest-status — 'CURRENT_FOR_V55'
+PASS  integrity-v55:snapshot-present
+PASS  integrity-v55:snapshot-version — 'V55'
+PASS  integrity-v55:counts-core — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'globalCoverageSlots': 183}
+PASS  integrity-v55:counts-global — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'globalCoverageSlots': 183}
+PASS  integrity-v55:r-register — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'globalCoverageSlots': 183}
+PASS  integrity-v55:serialization-pending
+PASS  integrity-v55:production-false
+PASS  integrity-v55:runtime-flag
+PASS  integrity-v55:critical-file-count — count=15
+PASS  integrity-v55:critical-hashes-match
+PASS  integrity-v55:critical-sizes-match
+PASS  integrity-v55:manifest-pointer — 'data/religious-library-corpus-integrity-v1.json'
+PASS  integrity-v55:manifest-status — 'CURRENT_FOR_V55'
+PASS  provenance-v55:file-present
+PASS  provenance-v55:release — 'V55'
+PASS  provenance-v55:parent-release — 'V54'
+PASS  provenance-v55:parent-archive-name — 'Jardin-du-Coeur-PWA-hadith-consolidation-v54.zip'
+PASS  provenance-v55:parent-sha-format — 'a97d454e278f8526456ea4aa152533801fcfac25010e9e6a800d207bf7b938d3'
+PASS  provenance-v55:runtime-index-hash
+PASS  provenance-v55:runtime-history-hash
+PASS  provenance-v55:runtime-continuity — {'indexSha256': '177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241', 'historicalFinalSnapshotSha256': '177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241', 'indexEqualsHistoricalFinalSnapshot': True, 'runtimeModifiedInV55': False}
+PASS  provenance-v55:corpus-counts — {'integritySnapshot': 'data/religious-library-corpus-integrity-v1.json', 'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'globalCoverageLedger': 'data/religious-library-corpus-coverage-ledger-v1.json', 'globalCoverageSlots': 183, 'dataContract': 'data/religious-library-data-contract-v1.json', 'referentialIntegrity': 'data/religious-library-referential-integrity-v1.json'}
+PASS  provenance-v55:r-register — {'integritySnapshot': 'data/religious-library-corpus-integrity-v1.json', 'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'globalCoverageLedger': 'data/religious-library-corpus-coverage-ledger-v1.json', 'globalCoverageSlots': 183, 'dataContract': 'data/religious-library-data-contract-v1.json', 'referentialIntegrity': 'data/religious-library-referential-integrity-v1.json'}
+PASS  provenance-v55:safety-flags — {'full183ObjectSerialization': 'PENDING', 'productionReady': False, 'noInventedHistoricalMappings': True, 'noInventedGapIdentity': True}
+PASS  provenance-v55:manifest-pointer — ('data/religious-library-release-provenance-v1.json', 'CURRENT_FOR_V55')
+PASS  inventory-v55:file-present
+PASS  inventory-v55:release — 'V55'
+PASS  inventory-v55:sorted-unique — count=12
+PASS  inventory-v55:path-set-exact — ['data/religious-library-corpus-coverage-ledger-v1.json', 'data/religious-library-data-contract-v1.json', 'data/religious-library-hadith-canonical-consolidation-v44.json', 'data/religious-library-hadith-coverage-gaps-v1.json', 'data/religious-library-hadith-coverage-ledger-v1.json', 'data/religious-library-hadith-reconstruction-v11.json', 'data/religious-library-quran-canonical.json', 'data/religious-library-referential-integrity-v1.json', 'data/religious-library-target-manifest.json', 'historique/07-index-final-consolide.html', 'index.html', 'tools/validate_project.py']
+PASS  inventory-v55:hashes-match
+PASS  inventory-v55:sizes-match
+PASS  inventory-v55:manifest-pointer — 'data/religious-library-release-file-inventory-v1.json'
+PASS  inventory-v55:manifest-status — 'CURRENT_FOR_V55'
+PASS  inventory-v55:provenance-pointer — {'path': 'data/religious-library-release-file-inventory-v1.json', 'sha256': 'ee4bd3e0e1f1336d22654232cee3eaaa869275089d93627d45422cc3c9ab47a9', 'fileCount': 12}
+PASS  inventory-v55:provenance-hash — 'ee4bd3e0e1f1336d22654232cee3eaaa869275089d93627d45422cc3c9ab47a9'
+PASS  inventory-v55:provenance-count — 12
+PASS  build-v55:file-present
+PASS  build-v55:release — 'V55'
+PASS  build-v55:phase-count — count=14
+PASS  build-v55:phase-order — [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+PASS  build-v55:phase-ids — ['stable-inputs', 'data-contract', 'referential-integrity', 'global-coverage-ledger', 'target-manifest', 'validator', 'release-delta', 'inventory', 'provenance', 'release-coherence', 'integrity-snapshot', 'validation-report', 'package-hashes', 'zip']
+PASS  build-v55:inventory-nonrecursive — ['data/religious-library-corpus-integrity-v1.json', 'data/religious-library-release-coherence-v1.json', 'data/religious-library-release-delta-v1.json', 'data/religious-library-release-file-inventory-v1.json', 'data/religious-library-release-provenance-v1.json']
+PASS  build-v55:files-sha-self-excluded — True
+PASS  build-v55:zip-hash-external — True
+PASS  build-v55:runtime-policy — {'indexHtmlMustRemainByteIdenticalToParent': True, 'indexHtmlMustEqualHistoricalFinalSnapshot': True}
+PASS  build-v55:religious-safety-policy — {'noInventedHistoricalMappings': True, 'noInventedGapIdentity': True, 'full183ObjectSerialization': 'PENDING', 'productionReady': False}
+PASS  build-v55:manifest-pointer — 'data/religious-library-release-build-v1.json'
+PASS  build-v55:manifest-status — 'CURRENT_FOR_V55'
+PASS  delta-v55:file-present
+PASS  delta-v55:release — 'V55'
+PASS  delta-v55:parent-release — 'V54'
+PASS  delta-v55:parent-archive — 'Jardin-du-Coeur-PWA-hadith-consolidation-v54.zip'
+PASS  delta-v55:parent-sha — 'a97d454e278f8526456ea4aa152533801fcfac25010e9e6a800d207bf7b938d3'
+PASS  delta-v55:scope — {'policy': 'HASH_STABLE_INPUTS_ONLY', 'unchangedStableFileCount': 7, 'releaseMetadataExcluded': True}
+PASS  delta-v55:path-set — ['data/religious-library-quran-canonical.json', 'data/religious-library-hadith-canonical-consolidation-v44.json', 'data/religious-library-hadith-coverage-gaps-v1.json', 'data/religious-library-hadith-coverage-ledger-v1.json', 'data/religious-library-hadith-reconstruction-v11.json', 'historique/07-index-final-consolide.html', 'index.html']
+PASS  delta-v55:hashes-identical
+PASS  delta-v55:sizes-match
+PASS  delta-v55:statuses
+PASS  delta-v55:assertions — {'religiousCorpusChanged': False, 'runtimeChanged': False, 'indexHtmlByteIdenticalToParent': True, 'noInventedHistoricalMappings': True, 'noInventedGapIdentity': True}
+PASS  delta-v55:manifest-pointer — 'data/religious-library-release-delta-v1.json'
+PASS  delta-v55:manifest-status — 'CURRENT_FOR_V55'
+PASS  source-react:package
+PASS  source-react:main
+PASS  history:final-snapshot
+PASS  history:final-equals-root
+PASS  coherence-v55:file-present
+PASS  coherence-v55:release — 'V55'
+PASS  coherence-v55:parent-release — 'V54'
+PASS  coherence-v55:declarations — {'targetManifestStatus': 'CURRENT_FOR_V55', 'integritySnapshot': 'V55', 'provenanceRelease': 'V55', 'inventoryRelease': 'V55', 'buildRelease': 'V55', 'deltaRelease': 'V55', 'deltaParentRelease': 'V54', 'globalCoverageLedgerStatus': 'CURRENT_FOR_V55', 'dataContractStatus': 'CURRENT_FOR_V55', 'referentialIntegrityStatus': 'CURRENT_FOR_V55'}
+PASS  coherence-v55:corpus-invariants — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'globalCoverageSlots': 183}
+PASS  coherence-v55:r-invariants — {'quranDossiers': 43, 'hadithCanonicalStructures': 69, 'hadithCoverageGaps': 71, 'hadithCoverageSlots': 140, 'materializedStructuresTotal': 112, 'canonicalTargetTotal': 183, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'globalCoverageSlots': 183}
+PASS  coherence-v55:file-pointers — {'targetManifest': 'data/religious-library-target-manifest.json', 'integritySnapshot': 'data/religious-library-corpus-integrity-v1.json', 'provenance': 'data/religious-library-release-provenance-v1.json', 'inventory': 'data/religious-library-release-file-inventory-v1.json', 'build': 'data/religious-library-release-build-v1.json', 'delta': 'data/religious-library-release-delta-v1.json', 'globalCoverageLedger': 'data/religious-library-corpus-coverage-ledger-v1.json', 'dataContract': 'data/religious-library-data-contract-v1.json', 'referentialIntegrity': 'data/religious-library-referential-integrity-v1.json'}
+PASS  coherence-v55:referenced-files-present
+PASS  coherence-v55:actual-release-labels — ('V55', 'V55', 'V55', 'V55', 'V55')
+PASS  coherence-v55:actual-parent-labels — ('V54', 'V54')
+PASS  coherence-v55:manifest-statuses — ['CURRENT_FOR_V55', 'CURRENT_FOR_V55', 'CURRENT_FOR_V55', 'CURRENT_FOR_V55', 'CURRENT_FOR_V55', 'CURRENT_FOR_V55', 'CURRENT_FOR_V55', 'CURRENT_FOR_V55', 'CURRENT_FOR_V55']
+PASS  coherence-v55:manifest-coherence-pointer — 'data/religious-library-release-coherence-v1.json'
+PASS  coherence-v55:safety — {'religiousCorpusChanged': False, 'runtimeChanged': False, 'noInventedHistoricalMappings': True, 'noInventedGapIdentity': True, 'productionReady': False}
+PASS  contract-v55:file-present
+PASS  contract-v55:release — 'V55'
+PASS  contract-v55:dataset-count — count=9
+PASS  contract-v55:dataset-ids-unique
+PASS  contract-v55:required-shapes
+PASS  contract-v55:collection-counts
+PASS  contract-v55:id-patterns
+PASS  contract-v55:declared-sequences — {'quranCanonical': 'Q-001..Q-043', 'hadithCanonical': 'RC-001..RC-069', 'hadithGaps': 'GAP-001..GAP-071', 'hadithCoverageLedger': 'HADITH-COVERAGE-001..HADITH-COVERAGE-140', 'globalCoverageLedger': 'CORPUS-COVERAGE-001..CORPUS-COVERAGE-183'}
+PASS  contract-v55:accounting-relations — {'canonicalTargetTotal': 183, 'quranDossiers': 43, 'hadithTargetSlots': 140, 'hadithCanonicalStructures': 69, 'hadithAdministrativeGaps': 71, 'materializedReligiousStructures': 112, 'absorbedReconstructionIds': 81, 'quarantinedReconstructionIds': ['R-077'], 'equations': ['43 + 140 = 183', '69 + 71 = 140', '43 + 69 = 112']}
+PASS  contract-v55:identity-safety — {'administrativeContractOnly': True, 'noInventedHistoricalMappings': True, 'noInventedGapIdentity': True, 'gapSlotsMayNotAcquireReferenceNarratorOrMatn': True, 'full183ObjectSerialization': 'PENDING', 'productionReady': False}
+PASS  contract-v55:manifest-pointer — 'data/religious-library-data-contract-v1.json'
+PASS  contract-v55:manifest-status — 'CURRENT_FOR_V55'
+PASS  referential-v55:file-present
+PASS  referential-v55:release — 'V55'
+PASS  referential-v55:node-counts — {'quran': 43, 'hadithCanonical': 69, 'hadithGaps': 71, 'hadithCoverageSlots': 140, 'globalCoverageSlots': 183, 'reconstructionCandidates': 82}
+PASS  referential-v55:node-sets-exact
+PASS  referential-v55:relation-counts — (43, 140, 69, 71, 81)
+PASS  referential-v55:all-pointers-resolve
+PASS  referential-v55:r-membership — (81, ['R-077'])
+PASS  referential-v55:r-partition
+PASS  referential-v55:safety — {'allPointersResolve': True, 'coverageSlotsUnique': True, 'canonicalAndGapPointersExclusive': True, 'noInventedHistoricalMappings': True, 'noInventedGapIdentity': True, 'full183ObjectSerialization': 'PENDING', 'productionReady': False}
+PASS  referential-v55:manifest-pointer — 'data/religious-library-referential-integrity-v1.json'
+PASS  referential-v55:manifest-status — 'CURRENT_FOR_V55'
+
+Checks: 175 | PASS: 175 | FAIL: 0
+
+STATUS: PASS (structure du paquet consolidé)
+NOTE: ce PASS ne valide PAS un corpus religieux complet de 183 objets; sa matérialisation reste PENDING.

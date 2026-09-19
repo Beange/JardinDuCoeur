@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V157",
+  "registerId": "JDC-HADITH-FRENCH-BULK-AUDIT-SUPPLEMENT-N055-N071-V1",
+  "purpose": "Troisième lot groupé du supplément canonique: structures N-055 à N-071 auditées selon la politique française multi-source renforcée; promotion uniquement sur traduction française publiée, identité canonique établie et absence d’avertissement explicite de révision.",
+  "auditDate": "2026-09-16",
+  "scope": {
+    "from": "N-055",
+    "to": "N-071",
+    "count": 17,
+    "canonicalIds": [
+      "N-055",
+      "N-056",
+      "N-057",
+      "N-058",
+      "N-059",
+      "N-060",
+      "N-061",
+      "N-062",
+      "N-063",
+      "N-064",
+      "N-065",
+      "N-066",
+      "N-067",
+      "N-068",
+      "N-069",
+      "N-070",
+      "N-071"
+    ]
+  },
+  "newlyVerified": [
+    {
+      "canonicalId": "N-057",
+      "primaryRef": "Sahih Muslim 49a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/65001",
+      "identityEvidence": "Référence Muslim 49 affichée; matn arabe et Abu Sa’id concordent avec la variante 49a.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-061",
+      "primaryRef": "Sahih al-Bukhari 6502",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/6337",
+      "identityEvidence": "Référence Bukhari 6502 affichée explicitement; matn et Abu Hurayrah concordent.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-067",
+      "primaryRef": "Sahih Muslim 1893a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5354",
+      "identityEvidence": "Référence Muslim 1893 affichée; matn et Abu Mas’ud al-Ansari concordent avec 1893a.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-068",
+      "primaryRef": "Sahih al-Bukhari 3461",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3686",
+      "identityEvidence": "Référence Bukhari 3461 affichée explicitement; matn et Abdullah ibn Amr concordent.",
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "explicitRevisionWarnings": [
+    {
+      "canonicalId": "N-060",
+      "primaryRef": "Sahih Muslim 2577a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4810",
+      "reason": "La page française HadeethEnc affiche explicitement que la traduction a besoin de plus de révision et de vérification; maintien en attente."
+    }
+  ],
+  "stillEnAttente": [
+    "N-055",
+    "N-056",
+    "N-058",
+    "N-059",
+    "N-060",
+    "N-062",
+    "N-063",
+    "N-064",
+    "N-065",
+    "N-066",
+    "N-069",
+    "N-070",
+    "N-071"
+  ],
+  "policy": {
+    "noSyntheticTranslation": true,
+    "verbatimPublishedFrenchRequired": true,
+    "statusChangesRequireDocumentedEvidence": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V192",
+  "auditId": "HADITH_FRENCH_MULTISOURCE_CONTINUATION_V192",
+  "auditDate": "2026-09-17",
+  "scope": {"reviewedCanonicalIds": ["N-054", "N-055"], "reviewedCount": 2},
+  "promotedCanonicalIds": [],
+  "heldCanonicalIds": ["N-054", "N-055"],
+  "findings": [
+    {
+      "canonicalId": "N-054",
+      "primaryRef": "Sahih Muslim 2722",
+      "sourceChecked": "HadeethEnc French historical PDF, hadith 1042 / current HadeethEnc identity 5878",
+      "decision": "HOLD",
+      "reason": "A published French HadeethEnc text is recoverable, but the historical French/Arabic presentation located omits the cowardice clause that is present in the current canonical Muslim 2722 wording. Exact full-matn equivalence is therefore not established for promotion.",
+      "sourceUrl": "https://hadeethenc.com/downloads/pdf/Hadeethenc_fr/Hadeethenc_fr_part4.pdf"
+    },
+    {
+      "canonicalId": "N-055",
+      "primaryRef": "Sahih Muslim 2725a",
+      "sourceChecked": "HadeethEnc French 5915",
+      "decision": "HOLD",
+      "reason": "The French hadith text displayed gives the concise invocation for guidance and rectitude, while the canonical structure explicitly includes the road/arrow illustration contained in the Arabic matn. The displayed French translation does not establish full coverage of that canonical matn.",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5915?note=1"
+    }
+  ],
+  "countsAfter": {"canonicalHadithStructures": 140, "publishedFrenchCanonicalEntries": 81, "pendingPublishedFrenchCanonicalEntries": 59},
+  "assertions": {"translationSynthesized": false, "partialTranslationPromoted": false, "canonicalReligiousIdentityChanged": false, "runtimeChanged": false, "runtimeIntegrationAuthorized": false}
+}

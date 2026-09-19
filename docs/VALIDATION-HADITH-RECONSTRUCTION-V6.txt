@@ -1,0 +1,22 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V6
+
+H-ID historiques récupérés .............. 13/140
+H-ID historiques non retrouvés ......... 127/140
+
+Candidats reconstruction bruts ......... 51/127
+Nouveaux V6 ............................. 7
+Places brutes restantes ................ 76
+
+Familles ajoutées :
+RF-15 miséricorde générale
+RF-16 cœurs / actes / apparence
+RF-17 ṣadaqah / bonnes actions
+
+Aucun ancien H-ID inventé ............... PASS
+countsAsEntry=false ..................... PASS
+productionReady=false ................... PASS
+randomHome=false ........................ PASS
+provenance française .................... PENDING
+
+Le compteur brut n'est pas canonique : les transmissions parallèles
+et recouvrements devront être consolidés avant le comptage final.

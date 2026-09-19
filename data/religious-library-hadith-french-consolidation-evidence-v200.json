@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V200",
+  "registerId": "hadith-french-consolidation-evidence-v200",
+  "purpose": "Conserver les preuves trouvées pour les hadiths non finalisés sans supprimer le hadith ni promouvoir une source hors politique.",
+  "entries": [
+    {
+      "canonicalId": "RC-019",
+      "primaryRef": "Sunan Abi Dawud 4811",
+      "status": "SOURCE_FOUND_NOT_AUTHORIZED_FOR_FINAL_PROMOTION",
+      "canonicalIdentityVerified": true,
+      "frenchSourceFound": true,
+      "fullMatnMatch": true,
+      "sources": [
+        {
+          "publisher": "IslamReligion.fr",
+          "url": "https://www.islamreligion.fr/hadith-prophete-islam",
+          "displayedReference": "Sunan Abu Dawud, n°4811 — Jami at-Tirmidhi, n°1954",
+          "role": "EVIDENCE_ONLY_NON_AUTHORIZED_CHANNEL"
+        },
+        {
+          "publisher": "Fawaz Ahmed multilingual hadith dataset",
+          "url": "https://fawazahmed0.github.io/hadiths/books/abudawud/4811",
+          "displayedReference": "Hadith Number 4811; Book 43 Hadith 39",
+          "role": "EVIDENCE_ONLY_NON_AUTHORIZED_CHANNEL"
+        }
+      ],
+      "decision": "PRESERVE_AND_HOLD",
+      "reason": "La traduction française exacte est trouvée, mais ces canaux ne figurent pas parmi les sources autorisées de la politique MULTISOURCE_VERIFIED_FRENCH_V2."
+    },
+    {
+      "canonicalId": "RC-020",
+      "primaryRef": "Sahih Muslim 1055",
+      "status": "SOURCE_FOUND_NOT_AUTHORIZED_FOR_FINAL_PROMOTION",
+      "canonicalIdentityVerified": true,
+      "frenchSourceFound": true,
+      "fullMatnMatch": true,
+      "canonicalSource": "https://sunnah.com/muslim/12/164",
+      "sources": [
+        {
+          "publisher": "Fawaz Ahmed multilingual hadith dataset",
+          "url": "https://fawazahmed0.github.io/hadiths/books/muslim/2427",
+          "displayedReference": "Arabic Number 1055; Book 12 Hadith 164",
+          "role": "EVIDENCE_ONLY_NON_AUTHORIZED_CHANNEL"
+        }
+      ],
+      "decision": "PRESERVE_AND_HOLD",
+      "reason": "Le français correspond au matn et à Arabic Number 1055, mais la source n’est pas un canal autorisé pour promotion finale."
+    },
+    {
+      "canonicalId": "N-030",
+      "primaryRef": "Sahih Muslim 2707",
+      "status": "CANONICAL_REFERENCE_CORRECTED_FRENCH_STILL_UNFINALIZED",
+      "canonicalIdentityVerified": true,
+      "frenchSourceFound": false,
+      "decision": "PRESERVE_AND_HOLD",
+      "correction": {
+        "from": "Sahih Muslim 2702 / Book 48, Hadith 49",
+        "to": "Sahih Muslim 2707 / Book 48, Hadith 71",
+        "canonicalSource": "https://sunnah.com/muslim:2707"
+      }
+    }
+  ],
+  "counts": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 90,
+    "preservedFrenchToConsolidate": 50,
+    "evidenceEntries": 3,
+    "newFinalPromotions": 0,
+    "canonicalReferenceCorrections": 1
+  },
+  "assertions": {
+    "all140CanonicalIdsPreserved": true,
+    "unfinalizedHadithDeleted": false,
+    "unauthorizedFrenchSourcePromoted": false,
+    "translationSynthesized": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

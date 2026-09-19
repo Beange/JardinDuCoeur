@@ -1,0 +1,19 @@
+Jardin du Cœur — validation ciblée de la release V116
+
+Résultat : PASS
+Contrôles : 56
+Réussites : 56
+Échecs : 0
+
+Points contrôlés :
+- lot non canonique N-060, N-061 et N-062 ;
+- références officielles vérifiées et disjointes des références canoniques courantes ;
+- compteurs inchangés : 114/140 hadiths et 157/183 structures religieuses ;
+- aucun H-ID historique attribué ;
+- traduction française publiée absente et productionReady=false ;
+- R-077 toujours quarantiné ;
+- index.html inchangé ;
+- manifeste V116 cohérent et tous les fichiers JSON analysables.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 56 | PASS: 56 | FAIL: 0

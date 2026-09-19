@@ -1,0 +1,37 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V25
+
+BASE
+V24 ............................................ REPRISE SANS MODIFIER index.html
+R-ID non absorbés au départ .................... 35 / 82
+
+LOT AUDITÉ : LIENS FAMILIAUX / MISÉRICORDE ENVERS LES ANIMAUX
+RC-039 : R-080 Bukhari 5991 .................... CONFIRMÉ — DOSSIER DISTINCT LIÉ
+RC-040 : R-081 Muslim 2558a .................... CONFIRMÉ — DOSSIER DISTINCT LIÉ
+RC-041 : R-082 Bukhari 6009 .................... CONFIRMÉ — DOSSIER AUTONOME
+
+JUSTIFICATION SOURCE PAR SOURCE
+- Bukhari 5991 : Abdullah b. Amr; le maintien réel des liens inclut le fait de les maintenir quand les proches les rompent.
+  https://sunnah.com/bukhari:5991
+- Muslim 2558a : Abu Hurayra; récit d’un homme maintenant les liens malgré rupture, mauvais traitement et dureté de ses proches.
+  https://sunnah.com/muslim:2558a
+- Bukhari 6009 : Abu Hurayra; homme donnant à boire à un chien assoiffé; bien envers les êtres vivants.
+  https://sunnah.com/bukhari:6009
+
+POLITIQUE DE CONSOLIDATION
+- R-080 et R-081 restent deux dossiers distincts : thème commun mais narrateurs/scènes/formulations différents.
+- R-082 reste autonome.
+- Les corrections V11 de R-080 et R-082 sont confirmées; aucune nouvelle correction n’est nécessaire.
+
+BILAN
+Structures canoniques confirmées ............... 41
+- historiques récupérées ....................... 13
+- reconstruction ............................... 28
+R-ID absorbés .................................. 50 / 82
+R-ID restant à consolider ...................... 32
+H-ID historiques inventés ...................... 0
+Traduction française publiée ................... PENDING
+productionReady ................................. false
+Migration index.html ........................... NON
+
+NOTE
+R-077 reste volontairement non consolidé et sans remapping inventé.

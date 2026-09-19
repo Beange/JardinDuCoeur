@@ -1,0 +1,31 @@
+JARDIN DU CŒUR — AUDIT DE PROVENANCE HADITH V71
+
+OBJECTIF
+Chercher dans l'historique embarqué du projet des références de hadith qui auraient échappé aux registres actuels et pourraient constituer une nouvelle piste d'identité. Cet audit ne crée aucun H-ID, R-ID, RC-ID ou lien GAP.
+
+PÉRIMÈTRE
+- 140 fichiers textuels/JSON/HTML/JS historiques ou éditoriaux inspectés.
+- Références extraites par collection + numéro pour Bukhari, Muslim, Tirmidhi, Abu Dawud et Ibn Majah.
+- Métadonnées de release exclues pour éviter de compter les simples répétitions administratives.
+- Base actuelle de comparaison : consolidation V44, reconstruction V11, hadith recovered et unmapped candidates.
+
+RÉSULTAT
+- Références distinctes présentes dans les matériaux historiques inspectés : 145.
+- Références déjà représentées dans les registres hadith actuels : 144.
+- Références historiques non représentées dans ces registres : 1.
+- Seule référence restante : Bukhari 6499.
+- Bukhari 6499 n'est PAS une nouvelle piste : il s'agit de l'ancienne référence erronée de R-065, déjà corrigée vers Bukhari 6491 dans l'historique de consolidation.
+- Nouvelles références religieuses actionnables découvertes : 0.
+- Nouveaux mappings H-ID récupérés : 0.
+- GAP assignés : 0.
+
+CONCLUSION
+L'archive locale ne contient pas de réserve cachée de références hadith non consommées permettant de matérialiser les 71 GAP. Toute poursuite de récupération doit venir d'une nouvelle preuve historique/provenancée extérieure au corpus embarqué (ancien export, sauvegarde, document source, historique de conversation ou fichier original), et non d'une recherche thématique libre de hadiths.
+
+GARDE-FOUS
+- Les 127 anciens mappings H-ID non récupérés restent non inventés.
+- R-077 reste quarantiné.
+- 69/140 structures hadith canoniques restent matérialisées; 71 GAP restent inconnus.
+- full183ObjectSerialization = PENDING.
+- productionReady = false.
+- index.html n'est pas modifié.

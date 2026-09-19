@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH4-V1",
+  "purpose": "Fourth authenticated batch, source-reverified and adjudicated for promotion in V95.",
+  "selectionPolicy": {
+    "preferredCollections": [
+      "Sahih al-Bukhari",
+      "Sahih Muslim"
+    ],
+    "antiDuplicationAgainstCurrent88ExactRefs": true,
+    "thematicPromotionDeferred": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 4,
+    "existingCanonicalStructures": 88,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 52,
+    "promotedCanonicalStructures": 3,
+    "rejectedAsDuplicateExistingCanon": 1,
+    "remainingUnfilledTargetAfterPromotion": 49
+  },
+  "candidates": [
+    {
+      "id": "N-023",
+      "primaryRef": "Sahih al-Bukhari 6012",
+      "inBookReference": "Book 78, Hadith 43",
+      "theme": "plantation utile — ce qu’un humain ou un animal en mange est compté comme aumône",
+      "narrator": "Anas bin Malik",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6012",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V95",
+      "auditReason": "Distinct concrete charity-through-planting structure; no current canonical structure represents benefit from planting consumed by people/animals.",
+      "sourceVerificationRelease": "V95"
+    },
+    {
+      "id": "N-024",
+      "primaryRef": "Sahih al-Bukhari 6016",
+      "inBookReference": "Book 78, Hadith 47",
+      "theme": "sécurité du voisin — grave défaut de foi lorsque le voisin ne se sent pas à l’abri de son mal",
+      "narrator": "Abu Shuraih",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6016",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "auditReason": "Same substantive neighbor-safety/faith family already represented by RC-007 and RC-037.",
+      "sourceVerificationRelease": "V95",
+      "duplicateOf": "RC-007/RC-037"
+    },
+    {
+      "id": "N-025",
+      "primaryRef": "Sahih Muslim 2695",
+      "inBookReference": "Book 48, Hadith 42",
+      "theme": "dhikr — subḥān Allāh, al-ḥamdu lillāh, lā ilāha illa Allāh et Allāhu akbar, plus aimés que ce sur quoi le soleil se lève",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2695",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V95",
+      "auditReason": "Distinct four-formula dhikr structure; current dhikr structures use different formulas/combinations.",
+      "sourceVerificationRelease": "V95"
+    },
+    {
+      "id": "N-026",
+      "primaryRef": "Sahih Muslim 2697a",
+      "inBookReference": "Book 48, Hadith 44",
+      "theme": "invocation enseignée — pardon, miséricorde, guidée et subsistance",
+      "narrator": "Abu Malik al-Ashja'i, from his father",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2697a",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V95",
+      "auditReason": "Distinct concise supplication for forgiveness, mercy, guidance and provision; current canonical supplications have different occasions/content.",
+      "sourceVerificationRelease": "V95"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  },
+  "auditSummary": {
+    "promoted": [
+      "N-023",
+      "N-025",
+      "N-026"
+    ],
+    "rejectedDuplicates": [
+      "N-024"
+    ],
+    "historicalRecoveryClaimed": false
+  }
+}

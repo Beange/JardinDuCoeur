@@ -1,0 +1,13 @@
+Jardin du Cœur — validation ciblée de la release V140
+
+Résultat : PASS
+Contrôles : 186
+Réussites : 186
+Échecs : 0
+
+L’endpoint officiel de contrôle de version HadeethEnc atteste que la version française courante est v1.17.0. RC-002 correspond exactement à Sahih al-Bukhari 6114, est classé authentique, ne porte aucun avertissement de révision observé et peut être enregistré avec l’éditeur, la source et la version exigés.
+
+Bilan : 1/140 notice possède désormais une traduction française publiée avec provenance canonique; 139/140 restent en attente. RC-003 et RC-005 restent bloquées par leur avertissement de révision; RC-001 et RC-004 restent sans source exacte retenue. Aucun texte n’est traduit ni modifié; aucune identité religieuse ne change; index.html reste inchangé et l’intégration runtime n’est pas autorisée.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 186 | PASS: 186 | FAIL: 0

@@ -1,0 +1,667 @@
+{
+  "registerId": "religious-library-hadith-coverage-gaps-v1",
+  "project": "Jardin du Cœur",
+  "purpose": "Registre administratif des structures hadith manquantes vers la cible 140. Les GAP-ID ne sont ni H-ID, ni R-ID, ni identités religieuses.",
+  "targetHadithStructures": 140,
+  "confirmedHadithStructures": 102,
+  "unmaterializedStructureSlots": 38,
+  "identityPolicy": {
+    "gapIdIsAdministrativeOnly": true,
+    "mayInferHistoricalHId": false,
+    "mayInferHadithReference": false,
+    "mayInferNarratorOrMatn": false,
+    "promotionRequiresRecoveredOrIndependentlyVerifiedSourceEvidence": true,
+    "historicalRecoveryNotImpliedByGapClosure": true
+  },
+  "gaps": [
+    {
+      "gapId": "GAP-001",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-001"
+    },
+    {
+      "gapId": "GAP-002",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-002"
+    },
+    {
+      "gapId": "GAP-003",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-003"
+    },
+    {
+      "gapId": "GAP-004",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-004"
+    },
+    {
+      "gapId": "GAP-005",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-005"
+    },
+    {
+      "gapId": "GAP-006",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-006"
+    },
+    {
+      "gapId": "GAP-007",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-007"
+    },
+    {
+      "gapId": "GAP-008",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-008"
+    },
+    {
+      "gapId": "GAP-009",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-009"
+    },
+    {
+      "gapId": "GAP-010",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-011"
+    },
+    {
+      "gapId": "GAP-011",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-013"
+    },
+    {
+      "gapId": "GAP-012",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-015"
+    },
+    {
+      "gapId": "GAP-013",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-016"
+    },
+    {
+      "gapId": "GAP-014",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-017"
+    },
+    {
+      "gapId": "GAP-015",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-018"
+    },
+    {
+      "gapId": "GAP-016",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-019"
+    },
+    {
+      "gapId": "GAP-017",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-020"
+    },
+    {
+      "gapId": "GAP-018",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-021"
+    },
+    {
+      "gapId": "GAP-019",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-022"
+    },
+    {
+      "gapId": "GAP-020",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-023"
+    },
+    {
+      "gapId": "GAP-021",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-025"
+    },
+    {
+      "gapId": "GAP-022",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-026"
+    },
+    {
+      "gapId": "GAP-023",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-027"
+    },
+    {
+      "gapId": "GAP-024",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-029"
+    },
+    {
+      "gapId": "GAP-025",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-030"
+    },
+    {
+      "gapId": "GAP-026",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-033"
+    },
+    {
+      "gapId": "GAP-027",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-034"
+    },
+    {
+      "gapId": "GAP-028",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-035"
+    },
+    {
+      "gapId": "GAP-029",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-036"
+    },
+    {
+      "gapId": "GAP-030",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-037"
+    },
+    {
+      "gapId": "GAP-031",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-038"
+    },
+    {
+      "gapId": "GAP-032",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-039"
+    },
+    {
+      "gapId": "GAP-033",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-040"
+    },
+    {
+      "gapId": "GAP-034",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-048"
+    },
+    {
+      "gapId": "GAP-035",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-049"
+    },
+    {
+      "gapId": "GAP-036",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-050"
+    },
+    {
+      "gapId": "GAP-037",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-051"
+    },
+    {
+      "gapId": "GAP-038",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-052"
+    },
+    {
+      "gapId": "GAP-039",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-053"
+    },
+    {
+      "gapId": "GAP-040",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-054"
+    },
+    {
+      "gapId": "GAP-041",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-055"
+    },
+    {
+      "gapId": "GAP-042",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-056"
+    },
+    {
+      "gapId": "GAP-043",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-057"
+    },
+    {
+      "gapId": "GAP-044",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-058"
+    },
+    {
+      "gapId": "GAP-045",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-059"
+    },
+    {
+      "gapId": "GAP-046",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-060"
+    },
+    {
+      "gapId": "GAP-047",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-061"
+    },
+    {
+      "gapId": "GAP-048",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-062"
+    },
+    {
+      "gapId": "GAP-049",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-063"
+    },
+    {
+      "gapId": "GAP-050",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-064"
+    },
+    {
+      "gapId": "GAP-051",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-065"
+    },
+    {
+      "gapId": "GAP-052",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-066"
+    },
+    {
+      "gapId": "GAP-053",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-067"
+    },
+    {
+      "gapId": "GAP-054",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-068"
+    },
+    {
+      "gapId": "GAP-055",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-069"
+    },
+    {
+      "gapId": "GAP-056",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-070"
+    },
+    {
+      "gapId": "GAP-057",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-071"
+    },
+    {
+      "gapId": "GAP-058",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-075"
+    },
+    {
+      "gapId": "GAP-059",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-076"
+    },
+    {
+      "gapId": "GAP-060",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-077"
+    },
+    {
+      "gapId": "GAP-061",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-078"
+    },
+    {
+      "gapId": "GAP-062",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-079"
+    },
+    {
+      "gapId": "GAP-063",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-080"
+    },
+    {
+      "gapId": "GAP-064",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-081"
+    },
+    {
+      "gapId": "GAP-065",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-082"
+    },
+    {
+      "gapId": "GAP-066",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-083"
+    },
+    {
+      "gapId": "GAP-067",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-084"
+    },
+    {
+      "gapId": "GAP-068",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-085"
+    },
+    {
+      "gapId": "GAP-069",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-086"
+    },
+    {
+      "gapId": "GAP-070",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-087"
+    },
+    {
+      "gapId": "GAP-071",
+      "status": "FILLED_BY_NEW_AUTHENTICATED_STRUCTURE_NOT_HISTORICAL_RECOVERY",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "note": "Position administrative remplie par une nouvelle structure authentifiée; aucune identité H-ID historique n'est revendiquée.",
+      "newCanonicalId": "N-088"
+    }
+  ],
+  "quarantinedReconstructionCandidates": [
+    {
+      "rId": "R-077",
+      "status": "REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED",
+      "countsTowardConfirmedStructures": false,
+      "note": "Candidat récupéré distinct du registre GAP; aucune référence de remplacement assignée."
+    }
+  ],
+  "productionReady": false,
+  "filledAdministrativeSlots": 33
+}

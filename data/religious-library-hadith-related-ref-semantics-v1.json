@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V84",
+  "purpose": "Typer les 30 relatedRefs existants sans modifier leur contenu ni créer d'identité; rendre explicite leur impact canonique +0.",
+  "source": "data/religious-library-hadith-canonical-consolidation-v44.json",
+  "summary": {
+    "canonicalStructures": 69,
+    "structuresWithRelatedRefs": 25,
+    "relatedRefCount": 30,
+    "canonicalStructureRelations": 18,
+    "rawReferenceRelations": 12,
+    "unresolvedCanonicalTargets": 0,
+    "canonicalCountImpact": 0
+  },
+  "relations": [
+    {
+      "sourceCanonicalId": "RC-014",
+      "rawRelatedRef": "Sahih al-Bukhari 2087",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih al-Bukhari 2087",
+      "activeCanonicalOwners": [],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-014",
+      "rawRelatedRef": "Sahih al-Bukhari 2088",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih al-Bukhari 2088",
+      "activeCanonicalOwners": [],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-016",
+      "rawRelatedRef": "Sahih Muslim 2748b",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih Muslim 2748b",
+      "activeCanonicalOwners": [],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-033",
+      "rawRelatedRef": "Sahih Muslim 2593",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih Muslim 2593",
+      "activeCanonicalOwners": [
+        "RC-035"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-034",
+      "rawRelatedRef": "Sahih Muslim 2593",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih Muslim 2593",
+      "activeCanonicalOwners": [
+        "RC-035"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-035",
+      "rawRelatedRef": "Sahih al-Bukhari 6024",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih al-Bukhari 6024",
+      "activeCanonicalOwners": [
+        "RC-033"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-035",
+      "rawRelatedRef": "Sahih Muslim 2594a",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih Muslim 2594a",
+      "activeCanonicalOwners": [
+        "RC-034"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-037",
+      "rawRelatedRef": "Sahih al-Bukhari 6138",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih al-Bukhari 6138",
+      "activeCanonicalOwners": [
+        "RC-038"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-038",
+      "rawRelatedRef": "Sahih al-Bukhari 6136",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih al-Bukhari 6136",
+      "activeCanonicalOwners": [
+        "RC-037"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-038",
+      "rawRelatedRef": "Sahih Muslim 47b",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih Muslim 47b",
+      "activeCanonicalOwners": [
+        "RC-037"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-039",
+      "rawRelatedRef": "Sahih Muslim 2558a",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih Muslim 2558a",
+      "activeCanonicalOwners": [
+        "RC-040"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-040",
+      "rawRelatedRef": "Sahih al-Bukhari 5991",
+      "relationType": "RAW_REFERENCE_RELATION",
+      "targetCanonicalId": null,
+      "targetResolves": null,
+      "referenceOrDescription": "Sahih al-Bukhari 5991",
+      "activeCanonicalOwners": [
+        "RC-039"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-047",
+      "rawRelatedRef": "RC-048 / R-002 / Sahih Muslim 131a",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-048",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih Muslim 131a",
+      "activeCanonicalOwners": [
+        "RC-048"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-048",
+      "rawRelatedRef": "RC-047 / R-001 / Sahih Muslim 130",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-047",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih Muslim 130",
+      "activeCanonicalOwners": [
+        "RC-047"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-050",
+      "rawRelatedRef": "RC-049 / R-069 / Sahih al-Bukhari 6405",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-049",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih al-Bukhari 6405",
+      "activeCanonicalOwners": [
+        "RC-049"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-050",
+      "rawRelatedRef": "RC-049 / R-070 / Sahih Muslim 2691",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-049",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih Muslim 2691",
+      "activeCanonicalOwners": [
+        "RC-049"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-051",
+      "rawRelatedRef": "RC-035 / R-078 / Sahih Muslim 2593",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-035",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih Muslim 2593",
+      "activeCanonicalOwners": [
+        "RC-035"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-051",
+      "rawRelatedRef": "RC-033 / R-043 / Sunan Ibn Majah 3689",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-033",
+      "targetResolves": true,
+      "referenceOrDescription": "Sunan Ibn Majah 3689",
+      "activeCanonicalOwners": [
+        "RC-033"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-052",
+      "rawRelatedRef": "RC-046 / bonnes actions quotidiennes et retrait d’un obstacle",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-046",
+      "targetResolves": true,
+      "referenceOrDescription": "bonnes actions quotidiennes et retrait d’un obstacle",
+      "activeCanonicalOwners": [],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-053",
+      "rawRelatedRef": "RC-046 / sadaqah quotidienne — actions diverses",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-046",
+      "targetResolves": true,
+      "referenceOrDescription": "sadaqah quotidienne — actions diverses",
+      "activeCanonicalOwners": [],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-054",
+      "rawRelatedRef": "RC-053 / R-052 / Sahih al-Bukhari 6022",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-053",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih al-Bukhari 6022",
+      "activeCanonicalOwners": [
+        "RC-053"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-055",
+      "rawRelatedRef": "RC-056 / R-025 / Sahih Muslim 2580",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-056",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih Muslim 2580",
+      "activeCanonicalOwners": [
+        "RC-056"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-056",
+      "rawRelatedRef": "RC-055 / R-018 / Sahih al-Bukhari 2444",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-055",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih al-Bukhari 2444",
+      "activeCanonicalOwners": [
+        "RC-055"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-057",
+      "rawRelatedRef": "RC-058 / R-064 / Sahih al-Bukhari 6412",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-058",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih al-Bukhari 6412",
+      "activeCanonicalOwners": [
+        "RC-058"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-058",
+      "rawRelatedRef": "RC-057 / R-063 / Sahih al-Bukhari 6416",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-057",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih al-Bukhari 6416",
+      "activeCanonicalOwners": [
+        "RC-057"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-059",
+      "rawRelatedRef": "RC-056 / R-025 / Sahih Muslim 2580",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-056",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih Muslim 2580",
+      "activeCanonicalOwners": [
+        "RC-056"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-060",
+      "rawRelatedRef": "RC-061 / R-032 / Sahih al-Bukhari 16",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-061",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih al-Bukhari 16",
+      "activeCanonicalOwners": [
+        "RC-061"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-061",
+      "rawRelatedRef": "RC-060 / R-031 / Sahih al-Bukhari 15",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-060",
+      "targetResolves": true,
+      "referenceOrDescription": "Sahih al-Bukhari 15",
+      "activeCanonicalOwners": [
+        "RC-060"
+      ],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-065",
+      "rawRelatedRef": "RC-056",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-056",
+      "targetResolves": true,
+      "referenceOrDescription": null,
+      "activeCanonicalOwners": [],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    },
+    {
+      "sourceCanonicalId": "RC-069",
+      "rawRelatedRef": "RC-032",
+      "relationType": "CANONICAL_STRUCTURE_RELATION",
+      "targetCanonicalId": "RC-032",
+      "targetResolves": true,
+      "referenceOrDescription": null,
+      "activeCanonicalOwners": [],
+      "canonicalCountImpact": 0,
+      "identityInferenceAllowed": false
+    }
+  ],
+  "assertions": {
+    "relatedRefsAreNonCanonical": true,
+    "relatedRefsDoNotCreateHistoricalIdentity": true,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

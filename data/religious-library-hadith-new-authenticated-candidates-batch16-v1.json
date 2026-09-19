@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V118",
+  "targetRelease": "V119",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH16-V1",
+  "verificationDate": "2026-09-15",
+  "purpose": "Sixteenth externally verified candidate batch, promoted after final structural and thematic audit in V119.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 120,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 20,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-063",
+      "primaryRef": "Sahih Muslim 2735a",
+      "inBookReference": "Book 48, Hadith 125",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Supplication is granted so long as the supplicant does not become impatient and say that the supplication was not answered.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2735a",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V119",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-064",
+      "primaryRef": "Sahih al-Bukhari 2387",
+      "inBookReference": "Book 43, Hadith 3",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Whoever takes people's money intending repayment receives Allah's aid in repaying it, while one who takes it intending destruction is destroyed by Allah.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:2387",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V119",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-065",
+      "primaryRef": "Sahih al-Bukhari 3470",
+      "inBookReference": "Book 60, Hadith 137",
+      "narrator": "Abu Sa'id Al-Khudri",
+      "themeVerified": "A man who had killed one hundred people set out toward a place of repentance, died on the way, and was forgiven after being found closer to the destination of reform.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:3470",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "promotionAuditNote": "Compare the complete repentance narrative against existing general repentance structures before promotion; thematic proximity alone does not establish duplication.",
+      "auditDecision": "PROMOTED_V119",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-012",
+          "RC-016"
+        ],
+        "relatedReferences": [
+          "Sahih Muslim 2759a",
+          "Sahih Muslim 2749"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "The shared repentance theme does not collapse the distinct Bukhari 3470 narrative of one hundred killings, migration toward reform, death en route and measurement between two places."
+      }
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

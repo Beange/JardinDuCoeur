@@ -1,0 +1,13 @@
+Jardin du Cœur — validation hadith consolidation V42
+Date: 2026-09-12
+
+PASS — aucune nouvelle identité hadith créée.
+PASS — 69/140 structures hadith canoniques confirmées; déficit = 71.
+PASS — 43/43 dossiers Qur’an constitués; couverture globale structurelle = 112/183.
+PASS — 81/82 R-ID présents dans primary/parallels; R-077 seul quarantiné.
+PASS — manifeste cible réconcilié : ancien libellé ambigu « 140/140 audité/fermé » supprimé.
+PASS — 13 H-ID historiques récupérés; 127 anciens mappings restent non récupérés et non inventés.
+PASS — full183ObjectSerialization=PENDING.
+PASS — publishedFrenchTranslation=PENDING.
+PASS — productionReady=false.
+PASS — index.html non modifié.

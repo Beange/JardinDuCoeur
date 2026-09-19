@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V79",
+  "status": "HISTORICAL_DECISION_RESIDUES_CLASSIFIED_ONE_ACTIVE_QUARANTINE",
+  "purpose": "Classify current canonical uses of related/rejected/unresolved/quarantined terminology so historical exclusions are not mistaken for open reconstruction work. Administrative retrospective audit only; creates no religious identity.",
+  "canonicalRegister": "data/religious-library-hadith-canonical-consolidation-v44.json",
+  "counts": {
+    "canonicalStructures": 69,
+    "structuresWithRelatedRefs": 25,
+    "relatedRefLinks": 30,
+    "structuresWithRejectedRefs": 2,
+    "rejectedRefs": 2,
+    "explicitUnresolvedCorrectionRecords": 1,
+    "activeQuarantinedReconstructionCandidates": 1,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0
+  },
+  "rejectedDecisions": [
+    {
+      "canonicalId": "RC-014",
+      "primaryRef": "Sahih al-Bukhari 2079",
+      "rejectedRefs": [
+        "Sahih al-Bukhari 2086"
+      ],
+      "classification": "EXPLICIT_REJECTION_CLOSED_NOT_OPEN_WORK",
+      "note": "2079 principal; 2082 parallèle. 2086 reste explicitement rejeté comme non correspondant; 2087/2088 seulement liés."
+    },
+    {
+      "canonicalId": "RC-017",
+      "primaryRef": "Sahih al-Bukhari 6023",
+      "rejectedRefs": [
+        "Sahih al-Bukhari 1016"
+      ],
+      "classification": "EXPLICIT_REJECTION_CLOSED_NOT_OPEN_WORK",
+      "note": "Bukhari 6023 est la référence historique récupérée; l'ancienne attribution 1016 reste explicitement rejetée."
+    }
+  ],
+  "relatedStatusDecisions": [
+    {
+      "canonicalId": "RC-025",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_PRACTICE",
+      "relatedRefs": [],
+      "classification": "RELATIONSHIP_DOCUMENTED_NOT_UNRESOLVED_IDENTITY"
+    },
+    {
+      "canonicalId": "RC-038",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_NOT_PARALLEL",
+      "relatedRefs": [
+        "Sahih al-Bukhari 6136",
+        "Sahih Muslim 47b"
+      ],
+      "classification": "RELATIONSHIP_DOCUMENTED_NOT_UNRESOLVED_IDENTITY"
+    },
+    {
+      "canonicalId": "RC-039",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_NOT_PARALLEL",
+      "relatedRefs": [
+        "Sahih Muslim 2558a"
+      ],
+      "classification": "RELATIONSHIP_DOCUMENTED_NOT_UNRESOLVED_IDENTITY"
+    },
+    {
+      "canonicalId": "RC-040",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_NOT_PARALLEL",
+      "relatedRefs": [
+        "Sahih al-Bukhari 5991"
+      ],
+      "classification": "RELATIONSHIP_DOCUMENTED_NOT_UNRESOLVED_IDENTITY"
+    },
+    {
+      "canonicalId": "RC-065",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_PARALLEL_ROUTES",
+      "relatedRefs": [
+        "RC-056"
+      ],
+      "classification": "RELATIONSHIP_DOCUMENTED_NOT_UNRESOLVED_IDENTITY"
+    }
+  ],
+  "activeUnresolved": [
+    {
+      "reconstructionId": "R-077",
+      "inheritedReference": "Sahih al-Bukhari 6014",
+      "replacementReference": null,
+      "status": "REFERENCE_MISMATCH_UNRESOLVED",
+      "terminalDisposition": "REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED",
+      "classification": "ACTIVE_ONLY_AS_QUARANTINED_IDENTITY_MISMATCH_NO_REMAP"
+    }
+  ],
+  "assertions": {
+    "relatedRefsAreNotCountedAsCanonicalStructures": true,
+    "rejectedRefsRemainExplicitAndAreNotCandidatesForAutomaticReuse": true,
+    "onlyActiveUnresolvedReligiousIdentityIssueIsR077": true,
+    "r077Remapped": false,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

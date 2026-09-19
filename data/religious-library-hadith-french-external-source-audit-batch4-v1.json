@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V144",
+  "registerId": "JDC-HADITH-FRENCH-EXTERNAL-SOURCE-AUDIT-BATCH4-V1",
+  "purpose": "Audit externe français de RC-009 à RC-011; promotion uniquement sur page française officielle HadeethEnc avec référence exacte et capture verbatim.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "sourceTranslationVersion": "v1.17.0",
+  "counts": {
+    "canonicalStructuresAudited": 3,
+    "officialFrenchPagesLocated": 1,
+    "exactPrimaryReferencesDisplayed": 1,
+    "translationsPromoted": 1,
+    "entriesPendingOfficialFrenchResolution": 2
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-009",
+      "primaryRef": "Sahih al-Bukhari 6406",
+      "parallelRef": "Sahih Muslim 2694",
+      "sourceHadithId": 5507,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/5507",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 6406",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "decision": "PROMOTED_EXACT_SOURCE_NO_REVISION_WARNING",
+      "publishedFrenchTranslation": "Deux paroles sont légères sur la langue, lourdes dans la Balance et aimées auprès du Tout-Miséricordieux : Gloire et Pureté à Allah le Majestueux ; Gloire et Pureté à Allah et par Sa louange.",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "RC-010",
+      "primaryRef": "Sahih Muslim 2723a",
+      "variants": [
+        "Sahih Muslim 2723b",
+        "Sahih Muslim 2723c"
+      ],
+      "decision": "PENDING_EXACT_OFFICIAL_FRENCH_SOURCE",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-011",
+      "primaryRef": "Sahih al-Bukhari 6133",
+      "parallelRefs": [
+        "Sahih Muslim 2998a",
+        "Sahih Muslim 2998b"
+      ],
+      "decision": "PENDING_EXACT_OFFICIAL_FRENCH_SOURCE",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

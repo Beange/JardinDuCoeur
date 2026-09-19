@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V156",
+  "registerId": "JDC-HADITH-FRENCH-BULK-AUDIT-SUPPLEMENT-N025-N054-V1",
+  "purpose": "Deuxième lot groupé du supplément canonique: 20 structures auditées selon la politique française multi-source renforcée; promotion uniquement sur traduction française publiée, identité canonique établie et absence d’avertissement explicite de révision.",
+  "auditDate": "2026-09-16",
+  "scope": {
+    "from": "N-025",
+    "to": "N-054",
+    "count": 20,
+    "canonicalIds": [
+      "N-025",
+      "N-026",
+      "N-027",
+      "N-029",
+      "N-030",
+      "N-033",
+      "N-034",
+      "N-035",
+      "N-036",
+      "N-037",
+      "N-038",
+      "N-039",
+      "N-040",
+      "N-048",
+      "N-049",
+      "N-050",
+      "N-051",
+      "N-052",
+      "N-053",
+      "N-054"
+    ]
+  },
+  "newlyVerified": [
+    {
+      "canonicalId": "N-025",
+      "primaryRef": "Sahih Muslim 2695",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/6211",
+      "identityEvidence": "Référence canonique affichée explicitement par HadeethEnc.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-033",
+      "primaryRef": "Sahih Muslim 2708a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5932",
+      "identityEvidence": "Matn arabe + Khawlah bint Hakim + Muslim 2708; suffixe a établi par la référence primaire.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-036",
+      "primaryRef": "Sahih al-Bukhari 7138",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5819",
+      "identityEvidence": "Même matn et rapporteur; Bukhari 7138 est une occurrence parallèle du même hadith canonique.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-038",
+      "primaryRef": "Sahih Muslim 804a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5383",
+      "identityEvidence": "Matn arabe + Abu Umamah + attribution Muslim concordent avec Muslim 804a.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-039",
+      "primaryRef": "Sahih Muslim 1015",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4316",
+      "identityEvidence": "Référence canonique affichée explicitement par HadeethEnc.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-048",
+      "primaryRef": "Sahih al-Bukhari 6000",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4291",
+      "identityEvidence": "Matn arabe + Abu Hurayrah + attribution Bukhari/Muslim concordent avec Bukhari 6000.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-049",
+      "primaryRef": "Sahih Muslim 2751a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4961",
+      "identityEvidence": "Même matn qu'en Muslim 2751a; HadeethEnc publie la version parallèle Bukhari 3194 et attribue aux deux recueils.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-052",
+      "primaryRef": "Sahih Muslim 2720",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5482",
+      "identityEvidence": "Référence canonique affichée explicitement par HadeethEnc.",
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "stillEnAttente": [
+    "N-026",
+    "N-027",
+    "N-029",
+    "N-030",
+    "N-034",
+    "N-035",
+    "N-037",
+    "N-040",
+    "N-050",
+    "N-051",
+    "N-053",
+    "N-054"
+  ],
+  "counts": {
+    "audited": 20,
+    "newlyVerifiedReusableFrench": 8,
+    "stillEnAttente": 12
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

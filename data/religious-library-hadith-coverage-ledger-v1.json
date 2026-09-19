@@ -1,0 +1,927 @@
+{
+  "ledgerId": "religious-library-hadith-coverage-ledger-v1",
+  "project": "Jardin du Cœur",
+  "purpose": "Ledger administratif exhaustif de couverture de la cible hadith 140. Il ne crée aucune identité religieuse.",
+  "targetHadithStructures": 140,
+  "confirmedCanonicalStructures": 140,
+  "unmaterializedAdministrativeGaps": 0,
+  "policy": {
+    "confirmedSlotsReferenceCanonicalRCOnly": true,
+    "gapSlotsAreAdministrativeOnly": true,
+    "gapSlotsDoNotImplyHistoricalOrder": true,
+    "gapSlotsDoNotCreateHadithIdentity": true
+  },
+  "slots": [
+    {
+      "coverageSlot": "HADITH-COVERAGE-001",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-001",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-002",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-002",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-003",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-003",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-004",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-004",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-005",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-005",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-006",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-006",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-007",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-007",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-008",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-008",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-009",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-009",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-010",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-010",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-011",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-011",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-012",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-012",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-013",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-013",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-014",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-014",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-015",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-015",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-016",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-016",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-017",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-017",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-018",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-018",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-019",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-019",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-020",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-020",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-021",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-021",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-022",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-022",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-023",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-023",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-024",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-024",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-025",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-025",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-026",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-026",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-027",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-027",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-028",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-028",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-029",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-029",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-030",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-030",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-031",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-031",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-032",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-032",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-033",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-033",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-034",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-034",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-035",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-035",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-036",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-036",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-037",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-037",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-038",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-038",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-039",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-039",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-040",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-040",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-041",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-041",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-042",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-042",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-043",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-043",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-044",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-044",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-045",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-045",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-046",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-046",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-047",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-047",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-048",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-048",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-049",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-049",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-050",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-050",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-051",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-051",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-052",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-052",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-053",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-053",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-054",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-054",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-055",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-055",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-056",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-056",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-057",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-057",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-058",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-058",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-059",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-059",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-060",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-060",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-061",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-061",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-062",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-062",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-063",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-063",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-064",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-064",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-065",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-065",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-066",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-066",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-067",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-067",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-068",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-068",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-069",
+      "status": "CONFIRMED_CANONICAL_STRUCTURE",
+      "canonicalId": "RC-069",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-070",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-001",
+      "gapId": "GAP-001",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-071",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-002",
+      "gapId": "GAP-002",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-072",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-003",
+      "gapId": "GAP-003",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-073",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-004",
+      "gapId": "GAP-004",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-074",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-005",
+      "gapId": "GAP-005",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-075",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-006",
+      "gapId": "GAP-006",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-076",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-007",
+      "gapId": "GAP-007",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-077",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-008",
+      "gapId": "GAP-008",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-078",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-009",
+      "gapId": "GAP-009",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-079",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-011",
+      "gapId": "GAP-010",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-080",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-013",
+      "gapId": "GAP-011",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-081",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-015",
+      "gapId": "GAP-012",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-082",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-016",
+      "gapId": "GAP-013",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-083",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-017",
+      "gapId": "GAP-014",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-084",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-018",
+      "gapId": "GAP-015",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-085",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-019",
+      "gapId": "GAP-016",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-086",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-020",
+      "gapId": "GAP-017",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-087",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-021",
+      "gapId": "GAP-018",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-088",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-022",
+      "gapId": "GAP-019",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-089",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-023",
+      "gapId": "GAP-020",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-090",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-025",
+      "gapId": "GAP-021",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-091",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-026",
+      "gapId": "GAP-022",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-092",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-027",
+      "gapId": "GAP-023",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-093",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-029",
+      "gapId": "GAP-024",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-094",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-030",
+      "gapId": "GAP-025",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-095",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-033",
+      "gapId": "GAP-026",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-096",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-034",
+      "gapId": "GAP-027",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-097",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-035",
+      "gapId": "GAP-028",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-098",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-036",
+      "gapId": "GAP-029",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-099",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-037",
+      "gapId": "GAP-030",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-100",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-038",
+      "gapId": "GAP-031",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-101",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-039",
+      "gapId": "GAP-032",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-102",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-040",
+      "gapId": "GAP-033",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-103",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-048",
+      "gapId": "GAP-034",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-104",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-049",
+      "gapId": "GAP-035",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-105",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-050",
+      "gapId": "GAP-036",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-106",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-051",
+      "gapId": "GAP-037",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-107",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-052",
+      "gapId": "GAP-038",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-108",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-053",
+      "gapId": "GAP-039",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-109",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-054",
+      "gapId": "GAP-040",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-110",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-055",
+      "gapId": "GAP-041",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-111",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-056",
+      "gapId": "GAP-042",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-112",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-057",
+      "gapId": "GAP-043",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-113",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-058",
+      "gapId": "GAP-044",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-114",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-059",
+      "gapId": "GAP-045",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-115",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-060",
+      "gapId": "GAP-046",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-116",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-061",
+      "gapId": "GAP-047",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-117",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-062",
+      "gapId": "GAP-048",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-118",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-063",
+      "gapId": "GAP-049",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-119",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-064",
+      "gapId": "GAP-050",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-120",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-065",
+      "gapId": "GAP-051",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-121",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-066",
+      "gapId": "GAP-052",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-122",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-067",
+      "gapId": "GAP-053",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-123",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-068",
+      "gapId": "GAP-054",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-124",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-069",
+      "gapId": "GAP-055",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-125",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-070",
+      "gapId": "GAP-056",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-126",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-071",
+      "gapId": "GAP-057",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-127",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-075",
+      "gapId": "GAP-058",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-128",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-076",
+      "gapId": "GAP-059",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-129",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-077",
+      "gapId": "GAP-060",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-130",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-078",
+      "gapId": "GAP-061",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-131",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-079",
+      "gapId": "GAP-062",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-132",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-080",
+      "gapId": "GAP-063",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-133",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-081",
+      "gapId": "GAP-064",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-134",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-082",
+      "gapId": "GAP-065",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-135",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-083",
+      "gapId": "GAP-066",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-136",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-084",
+      "gapId": "GAP-067",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-137",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-085",
+      "gapId": "GAP-068",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-138",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-086",
+      "gapId": "GAP-069",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-139",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-087",
+      "gapId": "GAP-070",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "HADITH-COVERAGE-140",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_STRUCTURE",
+      "canonicalId": "N-088",
+      "gapId": "GAP-071",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    }
+  ]
+}

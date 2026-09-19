@@ -1,0 +1,12 @@
+JARDIN DU COEUR — VALIDATION HADITH CONSOLIDATION V30
+
+Lot: R-043, R-044
+References verified against Sunnah.com on 2026-09-12.
+- R-043: Sunan Ibn Majah 3689 — Aishah; Allah est Doux et aime la douceur dans toute affaire. Chaîne via Urwah et al-Zuhri.
+- Contrôle parallèle: Sahih al-Bukhari 6024 — Aishah; narration développée avec le même noyau « Allah aime la douceur dans toute affaire », également via Urwah et al-Zuhri.
+- R-044: Sunan Ibn Majah 3688 — Abu Hurayra; Allah aime la douceur et accorde par elle ce qu’Il n’accorde pas par la dureté.
+- Contrôle lié: Sahih Muslim 2593 — Aishah; formulation proche sur la douceur et la dureté, mais Compagnon/chaîne différents de R-044.
+Decision: R-043 rejoint RC-033 comme route parallèle; R-044 devient RC-051 distinct avec relatedRefs seulement.
+Reference corrections: none.
+Counts: 51 canonical structures total (38 reconstruction + 13 historical); 62/82 R-ID consumed; 20 remaining.
+French published translation: PENDING. productionReady: false. index.html not modified.

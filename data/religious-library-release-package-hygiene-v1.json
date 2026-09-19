@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Administrative package-hygiene contract for V78. Detects transient/cache/editor backup files and symbolic links; carries no religious identity.",
+  "forbiddenPatterns": [
+    "__pycache__",
+    "*.pyc",
+    "*.pyo",
+    ".DS_Store",
+    "Thumbs.db",
+    "*~",
+    "*.tmp",
+    "*.bak",
+    ".swp",
+    ".swo"
+  ],
+  "scan": {
+    "root": ".",
+    "transientMatches": [],
+    "symbolicLinks": []
+  },
+  "assertions": {
+    "noTransientFiles": true,
+    "noSymbolicLinks": true,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "productionReady": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V80",
+  "purpose": "Audit des pointeurs documentaires courants après V79; correction d'un chemin obsolète restant dans release-delta.",
+  "finding": {
+    "brokenCurrentPath": "docs/AUDIT-HADITH-UNMAPPED-CLOSURE-V75.txt",
+    "authoritativePath": "docs/AUDIT-HADITH-UNMAPPED-CLOSURE-V74.txt",
+    "location": "data/religious-library-release-delta-v1.json.expectedReleaseMetadataChanges",
+    "classification": "STALE_CURRENT_METADATA_POINTER",
+    "religiousCorpusImpact": false
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "historicalFilesRewritten": false
+  }
+}

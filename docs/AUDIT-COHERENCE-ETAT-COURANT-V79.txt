@@ -1,0 +1,29 @@
+JARDIN DU CŒUR — AUDIT DE COHÉRENCE DE L’ÉTAT COURANT — V79
+
+Objet
+Fermer le graphe de cohérence des métadonnées courantes sans modifier le corpus religieux ni le runtime.
+
+Constat V78
+Le manifeste courant référençait correctement la clôture UM V74 et l’audit documentaire V78, mais le contrat data/religious-library-release-coherence-v1.json ne les déclarait pas dans son propre graphe. Il ne référençait pas non plus explicitement son propre fichier dans releaseFiles.
+
+Correction V79
+- release-coherence se référence désormais explicitement ;
+- la clôture UM V74 est incluse dans releaseFiles ;
+- l’audit documentaire V78 est inclus dans releaseFiles et déclaré courant ;
+- le présent audit V79 est inclus et déclaré courant ;
+- tous les pointeurs concernés doivent exister sur disque.
+
+Invariants religieux
+- Qur’an : 43/43 dossiers ;
+- hadiths : 69/140 structures canoniques ;
+- GAP : 71 ;
+- total matérialisé : 112/183 ;
+- R-ID : 81/82 absorbés, R-077 quarantiné ;
+- H-ID historiques : 13 récupérés, 127 non récupérés et non inventés ;
+- aucune identité religieuse nouvelle ; aucun GAP assigné ; aucun remappage R-077.
+
+Runtime
+index.html reste inchangé ; SHA-256 attendu : 177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241.
+
+Disposition
+V79 est une fermeture de cohérence administrative. full183ObjectSerialization reste PENDING et productionReady reste false.

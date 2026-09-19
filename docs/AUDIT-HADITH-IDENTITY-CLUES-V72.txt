@@ -1,0 +1,35 @@
+JARDIN DU CŒUR — AUDIT DES INDICES D’IDENTITÉ HISTORIQUE HADITH V72
+
+OBJECTIF
+Après l’audit exhaustif des 71 GAP (V63–V70) puis l’archéologie des références de recueils (V71), rechercher dans l’historique embarqué des mentions d’anciens H-ID ou des indices textuels explicitement rattachés à un H-ID perdu. Cet audit ne crée aucun H-ID, R-ID, RC-ID ni rattachement GAP.
+
+PÉRIMÈTRE
+- 147 fichiers textuels/JSON/HTML/JS/TS/CSV non-métadonnées de release inspectés.
+- Recherche stricte des identifiants au format H-000.
+- Contrôle des contextes de chaque H-ID rencontré.
+- Comparaison avec les 13 H-ID historiquement récupérés déjà reconnus par le projet.
+
+RÉSULTAT
+- H-ID distincts rencontrés : 14.
+- Les 13 H-ID récupérés attendus sont présents : H-025, H-038, H-043, H-051, H-071, H-074, H-088, H-095, H-113, H-124, H-129, H-135, H-140.
+- Une seule autre chaîne au format H-ID apparaît : H-001.
+- H-001 n’est PAS une identité récupérée : ses occurrences sont uniquement dans la phrase générique « H-001…H-140 » du registre des candidats non mappés et de sa validation, utilisée pour désigner la plage canonique complète.
+- Aucun titre, résumé, narrateur, matn, référence de recueil ou objet religieux n’est explicitement rattaché à H-001 dans ces occurrences.
+- Aucun autre ancien H-ID perdu n’apparaît sous forme d’identifiant explicite dans l’historique local.
+- Nouveaux mappings H-ID récupérés : 0.
+- GAP assignés : 0.
+
+OCCURRENCES NON RÉCUPÉRÉES EXAMINÉES
+- H-001 — data/religious-library-hadith-unmapped-candidates.json:5 — contexte: ont uniquement techniques et countsAsEntry=false. Ils ne doivent jamais être substitués à H-001…H-140.", "counts": { "verifiedUnmapped": 10, "countsTowardCanonical183": 0 }, "entries": [ { "id": "UM-001",
+- H-001 — docs/VALIDATION-HADITH-UNMAPPED.txt:11 — contexte: passer le compteur canonique au-delà des 13 mappings H-ID récupérés. Leur rattachement à H-001…H-140 reste inconnu.
+
+CONCLUSION
+La seconde couche d’archéologie locale ne révèle aucun ancien H-ID perdu accompagné d’un indice religieux spécifique. H-001 est seulement une borne de plage dans une règle de non-substitution et ne doit pas être interprété comme un mapping historique. La récupération des 127 mappings historiques perdus nécessite donc une nouvelle source de provenance extérieure au paquet actuel (ancien export, sauvegarde, document source ou historique de conversation contenant un lien explicite H-ID ↔ contenu religieux).
+
+GARDE-FOUS
+- 13/140 H-ID historiques restent réellement récupérés; 127 restent perdus et non inventés.
+- 69/140 structures hadith canoniques restent matérialisées; 71 GAP restent inconnus.
+- R-077 reste quarantiné.
+- full183ObjectSerialization = PENDING.
+- productionReady = false.
+- index.html n’est pas modifié.

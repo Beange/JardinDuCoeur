@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH9-V1",
+  "purpose": "Ninth candidate batch externally reference-audited and conservatively rejected as duplicate of existing canon.",
+  "selectionPolicy": {
+    "preferredCollections": [
+      "Sahih al-Bukhari",
+      "Sahih Muslim"
+    ],
+    "exactReferenceVerificationRequiredBeforePromotion": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalStructures": 102,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 38,
+    "promotedCanonicalStructures": 0,
+    "rejectedAsDuplicateExistingCanon": 3,
+    "remainingUnfilledTargetAfterAudit": 38
+  },
+  "candidates": [
+    {
+      "id": "N-042",
+      "primaryRef": "Sahih al-Bukhari 6416",
+      "inBookReference": "Book 81, Hadith 5",
+      "theme": "être dans ce monde comme un étranger ou un voyageur; conseil d’Ibn Umar de ne pas présumer du lendemain",
+      "narrator": "Abdullah ibn Umar",
+      "source": "Sunnah.com",
+      "sourceUrlCandidate": "https://sunnah.com/bukhari:6416",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_REFERENCE_VERIFIED_V105",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "inheritedPrimaryRef": "Sahih al-Bukhari 6415",
+      "inheritedInBookReference": "Book 81, Hadith 4",
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "duplicateOf": "RC-057",
+      "auditReason": "The inherited candidate reference 6415 was off by one; the described 'stranger/traveler' hadith is Bukhari 6416, already canonical as RC-057.",
+      "sourceVerificationRelease": "V105"
+    },
+    {
+      "id": "N-043",
+      "primaryRef": "Sahih Muslim 2742",
+      "inBookReference": "Book 50, Hadith 10",
+      "theme": "Allah se réjouit davantage du repentir de Son serviteur que celui qui retrouve sa monture perdue",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrlCandidate": "https://sunnah.com/muslim:2742",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_REFERENCE_VERIFIED_V105",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "duplicateOf": "RC-016",
+      "auditReason": "Muslim 2742 is a repentance/Allah's joy theme already substantively represented by the canonical repentance family; no new target slot is consumed.",
+      "sourceVerificationRelease": "V105"
+    },
+    {
+      "id": "N-044",
+      "primaryRef": "Sahih al-Bukhari 6464",
+      "inBookReference": "Book 81, Hadith 53",
+      "theme": "les œuvres les plus aimées d’Allah sont les plus régulières, même petites",
+      "narrator": "Aisha",
+      "source": "Sunnah.com",
+      "sourceUrlCandidate": "https://sunnah.com/bukhari:6464",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_REFERENCE_VERIFIED_V105",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "inheritedPrimaryRef": "Sahih al-Bukhari 6463",
+      "inheritedInBookReference": "Book 81, Hadith 52",
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "duplicateOf": "RC-028",
+      "auditReason": "The inherited candidate reference 6463 was off by one; the described regular-small-deeds report is Bukhari 6464, already canonical as RC-028.",
+      "sourceVerificationRelease": "V105"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  },
+  "auditSummary": {
+    "promoted": [],
+    "rejectedDuplicates": [
+      "N-042",
+      "N-043",
+      "N-044"
+    ],
+    "referenceCorrections": {
+      "N-042": "Bukhari 6415 → 6416",
+      "N-044": "Bukhari 6463 → 6464"
+    },
+    "historicalRecoveryClaimed": false
+  }
+}

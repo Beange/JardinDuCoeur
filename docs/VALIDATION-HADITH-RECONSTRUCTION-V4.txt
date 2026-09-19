@@ -1,0 +1,25 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V4
+
+Ancien registre :
+H-ID réellement récupérés ............... 13/140
+H-ID anciens non retrouvés .............. 127/140
+
+Registre de remplacement :
+Candidats ré-audités bruts .............. 38
+Nouveaux candidats V4 ................... 10
+Places brutes restantes ................. 89
+
+DÉDUPLICATION AJOUTÉE
+RF-09 Bukhari 10 / Muslim 40
+RF-10 famille miséricorde/enfants
+RF-11 famille douceur/rifq
+
+Aucun ancien H-ID inventé ............... PASS
+countsAsEntry=false ..................... PASS
+productionReady=false ................... PASS
+randomHome=false ........................ PASS
+traduction française publiée ............ PENDING
+
+IMPORTANT : 38/127 est un compteur de candidats bruts,
+pas un compteur canonique. Les familles parallèles devront compter +1
+lors de la consolidation finale.

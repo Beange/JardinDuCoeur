@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V185",
+  "auditId": "french-bulk-twelfth-pass-v185",
+  "purpose": "Ré-audit ciblé de structures encore en attente; promotion uniquement selon la politique canonique HadeethEnc française publiée, complète, traçable, versionnée et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-057",
+      "RC-065"
+    ],
+    "reviewedCount": 2
+  },
+  "promotedCanonicalIds": [],
+  "promotions": [],
+  "heldCanonicalIds": [
+    "RC-057",
+    "RC-065"
+  ],
+  "heldCount": 2,
+  "findings": [
+    {
+      "canonicalId": "RC-057",
+      "primaryRef": "Sahih al-Bukhari 6416",
+      "hadeethEncUrl": "https://hadeethenc.com/fr/browse/hadith/4704",
+      "hadeethEncReferenceDisplayed": "Authentique; Rapporté par Al Bukhârî; Sahîh Al Bukhârî - 6416",
+      "explicitRevisionWarningObserved": true,
+      "alternateFrenchPublicationObserved": "https://www.sunnatyapp.com/fr/sahih-al-bukhari/81/6416/",
+      "decision": "HELD",
+      "reason": "La source canonique HadeethEnc française affiche explicitement un besoin de révision/vérification. Une autre publication française concordante a été repérée, mais elle ne satisfait pas la politique de source canonique actuelle du registre."
+    },
+    {
+      "canonicalId": "RC-065",
+      "primaryRef": "Sahih Muslim 2564a",
+      "hadeethEncUrl": "https://hadeethenc.com/fr/browse/hadith/4706",
+      "hadeethEncReferenceDisplayed": "Authentique; Rapporté par Muslim; Sahîh Muslim - 2564",
+      "explicitRevisionWarningObserved": true,
+      "decision": "HELD",
+      "reason": "La page française concordante affiche explicitement un besoin de révision/vérification; aucune promotion n’est permise."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 80,
+    "pendingPublishedFrenchCanonicalEntries": 60
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "nonPolicySourcePromoted": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V87",
+  "purpose": "Declare the exhaustion of currently available internal provenance channels for the 71 unmaterialized hadith gaps and 127 unrecovered historical H-ID mappings, without inventing identities.",
+  "evidence": {
+    "gapPositionsAudited": 71,
+    "gapPositionsWithReligiousProvenanceClue": 0,
+    "historicalHIdsRecovered": 13,
+    "historicalHIdsUnrecovered": 127,
+    "newHistoricalHIdsRecoveredInV87": 0,
+    "newGapIdentitiesRecoveredInV87": 0,
+    "internalAuditChannelsCompleted": [
+      "local GAP audit V63-V70",
+      "historical reference archaeology V71",
+      "H-ID archaeology V72",
+      "unstructured textual clue archaeology V73",
+      "UM closure V74",
+      "V12 pending-family closure V75",
+      "decision residue audit V76",
+      "R-077 source-evidence audit V77",
+      "current-state/documentary/provenance integrity V78-V83",
+      "related/reference semantics V84-V86"
+    ]
+  },
+  "conclusion": {
+    "status": "INTERNAL_PROVENANCE_EXHAUSTED_NO_FURTHER_IDENTITY_RECOVERY_POSSIBLE_FROM_CURRENT_PACKAGE",
+    "honestNextRequirement": "NEW_EXTERNAL_HISTORICAL_SOURCE_MATERIAL",
+    "acceptableExamples": [
+      "older project export containing hadith identity mappings",
+      "backup of the original hadith corpus/register",
+      "original source document used to build the 140 hadith set",
+      "historical conversation transcript containing explicit H-ID↔reference mappings",
+      "archived JSON/CSV/HTML/PDF with the missing hadith identities"
+    ],
+    "notAcceptableAsIdentityProof": [
+      "theme-only web search",
+      "semantic similarity",
+      "guessing from neighboring hadith numbers",
+      "reusing an unrelated active reference",
+      "promoting an R-ID to H-ID without provenance"
+    ]
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "full183ObjectSerialization": "PENDING",
+    "productionReady": false
+  }
+}

@@ -1,0 +1,28 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V33
+
+Lot: vie / santé / entraide-connaissance.
+
+R-063 — Sahih al-Bukhari 6416
+- Référence vérifiée sur Sunnah.com.
+- Ibn Umar: vivre dans ce monde comme un étranger ou un voyageur; commentaire d’Ibn Umar sur matin/soir, santé/maladie et vie/mort.
+- Décision: RC-057 distinct.
+
+R-064 — Sahih al-Bukhari 6412
+- Référence vérifiée sur Sunnah.com.
+- Ibn Abbas: deux bienfaits dans lesquels beaucoup de gens subissent une perte: santé et temps libre.
+- Décision: RC-058 distinct; relatedRefs avec RC-057 seulement.
+
+R-016 — Sahih Muslim 2699a
+- Référence vérifiée sur Sunnah.com.
+- Abu Hurayra: hadith composite sur détresse, facilité, dissimulation des fautes, entraide, recherche de connaissance et réunion pour réciter/étudier le Qur’an.
+- Décision: RC-059 distinct; proximité partielle avec RC-056 mais pas de parallelRefs.
+
+Aucune correction de numéro de référence dans ce lot.
+
+Comptage après V33:
+- R-ID absorbés: 70/82
+- R-ID restants: 12
+- structures canoniques confirmées: 59 = 46 reconstruction + 13 historiques
+- traduction française publiée: PENDING
+- productionReady: false
+- index.html: non modifié

@@ -1,0 +1,12 @@
+JARDIN DU COEUR — VALIDATION HADITH CONSOLIDATION V29
+
+Lot: R-069, R-070, R-071, R-072
+References verified against Sunnah.com on 2026-09-12.
+- R-069: Sahih al-Bukhari 6405 — Abu Hurayra; “Subhan Allah wa bihamdihi” 100 times/day.
+- R-070: Sahih Muslim 2691 — Abu Hurayra; composite tahlil + tasbih.
+- R-071: Sahih Muslim 2692 — Abu Hurayra; tasbih morning/evening, distinct wording and chain.
+- R-072: Sahih al-Bukhari 3293 — Abu Hurayra; tahlil 100 times/day.
+Decision: RC-049 consolidates R-070 with R-069 and R-072 as parallel routes/segments: Muslim 2691 contains the same tahlil content as Bukhari 3293 and the same tasbih content as Bukhari 6405, with the Abu Hurayra → Abu Salih → Sumayy core. R-071/Muslim 2692 remains RC-050 distinct and related only because timing, merit wording and chain differ.
+Reference corrections: none.
+Counts: 50 canonical structures total (37 reconstruction + 13 historical); 60/82 R-ID consumed; 22 remaining.
+French published translation: PENDING. productionReady: false. index.html not modified.

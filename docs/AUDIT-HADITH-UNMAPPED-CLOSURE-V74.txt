@@ -1,0 +1,20 @@
+JARDIN DU CŒUR — CLÔTURE DU REGISTRE UM V74
+
+Objet : vérifier si les 10 anciens candidats UM-* constituent encore une réserve religieuse non consommée. Les UM-ID restent des identifiants techniques et ne sont jamais assimilés à des H-ID.
+
+Résultat : 10/10 références UM sont déjà représentées dans la consolidation canonique V44 ; 0 candidat UM non représenté ; 0 H-ID historique récupéré ; 0 GAP assigné.
+
+Détail :
+- UM-001 — Sahih Muslim 130 → RC-047 / R-001 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+- UM-002 — Sahih Muslim 131a → RC-048 / R-002 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+- UM-003 — Sahih Muslim 1907a → RC-005 / R-003 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+- UM-004 — Sahih Muslim 1053a → RC-042 / R-004 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+- UM-005 — Sahih Muslim 2326 → RC-068 / R-005 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+- UM-006 — Sahih al-Bukhari 6464 → RC-028 / R-006 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+- UM-007 — Sahih al-Bukhari 6465 → RC-029 / R-007 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+- UM-008 — Sahih Muslim 783b → RC-029 / R-008 (parallelRef); H-ID = inconnu; aucune affectation GAP.
+- UM-009 — Sahih Muslim 2818a → RC-028 / R-009 (parallelRef); H-ID = inconnu; aucune affectation GAP.
+- UM-010 — Sahih al-Bukhari 6466 → RC-030 / R-010 (primaryRef); H-ID = inconnu; aucune affectation GAP.
+
+Conclusion : le registre UM historique est structurellement consommé. Il ne fournit aucune nouvelle identité historique et ne permet pas de réduire les 71 GAP.
+Règles maintenues : aucun UM-ID→H-ID par supposition; R-077 reste quarantiné; index.html inchangé; productionReady=false; full183ObjectSerialization=PENDING.

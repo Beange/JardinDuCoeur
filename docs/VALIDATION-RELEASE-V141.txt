@@ -1,0 +1,13 @@
+Jardin du Cœur — validation ciblée de la release V141
+
+Résultat : PASS
+Contrôles : 192
+Réussites : 192
+Échecs : 0
+
+La recherche textuelle officielle HadeethEnc relie RC-001 / Sahih al-Bukhari 10 à l’identifiant 10101 et RC-004 / Sahih al-Bukhari 1413 à l’identifiant 6615. Les routes françaises officielles portant ces deux identifiants renvoient 404 Page Not Found.
+
+Bilan : aucune traduction n’est promue dans ce lot. La couverture française canonique reste de 1/140 notice prête et 139/140 en attente. L’absence de page française n’est pas traitée comme un texte récupérable; aucune traduction n’est synthétisée; aucune identité religieuse ne change; index.html reste inchangé et l’intégration runtime n’est pas autorisée.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 192 | PASS: 192 | FAIL: 0

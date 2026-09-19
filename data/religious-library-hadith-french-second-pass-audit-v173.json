@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V173",
+  "auditId": "second-pass-french-n065-n071-v1",
+  "purpose": "Second passage ciblé; matérialisation de N-065 et N-071 après concordance HadeethEnc française, matn, rapporteur et famille de références authentiques.",
+  "promotions": [
+    {
+      "canonicalId": "N-065",
+      "primaryRef": "Sahih al-Bukhari 3470",
+      "narrator": "Abu Sa‘id al-Khudri",
+      "publishedFrenchTranslation": "Abû Sa'îd Al-khudrî (qu'Allah l'agrée) relate que le Prophète (sur lui la paix et le salut) a dit : « Un homme parmi ceux qui vous ont précédés avait tué quatre-vingt-dix-neuf personnes et il se renseigna au sujet du plus grand savant sur terre. On lui indiqua un moine et il se rendit auprès de lui. L'homme informa [le moine] qu'il avait tué quatre-vingt-dix-neuf personnes et demanda s'il pouvait se repentir ? – « Non ! », répondit le moine. Alors, il le tua, atteignant ainsi sa centième victime.\nPuis, il se renseigna au sujet du plus grand savant sur terre et on lui indiqua un érudit. L'homme évoqua qu'il avait tué quatre-vingt-dix-neuf personnes et voulait savoir s'il pouvait se repentir ? L'érudit répondit : « Oui et qui donc pourrait s'interposer entre lui et le repentir ? Rends-toi dans tel pays ! Il s'y trouve des gens qui adorent Allah, Exalté soit-Il.\nAdore Allah avec eux et ne reviens pas dans ta terre, car c'est une terre malfaisante ! » L'homme se mit en route mais, à mi-chemin, la mort vint à lui. Les Anges de la miséricorde et ceux du châtiment se le disputèrent alors. Les Anges de la miséricorde affirmèrent : « Il est venu repentant, le cœur tourné vers Allah. » Les Anges du châtiment répliquèrent : « Il n'a jamais fait de bien. » C'est alors qu'un Ange sous forme humaine vint les trouver et ils en firent leur arbitre.\nIl proposa : « Mesurez la distance entre les deux terres ! Il appartiendra à celle dont il est le plus proche. » Ils prirent les mesures et constatèrent qu'il était plus proche de la terre où il désirait se rendre. Ce sont donc les Anges de la miséricorde qui le saisirent. » Dans une autre version du recueil authentique : « Il était plus proche du village pieux d'un empan. Il fut donc considéré comme l'un de ses habitants.\n» Et dans une autre version du recueil authentique : « Allah, Exalté soit-Il, révéla à la ville de destination de se rapprocher de lui et à l'autre de s'éloigner, puis Il dit de mesurer les distances entre les deux villes. Ils trouvèrent que la ville vers laquelle il se dirigeait était plus proche d'un empan que l'autre, et l'homme fut pardonné. » Et dans une autre version : « Allah éloigna sa poitrine de sa terre d'origine. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4310",
+      "sourceHadithId": 4310,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Muttafaqun alayh; parallel Bukhari/Muslim family",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-071",
+      "primaryRef": "Sahih Muslim 2327a",
+      "narrator": "Aisha",
+      "publishedFrenchTranslation": "Aïcha (qu’Allah l’agrée) relate que le Messager d’Allah (sur lui la paix et le salut) : « A chaque fois que le Messager d’Allah (sur lui la paix et le salut) avait le choix entre deux choses, il choisissait la plus facile, tant qu’il n’y avait pas un péché. S’il y avait un péché, alors il était celui qui s’en éloignait le plus. De plus, le Messager d’Allah (sur lui la paix et le salut) ne s’est jamais vengé pour lui-même excepté lorsque les interdits d’Allah étaient transgressés, auquel cas, il se vengeait alors pour Allah (Gloire sur Lui) ».",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/6389",
+      "sourceHadithId": 6389,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Muttafaqun alayh; Sahih Muslim 2327 parallel confirmed",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "counts": {
+    "promotedThisPass": 2,
+    "publishedFrenchCanonicalEntries": 67,
+    "pendingPublishedFrenchCanonicalEntries": 73
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false
+  }
+}

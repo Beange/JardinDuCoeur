@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V189",
+  "auditId": "french-multisource-continuation-v189",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-017",
+      "RC-022",
+      "RC-028",
+      "RC-037",
+      "RC-049",
+      "RC-050",
+      "N-030",
+      "N-053"
+    ],
+    "reviewedCount": 8
+  },
+  "promotedCanonicalIds": [],
+  "heldCanonicalIds": [
+    "RC-017",
+    "RC-022",
+    "RC-028",
+    "RC-037",
+    "RC-049",
+    "RC-050",
+    "N-030",
+    "N-053"
+  ],
+  "findings": [
+    {
+      "canonicalId": "RC-017",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    },
+    {
+      "canonicalId": "RC-022",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    },
+    {
+      "canonicalId": "RC-028",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    },
+    {
+      "canonicalId": "RC-037",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    },
+    {
+      "canonicalId": "RC-049",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    },
+    {
+      "canonicalId": "RC-050",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    },
+    {
+      "canonicalId": "N-030",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    },
+    {
+      "canonicalId": "N-053",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible n’a été établie de manière suffisamment traçable dans la recherche de cette passe; aucune traduction n’est synthétisée."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 81,
+    "pendingPublishedFrenchCanonicalEntries": 59
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

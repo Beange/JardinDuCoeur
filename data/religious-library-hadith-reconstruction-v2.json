@@ -1,0 +1,563 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "registerId": "hadith-reconstruction-v2",
+  "status": "RECONSTRUCTION_CANDIDATES_NOT_CANONICAL",
+  "important": "Ce registre ne restaure PAS les anciens H-ID perdus. Il ré-audite des références explicitement documentées dans le journal de transmission. Aucune entrée ne compte dans les 140 tant qu'une décision canonique explicite n'est pas prise.",
+  "counts": {
+    "reconstructionCandidates": 18,
+    "canonicalHadithRecovered": 13,
+    "canonicalHadithTarget": 140,
+    "countsTowardCanonicalTarget": 0,
+    "replacementRegisterProgress": {
+      "auditedCandidates": 18,
+      "targetMissingOldMappings": 127
+    }
+  },
+  "families": [
+    {
+      "id": "RF-01",
+      "label": "intention-et-inscription-des-actions",
+      "members": [
+        "R-001",
+        "R-002"
+      ],
+      "relationStatus": "related-not-merged",
+      "note": "Même champ thématique et même chapitre de Muslim; narrations distinctes, aucune fusion de texte."
+    },
+    {
+      "id": "RF-02",
+      "label": "constance-moderation-capacite",
+      "members": [
+        "R-006",
+        "R-007",
+        "R-008",
+        "R-009",
+        "R-010"
+      ],
+      "relationStatus": "related-family-review-required",
+      "note": "Formulations et chaînes apparentées autour de la constance/modération. Ne pas transformer automatiquement en variantRefs/parallelRefs sans audit de relation."
+    },
+    {
+      "id": "RF-03",
+      "label": "voisin-hospitalite-parole",
+      "members": [
+        "R-012"
+      ],
+      "relationStatus": "parallel-source-known",
+      "note": "Bukhari 6018 a un parallèle direct documenté dans Muslim 47a."
+    },
+    {
+      "id": "RF-04",
+      "label": "oppression-entraide",
+      "members": [
+        "R-018"
+      ],
+      "relationStatus": "related-source-known",
+      "note": "Bukhari 2444 explicite que l’aide à l’oppresseur consiste à l’empêcher d’opprimer; Bukhari 2443 et Muslim 2580 sont conservés comme relations à auditer."
+    }
+  ],
+  "entries": [
+    {
+      "id": "R-001",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 130",
+      "sourceUrl": "https://sunnah.com/muslim:130",
+      "inBookReference": "Book 1, Hadith 244",
+      "themes": [
+        "intention",
+        "bonnes-actions",
+        "mauvaises-actions"
+      ],
+      "auditSummaryFr": "Abu Hurayra; inscription d'une bonne intention/action et d'une mauvaise intention/action.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousScore",
+        "noMeritMeter",
+        "noXP",
+        "noMultiplierGamification",
+        "noScrupulosityFraming"
+      ]
+    },
+    {
+      "id": "R-002",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 131a",
+      "sourceUrl": "https://sunnah.com/muslim:131a",
+      "inBookReference": "Book 1, Hadith 245",
+      "themes": [
+        "intention",
+        "bonnes-actions",
+        "mauvaises-actions"
+      ],
+      "auditSummaryFr": "Ibn ʿAbbās; hadith qudsī sur l'inscription des bonnes et mauvaises actions.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousScore",
+        "noMeritMeter",
+        "noXP",
+        "noMultiplierGamification",
+        "noScrupulosityFraming"
+      ]
+    },
+    {
+      "id": "R-003",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 1907a",
+      "sourceUrl": "https://sunnah.com/muslim:1907a",
+      "inBookReference": "Book 33, Hadith 222",
+      "themes": [
+        "intention",
+        "hijra"
+      ],
+      "auditSummaryFr": "ʿUmar b. al-Khaṭṭāb; valeur des actes selon l'intention et exemple de l'émigration.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noNiyyahScore",
+        "noUserIntentDiagnosis",
+        "noReligiousScore"
+      ]
+    },
+    {
+      "id": "R-004",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 1053a",
+      "sourceUrl": "https://sunnah.com/muslim:1053a",
+      "inBookReference": "Book 12, Hadith 161",
+      "themes": [
+        "suffisance",
+        "endurance",
+        "demande"
+      ],
+      "auditSummaryFr": "Abū Saʿīd al-Khudrī; demandes des Anṣār, recherche de suffisance et endurance.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noPovertyShaming",
+        "noHelpSeekingShame",
+        "noPainMinimization",
+        "noAbusePressure"
+      ]
+    },
+    {
+      "id": "R-005",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 2326",
+      "sourceUrl": "https://sunnah.com/muslim:2326",
+      "inBookReference": "Book 43, Hadith 102",
+      "themes": [
+        "humilite",
+        "disponibilite",
+        "vulnerabilite"
+      ],
+      "auditSummaryFr": "Anas; disponibilité du Prophète ﷺ envers une femme décrite dans la transmission comme ayant une difficulté mentale.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noMentalHealthDiagnosis",
+        "noUserDiagnosis",
+        "preserveNarrativeContext"
+      ]
+    },
+    {
+      "id": "R-006",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6464",
+      "sourceUrl": "https://sunnah.com/bukhari:6464",
+      "inBookReference": "Book 81, Hadith 53",
+      "themes": [
+        "moderation",
+        "constance",
+        "misericorde"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; modération, œuvres seules insuffisantes pour entrer au Paradis, constance même petite.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noConsistencyScore",
+        "noSalvationScore",
+        "noMeritMeter"
+      ]
+    },
+    {
+      "id": "R-007",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6465",
+      "sourceUrl": "https://sunnah.com/bukhari:6465",
+      "inBookReference": "Book 81, Hadith 54",
+      "themes": [
+        "constance",
+        "capacite"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; œuvres les plus régulières même petites et ne prendre que ce que l'on peut supporter.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noConsistencyScore",
+        "noUserCapacityDiagnosis",
+        "noAutomatedGuilt"
+      ]
+    },
+    {
+      "id": "R-008",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 783b",
+      "sourceUrl": "https://sunnah.com/muslim:783b",
+      "inBookReference": "Book 6, Hadith 258",
+      "themes": [
+        "constance"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; actes aimés d'Allah accomplis continuellement même s'ils sont petits.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noConsistencyScore",
+        "noLongestStreak",
+        "noPushNotificationGuilt"
+      ]
+    },
+    {
+      "id": "R-009",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 2818a",
+      "sourceUrl": "https://sunnah.com/muslim:2818a",
+      "inBookReference": "Book 52, Hadith 75",
+      "themes": [
+        "moderation",
+        "misericorde",
+        "constance"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; modération, miséricorde d'Allah et constance des œuvres.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noSalvationScore",
+        "noMeritMeter",
+        "noAutomatedGuilt"
+      ]
+    },
+    {
+      "id": "R-010",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6466",
+      "sourceUrl": "https://sunnah.com/bukhari:6466",
+      "inBookReference": "Book 81, Hadith 55",
+      "themes": [
+        "constance",
+        "pratique-prophetique"
+      ],
+      "auditSummaryFr": "ʿĀʾisha; pratique régulière du Prophète ﷺ et absence de jours artificiellement spécialisés.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noReligiousStreak",
+        "noExhaustionImitation",
+        "preserveNarrativeContext"
+      ]
+    },
+    {
+      "id": "R-011",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 13",
+      "sourceUrl": "https://sunnah.com/bukhari:13",
+      "inBookReference": "Book 2, Hadith 6",
+      "themes": [
+        "fraternite",
+        "bienveillance"
+      ],
+      "auditSummaryFr": "Aimer pour son frère ce que l’on aime pour soi-même.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noUserFaithDiagnosis",
+        "noMoralRanking",
+        "noForcedSelfSacrifice"
+      ]
+    },
+    {
+      "id": "R-012",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6018",
+      "sourceUrl": "https://sunnah.com/bukhari:6018",
+      "inBookReference": "Book 78, Hadith 49",
+      "themes": [
+        "voisin",
+        "hospitalite",
+        "parole"
+      ],
+      "auditSummaryFr": "Ne pas nuire au voisin, honorer l’invité et dire du bien ou garder le silence.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "parallelRefs": [
+        "Muslim 47a"
+      ],
+      "safetyFlags": [
+        "noSilencingAbuseDisclosure",
+        "noBoundaryGuilt",
+        "noUserFaithDiagnosis"
+      ]
+    },
+    {
+      "id": "R-013",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6116",
+      "sourceUrl": "https://sunnah.com/bukhari:6116",
+      "inBookReference": "Book 78, Hadith 143",
+      "themes": [
+        "colere",
+        "conseil"
+      ],
+      "auditSummaryFr": "Conseil répété de ne pas céder à la colère.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noEmotionShaming",
+        "noAngerDiagnosis",
+        "noAbuseSilencing"
+      ]
+    },
+    {
+      "id": "R-014",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6474",
+      "sourceUrl": "https://sunnah.com/bukhari:6474",
+      "inBookReference": "Book 81, Hadith 63",
+      "themes": [
+        "parole",
+        "chastete",
+        "responsabilite"
+      ],
+      "auditSummaryFr": "Préserver sa langue et sa chasteté.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noSexualShaming",
+        "noPurityScore",
+        "noSalvationScore"
+      ]
+    },
+    {
+      "id": "R-015",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 223",
+      "sourceUrl": "https://sunnah.com/muslim:223",
+      "inBookReference": "Book 2, Hadith 1",
+      "themes": [
+        "purete",
+        "priere",
+        "sadaqah",
+        "patience",
+        "quran"
+      ],
+      "auditSummaryFr": "Hadith composite sur la pureté, le dhikr, la prière, la charité, l’endurance et le Qurʾān.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "preserveWholeHadith",
+        "noMeritMeter",
+        "noWeightVisualization",
+        "noReligiousScore"
+      ]
+    },
+    {
+      "id": "R-016",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih Muslim 2699a",
+      "sourceUrl": "https://sunnah.com/muslim:2699a",
+      "inBookReference": "Book 48, Hadith 48",
+      "themes": [
+        "entraide",
+        "connaissance",
+        "quran",
+        "dhikr"
+      ],
+      "auditSummaryFr": "Soulager une difficulté, faciliter à une personne en difficulté, rechercher la connaissance et se réunir pour réciter/étudier le Qurʾān.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "preserveWholeHadith",
+        "noGuaranteedPersonalOutcome",
+        "noStudyStreak",
+        "noQuranLeaderboard",
+        "noMeritMeter"
+      ]
+    },
+    {
+      "id": "R-017",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6013",
+      "sourceUrl": "https://sunnah.com/bukhari:6013",
+      "inBookReference": "Book 78, Hadith 44",
+      "themes": [
+        "misericorde",
+        "comportement"
+      ],
+      "auditSummaryFr": "Celui qui ne fait pas miséricorde ne reçoit pas de miséricorde.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "ficheOnly",
+      "randomHome": false,
+      "safetyFlags": [
+        "noUserDivineMercyDiagnosis",
+        "noAutomatedGuilt",
+        "noAbusePressure"
+      ]
+    },
+    {
+      "id": "R-018",
+      "kind": "hadithReconstructionCandidate",
+      "countsAsEntry": false,
+      "oldCanonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 2444",
+      "sourceUrl": "https://sunnah.com/bukhari:2444",
+      "inBookReference": "Book 46, Hadith 5",
+      "themes": [
+        "justice",
+        "entraide",
+        "oppression"
+      ],
+      "auditSummaryFr": "Aider l’opprimé et aider l’oppresseur en l’empêchant d’opprimer.",
+      "referenceVerified": true,
+      "arabicStatus": "verifiedAtSource-notStoredInReconstructionFile",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "productionReady": false,
+      "homeEligibility": "contextual",
+      "randomHome": false,
+      "relatedRefs": [
+        "Bukhari 2443",
+        "Muslim 2580"
+      ],
+      "safetyFlags": [
+        "preserveOppressionContext",
+        "noAbuseSilencing",
+        "noVictimBlaming",
+        "noForcedReconciliation"
+      ]
+    }
+  ]
+}

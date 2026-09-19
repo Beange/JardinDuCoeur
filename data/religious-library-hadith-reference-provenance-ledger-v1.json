@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V85",
+  "purpose": "Contextual ledger of corrected, rejected and unresolved historical hadith references. Prevents obsolete references from being mistaken for new GAP candidates while forbidding global blacklisting by raw reference.",
+  "policy": {
+    "scope": "REFERENCE_STATUS_IS_CONTEXTUAL_TO_SUBJECT",
+    "globalReferenceBlacklistForbidden": true,
+    "sameRawReferenceMayBeValidForAnotherCanonicalStructure": true,
+    "canonicalCountImpact": 0,
+    "identityInferenceAllowed": false
+  },
+  "summary": {
+    "recordCount": 14,
+    "correctedToCurrentReference": 11,
+    "explicitRejections": 2,
+    "unresolvedQuarantined": 1,
+    "oldReferencesActiveElsewhere": 4
+  },
+  "records": [
+    {
+      "subjectId": "R-034",
+      "canonicalContext": "RC-031",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 6011",
+      "currentReference": "Sahih al-Bukhari 5997",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#v22Corrections",
+      "note": "Le résumé R-034 décrit le baiser à al-Hasan devant al-Aqraʿ; Bukhari 6011 est le hadith du corps unique des croyants, tandis que Bukhari 5997 contient l’épisode décrit."
+    },
+    {
+      "subjectId": "R-035",
+      "canonicalContext": "RC-031",
+      "obsoleteOrRejectedReference": "Sahih Muslim 2319a",
+      "currentReference": "Sahih Muslim 2318a",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#v22Corrections",
+      "note": "Muslim 2319a est la parole de Jarir sur la miséricorde envers les gens; l’épisode d’al-Aqraʿ voyant le Prophète embrasser al-Hasan est Muslim 2318a."
+    },
+    {
+      "subjectId": "R-037",
+      "canonicalContext": "RC-033",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 6035",
+      "currentReference": "Sahih al-Bukhari 6024",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#v23Corrections",
+      "note": "Bukhari 6035 porte sur les meilleurs caractères; le résumé R-037 sur Allah aimant la douceur dans toutes les affaires correspond à Bukhari 6024."
+    },
+    {
+      "subjectId": "R-038",
+      "canonicalContext": "RC-034",
+      "obsoleteOrRejectedReference": "Sahih Muslim 2593",
+      "currentReference": "Sahih Muslim 2594a",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [
+        "RC-035"
+      ],
+      "oldReferenceLegitimatelyActiveElsewhere": true,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#v23Corrections",
+      "note": "Muslim 2594a contient la formule selon laquelle la douceur embellit ce dans quoi elle se trouve et son retrait l’enlaidit."
+    },
+    {
+      "subjectId": "R-057",
+      "canonicalContext": "RC-027",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 6475",
+      "currentReference": "Sahih al-Bukhari 6478",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#corrections",
+      "note": "Bukhari 6475 traite voisin/hospitalité/parole; le matn résumé dans R-057 correspond à Bukhari 6478."
+    },
+    {
+      "subjectId": "R-059",
+      "canonicalContext": "RC-022",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 5678",
+      "currentReference": "Sahih al-Bukhari 5675",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#corrections",
+      "note": null
+    },
+    {
+      "subjectId": "R-065",
+      "canonicalContext": "RC-024",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 6499",
+      "currentReference": "Sahih al-Bukhari 6491",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v19.json",
+      "note": "La règle détaillée d'inscription de l'intention et des actes se trouve à Bukhari 6491; 6499 est un autre hadith."
+    },
+    {
+      "subjectId": "R-077",
+      "canonicalContext": null,
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 6014",
+      "currentReference": null,
+      "classification": "UNRESOLVED_QUARANTINED",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#v22Corrections",
+      "note": "Bukhari 6014 traite la recommandation de Jibril concernant le voisin et ne correspond pas au résumé V11 sur la miséricorde envers les créatures. Aucune nouvelle référence n’est assignée sans preuve suffisante."
+    },
+    {
+      "subjectId": "R-078",
+      "canonicalContext": "RC-035",
+      "obsoleteOrRejectedReference": "Sahih Muslim 2592a",
+      "currentReference": "Sahih Muslim 2593",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [
+        "RC-036"
+      ],
+      "oldReferenceLegitimatelyActiveElsewhere": true,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#v23Corrections",
+      "note": "Muslim 2593 contient la formule Allah est doux, aime la douceur et accorde pour elle ce qu’Il n’accorde pas pour la violence."
+    },
+    {
+      "subjectId": "R-079",
+      "canonicalContext": "RC-036",
+      "obsoleteOrRejectedReference": "Sahih Muslim 2594a",
+      "currentReference": "Sahih Muslim 2592a",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [
+        "RC-034"
+      ],
+      "oldReferenceLegitimatelyActiveElsewhere": true,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#v23Corrections",
+      "note": "Muslim 2592a rapporte de Jarir que celui qui est privé de douceur est privé de bien."
+    },
+    {
+      "subjectId": "R-080",
+      "canonicalContext": "RC-039",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 5984",
+      "currentReference": "Sahih al-Bukhari 5991",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-reconstruction-v11.json#auditCorrection",
+      "note": null
+    },
+    {
+      "subjectId": "R-082",
+      "canonicalContext": "RC-041",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 5991",
+      "currentReference": "Sahih al-Bukhari 6009",
+      "classification": "CORRECTED_TO_CURRENT_REFERENCE",
+      "activeCanonicalOwnersOfOldReference": [
+        "RC-039"
+      ],
+      "oldReferenceLegitimatelyActiveElsewhere": true,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-reconstruction-v11.json#auditCorrection",
+      "note": null
+    },
+    {
+      "subjectId": "RC-014",
+      "canonicalContext": "RC-014",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 2086",
+      "currentReference": "Sahih al-Bukhari 2079",
+      "classification": "EXPLICIT_REJECTION",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#canonicalStructuralEntries.rejectedRefs",
+      "note": "2079 principal; 2082 parallèle. 2086 reste explicitement rejeté comme non correspondant; 2087/2088 seulement liés."
+    },
+    {
+      "subjectId": "RC-017",
+      "canonicalContext": "RC-017",
+      "obsoleteOrRejectedReference": "Sahih al-Bukhari 1016",
+      "currentReference": "Sahih al-Bukhari 6023",
+      "classification": "EXPLICIT_REJECTION",
+      "activeCanonicalOwnersOfOldReference": [],
+      "oldReferenceLegitimatelyActiveElsewhere": false,
+      "obsoleteForThisSubjectOnly": true,
+      "globalBlacklistAllowed": false,
+      "sourceEvidence": "data/religious-library-hadith-canonical-consolidation-v44.json#canonicalStructuralEntries.rejectedRefs",
+      "note": "Bukhari 6023 est la référence historique récupérée; l'ancienne attribution 1016 reste explicitement rejetée."
+    }
+  ],
+  "assertions": {
+    "noObsoleteReferenceActiveForSameSubjectAfterCorrection": true,
+    "noGlobalBlacklistCreated": true,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

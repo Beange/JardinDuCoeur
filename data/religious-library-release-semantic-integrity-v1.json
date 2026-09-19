@@ -1,0 +1,722 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Administrative semantic-shape stability contract for V78 after documentary-pointer correction; no religious identity is inferred.",
+  "datasets": [
+    {
+      "id": "quranCanonical",
+      "path": "data/religious-library-quran-canonical.json",
+      "requiredRootKeys": [
+        "corpusPart",
+        "counts",
+        "entries",
+        "notes",
+        "project",
+        "schemaVersion",
+        "sourceRegister",
+        "sourceStandard",
+        "status"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithCanonical",
+      "path": "data/religious-library-hadith-canonical-consolidation-v44.json",
+      "requiredRootKeys": [
+        "canonicalStructuralEntries",
+        "corrections",
+        "correctionsCarriedForward",
+        "counts",
+        "historicalConsolidationPolicy",
+        "milestone",
+        "newCorrections",
+        "productionPolicy",
+        "registerId",
+        "safetyNote",
+        "source",
+        "v21Corrections",
+        "v22Corrections",
+        "v23Corrections",
+        "v24Audit",
+        "v24Corrections",
+        "v25Audit",
+        "v25Corrections",
+        "v27Audit",
+        "v27Corrections",
+        "v28Audit",
+        "v28Corrections",
+        "v29Audit",
+        "v29Corrections",
+        "v30Audit",
+        "v30Corrections",
+        "v31Audit",
+        "v31Corrections",
+        "v32Audit",
+        "v32Corrections",
+        "v33Audit",
+        "v33Corrections",
+        "v34Audit",
+        "v34Corrections",
+        "v35Audit",
+        "v35Corrections",
+        "v36Audit",
+        "v36Corrections",
+        "v37Audit",
+        "v37Corrections",
+        "v38Audit",
+        "v38Corrections",
+        "v39Audit",
+        "v39Corrections",
+        "v40Audit",
+        "v40Corrections",
+        "v41Audit",
+        "v41Corrections",
+        "v42Audit",
+        "v42Corrections",
+        "v43Audit",
+        "v43Corrections",
+        "v44Audit",
+        "v44Corrections"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithGaps",
+      "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+      "requiredRootKeys": [
+        "confirmedHadithStructures",
+        "filledAdministrativeSlots",
+        "gaps",
+        "identityPolicy",
+        "productionReady",
+        "project",
+        "purpose",
+        "quarantinedReconstructionCandidates",
+        "registerId",
+        "targetHadithStructures",
+        "unmaterializedStructureSlots"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithCoverageLedger",
+      "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+      "requiredRootKeys": [
+        "confirmedCanonicalStructures",
+        "ledgerId",
+        "policy",
+        "project",
+        "purpose",
+        "slots",
+        "targetHadithStructures",
+        "unmaterializedAdministrativeGaps"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "globalCoverageLedger",
+      "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+      "requiredRootKeys": [
+        "canonicalTarget",
+        "counts",
+        "ledgerId",
+        "policy",
+        "project",
+        "purpose",
+        "schemaVersion",
+        "slots"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "reconstructionRegister",
+      "path": "data/religious-library-hadith-reconstruction-v11.json",
+      "requiredRootKeys": [
+        "auditCorrection",
+        "counts",
+        "entries",
+        "families",
+        "important",
+        "project",
+        "registerId",
+        "schemaVersion",
+        "status"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "targetManifest",
+      "path": "data/religious-library-target-manifest.json",
+      "requiredRootKeys": [
+        "canonicalTarget",
+        "conversationAuditStatus",
+        "countingRules",
+        "currentAuditCoverage",
+        "currentAuditCoverageFile",
+        "currentHadithCanonicalStructures",
+        "currentHadithUnmaterializedPositions",
+        "currentMaterializedReligiousStructures",
+        "currentPathIntegrityAudit",
+        "currentPathIntegrityAuditFile",
+        "editorialSafetyPrinciples",
+        "hadithReferenceContextSemantics",
+        "hadithReferenceContextSemanticsFile",
+        "hadithReferenceProvenanceLedger",
+        "hadithReferenceProvenanceLedgerFile",
+        "homeSelectionRules",
+        "important",
+        "internalProvenanceExhaustion",
+        "internalProvenanceExhaustionFile",
+        "materializedInCurrentCode",
+        "newAuthenticatedHadithBatch10ExternalVerification",
+        "newAuthenticatedHadithBatch10ExternalVerificationFile",
+        "newAuthenticatedHadithCandidates",
+        "newAuthenticatedHadithCandidatesBatch10",
+        "newAuthenticatedHadithCandidatesBatch10File",
+        "newAuthenticatedHadithCandidatesBatch11",
+        "newAuthenticatedHadithCandidatesBatch11File",
+        "newAuthenticatedHadithCandidatesBatch2",
+        "newAuthenticatedHadithCandidatesBatch2File",
+        "newAuthenticatedHadithCandidatesBatch3",
+        "newAuthenticatedHadithCandidatesBatch3File",
+        "newAuthenticatedHadithCandidatesBatch4",
+        "newAuthenticatedHadithCandidatesBatch4File",
+        "newAuthenticatedHadithCandidatesBatch5",
+        "newAuthenticatedHadithCandidatesBatch5File",
+        "newAuthenticatedHadithCandidatesBatch6",
+        "newAuthenticatedHadithCandidatesBatch6File",
+        "newAuthenticatedHadithCandidatesBatch7",
+        "newAuthenticatedHadithCandidatesBatch7File",
+        "newAuthenticatedHadithCandidatesBatch8",
+        "newAuthenticatedHadithCandidatesBatch8File",
+        "newAuthenticatedHadithCandidatesBatch9",
+        "newAuthenticatedHadithCandidatesBatch9File",
+        "newAuthenticatedHadithCandidatesFile",
+        "newAuthenticatedHadithCanonicalSupplement",
+        "newAuthenticatedHadithCanonicalSupplementFile",
+        "project",
+        "provenanceSummaryIntegrityAudit",
+        "provenanceSummaryIntegrityAuditFile",
+        "quranSourceStandard",
+        "relatedRefSemanticsAudit",
+        "relatedRefSemanticsAuditFile",
+        "release",
+        "releaseProtectionSetAudit",
+        "releaseProtectionSetAuditFile",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "dataContract",
+      "path": "data/religious-library-data-contract-v1.json",
+      "requiredRootKeys": [
+        "crossRelations",
+        "datasets",
+        "identifierSequences",
+        "identitySafety",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "referentialIntegrity",
+      "path": "data/religious-library-referential-integrity-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "derived",
+        "nodeSets",
+        "project",
+        "purpose",
+        "relations",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "semanticDigest",
+      "path": "data/religious-library-release-semantic-digest-v1.json",
+      "requiredRootKeys": [
+        "algorithm",
+        "assertions",
+        "datasets",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "archiveFileSet",
+      "path": "data/religious-library-release-archive-fileset-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "entries",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion",
+        "scope"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "zipReproducibility",
+      "path": "data/religious-library-release-zip-reproducibility-v1.json",
+      "requiredRootKeys": [
+        "archive",
+        "assertions",
+        "builder",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion",
+        "sourceBoundary",
+        "verification"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "reproducibilityAttestation",
+      "path": "data/religious-library-release-reproducibility-attestation-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "evidenceRequirements",
+        "externalReportName",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion",
+        "sourceBoundary",
+        "verifier"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "gapRecoveryAudit",
+      "path": "data/religious-library-hadith-gap-recovery-audit-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditId",
+        "method",
+        "project",
+        "purpose",
+        "release",
+        "results",
+        "schemaVersion",
+        "scope",
+        "summary"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithUnmappedClosureAudit",
+      "path": "data/religious-library-hadith-unmapped-closure-audit-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "canonicalRegister",
+        "counts",
+        "entries",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion",
+        "sourceRegister",
+        "status"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithV12AuditClosure",
+      "path": "data/religious-library-hadith-v12-audit-closure-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "canonicalRegister",
+        "counts",
+        "families",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion",
+        "sourceAudit",
+        "status"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithDecisionResidueAudit",
+      "path": "data/religious-library-hadith-decision-residue-audit-v1.json",
+      "requiredRootKeys": [
+        "activeUnresolved",
+        "assertions",
+        "canonicalRegister",
+        "counts",
+        "project",
+        "purpose",
+        "rejectedDecisions",
+        "relatedStatusDecisions",
+        "release",
+        "schemaVersion",
+        "status"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "r077EvidenceAudit",
+      "path": "data/religious-library-hadith-r077-evidence-audit-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "disposition",
+        "evidenceLimitations",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion",
+        "sourceAccessDate",
+        "subject",
+        "verifiedComparisons"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "currentPathIntegrity",
+      "path": "data/religious-library-current-path-integrity-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "finding",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "provenanceSummaryIntegrity",
+      "path": "data/religious-library-provenance-summary-integrity-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "finding",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "currentAuditCoverage",
+      "path": "data/religious-library-current-audit-coverage-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "finding",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "releaseProtectionSetAudit",
+      "path": "data/religious-library-release-protection-set-audit-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "finding",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "relatedRefSemantics",
+      "path": "data/religious-library-hadith-related-ref-semantics-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "project",
+        "purpose",
+        "relations",
+        "release",
+        "schemaVersion",
+        "source",
+        "summary"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithReferenceProvenanceLedger",
+      "path": "data/religious-library-hadith-reference-provenance-ledger-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "policy",
+        "project",
+        "purpose",
+        "records",
+        "release",
+        "schemaVersion",
+        "summary"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "hadithReferenceContextSemantics",
+      "path": "data/religious-library-hadith-reference-context-semantics-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "inputs",
+        "project",
+        "purpose",
+        "references",
+        "release",
+        "schemaVersion",
+        "summary"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "internalProvenanceExhaustion",
+      "path": "data/religious-library-internal-provenance-exhaustion-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "conclusion",
+        "evidence",
+        "project",
+        "purpose",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidates",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "candidates",
+        "counts",
+        "policy",
+        "project",
+        "promotion",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCanonicalSupplement",
+      "path": "data/religious-library-hadith-new-authenticated-canonical-supplement-v1.json",
+      "requiredRootKeys": [
+        "canonicalStructures",
+        "counts",
+        "identityPolicy",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch2",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch2-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch3",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch3-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch4",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch4-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch5",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch5-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch6",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch6-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch7",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch7-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch8",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch8-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch9",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch9-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch10",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch10-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "auditSummary",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithBatch10ExternalVerification",
+      "path": "data/religious-library-hadith-new-authenticated-batch10-external-verification-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "entries",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion"
+      ],
+      "rootType": "object"
+    },
+    {
+      "id": "newAuthenticatedHadithCandidatesBatch11",
+      "path": "data/religious-library-hadith-new-authenticated-candidates-batch11-v1.json",
+      "requiredRootKeys": [
+        "assertions",
+        "candidates",
+        "counts",
+        "project",
+        "purpose",
+        "registerId",
+        "release",
+        "schemaVersion",
+        "selectionPolicy"
+      ],
+      "rootType": "object"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "productionReady": false,
+    "datasetCount": 39
+  }
+}

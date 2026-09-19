@@ -1,0 +1,44 @@
+name: Deploy Jardin du Coeur to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Validate application release
+        run: python tools/validate_app_release.py
+      - name: Build minimal public artifact
+        run: |
+          rm -rf _site
+          mkdir -p _site/icons _site/assets/daily
+          cp index.html app.css app.js icons-ui.js sw.js manifest.webmanifest .nojekyll _site/
+          cp icons/icon-192.png icons/icon-512.png icons/icon-maskable-512.png _site/icons/
+          cp assets/daily/daily-*.jpg _site/assets/daily/
+          python tools/check_pages_artifact.py _site
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

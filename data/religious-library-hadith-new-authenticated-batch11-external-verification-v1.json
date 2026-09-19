@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-BATCH11-EXTERNAL-VERIFICATION-V1",
+  "purpose": "External exact-reference verification and duplicate adjudication for N-048..N-050.",
+  "verificationDate": "2026-09-13",
+  "entries": [
+    {
+      "id": "N-048",
+      "inheritedCandidateReference": "Sahih al-Bukhari 5985",
+      "verifiedReference": "Sahih al-Bukhari 6000",
+      "inBookReference": "Book 78, Hadith 31",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Allah divided mercy into one hundred parts, kept ninety-nine with Him, and sent one part to earth; creation shows mercy through that one part",
+      "themeCorrection": "The verified wording does not explicitly say that the ninety-nine parts are retained for the Hereafter.",
+      "result": "CORRECTED_REFERENCE_ELIGIBLE_NEW_CANONICAL_IDENTITY",
+      "exactReferenceDuplicate": false,
+      "historicalHIdRecovered": false,
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6000"
+    },
+    {
+      "id": "N-049",
+      "inheritedCandidateReference": "Sahih Muslim 2744",
+      "verifiedReference": "Sahih Muslim 2751a",
+      "inBookReference": "Book 50, Hadith 17",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Allah's mercy predominates His wrath",
+      "result": "CORRECTED_REFERENCE_ELIGIBLE_NEW_CANONICAL_IDENTITY",
+      "exactReferenceDuplicate": false,
+      "relatedVerifiedParallel": "Sahih al-Bukhari 7404",
+      "historicalHIdRecovered": false,
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2751a"
+    },
+    {
+      "id": "N-050",
+      "inheritedCandidateReference": "Sahih al-Bukhari 7404",
+      "verifiedReference": "Sahih al-Bukhari 7405",
+      "inBookReference": "Book 97, Hadith 34",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Allah says that He is as His servant thinks of Him and is with the servant when the servant remembers Him",
+      "result": "CORRECTED_REFERENCE_ELIGIBLE_NEW_CANONICAL_IDENTITY",
+      "exactReferenceDuplicate": false,
+      "historicalHIdRecovered": false,
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:7405"
+    }
+  ],
+  "duplicateAdjudication": {
+    "comparisonBoundary": [
+      "data/religious-library-hadith-canonical-consolidation-v44.json",
+      "data/religious-library-hadith-new-authenticated-canonical-supplement-v1.json"
+    ],
+    "existingCanonicalStructuresCompared": 102,
+    "exactReferenceDuplicates": 0,
+    "thematicSimilarityDoesNotEstablishHistoricalIdentity": true
+  },
+  "assertions": {
+    "newCanonicalStructuresEligible": 3,
+    "canonicalPromotionPerformedByThisAudit": false,
+    "historicalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "runtimeChanged": false,
+    "publishedFrenchTranslationPolicy": "PENDING",
+    "productionReady": false
+  }
+}

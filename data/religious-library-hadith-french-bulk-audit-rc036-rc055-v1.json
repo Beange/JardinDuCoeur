@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V153",
+  "registerId": "JDC-HADITH-FRENCH-BULK-AUDIT-RC036-RC055-V1",
+  "purpose": "Deuxième lot groupé RC-036 à RC-055 selon la politique multi-source renforcée; promotion uniquement sur preuve française publiée, identité canonique établie et absence d’avertissement explicite de révision.",
+  "auditDate": "2026-09-16",
+  "scope": {
+    "from": "RC-036",
+    "to": "RC-055",
+    "count": 20
+  },
+  "newlyVerified": [
+    {
+      "canonicalId": "RC-036",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4939"
+    },
+    {
+      "canonicalId": "RC-039",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3854"
+    },
+    {
+      "canonicalId": "RC-040",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3863"
+    },
+    {
+      "canonicalId": "RC-044",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3475"
+    },
+    {
+      "canonicalId": "RC-045",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/65004"
+    },
+    {
+      "canonicalId": "RC-054",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5348"
+    }
+  ],
+  "explicitlyHeldForRevisionWarning": [
+    "RC-043",
+    "RC-046"
+  ],
+  "stillEnAttente": [
+    "RC-037",
+    "RC-038",
+    "RC-041",
+    "RC-042",
+    "RC-043",
+    "RC-046",
+    "RC-047",
+    "RC-048",
+    "RC-049",
+    "RC-050",
+    "RC-051",
+    "RC-052",
+    "RC-053",
+    "RC-055"
+  ],
+  "counts": {
+    "audited": 20,
+    "newlyVerifiedReusableFrench": 6,
+    "stillEnAttente": 14
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

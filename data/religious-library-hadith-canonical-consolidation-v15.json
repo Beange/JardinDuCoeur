@@ -1,0 +1,187 @@
+{
+  "registerId": "hadith-canonical-consolidation-v15",
+  "source": "reconstruction-v11 corrected through V14",
+  "canonicalStructuralEntries": [
+    {
+      "canonicalId": "RC-001",
+      "primary": "R-029",
+      "primaryRef": "Sahih al-Bukhari 10",
+      "parallels": [
+        "R-030"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 40"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "sécurité de la langue et de la main",
+      "note": "Même enseignement central; Bukhari conserve en plus la clause sur le muhājir."
+    },
+    {
+      "canonicalId": "RC-002",
+      "primary": "R-039",
+      "primaryRef": "Sahih al-Bukhari 6114",
+      "parallels": [
+        "R-040"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 2609a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "maîtrise de soi dans la colère",
+      "note": "Formulation centrale parallèle confirmée."
+    },
+    {
+      "canonicalId": "RC-003",
+      "primary": "R-047",
+      "primaryRef": "Sahih Muslim 2564c",
+      "parallels": [
+        "R-048"
+      ],
+      "parallelRefs": [
+        "Sunan Ibn Majah 4143"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "cœurs, actes, apparence et biens",
+      "note": "Transmission parallèle confirmée; Ibn Majah 4143 est gradé Sahih (Darussalam) sur la source consultée."
+    },
+    {
+      "canonicalId": "RC-004",
+      "primary": "R-055",
+      "primaryRef": "Sahih al-Bukhari 1413",
+      "parallels": [
+        "R-056"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 1016a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_CONTEXT_DIFFERENCE",
+      "theme": "demi-datte et protection contre le Feu",
+      "note": "Même noyau sur la demi-datte; Bukhari 1413 inclut explicitement l'alternative de la bonne parole, tandis que Muslim 1016a dans cette route s'arrête à la demi-datte."
+    },
+    {
+      "canonicalId": "RC-005",
+      "primary": "R-003",
+      "primaryRef": "Sahih Muslim 1907a",
+      "parallels": [
+        "R-019"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 1"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "intentions et hijra",
+      "note": "Même hadith de ʿUmar sur les intentions et l’émigration; une entrée canonique, deux sources principales."
+    },
+    {
+      "canonicalId": "RC-006",
+      "primary": "R-011",
+      "primaryRef": "Sahih al-Bukhari 13",
+      "parallels": [
+        "R-023"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 45a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_WORDING_VARIANT",
+      "theme": "aimer pour son frère ce que l’on aime pour soi",
+      "note": "Même enseignement transmis d’Anas; Muslim 45a conserve une variante 'frère / voisin'."
+    },
+    {
+      "canonicalId": "RC-007",
+      "primary": "R-012",
+      "primaryRef": "Sahih al-Bukhari 6018",
+      "parallels": [
+        "R-024"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 47a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_WORDING_VARIANT",
+      "theme": "voisin, hospitalité et bonne parole",
+      "note": "Même triade générale; Bukhari formule l’interdiction de nuire au voisin, Muslim l’honneur/bienveillance envers lui."
+    },
+    {
+      "canonicalId": "RC-008",
+      "historicalHId": "H-038",
+      "primaryRef": "Sahih al-Bukhari 5027",
+      "parallels": [
+        "Sahih al-Bukhari 5028"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "apprendre le Coran et l’enseigner",
+      "note": "Même enseignement d'Uthman; 5027 principal, 5028 parallèle +0."
+    },
+    {
+      "canonicalId": "RC-009",
+      "historicalHId": "H-043",
+      "primaryRef": "Sahih al-Bukhari 6406",
+      "parallels": [
+        "Sahih Muslim 2694"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "deux formules de dhikr légères sur la langue et lourdes dans la balance",
+      "note": "Même hadith d'Abu Huraira dans Bukhari et Muslim."
+    },
+    {
+      "canonicalId": "RC-010",
+      "historicalHId": "H-051",
+      "primaryRef": "Sahih Muslim 2723a",
+      "variants": [
+        "Sahih Muslim 2723b",
+        "Sahih Muslim 2723c"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_VARIANTS_PRESERVED",
+      "theme": "invocation du soir",
+      "note": "Une entrée canonique; variantes a/b/c conservées sans fusion silencieuse des formulations."
+    },
+    {
+      "canonicalId": "RC-011",
+      "historicalHId": "H-095",
+      "primaryRef": "Sahih al-Bukhari 6133",
+      "parallels": [
+        "Sahih Muslim 2998a",
+        "Sahih Muslim 2998b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "le croyant n’est pas piqué deux fois du même trou",
+      "note": "Même maxime d'Abu Huraira; Muslim 2998a,b sont des routes parallèles."
+    }
+  ],
+  "counts": {
+    "canonicalStructuresConfirmed": 7,
+    "rawCandidatesConsumed": 14,
+    "rawCandidatesTotal": 82,
+    "rawCandidatesNotYetConsolidated": 68,
+    "canonicalStructuresConfirmedTotal": 11,
+    "reconstructionCanonicalStructuresConfirmed": 7,
+    "historicalRecoveredCanonicalStructuresConfirmed": 4,
+    "historicalRecoveredHIdsTotal": 13,
+    "historicalRecoveredHIdsStillToConsolidate": 9
+  },
+  "corrections": [
+    {
+      "id": "R-059",
+      "from": "Sahih al-Bukhari 5678",
+      "to": "Sahih al-Bukhari 5675",
+      "carriedFrom": "V13"
+    },
+    {
+      "id": "R-057",
+      "from": "Sahih al-Bukhari 6475",
+      "to": "Sahih al-Bukhari 6478",
+      "reason": "Bukhari 6475 traite voisin/hospitalité/parole; le matn résumé dans R-057 correspond à Bukhari 6478."
+    }
+  ],
+  "productionPolicy": {
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false,
+    "historicalHIdAssigned": false,
+    "runtimeMigration": false
+  },
+  "historicalConsolidationPolicy": {
+    "historicalHIdMayBeUsedOnlyWhenRecoveredFromTransmission": true,
+    "newlyAssignedHistoricalHIds": false,
+    "variantsCountAsEntry": false,
+    "parallelsCountAsEntry": false
+  }
+}

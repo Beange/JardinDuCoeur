@@ -1,0 +1,34 @@
+JARDIN DU CŒUR — AUDIT DES INDICES TEXTUELS HADITH NON STRUCTURÉS V73
+
+OBJECTIF
+Après l’audit exhaustif des 71 GAP (V63–V70), l’archéologie des références de recueils (V71) et l’archéologie des H-ID explicites (V72), rechercher dans les fichiers textuels historiques du projet des résumés, fragments, titres, narrateurs ou formulations hadith qui existeraient hors des structures actuelles et pourraient constituer une nouvelle piste de récupération. Aucun fragment n’est rattaché à un GAP sans preuve d’identité/provenance.
+
+MÉTHODE
+- 72 fichiers textuels historiques/éditoriaux ciblés inspectés (.md, .txt, .html, .js, .jsx, .mjs), hors métadonnées de release, rapports V71/V72, README/ETAT et rapports de hashes/validation structurelle.
+- Recherche large de marqueurs de prose hadith/narration : noms de narrateurs rencontrés dans le corpus, formulations « Prophète/Messager d’Allah », et noyaux textuels déjà rencontrés (intention, miséricorde, douceur, voisin, bonne parole, maladie, détresse, etc.).
+- 217 lignes candidates détectées puis classées par origine.
+- Le critère est volontairement large : une ligne candidate n’est pas considérée comme hadith orphelin sans contexte religieux précis et provenance suffisante.
+
+CLASSIFICATION DES 217 LIGNES CANDIDATES
+- 71 lignes dans 28 rapports de validation/consolidation/reconstruction hadith : elles documentent des R-ID, RC-ID, H-ID ou références déjà présents dans les registres actuels. Elles ne constituent pas une réserve indépendante.
+- 136 lignes dans 9 fichiers runtime/historique HTML : elles correspondent principalement aux citations Qur’an, textes d’interface, champs d’intention/muhasabah et autres éléments applicatifs; aucun hadith historique perdu n’y est sérialisé.
+- 9 lignes dans 3 fichiers de l’ancienne application React : texte d’interface/journal (intention, gratitude, etc.), sans identité hadith.
+- 1 ligne dans docs/AUDIT-CONSOLIDATION.md : mention technique de l’identifiant UI « intentionHelpBtn », sans contenu hadith.
+
+RÉSULTAT
+- Fragments hadith textuels orphelins avec provenance exploitable : 0.
+- Nouveaux H-ID récupérés : 0.
+- Nouveaux R-ID/RC-ID créés : 0.
+- GAP assignés : 0.
+- Recherche web thématique libre : non effectuée, car aucun indice textuel orphelin précis ne fournit de cible d’identification fiable.
+
+CONCLUSION
+La troisième couche d’archéologie locale ne révèle aucun contenu hadith textuel autonome oublié dans les fichiers historiques. Les résumés religieux retrouvés sont déjà attachés aux chaînes de consolidation/reconstruction connues; le reste est du contenu Qur’an ou de l’interface applicative. Le paquet actuel ne contient donc pas de fragment textuel local supplémentaire permettant de matérialiser un des 71 GAP sans nouvelle source extérieure de provenance.
+
+GARDE-FOUS
+- 13/140 H-ID historiques restent réellement récupérés; 127 restent perdus et non inventés.
+- 69/140 structures hadith canoniques restent matérialisées; 71 GAP restent inconnus.
+- R-077 reste quarantiné.
+- full183ObjectSerialization = PENDING.
+- productionReady = false.
+- index.html n’est pas modifié.

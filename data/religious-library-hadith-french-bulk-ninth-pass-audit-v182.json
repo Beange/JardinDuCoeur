@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V182",
+  "auditId": "french-bulk-ninth-pass-v182",
+  "purpose": "Ré-audit groupé de 20 structures encore en attente; promotion uniquement sur traduction française publiée, complète, traçable et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-010",
+      "RC-018",
+      "RC-019",
+      "RC-020",
+      "RC-022",
+      "RC-026",
+      "RC-028",
+      "RC-029",
+      "RC-030",
+      "RC-033",
+      "RC-037",
+      "RC-038",
+      "RC-043",
+      "RC-046",
+      "RC-047",
+      "RC-048",
+      "RC-049",
+      "RC-050",
+      "RC-051",
+      "RC-052"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "RC-010"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-010",
+      "primaryRef": "Sahih Muslim 2723a",
+      "narrator": "Abdullâh ibn Mas’ûd",
+      "publishedFrenchTranslation": "Abdullâh ibn Mas’ûd (qu’Allah l’agrée) dit : Lorsque le Prophète (sur lui la paix et le salut) se trouvait au soir, il disait : « Nous nous retrouvons au soir, ainsi que la royauté, appartenant à Allah ; les louanges sont pour Allah, il n'est de divinité [digne d'adoration] excepté Allah, Lui Seul, Il n’a point d’associé. », le rapporteur dit : Je pense qu’il disait avec cela : « A Lui la royauté, à Lui les louanges et Il est capable de toute chose.\nÔ Seigneur ! Je Te demande le meilleur de ce qui se trouve dans cette nuit et le meilleur de ce qui vient après. Et je cherche protection auprès de Toi contre le mal de ce qui se trouve dans cette nuit et le mal de ce qui vient après. Ô Seigneur ! Je cherche protection auprès de Toi contre la paresse et les maux de la vieillesse. Ô Seigneur ! Je cherche protection auprès de Toi contre le châtiment du Feu et le châtiment de la tombe.\n» Et lorsqu’il se trouvait au matin, il faisait la même chose [mais en disant] « Nous nous retrouvons au matin, ainsi que la royauté, appartenant à Allah. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3008",
+      "sourceHadithId": 3008,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Authentique; Rapporté par Muslim",
+      "sourceGradeDisplayed": "Authentique",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-018",
+    "RC-019",
+    "RC-020",
+    "RC-022",
+    "RC-026",
+    "RC-028",
+    "RC-029",
+    "RC-030",
+    "RC-033",
+    "RC-037",
+    "RC-038",
+    "RC-043",
+    "RC-046",
+    "RC-047",
+    "RC-048",
+    "RC-049",
+    "RC-050",
+    "RC-051",
+    "RC-052"
+  ],
+  "heldCount": 19,
+  "notes": [
+    "RC-010: page française HadeethEnc 3008 retrouvée; Abdullâh ibn Mas’ûd, matn complet de l’invocation du soir et du matin, attribution authentique à Muslim. La structure canonique locale est Sahih Muslim 2723a et la concordance est établie par rapporteur + matn + collection.",
+    "Aucun avertissement explicite de révision n’est observé sur la page française consultée.",
+    "Les 19 autres structures du lot restent en attente; aucune traduction française n’a été synthétisée, complétée ou reformulée."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 78,
+    "pendingPublishedFrenchCanonicalEntries": 62
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Jardin du Coeur",
+  "release": "V170",
+  "auditId": "french-second-pass-rc032-v1",
+  "scope": {
+    "canonicalIds": [
+      "RC-032"
+    ],
+    "result": "1 promoted"
+  },
+  "promoted": [
+    {
+      "canonicalId": "RC-032",
+      "primaryRef": "Sahih al-Bukhari 6013",
+      "hadeethEncId": "5439",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5439",
+      "identityEvidence": [
+        "Arabic matn concordant",
+        "narrator Jarir ibn Abdullah concordant",
+        "Al-Bukhari and Muslim attribution displayed",
+        "French page displays Sahih Muslim 2319 parallel",
+        "French translation published",
+        "no explicit revision warning observed"
+      ],
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "held": [
+    {
+      "canonicalId": "RC-037",
+      "primaryRef": "Sahih al-Bukhari 6136",
+      "hadeethEncId": "5437",
+      "decision": "EN_ATTENTE",
+      "reason": "French page explicitly says translation needs further revision and verification."
+    }
+  ],
+  "countsAfter": {
+    "verified": 62,
+    "waiting": 78
+  },
+  "policy": "No synthetic French translation; verbatim published French only."
+}

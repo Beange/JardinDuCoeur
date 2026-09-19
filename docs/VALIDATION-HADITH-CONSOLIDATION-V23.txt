@@ -1,0 +1,52 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V23
+
+BASE
+V22 ............................................ REPRISE SANS MODIFIER index.html
+R-ID non absorbés au départ .................... 42 / 82
+
+LOT AUDITÉ : DOUCEUR / RIFQ
+RC-033 : R-037 Bukhari 6024 .................... CONFIRMÉ (référence corrigée)
+RC-034 : R-038 Muslim 2594a .................... CONFIRMÉ (référence corrigée)
+RC-035 : R-078 Muslim 2593 ..................... CONFIRMÉ (référence corrigée)
+RC-036 : R-079 Muslim 2592a .................... CONFIRMÉ (référence corrigée)
+
+POLITIQUE DE CONSOLIDATION
+- Les quatre textes appartiennent à la même famille thématique du rifq/douceur.
+- Ils ne sont PAS fusionnés comme parallèles sans preuve de route/transmission identique.
+- Des relatedRefs sont utilisés lorsque la proximité est thématique seulement.
+
+CORRECTIONS DE RÉFÉRENCE
+R-037 : Bukhari 6035 -> Bukhari 6024 .......... CORRIGÉ
+R-038 : Muslim 2593 -> Muslim 2594a ........... CORRIGÉ
+R-078 : Muslim 2592a -> Muslim 2593 ........... CORRIGÉ
+R-079 : Muslim 2594a -> Muslim 2592a .......... CORRIGÉ
+
+JUSTIFICATION SOURCE PAR SOURCE
+- Bukhari 6024 : Aïcha rapporte le rappel à la douceur; le texte contient qu’Allah aime la douceur dans toutes les affaires.
+  https://sunnah.com/bukhari:6024
+- Bukhari 6035 : concerne l’excellence du caractère et ne correspond pas au résumé R-037.
+  https://sunnah.com/bukhari:6035
+- Muslim 2594a : la douceur embellit ce dans quoi elle se trouve et son retrait l’enlaidit; correspond à R-038.
+  https://sunnah.com/muslim:2594a
+- Muslim 2593 : Allah est doux, aime la douceur et accorde pour elle ce qu’Il n’accorde pas pour la violence; correspond à R-078.
+  https://sunnah.com/muslim:2593
+- Muslim 2592a : celui qui est privé de douceur est privé de bien; correspond à R-079.
+  https://sunnah.com/muslim:2592a
+
+RECOMPTAGE V22
+Le recomptage des R-ID distincts réellement présents dans les structures V22 confirme 40/82 absorbés.
+Le chiffre 37 évoqué pendant l’analyse intermédiaire était erroné et n’est pas retenu dans les fichiers du projet.
+
+BILAN
+Structures canoniques confirmées ............... 36
+- historiques récupérées ....................... 13
+- reconstruction ............................... 23
+R-ID absorbés .................................. 44 / 82
+R-ID restant à consolider ...................... 38
+H-ID historiques inventés ...................... 0
+Traduction française publiée ................... PENDING
+productionReady ................................. false
+Migration index.html ........................... NON
+
+NOTE
+R-077 reste volontairement non consolidé et sans nouvelle référence exacte tant qu’un remapping certain n’est pas établi.

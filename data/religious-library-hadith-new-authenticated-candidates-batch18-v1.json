@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V122",
+  "targetRelease": "V123",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH18-V1",
+  "verificationDate": "2026-09-15",
+  "purpose": "Eighteenth externally verified candidate batch, promoted after final structural and thematic audit in V123.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 126,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 14,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-069",
+      "primaryRef": "Sahih Muslim 2721a",
+      "inBookReference": "Book 48, Hadith 97",
+      "narrator": "Abdullah",
+      "themeVerified": "Supplication asking Allah for right guidance, piety and protection from evil, chastity, and freedom from want.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2721a",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V123",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "N-055"
+        ],
+        "relatedReferences": [
+          "Sahih Muslim 2725a"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both include guidance, but Muslim 2721a is an independent four-part supplication for guidance, piety, chastity and sufficiency, while Muslim 2725a teaches guidance and rectitude through road and arrow imagery."
+      }
+    },
+    {
+      "id": "N-070",
+      "primaryRef": "Sahih al-Bukhari 3208",
+      "inBookReference": "Book 59, Hadith 19",
+      "narrator": "Abdullah bin Mas'ud",
+      "themeVerified": "Stages of human creation in the womb, the angel's writing of deeds, livelihood, lifespan and final state, and the warning that a person's concluding deeds may differ from earlier conduct.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:3208",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V123",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-071",
+      "primaryRef": "Sahih Muslim 2327a",
+      "inBookReference": "Book 43, Hadith 103",
+      "narrator": "Aisha",
+      "themeVerified": "When given a choice, the Prophet chose the easier permissible option; he was farthest from sin and did not take personal revenge unless Allah's sacred limits were violated.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2327a",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V123",
+      "canonicalCountImpact": 1
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

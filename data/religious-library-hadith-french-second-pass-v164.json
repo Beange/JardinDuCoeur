@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V164",
+  "auditId": "religious-library-hadith-french-second-pass-v164",
+  "purpose": "Second passage ciblé des entrées en attente; promotion uniquement des traductions françaises HadeethEnc vérifiées sans avertissement explicite de révision.",
+  "counts": {
+    "newlyPromoted": 3,
+    "publishedFrenchCanonicalEntries": 49,
+    "pendingPublishedFrenchCanonicalEntries": 91
+  },
+  "promoted": [
+    {
+      "canonicalId": "N-001",
+      "primaryRef": "Sahih al-Bukhari 5971",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4182",
+      "sourceHadithId": 4182,
+      "matchingBasis": "Même matn arabe et même rapporteur Abû Hurayrah; HadeethEnc attribue la première version à Al-Bukhârî et Muslim. La structure canonique est Bukhari 5971.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-021",
+      "primaryRef": "Sahih Muslim 85c",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3365",
+      "sourceHadithId": 3365,
+      "matchingBasis": "Même matn arabe et même rapporteur ‘Abdullah ibn Mas’ûd; HadeethEnc affiche Bukhari 527 et l’attribution conjointe Al-Bukhârî/Muslim, correspondant au parallèle canonique Muslim 85c.",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-022",
+      "primaryRef": "Sahih Muslim 127a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/58144",
+      "sourceHadithId": 58144,
+      "matchingBasis": "Même matn arabe et même rapporteur Abû Hurayrah; HadeethEnc affiche Bukhari 5269 et l’attribution conjointe Al-Bukhârî/Muslim, correspondant au parallèle canonique Muslim 127a.",
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "heldForRevisionWarning": [],
+  "notPromoted": [],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

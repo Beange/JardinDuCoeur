@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V151",
+  "registerId": "JDC-HADITH-FRENCH-MULTISOURCE-REAUDIT-BATCH10-V1",
+  "purpose": "Réaduit multi-source de RC-013; identification de la traduction française HadeethEnc par concordance du matn arabe, du rapporteur, de la collection et du contexte, sans dépendre du numéro interne HadeethEnc.",
+  "auditDate": "2026-09-16",
+  "entries": [
+    {
+      "canonicalId": "RC-013",
+      "primaryRef": "Sahih Muslim 1017e",
+      "variantsPreserved": ["Sahih Muslim 1017f", "Sahih Muslim 1017g", "Sahih Muslim 1017h"],
+      "narrator": "Jarîr ibn 'Abdillah",
+      "sourcePublisher": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3506",
+      "sourceHadithId": 3506,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "identityEvidence": "Concordance du rapporteur Jarîr ibn 'Abdillah, du contexte des nécessiteux et de l'aumône, et du matn arabe final « man sanna fi al-islam sunnatan hasanatan ... » avec Sahih Muslim 1017e. La source française affiche [Authentique] - [Rapporté par Muslim].",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Muslim",
+      "explicitRevisionWarningObserved": false,
+      "frenchTextLocated": true,
+      "frenchTextTraceable": true,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "decision": "VERIFIED_REUSABLE_FRENCH",
+      "productionReady": true,
+      "note": "Le numéro 1017e n'est pas affiché sur la page HadeethEnc; l'identité est établie par concordance textuelle et bibliographique. Aucune traduction n'a été synthétisée ni reformulée."
+    }
+  ],
+  "counts": {"reaudited": 1, "newlyVerifiedReusableFrench": 1, "stillEnAttente": 0},
+  "assertions": {"translationSynthesized": false, "translationModified": false, "runtimeChanged": false, "productionIntegrationAuthorized": false}
+}

@@ -1,0 +1,20 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V18
+
+Structures canoniques confirmées au total .... 23
+- historiques récupérées ...................... 13
+- reconstruction R-ID ......................... 10
+
+NOUVELLES CONSOLIDATIONS
+RC-021 R-057/R-058 : Bukhari 6478 + Muslim 2988 .... CONFIRMÉ
+RC-022 R-059/R-060 : Bukhari 5675 + Muslim 2191a ... CONFIRMÉ
+RC-023 R-061/R-062 : Bukhari 5641,5642 + Muslim 2573 CONFIRMÉ
+
+Candidats R-ID absorbés ....................... 20
+Candidats R-ID restant à consolider ........... 62
+
+Corrections R-057 et R-059 conservées ......... PASS
+Référence Bukhari 5641,5642 normalisée ........ PASS
+H-ID historiques inventés ..................... 0
+Traduction française publiée .................. PENDING
+productionReady ................................ false
+Migration index.html .......................... NON

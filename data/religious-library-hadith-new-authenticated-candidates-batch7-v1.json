@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH7-V1",
+  "purpose": "Seventh authenticated batch, source-reverified and thematically adjudicated for promotion in V101.",
+  "selectionPolicy": {
+    "preferredCollections": [
+      "Sahih al-Bukhari",
+      "Sahih Muslim"
+    ],
+    "antiDuplicationAgainstCurrent96ExactRefs": true,
+    "thematicPromotionDeferred": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 4,
+    "existingCanonicalStructures": 96,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 44,
+    "promotedCanonicalStructures": 4,
+    "rejectedAsDuplicateExistingCanon": 0,
+    "remainingUnfilledTargetAfterPromotion": 40
+  },
+  "candidates": [
+    {
+      "id": "N-035",
+      "primaryRef": "Sahih al-Bukhari 6094",
+      "inBookReference": "Book 78, Hadith 121",
+      "theme": "vérité dans la parole conduisant à la droiture, et mensonge conduisant à la perversité",
+      "narrator": "Abdullah ibn Mas'ud",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6094",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V101",
+      "auditReason": "Distinct general truthfulness/lying moral trajectory; RC-014 concerns truthfulness specifically in commercial transactions.",
+      "sourceVerificationRelease": "V101"
+    },
+    {
+      "id": "N-036",
+      "primaryRef": "Sahih al-Bukhari 7138",
+      "inBookReference": "Book 93, Hadith 2",
+      "theme": "responsabilité confiée à chacun — chacun est gardien et responsable de ce qui lui est confié",
+      "narrator": "Abdullah ibn Umar",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:7138",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V101",
+      "auditReason": "Distinct general entrusted-responsibility/accountability structure; no current canonical structure represents the shepherd/responsibility formulation.",
+      "sourceVerificationRelease": "V101"
+    },
+    {
+      "id": "N-037",
+      "primaryRef": "Sahih Muslim 2999",
+      "inBookReference": "Book 55, Hadith 82",
+      "theme": "affaire du croyant — gratitude dans l’aisance et patience dans l’épreuve",
+      "narrator": "Suhaib",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2999",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V101",
+      "auditReason": "Distinct believer-response structure pairing gratitude in ease with patience in adversity; existing endurance entries do not represent this two-state formulation.",
+      "sourceVerificationRelease": "V101"
+    },
+    {
+      "id": "N-038",
+      "primaryRef": "Sahih Muslim 804a",
+      "inBookReference": "Book 6, Hadith 302",
+      "theme": "récitation du Qur’an — il viendra intercéder pour ses compagnons au Jour de la Résurrection",
+      "narrator": "Abu Umama",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:804a",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V101",
+      "auditReason": "Distinct virtue of Qur'an recitation and its intercession; RC-008 concerns learning/teaching and RC-059 collective study/knowledge.",
+      "sourceVerificationRelease": "V101"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  },
+  "auditSummary": {
+    "promoted": [
+      "N-035",
+      "N-036",
+      "N-037",
+      "N-038"
+    ],
+    "rejectedDuplicates": [],
+    "historicalRecoveryClaimed": false
+  }
+}

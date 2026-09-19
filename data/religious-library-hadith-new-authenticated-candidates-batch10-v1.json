@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH10-V1",
+  "purpose": "Tenth candidate batch externally verified in V107; all three inherited references were corrected and all three candidates rejected as duplicates of existing canon.",
+  "selectionPolicy": {
+    "exactReferenceVerificationRequiredBeforePromotion": true,
+    "duplicateCheckRequiredBeforePromotion": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalStructures": 102,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 38,
+    "promotedCanonicalStructures": 0,
+    "rejectedAsDuplicateExistingCanon": 3,
+    "remainingUnfilledTargetAfterAudit": 38
+  },
+  "candidates": [
+    {
+      "id": "N-045",
+      "source": "Sunnah.com",
+      "sourceUrlCandidate": "https://sunnah.com/bukhari:6475",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_EXTERNAL_REFERENCE_VERIFIED_V107",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "inheritedPrimaryRefCandidate": "Sahih al-Bukhari 6471",
+      "inheritedThemeCandidate": "celui qui croit en Allah et au Jour dernier doit dire du bien ou se taire",
+      "inheritedNarratorCandidate": "Abu Huraira",
+      "primaryRef": "Sahih al-Bukhari 6475",
+      "inBookReference": "Book 81, Hadith 64",
+      "narrator": "Abu Huraira",
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "duplicateOf": [
+        "RC-007",
+        "RC-037"
+      ],
+      "auditReason": "Candidate 6471 was mismatched. The described good-speech/silence + neighbor + guest report is Bukhari 6475, already represented canonically.",
+      "sourceVerificationRelease": "V107"
+    },
+    {
+      "id": "N-046",
+      "source": "Sunnah.com",
+      "sourceUrlCandidate": "https://sunnah.com/muslim:2699a",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_EXTERNAL_REFERENCE_VERIFIED_V107",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "inheritedPrimaryRefCandidate": "Sahih Muslim 2693",
+      "inheritedThemeCandidate": "assemblées de dhikr entourées par les anges, couvertes de miséricorde et mentionnées par Allah",
+      "inheritedNarratorCandidate": "Abu Huraira",
+      "primaryRef": "Sahih Muslim 2700a, 2700b",
+      "inBookReference": "Book 48, Hadith 49",
+      "narrator": "Al-Agharr Abu Muslim, from Abu Huraira and Abu Sa'id al-Khudri",
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "duplicateOf": [
+        "RC-059"
+      ],
+      "auditReason": "Candidate 2693 was mismatched. The described dhikr gathering surrounded by angels/mercy/tranquility is Muslim 2700a,b and overlaps the already-canonical RC-059 family.",
+      "sourceVerificationRelease": "V107"
+    },
+    {
+      "id": "N-047",
+      "source": "Sunnah.com",
+      "sourceUrlCandidate": "https://sunnah.com/muslim:2699a",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_EXTERNAL_REFERENCE_VERIFIED_V107",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "inheritedPrimaryRefCandidate": "Sahih al-Bukhari 6019",
+      "inheritedThemeCandidate": "soulager une détresse d’un croyant et faciliter à une personne en difficulté",
+      "inheritedNarratorCandidate": "Abu Huraira",
+      "primaryRef": "Sahih Muslim 2699a",
+      "inBookReference": "Book 48, Hadith 48",
+      "narrator": "Abu Huraira",
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "duplicateOf": [
+        "RC-059"
+      ],
+      "auditReason": "Candidate Bukhari 6019 was mismatched. The described relief of distress/easing hardship/helping one's brother is Muslim 2699a, already canonical as RC-059.",
+      "sourceVerificationRelease": "V107"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  },
+  "auditSummary": {
+    "promoted": [],
+    "rejectedDuplicates": [
+      "N-045",
+      "N-046",
+      "N-047"
+    ],
+    "referenceCorrections": {
+      "N-045": "Bukhari 6471 → 6475",
+      "N-046": "Muslim 2693 → 2700a,b",
+      "N-047": "Bukhari 6019 → Muslim 2699a"
+    },
+    "historicalRecoveryClaimed": false
+  }
+}

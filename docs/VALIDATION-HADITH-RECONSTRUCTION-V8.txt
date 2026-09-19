@@ -1,0 +1,23 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V8
+
+H-ID historiques récupérés .............. 13/140
+H-ID historiques non retrouvés ......... 127/140
+
+Candidats reconstruction bruts ......... 66/127
+Nouveaux V8 ............................. 8
+Places brutes restantes ................ 61
+
+Familles ajoutées :
+RF-21 invocation de guérison
+RF-22 maladie / expiation
+RF-23 inscription des actions
+
+Aucun ancien H-ID inventé ............... PASS
+countsAsEntry=false ..................... PASS
+productionReady=false ................... PASS
+randomHome=false ........................ PASS
+provenance française .................... PENDING
+
+Les références médicales/spirituelles gardent explicitement les garde-fous :
+pas de remplacement de soins, pas de guérison garantie, pas de culpabilisation
+de la maladie et pas de gamification de la souffrance.

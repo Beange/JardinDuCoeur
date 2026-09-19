@@ -1,0 +1,15 @@
+Jardin du Cœur — validation ciblée de la release V138
+
+Résultat : PASS
+Contrôles : 174
+Réussites : 174
+Échecs : 0
+
+Lot contrôlé : RC-001 à RC-005.
+
+Les cinq pistes françaises retrouvées dans le registre historique V11 sont toutes portées par le champ auditSummaryFr, tandis que publishedFrenchTranslation reste explicitement null. Elles sont donc conservées comme résumés éditoriaux et ne sont pas promues comme traductions françaises publiées.
+
+Bilan : 5/5 structures auditées; 5 résumés historiques retrouvés; 0 traduction française publiée récupérée; 5 notices toujours en attente d’une édition française traçable. Aucun texte traduit ou reformulé n’est inventé. Corpus canonique, R-077 et index.html inchangés; intégration runtime non autorisée.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 174 | PASS: 174 | FAIL: 0

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V158",
+  "registerId": "JDC-HADITH-FRENCH-CANONICAL-CONSISTENCY-CORRECTION-V158",
+  "purpose": "Corriger la dette de cohérence de V157: quatre traductions déjà auditées comme vérifiées sont effectivement matérialisées dans le registre canonique français.",
+  "auditDate": "2026-09-16",
+  "materializedCanonicalIds": [
+    "N-057",
+    "N-061",
+    "N-067",
+    "N-068"
+  ],
+  "countsBefore": {
+    "verified": 32,
+    "enAttente": 108
+  },
+  "countsAfter": {
+    "verified": 36,
+    "enAttente": 104
+  },
+  "assertions": {
+    "newReligiousClaimBeyondV157Audit": false,
+    "translationSynthesized": false,
+    "runtimeChanged": false,
+    "indexHtmlChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

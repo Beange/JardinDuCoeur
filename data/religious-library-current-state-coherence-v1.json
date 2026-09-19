@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Close the current-state coherence graph across manifest, release-coherence contract, current audit artifacts and documentation pointers. Administrative only; no religious identity inference.",
+  "finding": {
+    "priorState": "V78 release-coherence omitted its own file plus the V74 UM closure audit and V78 documentary-coherence artifact from releaseFiles/releaseDeclarations.",
+    "impact": "Administrative coverage gap only; no corpus count, mapping, reference, runtime or religious content was wrong.",
+    "correction": "V89 makes these current-state nodes explicit and validates their presence and declarations."
+  },
+  "requiredCurrentNodes": [
+    "data/religious-library-release-coherence-v1.json",
+    "data/religious-library-hadith-unmapped-closure-audit-v1.json",
+    "docs/AUDIT-COHERENCE-DOCUMENTAIRE-V78.txt",
+    "data/religious-library-current-state-coherence-v1.json",
+    "docs/AUDIT-COHERENCE-ETAT-COURANT-V79.txt"
+  ],
+  "corpusInvariants": {
+    "quranDossiers": 43,
+    "hadithCanonicalStructures": 108,
+    "hadithCoverageGaps": 32,
+    "materializedStructuresTotal": 151,
+    "canonicalTargetTotal": 183,
+    "absorbedReconstructionIds": 81,
+    "quarantinedReconstructionIds": [
+      "R-077"
+    ],
+    "historicalRecoveredHIds": 13,
+    "historicalUnrecoveredHIds": 127,
+    "hadithCoverageGapRecords": 71
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "full183ObjectSerialization": "PENDING",
+    "productionReady": false
+  }
+}

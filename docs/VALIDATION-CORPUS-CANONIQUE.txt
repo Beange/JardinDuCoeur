@@ -1,0 +1,12 @@
+VALIDATION CORPUS CANONIQUE — QURʾĀN
+
+entries: 30
+unique_ids: True
+unique_references: True
+all_quran: True
+all_verified: True
+all_productionReady: True
+all_sources: True
+all_excerpts_in_translation: True
+
+Note: 30 dossiers matérialisés à partir des entrées Qurʾān présentes dans index.html. La liste source des 13 dossiers supplémentaires du registre cible à 43 n’est pas présente dans ce paquet; ils ne sont pas inventés.

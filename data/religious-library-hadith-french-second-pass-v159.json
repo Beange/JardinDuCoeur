@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V159",
+  "auditId": "religious-library-hadith-french-second-pass-v159",
+  "purpose": "Second passage ciblé des entrées en attente; promotion uniquement des traductions françaises HadeethEnc vérifiées sans avertissement explicite de révision.",
+  "counts": {
+    "newlyPromoted": 2,
+    "publishedFrenchCanonicalEntries": 38,
+    "pendingPublishedFrenchCanonicalEntries": 102
+  },
+  "promoted": [
+    {
+      "canonicalId": "N-037",
+      "primaryRef": "Sahih Muslim 2999",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3298",
+      "sourceHadithId": 3298,
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-040",
+      "primaryRef": "Sahih al-Bukhari 2449",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5438",
+      "sourceHadithId": 5438,
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

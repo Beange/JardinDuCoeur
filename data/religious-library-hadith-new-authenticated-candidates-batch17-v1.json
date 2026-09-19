@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V120",
+  "targetRelease": "V121",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH17-V1",
+  "verificationDate": "2026-09-15",
+  "purpose": "Seventeenth externally verified candidate batch, promoted after final structural and thematic audit in V121.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 123,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 17,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-066",
+      "primaryRef": "Sahih Muslim 1631",
+      "inBookReference": "Book 25, Hadith 20",
+      "narrator": "Abu Huraira",
+      "themeVerified": "After a person's death, deeds end except for recurring charity, beneficial knowledge, or a righteous child who supplicates for the deceased.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:1631",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V121",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-067",
+      "primaryRef": "Sahih Muslim 1893a",
+      "inBookReference": "Book 33, Hadith 195",
+      "narrator": "Abu Mas'ud Al-Ansari",
+      "themeVerified": "One who guides another person to a good action receives a reward similar to the reward of its doer.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:1893a",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V121",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "N-019"
+        ],
+        "relatedReferences": [
+          "Sahih al-Bukhari 6028"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both concern helping toward good, but Muslim 1893a states the general reward rule for guiding to a good deed, while Bukhari 6028 records intercession for a specific need."
+      }
+    },
+    {
+      "id": "N-068",
+      "primaryRef": "Sahih al-Bukhari 3461",
+      "inBookReference": "Book 60, Hadith 128",
+      "narrator": "Abdullah bin Amr",
+      "themeVerified": "Convey the Prophet's teaching even if only one statement; narrating reports from the Children of Israel is permitted, while deliberate lying about the Prophet incurs a warning of the Fire.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:3461",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V121",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-008",
+          "N-038"
+        ],
+        "relatedReferences": [
+          "Sahih al-Bukhari 5027",
+          "Sahih Muslim 804a"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Quran transmission is related, but Bukhari 3461 separately addresses conveying even one teaching, reports from the Children of Israel, and the grave prohibition of deliberate false attribution."
+      }
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

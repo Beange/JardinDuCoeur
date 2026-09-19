@@ -1,0 +1,18 @@
+JARDIN DU CŒUR — VALIDATION RELEASE V49
+
+Objet : reproductibilité / inventaire de release uniquement.
+Aucun nouveau contenu religieux n'est créé par cette passe.
+
+Invariants attendus :
+- Qur'an : 43 dossiers.
+- Hadith : 69 structures canoniques confirmées.
+- GAP : 71 positions administratives sans identité religieuse.
+- Couverture : 112/183 structures matérialisées.
+- Reconstruction : 81/82 R-ID absorbés; R-077 quarantiné.
+- Inventaire V49 : 9 fichiers critiques, chemins triés et uniques, tailles et SHA-256 vérifiables.
+- Provenance : V49 -> V48, parent SHA-256 d0bfd6773b3c6b16df75356a9d8249e5ee5d2f9ed1616e59e7ce531802e65015.
+- index.html inchangé.
+- full183ObjectSerialization=PENDING.
+- productionReady=false.
+
+Le résultat exécutable complet est dans VALIDATION-STRUCTURE.txt.

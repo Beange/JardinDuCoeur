@@ -1,0 +1,11 @@
+Jardin du Cœur — validation ciblée de la release V128
+
+Résultat : PASS
+Contrôles : 113
+Réussites : 113
+Échecs : 0
+
+Points contrôlés : lot candidat non canonique N-078 à N-080; références vérifiées et absentes de tout le canon; séparation des références héritées et du supplément; couverture inchangée à 129/140 hadiths et 172/183 structures; 11 positions restantes; aucun H-ID attribué; traduction française PENDING; productionReady=false; R-077 historique quarantiné; index.html inchangé.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 113 | PASS: 113 | FAIL: 0

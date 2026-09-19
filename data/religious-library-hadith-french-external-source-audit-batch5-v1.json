@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V145",
+  "registerId": "JDC-HADITH-FRENCH-EXTERNAL-SOURCE-AUDIT-BATCH5-V1",
+  "purpose": "Résolution externe complémentaire de RC-010 et RC-011 sur HadeethEnc français; aucune promotion sans référence canonique exacte affichée sur la page source.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "counts": {
+    "canonicalStructuresAudited": 2,
+    "officialFrenchPagesLocated": 2,
+    "exactPrimaryReferencesDisplayed": 0,
+    "translationsPromoted": 0,
+    "entriesPendingExactReferenceResolution": 2
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-010",
+      "primaryRef": "Sahih Muslim 2723a",
+      "variants": ["Sahih Muslim 2723b", "Sahih Muslim 2723c"],
+      "sourceHadithId": 3008,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/3008",
+      "sourceAttributionDisplayed": "Authentique; Rapporté par Muslim",
+      "exactPrimaryReferenceDisplayed": false,
+      "sourceMatnIdentityConsistent": true,
+      "decision": "PENDING_EXACT_REFERENCE_DISPLAY",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-011",
+      "primaryRef": "Sahih al-Bukhari 6133",
+      "parallelRefs": ["Sahih Muslim 2998a", "Sahih Muslim 2998b"],
+      "sourceHadithId": 4928,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/4928",
+      "sourceAttributionDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "exactPrimaryReferenceDisplayed": false,
+      "sourceMatnIdentityConsistent": true,
+      "decision": "PENDING_EXACT_REFERENCE_DISPLAY",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "referenceNumberInferredFromHadeethEnc": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

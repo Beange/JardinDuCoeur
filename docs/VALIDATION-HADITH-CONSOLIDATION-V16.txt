@@ -1,0 +1,22 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V16
+
+Structures canoniques confirmées au total .... 15
+- reconstruction R-ID consolidée .............. 7
+- H-ID historiques récupérés consolidés ....... 8
+
+NOUVEAUX DOSSIERS HISTORIQUES
+RC-012 / H-025 : Muslim 2759a,b ............... CONFIRMÉ
+RC-013 / H-071 : Muslim 1017e + f/g/h ......... CONFIRMÉ, CONTEXTE CONSERVÉ
+RC-014 / H-074 : Bukhari 2079 + 2082 .......... CONFIRMÉ
+                  2086 ........................ REJETÉ
+                  2087/2088 ................... LIÉS +0
+RC-015 / H-088 : Muslim 2865d + a/b/c .......... CONFIRMÉ, VARIANTES +0
+
+H-ID historiques récupérés au total ........... 13
+H-ID historiques consolidés ................... 8
+H-ID historiques encore à consolider .......... 5
+H-ID historiques inventés ..................... 0
+
+Traduction française publiée .................. PENDING
+productionReady ................................ false
+Migration index.html .......................... NON

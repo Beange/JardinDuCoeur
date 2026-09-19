@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V171",
+  "auditId": "second-pass-french-n076-n081-v1",
+  "purpose": "Second passage ciblé des structures françaises en attente; seules les correspondances HadeethEnc françaises sans avertissement explicite sont promues.",
+  "promotions": [
+    {
+      "canonicalId": "N-076",
+      "primaryRef": "Sahih al-Bukhari 5351",
+      "narrator": "Abu Masud Al-Ansari",
+      "publishedFrenchTranslation": "Lorsque l'homme dépense pour sa famille et en escompte la récompense, c'est pour lui une aumône.",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/6460",
+      "sourceHadithId": 6460,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 55",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-081",
+      "primaryRef": "Sahih Muslim 1955a",
+      "narrator": "Shaddad bin Aus",
+      "publishedFrenchTranslation": "Allah a certes prescrit la bienfaisance en toute chose ! Ainsi, lorsque vous tuez, tuez de la meilleure des façons ; et lorsque vous sacrifiez, sacrifiez de la meilleure des façons. Que l’un de vous aiguise sa lame et qu’il tranquillise sa bête de sacrifice !",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4319",
+      "sourceHadithId": 4319,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 1955",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Muslim",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "counts": {
+    "promotedThisPass": 2,
+    "publishedFrenchCanonicalEntries": 64,
+    "pendingPublishedFrenchCanonicalEntries": 76
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false
+  }
+}

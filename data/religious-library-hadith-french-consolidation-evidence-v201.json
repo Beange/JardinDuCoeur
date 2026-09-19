@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V201",
+  "registerId": "hadith-french-consolidation-evidence-v201",
+  "purpose": "Matérialiser la recherche sur les 50 hadiths préservés sans promotion française tant que les critères de provenance ne sont pas tous satisfaits.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-026",
+      "RC-028",
+      "RC-029"
+    ],
+    "reviewedCount": 3
+  },
+  "counts": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 90,
+    "preservedFrenchToConsolidate": 50,
+    "newFinalPromotions": 0,
+    "newFullFrenchMatchesRecorded": 3
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-026",
+      "primaryRef": "Sahih al-Bukhari 6369",
+      "status": "FULL_FRENCH_MATCH_FOUND_PROVENANCE_HOLD",
+      "canonicalIdentityVerified": true,
+      "frenchSourceFound": true,
+      "fullMatnMatch": true,
+      "sources": [
+        {
+          "publisher": "Fawaz Ahmed multilingual hadith dataset",
+          "url": "https://fawazahmed0.github.io/hadiths/books/bukhari/6369",
+          "role": "EVIDENCE_ONLY_NON_AUTHORIZED_CHANNEL"
+        },
+        {
+          "publisher": "Sunnah.com",
+          "url": "https://sunnah.com/bukhari:6369",
+          "role": "CANONICAL_IDENTITY_CROSSCHECK"
+        }
+      ],
+      "decision": "PRESERVE_AND_HOLD",
+      "reason": "Texte français complet retrouvé, mais aucune provenance française autorisée et réutilisable n’est encore documentée au niveau requis."
+    },
+    {
+      "canonicalId": "RC-028",
+      "primaryRef": "Sahih al-Bukhari 6464",
+      "status": "FULL_FRENCH_MATCH_FOUND_PROVENANCE_HOLD",
+      "canonicalIdentityVerified": true,
+      "frenchSourceFound": true,
+      "fullMatnMatch": true,
+      "sources": [
+        {
+          "publisher": "Fawaz Ahmed multilingual hadith dataset",
+          "url": "https://fawazahmed0.github.io/hadiths/books/bukhari/6464",
+          "role": "EVIDENCE_ONLY_NON_AUTHORIZED_CHANNEL"
+        },
+        {
+          "publisher": "Sunnah.com",
+          "url": "https://sunnah.com/bukhari/81/53",
+          "role": "CANONICAL_IDENTITY_CROSSCHECK"
+        }
+      ],
+      "decision": "PRESERVE_AND_HOLD",
+      "reason": "Texte français complet retrouvé; la publication IslamHouse repérée ne couvre pas à elle seule tout le matn 6464, donc aucune promotion partielle."
+    },
+    {
+      "canonicalId": "RC-029",
+      "primaryRef": "Sahih al-Bukhari 6465",
+      "status": "AUTHORIZED_CHANNEL_DOCUMENT_FOUND_PROVENANCE_INCOMPLETE",
+      "canonicalIdentityVerified": true,
+      "frenchSourceFound": true,
+      "fullMatnMatch": true,
+      "sources": [
+        {
+          "publisher": "IslamHouse.com / publication française",
+          "url": "https://d1.islamhouse.com/data/fr/ih_books/single/fr-encyclopedie-simplifiee.pdf",
+          "displayedReference": "Al Boukhary 6465 et Muslim 782",
+          "role": "AUTHORIZED_CHANNEL_CANDIDATE_DOCUMENT"
+        },
+        {
+          "publisher": "HadeethEnc",
+          "url": "https://hadeethenc.com/ar/browse/hadith/66227",
+          "displayedReference": "Bukhari 6465; Muslim 783",
+          "role": "ARABIC_MATN_AND_REFERENCE_CROSSCHECK"
+        },
+        {
+          "publisher": "King Saud University news",
+          "url": "https://news.ksu.edu.sa/en/node/116971",
+          "role": "PUBLICATION_PROVENANCE_CROSSCHECK"
+        }
+      ],
+      "decision": "PRESERVE_AND_HOLD",
+      "reason": "Le document français et l’identité exacte sont établis. La provenance publique retrouvée indique une traduction confiée à une entité spécialisée, mais n’identifie pas encore le traducteur/réviseur exigé par la politique ISLAMHOUSE; promotion finale retenue."
+    }
+  ],
+  "assertions": {
+    "all140CanonicalIdsPreserved": true,
+    "unfinalizedHadithDeleted": false,
+    "translationSynthesized": false,
+    "partialTranslationPromoted": false,
+    "unauthorizedFrenchSourcePromoted": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

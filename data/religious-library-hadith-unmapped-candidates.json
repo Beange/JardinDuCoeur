@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "status": "verified-unmapped-hadith-candidates",
+  "important": "Ces références ont été étudiées dans l’audit transmis mais leur H-ID canonique n’est pas retrouvé. Les identifiants UM-* sont uniquement techniques et countsAsEntry=false. Ils ne doivent jamais être substitués à H-001…H-140.",
+  "counts": {
+    "verifiedUnmapped": 10,
+    "countsTowardCanonical183": 0
+  },
+  "entries": [
+    {
+      "id": "UM-001",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih Muslim 130",
+      "sourceUrl": "https://sunnah.com/muslim:130",
+      "inBookReference": "Book 1, Hadith 244",
+      "theme": [
+        "intention / bonnes et mauvaises actions"
+      ],
+      "auditNoteFr": "Référence étudiée dans l’audit; nombres religieux à ne jamais transformer en points, XP ou multiplicateurs produit.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-002",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih Muslim 131a",
+      "sourceUrl": "https://sunnah.com/muslim:131a",
+      "inBookReference": "Book 1, Hadith 245",
+      "theme": [
+        "intention / inscription des actions"
+      ],
+      "auditNoteFr": "Référence apparentée étudiée dans l’audit; mapping H-ID non retrouvé.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-003",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih Muslim 1907a",
+      "sourceUrl": "https://sunnah.com/muslim:1907a",
+      "inBookReference": "Book 33, Hadith 222",
+      "theme": [
+        "intention / hijra"
+      ],
+      "auditNoteFr": "Actes selon l’intention; utilisé dans l’audit contre tout score de niyyah.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-004",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih Muslim 1053a",
+      "sourceUrl": "https://sunnah.com/muslim:1053a",
+      "inBookReference": "Book 12, Hadith 161",
+      "theme": [
+        "suffisance / endurance / demande"
+      ],
+      "auditNoteFr": "Contexte de demandes répétées; garde-fous contre honte de pauvreté, honte de demander de l’aide et minimisation de douleur.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-005",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih Muslim 2326",
+      "sourceUrl": "https://sunnah.com/muslim:2326",
+      "inBookReference": "Book 43, Hadith 102",
+      "theme": [
+        "disponibilité / humilité / personne vulnérable"
+      ],
+      "auditNoteFr": "Étudié pour interdire tout diagnostic psychologique automatisé à partir du journal.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-006",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6464",
+      "sourceUrl": "https://sunnah.com/bukhari:6464",
+      "inBookReference": "Book 81, Hadith 53",
+      "theme": [
+        "modération / constance / miséricorde"
+      ],
+      "auditNoteFr": "Œuvres modérées et régulières; utilisé comme garde-fou anti-streak.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-007",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6465",
+      "sourceUrl": "https://sunnah.com/bukhari:6465",
+      "inBookReference": "Book 81, Hadith 54",
+      "theme": [
+        "constance / capacité"
+      ],
+      "auditNoteFr": "Constance même petite et ne prendre sur soi que ce que l’on peut supporter; test anti-streak.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-008",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih Muslim 783b",
+      "sourceUrl": "https://sunnah.com/muslim:783b",
+      "inBookReference": "Book 6, Hadith 258",
+      "theme": [
+        "constance"
+      ],
+      "auditNoteFr": "Œuvres continues même petites; ʿĀʾisha maintenait une œuvre commencée.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-009",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih Muslim 2818a",
+      "sourceUrl": "https://sunnah.com/muslim:2818a",
+      "inBookReference": "Book 52, Hadith 75",
+      "theme": [
+        "modération / miséricorde / constance"
+      ],
+      "auditNoteFr": "Modération, entrée au Paradis par la miséricorde d’Allah et constance des œuvres.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    },
+    {
+      "id": "UM-010",
+      "kind": "hadithCandidate",
+      "countsAsEntry": false,
+      "canonicalHId": null,
+      "primaryRef": "Sahih al-Bukhari 6466",
+      "sourceUrl": "https://sunnah.com/bukhari:6466",
+      "inBookReference": "Book 81, Hadith 55",
+      "theme": [
+        "constance"
+      ],
+      "auditNoteFr": "Référence voisine étudiée comme exemple: proximité éditoriale ne signifie pas parallelRef automatique.",
+      "referenceVerified": true,
+      "frenchTextStatus": "notStored",
+      "productionReady": false,
+      "randomHome": false
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Administrative semantic digest contract for V78 stable JSON inputs; it infers no religious identity.",
+  "algorithm": {
+    "name": "PROJECT_CANONICAL_JSON_SHA256_V1",
+    "encoding": "UTF-8",
+    "objectKeys": "lexicographically sorted",
+    "separators": ", and : omitted whitespace",
+    "ensureAscii": false,
+    "numberPolicy": "Python JSON numeric serialization; this is project-canonical, not RFC 8785/JCS"
+  },
+  "datasets": [
+    {
+      "id": "quranCanonical",
+      "path": "data/religious-library-quran-canonical.json",
+      "byteSha256": "20fc0c151720e960693d1229e9ccf4ac3a7f1dea43f1a6090bf4062a59522293",
+      "canonicalJsonSha256": "1215c21f649f75e33b3caba02f8acb8797a64d37d040a14f09c63785be82ac72",
+      "canonicalJsonBytes": 58521
+    },
+    {
+      "id": "hadithCanonical",
+      "path": "data/religious-library-hadith-canonical-consolidation-v44.json",
+      "byteSha256": "2b6f4346ca9c48c18556604d88d7583e268345c735a25914f2b2e145229e11a5",
+      "canonicalJsonSha256": "669ceb1fa550f10e5e02b72906bccfcff9f5cb488531ece324e2cb429c801486",
+      "canonicalJsonBytes": 49861
+    },
+    {
+      "id": "hadithCoverageGaps",
+      "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+      "byteSha256": "a058620bebb4b1ae7c619bd6a9011f3198a4d08b0e4462b5b4714844eb865077",
+      "canonicalJsonSha256": "1eee81dd57887689fbcd5c1fdd74ab54df8cb214cfd01210a42b311070484af9",
+      "canonicalJsonBytes": 18413
+    },
+    {
+      "id": "hadithCoverageLedger",
+      "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+      "byteSha256": "5595c6b670347c3d3fc69fba2820d216f994ea892b760310701236e526e4d3cb",
+      "canonicalJsonSha256": "e1bc007c3dd309e7fd589605d3be594f9a21a5d68c6bbf1877dd117b73ea04ab",
+      "canonicalJsonBytes": 19505
+    },
+    {
+      "id": "hadithReconstruction",
+      "path": "data/religious-library-hadith-reconstruction-v11.json",
+      "byteSha256": "a5ec82eac8fd0545e9fdc7c244e7a01ea2348b062969800497b1d2d2f5cbb6af",
+      "canonicalJsonSha256": "f429e67979d98030e56965bcfb75ecdeb34d8946975813860e8e4af4001d43df",
+      "canonicalJsonBytes": 65630
+    },
+    {
+      "id": "globalCoverageLedger",
+      "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+      "byteSha256": "fcf2bbba51ab6d5e337d9ae2560e93c9aa57d0a26058471ff9fbef379f33b60a",
+      "canonicalJsonSha256": "f16d13e40ec5c586b3c94452d65f96761781a61df608bb034def7a7746840654",
+      "canonicalJsonBytes": 38113
+    }
+  ],
+  "assertions": {
+    "datasetCount": 6,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "productionReady": false
+  }
+}

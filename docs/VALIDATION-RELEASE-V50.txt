@@ -1,0 +1,15 @@
+JARDIN DU CŒUR — VALIDATION RELEASE V50
+
+Objet : contrat de build reproductible et non récursif.
+- Corpus religieux ajouté/modifié : NON
+- index.html modifié : NON
+- Build manifest : data/religious-library-release-build-v1.json
+- Phases documentées : 9
+- Parent : V49
+- Couverture : 43 Qur’an + 69 hadith = 112/183 matérialisés
+- GAP : 71
+- Registre R : 81/82 absorbés ; R-077 quarantiné
+- full183ObjectSerialization : PENDING
+- productionReady : false
+
+Le rapport structurel complet est dans docs/VALIDATION-STRUCTURE.txt.

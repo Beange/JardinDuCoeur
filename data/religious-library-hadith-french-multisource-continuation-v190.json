@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V190",
+  "auditId": "french-multisource-continuation-v190",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-026",
+      "RC-029",
+      "RC-043",
+      "RC-061"
+    ],
+    "reviewedCount": 4
+  },
+  "promotedCanonicalIds": [],
+  "heldCanonicalIds": [
+    "RC-026",
+    "RC-029",
+    "RC-043",
+    "RC-061"
+  ],
+  "findings": [
+    {
+      "canonicalId": "RC-026",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible correspondant de manière traçable à Bukhari 6369 n’a été établie dans cette passe; aucune traduction synthétisée."
+    },
+    {
+      "canonicalId": "RC-029",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible correspondant de manière traçable à Bukhari 6465 n’a été établie dans cette passe; aucune traduction synthétisée."
+    },
+    {
+      "canonicalId": "RC-043",
+      "decision": "HELD",
+      "reason": "HadeethEnc FR 4709 correspond explicitement à Sahih al-Bukhari 6116 et le classe authentique, mais la page affiche explicitement que la traduction a besoin d’être davantage révisée et vérifiée; aucune résolution indépendante suffisante n’est établie dans cette passe."
+    },
+    {
+      "canonicalId": "RC-061",
+      "decision": "HELD",
+      "reason": "Aucune fiche française publiée admissible correspondant de manière traçable à Bukhari 16 n’a été établie dans cette passe; aucune traduction synthétisée."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 81,
+    "pendingPublishedFrenchCanonicalEntries": 59
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

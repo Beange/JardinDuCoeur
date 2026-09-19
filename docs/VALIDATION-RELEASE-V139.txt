@@ -1,0 +1,15 @@
+Jardin du Cœur — validation ciblée de la release V139
+
+Résultat : PASS
+Contrôles : 180
+Réussites : 180
+Échecs : 0
+
+Lot contrôlé : sources françaises externes pour RC-001 à RC-005.
+
+Trois pages françaises HadeethEnc exactement reliées aux références canoniques ont été localisées : RC-002/Bukhari 6114, RC-003/Muslim 2564 et RC-005/Muslim 1907. Les pages RC-003 et RC-005 signalent explicitement que leur traduction doit encore être révisée et vérifiée. Le numéro de version exigé par les conditions de republication n’est pas affiché sur les trois pages consultées.
+
+Décision : 3 sources exactes enregistrées comme pistes, 0 traduction promue. RC-001 et RC-004 restent sans source française exacte retenue dans ce lot. Aucun texte web n’est copié dans le canon; aucune traduction n’est synthétisée. Corpus canonique, R-077 et index.html inchangés; intégration runtime non autorisée.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 180 | PASS: 180 | FAIL: 0

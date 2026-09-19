@@ -1,0 +1,21 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V39
+Date: 2026-09-12
+
+LOT AUDITÉ
+- RC-023 / R-028 / R-061 / R-062 — cohérence de membership et comptage
+
+VÉRIFICATIONS
+- Sunnah.com publie Sahih al-Bukhari 5641, 5642 comme une même entrée, Book 75, Hadith 2, avec Abu Sa‘id al-Khudri et Abu Hurayra et le noyau fatigue/maladie/tristesse/nuisance/détresse -> expiation.
+- R-028 avait déjà été déclaré membre de RC-023 dans overlapCandidates/allReconstructionMembers mais n'était pas dans parallels.
+- R-028 est ajouté à parallels de RC-023; aucune nouvelle structure n'est créée.
+- Métadonnée R-028 corrigée: inBookReference Book 75, Hadith 2 (au lieu de Hadith 1). La référence primaire Sahih al-Bukhari 5641 reste inchangée.
+
+COMPTAGE STRICT primary/parallels
+- R-ID absorbés: 81/82
+- R-ID restant: R-077 (quarantiné)
+- Structures canoniques: 69 = 56 reconstruction + 13 historiques
+
+POLITIQUE
+- publishedFrenchTranslation: PENDING
+- productionReady: false
+- index.html: non modifié

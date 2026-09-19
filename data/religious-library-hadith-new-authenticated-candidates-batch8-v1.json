@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH8-V1",
+  "purpose": "Eighth authenticated batch, source-reverified and conservatively adjudicated in V103.",
+  "selectionPolicy": {
+    "preferredCollections": [
+      "Sahih al-Bukhari",
+      "Sahih Muslim"
+    ],
+    "antiDuplicationAgainstCurrent100ExactRefs": true,
+    "thematicPromotionDeferred": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalStructures": 100,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 40,
+    "promotedCanonicalStructures": 2,
+    "rejectedAsDuplicateExistingCanon": 1,
+    "remainingUnfilledTargetAfterPromotion": 38
+  },
+  "candidates": [
+    {
+      "id": "N-039",
+      "primaryRef": "Sahih Muslim 1015",
+      "inBookReference": "Book 12, Hadith 83",
+      "theme": "Allah est Bon et n’accepte que ce qui est bon; lien entre nourriture/gain licites et invocation",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim/12/83",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V103",
+      "auditReason": "Source reverified. Distinct structure linking what is good/lawful with acceptance and supplication; not represented by the current canonical set.",
+      "sourceVerificationRelease": "V103"
+    },
+    {
+      "id": "N-040",
+      "primaryRef": "Sahih al-Bukhari 2449",
+      "inBookReference": "Book 46, Hadith 10",
+      "theme": "réparer une injustice envers autrui avant le Jour de la Résurrection",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari/46/10",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V103",
+      "auditReason": "Source reverified. Distinct accountability/restitution structure concerning wrongs done to another person before the Last Day.",
+      "sourceVerificationRelease": "V103"
+    },
+    {
+      "id": "N-041",
+      "primaryRef": "Sahih al-Bukhari 6470",
+      "inBookReference": "Book 81, Hadith 59",
+      "theme": "retenue dans la demande, contentement et patience; la patience comme vaste don",
+      "narrator": "Abu Sa'id",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari/81/59",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "auditReason": "Source reverified, but substantive content is already represented by RC-042 / Sahih Muslim 1053a: restraint from asking, self-sufficiency and patience.",
+      "sourceVerificationRelease": "V103",
+      "duplicateOf": "RC-042"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  },
+  "auditSummary": {
+    "promoted": [
+      "N-039",
+      "N-040"
+    ],
+    "rejectedDuplicates": [
+      "N-041"
+    ],
+    "historicalRecoveryClaimed": false
+  }
+}

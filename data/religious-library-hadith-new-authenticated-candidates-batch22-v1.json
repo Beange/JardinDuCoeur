@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V130",
+  "targetRelease": "V131",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH22-V1",
+  "verificationDate": "2026-09-16",
+  "purpose": "Twenty-second externally verified candidate batch, promoted after full-canon structural and thematic audit in V131.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 135,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 5,
+    "canonicalCountImpactUntilPromotion": 3
+  },
+  "candidates": [
+    {
+      "id": "N-081",
+      "primaryRef": "Sahih Muslim 1955a",
+      "inBookReference": "Book 34, Hadith 84",
+      "narrator": "Shaddad bin Aus",
+      "themeVerified": "Allah has prescribed excellence in all things; killing and slaughter must be done well, with a sharpened blade and comfort for the animal.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:1955a",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V131",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-082",
+      "primaryRef": "Sahih al-Bukhari 2072",
+      "inBookReference": "Book 34, Hadith 25",
+      "narrator": "Al-Miqdam",
+      "themeVerified": "The best food is that earned through one’s own manual work; Prophet David ate from his manual earnings.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:2072",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V131",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-014"
+        ],
+        "relatedReferences": [
+          "Sahih al-Bukhari 2079"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both concern economic conduct, but Bukhari 2072 praises food earned by manual work, whereas Bukhari 2079 concerns truth, disclosure and blessing in a sales transaction."
+      }
+    },
+    {
+      "id": "N-083",
+      "primaryRef": "Sahih Muslim 1598",
+      "inBookReference": "Book 22, Hadith 132",
+      "narrator": "Jabir",
+      "themeVerified": "The recipient and payer of interest, its recorder, and its two witnesses are all included in the same condemnation.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:1598",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V131",
+      "canonicalCountImpact": 1,
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-062"
+        ],
+        "relatedReferences": [
+          "Sahih al-Bukhari 52"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both concern lawful and unlawful transactions, but Muslim 1598 specifically condemns the recipient, payer, recorder and witnesses of interest, while Bukhari 52 treats clear, forbidden and doubtful matters generally."
+      }
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 1,
+  "extractedFrom": "index.html",
+  "extractionMode": "exact runtime DAILY_QUOTES array",
+  "status": "implemented-provisional",
+  "note": "Ce fichier reflète uniquement les citations effectivement présentes dans le code actuel. Il ne constitue pas le corpus canonique 183 entrées audité dans la conversation.",
+  "count": 30,
+  "entries": [
+    {
+      "ref": "94:5",
+      "surah": "Ach-Charh",
+      "ar": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "fr": "À côté de la difficulté est, certes, une facilité !",
+      "url": "https://quran.com/fr/ach-charh/5"
+    },
+    {
+      "ref": "94:6",
+      "surah": "Ach-Charh",
+      "ar": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "fr": "À côté de la difficulté est, certes, une facilité !",
+      "url": "https://quran.com/fr/ach-charh/6"
+    },
+    {
+      "ref": "13:28",
+      "surah": "Ar-Raʿd",
+      "ar": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+      "fr": "N’est-ce point par l’évocation d’Allah que se tranquillisent les cœurs ?",
+      "url": "https://quran.com/fr/le-tonnerre/28"
+    },
+    {
+      "ref": "39:53",
+      "surah": "Az-Zumar",
+      "ar": "لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ",
+      "fr": "Ne désespérez pas de la miséricorde d’Allah.",
+      "url": "https://quran.com/fr/les-groupes/53",
+      "excerpt": true
+    },
+    {
+      "ref": "2:286",
+      "surah": "Al-Baqarah",
+      "ar": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+      "fr": "Allah n’impose à aucune âme une charge supérieure à sa capacité.",
+      "url": "https://quran.com/fr/la-vache/286",
+      "excerpt": true
+    },
+    {
+      "ref": "2:186",
+      "surah": "Al-Baqarah",
+      "ar": "فَإِنِّي قَرِيبٌ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ",
+      "fr": "Je suis tout proche : Je réponds à l’appel de celui qui M’invoque quand il M’invoque.",
+      "url": "https://quran.com/fr/la-vache/186",
+      "excerpt": true
+    },
+    {
+      "ref": "2:152",
+      "surah": "Al-Baqarah",
+      "ar": "فَاذْكُرُونِي أَذْكُرْكُمْ",
+      "fr": "Souvenez-vous de Moi donc, Je Me souviendrai de vous.",
+      "url": "https://quran.com/fr/la-vache/152",
+      "excerpt": true
+    },
+    {
+      "ref": "3:159",
+      "surah": "Âl ʿImrân",
+      "ar": "فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ",
+      "fr": "Puis, une fois que tu t’es décidé, confie-toi donc à Allah.",
+      "url": "https://quran.com/fr/la-famille-de-imran/159",
+      "excerpt": true
+    },
+    {
+      "ref": "3:173",
+      "surah": "Âl ʿImrân",
+      "ar": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+      "fr": "Allah nous suffit ; et Il est notre meilleur garant !",
+      "url": "https://quran.com/fr/la-famille-de-imran/173",
+      "excerpt": true
+    },
+    {
+      "ref": "29:69",
+      "surah": "Al-ʿAnkabût",
+      "ar": "وَالَّذِينَ جَاهَدُوا فِينَا لَنَهْدِيَنَّهُمْ سُبُلَنَا",
+      "fr": "Et quant à ceux qui luttent pour Notre cause, Nous les guiderons certes sur Nos sentiers.",
+      "url": "https://quran.com/fr/laragnee/69",
+      "excerpt": true
+    },
+    {
+      "ref": "40:60",
+      "surah": "Ghâfir",
+      "ar": "ادْعُونِي أَسْتَجِبْ لَكُمْ",
+      "fr": "Appelez-Moi, Je vous répondrai.",
+      "url": "https://quran.com/fr/le-pardonneur/60",
+      "excerpt": true
+    },
+    {
+      "ref": "57:4",
+      "surah": "Al-Hadîd",
+      "ar": "وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ",
+      "fr": "Et Il est avec vous où que vous soyez.",
+      "url": "https://quran.com/fr/le-fer/4",
+      "excerpt": true
+    },
+    {
+      "ref": "65:3",
+      "surah": "At-Talâq",
+      "ar": "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+      "fr": "Et quiconque place sa confiance en Allah, Il lui suffit.",
+      "url": "https://quran.com/fr/le-divorce/3",
+      "excerpt": true
+    },
+    {
+      "ref": "93:3",
+      "surah": "Ad-Duhâ",
+      "ar": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "fr": "Ton Seigneur ne t’a ni abandonné, ni détesté.",
+      "url": "https://quran.com/fr/le-jour-montant/3"
+    },
+    {
+      "ref": "93:5",
+      "surah": "Ad-Duhâ",
+      "ar": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰ",
+      "fr": "Ton Seigneur t’accordera certes Ses faveurs, et alors tu seras satisfait.",
+      "url": "https://quran.com/fr/le-jour-montant/5"
+    },
+    {
+      "ref": "12:87",
+      "surah": "Yûsuf",
+      "ar": "وَلَا تَيْأَسُوا مِن رَّوْحِ اللَّهِ",
+      "fr": "Et ne désespérez pas de la miséricorde d’Allah.",
+      "url": "https://quran.com/fr/joseph/87",
+      "excerpt": true
+    },
+    {
+      "ref": "16:128",
+      "surah": "An-Nahl",
+      "ar": "إِنَّ اللَّهَ مَعَ الَّذِينَ اتَّقَوا وَّالَّذِينَ هُم مُّحْسِنُونَ",
+      "fr": "Certes, Allah est avec ceux qui L’ont craint avec piété et ceux qui sont bienfaisants.",
+      "url": "https://quran.com/fr/les-abeilles/128"
+    },
+    {
+      "ref": "8:46",
+      "surah": "Al-Anfâl",
+      "ar": "وَاصْبِرُوا إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+      "fr": "Et soyez endurants, car Allah est avec les endurants.",
+      "url": "https://quran.com/fr/le-butin/46",
+      "excerpt": true
+    },
+    {
+      "ref": "20:46",
+      "surah": "Tâ-Hâ",
+      "ar": "لَا تَخَافَا إِنَّنِي مَعَكُمَا أَسْمَعُ وَأَرَىٰ",
+      "fr": "Ne craignez rien. Je suis avec vous : J’entends et Je vois.",
+      "url": "https://quran.com/fr/ta-ha/46"
+    },
+    {
+      "ref": "20:114",
+      "surah": "Tâ-Hâ",
+      "ar": "وَقُل رَّبِّ زِدْنِي عِلْمًا",
+      "fr": "Et dis : « Ô mon Seigneur, accrois mes connaissances ! »",
+      "url": "https://quran.com/fr/ta-ha/114",
+      "excerpt": true
+    },
+    {
+      "ref": "33:3",
+      "surah": "Al-Ahzâb",
+      "ar": "وَتَوَكَّلْ عَلَى اللَّهِ وَكَفَىٰ بِاللَّهِ وَكِيلًا",
+      "fr": "Et place ta confiance en Allah. Allah te suffit comme protecteur.",
+      "url": "https://quran.com/fr/les-coalises/3"
+    },
+    {
+      "ref": "39:36",
+      "surah": "Az-Zumar",
+      "ar": "أَلَيْسَ اللَّهُ بِكَافٍ عَبْدَهُ",
+      "fr": "Allah ne suffit-Il pas à Son serviteur ?",
+      "url": "https://quran.com/fr/les-groupes/36",
+      "excerpt": true
+    },
+    {
+      "ref": "9:51",
+      "surah": "At-Tawbah",
+      "ar": "قُل لَّن يُصِيبَنَا إِلَّا مَا كَتَبَ اللَّهُ لَنَا",
+      "fr": "Dis : « Rien ne nous atteindra, en dehors de ce qu’Allah a prescrit pour nous. »",
+      "url": "https://quran.com/fr/le-repentir/51",
+      "excerpt": true
+    },
+    {
+      "ref": "14:7",
+      "surah": "Ibrâhîm",
+      "ar": "لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+      "fr": "Si vous êtes reconnaissants, très certainement J’augmenterai Mes bienfaits pour vous.",
+      "url": "https://quran.com/fr/abraham/7",
+      "excerpt": true
+    },
+    {
+      "ref": "7:56",
+      "surah": "Al-Aʿrâf",
+      "ar": "إِنَّ رَحْمَتَ اللَّهِ قَرِيبٌ مِّنَ الْمُحْسِنِينَ",
+      "fr": "La miséricorde d’Allah est proche des bienfaisants.",
+      "url": "https://quran.com/fr/al-araf/56",
+      "excerpt": true
+    },
+    {
+      "ref": "18:10",
+      "surah": "Al-Kahf",
+      "ar": "رَبَّنَا آتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
+      "fr": "Ô notre Seigneur, donne-nous de Ta part une miséricorde ; et assure-nous la droiture dans tout ce qui nous concerne.",
+      "url": "https://quran.com/fr/la-caverne/10",
+      "excerpt": true
+    },
+    {
+      "ref": "25:74",
+      "surah": "Al-Furqân",
+      "ar": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ",
+      "fr": "Seigneur, donne-nous, en nos épouses et nos descendants, la joie des yeux.",
+      "url": "https://quran.com/fr/le-discernement/74",
+      "excerpt": true
+    },
+    {
+      "ref": "28:24",
+      "surah": "Al-Qasas",
+      "ar": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+      "fr": "Seigneur, j’ai grand besoin du bien que Tu feras descendre vers moi.",
+      "url": "https://quran.com/fr/le-recit/24",
+      "excerpt": true
+    },
+    {
+      "ref": "3:8",
+      "surah": "Âl ʿImrân",
+      "ar": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً",
+      "fr": "Seigneur ! Ne laisse pas dévier nos cœurs après que Tu nous aies guidés ; et accorde-nous Ta miséricorde.",
+      "url": "https://quran.com/fr/la-famille-de-imran/8",
+      "excerpt": true
+    },
+    {
+      "ref": "89:27-28",
+      "surah": "Al-Fajr",
+      "ar": "يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ارْجِعِي إِلَىٰ رَبِّكِ رَاضِيَةً مَّرْضِيَّةً",
+      "fr": "Ô toi, âme apaisée, retourne vers ton Seigneur, satisfaite et agréée.",
+      "url": "https://quran.com/fr/laube/27-28",
+      "excerpt": true
+    }
+  ]
+}

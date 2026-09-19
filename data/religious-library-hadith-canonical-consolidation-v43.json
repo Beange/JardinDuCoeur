@@ -1,0 +1,1408 @@
+{
+  "registerId": "religious-library-hadith-canonical-consolidation-v43",
+  "source": "V42 + registre explicite des 71 lacunes de matérialisation V43 (placeholders de couverture sans identité religieuse assignée)",
+  "canonicalStructuralEntries": [
+    {
+      "canonicalId": "RC-001",
+      "primary": "R-029",
+      "primaryRef": "Sahih al-Bukhari 10",
+      "parallels": [
+        "R-030"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 40"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "sécurité de la langue et de la main",
+      "note": "Même enseignement central; Bukhari conserve en plus la clause sur le muhājir."
+    },
+    {
+      "canonicalId": "RC-002",
+      "primary": "R-039",
+      "primaryRef": "Sahih al-Bukhari 6114",
+      "parallels": [
+        "R-040"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 2609a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "maîtrise de soi dans la colère",
+      "note": "Formulation centrale parallèle confirmée."
+    },
+    {
+      "canonicalId": "RC-003",
+      "primary": "R-047",
+      "primaryRef": "Sahih Muslim 2564c",
+      "parallels": [
+        "R-048"
+      ],
+      "parallelRefs": [
+        "Sunan Ibn Majah 4143"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "cœurs, actes, apparence et biens",
+      "note": "Transmission parallèle confirmée; Ibn Majah 4143 est gradé Sahih (Darussalam) sur la source consultée."
+    },
+    {
+      "canonicalId": "RC-004",
+      "primary": "R-055",
+      "primaryRef": "Sahih al-Bukhari 1413",
+      "parallels": [
+        "R-056"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 1016a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_CONTEXT_DIFFERENCE",
+      "theme": "demi-datte et protection contre le Feu",
+      "note": "Même noyau sur la demi-datte; Bukhari 1413 inclut explicitement l'alternative de la bonne parole, tandis que Muslim 1016a dans cette route s'arrête à la demi-datte."
+    },
+    {
+      "canonicalId": "RC-005",
+      "primary": "R-003",
+      "primaryRef": "Sahih Muslim 1907a",
+      "parallels": [
+        "R-019"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 1"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "intentions et hijra",
+      "note": "Même hadith de ʿUmar sur les intentions et l’émigration; une entrée canonique, deux sources principales."
+    },
+    {
+      "canonicalId": "RC-006",
+      "primary": "R-011",
+      "primaryRef": "Sahih al-Bukhari 13",
+      "parallels": [
+        "R-023"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 45a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_WORDING_VARIANT",
+      "theme": "aimer pour son frère ce que l’on aime pour soi",
+      "note": "Même enseignement transmis d’Anas; Muslim 45a conserve une variante 'frère / voisin'."
+    },
+    {
+      "canonicalId": "RC-007",
+      "primary": "R-012",
+      "primaryRef": "Sahih al-Bukhari 6018",
+      "parallels": [
+        "R-024"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 47a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_WORDING_VARIANT",
+      "theme": "voisin, hospitalité et bonne parole",
+      "note": "Même triade générale; Bukhari formule l’interdiction de nuire au voisin, Muslim l’honneur/bienveillance envers lui."
+    },
+    {
+      "canonicalId": "RC-008",
+      "historicalHId": "H-038",
+      "primaryRef": "Sahih al-Bukhari 5027",
+      "parallels": [
+        "Sahih al-Bukhari 5028"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "apprendre le Coran et l’enseigner",
+      "note": "Même enseignement d'Uthman; 5027 principal, 5028 parallèle +0."
+    },
+    {
+      "canonicalId": "RC-009",
+      "historicalHId": "H-043",
+      "primaryRef": "Sahih al-Bukhari 6406",
+      "parallels": [
+        "Sahih Muslim 2694"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "deux formules de dhikr légères sur la langue et lourdes dans la balance",
+      "note": "Même hadith d'Abu Huraira dans Bukhari et Muslim."
+    },
+    {
+      "canonicalId": "RC-010",
+      "historicalHId": "H-051",
+      "primaryRef": "Sahih Muslim 2723a",
+      "variants": [
+        "Sahih Muslim 2723b",
+        "Sahih Muslim 2723c"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_VARIANTS_PRESERVED",
+      "theme": "invocation du soir",
+      "note": "Une entrée canonique; variantes a/b/c conservées sans fusion silencieuse des formulations."
+    },
+    {
+      "canonicalId": "RC-011",
+      "historicalHId": "H-095",
+      "primaryRef": "Sahih al-Bukhari 6133",
+      "parallels": [
+        "Sahih Muslim 2998a",
+        "Sahih Muslim 2998b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "le croyant n’est pas piqué deux fois du même trou",
+      "note": "Même maxime d'Abu Huraira; Muslim 2998a,b sont des routes parallèles."
+    },
+    {
+      "canonicalId": "RC-012",
+      "historicalHId": "H-025",
+      "primaryRef": "Sahih Muslim 2759a",
+      "variants": [
+        "Sahih Muslim 2759b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_VARIANTS_PRESERVED",
+      "theme": "porte du repentir ouverte nuit et jour",
+      "note": "Une entrée canonique; routes a/b conservées, sans double comptage."
+    },
+    {
+      "canonicalId": "RC-013",
+      "historicalHId": "H-071",
+      "primaryRef": "Sahih Muslim 1017e",
+      "variants": [
+        "Sahih Muslim 1017f",
+        "Sahih Muslim 1017g",
+        "Sahih Muslim 1017h"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_CONTEXT_PRESERVED",
+      "theme": "initiative de bien et pratique suivie",
+      "note": "Contexte des personnes nécessiteuses et de l'initiative de l'Ansari conservé; variantes f/g/h +0."
+    },
+    {
+      "canonicalId": "RC-014",
+      "historicalHId": "H-074",
+      "primaryRef": "Sahih al-Bukhari 2079",
+      "parallels": [
+        "Sahih al-Bukhari 2082"
+      ],
+      "relatedRefs": [
+        "Sahih al-Bukhari 2087",
+        "Sahih al-Bukhari 2088"
+      ],
+      "rejectedRefs": [
+        "Sahih al-Bukhari 2086"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_REJECTION",
+      "theme": "vérité et transparence dans la transaction",
+      "note": "2079 principal; 2082 parallèle. 2086 reste explicitement rejeté comme non correspondant; 2087/2088 seulement liés."
+    },
+    {
+      "canonicalId": "RC-015",
+      "historicalHId": "H-088",
+      "primaryRef": "Sahih Muslim 2865d",
+      "variants": [
+        "Sahih Muslim 2865a",
+        "Sahih Muslim 2865b",
+        "Sahih Muslim 2865c"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_CONTEXT_PRESERVED",
+      "theme": "humilité mutuelle, absence d'orgueil et de transgression",
+      "note": "2865d principal; famille 2865a-d conservée comme variantes +0."
+    },
+    {
+      "canonicalId": "RC-016",
+      "historicalHId": "H-113",
+      "primaryRef": "Sahih Muslim 2749",
+      "relatedRefs": [
+        "Sahih Muslim 2748b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "repentir et retour vers Allah",
+      "note": "Muslim 2749 reste la référence canonique historique; 2748b est conservé comme texte thématiquement lié +0."
+    },
+    {
+      "canonicalId": "RC-017",
+      "historicalHId": "H-124",
+      "primaryRef": "Sahih al-Bukhari 6023",
+      "rejectedRefs": [
+        "Sahih al-Bukhari 1016"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_REJECTION",
+      "theme": "bon comportement et relation aux autres",
+      "note": "Bukhari 6023 est la référence historique récupérée; l'ancienne attribution 1016 reste explicitement rejetée."
+    },
+    {
+      "canonicalId": "RC-018",
+      "historicalHId": "H-129",
+      "primaryRef": "Sahih al-Bukhari 1427",
+      "parallelRefs": [
+        "Sahih al-Bukhari 1428"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_GROUPED_ROUTES",
+      "theme": "aumône et discrétion",
+      "note": "1427 et 1428 sont conservés comme deux routes d'un seul dossier canonique, sans double comptage."
+    },
+    {
+      "canonicalId": "RC-019",
+      "historicalHId": "H-135",
+      "primaryRef": "Sunan Abi Dawud 4811",
+      "parallelRefs": [
+        "Jami` at-Tirmidhi 1954"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "bonne compagnie et comportement social",
+      "note": "Abu Dawud 4811 principal; Tirmidhi 1954 parallèle +0. Le grade historique Sahih (Al-Albani) reste conservé dans le registre récupéré."
+    },
+    {
+      "canonicalId": "RC-020",
+      "historicalHId": "H-140",
+      "primaryRef": "Sahih Muslim 1055",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "subsistance suffisante pour la famille du Prophète ﷺ",
+      "note": "Référence historique récupérée consolidée comme dossier autonome."
+    },
+    {
+      "canonicalId": "RC-021",
+      "primary": "R-075",
+      "primaryRef": "Sahih al-Bukhari 6477",
+      "parallels": [
+        "R-058"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 2988a",
+        "Sahih Muslim 2988b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_AFTER_SPLIT_CORRECTION",
+      "theme": "parole prononcée sans mesurer ses conséquences",
+      "note": "Correction V21 : Bukhari 6477 et Muslim 2988a/b transmettent le même noyau par Abu Hurayra. R-057/Bukhari 6478 est séparé."
+    },
+    {
+      "canonicalId": "RC-022",
+      "primary": "R-059",
+      "primaryRef": "Sahih al-Bukhari 5675",
+      "parallels": [
+        "R-060"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 2191a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "invocation de guérison",
+      "note": "Même invocation rapportée de Aïcha; Bukhari 5675 corrigé en V13, Muslim 2191a parallèle +0."
+    },
+    {
+      "canonicalId": "RC-023",
+      "primary": "R-061",
+      "primaryRef": "Sahih al-Bukhari 5641, 5642",
+      "parallels": [
+        "R-028",
+        "R-062"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 5641",
+        "Sahih Muslim 2573"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_OVERLAP_DEDUPLICATED",
+      "theme": "épreuves, maladie et expiation",
+      "note": "R-028 (Bukhari 5641) est un chevauchement explicite de la transmission Bukhari 5641,5642 portée par R-061; R-062 (Muslim 2573) est la parallèle Muslim. R-028 est désormais inscrit dans parallels afin que le comptage structurel primaire/parallèles reflète correctement son absorption, sans créer de nouvelle structure.",
+      "overlapCandidates": [
+        "R-028"
+      ],
+      "allReconstructionMembers": [
+        "R-028",
+        "R-061",
+        "R-062"
+      ]
+    },
+    {
+      "canonicalId": "RC-024",
+      "primary": "R-065",
+      "primaryRef": "Sahih al-Bukhari 6491",
+      "parallels": [
+        "R-066"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 131a/131b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_VARIANT_FAMILY_DEDUPLICATED",
+      "theme": "intention et inscription des bonnes et mauvaises actions",
+      "note": "Famille élargie d'inscription des intentions/actions. R-001 Muslim 130 (Abu Hurayra) reste une transmission distincte dans le même dossier thématique; R-002 Muslim 131a et R-066 Muslim 131b sont des routes de la famille Ibn Abbas; R-065 Bukhari 6491 parallèle principal. Aucun multiplicateur n'est utilisé comme mécanique de score.",
+      "variantCandidates": [
+        "R-001",
+        "R-002"
+      ],
+      "allReconstructionMembers": [
+        "R-001",
+        "R-002",
+        "R-065",
+        "R-066"
+      ]
+    },
+    {
+      "canonicalId": "RC-025",
+      "primary": "R-067",
+      "primaryRef": "Sahih al-Bukhari 6307",
+      "parallels": [
+        "R-068"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 2702"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_PRACTICE",
+      "theme": "istighfar et repentir répétés",
+      "note": "Les deux textes attestent la répétition quotidienne de l'istighfar/repentir; formulations et nombres restent distincts et ne sont pas fusionnés."
+    },
+    {
+      "canonicalId": "RC-026",
+      "primary": "R-073",
+      "primaryRef": "Sahih al-Bukhari 6369",
+      "parallels": [
+        "R-074"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 2893"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "invocation contre l'angoisse, la tristesse, l'incapacité et la dette",
+      "note": "Deux routes Bukhari de la même invocation; différences de contexte conservées."
+    },
+    {
+      "canonicalId": "RC-027",
+      "primary": "R-057",
+      "primaryRef": "Sahih al-Bukhari 6478",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_DISTINCT_FROM_RC021",
+      "theme": "parole agréée ou désagréée d’Allah et ses conséquences",
+      "note": "Distinct de Bukhari 6477/Muslim 2988 : Bukhari 6478 contient à la fois la parole agréée d’Allah qui élève et la parole désagréée qui précipite."
+    },
+    {
+      "canonicalId": "RC-028",
+      "primary": "R-006",
+      "primaryRef": "Sahih al-Bukhari 6464",
+      "parallels": [
+        "R-009"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 2818a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "modération, miséricorde d’Allah et constance des œuvres",
+      "note": "Bukhari 6464 et Muslim 2818a transmettent le même noyau de ʿAïsha : modération, entrée au Paradis par la miséricorde d’Allah, constance même dans une petite œuvre."
+    },
+    {
+      "canonicalId": "RC-029",
+      "primary": "R-007",
+      "primaryRef": "Sahih al-Bukhari 6465",
+      "parallels": [
+        "R-008"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 783b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "œuvres les plus aimées : régulières même petites",
+      "note": "Même enseignement de ʿAïsha; Bukhari ajoute explicitement de ne prendre que les œuvres que l’on peut supporter."
+    },
+    {
+      "canonicalId": "RC-030",
+      "primary": "R-010",
+      "primaryRef": "Sahih al-Bukhari 6466",
+      "parallelRefs": [
+        "Sahih Muslim 783a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_EXTERNAL_PARALLEL",
+      "theme": "pratique régulière du Prophète ﷺ sans spécialisation artificielle de jours",
+      "note": "Bukhari 6466 et Muslim 783a sont des transmissions parallèles du récit d’Alqama interrogeant ʿAïsha. Muslim 783a n’avait pas de R-ID séparé."
+    },
+    {
+      "canonicalId": "RC-031",
+      "primary": "R-036",
+      "primaryRef": "Sahih al-Bukhari 5997",
+      "parallels": [
+        "R-034",
+        "R-035"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 5997 (duplicate reconstruction candidate)",
+        "Sahih Muslim 2318a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_DUPLICATE_CANDIDATE",
+      "theme": "miséricorde envers les enfants — al-Hasan et al-Aqraʿ b. Habis",
+      "note": "R-034 et R-036 décrivent la même route Bukhari 5997. R-035 décrit le même épisode mais sa référence V11 2319a était erronée; la source correspondante est Muslim 2318a."
+    },
+    {
+      "canonicalId": "RC-032",
+      "primary": "R-017",
+      "primaryRef": "Sahih al-Bukhari 6013",
+      "parallels": [
+        "R-045"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 7376"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "miséricorde envers les gens",
+      "note": "Même compagnon (Jarir b. ʿAbd Allah) et même noyau de transmission: absence de miséricorde envers les gens / absence de miséricorde divine. Deux routes Bukhari, +0 au comptage."
+    },
+    {
+      "canonicalId": "RC-033",
+      "primary": "R-037",
+      "primaryRef": "Sahih al-Bukhari 6024",
+      "relatedRefs": [
+        "Sahih Muslim 2593"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE_REFERENCE_CORRECTED",
+      "theme": "douceur dans les affaires — réponse mesurée face à l’hostilité",
+      "note": "R-037 pointait vers Bukhari 6035, qui concerne l’excellence du caractère. Le résumé R-037 correspond à Bukhari 6024. R-043/Ibn Majah 3689 transmet également de Aishah via Urwah puis al-Zuhri la formule centrale selon laquelle Allah aime la douceur dans toute affaire; il est consolidé comme route parallèle, la narration développée de Bukhari restant conservée. Muslim 2593 reste seulement relié thématiquement.",
+      "parallels": [
+        "R-043"
+      ],
+      "parallelRefs": [
+        "Sunan Ibn Majah 3689"
+      ]
+    },
+    {
+      "canonicalId": "RC-034",
+      "primary": "R-038",
+      "primaryRef": "Sahih Muslim 2594a",
+      "relatedRefs": [
+        "Sahih Muslim 2593"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_CORRECTED",
+      "theme": "la douceur embellit et son retrait enlaidit",
+      "note": "Le résumé R-038 correspond à Muslim 2594a et non à Muslim 2593. Entrée autonome; proximité thématique conservée sans fusion."
+    },
+    {
+      "canonicalId": "RC-035",
+      "primary": "R-078",
+      "primaryRef": "Sahih Muslim 2593",
+      "relatedRefs": [
+        "Sahih al-Bukhari 6024",
+        "Sahih Muslim 2594a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_CORRECTED",
+      "theme": "Allah aime la douceur et accorde par elle ce qu’Il n’accorde pas par la violence",
+      "note": "Le résumé R-078 correspond à Muslim 2593 et non à Muslim 2592a. Aucun regroupement parallèle n’est affirmé avec les autres textes de la famille du rifq."
+    },
+    {
+      "canonicalId": "RC-036",
+      "primary": "R-079",
+      "primaryRef": "Sahih Muslim 2592a",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_CORRECTED",
+      "theme": "privation de douceur et privation de bien",
+      "note": "Le résumé R-079 correspond à Muslim 2592a et non à Muslim 2594a. Les variantes 2592b/c existent dans la même séquence de source mais aucun R-ID distinct n’est absorbé ici."
+    },
+    {
+      "canonicalId": "RC-037",
+      "primary": "R-042",
+      "primaryRef": "Sahih al-Bukhari 6136",
+      "parallels": [
+        "R-076"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 47b"
+      ],
+      "relatedRefs": [
+        "Sahih al-Bukhari 6138"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "foi, voisin, hospitalité et parole bonne ou silence",
+      "note": "Bukhari 6136 et Muslim 47b rapportent d’Abu Hurayra le même noyau: ne pas nuire au voisin, honorer l’invité et dire du bien ou se taire. R-076 est donc absorbé comme route parallèle de R-042."
+    },
+    {
+      "canonicalId": "RC-038",
+      "primary": "R-041",
+      "primaryRef": "Sahih al-Bukhari 6138",
+      "relatedRefs": [
+        "Sahih al-Bukhari 6136",
+        "Sahih Muslim 47b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_NOT_PARALLEL",
+      "theme": "foi, hospitalité, liens de parenté et parole bonne ou silence",
+      "note": "Bukhari 6138 partage l’hospitalité et la parole avec RC-037 mais remplace la clause du voisin par le maintien des liens de parenté. Proximité thématique et formulaire commun documentés sans fusion comme parallèle."
+    },
+    {
+      "canonicalId": "RC-039",
+      "primary": "R-080",
+      "primaryRef": "Sahih al-Bukhari 5991",
+      "relatedRefs": [
+        "Sahih Muslim 2558a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_NOT_PARALLEL",
+      "theme": "maintien des liens familiaux au-delà de la réciprocité",
+      "note": "Bukhari 5991 définit le maintien réel des liens lorsque les proches les rompent. Muslim 2558a traite aussi du maintien malgré le mauvais comportement, mais avec un autre narrateur et une autre scène; relation thématique, pas route parallèle."
+    },
+    {
+      "canonicalId": "RC-040",
+      "primary": "R-081",
+      "primaryRef": "Sahih Muslim 2558a",
+      "relatedRefs": [
+        "Sahih al-Bukhari 5991"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_NOT_PARALLEL",
+      "theme": "maintien des liens familiaux malgré le mauvais comportement",
+      "note": "Muslim 2558a rapporte d’Abu Hurayra la question d’un homme qui maintient ses proches malgré leur rupture et leur dureté. Le texte est lié à Bukhari 5991 mais n’est pas fusionné comme parallèle."
+    },
+    {
+      "canonicalId": "RC-041",
+      "primary": "R-082",
+      "primaryRef": "Sahih al-Bukhari 6009",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_VERIFIED",
+      "theme": "miséricorde envers les animaux — donner à boire à un chien assoiffé",
+      "note": "La correction V11 Bukhari 5991 → 6009 est confirmée: Bukhari 6009 rapporte le récit de l’homme donnant à boire à un chien assoiffé et la portée générale du bien envers les êtres vivants."
+    },
+    {
+      "canonicalId": "RC-042",
+      "primary": "R-004",
+      "primaryRef": "Sahih Muslim 1053a",
+      "parallelRefs": [
+        "Sahih Muslim 1053b"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_VERIFIED",
+      "theme": "suffisance, retenue dans la demande et endurance",
+      "note": "Muslim 1053a correspond au résumé R-004; 1053b est explicitement une transmission au même isnad, de contenu similaire, ajoutée comme variante +0."
+    },
+    {
+      "canonicalId": "RC-043",
+      "primary": "R-013",
+      "primaryRef": "Sahih al-Bukhari 6116",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_VERIFIED",
+      "theme": "conseil répété de ne pas céder à la colère",
+      "note": "Bukhari 6116 correspond exactement au résumé R-013; dossier conservé distinct."
+    },
+    {
+      "canonicalId": "RC-044",
+      "primary": "R-014",
+      "primaryRef": "Sahih al-Bukhari 6474",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_VERIFIED",
+      "theme": "préservation de la langue et de la chasteté",
+      "note": "Bukhari 6474 correspond au résumé R-014; aucune fusion thématique artificielle."
+    },
+    {
+      "canonicalId": "RC-045",
+      "primary": "R-015",
+      "primaryRef": "Sahih Muslim 223",
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_REFERENCE_VERIFIED",
+      "theme": "pureté, dhikr, prière, charité, endurance et Qur’an",
+      "note": "Muslim 223 est un hadith composite; le dossier est conservé entier conformément au safetyFlag preserveWholeHadith."
+    },
+    {
+      "canonicalId": "RC-046",
+      "primary": "R-049",
+      "primaryRef": "Sahih al-Bukhari 2989",
+      "parallels": [
+        "R-050",
+        "R-054"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 2891",
+        "Sahih Muslim 1009"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTES",
+      "theme": "ṣadaqah quotidienne — justice, aide, bonne parole, marche vers la prière et voie dégagée/guidée",
+      "note": "Bukhari 2989 et Muslim 1009 transmettent d’Abu Hurayra via Hammam b. Munabbih le même noyau presque mot pour mot. Bukhari 2891 est une route apparentée du même Abu Hurayra via Hammam, avec une formulation plus courte (aide à la monture, bonne parole, pas vers la prière, indication du chemin). Les trois R-ID sont consolidés dans un seul dossier avec variantes de formulation conservées."
+    },
+    {
+      "canonicalId": "RC-047",
+      "primary": "R-001",
+      "primaryRef": "Sahih Muslim 130",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-048 / R-002 / Sahih Muslim 131a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "intention d’une bonne ou mauvaise action et inscription",
+      "note": "Abu Hurayra. Bonne intention non réalisée: une bonne action; réalisée: dix à sept cents. Mauvaise intention non réalisée: aucune inscription contre la personne; réalisée: une mauvaise action. Conservé distinct de Muslim 131a en raison d’une différence substantielle sur la mauvaise intention non réalisée."
+    },
+    {
+      "canonicalId": "RC-048",
+      "primary": "R-002",
+      "primaryRef": "Sahih Muslim 131a",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-047 / R-001 / Sahih Muslim 130"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "hadith qudsi — inscription des bonnes et mauvaises actions",
+      "note": "Ibn Abbas, transmission du Seigneur. La mauvaise intention non réalisée est ici inscrite comme une bonne action; cette différence substantielle interdit de fusionner silencieusement avec Muslim 130. Relation thématique/textuelle forte seulement."
+    },
+    {
+      "canonicalId": "RC-049",
+      "primary": "R-070",
+      "primaryRef": "Sahih Muslim 2691",
+      "parallels": [
+        "R-069",
+        "R-072"
+      ],
+      "parallelRefs": [
+        "Sahih al-Bukhari 6405",
+        "Sahih al-Bukhari 3293"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTES",
+      "theme": "dhikr — tahlil et tasbih transmis par Abu Hurayra",
+      "note": "Muslim 2691 contient deux volets. Son volet tahlil correspond à Bukhari 3293 et son volet tasbih à Bukhari 6405. Les routes partagent Abu Hurayra → Abu Salih → Sumayy; les Bukhari passent par Malik, et Muslim 2691 est également transmis par Malik. Les trois R-ID sont donc consolidés dans un dossier composite avec routes parallèles conservées."
+    },
+    {
+      "canonicalId": "RC-050",
+      "primary": "R-071",
+      "primaryRef": "Sahih Muslim 2692",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-049 / R-069 / Sahih al-Bukhari 6405",
+        "RC-049 / R-070 / Sahih Muslim 2691"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "dhikr matin et soir — tasbih",
+      "note": "Muslim 2692 transmet la même formule de tasbih mais avec une prescription matin/soir et un mérite formulé différemment, par une chaîne comportant Suhayl au lieu de Sumayy. Faute d’identité de transmission suffisamment établie, conservé distinct et seulement relié à RC-049."
+    },
+    {
+      "canonicalId": "RC-051",
+      "primary": "R-044",
+      "primaryRef": "Sunan Ibn Majah 3688",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-035 / R-078 / Sahih Muslim 2593",
+        "RC-033 / R-043 / Sunan Ibn Majah 3689"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "douceur — Allah aime le rifq et accorde par lui ce qu’Il n’accorde pas par la dureté",
+      "note": "Abu Hurayra. Le contenu est très proche de Muslim 2593 mais le Compagnon et la chaîne diffèrent; aucune identité de transmission suffisante n’est affirmée. Conservé distinct et relié thématiquement, sans parallelRefs."
+    },
+    {
+      "canonicalId": "RC-052",
+      "primary": "R-051",
+      "primaryRef": "Sahih al-Bukhari 2631",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-046 / bonnes actions quotidiennes et retrait d’un obstacle"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "ma‘ruf — pluralité des bonnes actions et retrait d’un obstacle",
+      "note": "Abdullah ibn Amr. Le texte mentionne quarante formes de bien et le commentaire du transmetteur cite notamment répondre au salut, invoquer pour celui qui éternue et retirer un obstacle du chemin. Conservé distinct des dossiers de sadaqah quotidienne: autre Compagnon, autre structure et autre propos."
+    },
+    {
+      "canonicalId": "RC-053",
+      "primary": "R-052",
+      "primaryRef": "Sahih al-Bukhari 6022",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-046 / sadaqah quotidienne — actions diverses"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "sadaqah au sens large — travailler, aider, recommander le bien, s’abstenir du mal",
+      "note": "Abu Musa al-Ashari. La référence 6022 est correcte, mais le résumé historique R-052 (« bonne parole et comportement bienveillant ») ne décrit pas fidèlement ce hadith. Le texte expose une séquence: travailler de ses mains et donner, aider une personne en détresse, recommander le bien, ou s’abstenir du mal; cette dernière abstention compte comme sadaqah. Correction éditoriale du résumé, sans changement de référence."
+    },
+    {
+      "canonicalId": "RC-054",
+      "primary": "R-053",
+      "primaryRef": "Sahih Muslim 2626",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-053 / R-052 / Sahih al-Bukhari 6022"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "ma‘ruf — ne mépriser aucun bien, même un visage accueillant",
+      "note": "Abu Dharr. Ne mépriser aucune bonne action, même rencontrer son frère avec un visage accueillant. Conservé distinct de Bukhari 6022: autre Compagnon, autre formulation et autre transmission; proximité thématique seulement."
+    },
+    {
+      "canonicalId": "RC-055",
+      "primary": "R-018",
+      "primaryRef": "Sahih al-Bukhari 2444",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih al-Bukhari 2443"
+      ],
+      "relatedRefs": [
+        "RC-056 / R-025 / Sahih Muslim 2580"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "oppression — aider l’opprimé et arrêter l’oppresseur",
+      "note": "Anas. Bukhari 2444 explique que l’aide à l’oppresseur consiste à l’empêcher d’opprimer. Bukhari 2443 transmet le même noyau d’Anas sous forme plus courte; conservé comme route parallèle +0. Muslim 2580 traite aussi de fraternité et d’oppression mais par Ibn Umar et avec un développement différent: relatedRefs seulement."
+    },
+    {
+      "canonicalId": "RC-056",
+      "primary": "R-025",
+      "primaryRef": "Sahih Muslim 2580",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih al-Bukhari 2442"
+      ],
+      "relatedRefs": [
+        "RC-055 / R-018 / Sahih al-Bukhari 2444"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "fraternité — ne pas opprimer ni abandonner, répondre au besoin et soulager la détresse",
+      "note": "Ibn Umar. Muslim 2580 et Bukhari 2442 partagent le même Compagnon, le même noyau textuel et une chaîne commune Ibn Umar → Salim → al-Zuhri → Uqayl → al-Layth; Bukhari 2442 est enregistré comme route parallèle +0. Distinct de R-018/Bukhari 2444, transmis par Anas et centré sur l’arrêt de l’oppresseur."
+    },
+    {
+      "canonicalId": "RC-057",
+      "primary": "R-063",
+      "primaryRef": "Sahih al-Bukhari 6416",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-058 / R-064 / Sahih al-Bukhari 6412"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "vie — vivre dans ce monde comme un étranger ou un voyageur",
+      "note": "Ibn Umar. Bukhari 6416 est vérifié: conseil prophétique de vivre dans ce monde comme un étranger ou un voyageur; la suite attribuée à Ibn Umar évoque matin/soir, santé/maladie et vie/mort. Conservé distinct de Bukhari 6412: autre Compagnon et autre texte; proximité thématique seulement."
+    },
+    {
+      "canonicalId": "RC-058",
+      "primary": "R-064",
+      "primaryRef": "Sahih al-Bukhari 6412",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-057 / R-063 / Sahih al-Bukhari 6416"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "bienfaits — santé et temps libre",
+      "note": "Ibn Abbas. Bukhari 6412 est vérifié: deux bienfaits dans lesquels beaucoup de gens subissent une perte, la santé et le temps libre. Conservé distinct de Bukhari 6416; relatedRefs seulement, sans fusion thématique."
+    },
+    {
+      "canonicalId": "RC-059",
+      "primary": "R-016",
+      "primaryRef": "Sahih Muslim 2699a",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [
+        "RC-056 / R-025 / Sahih Muslim 2580"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "entraide, connaissance et étude du Qur’an — hadith composite",
+      "note": "Abu Hurayra. Muslim 2699a est vérifié: soulager une détresse, faciliter à la personne en difficulté, dissimuler les fautes, aider son frère, rechercher la connaissance et se réunir pour réciter/étudier le Livre d’Allah. Conservé comme dossier composite distinct; la proximité avec RC-056 sur l’entraide ne suffit pas à établir une route parallèle."
+    },
+    {
+      "canonicalId": "RC-060",
+      "primary": "R-031",
+      "primaryRef": "Sahih al-Bukhari 15",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih Muslim 44b"
+      ],
+      "relatedRefs": [
+        "RC-061 / R-032 / Sahih al-Bukhari 16"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "foi — aimer le Messager ﷺ plus que son père, son enfant et tous les gens",
+      "note": "Anas. Bukhari 15 et Muslim 44b transmettent le même noyau, avec la même formulation père/enfant/tous les gens; Muslim 44b est enregistré comme route parallèle +0. Distinct de R-032/Bukhari 16, qui énumère trois qualités de la douceur de la foi."
+    },
+    {
+      "canonicalId": "RC-061",
+      "primary": "R-032",
+      "primaryRef": "Sahih al-Bukhari 16",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih Muslim 43a",
+        "Sahih Muslim 43b",
+        "Sahih al-Bukhari 6041"
+      ],
+      "relatedRefs": [
+        "RC-060 / R-031 / Sahih al-Bukhari 15"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "douceur de la foi — trois qualités",
+      "note": "Anas. Bukhari 16 est vérifié; Muslim 43a/43b et Bukhari 6041 transmettent le même ensemble central des trois qualités, avec variations de route/formulation; enregistrés comme routes parallèles +0. RC-060 reste distinct malgré le recoupement sur l’amour d’Allah et de Son Messager."
+    },
+    {
+      "canonicalId": "RC-062",
+      "primary": "R-020",
+      "primaryRef": "Sahih al-Bukhari 52",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih Muslim 1599a",
+        "Sahih Muslim 1599d"
+      ],
+      "relatedRefs": [],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "licite, illicite et affaires douteuses",
+      "note": "Al-Nu‘man ibn Bashir. Bukhari 52 est vérifié: licite et illicite clairs, affaires douteuses entre les deux, image du pâturage réservé et mention du cœur. Muslim 1599a transmet le même noyau détaillé; Muslim 1599d indique explicitement que la suite est identique à la transmission de Zakariya. Routes parallèles +0."
+    },
+    {
+      "canonicalId": "RC-063",
+      "primary": "R-021",
+      "primaryRef": "Sahih al-Bukhari 71",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih al-Bukhari 3116",
+        "Sahih al-Bukhari 7312"
+      ],
+      "relatedRefs": [],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "connaissance — compréhension de la religion",
+      "note": "Mu‘awiya. Bukhari 71 est vérifié: lorsqu’Allah veut du bien à quelqu’un, Il lui accorde la compréhension de la religion; le Messager est distributeur et Allah donne. Bukhari 3116 et 7312 transmettent le même noyau de Mu‘awiya avec formulation très proche; routes parallèles +0."
+    },
+    {
+      "canonicalId": "RC-064",
+      "primary": "R-022",
+      "primaryRef": "Sahih al-Bukhari 69",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih al-Bukhari 6125"
+      ],
+      "relatedRefs": [],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTE",
+      "theme": "enseignement — faciliter et ne pas repousser",
+      "note": "Anas. Bukhari 69 est vérifié: faciliter, ne pas rendre difficile, annoncer de bonnes nouvelles et ne pas repousser. Bukhari 6125 transmet le même noyau d’Anas via Shu‘ba et Abu al-Tayyah, avec légère variation de formulation; route parallèle +0."
+    },
+    {
+      "canonicalId": "RC-065",
+      "primary": "R-026",
+      "primaryRef": "Sahih Muslim 2564a",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih al-Bukhari 6064",
+        "Sahih al-Bukhari 6066"
+      ],
+      "relatedRefs": [
+        "RC-056"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_RELATED_PARALLEL_ROUTES",
+      "theme": "fraternité — jalousie, hostilité, mépris et inviolabilité",
+      "note": "Abu Hurayra. Muslim 2564a est vérifié: interdiction de la jalousie, de la haine et de la rupture, fraternité, interdiction d’opprimer, d’abandonner ou de mépriser un musulman, et inviolabilité du sang, des biens et de l’honneur. Bukhari 6064/6066 transmettent une partie substantielle du même ensemble depuis Abu Hurayra mais sans tout le développement de Muslim; routes de recoupement conservées +0, sans fusion avec RC-056."
+    },
+    {
+      "canonicalId": "RC-066",
+      "primary": "R-027",
+      "primaryRef": "Sahih Muslim 91a",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih Muslim 91b"
+      ],
+      "relatedRefs": [],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_VARIANT_ROUTE",
+      "theme": "orgueil — rejet de la vérité et mépris des gens",
+      "note": "Abdullah ibn Masud. Muslim 91a est vérifié et donne explicitement la définition de l’orgueil comme rejet de la vérité et mépris des gens. Muslim 91b reprend le même Compagnon et le noyau sur le poids d’un grain de moutarde d’orgueil, mais sans la définition détaillée; variante liée +0."
+    },
+    {
+      "canonicalId": "RC-067",
+      "primary": "R-033",
+      "primaryRef": "Sahih Muslim 55a",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih Muslim 55b",
+        "Sahih Muslim 55c"
+      ],
+      "relatedRefs": [],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTES",
+      "theme": "religion — naṣīḥa / conseil sincère",
+      "note": "Tamim al-Dari. Muslim 55a est vérifié: la religion est naṣīḥa envers Allah, Son Livre, Son Messager, les dirigeants des musulmans et leur ensemble. Muslim 55b et 55c déclarent transmettre le même hadith de Tamim par d’autres routes; parallèles +0."
+    },
+    {
+      "canonicalId": "RC-068",
+      "primary": "R-005",
+      "primaryRef": "Sahih Muslim 2326",
+      "parallels": [],
+      "parallelRefs": [],
+      "relatedRefs": [],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "humilité et disponibilité envers une personne vulnérable",
+      "note": "Anas. Muslim 2326 est vérifié : le Prophète ﷺ répond à la demande d’une femme que la transmission décrit comme ayant une difficulté mentale et se met à l’écart avec elle sur une voie jusqu’à ce que son besoin soit satisfait. Le dossier conserve le contexte narratif sans transformer la formulation transmise en diagnostic moderne."
+    },
+    {
+      "canonicalId": "RC-069",
+      "primary": "R-046",
+      "primaryRef": "Sahih al-Bukhari 7377",
+      "parallels": [],
+      "parallelRefs": [
+        "Sahih al-Bukhari 1284",
+        "Sahih Muslim 923a"
+      ],
+      "relatedRefs": [
+        "RC-032"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_PARALLEL_ROUTES",
+      "theme": "miséricorde, larmes et deuil devant un enfant mourant",
+      "note": "Usama b. Zayd. Bukhari 7377, Bukhari 1284 et Muslim 923a transmettent le même récit : appel de la fille du Prophète ﷺ pour son enfant mourant, rappel du terme fixé, déplacement du Prophète, larmes et explication qu’elles relèvent de la miséricorde placée dans les cœurs. Routes parallèles +0; dossier lié à RC-032 sans fusion."
+    }
+  ],
+  "counts": {
+    "canonicalStructuresConfirmed": 69,
+    "rawCandidatesConsumed": 81,
+    "rawCandidatesTotal": 82,
+    "rawCandidatesNotYetConsolidated": 1,
+    "canonicalStructuresConfirmedTotal": 69,
+    "reconstructionCanonicalStructuresConfirmed": 56,
+    "historicalRecoveredCanonicalStructuresConfirmed": 13,
+    "historicalRecoveredHIdsTotal": 13,
+    "historicalRecoveredHIdsStillToConsolidate": 0,
+    "historicalRecoveredCoveragePercent": 100,
+    "rawReconstructionCandidatesConsumed": 81,
+    "highPriorityFamiliesFromV12Resolved": 11,
+    "highPriorityFamiliesFromV12Remaining": 0,
+    "canonicalStructures": 69,
+    "reconstructionStructures": 56,
+    "historicalStructures": 13,
+    "reconstructionCandidatesConsumed": 81,
+    "reconstructionCandidatesRemaining": 1
+  },
+  "corrections": [
+    {
+      "id": "R-059",
+      "from": "Sahih al-Bukhari 5678",
+      "to": "Sahih al-Bukhari 5675",
+      "carriedFrom": "V13"
+    },
+    {
+      "id": "R-057",
+      "from": "Sahih al-Bukhari 6475",
+      "to": "Sahih al-Bukhari 6478",
+      "reason": "Bukhari 6475 traite voisin/hospitalité/parole; le matn résumé dans R-057 correspond à Bukhari 6478."
+    }
+  ],
+  "productionPolicy": {
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false,
+    "historicalHIdAssigned": false,
+    "runtimeMigration": false
+  },
+  "historicalConsolidationPolicy": {
+    "historicalHIdMayBeUsedOnlyWhenRecoveredFromTransmission": true,
+    "newlyAssignedHistoricalHIds": false,
+    "variantsCountAsEntry": false,
+    "parallelsCountAsEntry": false,
+    "rejectedReferencesRemainExplicit": true,
+    "narrativeContextPreserved": true
+  },
+  "milestone": "V43 — création d’un registre de 71 lacunes de couverture hadith, sans référence, matn, narrateur, H-ID ou R-ID inventé; couverture inchangée à 69/140.",
+  "correctionsCarriedForward": [
+    {
+      "id": "R-057",
+      "canonicalReference": "Sahih al-Bukhari 6478"
+    },
+    {
+      "id": "R-059",
+      "canonicalReference": "Sahih al-Bukhari 5675"
+    },
+    {
+      "id": "R-061",
+      "canonicalReferenceNormalized": "Sahih al-Bukhari 5641, 5642",
+      "note": "Sunnah.com présente cette transmission sous la référence groupée 5641, 5642."
+    }
+  ],
+  "newCorrections": [],
+  "safetyNote": "Les mentions textuelles de récompenses/multiplication dans les hadiths ne doivent jamais devenir score, XP, streak, mérite chiffré ou mécanisme de gamification.",
+  "v21Corrections": [
+    {
+      "affectedCanonicalId": "RC-021",
+      "oldGrouping": "R-057 / Bukhari 6478 + R-058 / Muslim 2988",
+      "newGrouping": "R-075 / Bukhari 6477 + R-058 / Muslim 2988a,b",
+      "splitOut": "R-057 / Bukhari 6478 -> RC-027",
+      "reason": "Bukhari 6477 et Muslim 2988a/b partagent le même noyau de transmission; Bukhari 6478 est un hadith voisin mais distinct."
+    }
+  ],
+  "v22Corrections": [
+    {
+      "id": "R-034",
+      "from": "Sahih al-Bukhari 6011",
+      "to": "Sahih al-Bukhari 5997",
+      "reason": "Le résumé R-034 décrit le baiser à al-Hasan devant al-Aqraʿ; Bukhari 6011 est le hadith du corps unique des croyants, tandis que Bukhari 5997 contient l’épisode décrit."
+    },
+    {
+      "id": "R-035",
+      "from": "Sahih Muslim 2319a",
+      "to": "Sahih Muslim 2318a",
+      "reason": "Muslim 2319a est la parole de Jarir sur la miséricorde envers les gens; l’épisode d’al-Aqraʿ voyant le Prophète embrasser al-Hasan est Muslim 2318a."
+    },
+    {
+      "id": "R-077",
+      "from": "Sahih al-Bukhari 6014",
+      "to": null,
+      "status": "REFERENCE_MISMATCH_UNRESOLVED",
+      "reason": "Bukhari 6014 traite la recommandation de Jibril concernant le voisin et ne correspond pas au résumé V11 sur la miséricorde envers les créatures. Aucune nouvelle référence n’est assignée sans preuve suffisante."
+    }
+  ],
+  "v23Corrections": [
+    {
+      "id": "R-037",
+      "from": "Sahih al-Bukhari 6035",
+      "to": "Sahih al-Bukhari 6024",
+      "reason": "Bukhari 6035 porte sur les meilleurs caractères; le résumé R-037 sur Allah aimant la douceur dans toutes les affaires correspond à Bukhari 6024."
+    },
+    {
+      "id": "R-038",
+      "from": "Sahih Muslim 2593",
+      "to": "Sahih Muslim 2594a",
+      "reason": "Muslim 2594a contient la formule selon laquelle la douceur embellit ce dans quoi elle se trouve et son retrait l’enlaidit."
+    },
+    {
+      "id": "R-078",
+      "from": "Sahih Muslim 2592a",
+      "to": "Sahih Muslim 2593",
+      "reason": "Muslim 2593 contient la formule Allah est doux, aime la douceur et accorde pour elle ce qu’Il n’accorde pas pour la violence."
+    },
+    {
+      "id": "R-079",
+      "from": "Sahih Muslim 2594a",
+      "to": "Sahih Muslim 2592a",
+      "reason": "Muslim 2592a rapporte de Jarir que celui qui est privé de douceur est privé de bien."
+    }
+  ],
+  "v24Corrections": [],
+  "v24Audit": {
+    "family": "hospitalité / voisin / parole / liens familiaux",
+    "verifiedSources": [
+      "Sahih al-Bukhari 6136",
+      "Sahih Muslim 47b",
+      "Sahih al-Bukhari 6138"
+    ],
+    "result": "R-042 and R-076 consolidated as parallel routes; R-041 retained as a distinct but related structure. No reference correction required."
+  },
+  "v25Corrections": [
+    "R-080 / Bukhari 5991 confirmé après correction V11; dossier distinct de R-081.",
+    "R-081 / Muslim 2558a confirmé; lié thématiquement à R-080 sans fusion parallèle.",
+    "R-082 / Bukhari 6009 confirmé après correction V11; dossier autonome miséricorde envers les animaux."
+  ],
+  "v25Audit": {
+    "lot": "liens familiaux + miséricorde envers les animaux",
+    "rIdsConsumed": [
+      "R-080",
+      "R-081",
+      "R-082"
+    ],
+    "referenceCorrections": 0,
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v27Corrections": [],
+  "v27Audit": {
+    "lot": [
+      "R-049",
+      "R-050",
+      "R-054"
+    ],
+    "verifiedOn": "2026-09-12",
+    "sources": [
+      "Sahih al-Bukhari 2989",
+      "Sahih al-Bukhari 2891",
+      "Sahih Muslim 1009"
+    ],
+    "result": "Three parallel/closely parallel routes consolidated as RC-046; no reference correction required."
+  },
+  "v28Corrections": [
+    {
+      "field": "V27 aggregate counts",
+      "old": "57/82 consumed; 25 remaining",
+      "new": "54/82 consumed; 28 remaining before V28",
+      "reason": "Direct recomputation of distinct R-ID membership in canonicalStructuralEntries V27 found 54, not 57. No R-ID identity invented or removed."
+    }
+  ],
+  "v28Audit": {
+    "lot": [
+      "R-001",
+      "R-002"
+    ],
+    "verifiedOn": "2026-09-12",
+    "sources": [
+      "Sahih Muslim 130",
+      "Sahih Muslim 131a"
+    ],
+    "result": "Both references verified. Kept as two distinct canonical structures RC-047/RC-048 because the treatment of an unrealized evil intention differs substantively; linked as related, not parallel. After correcting V27 aggregate arithmetic: 56/82 consumed, 26 remaining."
+  },
+  "v29Corrections": [],
+  "v29Audit": {
+    "lot": [
+      "R-069",
+      "R-070",
+      "R-071",
+      "R-072"
+    ],
+    "verifiedOn": "2026-09-12",
+    "sources": [
+      "Sahih al-Bukhari 6405",
+      "Sahih Muslim 2691",
+      "Sahih Muslim 2692",
+      "Sahih al-Bukhari 3293"
+    ],
+    "result": "R-069/R-070/R-072 consolidated as RC-049 because Muslim 2691 contains the Bukhari 3293 tahlil route and Bukhari 6405 tasbih route with matching Abu Hurayra–Abu Salih–Sumayy core; R-071/Muslim 2692 retained as distinct RC-050 and linked as related due different timing/merit wording and chain. No reference correction required. 60/82 consumed, 22 remaining."
+  },
+  "v30Corrections": [],
+  "v30Audit": {
+    "verifiedCandidates": [
+      "R-043",
+      "R-044"
+    ],
+    "sources": [
+      "Sunan Ibn Majah 3689",
+      "Sunan Ibn Majah 3688",
+      "Sahih al-Bukhari 6024",
+      "Sahih Muslim 2593"
+    ],
+    "decisions": [
+      "R-043/Ibn Majah 3689 rejoint RC-033 comme route parallèle du noyau de Bukhari 6024.",
+      "R-044/Ibn Majah 3688 reste RC-051 distinct; proximité avec Muslim 2593 sans identité de transmission suffisante."
+    ],
+    "referenceCorrections": []
+  },
+  "v31Corrections": [
+    {
+      "id": "R-052",
+      "field": "auditSummaryFr",
+      "reference": "Sahih al-Bukhari 6022",
+      "reason": "La référence est confirmée, mais le résumé historique ne correspond pas au contenu vérifié. La consolidation V31 corrige la description sans changer le numéro de hadith.",
+      "correctedSummaryFr": "Sur chaque musulman repose une sadaqah: travailler de ses mains et donner; à défaut aider une personne en détresse; à défaut recommander le bien; à défaut s’abstenir du mal, ce qui compte comme sadaqah."
+    }
+  ],
+  "v31Audit": {
+    "verifiedCandidates": [
+      "R-051",
+      "R-052",
+      "R-053"
+    ],
+    "sources": [
+      "Sahih al-Bukhari 2631",
+      "Sahih al-Bukhari 6022",
+      "Sahih Muslim 2626"
+    ],
+    "decisions": [
+      "R-051 reste un dossier distinct: quarante formes de bien, transmission de Abdullah ibn Amr.",
+      "R-052 reste un dossier distinct: référence 6022 confirmée mais résumé historique corrigé pour refléter le texte.",
+      "R-053 reste un dossier distinct: Abu Dharr, ne mépriser aucun bien même un visage accueillant."
+    ],
+    "referenceCorrections": [],
+    "editorialSummaryCorrections": [
+      "R-052"
+    ],
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v32Corrections": [],
+  "v32Audit": {
+    "family": "oppression-fraternite-entraide",
+    "absorbedRIds": [
+      "R-018",
+      "R-025"
+    ],
+    "result": "2 dossiers distincts; Bukhari 2443 parallèle +0 de R-018, Bukhari 2442 parallèle +0 de R-025; relation thématique entre RC-055 et RC-056.",
+    "remainingRIds": 15
+  },
+  "v33Corrections": [],
+  "v33Audit": {
+    "lot": "vie / santé / entraide-connaissance",
+    "verified": [
+      "R-063 / Sahih al-Bukhari 6416",
+      "R-064 / Sahih al-Bukhari 6412",
+      "R-016 / Sahih Muslim 2699a"
+    ],
+    "decisions": [
+      "RC-057 et RC-058 distincts; relatedRefs seulement.",
+      "RC-059 dossier composite distinct; relatedRefs vers RC-056, pas parallelRefs."
+    ],
+    "newReferenceCorrections": 0,
+    "indexHtmlModified": false
+  },
+  "v34Corrections": [],
+  "v34Audit": {
+    "lot": "amour du Messager / douceur de la foi",
+    "verified": [
+      "R-031 / Sahih al-Bukhari 15",
+      "R-032 / Sahih al-Bukhari 16"
+    ],
+    "decisions": [
+      "RC-060: Muslim 44b parallèle +0 de Bukhari 15.",
+      "RC-061: Muslim 43a/43b et Bukhari 6041 routes parallèles +0 de Bukhari 16.",
+      "RC-060 et RC-061 restent distincts; relatedRefs seulement entre les dossiers."
+    ],
+    "newReferenceCorrections": 0,
+    "indexHtmlModified": false
+  },
+  "v35Corrections": [],
+  "v35Audit": {
+    "lot": "licite/douteux — compréhension religieuse — facilité dans l’enseignement",
+    "verified": [
+      "R-020 / Sahih al-Bukhari 52",
+      "R-021 / Sahih al-Bukhari 71",
+      "R-022 / Sahih al-Bukhari 69"
+    ],
+    "decisions": [
+      "RC-062: Muslim 1599a et 1599d routes parallèles +0",
+      "RC-063: Bukhari 3116 et 7312 routes parallèles +0",
+      "RC-064: Bukhari 6125 route parallèle +0"
+    ],
+    "referenceCorrections": [],
+    "indexHtmlModified": false
+  },
+  "v36Corrections": [
+    {
+      "type": "aggregateArithmetic",
+      "fromVersion": "V35",
+      "previousClaim": "75/82 R-ID consumed; 7 remaining",
+      "correctedBaseline": "76/82 consumed; 6 remaining before V36",
+      "reason": "Direct recomputation of distinct R-ID membership in canonicalStructuralEntries V35 found 76. No R-ID identity was invented or removed."
+    }
+  ],
+  "v36Audit": {
+    "lot": "fraternité / orgueil / naṣīḥa",
+    "verified": [
+      "R-026 / Sahih Muslim 2564a",
+      "R-027 / Sahih Muslim 91a",
+      "R-033 / Sahih Muslim 55a"
+    ],
+    "decisions": [
+      "RC-065: Bukhari 6064/6066 partial-overlap routes +0; distinct from RC-056.",
+      "RC-066: Muslim 91b variant route +0.",
+      "RC-067: Muslim 55b/55c explicit same-hadith parallel routes +0."
+    ],
+    "referenceCorrections": [],
+    "aggregateArithmeticCorrection": "V35 direct structural membership was 76/82, not 75/82. After V36: 79/82 consumed, 3 remaining.",
+    "indexHtmlModified": false
+  },
+  "v37Corrections": [],
+  "v37Audit": {
+    "lot": [
+      "R-005",
+      "R-046",
+      "R-077"
+    ],
+    "verifiedOn": "2026-09-12",
+    "sources": [
+      "Sahih Muslim 2326",
+      "Sahih al-Bukhari 7377",
+      "Sahih al-Bukhari 1284",
+      "Sahih Muslim 923a",
+      "Sahih al-Bukhari 6014"
+    ],
+    "result": "R-005 et R-046 consolidés comme RC-068/RC-069. R-046 possède deux routes parallèles vérifiées, Bukhari 1284 et Muslim 923a. R-077 reste volontairement non consolidé : Bukhari 6014 traite du voisin, alors que son résumé hérité porte sur la miséricorde envers les créatures; aucune nouvelle référence n'est assignée sans preuve d'identité.",
+    "remaining": [
+      "R-077"
+    ],
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v38Corrections": [],
+  "v38Audit": {
+    "lot": [
+      "R-077"
+    ],
+    "verifiedOn": "2026-09-12",
+    "sources": [
+      "Sahih al-Bukhari 6014",
+      "Sahih al-Bukhari 7376",
+      "Jami` at-Tirmidhi 1924"
+    ],
+    "result": "Audit terminal sans remappage. Bukhari 6014 est un texte sur le voisin et ne concorde pas avec le résumé hérité de R-077. Bukhari 7376 correspond au thème miséricorde envers les gens / miséricorde d’Allah, mais il est déjà l’identité vérifiée de R-045 dans le registre de reconstruction; cette proximité thématique ne prouve pas que R-077 soit un doublon de R-045. Tirmidhi 1924 porte aussi sur la miséricorde envers ceux de la terre, mais avec Abdullah b. Amr et un contenu plus développé; aucune donnée interne ne permet de l’assigner à R-077. R-077 est donc explicitement quarantiné plutôt que remappé par supposition.",
+    "remaining": [
+      "R-077"
+    ],
+    "terminalDisposition": "REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED",
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v39Corrections": [
+    {
+      "id": "V39-R028-STRUCTURAL-MEMBERSHIP",
+      "candidate": "R-028",
+      "canonicalId": "RC-023",
+      "result": "R-028 était déjà documenté comme membre/chevauchement de RC-023 mais absent du tableau parallels, ce qui faisait tomber le recomptage strict primary/parallels à 80/82. La source Bukhari publie 5641 et 5642 ensemble comme une même entrée (Book 75, Hadith 2). R-028 est donc ajouté explicitement aux parallels de RC-023, sans nouvelle structure canonique.",
+      "sourceRef": "Sahih al-Bukhari 5641, 5642",
+      "countImpact": "0 nouvelle structure; comptage strict primary/parallels restauré à 81/82."
+    }
+  ],
+  "v39Audit": {
+    "method": "Recomptage exclusif des R-ID présents dans primary et parallels; relatedRefs, notes, overlapCandidates et métadonnées exclus.",
+    "strictConsumed": 81,
+    "remaining": [
+      "R-077"
+    ],
+    "canonicalStructures": 69,
+    "indexPolicy": "index.html non modifié",
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v40Corrections": [],
+  "v40Audit": {
+    "lot": [
+      "R-077"
+    ],
+    "verifiedOn": "2026-09-12",
+    "sources": [
+      "Sahih al-Bukhari 6014",
+      "Sahih al-Bukhari 7376"
+    ],
+    "result": "Contrôle final de clôture. Bukhari 6014 est bien le hadith de Aisha sur la recommandation de Jibril concernant le voisin. Bukhari 7376 est bien le hadith de Jarir sur la miséricorde envers les gens, mais il est déjà affecté à R-045. Ces données confirment la discordance de R-077 sans établir son identité perdue. Aucun H-ID, R-ID de remplacement ni doublon n’est inventé.",
+    "phaseDisposition": "RECONSTRUCTION_CLOSED_WITH_ONE_QUARANTINED_CANDIDATE",
+    "strictConsumed": 81,
+    "remaining": [
+      "R-077"
+    ],
+    "canonicalStructures": 69,
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v41Corrections": [],
+  "v41Audit": {
+    "lot": [
+      "audit-couverture-corpus",
+      "R-077"
+    ],
+    "verifiedOn": "2026-09-12",
+    "sources": [
+      "Sahih al-Bukhari 6014",
+      "Sahih al-Bukhari 7376"
+    ],
+    "result": "Aucune nouvelle identité religieuse n'est créée. Le registre consolidé contient 69 structures hadith confirmées sur la cible de 140, soit un déficit structurel de 71. Les 43 dossiers Qur’an étant constitués, la couverture structurelle globale est de 112/183. R-077 reste quarantiné : Bukhari 6014 concerne le voisin, tandis que Bukhari 7376 correspond au thème de la miséricorde mais est déjà affecté à R-045; aucune preuve ne permet de remapper R-077.",
+    "phaseDisposition": "TARGET_COVERAGE_GAP_DOCUMENTED_NO_INVENTION",
+    "hadithTarget": 140,
+    "hadithCanonicalStructuresConfirmed": 69,
+    "hadithStructuralGap": 71,
+    "quranTarget": 43,
+    "quranDossiersConstituted": 43,
+    "overallTarget": 183,
+    "overallStructuresAccountedFor": 112,
+    "overallStructuralGap": 71,
+    "strictConsumedRIds": 81,
+    "quarantinedRIds": [
+      "R-077"
+    ],
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v42Corrections": [
+    {
+      "file": "data/religious-library-target-manifest.json",
+      "field": "conversationAuditStatus.hadithRegister",
+      "from": "140/140 audité/fermé dans la conversation",
+      "to": "69/140 structures canoniques hadith confirmées; 71 non matérialisées; registre R clos à 81/82 avec R-077 quarantiné",
+      "reason": "Le libellé V41 pouvait laisser croire que 140 objets hadith canoniques existaient, alors que seuls 69 dossiers structuraux sont confirmés."
+    }
+  ],
+  "v42Audit": {
+    "canonicalHadithTarget": 140,
+    "canonicalHadithStructuresConfirmed": 69,
+    "canonicalHadithStructuresMissing": 71,
+    "quranDossiersConfirmed": 43,
+    "globalStructuralCoverage": 112,
+    "globalTarget": 183,
+    "globalMissing": 71,
+    "reconstructionCandidatesAbsorbed": 81,
+    "reconstructionCandidatesTotal": 82,
+    "quarantined": [
+      "R-077"
+    ],
+    "newHadithIdentitiesCreated": 0,
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  },
+  "v43Corrections": [],
+  "v43Audit": {
+    "purpose": "Rendre le déficit 71/140 traçable sans transformer les lacunes en hadiths supposés.",
+    "confirmedHadithStructures": 69,
+    "targetHadithStructures": 140,
+    "coverageGaps": 71,
+    "gapRegister": "data/religious-library-hadith-coverage-gaps-v1.json",
+    "gapIdentifiersAreReligiousIdentities": false,
+    "newHadithReferencesAssigned": 0,
+    "newHistoricalHIdsAssigned": 0,
+    "newReconstructionRIdsAssigned": 0,
+    "r077Status": "REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED",
+    "indexHtmlModified": false,
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false
+  }
+}

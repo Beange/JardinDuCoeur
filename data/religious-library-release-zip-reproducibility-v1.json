@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Deterministic ZIP build contract for V89; administrative only and no religious identity inferred.",
+  "builder": "tools/build_release_zip.py",
+  "archive": {
+    "rootName": "jdc_v79",
+    "fileOrder": "lexicographic POSIX relative paths from archive file-set contract",
+    "directoryEntries": false,
+    "timestamp": "1980-01-01T00:00:00 (ZIP local timestamp)",
+    "createSystem": 3,
+    "regularFileModeOctal": "100644",
+    "extraFields": "empty",
+    "entryComments": "empty",
+    "archiveComment": "empty",
+    "compression": "ZIP_DEFLATED",
+    "compressLevel": 9,
+    "zip64Allowed": true
+  },
+  "sourceBoundary": {
+    "fileSetContract": "data/religious-library-release-archive-fileset-v1.json",
+    "exactFileSetRequired": true,
+    "symbolicLinksAllowed": false
+  },
+  "verification": {
+    "buildTwiceAndCompareSha256": true,
+    "expectedIdentical": true,
+    "crossToolchainBitIdentityClaimed": false
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "productionReady": false
+  }
+}

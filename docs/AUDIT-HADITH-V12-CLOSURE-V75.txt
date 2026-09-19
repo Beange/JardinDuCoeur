@@ -1,0 +1,36 @@
+JARDIN DU CŒUR — AUDIT DE CLÔTURE DES FAMILLES V12 — V75
+
+Objet: fermer rétrospectivement les 11 décisions highConfidenceParallelFamilies restées PENDING_SOURCE_BY_SOURCE_CONSOLIDATION dans V12, sans réécrire le fichier historique V12.
+
+Résultat: 11/11 familles résolues; 9 convergent vers un seul RC; 2 ont été scindées par les audits ultérieurs; 0 famille reste ouverte.
+
+DÉTAIL
+- RF-05 / intention-hijra: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-003→RC-005 (primary; Sahih Muslim 1907a), R-019→RC-005 (parallel; Sahih al-Bukhari 1)
+- RF-06 / aimer-pour-son-frere: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-011→RC-006 (primary; Sahih al-Bukhari 13), R-023→RC-006 (parallel; Sahih Muslim 45a)
+- RF-07 / voisin-hospitalite-parole: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-012→RC-007 (primary; Sahih al-Bukhari 6018), R-024→RC-007 (parallel; Sahih Muslim 47a)
+- RF-09 / langue-et-main: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-029→RC-001 (primary; Sahih al-Bukhari 10), R-030→RC-001 (parallel; Sahih Muslim 40)
+- RF-12 / force-et-colere: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-039→RC-002 (primary; Sahih al-Bukhari 6114), R-040→RC-002 (parallel; Sahih Muslim 2609a)
+- RF-16 / coeurs-actes-apparence: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-047→RC-003 (primary; Sahih Muslim 2564c), R-048→RC-003 (parallel; Sunan Ibn Majah 4143)
+- RF-19 / demi-datte-et-bonne-parole: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-055→RC-004 (primary; Sahih al-Bukhari 1413), R-056→RC-004 (parallel; Sahih Muslim 1016a)
+- RF-20 / poids-de-la-parole: RESOLVED_BY_LATER_AUDIT_AS_DISTINCT_CANONICAL_STRUCTURES
+  R-057→RC-027 (primary; Sahih al-Bukhari 6478), R-058→RC-021 (parallel; Sahih Muslim 2988a)
+- RF-21 / invocation-de-guerison: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-059→RC-022 (primary; Sahih al-Bukhari 5675), R-060→RC-022 (parallel; Sahih Muslim 2191a)
+- RF-22 / maladie-et-expiation: RESOLVED_AS_SINGLE_CANONICAL_STRUCTURE
+  R-028→RC-023 (parallel; Sahih al-Bukhari 5641), R-061→RC-023 (primary; Sahih al-Bukhari 5641, 5642), R-062→RC-023 (parallel; Sahih Muslim 2573)
+- RF-23 / inscription-des-actions-expanded: RESOLVED_BY_LATER_AUDIT_AS_DISTINCT_CANONICAL_STRUCTURES
+  R-001→RC-047 (primary; Sahih Muslim 130), R-002→RC-048 (primary; Sahih Muslim 131a), R-065→RC-024 (primary; Sahih al-Bukhari 6491), R-066→RC-024 (parallel; Sahih Muslim 131a/131b)
+
+POINTS IMPORTANTS
+- RF-20 n’est pas fusionnée en un seul RC: R-057 a été corrigé vers Bukhari 6478 et reste RC-027, tandis que R-058 est parallèle de RC-021.
+- RF-23 n’est pas fusionnée en un seul RC: ses membres ont été répartis entre RC-047, RC-048 et RC-024 après vérification source par source.
+- Les statuts PENDING de V12 sont historiques et restent intacts dans le fichier V12; V75 ajoute seulement un registre de clôture.
+- Aucun H-ID nouveau, aucun GAP assigné, aucun changement du corpus religieux, aucun changement de index.html.
+- R-077 reste quarantiné; productionReady=false; full183ObjectSerialization=PENDING.

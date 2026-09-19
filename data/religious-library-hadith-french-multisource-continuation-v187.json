@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V187",
+  "auditId": "french-multisource-continuation-v187",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-048",
+      "RC-006"
+    ],
+    "reviewedCount": 2
+  },
+  "promotedCanonicalIds": [
+    "RC-048"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-048",
+      "primaryRef": "Sahih Muslim 131a",
+      "parallelRef": "Sahih al-Bukhari 6491",
+      "narrator": "Ibn 'Abbâs",
+      "publishedFrenchTranslation": "Certes, Allah a écrit les bonnes et les mauvaises actions, ensuite Il a expliqué cela. Ainsi donc, quiconque songe à faire une bonne action mais ne l’accomplit pas, Allah la lui inscrit auprès de Lui comme une bonne action complète. Et s’il y songe et l’accomplit, Allah la lui inscrit auprès de Lui de dix à sept cent bonnes actions, et bien plus encore. S’il songe à faire une mauvaise action mais ne la commet pas, Allah la lui inscrit auprès de Lui comme une bonne action complète. Et s’il y songe et l’accomplit, Allah lui inscrit une seule mauvaise action.",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4322m",
+      "sourceHadithId": "4322m",
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 6491",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": false,
+      "identityEvidence": "Ibn 'Abbâs; hadith qudsi; matn arabe et contenu distinctif concordent avec Muslim 131a; HadeethEnc affiche le parallèle Bukhari 6491 et l'attribution conjointe Al-Bukhârî/Muslim.",
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-006"
+  ],
+  "findings": [
+    {
+      "canonicalId": "RC-006",
+      "primaryRef": "Sahih al-Bukhari 13",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4717",
+      "explicitRevisionWarningObserved": true,
+      "decision": "HELD",
+      "reason": "La page française concordante affiche explicitement que la traduction doit être davantage révisée et vérifiée; aucune source indépendante admissible n’a été établie dans cette passe pour lever ce blocage."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 81,
+    "pendingPublishedFrenchCanonicalEntries": 59
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

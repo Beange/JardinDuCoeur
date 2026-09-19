@@ -1,0 +1,2973 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Machine-readable referential-integrity index across canonical Qur’an IDs, hadith canonical structures, administrative gaps, coverage ledgers and reconstruction membership. Administrative only; it does not infer religious identity.",
+  "nodeSets": {
+    "quran": {
+      "count": 43,
+      "ids": [
+        "Q-001",
+        "Q-002",
+        "Q-003",
+        "Q-004",
+        "Q-005",
+        "Q-006",
+        "Q-007",
+        "Q-008",
+        "Q-009",
+        "Q-010",
+        "Q-011",
+        "Q-012",
+        "Q-013",
+        "Q-014",
+        "Q-015",
+        "Q-016",
+        "Q-017",
+        "Q-018",
+        "Q-019",
+        "Q-020",
+        "Q-021",
+        "Q-022",
+        "Q-023",
+        "Q-024",
+        "Q-025",
+        "Q-026",
+        "Q-027",
+        "Q-028",
+        "Q-029",
+        "Q-030",
+        "Q-031",
+        "Q-032",
+        "Q-033",
+        "Q-034",
+        "Q-035",
+        "Q-036",
+        "Q-037",
+        "Q-038",
+        "Q-039",
+        "Q-040",
+        "Q-041",
+        "Q-042",
+        "Q-043"
+      ]
+    },
+    "hadithCanonical": {
+      "count": 105,
+      "ids": [
+        "RC-001",
+        "RC-002",
+        "RC-003",
+        "RC-004",
+        "RC-005",
+        "RC-006",
+        "RC-007",
+        "RC-008",
+        "RC-009",
+        "RC-010",
+        "RC-011",
+        "RC-012",
+        "RC-013",
+        "RC-014",
+        "RC-015",
+        "RC-016",
+        "RC-017",
+        "RC-018",
+        "RC-019",
+        "RC-020",
+        "RC-021",
+        "RC-022",
+        "RC-023",
+        "RC-024",
+        "RC-025",
+        "RC-026",
+        "RC-027",
+        "RC-028",
+        "RC-029",
+        "RC-030",
+        "RC-031",
+        "RC-032",
+        "RC-033",
+        "RC-034",
+        "RC-035",
+        "RC-036",
+        "RC-037",
+        "RC-038",
+        "RC-039",
+        "RC-040",
+        "RC-041",
+        "RC-042",
+        "RC-043",
+        "RC-044",
+        "RC-045",
+        "RC-046",
+        "RC-047",
+        "RC-048",
+        "RC-049",
+        "RC-050",
+        "RC-051",
+        "RC-052",
+        "RC-053",
+        "RC-054",
+        "RC-055",
+        "RC-056",
+        "RC-057",
+        "RC-058",
+        "RC-059",
+        "RC-060",
+        "RC-061",
+        "RC-062",
+        "RC-063",
+        "RC-064",
+        "RC-065",
+        "RC-066",
+        "RC-067",
+        "RC-068",
+        "RC-069",
+        "N-001",
+        "N-002",
+        "N-003",
+        "N-004",
+        "N-005",
+        "N-006",
+        "N-007",
+        "N-008",
+        "N-009",
+        "N-011",
+        "N-013",
+        "N-015",
+        "N-016",
+        "N-017",
+        "N-018",
+        "N-019",
+        "N-020",
+        "N-021",
+        "N-022",
+        "N-023",
+        "N-025",
+        "N-026",
+        "N-027",
+        "N-029",
+        "N-030",
+        "N-033",
+        "N-034",
+        "N-035",
+        "N-036",
+        "N-037",
+        "N-038",
+        "N-039",
+        "N-040",
+        "N-048",
+        "N-049",
+        "N-050"
+      ]
+    },
+    "hadithGaps": {
+      "count": 71,
+      "ids": [
+        "GAP-001",
+        "GAP-002",
+        "GAP-003",
+        "GAP-004",
+        "GAP-005",
+        "GAP-006",
+        "GAP-007",
+        "GAP-008",
+        "GAP-009",
+        "GAP-010",
+        "GAP-011",
+        "GAP-012",
+        "GAP-013",
+        "GAP-014",
+        "GAP-015",
+        "GAP-016",
+        "GAP-017",
+        "GAP-018",
+        "GAP-019",
+        "GAP-020",
+        "GAP-021",
+        "GAP-022",
+        "GAP-023",
+        "GAP-024",
+        "GAP-025",
+        "GAP-026",
+        "GAP-027",
+        "GAP-028",
+        "GAP-029",
+        "GAP-030",
+        "GAP-031",
+        "GAP-032",
+        "GAP-033",
+        "GAP-034",
+        "GAP-035",
+        "GAP-036",
+        "GAP-037",
+        "GAP-038",
+        "GAP-039",
+        "GAP-040",
+        "GAP-041",
+        "GAP-042",
+        "GAP-043",
+        "GAP-044",
+        "GAP-045",
+        "GAP-046",
+        "GAP-047",
+        "GAP-048",
+        "GAP-049",
+        "GAP-050",
+        "GAP-051",
+        "GAP-052",
+        "GAP-053",
+        "GAP-054",
+        "GAP-055",
+        "GAP-056",
+        "GAP-057",
+        "GAP-058",
+        "GAP-059",
+        "GAP-060",
+        "GAP-061",
+        "GAP-062",
+        "GAP-063",
+        "GAP-064",
+        "GAP-065",
+        "GAP-066",
+        "GAP-067",
+        "GAP-068",
+        "GAP-069",
+        "GAP-070",
+        "GAP-071"
+      ]
+    },
+    "hadithCoverageSlots": {
+      "count": 140,
+      "ids": [
+        "HADITH-COVERAGE-001",
+        "HADITH-COVERAGE-002",
+        "HADITH-COVERAGE-003",
+        "HADITH-COVERAGE-004",
+        "HADITH-COVERAGE-005",
+        "HADITH-COVERAGE-006",
+        "HADITH-COVERAGE-007",
+        "HADITH-COVERAGE-008",
+        "HADITH-COVERAGE-009",
+        "HADITH-COVERAGE-010",
+        "HADITH-COVERAGE-011",
+        "HADITH-COVERAGE-012",
+        "HADITH-COVERAGE-013",
+        "HADITH-COVERAGE-014",
+        "HADITH-COVERAGE-015",
+        "HADITH-COVERAGE-016",
+        "HADITH-COVERAGE-017",
+        "HADITH-COVERAGE-018",
+        "HADITH-COVERAGE-019",
+        "HADITH-COVERAGE-020",
+        "HADITH-COVERAGE-021",
+        "HADITH-COVERAGE-022",
+        "HADITH-COVERAGE-023",
+        "HADITH-COVERAGE-024",
+        "HADITH-COVERAGE-025",
+        "HADITH-COVERAGE-026",
+        "HADITH-COVERAGE-027",
+        "HADITH-COVERAGE-028",
+        "HADITH-COVERAGE-029",
+        "HADITH-COVERAGE-030",
+        "HADITH-COVERAGE-031",
+        "HADITH-COVERAGE-032",
+        "HADITH-COVERAGE-033",
+        "HADITH-COVERAGE-034",
+        "HADITH-COVERAGE-035",
+        "HADITH-COVERAGE-036",
+        "HADITH-COVERAGE-037",
+        "HADITH-COVERAGE-038",
+        "HADITH-COVERAGE-039",
+        "HADITH-COVERAGE-040",
+        "HADITH-COVERAGE-041",
+        "HADITH-COVERAGE-042",
+        "HADITH-COVERAGE-043",
+        "HADITH-COVERAGE-044",
+        "HADITH-COVERAGE-045",
+        "HADITH-COVERAGE-046",
+        "HADITH-COVERAGE-047",
+        "HADITH-COVERAGE-048",
+        "HADITH-COVERAGE-049",
+        "HADITH-COVERAGE-050",
+        "HADITH-COVERAGE-051",
+        "HADITH-COVERAGE-052",
+        "HADITH-COVERAGE-053",
+        "HADITH-COVERAGE-054",
+        "HADITH-COVERAGE-055",
+        "HADITH-COVERAGE-056",
+        "HADITH-COVERAGE-057",
+        "HADITH-COVERAGE-058",
+        "HADITH-COVERAGE-059",
+        "HADITH-COVERAGE-060",
+        "HADITH-COVERAGE-061",
+        "HADITH-COVERAGE-062",
+        "HADITH-COVERAGE-063",
+        "HADITH-COVERAGE-064",
+        "HADITH-COVERAGE-065",
+        "HADITH-COVERAGE-066",
+        "HADITH-COVERAGE-067",
+        "HADITH-COVERAGE-068",
+        "HADITH-COVERAGE-069",
+        "HADITH-COVERAGE-070",
+        "HADITH-COVERAGE-071",
+        "HADITH-COVERAGE-072",
+        "HADITH-COVERAGE-073",
+        "HADITH-COVERAGE-074",
+        "HADITH-COVERAGE-075",
+        "HADITH-COVERAGE-076",
+        "HADITH-COVERAGE-077",
+        "HADITH-COVERAGE-078",
+        "HADITH-COVERAGE-079",
+        "HADITH-COVERAGE-080",
+        "HADITH-COVERAGE-081",
+        "HADITH-COVERAGE-082",
+        "HADITH-COVERAGE-083",
+        "HADITH-COVERAGE-084",
+        "HADITH-COVERAGE-085",
+        "HADITH-COVERAGE-086",
+        "HADITH-COVERAGE-087",
+        "HADITH-COVERAGE-088",
+        "HADITH-COVERAGE-089",
+        "HADITH-COVERAGE-090",
+        "HADITH-COVERAGE-091",
+        "HADITH-COVERAGE-092",
+        "HADITH-COVERAGE-093",
+        "HADITH-COVERAGE-094",
+        "HADITH-COVERAGE-095",
+        "HADITH-COVERAGE-096",
+        "HADITH-COVERAGE-097",
+        "HADITH-COVERAGE-098",
+        "HADITH-COVERAGE-099",
+        "HADITH-COVERAGE-100",
+        "HADITH-COVERAGE-101",
+        "HADITH-COVERAGE-102",
+        "HADITH-COVERAGE-103",
+        "HADITH-COVERAGE-104",
+        "HADITH-COVERAGE-105",
+        "HADITH-COVERAGE-106",
+        "HADITH-COVERAGE-107",
+        "HADITH-COVERAGE-108",
+        "HADITH-COVERAGE-109",
+        "HADITH-COVERAGE-110",
+        "HADITH-COVERAGE-111",
+        "HADITH-COVERAGE-112",
+        "HADITH-COVERAGE-113",
+        "HADITH-COVERAGE-114",
+        "HADITH-COVERAGE-115",
+        "HADITH-COVERAGE-116",
+        "HADITH-COVERAGE-117",
+        "HADITH-COVERAGE-118",
+        "HADITH-COVERAGE-119",
+        "HADITH-COVERAGE-120",
+        "HADITH-COVERAGE-121",
+        "HADITH-COVERAGE-122",
+        "HADITH-COVERAGE-123",
+        "HADITH-COVERAGE-124",
+        "HADITH-COVERAGE-125",
+        "HADITH-COVERAGE-126",
+        "HADITH-COVERAGE-127",
+        "HADITH-COVERAGE-128",
+        "HADITH-COVERAGE-129",
+        "HADITH-COVERAGE-130",
+        "HADITH-COVERAGE-131",
+        "HADITH-COVERAGE-132",
+        "HADITH-COVERAGE-133",
+        "HADITH-COVERAGE-134",
+        "HADITH-COVERAGE-135",
+        "HADITH-COVERAGE-136",
+        "HADITH-COVERAGE-137",
+        "HADITH-COVERAGE-138",
+        "HADITH-COVERAGE-139",
+        "HADITH-COVERAGE-140"
+      ]
+    },
+    "globalCoverageSlots": {
+      "count": 183,
+      "ids": [
+        "CORPUS-COVERAGE-001",
+        "CORPUS-COVERAGE-002",
+        "CORPUS-COVERAGE-003",
+        "CORPUS-COVERAGE-004",
+        "CORPUS-COVERAGE-005",
+        "CORPUS-COVERAGE-006",
+        "CORPUS-COVERAGE-007",
+        "CORPUS-COVERAGE-008",
+        "CORPUS-COVERAGE-009",
+        "CORPUS-COVERAGE-010",
+        "CORPUS-COVERAGE-011",
+        "CORPUS-COVERAGE-012",
+        "CORPUS-COVERAGE-013",
+        "CORPUS-COVERAGE-014",
+        "CORPUS-COVERAGE-015",
+        "CORPUS-COVERAGE-016",
+        "CORPUS-COVERAGE-017",
+        "CORPUS-COVERAGE-018",
+        "CORPUS-COVERAGE-019",
+        "CORPUS-COVERAGE-020",
+        "CORPUS-COVERAGE-021",
+        "CORPUS-COVERAGE-022",
+        "CORPUS-COVERAGE-023",
+        "CORPUS-COVERAGE-024",
+        "CORPUS-COVERAGE-025",
+        "CORPUS-COVERAGE-026",
+        "CORPUS-COVERAGE-027",
+        "CORPUS-COVERAGE-028",
+        "CORPUS-COVERAGE-029",
+        "CORPUS-COVERAGE-030",
+        "CORPUS-COVERAGE-031",
+        "CORPUS-COVERAGE-032",
+        "CORPUS-COVERAGE-033",
+        "CORPUS-COVERAGE-034",
+        "CORPUS-COVERAGE-035",
+        "CORPUS-COVERAGE-036",
+        "CORPUS-COVERAGE-037",
+        "CORPUS-COVERAGE-038",
+        "CORPUS-COVERAGE-039",
+        "CORPUS-COVERAGE-040",
+        "CORPUS-COVERAGE-041",
+        "CORPUS-COVERAGE-042",
+        "CORPUS-COVERAGE-043",
+        "CORPUS-COVERAGE-044",
+        "CORPUS-COVERAGE-045",
+        "CORPUS-COVERAGE-046",
+        "CORPUS-COVERAGE-047",
+        "CORPUS-COVERAGE-048",
+        "CORPUS-COVERAGE-049",
+        "CORPUS-COVERAGE-050",
+        "CORPUS-COVERAGE-051",
+        "CORPUS-COVERAGE-052",
+        "CORPUS-COVERAGE-053",
+        "CORPUS-COVERAGE-054",
+        "CORPUS-COVERAGE-055",
+        "CORPUS-COVERAGE-056",
+        "CORPUS-COVERAGE-057",
+        "CORPUS-COVERAGE-058",
+        "CORPUS-COVERAGE-059",
+        "CORPUS-COVERAGE-060",
+        "CORPUS-COVERAGE-061",
+        "CORPUS-COVERAGE-062",
+        "CORPUS-COVERAGE-063",
+        "CORPUS-COVERAGE-064",
+        "CORPUS-COVERAGE-065",
+        "CORPUS-COVERAGE-066",
+        "CORPUS-COVERAGE-067",
+        "CORPUS-COVERAGE-068",
+        "CORPUS-COVERAGE-069",
+        "CORPUS-COVERAGE-070",
+        "CORPUS-COVERAGE-071",
+        "CORPUS-COVERAGE-072",
+        "CORPUS-COVERAGE-073",
+        "CORPUS-COVERAGE-074",
+        "CORPUS-COVERAGE-075",
+        "CORPUS-COVERAGE-076",
+        "CORPUS-COVERAGE-077",
+        "CORPUS-COVERAGE-078",
+        "CORPUS-COVERAGE-079",
+        "CORPUS-COVERAGE-080",
+        "CORPUS-COVERAGE-081",
+        "CORPUS-COVERAGE-082",
+        "CORPUS-COVERAGE-083",
+        "CORPUS-COVERAGE-084",
+        "CORPUS-COVERAGE-085",
+        "CORPUS-COVERAGE-086",
+        "CORPUS-COVERAGE-087",
+        "CORPUS-COVERAGE-088",
+        "CORPUS-COVERAGE-089",
+        "CORPUS-COVERAGE-090",
+        "CORPUS-COVERAGE-091",
+        "CORPUS-COVERAGE-092",
+        "CORPUS-COVERAGE-093",
+        "CORPUS-COVERAGE-094",
+        "CORPUS-COVERAGE-095",
+        "CORPUS-COVERAGE-096",
+        "CORPUS-COVERAGE-097",
+        "CORPUS-COVERAGE-098",
+        "CORPUS-COVERAGE-099",
+        "CORPUS-COVERAGE-100",
+        "CORPUS-COVERAGE-101",
+        "CORPUS-COVERAGE-102",
+        "CORPUS-COVERAGE-103",
+        "CORPUS-COVERAGE-104",
+        "CORPUS-COVERAGE-105",
+        "CORPUS-COVERAGE-106",
+        "CORPUS-COVERAGE-107",
+        "CORPUS-COVERAGE-108",
+        "CORPUS-COVERAGE-109",
+        "CORPUS-COVERAGE-110",
+        "CORPUS-COVERAGE-111",
+        "CORPUS-COVERAGE-112",
+        "CORPUS-COVERAGE-113",
+        "CORPUS-COVERAGE-114",
+        "CORPUS-COVERAGE-115",
+        "CORPUS-COVERAGE-116",
+        "CORPUS-COVERAGE-117",
+        "CORPUS-COVERAGE-118",
+        "CORPUS-COVERAGE-119",
+        "CORPUS-COVERAGE-120",
+        "CORPUS-COVERAGE-121",
+        "CORPUS-COVERAGE-122",
+        "CORPUS-COVERAGE-123",
+        "CORPUS-COVERAGE-124",
+        "CORPUS-COVERAGE-125",
+        "CORPUS-COVERAGE-126",
+        "CORPUS-COVERAGE-127",
+        "CORPUS-COVERAGE-128",
+        "CORPUS-COVERAGE-129",
+        "CORPUS-COVERAGE-130",
+        "CORPUS-COVERAGE-131",
+        "CORPUS-COVERAGE-132",
+        "CORPUS-COVERAGE-133",
+        "CORPUS-COVERAGE-134",
+        "CORPUS-COVERAGE-135",
+        "CORPUS-COVERAGE-136",
+        "CORPUS-COVERAGE-137",
+        "CORPUS-COVERAGE-138",
+        "CORPUS-COVERAGE-139",
+        "CORPUS-COVERAGE-140",
+        "CORPUS-COVERAGE-141",
+        "CORPUS-COVERAGE-142",
+        "CORPUS-COVERAGE-143",
+        "CORPUS-COVERAGE-144",
+        "CORPUS-COVERAGE-145",
+        "CORPUS-COVERAGE-146",
+        "CORPUS-COVERAGE-147",
+        "CORPUS-COVERAGE-148",
+        "CORPUS-COVERAGE-149",
+        "CORPUS-COVERAGE-150",
+        "CORPUS-COVERAGE-151",
+        "CORPUS-COVERAGE-152",
+        "CORPUS-COVERAGE-153",
+        "CORPUS-COVERAGE-154",
+        "CORPUS-COVERAGE-155",
+        "CORPUS-COVERAGE-156",
+        "CORPUS-COVERAGE-157",
+        "CORPUS-COVERAGE-158",
+        "CORPUS-COVERAGE-159",
+        "CORPUS-COVERAGE-160",
+        "CORPUS-COVERAGE-161",
+        "CORPUS-COVERAGE-162",
+        "CORPUS-COVERAGE-163",
+        "CORPUS-COVERAGE-164",
+        "CORPUS-COVERAGE-165",
+        "CORPUS-COVERAGE-166",
+        "CORPUS-COVERAGE-167",
+        "CORPUS-COVERAGE-168",
+        "CORPUS-COVERAGE-169",
+        "CORPUS-COVERAGE-170",
+        "CORPUS-COVERAGE-171",
+        "CORPUS-COVERAGE-172",
+        "CORPUS-COVERAGE-173",
+        "CORPUS-COVERAGE-174",
+        "CORPUS-COVERAGE-175",
+        "CORPUS-COVERAGE-176",
+        "CORPUS-COVERAGE-177",
+        "CORPUS-COVERAGE-178",
+        "CORPUS-COVERAGE-179",
+        "CORPUS-COVERAGE-180",
+        "CORPUS-COVERAGE-181",
+        "CORPUS-COVERAGE-182",
+        "CORPUS-COVERAGE-183"
+      ]
+    },
+    "reconstructionCandidates": {
+      "count": 82,
+      "ids": [
+        "R-001",
+        "R-002",
+        "R-003",
+        "R-004",
+        "R-005",
+        "R-006",
+        "R-007",
+        "R-008",
+        "R-009",
+        "R-010",
+        "R-011",
+        "R-012",
+        "R-013",
+        "R-014",
+        "R-015",
+        "R-016",
+        "R-017",
+        "R-018",
+        "R-019",
+        "R-020",
+        "R-021",
+        "R-022",
+        "R-023",
+        "R-024",
+        "R-025",
+        "R-026",
+        "R-027",
+        "R-028",
+        "R-029",
+        "R-030",
+        "R-031",
+        "R-032",
+        "R-033",
+        "R-034",
+        "R-035",
+        "R-036",
+        "R-037",
+        "R-038",
+        "R-039",
+        "R-040",
+        "R-041",
+        "R-042",
+        "R-043",
+        "R-044",
+        "R-045",
+        "R-046",
+        "R-047",
+        "R-048",
+        "R-049",
+        "R-050",
+        "R-051",
+        "R-052",
+        "R-053",
+        "R-054",
+        "R-055",
+        "R-056",
+        "R-057",
+        "R-058",
+        "R-059",
+        "R-060",
+        "R-061",
+        "R-062",
+        "R-063",
+        "R-064",
+        "R-065",
+        "R-066",
+        "R-067",
+        "R-068",
+        "R-069",
+        "R-070",
+        "R-071",
+        "R-072",
+        "R-073",
+        "R-074",
+        "R-075",
+        "R-076",
+        "R-077",
+        "R-078",
+        "R-079",
+        "R-080",
+        "R-081",
+        "R-082"
+      ]
+    },
+    "hadithUnmaterializedGaps": {
+      "count": 35,
+      "ids": [
+        "GAP-037",
+        "GAP-038",
+        "GAP-039",
+        "GAP-040",
+        "GAP-041",
+        "GAP-042",
+        "GAP-043",
+        "GAP-044",
+        "GAP-045",
+        "GAP-046",
+        "GAP-047",
+        "GAP-048",
+        "GAP-049",
+        "GAP-050",
+        "GAP-051",
+        "GAP-052",
+        "GAP-053",
+        "GAP-054",
+        "GAP-055",
+        "GAP-056",
+        "GAP-057",
+        "GAP-058",
+        "GAP-059",
+        "GAP-060",
+        "GAP-061",
+        "GAP-062",
+        "GAP-063",
+        "GAP-064",
+        "GAP-065",
+        "GAP-066",
+        "GAP-067",
+        "GAP-068",
+        "GAP-069",
+        "GAP-070",
+        "GAP-071"
+      ]
+    }
+  },
+  "relations": {
+    "globalQuranPointers": [
+      {
+        "coverageSlot": "CORPUS-COVERAGE-001",
+        "quranId": "Q-001"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-002",
+        "quranId": "Q-002"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-003",
+        "quranId": "Q-003"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-004",
+        "quranId": "Q-004"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-005",
+        "quranId": "Q-005"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-006",
+        "quranId": "Q-006"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-007",
+        "quranId": "Q-007"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-008",
+        "quranId": "Q-008"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-009",
+        "quranId": "Q-009"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-010",
+        "quranId": "Q-010"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-011",
+        "quranId": "Q-011"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-012",
+        "quranId": "Q-012"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-013",
+        "quranId": "Q-013"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-014",
+        "quranId": "Q-014"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-015",
+        "quranId": "Q-015"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-016",
+        "quranId": "Q-016"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-017",
+        "quranId": "Q-017"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-018",
+        "quranId": "Q-018"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-019",
+        "quranId": "Q-019"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-020",
+        "quranId": "Q-020"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-021",
+        "quranId": "Q-021"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-022",
+        "quranId": "Q-022"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-023",
+        "quranId": "Q-023"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-024",
+        "quranId": "Q-024"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-025",
+        "quranId": "Q-025"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-026",
+        "quranId": "Q-026"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-027",
+        "quranId": "Q-027"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-028",
+        "quranId": "Q-028"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-029",
+        "quranId": "Q-029"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-030",
+        "quranId": "Q-030"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-031",
+        "quranId": "Q-031"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-032",
+        "quranId": "Q-032"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-033",
+        "quranId": "Q-033"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-034",
+        "quranId": "Q-034"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-035",
+        "quranId": "Q-035"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-036",
+        "quranId": "Q-036"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-037",
+        "quranId": "Q-037"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-038",
+        "quranId": "Q-038"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-039",
+        "quranId": "Q-039"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-040",
+        "quranId": "Q-040"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-041",
+        "quranId": "Q-041"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-042",
+        "quranId": "Q-042"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-043",
+        "quranId": "Q-043"
+      }
+    ],
+    "globalHadithPointers": [
+      {
+        "coverageSlot": "CORPUS-COVERAGE-044",
+        "hadithCoverageSlot": "HADITH-COVERAGE-001",
+        "canonicalId": "RC-001",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-045",
+        "hadithCoverageSlot": "HADITH-COVERAGE-002",
+        "canonicalId": "RC-002",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-046",
+        "hadithCoverageSlot": "HADITH-COVERAGE-003",
+        "canonicalId": "RC-003",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-047",
+        "hadithCoverageSlot": "HADITH-COVERAGE-004",
+        "canonicalId": "RC-004",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-048",
+        "hadithCoverageSlot": "HADITH-COVERAGE-005",
+        "canonicalId": "RC-005",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-049",
+        "hadithCoverageSlot": "HADITH-COVERAGE-006",
+        "canonicalId": "RC-006",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-050",
+        "hadithCoverageSlot": "HADITH-COVERAGE-007",
+        "canonicalId": "RC-007",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-051",
+        "hadithCoverageSlot": "HADITH-COVERAGE-008",
+        "canonicalId": "RC-008",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-052",
+        "hadithCoverageSlot": "HADITH-COVERAGE-009",
+        "canonicalId": "RC-009",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-053",
+        "hadithCoverageSlot": "HADITH-COVERAGE-010",
+        "canonicalId": "RC-010",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-054",
+        "hadithCoverageSlot": "HADITH-COVERAGE-011",
+        "canonicalId": "RC-011",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-055",
+        "hadithCoverageSlot": "HADITH-COVERAGE-012",
+        "canonicalId": "RC-012",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-056",
+        "hadithCoverageSlot": "HADITH-COVERAGE-013",
+        "canonicalId": "RC-013",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-057",
+        "hadithCoverageSlot": "HADITH-COVERAGE-014",
+        "canonicalId": "RC-014",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-058",
+        "hadithCoverageSlot": "HADITH-COVERAGE-015",
+        "canonicalId": "RC-015",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-059",
+        "hadithCoverageSlot": "HADITH-COVERAGE-016",
+        "canonicalId": "RC-016",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-060",
+        "hadithCoverageSlot": "HADITH-COVERAGE-017",
+        "canonicalId": "RC-017",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-061",
+        "hadithCoverageSlot": "HADITH-COVERAGE-018",
+        "canonicalId": "RC-018",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-062",
+        "hadithCoverageSlot": "HADITH-COVERAGE-019",
+        "canonicalId": "RC-019",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-063",
+        "hadithCoverageSlot": "HADITH-COVERAGE-020",
+        "canonicalId": "RC-020",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-064",
+        "hadithCoverageSlot": "HADITH-COVERAGE-021",
+        "canonicalId": "RC-021",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-065",
+        "hadithCoverageSlot": "HADITH-COVERAGE-022",
+        "canonicalId": "RC-022",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-066",
+        "hadithCoverageSlot": "HADITH-COVERAGE-023",
+        "canonicalId": "RC-023",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-067",
+        "hadithCoverageSlot": "HADITH-COVERAGE-024",
+        "canonicalId": "RC-024",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-068",
+        "hadithCoverageSlot": "HADITH-COVERAGE-025",
+        "canonicalId": "RC-025",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-069",
+        "hadithCoverageSlot": "HADITH-COVERAGE-026",
+        "canonicalId": "RC-026",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-070",
+        "hadithCoverageSlot": "HADITH-COVERAGE-027",
+        "canonicalId": "RC-027",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-071",
+        "hadithCoverageSlot": "HADITH-COVERAGE-028",
+        "canonicalId": "RC-028",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-072",
+        "hadithCoverageSlot": "HADITH-COVERAGE-029",
+        "canonicalId": "RC-029",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-073",
+        "hadithCoverageSlot": "HADITH-COVERAGE-030",
+        "canonicalId": "RC-030",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-074",
+        "hadithCoverageSlot": "HADITH-COVERAGE-031",
+        "canonicalId": "RC-031",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-075",
+        "hadithCoverageSlot": "HADITH-COVERAGE-032",
+        "canonicalId": "RC-032",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-076",
+        "hadithCoverageSlot": "HADITH-COVERAGE-033",
+        "canonicalId": "RC-033",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-077",
+        "hadithCoverageSlot": "HADITH-COVERAGE-034",
+        "canonicalId": "RC-034",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-078",
+        "hadithCoverageSlot": "HADITH-COVERAGE-035",
+        "canonicalId": "RC-035",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-079",
+        "hadithCoverageSlot": "HADITH-COVERAGE-036",
+        "canonicalId": "RC-036",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-080",
+        "hadithCoverageSlot": "HADITH-COVERAGE-037",
+        "canonicalId": "RC-037",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-081",
+        "hadithCoverageSlot": "HADITH-COVERAGE-038",
+        "canonicalId": "RC-038",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-082",
+        "hadithCoverageSlot": "HADITH-COVERAGE-039",
+        "canonicalId": "RC-039",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-083",
+        "hadithCoverageSlot": "HADITH-COVERAGE-040",
+        "canonicalId": "RC-040",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-084",
+        "hadithCoverageSlot": "HADITH-COVERAGE-041",
+        "canonicalId": "RC-041",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-085",
+        "hadithCoverageSlot": "HADITH-COVERAGE-042",
+        "canonicalId": "RC-042",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-086",
+        "hadithCoverageSlot": "HADITH-COVERAGE-043",
+        "canonicalId": "RC-043",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-087",
+        "hadithCoverageSlot": "HADITH-COVERAGE-044",
+        "canonicalId": "RC-044",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-088",
+        "hadithCoverageSlot": "HADITH-COVERAGE-045",
+        "canonicalId": "RC-045",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-089",
+        "hadithCoverageSlot": "HADITH-COVERAGE-046",
+        "canonicalId": "RC-046",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-090",
+        "hadithCoverageSlot": "HADITH-COVERAGE-047",
+        "canonicalId": "RC-047",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-091",
+        "hadithCoverageSlot": "HADITH-COVERAGE-048",
+        "canonicalId": "RC-048",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-092",
+        "hadithCoverageSlot": "HADITH-COVERAGE-049",
+        "canonicalId": "RC-049",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-093",
+        "hadithCoverageSlot": "HADITH-COVERAGE-050",
+        "canonicalId": "RC-050",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-094",
+        "hadithCoverageSlot": "HADITH-COVERAGE-051",
+        "canonicalId": "RC-051",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-095",
+        "hadithCoverageSlot": "HADITH-COVERAGE-052",
+        "canonicalId": "RC-052",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-096",
+        "hadithCoverageSlot": "HADITH-COVERAGE-053",
+        "canonicalId": "RC-053",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-097",
+        "hadithCoverageSlot": "HADITH-COVERAGE-054",
+        "canonicalId": "RC-054",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-098",
+        "hadithCoverageSlot": "HADITH-COVERAGE-055",
+        "canonicalId": "RC-055",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-099",
+        "hadithCoverageSlot": "HADITH-COVERAGE-056",
+        "canonicalId": "RC-056",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-100",
+        "hadithCoverageSlot": "HADITH-COVERAGE-057",
+        "canonicalId": "RC-057",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-101",
+        "hadithCoverageSlot": "HADITH-COVERAGE-058",
+        "canonicalId": "RC-058",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-102",
+        "hadithCoverageSlot": "HADITH-COVERAGE-059",
+        "canonicalId": "RC-059",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-103",
+        "hadithCoverageSlot": "HADITH-COVERAGE-060",
+        "canonicalId": "RC-060",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-104",
+        "hadithCoverageSlot": "HADITH-COVERAGE-061",
+        "canonicalId": "RC-061",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-105",
+        "hadithCoverageSlot": "HADITH-COVERAGE-062",
+        "canonicalId": "RC-062",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-106",
+        "hadithCoverageSlot": "HADITH-COVERAGE-063",
+        "canonicalId": "RC-063",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-107",
+        "hadithCoverageSlot": "HADITH-COVERAGE-064",
+        "canonicalId": "RC-064",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-108",
+        "hadithCoverageSlot": "HADITH-COVERAGE-065",
+        "canonicalId": "RC-065",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-109",
+        "hadithCoverageSlot": "HADITH-COVERAGE-066",
+        "canonicalId": "RC-066",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-110",
+        "hadithCoverageSlot": "HADITH-COVERAGE-067",
+        "canonicalId": "RC-067",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-111",
+        "hadithCoverageSlot": "HADITH-COVERAGE-068",
+        "canonicalId": "RC-068",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-112",
+        "hadithCoverageSlot": "HADITH-COVERAGE-069",
+        "canonicalId": "RC-069",
+        "gapId": null
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-113",
+        "hadithCoverageSlot": "HADITH-COVERAGE-070",
+        "canonicalId": "N-001",
+        "gapId": "GAP-001"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-114",
+        "hadithCoverageSlot": "HADITH-COVERAGE-071",
+        "canonicalId": "N-002",
+        "gapId": "GAP-002"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-115",
+        "hadithCoverageSlot": "HADITH-COVERAGE-072",
+        "canonicalId": "N-003",
+        "gapId": "GAP-003"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-116",
+        "hadithCoverageSlot": "HADITH-COVERAGE-073",
+        "canonicalId": "N-004",
+        "gapId": "GAP-004"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-117",
+        "hadithCoverageSlot": "HADITH-COVERAGE-074",
+        "canonicalId": "N-005",
+        "gapId": "GAP-005"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-118",
+        "hadithCoverageSlot": "HADITH-COVERAGE-075",
+        "canonicalId": "N-006",
+        "gapId": "GAP-006"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-119",
+        "hadithCoverageSlot": "HADITH-COVERAGE-076",
+        "canonicalId": "N-007",
+        "gapId": "GAP-007"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-120",
+        "hadithCoverageSlot": "HADITH-COVERAGE-077",
+        "canonicalId": "N-008",
+        "gapId": "GAP-008"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-121",
+        "hadithCoverageSlot": "HADITH-COVERAGE-078",
+        "canonicalId": "N-009",
+        "gapId": "GAP-009"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-122",
+        "hadithCoverageSlot": "HADITH-COVERAGE-079",
+        "canonicalId": "N-011",
+        "gapId": "GAP-010"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-123",
+        "hadithCoverageSlot": "HADITH-COVERAGE-080",
+        "canonicalId": "N-013",
+        "gapId": "GAP-011"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-124",
+        "hadithCoverageSlot": "HADITH-COVERAGE-081",
+        "canonicalId": "N-015",
+        "gapId": "GAP-012"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-125",
+        "hadithCoverageSlot": "HADITH-COVERAGE-082",
+        "canonicalId": "N-016",
+        "gapId": "GAP-013"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-126",
+        "hadithCoverageSlot": "HADITH-COVERAGE-083",
+        "canonicalId": "N-017",
+        "gapId": "GAP-014"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-127",
+        "hadithCoverageSlot": "HADITH-COVERAGE-084",
+        "canonicalId": "N-018",
+        "gapId": "GAP-015"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-128",
+        "hadithCoverageSlot": "HADITH-COVERAGE-085",
+        "canonicalId": "N-019",
+        "gapId": "GAP-016"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-129",
+        "hadithCoverageSlot": "HADITH-COVERAGE-086",
+        "canonicalId": "N-020",
+        "gapId": "GAP-017"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-130",
+        "hadithCoverageSlot": "HADITH-COVERAGE-087",
+        "canonicalId": "N-021",
+        "gapId": "GAP-018"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-131",
+        "hadithCoverageSlot": "HADITH-COVERAGE-088",
+        "canonicalId": "N-022",
+        "gapId": "GAP-019"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-132",
+        "hadithCoverageSlot": "HADITH-COVERAGE-089",
+        "canonicalId": "N-023",
+        "gapId": "GAP-020"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-133",
+        "hadithCoverageSlot": "HADITH-COVERAGE-090",
+        "canonicalId": "N-025",
+        "gapId": "GAP-021"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-134",
+        "hadithCoverageSlot": "HADITH-COVERAGE-091",
+        "canonicalId": "N-026",
+        "gapId": "GAP-022"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-135",
+        "hadithCoverageSlot": "HADITH-COVERAGE-092",
+        "canonicalId": "N-027",
+        "gapId": "GAP-023"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-136",
+        "hadithCoverageSlot": "HADITH-COVERAGE-093",
+        "canonicalId": "N-029",
+        "gapId": "GAP-024"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-137",
+        "hadithCoverageSlot": "HADITH-COVERAGE-094",
+        "canonicalId": "N-030",
+        "gapId": "GAP-025"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-138",
+        "hadithCoverageSlot": "HADITH-COVERAGE-095",
+        "canonicalId": "N-033",
+        "gapId": "GAP-026"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-139",
+        "hadithCoverageSlot": "HADITH-COVERAGE-096",
+        "canonicalId": "N-034",
+        "gapId": "GAP-027"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-140",
+        "hadithCoverageSlot": "HADITH-COVERAGE-097",
+        "canonicalId": "N-035",
+        "gapId": "GAP-028"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-141",
+        "hadithCoverageSlot": "HADITH-COVERAGE-098",
+        "canonicalId": "N-036",
+        "gapId": "GAP-029"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-142",
+        "hadithCoverageSlot": "HADITH-COVERAGE-099",
+        "canonicalId": "N-037",
+        "gapId": "GAP-030"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-143",
+        "hadithCoverageSlot": "HADITH-COVERAGE-100",
+        "canonicalId": "N-038",
+        "gapId": "GAP-031"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-144",
+        "hadithCoverageSlot": "HADITH-COVERAGE-101",
+        "canonicalId": "N-039",
+        "gapId": "GAP-032"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-145",
+        "hadithCoverageSlot": "HADITH-COVERAGE-102",
+        "canonicalId": "N-040",
+        "gapId": "GAP-033"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-146",
+        "hadithCoverageSlot": "HADITH-COVERAGE-103",
+        "canonicalId": "N-048",
+        "gapId": "GAP-034"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-147",
+        "hadithCoverageSlot": "HADITH-COVERAGE-104",
+        "canonicalId": "N-049",
+        "gapId": "GAP-035"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-148",
+        "hadithCoverageSlot": "HADITH-COVERAGE-105",
+        "canonicalId": "N-050",
+        "gapId": "GAP-036"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-149",
+        "hadithCoverageSlot": "HADITH-COVERAGE-106",
+        "canonicalId": null,
+        "gapId": "GAP-037"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-150",
+        "hadithCoverageSlot": "HADITH-COVERAGE-107",
+        "canonicalId": null,
+        "gapId": "GAP-038"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-151",
+        "hadithCoverageSlot": "HADITH-COVERAGE-108",
+        "canonicalId": null,
+        "gapId": "GAP-039"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-152",
+        "hadithCoverageSlot": "HADITH-COVERAGE-109",
+        "canonicalId": null,
+        "gapId": "GAP-040"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-153",
+        "hadithCoverageSlot": "HADITH-COVERAGE-110",
+        "canonicalId": null,
+        "gapId": "GAP-041"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-154",
+        "hadithCoverageSlot": "HADITH-COVERAGE-111",
+        "canonicalId": null,
+        "gapId": "GAP-042"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-155",
+        "hadithCoverageSlot": "HADITH-COVERAGE-112",
+        "canonicalId": null,
+        "gapId": "GAP-043"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-156",
+        "hadithCoverageSlot": "HADITH-COVERAGE-113",
+        "canonicalId": null,
+        "gapId": "GAP-044"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-157",
+        "hadithCoverageSlot": "HADITH-COVERAGE-114",
+        "canonicalId": null,
+        "gapId": "GAP-045"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-158",
+        "hadithCoverageSlot": "HADITH-COVERAGE-115",
+        "canonicalId": null,
+        "gapId": "GAP-046"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-159",
+        "hadithCoverageSlot": "HADITH-COVERAGE-116",
+        "canonicalId": null,
+        "gapId": "GAP-047"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-160",
+        "hadithCoverageSlot": "HADITH-COVERAGE-117",
+        "canonicalId": null,
+        "gapId": "GAP-048"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-161",
+        "hadithCoverageSlot": "HADITH-COVERAGE-118",
+        "canonicalId": null,
+        "gapId": "GAP-049"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-162",
+        "hadithCoverageSlot": "HADITH-COVERAGE-119",
+        "canonicalId": null,
+        "gapId": "GAP-050"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-163",
+        "hadithCoverageSlot": "HADITH-COVERAGE-120",
+        "canonicalId": null,
+        "gapId": "GAP-051"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-164",
+        "hadithCoverageSlot": "HADITH-COVERAGE-121",
+        "canonicalId": null,
+        "gapId": "GAP-052"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-165",
+        "hadithCoverageSlot": "HADITH-COVERAGE-122",
+        "canonicalId": null,
+        "gapId": "GAP-053"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-166",
+        "hadithCoverageSlot": "HADITH-COVERAGE-123",
+        "canonicalId": null,
+        "gapId": "GAP-054"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-167",
+        "hadithCoverageSlot": "HADITH-COVERAGE-124",
+        "canonicalId": null,
+        "gapId": "GAP-055"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-168",
+        "hadithCoverageSlot": "HADITH-COVERAGE-125",
+        "canonicalId": null,
+        "gapId": "GAP-056"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-169",
+        "hadithCoverageSlot": "HADITH-COVERAGE-126",
+        "canonicalId": null,
+        "gapId": "GAP-057"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-170",
+        "hadithCoverageSlot": "HADITH-COVERAGE-127",
+        "canonicalId": null,
+        "gapId": "GAP-058"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-171",
+        "hadithCoverageSlot": "HADITH-COVERAGE-128",
+        "canonicalId": null,
+        "gapId": "GAP-059"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-172",
+        "hadithCoverageSlot": "HADITH-COVERAGE-129",
+        "canonicalId": null,
+        "gapId": "GAP-060"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-173",
+        "hadithCoverageSlot": "HADITH-COVERAGE-130",
+        "canonicalId": null,
+        "gapId": "GAP-061"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-174",
+        "hadithCoverageSlot": "HADITH-COVERAGE-131",
+        "canonicalId": null,
+        "gapId": "GAP-062"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-175",
+        "hadithCoverageSlot": "HADITH-COVERAGE-132",
+        "canonicalId": null,
+        "gapId": "GAP-063"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-176",
+        "hadithCoverageSlot": "HADITH-COVERAGE-133",
+        "canonicalId": null,
+        "gapId": "GAP-064"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-177",
+        "hadithCoverageSlot": "HADITH-COVERAGE-134",
+        "canonicalId": null,
+        "gapId": "GAP-065"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-178",
+        "hadithCoverageSlot": "HADITH-COVERAGE-135",
+        "canonicalId": null,
+        "gapId": "GAP-066"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-179",
+        "hadithCoverageSlot": "HADITH-COVERAGE-136",
+        "canonicalId": null,
+        "gapId": "GAP-067"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-180",
+        "hadithCoverageSlot": "HADITH-COVERAGE-137",
+        "canonicalId": null,
+        "gapId": "GAP-068"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-181",
+        "hadithCoverageSlot": "HADITH-COVERAGE-138",
+        "canonicalId": null,
+        "gapId": "GAP-069"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-182",
+        "hadithCoverageSlot": "HADITH-COVERAGE-139",
+        "canonicalId": null,
+        "gapId": "GAP-070"
+      },
+      {
+        "coverageSlot": "CORPUS-COVERAGE-183",
+        "hadithCoverageSlot": "HADITH-COVERAGE-140",
+        "canonicalId": null,
+        "gapId": "GAP-071"
+      }
+    ],
+    "hadithCanonicalPointers": [
+      {
+        "coverageSlot": "HADITH-COVERAGE-001",
+        "canonicalId": "RC-001"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-002",
+        "canonicalId": "RC-002"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-003",
+        "canonicalId": "RC-003"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-004",
+        "canonicalId": "RC-004"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-005",
+        "canonicalId": "RC-005"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-006",
+        "canonicalId": "RC-006"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-007",
+        "canonicalId": "RC-007"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-008",
+        "canonicalId": "RC-008"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-009",
+        "canonicalId": "RC-009"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-010",
+        "canonicalId": "RC-010"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-011",
+        "canonicalId": "RC-011"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-012",
+        "canonicalId": "RC-012"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-013",
+        "canonicalId": "RC-013"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-014",
+        "canonicalId": "RC-014"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-015",
+        "canonicalId": "RC-015"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-016",
+        "canonicalId": "RC-016"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-017",
+        "canonicalId": "RC-017"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-018",
+        "canonicalId": "RC-018"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-019",
+        "canonicalId": "RC-019"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-020",
+        "canonicalId": "RC-020"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-021",
+        "canonicalId": "RC-021"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-022",
+        "canonicalId": "RC-022"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-023",
+        "canonicalId": "RC-023"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-024",
+        "canonicalId": "RC-024"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-025",
+        "canonicalId": "RC-025"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-026",
+        "canonicalId": "RC-026"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-027",
+        "canonicalId": "RC-027"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-028",
+        "canonicalId": "RC-028"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-029",
+        "canonicalId": "RC-029"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-030",
+        "canonicalId": "RC-030"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-031",
+        "canonicalId": "RC-031"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-032",
+        "canonicalId": "RC-032"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-033",
+        "canonicalId": "RC-033"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-034",
+        "canonicalId": "RC-034"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-035",
+        "canonicalId": "RC-035"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-036",
+        "canonicalId": "RC-036"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-037",
+        "canonicalId": "RC-037"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-038",
+        "canonicalId": "RC-038"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-039",
+        "canonicalId": "RC-039"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-040",
+        "canonicalId": "RC-040"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-041",
+        "canonicalId": "RC-041"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-042",
+        "canonicalId": "RC-042"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-043",
+        "canonicalId": "RC-043"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-044",
+        "canonicalId": "RC-044"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-045",
+        "canonicalId": "RC-045"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-046",
+        "canonicalId": "RC-046"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-047",
+        "canonicalId": "RC-047"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-048",
+        "canonicalId": "RC-048"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-049",
+        "canonicalId": "RC-049"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-050",
+        "canonicalId": "RC-050"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-051",
+        "canonicalId": "RC-051"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-052",
+        "canonicalId": "RC-052"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-053",
+        "canonicalId": "RC-053"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-054",
+        "canonicalId": "RC-054"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-055",
+        "canonicalId": "RC-055"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-056",
+        "canonicalId": "RC-056"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-057",
+        "canonicalId": "RC-057"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-058",
+        "canonicalId": "RC-058"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-059",
+        "canonicalId": "RC-059"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-060",
+        "canonicalId": "RC-060"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-061",
+        "canonicalId": "RC-061"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-062",
+        "canonicalId": "RC-062"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-063",
+        "canonicalId": "RC-063"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-064",
+        "canonicalId": "RC-064"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-065",
+        "canonicalId": "RC-065"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-066",
+        "canonicalId": "RC-066"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-067",
+        "canonicalId": "RC-067"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-068",
+        "canonicalId": "RC-068"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-069",
+        "canonicalId": "RC-069"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-070",
+        "canonicalId": "N-001"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-071",
+        "canonicalId": "N-002"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-072",
+        "canonicalId": "N-003"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-073",
+        "canonicalId": "N-004"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-074",
+        "canonicalId": "N-005"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-075",
+        "canonicalId": "N-006"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-076",
+        "canonicalId": "N-007"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-077",
+        "canonicalId": "N-008"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-078",
+        "canonicalId": "N-009"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-079",
+        "canonicalId": "N-011"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-080",
+        "canonicalId": "N-013"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-081",
+        "canonicalId": "N-015"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-082",
+        "canonicalId": "N-016"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-083",
+        "canonicalId": "N-017"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-084",
+        "canonicalId": "N-018"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-085",
+        "canonicalId": "N-019"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-086",
+        "canonicalId": "N-020"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-087",
+        "canonicalId": "N-021"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-088",
+        "canonicalId": "N-022"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-089",
+        "canonicalId": "N-023"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-090",
+        "canonicalId": "N-025"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-091",
+        "canonicalId": "N-026"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-092",
+        "canonicalId": "N-027"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-093",
+        "canonicalId": "N-029"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-094",
+        "canonicalId": "N-030"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-095",
+        "canonicalId": "N-033"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-096",
+        "canonicalId": "N-034"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-097",
+        "canonicalId": "N-035"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-098",
+        "canonicalId": "N-036"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-099",
+        "canonicalId": "N-037"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-100",
+        "canonicalId": "N-038"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-101",
+        "canonicalId": "N-039"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-102",
+        "canonicalId": "N-040"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-103",
+        "canonicalId": "N-048"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-104",
+        "canonicalId": "N-049"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-105",
+        "canonicalId": "N-050"
+      }
+    ],
+    "hadithGapPointers": [
+      {
+        "coverageSlot": "HADITH-COVERAGE-106",
+        "gapId": "GAP-037"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-107",
+        "gapId": "GAP-038"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-108",
+        "gapId": "GAP-039"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-109",
+        "gapId": "GAP-040"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-110",
+        "gapId": "GAP-041"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-111",
+        "gapId": "GAP-042"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-112",
+        "gapId": "GAP-043"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-113",
+        "gapId": "GAP-044"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-114",
+        "gapId": "GAP-045"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-115",
+        "gapId": "GAP-046"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-116",
+        "gapId": "GAP-047"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-117",
+        "gapId": "GAP-048"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-118",
+        "gapId": "GAP-049"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-119",
+        "gapId": "GAP-050"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-120",
+        "gapId": "GAP-051"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-121",
+        "gapId": "GAP-052"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-122",
+        "gapId": "GAP-053"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-123",
+        "gapId": "GAP-054"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-124",
+        "gapId": "GAP-055"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-125",
+        "gapId": "GAP-056"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-126",
+        "gapId": "GAP-057"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-127",
+        "gapId": "GAP-058"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-128",
+        "gapId": "GAP-059"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-129",
+        "gapId": "GAP-060"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-130",
+        "gapId": "GAP-061"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-131",
+        "gapId": "GAP-062"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-132",
+        "gapId": "GAP-063"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-133",
+        "gapId": "GAP-064"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-134",
+        "gapId": "GAP-065"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-135",
+        "gapId": "GAP-066"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-136",
+        "gapId": "GAP-067"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-137",
+        "gapId": "GAP-068"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-138",
+        "gapId": "GAP-069"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-139",
+        "gapId": "GAP-070"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-140",
+        "gapId": "GAP-071"
+      }
+    ],
+    "reconstructionMembership": [
+      {
+        "canonicalId": "RC-001",
+        "role": "primary",
+        "reconstructionId": "R-029"
+      },
+      {
+        "canonicalId": "RC-001",
+        "role": "parallel[0]",
+        "reconstructionId": "R-030"
+      },
+      {
+        "canonicalId": "RC-002",
+        "role": "primary",
+        "reconstructionId": "R-039"
+      },
+      {
+        "canonicalId": "RC-002",
+        "role": "parallel[0]",
+        "reconstructionId": "R-040"
+      },
+      {
+        "canonicalId": "RC-003",
+        "role": "primary",
+        "reconstructionId": "R-047"
+      },
+      {
+        "canonicalId": "RC-003",
+        "role": "parallel[0]",
+        "reconstructionId": "R-048"
+      },
+      {
+        "canonicalId": "RC-004",
+        "role": "primary",
+        "reconstructionId": "R-055"
+      },
+      {
+        "canonicalId": "RC-004",
+        "role": "parallel[0]",
+        "reconstructionId": "R-056"
+      },
+      {
+        "canonicalId": "RC-005",
+        "role": "primary",
+        "reconstructionId": "R-003"
+      },
+      {
+        "canonicalId": "RC-005",
+        "role": "parallel[0]",
+        "reconstructionId": "R-019"
+      },
+      {
+        "canonicalId": "RC-006",
+        "role": "primary",
+        "reconstructionId": "R-011"
+      },
+      {
+        "canonicalId": "RC-006",
+        "role": "parallel[0]",
+        "reconstructionId": "R-023"
+      },
+      {
+        "canonicalId": "RC-007",
+        "role": "primary",
+        "reconstructionId": "R-012"
+      },
+      {
+        "canonicalId": "RC-007",
+        "role": "parallel[0]",
+        "reconstructionId": "R-024"
+      },
+      {
+        "canonicalId": "RC-021",
+        "role": "primary",
+        "reconstructionId": "R-075"
+      },
+      {
+        "canonicalId": "RC-021",
+        "role": "parallel[0]",
+        "reconstructionId": "R-058"
+      },
+      {
+        "canonicalId": "RC-022",
+        "role": "primary",
+        "reconstructionId": "R-059"
+      },
+      {
+        "canonicalId": "RC-022",
+        "role": "parallel[0]",
+        "reconstructionId": "R-060"
+      },
+      {
+        "canonicalId": "RC-023",
+        "role": "primary",
+        "reconstructionId": "R-061"
+      },
+      {
+        "canonicalId": "RC-023",
+        "role": "parallel[0]",
+        "reconstructionId": "R-028"
+      },
+      {
+        "canonicalId": "RC-023",
+        "role": "parallel[1]",
+        "reconstructionId": "R-062"
+      },
+      {
+        "canonicalId": "RC-024",
+        "role": "primary",
+        "reconstructionId": "R-065"
+      },
+      {
+        "canonicalId": "RC-024",
+        "role": "parallel[0]",
+        "reconstructionId": "R-066"
+      },
+      {
+        "canonicalId": "RC-025",
+        "role": "primary",
+        "reconstructionId": "R-067"
+      },
+      {
+        "canonicalId": "RC-025",
+        "role": "parallel[0]",
+        "reconstructionId": "R-068"
+      },
+      {
+        "canonicalId": "RC-026",
+        "role": "primary",
+        "reconstructionId": "R-073"
+      },
+      {
+        "canonicalId": "RC-026",
+        "role": "parallel[0]",
+        "reconstructionId": "R-074"
+      },
+      {
+        "canonicalId": "RC-027",
+        "role": "primary",
+        "reconstructionId": "R-057"
+      },
+      {
+        "canonicalId": "RC-028",
+        "role": "primary",
+        "reconstructionId": "R-006"
+      },
+      {
+        "canonicalId": "RC-028",
+        "role": "parallel[0]",
+        "reconstructionId": "R-009"
+      },
+      {
+        "canonicalId": "RC-029",
+        "role": "primary",
+        "reconstructionId": "R-007"
+      },
+      {
+        "canonicalId": "RC-029",
+        "role": "parallel[0]",
+        "reconstructionId": "R-008"
+      },
+      {
+        "canonicalId": "RC-030",
+        "role": "primary",
+        "reconstructionId": "R-010"
+      },
+      {
+        "canonicalId": "RC-031",
+        "role": "primary",
+        "reconstructionId": "R-036"
+      },
+      {
+        "canonicalId": "RC-031",
+        "role": "parallel[0]",
+        "reconstructionId": "R-034"
+      },
+      {
+        "canonicalId": "RC-031",
+        "role": "parallel[1]",
+        "reconstructionId": "R-035"
+      },
+      {
+        "canonicalId": "RC-032",
+        "role": "primary",
+        "reconstructionId": "R-017"
+      },
+      {
+        "canonicalId": "RC-032",
+        "role": "parallel[0]",
+        "reconstructionId": "R-045"
+      },
+      {
+        "canonicalId": "RC-033",
+        "role": "primary",
+        "reconstructionId": "R-037"
+      },
+      {
+        "canonicalId": "RC-033",
+        "role": "parallel[0]",
+        "reconstructionId": "R-043"
+      },
+      {
+        "canonicalId": "RC-034",
+        "role": "primary",
+        "reconstructionId": "R-038"
+      },
+      {
+        "canonicalId": "RC-035",
+        "role": "primary",
+        "reconstructionId": "R-078"
+      },
+      {
+        "canonicalId": "RC-036",
+        "role": "primary",
+        "reconstructionId": "R-079"
+      },
+      {
+        "canonicalId": "RC-037",
+        "role": "primary",
+        "reconstructionId": "R-042"
+      },
+      {
+        "canonicalId": "RC-037",
+        "role": "parallel[0]",
+        "reconstructionId": "R-076"
+      },
+      {
+        "canonicalId": "RC-038",
+        "role": "primary",
+        "reconstructionId": "R-041"
+      },
+      {
+        "canonicalId": "RC-039",
+        "role": "primary",
+        "reconstructionId": "R-080"
+      },
+      {
+        "canonicalId": "RC-040",
+        "role": "primary",
+        "reconstructionId": "R-081"
+      },
+      {
+        "canonicalId": "RC-041",
+        "role": "primary",
+        "reconstructionId": "R-082"
+      },
+      {
+        "canonicalId": "RC-042",
+        "role": "primary",
+        "reconstructionId": "R-004"
+      },
+      {
+        "canonicalId": "RC-043",
+        "role": "primary",
+        "reconstructionId": "R-013"
+      },
+      {
+        "canonicalId": "RC-044",
+        "role": "primary",
+        "reconstructionId": "R-014"
+      },
+      {
+        "canonicalId": "RC-045",
+        "role": "primary",
+        "reconstructionId": "R-015"
+      },
+      {
+        "canonicalId": "RC-046",
+        "role": "primary",
+        "reconstructionId": "R-049"
+      },
+      {
+        "canonicalId": "RC-046",
+        "role": "parallel[0]",
+        "reconstructionId": "R-050"
+      },
+      {
+        "canonicalId": "RC-046",
+        "role": "parallel[1]",
+        "reconstructionId": "R-054"
+      },
+      {
+        "canonicalId": "RC-047",
+        "role": "primary",
+        "reconstructionId": "R-001"
+      },
+      {
+        "canonicalId": "RC-048",
+        "role": "primary",
+        "reconstructionId": "R-002"
+      },
+      {
+        "canonicalId": "RC-049",
+        "role": "primary",
+        "reconstructionId": "R-070"
+      },
+      {
+        "canonicalId": "RC-049",
+        "role": "parallel[0]",
+        "reconstructionId": "R-069"
+      },
+      {
+        "canonicalId": "RC-049",
+        "role": "parallel[1]",
+        "reconstructionId": "R-072"
+      },
+      {
+        "canonicalId": "RC-050",
+        "role": "primary",
+        "reconstructionId": "R-071"
+      },
+      {
+        "canonicalId": "RC-051",
+        "role": "primary",
+        "reconstructionId": "R-044"
+      },
+      {
+        "canonicalId": "RC-052",
+        "role": "primary",
+        "reconstructionId": "R-051"
+      },
+      {
+        "canonicalId": "RC-053",
+        "role": "primary",
+        "reconstructionId": "R-052"
+      },
+      {
+        "canonicalId": "RC-054",
+        "role": "primary",
+        "reconstructionId": "R-053"
+      },
+      {
+        "canonicalId": "RC-055",
+        "role": "primary",
+        "reconstructionId": "R-018"
+      },
+      {
+        "canonicalId": "RC-056",
+        "role": "primary",
+        "reconstructionId": "R-025"
+      },
+      {
+        "canonicalId": "RC-057",
+        "role": "primary",
+        "reconstructionId": "R-063"
+      },
+      {
+        "canonicalId": "RC-058",
+        "role": "primary",
+        "reconstructionId": "R-064"
+      },
+      {
+        "canonicalId": "RC-059",
+        "role": "primary",
+        "reconstructionId": "R-016"
+      },
+      {
+        "canonicalId": "RC-060",
+        "role": "primary",
+        "reconstructionId": "R-031"
+      },
+      {
+        "canonicalId": "RC-061",
+        "role": "primary",
+        "reconstructionId": "R-032"
+      },
+      {
+        "canonicalId": "RC-062",
+        "role": "primary",
+        "reconstructionId": "R-020"
+      },
+      {
+        "canonicalId": "RC-063",
+        "role": "primary",
+        "reconstructionId": "R-021"
+      },
+      {
+        "canonicalId": "RC-064",
+        "role": "primary",
+        "reconstructionId": "R-022"
+      },
+      {
+        "canonicalId": "RC-065",
+        "role": "primary",
+        "reconstructionId": "R-026"
+      },
+      {
+        "canonicalId": "RC-066",
+        "role": "primary",
+        "reconstructionId": "R-027"
+      },
+      {
+        "canonicalId": "RC-067",
+        "role": "primary",
+        "reconstructionId": "R-033"
+      },
+      {
+        "canonicalId": "RC-068",
+        "role": "primary",
+        "reconstructionId": "R-005"
+      },
+      {
+        "canonicalId": "RC-069",
+        "role": "primary",
+        "reconstructionId": "R-046"
+      }
+    ],
+    "filledGapToNewCanonical": [
+      {
+        "coverageSlot": "HADITH-COVERAGE-070",
+        "gapId": "GAP-001",
+        "canonicalId": "N-001"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-071",
+        "gapId": "GAP-002",
+        "canonicalId": "N-002"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-072",
+        "gapId": "GAP-003",
+        "canonicalId": "N-003"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-073",
+        "gapId": "GAP-004",
+        "canonicalId": "N-004"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-074",
+        "gapId": "GAP-005",
+        "canonicalId": "N-005"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-075",
+        "gapId": "GAP-006",
+        "canonicalId": "N-006"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-076",
+        "gapId": "GAP-007",
+        "canonicalId": "N-007"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-077",
+        "gapId": "GAP-008",
+        "canonicalId": "N-008"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-078",
+        "gapId": "GAP-009",
+        "canonicalId": "N-009"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-079",
+        "gapId": "GAP-010",
+        "canonicalId": "N-011"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-080",
+        "gapId": "GAP-011",
+        "canonicalId": "N-013"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-081",
+        "gapId": "GAP-012",
+        "canonicalId": "N-015"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-082",
+        "gapId": "GAP-013",
+        "canonicalId": "N-016"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-083",
+        "gapId": "GAP-014",
+        "canonicalId": "N-017"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-084",
+        "gapId": "GAP-015",
+        "canonicalId": "N-018"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-085",
+        "gapId": "GAP-016",
+        "canonicalId": "N-019"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-086",
+        "gapId": "GAP-017",
+        "canonicalId": "N-020"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-087",
+        "gapId": "GAP-018",
+        "canonicalId": "N-021"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-088",
+        "gapId": "GAP-019",
+        "canonicalId": "N-022"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-089",
+        "gapId": "GAP-020",
+        "canonicalId": "N-023"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-090",
+        "gapId": "GAP-021",
+        "canonicalId": "N-025"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-091",
+        "gapId": "GAP-022",
+        "canonicalId": "N-026"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-092",
+        "gapId": "GAP-023",
+        "canonicalId": "N-027"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-093",
+        "gapId": "GAP-024",
+        "canonicalId": "N-029"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-094",
+        "gapId": "GAP-025",
+        "canonicalId": "N-030"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-095",
+        "gapId": "GAP-026",
+        "canonicalId": "N-033"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-096",
+        "gapId": "GAP-027",
+        "canonicalId": "N-034"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-097",
+        "gapId": "GAP-028",
+        "canonicalId": "N-035"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-098",
+        "gapId": "GAP-029",
+        "canonicalId": "N-036"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-099",
+        "gapId": "GAP-030",
+        "canonicalId": "N-037"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-100",
+        "gapId": "GAP-031",
+        "canonicalId": "N-038"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-101",
+        "gapId": "GAP-032",
+        "canonicalId": "N-039"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-102",
+        "gapId": "GAP-033",
+        "canonicalId": "N-040"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-103",
+        "gapId": "GAP-034",
+        "canonicalId": "N-048"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-104",
+        "gapId": "GAP-035",
+        "canonicalId": "N-049"
+      },
+      {
+        "coverageSlot": "HADITH-COVERAGE-105",
+        "gapId": "GAP-036",
+        "canonicalId": "N-050"
+      }
+    ]
+  },
+  "derived": {
+    "absorbedReconstructionIds": [
+      "R-001",
+      "R-002",
+      "R-003",
+      "R-004",
+      "R-005",
+      "R-006",
+      "R-007",
+      "R-008",
+      "R-009",
+      "R-010",
+      "R-011",
+      "R-012",
+      "R-013",
+      "R-014",
+      "R-015",
+      "R-016",
+      "R-017",
+      "R-018",
+      "R-019",
+      "R-020",
+      "R-021",
+      "R-022",
+      "R-023",
+      "R-024",
+      "R-025",
+      "R-026",
+      "R-027",
+      "R-028",
+      "R-029",
+      "R-030",
+      "R-031",
+      "R-032",
+      "R-033",
+      "R-034",
+      "R-035",
+      "R-036",
+      "R-037",
+      "R-038",
+      "R-039",
+      "R-040",
+      "R-041",
+      "R-042",
+      "R-043",
+      "R-044",
+      "R-045",
+      "R-046",
+      "R-047",
+      "R-048",
+      "R-049",
+      "R-050",
+      "R-051",
+      "R-052",
+      "R-053",
+      "R-054",
+      "R-055",
+      "R-056",
+      "R-057",
+      "R-058",
+      "R-059",
+      "R-060",
+      "R-061",
+      "R-062",
+      "R-063",
+      "R-064",
+      "R-065",
+      "R-066",
+      "R-067",
+      "R-068",
+      "R-069",
+      "R-070",
+      "R-071",
+      "R-072",
+      "R-073",
+      "R-074",
+      "R-075",
+      "R-076",
+      "R-078",
+      "R-079",
+      "R-080",
+      "R-081",
+      "R-082"
+    ],
+    "absorbedReconstructionCount": 81,
+    "quarantinedReconstructionIds": [
+      "R-077"
+    ],
+    "quarantinedReconstructionCount": 1
+  },
+  "assertions": {
+    "allPointersResolve": true,
+    "coverageSlotsUnique": true,
+    "canonicalAndGapPointersExclusive": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "full183ObjectSerialization": "PENDING",
+    "productionReady": false,
+    "filledAdministrativeGapMayCoexistWithNewCanonicalPointer": true
+  }
+}

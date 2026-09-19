@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V124",
+  "targetRelease": "V126",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH19-V1",
+  "verificationDate": "2026-09-16",
+  "purpose": "Retrospective correction: all three batch-19 references duplicate legacy canonical structures and are not promoted.",
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalHadithStructures": 126,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 14,
+    "canonicalCountImpactUntilPromotion": 0
+  },
+  "candidates": [
+    {
+      "id": "N-072",
+      "primaryRef": "Sahih al-Bukhari 6018",
+      "inBookReference": "Book 78, Hadith 49",
+      "narrator": "Abu Huraira",
+      "themeVerified": "Faith in Allah and the Last Day is linked to not harming one's neighbor, honoring one's guest, and speaking good or remaining silent.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6018",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": true,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "REJECTED_DUPLICATE_OF_LEGACY_CANONICAL",
+      "productionReady": false,
+      "auditDecision": "REJECTED_EXACT_REFERENCE_DUPLICATE_V126",
+      "canonicalCountImpact": 0,
+      "duplicateReview": {
+        "duplicateCanonicalId": "RC-007",
+        "duplicateReference": "Sahih al-Bukhari 6018",
+        "classification": "EXACT_REFERENCE_DUPLICATE"
+      }
+    },
+    {
+      "id": "N-073",
+      "primaryRef": "Sahih al-Bukhari 6412",
+      "inBookReference": "Book 81, Hadith 1",
+      "narrator": "Ibn Abbas",
+      "themeVerified": "Many people incur loss regarding two blessings: health and free time.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6412",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": true,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "REJECTED_DUPLICATE_OF_LEGACY_CANONICAL",
+      "productionReady": false,
+      "auditDecision": "REJECTED_EXACT_REFERENCE_DUPLICATE_V126",
+      "canonicalCountImpact": 0,
+      "duplicateReview": {
+        "duplicateCanonicalId": "RC-058",
+        "duplicateReference": "Sahih al-Bukhari 6412",
+        "classification": "EXACT_REFERENCE_DUPLICATE"
+      }
+    },
+    {
+      "id": "N-074",
+      "primaryRef": "Sahih al-Bukhari 6474",
+      "inBookReference": "Book 81, Hadith 63",
+      "narrator": "Sahl bin Sa'd",
+      "themeVerified": "The promise of Paradise for one who safeguards the tongue and private parts.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6474",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": true,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "REJECTED_DUPLICATE_OF_LEGACY_CANONICAL",
+      "productionReady": false,
+      "auditDecision": "REJECTED_EXACT_REFERENCE_DUPLICATE_V126",
+      "canonicalCountImpact": 0,
+      "duplicateReview": {
+        "duplicateCanonicalId": "RC-044",
+        "duplicateReference": "Sahih al-Bukhari 6474",
+        "classification": "EXACT_REFERENCE_DUPLICATE"
+      }
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": true,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

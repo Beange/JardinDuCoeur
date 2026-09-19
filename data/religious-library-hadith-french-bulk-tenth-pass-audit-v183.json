@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V183",
+  "auditId": "french-bulk-tenth-pass-v183",
+  "purpose": "Ré-audit groupé de 20 structures encore en attente; promotion uniquement sur traduction française publiée, complète, traçable et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-055",
+      "RC-056",
+      "RC-057",
+      "RC-061",
+      "RC-065",
+      "RC-069",
+      "N-005",
+      "N-006",
+      "N-009",
+      "N-011",
+      "N-013",
+      "N-015",
+      "N-016",
+      "N-017",
+      "N-020",
+      "N-023",
+      "N-026",
+      "N-027",
+      "N-029",
+      "N-030"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "RC-055"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-055",
+      "primaryRef": "Sahih al-Bukhari 2444",
+      "narrator": "Anas ibn Mâlik",
+      "publishedFrenchTranslation": "Anas ibn Mâlik (qu’Allah l’agrée) relate que le Messager d’Allah (sur lui la paix et le salut) a dit : « Secours ton frère qu’il soit oppresseur ou opprimé ! » Un homme demanda alors : « Ô Messager d’Allah ! Je le secours lorsqu’il est opprimé, mais comment puis-je le secourir lorsque c’est lui l’oppresseur ? » Alors, le Prophète (sur lui la paix et le salut) répondit : « En le forçant à renoncer à - ou en l’empêchant de commettre - son oppression, c’est cela le secourir ! »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4236",
+      "sourceHadithId": 4236,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Authentique; Rapporté par Al-Bûkhârî",
+      "sourceGradeDisplayed": "Authentique",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-056",
+    "RC-057",
+    "RC-061",
+    "RC-065",
+    "RC-069",
+    "N-005",
+    "N-006",
+    "N-009",
+    "N-011",
+    "N-013",
+    "N-015",
+    "N-016",
+    "N-017",
+    "N-020",
+    "N-023",
+    "N-026",
+    "N-027",
+    "N-029",
+    "N-030"
+  ],
+  "heldCount": 19,
+  "notes": [
+    "RC-055: HadeethEnc français 4236 retrouvé; Anas ibn Mâlik, matn complet « Secours ton frère qu’il soit oppresseur ou opprimé », attribution authentique à Al-Bukhârî. La structure canonique locale est Sahih al-Bukhari 2444 et la concordance est établie par rapporteur + matn + collection.",
+    "Aucun avertissement explicite de révision n’est observé sur la page française consultée.",
+    "Les 19 autres structures du lot restent en attente; aucune traduction française n’a été synthétisée, complétée ou reformulée."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 79,
+    "pendingPublishedFrenchCanonicalEntries": 61
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

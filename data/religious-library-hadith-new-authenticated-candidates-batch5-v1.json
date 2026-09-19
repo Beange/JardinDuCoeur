@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH5-V1",
+  "purpose": "Fifth authenticated batch, source-reverified and adjudicated for promotion in V97.",
+  "selectionPolicy": {
+    "preferredCollections": [
+      "Sahih al-Bukhari",
+      "Sahih Muslim"
+    ],
+    "antiDuplicationAgainstCurrent91ExactRefs": true,
+    "thematicPromotionDeferred": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 4,
+    "existingCanonicalStructures": 91,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 49,
+    "promotedCanonicalStructures": 3,
+    "rejectedAsDuplicateExistingCanon": 1,
+    "remainingUnfilledTargetAfterPromotion": 46
+  },
+  "candidates": [
+    {
+      "id": "N-027",
+      "primaryRef": "Sahih al-Bukhari 6030",
+      "inBookReference": "Book 78, Hadith 60",
+      "theme": "serviteur croyant — double récompense lorsqu’il sert loyalement son maître et adore correctement son Seigneur",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6030",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V97",
+      "auditReason": "Distinct teaching on faithful service combined with worship; no current canonical structure represents this exact responsibility/reward combination.",
+      "sourceVerificationRelease": "V97"
+    },
+    {
+      "id": "N-028",
+      "primaryRef": "Sahih al-Bukhari 6032",
+      "inBookReference": "Book 78, Hadith 62",
+      "theme": "Allah aime la douceur dans toutes les affaires",
+      "narrator": "Aisha",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6032",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "auditReason": "Substantive gentleness teaching already represented by RC-034, RC-035 and RC-036.",
+      "sourceVerificationRelease": "V97",
+      "duplicateOf": "RC-034/RC-035/RC-036"
+    },
+    {
+      "id": "N-029",
+      "primaryRef": "Sahih Muslim 2694",
+      "inBookReference": "Book 48, Hadith 41",
+      "theme": "dhikr après la prière — tasbih, tahmid et takbir trente-trois fois, puis tahlil pour compléter cent",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2694",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V97",
+      "auditReason": "Distinct post-prayer prescribed dhikr sequence; existing dhikr structures do not represent this specific after-prayer practice.",
+      "sourceVerificationRelease": "V97"
+    },
+    {
+      "id": "N-030",
+      "primaryRef": "Sahih Muslim 2702",
+      "inBookReference": "Book 48, Hadith 49",
+      "theme": "invocation de protection — chercher refuge contre l’épreuve difficile, le malheur, le mauvais destin et la joie malveillante des ennemis",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2702",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V97",
+      "auditReason": "Distinct supplication seeking refuge from severe trial, misery, bad decree and hostile rejoicing; current supplications have different content/occasion.",
+      "sourceVerificationRelease": "V97"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  },
+  "auditSummary": {
+    "promoted": [
+      "N-027",
+      "N-029",
+      "N-030"
+    ],
+    "rejectedDuplicates": [
+      "N-028"
+    ],
+    "historicalRecoveryClaimed": false
+  }
+}

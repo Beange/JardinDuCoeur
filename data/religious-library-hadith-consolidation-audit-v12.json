@@ -1,0 +1,305 @@
+{
+  "registerId": "hadith-consolidation-audit-v12",
+  "sourceRegister": "hadith-reconstruction-v11",
+  "purpose": "Begin canonical consolidation without inventing historical H-IDs.",
+  "counts": {
+    "rawCandidates": 82,
+    "documentedFamilies": 30,
+    "candidatesOutsideAnyFamily": 18,
+    "candidatesInMultipleFamilies": 19,
+    "highConfidenceParallelFamilies": 11
+  },
+  "highConfidenceParallelFamilies": [
+    {
+      "familyId": "RF-05",
+      "label": "intention-hijra",
+      "members": [
+        "R-003",
+        "R-019"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Muslim 1907a et Bukhari 1 transmettent le célèbre hadith de ʿUmar sur les intentions; relation canonique à décider sans double comptage.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-06",
+      "label": "aimer-pour-son-frere",
+      "members": [
+        "R-011",
+        "R-023"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Bukhari 13 et Muslim 45a transmettent la même maxime par Anas; à consolider comme un canonique + parallèle lors de la déduplication.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-07",
+      "label": "voisin-hospitalite-parole",
+      "members": [
+        "R-012",
+        "R-024"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Bukhari 6018 et Muslim 47a sont des transmissions parallèles; ne pas les compter deux fois après consolidation.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-09",
+      "label": "langue-et-main",
+      "members": [
+        "R-029",
+        "R-030"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Bukhari 10 et Muslim 40 transmettent la même maxime; viser un canonique + parallèle après comparaison du matn.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-12",
+      "label": "force-et-colere",
+      "members": [
+        "R-039",
+        "R-040"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Bukhari 6114 et Muslim 2609a transmettent la même maxime sur la maîtrise de soi lors de la colère.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-16",
+      "label": "coeurs-actes-apparence",
+      "members": [
+        "R-047",
+        "R-048"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Muslim 2564c et Ibn Majah 4143 transmettent une formulation parallèle; viser un canonique + source parallèle.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-19",
+      "label": "demi-datte-et-bonne-parole",
+      "members": [
+        "R-055",
+        "R-056"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Bukhari 1413 et Muslim 1016a transmettent la même famille; viser un canonique + parallèle.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-20",
+      "label": "poids-de-la-parole",
+      "members": [
+        "R-057",
+        "R-058"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Bukhari 6475 et Muslim 2988 transmettent une famille parallèle sur la portée d'une parole.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-21",
+      "label": "invocation-de-guerison",
+      "members": [
+        "R-059",
+        "R-060"
+      ],
+      "status": "parallel-family-review-required",
+      "note": "Bukhari 5678 et Muslim 2191a transmettent une famille d’invocation de guérison; comparaison du matn avant consolidation.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-22",
+      "label": "maladie-et-expiation",
+      "members": [
+        "R-028",
+        "R-061",
+        "R-062"
+      ],
+      "status": "parallel-overlap-review-required",
+      "note": "Transmissions très proches sur maladie, douleur et expiation; ne pas compter séparément sans audit de chaînes/matn.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    },
+    {
+      "familyId": "RF-23",
+      "label": "inscription-des-actions-expanded",
+      "members": [
+        "R-001",
+        "R-002",
+        "R-065",
+        "R-066"
+      ],
+      "status": "variant-parallel-review-required",
+      "note": "Famille élargie des intentions et de l’inscription des actions; les multiplicateurs textuels ne doivent jamais devenir une mécanique de score.",
+      "canonicalDecision": "PENDING_SOURCE_BY_SOURCE_CONSOLIDATION"
+    }
+  ],
+  "candidatesOutsideAnyFamily": [
+    "R-004",
+    "R-005",
+    "R-013",
+    "R-014",
+    "R-015",
+    "R-016",
+    "R-020",
+    "R-021",
+    "R-022",
+    "R-026",
+    "R-027",
+    "R-031",
+    "R-032",
+    "R-033",
+    "R-053",
+    "R-063",
+    "R-064",
+    "R-075"
+  ],
+  "candidatesInMultipleFamilies": [
+    {
+      "id": "R-001",
+      "families": [
+        "RF-01",
+        "RF-23"
+      ]
+    },
+    {
+      "id": "R-002",
+      "families": [
+        "RF-01",
+        "RF-23"
+      ]
+    },
+    {
+      "id": "R-012",
+      "families": [
+        "RF-03",
+        "RF-07",
+        "RF-13",
+        "RF-27"
+      ]
+    },
+    {
+      "id": "R-018",
+      "families": [
+        "RF-04",
+        "RF-08"
+      ]
+    },
+    {
+      "id": "R-024",
+      "families": [
+        "RF-07",
+        "RF-13",
+        "RF-27"
+      ]
+    },
+    {
+      "id": "R-034",
+      "families": [
+        "RF-10",
+        "RF-30"
+      ]
+    },
+    {
+      "id": "R-035",
+      "families": [
+        "RF-10",
+        "RF-30"
+      ]
+    },
+    {
+      "id": "R-036",
+      "families": [
+        "RF-10",
+        "RF-30"
+      ]
+    },
+    {
+      "id": "R-017",
+      "families": [
+        "RF-10",
+        "RF-15",
+        "RF-30"
+      ]
+    },
+    {
+      "id": "R-037",
+      "families": [
+        "RF-11",
+        "RF-14",
+        "RF-28"
+      ]
+    },
+    {
+      "id": "R-038",
+      "families": [
+        "RF-11",
+        "RF-14",
+        "RF-28"
+      ]
+    },
+    {
+      "id": "R-041",
+      "families": [
+        "RF-13",
+        "RF-27"
+      ]
+    },
+    {
+      "id": "R-042",
+      "families": [
+        "RF-13",
+        "RF-27"
+      ]
+    },
+    {
+      "id": "R-043",
+      "families": [
+        "RF-14",
+        "RF-28"
+      ]
+    },
+    {
+      "id": "R-044",
+      "families": [
+        "RF-14",
+        "RF-28"
+      ]
+    },
+    {
+      "id": "R-045",
+      "families": [
+        "RF-15",
+        "RF-30"
+      ]
+    },
+    {
+      "id": "R-046",
+      "families": [
+        "RF-15",
+        "RF-30"
+      ]
+    },
+    {
+      "id": "R-049",
+      "families": [
+        "RF-17",
+        "RF-18"
+      ]
+    },
+    {
+      "id": "R-050",
+      "families": [
+        "RF-17",
+        "RF-18"
+      ]
+    }
+  ],
+  "rules": [
+    "No R-ID is converted to an old H-ID.",
+    "No family is counted as one canonical hadith until source-by-source matn/context review is complete.",
+    "French published translation remains pending provenance.",
+    "Runtime index.html is not migrated from the provisional corpus in this audit."
+  ]
+}

@@ -1,0 +1,13 @@
+JARDIN DU CŒUR — VALIDATION HADITHS RÉCUPÉRÉS
+
+Mappings H-ID récupérés : 13/140
+Références primaires revérifiées : 13/13
+IDs uniques : PASS
+Références primaires uniques : PASS
+countsAsEntry=true : PASS
+randomHome=false tant que texte français canonique pending : PASS
+productionReady=false tant que provenance française pending : PASS
+
+IMPORTANT
+Ce rapport ne prétend PAS que 140 hadiths sont matérialisés.
+Les 127 correspondances H-ID restantes ne doivent pas être inventées.

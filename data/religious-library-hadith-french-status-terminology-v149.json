@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V149",
+  "registerId": "JDC-HADITH-FRENCH-STATUS-TERMINOLOGY-V149",
+  "purpose": "Rétablir la terminologie historique 'en attente' pour la couverture éditoriale française sans réécrire les audits historiques ni modifier un texte religieux.",
+  "currentFrenchCoverage": {
+    "totalCanonicalHadith": 140,
+    "verifiedPublishedFrench": 4,
+    "enAttente": 136
+  },
+  "policy": {
+    "defaultUnverifiedLabel": "EN_ATTENTE",
+    "noGlobalPendingMigration": true,
+    "historicalAuditStatusesPreserved": true,
+    "statusChangesRequireNewEvidence": true,
+    "translationSynthesized": false,
+    "translationModified": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  },
+  "note": "Les libellés PENDING présents dans les anciens registres restent des traces historiques de leurs audits. Ils ne constituent pas une migration globale des 136 entrées actuellement en attente."
+}

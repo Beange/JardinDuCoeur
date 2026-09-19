@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V82",
+  "purpose": "Fermer la couverture des artefacts d'audit administratifs courants dans les contrats de cohérence, d'inventaire et d'intégrité.",
+  "finding": {
+    "classification": "CURRENT_AUDIT_COVERAGE_GAP",
+    "previouslyUncovered": [
+      "data/religious-library-current-path-integrity-v1.json",
+      "data/religious-library-provenance-summary-integrity-v1.json"
+    ],
+    "correction": "Les deux artefacts deviennent des nœuds explicites de releaseFiles, de l'inventaire sélectionné et de l'instantané d'intégrité.",
+    "religiousCorpusImpact": false
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

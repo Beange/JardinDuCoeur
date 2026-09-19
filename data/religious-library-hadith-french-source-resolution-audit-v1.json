@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V141",
+  "registerId": "JDC-HADITH-FRENCH-SOURCE-RESOLUTION-AUDIT-V1",
+  "purpose": "Résolution des deux sources françaises restées indéterminées dans le lot RC-001 à RC-005, sans inventer ni traduire de contenu absent.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "method": "Recherche textuelle dans l’interface officielle anglaise pour retrouver l’identifiant HadeethEnc, puis contrôle direct de la route française portant le même identifiant.",
+  "counts": {
+    "canonicalStructuresResolved": 2,
+    "officialSourceHadithIdsLocated": 2,
+    "officialFrenchPagesAvailable": 0,
+    "officialFrenchPagesReturning404": 2,
+    "translationsPromoted": 0
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-001",
+      "primaryRef": "Sahih al-Bukhari 10",
+      "officialEnglishSearchPhrase": "A Muslim is the one from whose tongue and hand",
+      "sourceHadithId": 10101,
+      "officialEnglishUrl": "https://hadeethenc.com/en/browse/hadith/10101",
+      "officialFrenchUrlTested": "https://hadeethenc.com/fr/browse/hadith/10101",
+      "officialFrenchRouteResult": "404_PAGE_NOT_FOUND",
+      "decision": "NO_PUBLISHED_FRENCH_PAGE_AVAILABLE_AT_OFFICIAL_ID",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-004",
+      "primaryRef": "Sahih al-Bukhari 1413",
+      "officialEnglishSearchPhrase": "half a date",
+      "sourceHadithId": 6615,
+      "officialEnglishUrl": "https://hadeethenc.com/en/browse/hadith/6615",
+      "officialFrenchUrlTested": "https://hadeethenc.com/fr/browse/hadith/6615",
+      "officialFrenchRouteResult": "404_PAGE_NOT_FOUND",
+      "decision": "NO_PUBLISHED_FRENCH_PAGE_AVAILABLE_AT_OFFICIAL_ID",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "missingFrenchPageTreatedAsTranslation": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

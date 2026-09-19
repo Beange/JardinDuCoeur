@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V166",
+  "auditId": "french-second-pass-v166",
+  "purpose": "Second passage ciblé des structures françaises en attente.",
+  "promotedCanonicalIds": [
+    "N-059",
+    "N-062",
+    "N-077"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "N-059",
+      "primaryRef": "Sahih Muslim 54a",
+      "narrator": "Abû Hurayrah",
+      "publishedFrenchTranslation": "Abû Hurayrah (qu'Allah l'agrée) relate que le Messager d'Allah (sur lui la paix et salut) a dit : « Par Celui qui détient mon âme en Sa Main ! Vous n'entrerez pas au Paradis tant que vous ne croirez pas ; et vous ne croirez pas tant que vous ne vous aimerez pas mutuellement ! Ne vous indiquerais-je pas une chose qui, si vous l'accomplissiez, fera que vous vous aimiez mutuellement ? Répandez le salut entre vous ! »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3361",
+      "sourceHadithId": 3361,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 54",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Muslim",
+      "identityEvidence": "Même matn arabe, même rapporteur Abû Hurayrah et référence Muslim 54 affichée; la structure canonique retient Muslim 54a.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-062",
+      "primaryRef": "Sahih Muslim 2956",
+      "narrator": "Abû Hurayrah",
+      "publishedFrenchTranslation": "Abû Hurayrah (qu’Allah l’agrée) relate que le Messager d’Allah (sur lui la paix et le salut) a dit : « Ce bas monde est la prison du croyant et le paradis du mécréant. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3584",
+      "sourceHadithId": 3584,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 2956",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Muslim",
+      "identityEvidence": "Correspondance directe du matn arabe, du rapporteur Abû Hurayrah, de la collection Muslim et de la référence canonique 2956.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-077",
+      "primaryRef": "Sahih al-Bukhari 2457",
+      "narrator": "ʿÂʾishah",
+      "publishedFrenchTranslation": "'Â`ichah (qu'Allah l'agrée) relate que Prophète (qu'Allah le couvre d'éloges et le préserve) a dit :\n« Certes, le plus détesté des hommes auprès d'Allah est le querelleur invétéré. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5474",
+      "sourceHadithId": 5474,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 2457",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "identityEvidence": "Correspondance directe du matn arabe, de ʿÂʾishah et de la référence Bukhari 2457; HadeethEnc l’attribue à Al-Bukhârî et Muslim.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "held": [],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "runtimeChanged": false
+  }
+}

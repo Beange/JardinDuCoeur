@@ -1,0 +1,36 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V24
+
+BASE
+V23 ............................................ REPRISE SANS MODIFIER index.html
+R-ID non absorbés au départ .................... 38 / 82
+
+LOT AUDITÉ : HOSPITALITÉ / VOISIN / PAROLE
+RC-037 : R-042 Bukhari 6136 + R-076 Muslim 47b . CONFIRMÉ — ROUTES PARALLÈLES
+RC-038 : R-041 Bukhari 6138 .................... CONFIRMÉ — DOSSIER DISTINCT LIÉ
+
+JUSTIFICATION SOURCE PAR SOURCE
+- Bukhari 6136 : Abu Hurayra; ne pas nuire au voisin, honorer l’invité, dire du bien ou garder le silence.
+  https://sunnah.com/bukhari:6136
+- Muslim 47b : Abu Hurayra; même noyau voisin / invité / bonne parole ou silence.
+  https://sunnah.com/muslim:47b
+- Bukhari 6138 : Abu Hurayra; invité / maintien des liens de parenté / bonne parole ou silence. La clause du voisin est absente : dossier distinct, seulement lié à RC-037.
+  https://sunnah.com/bukhari:6138
+
+POLITIQUE DE CONSOLIDATION
+- R-042 et R-076 sont fusionnés structurellement comme routes parallèles.
+- R-041 n’est pas fusionné : proximité de formulaire et de thème, mais contenu central différent.
+- Aucune correction de référence dans ce lot.
+
+BILAN
+Structures canoniques confirmées ............... 38
+- historiques récupérées ....................... 13
+- reconstruction ............................... 25
+R-ID absorbés .................................. 47 / 82
+R-ID restant à consolider ...................... 35
+H-ID historiques inventés ...................... 0
+Traduction française publiée ................... PENDING
+productionReady ................................. false
+Migration index.html ........................... NON
+
+NOTE
+R-077 reste volontairement non consolidé et sans remapping inventé.

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V193",
+  "auditId": "HADITH_FRENCH_MULTISOURCE_CONTINUATION_V193",
+  "auditDate": "2026-09-17",
+  "scope": {"reviewedCanonicalIds": ["RC-018", "RC-030", "RC-052", "RC-069"], "reviewedCount": 4},
+  "promotedCanonicalIds": [],
+  "heldCanonicalIds": ["RC-018", "RC-030", "RC-052", "RC-069"],
+  "findings": [
+    {"canonicalId":"RC-018","primaryRef":"Sahih al-Bukhari 1427","decision":"HOLD","reason":"Canonical Arabic/reference could be corroborated, but no admissible published French translation satisfying the V186 provenance policy was established in this pass.","referenceCheckUrl":"https://sahibukhari.com/bukhari/1427"},
+    {"canonicalId":"RC-030","primaryRef":"Sahih al-Bukhari 6466","decision":"HOLD","reason":"Canonical Arabic/reference could be corroborated, but no admissible published French translation satisfying the V186 provenance policy was established in this pass.","referenceCheckUrl":"https://sunnah.com/bukhari:6466"},
+    {"canonicalId":"RC-052","primaryRef":"Sahih al-Bukhari 2631","decision":"HOLD","reason":"Canonical Arabic/reference could be corroborated, but the located pages did not establish an independently traceable French translation admissible under the V186 policy.","referenceCheckUrl":"https://sunnah.com/bukhari/51/63"},
+    {"canonicalId":"RC-069","primaryRef":"Sahih al-Bukhari 7377","decision":"HOLD","reason":"Canonical Arabic/reference could be corroborated, but no admissible published French translation satisfying the V186 provenance policy was established in this pass.","referenceCheckUrl":"https://sunnah.com/bukhari:7377"}
+  ],
+  "countsAfter": {"canonicalHadithStructures": 140, "publishedFrenchCanonicalEntries": 81, "pendingPublishedFrenchCanonicalEntries": 59},
+  "assertions": {"translationSynthesized": false, "partialTranslationPromoted": false, "canonicalReligiousIdentityChanged": false, "runtimeChanged": false, "runtimeIntegrationAuthorized": false}
+}

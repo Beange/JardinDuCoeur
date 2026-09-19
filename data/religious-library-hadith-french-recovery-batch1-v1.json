@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V138",
+  "registerId": "JDC-HADITH-FRENCH-RECOVERY-BATCH1-V1",
+  "purpose": "Audit des pistes françaises historiques locales pour RC-001 à RC-005, sans assimiler un résumé de travail à une traduction publiée.",
+  "sourceScope": [
+    "data/religious-library-hadith-canonical-consolidation-v44.json",
+    "data/religious-library-hadith-reconstruction-v11.json"
+  ],
+  "counts": {
+    "canonicalStructuresAudited": 5,
+    "historicalFrenchSummariesFound": 5,
+    "publishedFrenchTranslationsRecovered": 0,
+    "entriesStillPendingPublishedFrenchProvenance": 5
+  },
+  "entries": [
+    {"canonicalId":"RC-001","primaryRef":"Sahih al-Bukhari 10","historicalCandidateId":"R-029","historicalFrenchSummary":"Le musulman est celui dont les musulmans sont à l’abri de la langue et de la main.","historicalField":"auditSummaryFr","historicalPublishedFrenchTranslation":null,"classification":"EDITORIAL_SUMMARY_NOT_PUBLISHED_TRANSLATION","publishedFrenchTranslation":null,"frenchProvenance":null,"nextAction":"LOCATE_PUBLISHED_FRENCH_EDITION_AND_VERIFY_EXACT_REFERENCE","productionReady":false},
+    {"canonicalId":"RC-002","primaryRef":"Sahih al-Bukhari 6114","historicalCandidateId":"R-039","historicalFrenchSummary":"La véritable force est de se maîtriser au moment de la colère.","historicalField":"auditSummaryFr","historicalPublishedFrenchTranslation":null,"classification":"EDITORIAL_SUMMARY_NOT_PUBLISHED_TRANSLATION","publishedFrenchTranslation":null,"frenchProvenance":null,"nextAction":"LOCATE_PUBLISHED_FRENCH_EDITION_AND_VERIFY_EXACT_REFERENCE","productionReady":false},
+    {"canonicalId":"RC-003","primaryRef":"Sahih Muslim 2564c","historicalCandidateId":"R-047","historicalFrenchSummary":"Allah ne regarde pas les apparences ni les biens, mais les cœurs et les actes.","historicalField":"auditSummaryFr","historicalPublishedFrenchTranslation":null,"classification":"EDITORIAL_SUMMARY_NOT_PUBLISHED_TRANSLATION","publishedFrenchTranslation":null,"frenchProvenance":null,"nextAction":"LOCATE_PUBLISHED_FRENCH_EDITION_AND_VERIFY_EXACT_REFERENCE","productionReady":false},
+    {"canonicalId":"RC-004","primaryRef":"Sahih al-Bukhari 1413","historicalCandidateId":"R-055","historicalFrenchSummary":"Se protéger du Feu même par une demi-datte; à défaut, par une bonne parole.","historicalField":"auditSummaryFr","historicalPublishedFrenchTranslation":null,"classification":"EDITORIAL_SUMMARY_NOT_PUBLISHED_TRANSLATION","publishedFrenchTranslation":null,"frenchProvenance":null,"nextAction":"LOCATE_PUBLISHED_FRENCH_EDITION_AND_VERIFY_EXACT_REFERENCE","productionReady":false},
+    {"canonicalId":"RC-005","primaryRef":"Sahih Muslim 1907a","historicalCandidateId":"R-003","historicalFrenchSummary":"ʿUmar b. al-Khaṭṭāb; valeur des actes selon l'intention et exemple de l'émigration.","historicalField":"auditSummaryFr","historicalPublishedFrenchTranslation":null,"classification":"EDITORIAL_SUMMARY_NOT_PUBLISHED_TRANSLATION","publishedFrenchTranslation":null,"frenchProvenance":null,"nextAction":"LOCATE_PUBLISHED_FRENCH_EDITION_AND_VERIFY_EXACT_REFERENCE","productionReady":false}
+  ],
+  "assertions": {
+    "historicalSummariesPromotedAsTranslations": false,
+    "translationSynthesized": false,
+    "canonicalReligiousStructuresChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

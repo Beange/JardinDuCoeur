@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V86",
+  "purpose": "Cross-check references reused across active canonical, related-only, and corrected/rejected historical contexts so role cannot be inferred globally from a raw reference string.",
+  "inputs": [
+    "data/religious-library-hadith-canonical-consolidation-v44.json",
+    "data/religious-library-hadith-related-ref-semantics-v1.json",
+    "data/religious-library-hadith-reference-provenance-ledger-v1.json"
+  ],
+  "summary": {
+    "crossContextReferenceCount": 20,
+    "activeAndRelated": 19,
+    "activeAndHistorical": 4,
+    "relatedAndHistorical": 3,
+    "allThreeContexts": 3
+  },
+  "references": [
+    {
+      "reference": "Sahih Muslim 130",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-047",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-048",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 131a",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-048",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-047",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 2558a",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-040",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-039",
+          "relationType": "RAW_REFERENCE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 2580",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-056",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-055",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        },
+        {
+          "sourceCanonicalId": "RC-059",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 2592a",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-036",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [],
+      "historicalContextUses": [
+        {
+          "subjectId": "R-078",
+          "classification": "CORRECTED_TO_CURRENT_REFERENCE"
+        }
+      ],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 2593",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-035",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-033",
+          "relationType": "RAW_REFERENCE_RELATION"
+        },
+        {
+          "sourceCanonicalId": "RC-034",
+          "relationType": "RAW_REFERENCE_RELATION"
+        },
+        {
+          "sourceCanonicalId": "RC-051",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [
+        {
+          "subjectId": "R-038",
+          "classification": "CORRECTED_TO_CURRENT_REFERENCE"
+        }
+      ],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 2594a",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-034",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-035",
+          "relationType": "RAW_REFERENCE_RELATION"
+        }
+      ],
+      "historicalContextUses": [
+        {
+          "subjectId": "R-079",
+          "classification": "CORRECTED_TO_CURRENT_REFERENCE"
+        }
+      ],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 2691",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-049",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-050",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih Muslim 47b",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-037",
+          "role": "PARALLEL"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-038",
+          "relationType": "RAW_REFERENCE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 15",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-060",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-061",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 16",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-061",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-060",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 2444",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-055",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-056",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 5991",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-039",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-040",
+          "relationType": "RAW_REFERENCE_RELATION"
+        }
+      ],
+      "historicalContextUses": [
+        {
+          "subjectId": "R-082",
+          "classification": "CORRECTED_TO_CURRENT_REFERENCE"
+        }
+      ],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 6022",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-053",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-054",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 6024",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-033",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-035",
+          "relationType": "RAW_REFERENCE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 6136",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-037",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-038",
+          "relationType": "RAW_REFERENCE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 6138",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-038",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-037",
+          "relationType": "RAW_REFERENCE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 6405",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-049",
+          "role": "PARALLEL"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-050",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 6412",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-058",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-057",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    },
+    {
+      "reference": "Sahih al-Bukhari 6416",
+      "activeCanonicalUses": [
+        {
+          "canonicalId": "RC-057",
+          "role": "PRIMARY"
+        }
+      ],
+      "relatedUses": [
+        {
+          "sourceCanonicalId": "RC-058",
+          "relationType": "CANONICAL_STRUCTURE_RELATION"
+        }
+      ],
+      "historicalContextUses": [],
+      "semanticRule": "ROLE_IS_CONTEXTUAL_NOT_GLOBAL",
+      "canonicalCountImpactFromRelatedOrHistorical": 0,
+      "identityInferenceAllowedFromCrossContextReuse": false
+    }
+  ],
+  "assertions": {
+    "rawReferenceRoleIsNeverGlobal": true,
+    "relatedAndHistoricalRolesHaveCanonicalCountImpactZero": true,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

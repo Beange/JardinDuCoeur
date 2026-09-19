@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V146",
+  "registerId": "JDC-HADITH-FRENCH-EXTERNAL-SOURCE-AUDIT-BATCH6-V1",
+  "purpose": "Audit externe français de RC-012 et RC-013 sur HadeethEnc; aucune promotion sans correspondance canonique exacte vérifiable.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "counts": {
+    "canonicalStructuresAudited": 2,
+    "officialFrenchPagesLocated": 1,
+    "exactPrimaryReferencesDisplayed": 0,
+    "translationsPromoted": 0,
+    "entriesPendingExactReferenceResolution": 2
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-012",
+      "primaryRef": "Sahih Muslim 2759a",
+      "variants": [
+        "Sahih Muslim 2759b"
+      ],
+      "sourceHadithId": 4318,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/4318",
+      "sourceAttributionDisplayed": "Authentique; Rapporté par Muslim; page affiche Sahîh Muslim - 2759 sans suffixe a",
+      "exactPrimaryReferenceDisplayed": false,
+      "sourceMatnIdentityConsistent": true,
+      "decision": "PENDING_EXACT_VARIANT_SUFFIX_RESOLUTION",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-013",
+      "primaryRef": "Sahih Muslim 1017e",
+      "variants": [
+        "Sahih Muslim 1017f",
+        "Sahih Muslim 1017g",
+        "Sahih Muslim 1017h"
+      ],
+      "sourceHadithId": null,
+      "officialFrenchUrl": null,
+      "sourceAttributionDisplayed": null,
+      "exactPrimaryReferenceDisplayed": false,
+      "sourceMatnIdentityConsistent": null,
+      "decision": "PENDING_OFFICIAL_FRENCH_PAGE_RESOLUTION",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "referenceNumberInferredFromHadeethEnc": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

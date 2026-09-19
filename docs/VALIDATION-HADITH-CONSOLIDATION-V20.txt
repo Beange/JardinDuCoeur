@@ -1,0 +1,22 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V20
+
+JALON : 11/11 FAMILLES PRIORITAIRES DE L'AUDIT V12 RÉSOLUES
+
+Structures canoniques confirmées ............. 26
+- historiques récupérées ..................... 13
+- reconstruction ............................. 13
+
+CHEVAUCHEMENTS RÉSOLUS
+RF-22 / RC-023 : R-028 + R-061 + R-062 ...... DÉDOUBLONNÉ
+RF-23 / RC-024 : R-001 + R-002 + R-065 + R-066 DÉDOUBLONNÉ / VARIANTES CONSERVÉES
+
+Familles prioritaires V12 résolues ........... 11/11
+R-ID absorbés ................................ 29
+R-ID restant à consolider .................... 53
+
+Double comptage des variantes/parallèles ..... INTERDIT
+Gamification des récompenses religieuses ..... INTERDITE
+H-ID historiques inventés .................... 0
+Traduction française publiée ................. PENDING
+productionReady ............................... false
+Migration index.html ......................... NON

@@ -1,0 +1,14 @@
+JARDIN DU CŒUR — VALIDATION REGISTRE QURʾĀN Q-001 → Q-043
+
+canonical_quran_count_43: True
+ids_Q001_Q043: True
+unique_ids: True
+unique_canonical_references: True
+all_countsAsEntry_true: True
+all_verified_true: True
+all_productionReady_true: True
+contextual_or_fiche_random_disabled: True
+home_excerpts_are_substrings: True
+no_provisional_28_24_or_33_3: True
+
+STATUS: PASS

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V194",
+  "auditId": "HADITH_FRENCH_MULTISOURCE_CONTINUATION_V194",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-052",
+      "RC-069"
+    ],
+    "reviewedCount": 2
+  },
+  "promotedCanonicalIds": [
+    "RC-052",
+    "RC-069"
+  ],
+  "heldCanonicalIds": [],
+  "findings": [
+    {
+      "canonicalId": "RC-052",
+      "primaryRef": "Sahih al-Bukhari 2631",
+      "decision": "PROMOTE",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3558",
+      "reason": "HadeethEnc FR publie le matn français correspondant aux quarante bonnes œuvres et à la maniha de chèvre, avec degré Authentique et attribution Al-Bukhârî; identité établie par narrateur + matn + collection."
+    },
+    {
+      "canonicalId": "RC-069",
+      "primaryRef": "Sahih al-Bukhari 7377",
+      "decision": "PROMOTE",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3290",
+      "reason": "HadeethEnc FR publie le récit complet d'Usâmah ibn Zayd (enfant mourant, terme fixé, larmes, miséricorde), degré Authentique, attribution Al-Bukhârî/Muslim; identité établie avec les routes canoniques RC-069."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 83,
+    "pendingPublishedFrenchCanonicalEntries": 57
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "partialTranslationPromoted": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

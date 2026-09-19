@@ -1,0 +1,11 @@
+Jardin du Cœur — validation ciblée de la release V136
+
+Résultat : PASS
+Contrôles : 159
+Réussites : 159
+Échecs : 0
+
+Points contrôlés : sérialisation administrative unifiée et sans perte des 43 objets Qur’an, 69 structures hadith héritées et 71 structures hadith du supplément; 183 clés uniques; ordre et provenance des trois partitions; égalité exacte des charges utiles avec leurs registres autoritatifs; couverture maintenue à 140/140 hadiths et 183/183 structures; aucune position restante; production éditoriale toujours non prête; aucun H-ID, R-ID ou texte français inventé; R-077 historique quarantiné; index.html inchangé.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 159 | PASS: 159 | FAIL: 0

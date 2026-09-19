@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Jardin du Coeur",
+  "release": "V168",
+  "auditId": "french-second-pass-n063-v1",
+  "scope": {
+    "canonicalIds": [
+      "N-063"
+    ],
+    "result": "1 promoted"
+  },
+  "promoted": [
+    {
+      "canonicalId": "N-063",
+      "primaryRef": "Sahih Muslim 2735a",
+      "hadeethEncId": "3232",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3232",
+      "identityEvidence": [
+        "Arabic matn concordant",
+        "narrator Abu Huraira concordant",
+        "Sahih Muslim 2735 displayed",
+        "French translation published"
+      ],
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "countsAfter": {
+    "verified": 59,
+    "waiting": 81
+  },
+  "policy": "No synthetic French translation; verbatim published French only."
+}

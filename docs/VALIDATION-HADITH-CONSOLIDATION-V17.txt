@@ -1,0 +1,24 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V17
+
+JALON : 13/13 H-ID HISTORIQUES RÉCUPÉRÉS CONSOLIDÉS
+
+Structures canoniques confirmées au total .... 20
+- reconstruction R-ID consolidée .............. 7
+- H-ID historiques récupérés consolidés ....... 13 / 13
+
+DERNIERS DOSSIERS HISTORIQUES
+RC-016 / H-113 : Muslim 2749 .................. CONFIRMÉ
+                  Muslim 2748b ................ LIÉ +0
+RC-017 / H-124 : Bukhari 6023 ................. CONFIRMÉ
+                  Bukhari 1016 ................ REJETÉ
+RC-018 / H-129 : Bukhari 1427 + 1428 .......... 1 DOSSIER / 2 ROUTES
+RC-019 / H-135 : Abu Dawud 4811 + Tirmidhi 1954 CONFIRMÉ
+RC-020 / H-140 : Muslim 1055 .................. CONFIRMÉ
+
+Couverture des H-ID historiquement récupérés .. 100 %
+H-ID perdus artificiellement reconstruits ..... 0
+Anciennes correspondances H-ID toujours perdues 127
+
+Traduction française publiée .................. PENDING
+productionReady ................................ false
+Migration index.html .......................... NON

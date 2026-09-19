@@ -1,0 +1,20 @@
+JARDIN DU CŒUR — CONSOLIDATION HADITH V14
+
+Structures canoniques confirmées ........ 7
+Candidats bruts absorbés ................ 14
+Candidats bruts restant à consolider .... 68
+
+NOUVEAUX DOSSIERS
+RC-005 Muslim 1907a + Bukhari 1 .......... CONFIRMÉ
+RC-006 Bukhari 13 + Muslim 45a ........... CONFIRMÉ, VARIANTE CONSERVÉE
+RC-007 Bukhari 6018 + Muslim 47a ......... CONFIRMÉ, VARIANTE CONSERVÉE
+
+CORRECTION
+R-057 Bukhari 6475 -> Bukhari 6478 ....... CORRIGÉ
+R-059 Bukhari 5675 ....................... CORRECTION V13 CONSERVÉE
+
+Aucun ancien H-ID inventé ................ PASS
+Fusion canonique documentée .............. PASS
+Traduction française publiée ............. PENDING
+productionReady .......................... false
+Migration index.html ..................... NON

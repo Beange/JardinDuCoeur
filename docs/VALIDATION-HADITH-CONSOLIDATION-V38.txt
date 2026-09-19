@@ -1,0 +1,21 @@
+JARDIN DU CŒUR — VALIDATION HADITH CONSOLIDATION V38
+Date: 2026-09-12
+
+LOT AUDITÉ
+- R-077 / ancienne référence Sahih al-Bukhari 6014 -> QUARANTAINE, NON CONSOLIDÉ
+
+VÉRIFICATIONS
+- Bukhari 6014: texte sur la recommandation répétée de Jibril concernant le voisin; discordant avec le résumé hérité de R-077.
+- Bukhari 7376: texte de Jarir sur la miséricorde envers les gens et la miséricorde d'Allah; concordance thématique forte, mais cette référence appartient déjà à R-045. Aucune preuve récupérée n'établit que R-077 est un doublon de R-045.
+- Tirmidhi 1924: Abdullah b. Amr, miséricorde envers ceux de la terre et lien de parenté; thématiquement proche, mais aucune preuve récupérée ne l'identifie à R-077.
+- Conclusion: aucun remplacement n'est attribué par supposition. Disposition REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED.
+
+COMPTAGE STRUCTUREL
+- R-ID absorbés: 81/82
+- R-ID quarantiné restant: R-077
+- Structures canoniques: 69 = 56 reconstruction + 13 historiques
+
+POLITIQUE
+- publishedFrenchTranslation: PENDING
+- productionReady: false
+- index.html: non modifié

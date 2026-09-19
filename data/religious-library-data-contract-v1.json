@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "Machine-readable structural contract for critical corpus, coverage and referential-integrity JSON files. It validates shape, identifier patterns and accounting relations only; it does not create or infer religious identity.",
+  "datasets": [
+    {
+      "id": "quranCanonical",
+      "path": "data/religious-library-quran-canonical.json",
+      "requiredTopLevelKeys": [
+        "schemaVersion",
+        "project",
+        "counts",
+        "entries"
+      ],
+      "collection": {
+        "field": "entries",
+        "expectedCount": 43,
+        "idField": "id",
+        "idPattern": "^Q-[0-9]{3}$"
+      }
+    },
+    {
+      "id": "hadithCanonical",
+      "path": "data/religious-library-hadith-canonical-consolidation-v44.json",
+      "requiredTopLevelKeys": [
+        "registerId",
+        "canonicalStructuralEntries",
+        "counts",
+        "productionPolicy"
+      ],
+      "collection": {
+        "field": "canonicalStructuralEntries",
+        "expectedCount": 69,
+        "idField": "canonicalId",
+        "idPattern": "^RC-[0-9]{3}$"
+      }
+    },
+    {
+      "id": "hadithGaps",
+      "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+      "requiredTopLevelKeys": [
+        "registerId",
+        "targetHadithStructures",
+        "confirmedHadithStructures",
+        "unmaterializedStructureSlots",
+        "identityPolicy",
+        "gaps",
+        "productionReady"
+      ],
+      "collection": {
+        "field": "gaps",
+        "expectedCount": 71,
+        "idField": "gapId",
+        "idPattern": "^GAP-[0-9]{3}$"
+      }
+    },
+    {
+      "id": "hadithCoverageLedger",
+      "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+      "requiredTopLevelKeys": [
+        "ledgerId",
+        "targetHadithStructures",
+        "confirmedCanonicalStructures",
+        "unmaterializedAdministrativeGaps",
+        "policy",
+        "slots"
+      ],
+      "collection": {
+        "field": "slots",
+        "expectedCount": 140,
+        "idField": "coverageSlot",
+        "idPattern": "^HADITH-COVERAGE-[0-9]{3}$"
+      }
+    },
+    {
+      "id": "globalCoverageLedger",
+      "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+      "requiredTopLevelKeys": [
+        "ledgerId",
+        "canonicalTarget",
+        "counts",
+        "policy",
+        "slots"
+      ],
+      "collection": {
+        "field": "slots",
+        "expectedCount": 183,
+        "idField": "coverageSlot",
+        "idPattern": "^CORPUS-COVERAGE-[0-9]{3}$"
+      }
+    },
+    {
+      "id": "reconstructionRegister",
+      "path": "data/religious-library-hadith-reconstruction-v11.json",
+      "requiredTopLevelKeys": [
+        "schemaVersion",
+        "project",
+        "registerId",
+        "status",
+        "counts",
+        "families",
+        "entries"
+      ]
+    },
+    {
+      "id": "targetManifest",
+      "path": "data/religious-library-target-manifest.json",
+      "requiredTopLevelKeys": [
+        "schemaVersion",
+        "project",
+        "canonicalTarget",
+        "conversationAuditStatus",
+        "countingRules",
+        "editorialSafetyPrinciples"
+      ]
+    },
+    {
+      "id": "releaseCoherence",
+      "path": "data/religious-library-release-coherence-v1.json",
+      "requiredTopLevelKeys": [
+        "schemaVersion",
+        "project",
+        "release",
+        "parentRelease",
+        "releaseDeclarations",
+        "releaseFiles",
+        "corpusInvariants",
+        "safety"
+      ]
+    },
+    {
+      "id": "referentialIntegrity",
+      "path": "data/religious-library-referential-integrity-v1.json",
+      "requiredTopLevelKeys": [
+        "schemaVersion",
+        "project",
+        "release",
+        "purpose",
+        "nodeSets",
+        "relations",
+        "derived",
+        "assertions"
+      ]
+    }
+  ],
+  "identifierSequences": {
+    "quranCanonical": "Q-001..Q-043",
+    "hadithCanonical": "RC-001..RC-069 + authenticated N-* canonical set through N-040 (33 canonical N identities; rejected IDs remain reserved)",
+    "hadithGaps": "GAP-001..GAP-071 (33 filled administratively; 38 unresolved)",
+    "hadithCoverageLedger": "HADITH-COVERAGE-001..HADITH-COVERAGE-140",
+    "globalCoverageLedger": "CORPUS-COVERAGE-001..CORPUS-COVERAGE-183"
+  },
+  "crossRelations": {
+    "canonicalTargetTotal": 183,
+    "quranDossiers": 43,
+    "hadithTargetSlots": 140,
+    "hadithCanonicalStructures": 108,
+    "hadithAdministrativeGaps": 32,
+    "materializedReligiousStructures": 151,
+    "absorbedReconstructionIds": 81,
+    "quarantinedReconstructionIds": [
+      "R-077"
+    ],
+    "equations": [
+      "43 + 140 = 183",
+      "102 + 38 = 140",
+      "43 + 102 = 145"
+    ],
+    "hadithGapRecords": 71
+  },
+  "identitySafety": {
+    "administrativeContractOnly": true,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "gapSlotsMayNotAcquireReferenceNarratorOrMatn": true,
+    "full183ObjectSerialization": "PENDING",
+    "productionReady": false,
+    "filledGapSlotMayPointToNewCanonicalIdWithoutHistoricalIdentityClaim": true
+  }
+}

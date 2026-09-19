@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V163",
+  "auditId": "religious-library-hadith-french-second-pass-v163",
+  "purpose": "Second passage ciblé des entrées en attente; promotion uniquement des traductions françaises HadeethEnc vérifiées sans avertissement explicite de révision.",
+  "counts": {
+    "newlyPromoted": 4,
+    "publishedFrenchCanonicalEntries": 46,
+    "pendingPublishedFrenchCanonicalEntries": 94
+  },
+  "promoted": [
+    {
+      "canonicalId": "N-002",
+      "primaryRef": "Sahih al-Bukhari 24",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5478",
+      "sourceHadithId": 5478,
+      "matchingBasis": "matn arabe + rapporteur Ibn 'Oumar + attribution Al-Bukhârî/Muslim; HadeethEnc affiche le parallèle Muslim 36",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-003",
+      "primaryRef": "Sahih al-Bukhari 1904",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3546",
+      "sourceHadithId": 3546,
+      "matchingBasis": "référence Bukhari 1904 explicitement affichée + matn arabe + Abû Hurayrah",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-008",
+      "primaryRef": "Sahih Muslim 2664",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5493",
+      "sourceHadithId": 5493,
+      "matchingBasis": "référence Muslim 2664 explicitement affichée + matn arabe + Abû Hurayrah",
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "N-019",
+      "primaryRef": "Sahih al-Bukhari 6028",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3563",
+      "sourceHadithId": 3563,
+      "matchingBasis": "matn arabe + rapporteur Abû Mûsâ + attribution conjointe Al-Bukhârî/Muslim; numéro non affiché sur la fiche",
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "heldForRevisionWarning": [],
+  "notPromoted": [],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

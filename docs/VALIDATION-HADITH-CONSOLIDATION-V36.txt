@@ -1,0 +1,22 @@
+JARDIN DU COEUR — VALIDATION HADITH CONSOLIDATION V36
+Date: 2026-09-12
+
+Lot vérifié:
+- R-026 / Sahih Muslim 2564a -> RC-065
+- R-027 / Sahih Muslim 91a -> RC-066
+- R-033 / Sahih Muslim 55a -> RC-067
+
+Routes +0:
+- RC-065: Sahih al-Bukhari 6064, 6066 (recoupements substantiels depuis Abu Hurayra)
+- RC-066: Sahih Muslim 91b (variante liée)
+- RC-067: Sahih Muslim 55b, 55c (même hadith de Tamim al-Dari)
+
+Correction arithmétique:
+- V35 annonçait 75/82, mais le recomptage direct des membres R-ID dans canonicalStructuralEntries donne 76/82.
+- V36 ajoute 3 R-ID: 79/82 absorbés; 3 restants.
+- 67 structures canoniques = 54 reconstruction + 13 historiques.
+
+Aucune correction de référence dans ce lot.
+publishedFrenchTranslation: PENDING
+productionReady: false
+index.html: non modifié

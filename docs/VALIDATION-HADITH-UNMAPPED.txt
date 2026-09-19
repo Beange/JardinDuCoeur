@@ -1,0 +1,11 @@
+JARDIN DU CŒUR — HADITHS ÉTUDIÉS MAIS H-ID NON RETROUVÉ
+
+Références ré-auditées : 10
+Identifiants techniques UM-* : 10
+countsAsEntry=false : PASS
+canonicalHId=null : PASS
+randomHome=false : PASS
+productionReady=false : PASS
+
+Ces 10 références ne font PAS passer le compteur canonique au-delà des
+13 mappings H-ID récupérés. Leur rattachement à H-001…H-140 reste inconnu.

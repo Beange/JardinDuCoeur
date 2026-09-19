@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jardin du Cœur</title>
+<meta name="theme-color" content="#174f45">
+<meta name="description" content="Un journal personnel pour écrire, réfléchir et revenir à l’essentiel.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Jardin du Cœur">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/icon-192.png">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="./app.css">
+</head>
+<body>
+<a class="skip-link" href="#appMain">Aller au contenu</a>
+<main class="app-shell" id="appMain">
+  <div class="device-wrap">
+    <div class="phone">
+      <div class="save-state" id="saveState" role="status" aria-live="polite" aria-atomic="true">Enregistré</div>
+
+      <!-- 1 -->
+      <section class="screen active" data-screen="1">
+        <div class="screen-head home-screen-head"><button class="iconbtn" id="homeHistoryBtn" aria-label="Historique récent"><span class="svg-icon" data-icon="clock"></span></button><strong class="home-screen-title">Aujourd’hui</strong><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="home-hero" id="dailyHero">
+          <div class="home-greeting">
+            <div class="salam serif">As-salāmu ‘alaykum ♡</div>
+            <div class="date" id="homeDate">—</div>
+            <div class="hijri" id="homeHijri">—</div>
+          </div>
+          <div class="mockup-photo" id="dailyLandscape" role="img" aria-label="Paysage du jour"></div>
+          <button class="home-verse daily-quote-card" id="dailyQuoteCard" type="button" aria-label="Ouvrir la source de la parole du jour">
+            <span class="daily-quote-kicker">PAROLE DU JOUR</span>
+            <span class="daily-quote-text" id="dailyQuoteText">—</span>
+            <small id="dailyQuoteRef">—</small>
+          </button>
+        </div>
+        <div class="card home-checkin-card">
+          <div class="home-card-kicker">MON ÉTAT</div>
+          <div class="section-title">Comment est ton cœur aujourd’hui ?</div>
+          <div class="mood-grid" role="group" aria-label="État du cœur aujourd’hui">
+            <button class="mood mood-sad" data-mood="Lourd"><span>⌢</span>Lourd</button>
+            <button class="mood mood-tired" data-mood="Fragile"><span>⌁</span>Fragile</button>
+            <button class="mood mood-calm" data-mood="Paisible"><span>⌣</span>Paisible</button>
+            <button class="mood mood-motivated" data-mood="Heureux"><span>⌣</span>Heureux</button>
+            <button class="mood mood-grateful" data-mood="Reconnaissant"><span>☺</span>Reconnaissant</button>
+          </div>
+        </div>
+        <div class="card home-start-card">
+          <div class="home-card-kicker">MON POINT DE DÉPART</div>
+          <div class="section-title"><span class="icon-orb pink"><span class="svg-icon" data-icon="heart"></span></span> Mon intention du jour</div>
+          <div class="subtle" style="margin:-2px 0 7px">Quelle intention souhaites-tu garder près de ton cœur aujourd’hui ?</div>
+          <textarea id="intent" data-field="intention" placeholder="Aujourd’hui, j’aimerais…" aria-label="Mon intention du jour"></textarea>
+          <button class="secondary" id="intentionHelpBtn" type="button" style="margin:7px 0 8px">Besoin d’inspiration ?</button>
+          <button class="primary" id="startDayBtn" type="button" onclick="startOrContinueDay()">Commencer ma journée</button><div class="journey-hint" id="homeJourneyHint" aria-live="polite">Commence par tes prières et ta lecture du jour.</div>
+        </div>
+        <div class="card home-prayer-preview" id="homePrayerPreview">
+          <div class="home-card-kicker">MES REPÈRES</div>
+          <div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="prayer"></span></span> Mes prières aujourd’hui</div>
+          <div class="subtle" style="margin:-2px 0 9px">Fajr · Dhuhr · ‘Asr · Maghrib · ‘Ishā’</div>
+          <button class="secondary" type="button" onclick="selectedDate=todayKey();renderSelectedDay();go(2)">Voir et renseigner mes prières</button>
+        </div>
+        <div class="card home-today-dashboard" id="homeTodayDashboard" aria-labelledby="homeTodayTitle">
+          <div class="home-card-kicker">MA CONTINUITÉ</div>
+          <div class="section-title" id="homeTodayTitle"><span class="icon-orb green"><span class="svg-icon" data-icon="leaf"></span></span> Mon élan du jour</div>
+          <div class="today-progress" id="homeTodayProgress">—</div>
+          <div class="today-progress-track" aria-hidden="true"><span id="homeTodayProgressBar"></span></div>
+          <button class="today-next-action" type="button" id="homeTodayNextAction"><span class="today-next-kicker">PROCHAINE ÉTAPE</span><strong id="homeTodayNextLabel">—</strong><small id="homeTodayNextHint">—</small></button>
+          <div class="today-list-heading">Mes repères</div>
+          <div id="homeTodayItems"></div>
+          <button class="secondary" type="button" id="homeTodayManageBtn">Gérer mes objectifs et habitudes</button>
+        </div>
+        <button class="evening-home-link hidden" id="homeMuhasabahBtn" type="button">☾ Le soir venu, prends un moment pour ta muhāsabah</button>
+        <Nav active="today"></Nav>
+      </section>
+
+      <!-- 2 -->
+      <section class="screen" data-screen="2">
+        <div class="screen-head"><button class="iconbtn" id="dayBasicsBackBtn" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma journée</h2><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="journal-view-mode" data-journal-mode-notice hidden></div>
+        <div class="day-basics-intro"><span class="day-basics-kicker">MES REPÈRES DU JOUR</span><p>Renseigne simplement ce qui compte maintenant. Tu pourras compléter le reste plus tard.</p></div>
+        <div class="datebar"><button class="round" id="prevDay" aria-label="Jour précédent">‹</button><div class="center"><strong id="journalDate">—</strong><span id="journalHijri">—</span><button class="date-today-link" id="journalTodayBtn" type="button">Aujourd’hui</button></div><button class="round" id="nextDay" aria-label="Jour suivant">›</button></div>
+        <div class="card" id="prayerCard">
+          <div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="prayer"></span></span><span><strong>Mes prières</strong><small class="day-section-help">Un statut suffit pour chaque prière.</small></span></div>
+          <div class="row prayer-row"><div class="prayer-name"><span class="icon-orb gold"><span class="svg-icon" data-icon="prayer-mat"></span></span>Fajr</div><span class="status-dot empty"></span><select class="status-pill" data-prayer="fajr" aria-label="Statut de la prière Fajr"><option>Non renseignée</option><option>À l’heure</option><option>En retard</option></select><span class="chev">›</span></div>
+          <div class="row prayer-row"><div class="prayer-name"><span class="icon-orb peach"><span class="svg-icon" data-icon="moon"></span></span>Dhuhr</div><span class="status-dot empty"></span><select class="status-pill" data-prayer="dhuhr" aria-label="Statut de la prière Dhuhr"><option>Non renseignée</option><option>À l’heure</option><option>En retard</option></select><span class="chev">›</span></div>
+          <div class="row prayer-row"><div class="prayer-name"><span class="icon-orb gold"><span class="svg-icon" data-icon="prayer-mat"></span></span>‘Asr</div><span class="status-dot empty"></span><select class="status-pill" data-prayer="asr" aria-label="Statut de la prière ‘Asr"><option>Non renseignée</option><option>À l’heure</option><option>En retard</option></select><span class="chev">›</span></div>
+          <div class="row prayer-row"><div class="prayer-name"><span class="icon-orb peach"><span class="svg-icon" data-icon="moon"></span></span>Maghrib</div><span class="status-dot empty"></span><select class="status-pill" data-prayer="maghrib" aria-label="Statut de la prière Maghrib"><option>Non renseignée</option><option>À l’heure</option><option>En retard</option></select><span class="chev">›</span></div>
+          <div class="row prayer-row"><div class="prayer-name"><span class="icon-orb gold"><span class="svg-icon" data-icon="prayer-mat"></span></span>‘Ishā’</div><span class="status-dot empty"></span><select class="status-pill" data-prayer="isha" aria-label="Statut de la prière ‘Ishā’"><option>Non renseignée</option><option>À l’heure</option><option>En retard</option></select><span class="chev">›</span></div>
+        </div>
+        <div class="card">
+          <div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="book"></span></span><span><strong>Ma lecture du Qur’an</strong><small class="day-section-help">Note seulement ce que tu souhaites garder.</small></span></div>
+          <label class="day-field-label">Sourate<input data-field="quranSurah" placeholder="Nom ou numéro" aria-label="Sourate"></label>
+          <div class="day-verse-range"><label class="day-field-label">Du verset<input data-field="quranFrom" inputmode="numeric" placeholder="Début" aria-label="Verset de début"></label><span class="subtle day-range-separator">à</span><label class="day-field-label">Au verset<input data-field="quranTo" inputmode="numeric" placeholder="Fin" aria-label="Verset de fin"></label></div>
+          <label class="day-field-label day-reflection-label">Ce que j’en retiens<textarea data-field="quranReflection" placeholder="Une idée, un rappel, une réflexion…" aria-label="Ce que je retiens de ma lecture du Qur’an"></textarea></label>
+        </div>
+        <button class="primary" id="dayBasicsContinueBtn" type="button">Continuer ma journée</button>
+        <Nav active="journal"></Nav>
+      </section>
+
+      <!-- 3 -->
+      <section class="screen" data-screen="3">
+        <div class="screen-head"><button class="iconbtn" onclick="go(2)" aria-label="Retour aux prières"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma journée</h2><span></span></div>
+        <div class="journal-view-mode" data-journal-mode-notice hidden></div>
+        <div class="day-context" aria-live="polite"><strong id="dayDetailsDate">—</strong><div class="day-context-actions"><button type="button" id="dayDetailsTodayBtn">Aujourd’hui</button><button type="button" id="dayDetailsJournalBtn">Voir dans le journal</button></div></div>
+        <div class="heart-page-intro" aria-labelledby="heartPageTitle"><span class="heart-page-kicker">MES REPÈRES INTÉRIEURS</span><strong id="heartPageTitle">Ce que mon cœur porte</strong><p>Quelques mots suffisent. Tu peux renseigner seulement ce qui compte aujourd’hui.</p></div>
+        <div class="day-section-progress heart-progress" id="daySectionProgress" aria-live="polite">0/5 repères renseignés</div>
+        <div class="accordion heart-notes-grid">
+          <div class="card soft-green heart-note-card"><div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="dhikr"></span></span><span><strong>Mon dhikr</strong><small>Ce que j’ai gardé sur ma langue ou dans mon cœur</small></span></div><label class="heart-field-label">Mon dhikr du jour<textarea data-field="dhikr" placeholder="Quels adhkār as-tu fait aujourd’hui ?" aria-label="Mon dhikr du jour"></textarea></label></div>
+          <div class="card soft-pink heart-note-card"><div class="section-title"><span class="icon-orb pink"><span class="svg-icon" data-icon="heart"></span></span><span><strong>Alhamdulillah</strong><small>Un bienfait, un soulagement ou une gratitude</small></span></div><label class="heart-field-label">Ma gratitude<textarea data-field="gratitude" placeholder="Pour quoi dis-tu Alhamdulillah aujourd’hui ?" aria-label="Ma gratitude du jour"></textarea></label></div>
+          <div class="card soft-blue heart-note-card"><div class="section-title"><span class="icon-orb blue"><span class="svg-icon" data-icon="dua"></span></span><span><strong>Mes du‘â</strong><small>Ce que je souhaite confier aujourd’hui</small></span></div><label class="heart-field-label">Ma du‘â<textarea data-field="dua" placeholder="Ajoute une du‘â ou consulte tes du‘â" aria-label="Mes du‘â du jour"></textarea></label></div>
+          <div class="card soft-sand heart-note-card heart-note-primary"><div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="leaf"></span></span><span><strong>Entre Allah et moi</strong><small>Un espace personnel pour déposer ce qui compte</small></span></div><label class="heart-field-label">Ce que mon cœur porte<textarea data-field="heartNotes" placeholder="Ce que mon cœur porte aujourd’hui …" aria-label="Ce que mon cœur porte aujourd’hui"></textarea></label></div>
+        </div>
+        <div class="card">
+          <div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="heart-fill"></span></span> Ma journée en un mot</div>
+          <div class="subtle">Choisis un mot pour résumer ta journée</div>
+          <div class="word-chips" style="margin-top:8px"><button class="chip" data-word="Apaisante">Apaisante</button><button class="chip" data-word="Difficile">Difficile</button><button class="chip" data-word="Bénie">Bénie</button><button class="chip" data-word="Ordinaire">Ordinaire</button></div>
+          <div class="day-flow-actions"><button class="secondary" type="button" id="dayBackToBasicsBtn">Prières & Qur’an</button><button class="primary" type="button" id="dayToMuhasabahBtn">Continuer vers ma muhâsabah</button></div>
+        </div>
+        <Nav active="journal"></Nav>
+      </section>
+
+      <!-- 4 -->
+      <section class="screen" data-screen="4">
+        <div class="screen-head evening-nav"><button class="iconbtn" id="muhasabahBackBtn" aria-label="Retour à la journée"><span class="svg-icon" data-icon="chevron-left"></span></button><div class="evening-date" id="muhasabahDate">—</div><button class="iconbtn" id="muhasabahJournalBtn" aria-label="Voir dans le journal"><span class="svg-icon" data-icon="notebook"></span></button></div>
+        <div class="journal-view-mode" data-journal-mode-notice hidden></div>
+        <div class="evening-title"><span class="moon">☾</span><div class="evening-copy"><div class="evening-heading serif">Le temps de la<br>muhâsabah</div><div class="subtle">Relis ta journée sans chercher à tout remplir. Quelques mots peuvent suffire.</div></div></div>
+        <div class="muhasabah-guide" aria-label="Repère de réflexion"><span>6 questions</span><strong>Avance à ton rythme</strong><small>Tu peux laisser une question vide et y revenir plus tard.</small></div>
+        <div class="card reflection muhasabah-reflection">
+          <div class="prompt"><div class="prompt-head" id="muhasabahCloserLabel"><div class="dot"><span class="svg-icon" data-icon="person-pray"></span></div><span>Qu’est-ce qui m’a rapproché(e) d’Allah aujourd’hui ?</span></div><textarea data-field="muhasabahCloser" aria-labelledby="muhasabahCloserLabel" placeholder="Écris quelques mots…"></textarea></div>
+          <div class="prompt"><div class="prompt-head" id="muhasabahAwayLabel"><div class="dot"><span class="svg-icon" data-icon="distance"></span></div><span>Qu’est-ce qui m’a éloigné(e) ?</span></div><textarea data-field="muhasabahAway" aria-labelledby="muhasabahAwayLabel" placeholder="Écris quelques mots…"></textarea></div>
+          <div class="prompt"><div class="prompt-head" id="muhasabahLearnedLabel"><div class="dot"><span class="svg-icon" data-icon="smile"></span></div><span>Qu’est-ce que j’ai appris aujourd’hui ?</span></div><textarea data-field="muhasabahLearned" aria-labelledby="muhasabahLearnedLabel" placeholder="Écris quelques mots…"></textarea></div>
+          <div class="prompt"><div class="prompt-head" id="muhasabahGratefulLabel"><div class="dot"><span class="svg-icon" data-icon="heart-fill"></span></div><span>Pour quoi suis-je reconnaissant(e) ?</span></div><textarea data-field="muhasabahGrateful" aria-labelledby="muhasabahGratefulLabel" placeholder="Écris quelques mots…"></textarea></div>
+          <div class="prompt"><div class="prompt-head" id="muhasabahRepairLabel"><div class="dot"><span class="svg-icon" data-icon="repair"></span></div><span>Y a-t-il quelque chose que je dois réparer ?</span></div><textarea data-field="muhasabahRepair" aria-labelledby="muhasabahRepairLabel" placeholder="Écris quelques mots…"></textarea></div>
+          <div class="prompt"><div class="prompt-head" id="muhasabahEntrustLabel"><div class="dot"><span class="svg-icon" data-icon="dua"></span></div><span>Qu’est-ce que je confie à Allah avant de dormir ?</span></div><textarea data-field="muhasabahEntrust" aria-labelledby="muhasabahEntrustLabel" placeholder="Écris quelques mots…"></textarea></div>
+        </div>
+        <div class="card"><div class="section-title"><span class="icon-orb blue"><span class="svg-icon" data-icon="dua"></span></span> Une du‘â du soir</div><textarea data-field="eveningDua" placeholder="Écris ta du‘â …" aria-label="Ma du‘â du soir"></textarea></div>
+        <div class="card day-close-card" id="dayCloseCard"><div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="check"></span></span> Avant de clôturer</div><div class="subtle">Un aperçu simple de ta journée avant de la retrouver dans le Journal.</div><div class="day-close-summary" id="dayCloseSummary" aria-live="polite"></div><button class="primary" id="finishDayBtn">Terminer ma journée</button><div class="subtle day-close-status" id="dayCloseStatus"></div></div>
+        <Nav active="journal"></Nav>
+      </section>
+
+      <!-- 5 -->
+      <section class="screen" data-screen="5">
+        <div class="screen-head"><button class="iconbtn" id="journalHistoryBtn" aria-label="Historique récent"><span class="svg-icon" data-icon="clock"></span></button><h2>Mon journal</h2><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="journal-intro"><strong>Retrouve le fil de tes journées</strong><span>Choisis une date pour relire tes repères, puis ouvre la journée seulement si tu veux aller plus loin.</span></div>
+        <div class="calendar-top" aria-label="Vue du journal"><button class="active" aria-current="true">Jour</button><button disabled aria-disabled="true" title="Vue à venir">Semaine</button><button disabled aria-disabled="true" title="Vue à venir">Mois</button><button disabled aria-disabled="true" title="Vue à venir">Année</button></div>
+        <div class="card journal-calendar-card">
+          <div class="cal-head"><button class="round" id="prevMonth" aria-label="Mois précédent">‹</button><strong class="serif" id="calendarMonth">—</strong><button class="round" id="nextMonth" aria-label="Mois suivant">›</button></div>
+          <div class="cal-grid" id="calendarGrid" aria-label="Calendrier du journal"></div>
+          <div class="journal-calendar-legend" aria-label="Légende du calendrier"><span><i class="legend-swatch has-entry"></i>Journée renseignée</span><span><i class="legend-swatch selected-day"></i>Date sélectionnée</span></div>
+        </div>
+        <div class="card journal-day-card">
+          <div class="section-title journal-summary-head"><span id="summaryDate">—</span><small id="summaryContext">—</small></div>
+          <div class="journal-selected-nav" aria-label="Naviguer entre les journées"><button class="round" id="journalPrevDay" type="button" aria-label="Journée précédente">‹</button><button class="journal-today-shortcut" id="journalSelectedTodayBtn" type="button">Revenir à aujourd’hui</button><button class="round" id="journalNextDay" type="button" aria-label="Journée suivante">›</button></div>
+          <div id="journalReview" class="journal-review" aria-live="polite"></div>
+          <div class="summary-item" data-open-screen="2"><div class="ico"><span class="svg-icon" data-icon="target"></span></div><div><strong>Ma journée</strong><small id="summaryDay">Aucune entrée</small></div><span style="margin-left:auto">›</span></div>
+          <div class="summary-item" data-open-screen="3"><div class="ico" style="background:#f6e3e7"><span class="svg-icon" data-icon="heart"></span></div><div><strong>Ce que mon cœur porte</strong><small id="summaryHeart">Aucune note</small></div><span style="margin-left:auto">›</span></div>
+          <div class="summary-item" data-open-screen="2"><div class="ico"><span class="svg-icon" data-icon="book"></span></div><div><strong>Ma lecture du Qur’an</strong><small id="summaryQuran">Non renseignée</small></div><span style="margin-left:auto">›</span></div>
+          <div class="summary-item" data-open-screen="3"><div class="ico" style="background:#f6e1d6"><span class="svg-icon" data-icon="heart-fill"></span></div><div><strong>Ma gratitude</strong><small id="summaryGratitude">Non renseignée</small></div><span style="margin-left:auto">›</span></div>
+          <div class="summary-item" data-open-screen="4"><div class="ico" style="background:#eef1f7"><span class="svg-icon" data-icon="moon"></span></div><div><strong>Ma muhâsabah</strong><small id="summaryMuhasabah">Non renseignée</small></div><span style="margin-left:auto">›</span></div>
+        </div>
+        <div class="journal-open-actions"><button class="secondary journal-open-day" id="journalOpenDayBtn" type="button">Consulter cette journée</button><button class="primary journal-edit-day" id="journalEditDayBtn" type="button">Modifier cette journée</button></div>
+        <div class="card journal-recent-card"><div class="section-title journal-recent-title"><span>Mes dernières journées</span><small>Accès rapide</small></div><div id="journalRecent"></div></div>
+        <Nav active="journal"></Nav>
+      </section>
+
+      <!-- 6 -->
+      <section class="screen" data-screen="6">
+        <div class="screen-head"><button class="iconbtn" onclick="go(5)" aria-label="Retour au journal"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Mes du‘â</h2><span></span></div>
+        <div class="dua-page-intro"><span class="dua-page-kicker">INVOQUER · GARDER · RETROUVER</span><strong>Un espace pour tes du‘â</strong><p>Parcours la bibliothèque, garde tes favorites ou écris les tiennes.</p></div>
+        <label class="dua-search-label" for="duaSearch">Rechercher</label><div class="searchbar dua-searchbar"><span aria-hidden="true">⌕</span><input id="duaSearch" type="search" placeholder="Titre, thème ou mot-clé…" autocomplete="off"><button class="plus" id="addDuaBtn" aria-label="Écrire une nouvelle du‘â" title="Écrire une nouvelle du‘â"><span class="svg-icon" data-icon="plus"></span></button></div>
+        <div class="tabs dua-tabs" id="duaTabs" role="tablist" aria-label="Afficher les du‘â"><button class="active" data-dua-tab="library" role="tab" aria-selected="true">Bibliothèque</button><button data-dua-tab="mine" role="tab" aria-selected="false">Mes du‘â</button><button data-dua-tab="favorites" role="tab" aria-selected="false">Favoris</button></div>
+        <div class="dua-filter-head"><span>Filtrer par thème</span><small id="duaViewHint">Invocations de la bibliothèque</small></div>
+        <div class="chips dua-category-chips" id="duaCategories" aria-label="Thèmes de du‘â"><button class="chip active" data-category="Toutes" aria-pressed="true">Toutes</button><button class="chip" data-category="Matin & soir" aria-pressed="false">Matin & soir</button><button class="chip" data-category="Protection" aria-pressed="false">Protection</button><button class="chip" data-category="Pardon" aria-pressed="false">Pardon</button><button class="chip" data-category="Parents" aria-pressed="false">Parents</button><button class="chip" data-category="Famille" aria-pressed="false">Famille</button><button class="chip" data-category="Santé" aria-pressed="false">Santé</button></div>
+        <div class="dua-results-head"><strong id="duaResultsTitle">Bibliothèque</strong><span id="duaResultsCount" aria-live="polite"></span></div>
+        <div class="card dua-list-card" id="duaList" role="region" aria-labelledby="duaResultsTitle"></div>
+        <Nav active="duas"></Nav>
+      </section>
+
+      <!-- 7 -->
+      <section class="screen" data-screen="7">
+        <div class="screen-head"><button class="iconbtn" onclick="go(1)" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Mon cycle</h2><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="cycle-page-intro"><span class="cycle-page-kicker">SUIVI PERSONNEL</span><strong>Observer mon cycle avec simplicité</strong><p>Enregistre uniquement les dates que tu observes. Les estimations restent des repères indicatifs.</p></div>
+        <div class="tabs cycle-tabs" id="cycleTabs" role="tablist" aria-label="Vue du cycle"><button class="active" data-cycle-tab="today" role="tab" aria-selected="true">Aujourd’hui</button><button data-cycle-tab="calendar" role="tab" aria-selected="false">Calendrier</button><button onclick="go(8)">Comprendre</button></div>
+        <div id="cycleTodayPanel">
+          <div class="cycle-banner"><div class="cycle-botanical" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div><span class="cycle-banner-label">ÉTAT DU JOUR</span><h3 id="cycleHeadline">Mon cycle</h3><p id="cycleSubline">Tu peux noter manuellement le début d’une période.</p></div><span class="cycle-banner-arrow" aria-hidden="true">›</span></div>
+          <div class="card cycle-control">
+            <div class="section-title"><span>Mon suivi</span><small class="cycle-section-help">Saisie manuelle · modifiable à tout moment</small></div>
+            <div class="toolbar-row"><button class="mini-btn primary-mini" id="cycleStartBtn">Mes règles commencent aujourd’hui</button><button class="mini-btn" id="cycleEndBtn">Mes règles se terminent aujourd’hui</button></div>
+            <button class="mini-btn cycle-add-past" id="cycleAddPastBtn">+ Ajouter une période passée</button>
+            <div class="cycle-status-note" id="cycleStatusText"></div>
+            <div class="cycle-overview"><div class="cycle-stat">Dernière période<strong id="cycleLastPeriod">—</strong><span id="cycleLastDuration" class="subtle"></span></div><div class="cycle-stat">Prochaine période estimée<strong id="cycleNextEstimate">—</strong><span id="cycleEstimateBasis" class="subtle"></span></div></div>
+          </div>
+          <div class="card cycle-learning-card">
+            <div class="section-title"><span>Comprendre cette période</span><small class="cycle-section-help">Repères religieux · contenus sourcés ou signalés en préparation</small></div>
+            <p class="subtle">Retrouve les leçons sur le ḥayḍ, l’istiḥāḍa, le nifâs, la purification, la prière et le jeûne sans confondre estimation du calendrier et statut religieux.</p>
+            <button class="mini-btn cycle-learn-btn" id="cycleLearnBtn" type="button">Voir les leçons sur le cycle <span aria-hidden="true">›</span></button>
+          </div>
+          <div class="card cycle-spiritual-card">
+            <div class="section-title"><span>Que puis-je faire aujourd’hui ?</span><small class="cycle-section-help">Des gestes simples pour garder un lien avec ma journée</small></div>
+            <div class="action-grid">
+              <button class="action" type="button" data-cycle-action="dua"><span class="svg-icon" data-icon="dua"></span><span>Du‘â</span></button><button class="action" type="button" data-cycle-action="dhikr"><span class="svg-icon" data-icon="dhikr"></span><span>Dhikr</span></button><button class="action" type="button" data-cycle-action="listen"><span class="svg-icon" data-icon="headphones"></span><span>Écouter</span></button><button class="action" type="button" data-cycle-action="study"><span class="svg-icon" data-icon="book-open"></span><span>Étudier</span></button>
+              <button class="action" type="button" data-cycle-action="sadaqah"><span class="svg-icon" data-icon="hands-heart"></span><span>Sadaqah</span></button><button class="action" type="button" data-cycle-action="journal"><span class="svg-icon" data-icon="notebook"></span><span>Journal</span></button><button class="action" type="button" data-cycle-action="care"><span class="svg-icon" data-icon="heart-fill"></span><span>Prendre soin de moi</span></button>
+            </div>
+          </div>
+          <div class="card soft-sand clickable" id="ramadanMakeupCard"><div class="row" style="padding:0;border:0"><div><strong class="serif">☾ Ramadan</strong><div class="subtle" id="ramadanMakeupText">Jeûnes à rattraper : 0 jour</div></div><span>›</span></div></div>
+        </div>
+        <div id="cycleCalendarPanel" class="hidden">
+          <div class="card cycle-calendar-card">
+            <div class="cycle-calendar-intro"><strong>Mon calendrier</strong><span>Touche une date pour ajouter ou modifier une période.</span></div>
+            <div class="cal-head"><button class="round" id="cyclePrevMonth" aria-label="Mois précédent">‹</button><strong class="serif" id="cycleCalendarMonth">—</strong><button class="round" id="cycleNextMonth" aria-label="Mois suivant">›</button></div>
+            <div class="cycle-calendar" id="cycleCalendarGrid" role="grid" aria-label="Calendrier du cycle"></div>
+            <div class="cycle-legend"><span><i class="legend-dot saved"></i>Période enregistrée</span><span><i class="legend-dot estimate"></i>Période estimée</span></div>
+          </div>
+          <div class="card cycle-history-card"><div class="section-title"><span>Mes périodes</span><small class="cycle-section-help">Historique enregistré</small></div><div id="cycleHistory" class="cycle-history"></div><button class="mini-btn cycle-add-past" id="cycleAddPastBtnCalendar">+ Ajouter une période passée</button></div>
+          <div class="subtle" style="padding:0 4px">Les dates estimées sont indicatives et calculées à partir des périodes que tu as enregistrées. Elles ne déterminent pas à elles seules un statut médical ou juridique religieux.</div>
+        </div>
+        <Nav active="cycle"></Nav>
+      </section>
+
+      <!-- 8 -->
+      <section class="screen" data-screen="8">
+        <div class="screen-head">
+          <button class="iconbtn" onclick="go(7)" aria-label="Retour à Mon cycle"><span class="svg-icon" data-icon="chevron-left"></span></button>
+          <h2>Comprendre & vivre sa foi</h2><span></span>
+        </div>
+
+        <div class="learn-hero">
+          <div class="learn-kicker">APPRENDRE · COMPRENDRE · AVANCER</div>
+          <div class="serif learn-title">Des repères pour ta vie spirituelle de femme</div>
+          <p>Explore les thèmes qui t’accompagnent, à ton rythme. Les fiches non encore vérifiées restent clairement indiquées comme étant en préparation.</p>
+          <div class="faith-trust-note"><span aria-hidden="true">✓</span><span><strong>Statut visible sur chaque fiche</strong><small>« Sourcée » quand les références sont publiées · « En préparation » sinon.</small></span></div>
+          <label class="faith-search-label" for="faithSearch">Rechercher une question ou un thème</label>
+          <label class="learn-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="faithSearch" type="search" placeholder="Ex. prière, cycle, gratitude…" aria-label="Rechercher dans Comprendre et vivre sa foi">
+          </label>
+        </div>
+
+        <div class="learn-section-title faith-section-head"><span>Parcours Islam au féminin</span><small>Des leçons reliées à la vie quotidienne</small></div>
+        <div class="faith-paths" aria-label="Parcours de leçons">
+          <button class="faith-path" type="button" data-faith-path="cycle"><span>🌙</span><span><strong>Cycle & purification</strong><small>Menstruations · ghusl · prière · jeûne · situations d’incertitude</small></span><span aria-hidden="true">›</span></button>
+          <button class="faith-path" type="button" data-faith-path="daily"><span>🤍</span><span><strong>Adoration au quotidien</strong><small>Prière · du‘â · dhikr · constance · relation avec Allah</small></span><span aria-hidden="true">›</span></button>
+          <button class="faith-path" type="button" data-faith-path="life"><span>🌿</span><span><strong>Vie de femme musulmane</strong><small>Savoir · droits · mariage · famille · études · travail</small></span><span aria-hidden="true">›</span></button>
+          <button class="faith-path" type="button" data-faith-path="books"><span>📚</span><span><strong>Leçons tirées d’ouvrages</strong><small>Bibliographie contrôlée · idées reformulées · références visibles</small></span><span aria-hidden="true">›</span></button>
+        </div>
+
+        <div class="faith-editorial-card" role="note"><strong>Comment une leçon est publiée</strong><span>Question concrète → réponse courte → explication → sources → divergences éventuelles → application → à retenir.</span></div>
+
+        <div class="learn-section-title faith-section-head"><span>Explorer par thème</span><small>Choisis un repère</small></div>
+        <div class="learn-grid" id="faithCategories">
+          <button class="learn-card" aria-pressed="false" data-faith-category="woman"><span class="learn-emoji">🌷</span><strong>La femme en Islam</strong><small>Valeur · droits · savoir · couple · société</small></button>
+          <button class="learn-card" aria-pressed="false" data-faith-category="body"><span class="learn-emoji">🌙</span><strong>Mon corps & ma pratique</strong><small>Cycle · purification · prière · jeûne · Coran</small></button>
+          <button class="learn-card" aria-pressed="false" data-faith-category="spiritual"><span class="learn-emoji">🤍</span><strong>Ma relation avec Allah</strong><small>Du‘â · gratitude · tawakkul · espérance</small></button>
+          <button class="learn-card" aria-pressed="false" data-faith-category="ramadan"><span class="learn-emoji">✨</span><strong>Ramadan au féminin</strong><small>Cycle · jeûne · rattrapage · spiritualité</small></button>
+          <button class="learn-card" aria-pressed="false" data-faith-category="life"><span class="learn-emoji">🌿</span><strong>Ma vie de femme musulmane</strong><small>Célibat · mariage · maternité · séparation · ménopause</small></button>
+          <button class="learn-card" aria-pressed="false" data-faith-category="women"><span class="learn-emoji">📖</span><strong>Femmes qui nous inspirent</strong><small>Parcours documentés de femmes de l’histoire islamique</small></button>
+        </div>
+
+        <div class="learn-section-title faith-section-head"><span>Questions & repères</span><small id="faithResultsCount" aria-live="polite">—</small></div>
+        <div class="card faith-list" id="faithArticleList" aria-label="Fiches disponibles"></div>
+
+        <div class="learn-tools" aria-label="Outils de lecture">
+          <button class="mini-btn" id="faithFavoritesBtn">♡ Mes lectures</button>
+          <button class="mini-btn" id="faithBooksBtn">📚 Ouvrages</button><button class="mini-btn" id="faithMethodBtn">Sources & méthodologie</button>
+        </div>
+        <Nav active="cycle"></Nav>
+      </section>
+
+<!-- 9 -->
+      <section class="screen" data-screen="9">
+        <div class="screen-head"><button class="iconbtn" onclick="go(5)" aria-label="Retour au journal"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma muhâsabah</h2><span></span></div>
+        <div class="reflection-page-intro">
+          <span class="reflection-page-kicker">PRENDRE DU RECUL</span>
+          <strong>Relire une période avec douceur</strong>
+          <p>Choisis une période, puis note seulement ce qui t’aide. Les 8 pistes sont facultatives et tes réponses sont enregistrées au fil de l’écriture.</p>
+        </div>
+        <div class="calendar-top reflection-tabs" id="reflectionTabs" role="tablist" aria-label="Période de réflexion"><button class="active" role="tab" aria-selected="true" data-period="week">Semaine</button><button role="tab" aria-selected="false" data-period="month">Mois</button><button role="tab" aria-selected="false" data-period="year">Année</button></div>
+        <div class="period-nav reflection-period-nav" aria-label="Navigation entre les périodes"><button class="round" id="periodPrev" aria-label="Période précédente">‹</button><div class="reflection-period-copy"><small>Période consultée</small><strong id="reflectionPeriodLabel">—</strong></div><button class="round" id="periodNext" aria-label="Période suivante">›</button></div>
+        <div class="reflection-guide"><span>8 pistes de réflexion</span><span aria-hidden="true">·</span><span>Tu peux laisser des réponses vides</span></div>
+        <div class="card reflection reflection-period-card">
+          <div class="section-title" id="reflectionTitle">Cette semaine…</div>
+          <div class="prompt"><div class="prompt-head"><div class="dot">✧</div><span>Ce qui a rempli mon cœur</span></div><textarea data-period-field="heart" aria-label="Ce qui a rempli mon cœur" placeholder="Écris quelques mots…"></textarea></div>
+<div class="prompt"><div class="prompt-head"><div class="dot">☁</div><span>Une difficulté que j’ai rencontrée</span></div><textarea data-period-field="challenge" aria-label="Une difficulté que j’ai rencontrée" placeholder="Écris quelques mots…"></textarea></div>
+<div class="prompt"><div class="prompt-head"><div class="dot">♡</div><span>Une chose dont je suis fière</span></div><textarea data-period-field="proud" aria-label="Une chose dont je suis fière" placeholder="Écris quelques mots…"></textarea></div>
+<div class="prompt"><div class="prompt-head"><div class="dot">◉</div><span>Une chose que je souhaite améliorer</span></div><textarea data-period-field="improve" aria-label="Une chose que je souhaite améliorer" placeholder="Écris quelques mots…"></textarea></div>
+<div class="prompt"><div class="prompt-head"><div class="dot">◌</div><span>Ce que j’ai appris sur moi-même</span></div><textarea data-period-field="self" aria-label="Ce que j’ai appris sur moi-même" placeholder="Écris quelques mots…"></textarea></div>
+<div class="prompt"><div class="prompt-head"><div class="dot">✧</div><span>Ce que j’ai appris sur ma relation avec Allah</span></div><textarea data-period-field="relationship" aria-label="Ce que j’ai appris sur ma relation avec Allah" placeholder="Écris quelques mots…"></textarea></div>
+<div class="prompt"><div class="prompt-head"><div class="dot">♡</div><span>Ma du‘â pour la période à venir</span></div><textarea data-period-field="duaNext" aria-label="Ma du‘â pour la période à venir" placeholder="Écris quelques mots…"></textarea></div>
+<div class="prompt"><div class="prompt-head"><div class="dot">◉</div><span>Mon intention pour la période à venir</span></div><textarea data-period-field="intentionNext" aria-label="Mon intention pour la période à venir" placeholder="Écris quelques mots…"></textarea></div>
+        </div>
+        <Nav active="journal"></Nav>
+      </section>
+
+      <!-- 10 -->
+      <section class="screen" data-screen="10">
+        <div class="screen-head"><button class="iconbtn" onclick="go(1)" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Moi</h2><button class="iconbtn" id="profileSettingsBtn" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="profile-page-intro"><span class="profile-page-kicker">MON ESPACE</span><strong>Mes repères et mes réglages</strong><p>Retrouve ici ta progression, tes espaces personnels et les réglages de l’application.</p></div>
+        <div class="card profile-identity-card">
+          <div class="profile-top"><div class="avatar" aria-hidden="true"></div><div><div class="serif" style="font-size:15px" id="profileDisplayName">Mon espace personnel</div><div class="subtle">Toujours un pas vers Allah ♡</div></div><button class="mini-btn profile-name-action" id="profileNameBtn" type="button">Modifier le nom</button></div>
+        </div>
+        <div class="profile-section-label">Mon chemin</div>
+        <div class="card settings-list profile-settings-group">
+          <div class="row profile-action" data-profile-panel="progress"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="target"></span></div><div style="flex:1"><strong>Ma progression</strong><small>Journal · habitudes · objectifs</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="objectives"><div class="setting-ico" style="background:linear-gradient(145deg,#fff4e9,#ecc6a3);color:#9e5e2d"><span class="svg-icon" data-icon="heart-fill"></span></div><div style="flex:1"><strong>Mes objectifs</strong><small>Mon chemin vers Allah</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="habits"><div class="setting-ico" style="background:linear-gradient(145deg,#eff8ef,#bfdec4);color:#347246"><span class="svg-icon" data-icon="leaf"></span></div><div style="flex:1"><strong>Mes habitudes</strong><small>Cultiver ce qui me fait du bien</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="garden"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="leaf"></span></div><div style="flex:1"><strong>Mon jardin</strong><small>Intentions et choses à cultiver</small></div><span>›</span></div>
+        </div>
+        <div class="profile-section-label">Mes espaces</div>
+        <div class="card settings-list profile-settings-group">
+          <div class="row profile-action" data-profile-panel="notes"><div class="setting-ico" style="background:linear-gradient(145deg,#f3f8fb,#cbdae4);color:#3b647a"><span class="svg-icon" data-icon="notebook"></span></div><div style="flex:1"><strong>Mes notes</strong><small>Un espace libre</small></div><span>›</span></div>
+        </div>
+        <div class="profile-section-label">Application & données</div>
+        <div class="card settings-list profile-settings-group">
+          <div class="row profile-action" data-profile-panel="appearance"><div class="setting-ico" style="background:linear-gradient(145deg,#fff0f3,#eac2ca);color:#a6314b"><span class="svg-icon" data-icon="heart"></span></div><div style="flex:1"><strong>Thème et apparence</strong><small>Clair / Sombre</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="privacy"><div class="setting-ico" style="background:linear-gradient(145deg,#f2f6fb,#c8d6e6);color:#365a7a"><span class="svg-icon" data-icon="lock"></span></div><div style="flex:1"><strong>Confidentialité</strong><small>Données conservées sur cet appareil</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="install"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="upload"></span></div><div style="flex:1"><strong>Installer l’application</strong><small>Ajouter Jardin du Cœur à l’écran d’accueil</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="backup"><div class="setting-ico" style="background:linear-gradient(145deg,#f3f8fb,#cbdae4);color:#3b647a"><span class="svg-icon" data-icon="upload"></span></div><div style="flex:1"><strong>Sauvegarde / Export</strong><small>Exporter ou restaurer mon journal</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="about"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="info"></span></div><div style="flex:1"><strong>À propos</strong><small>Version 2.1.12 PWA · build 268</small></div><span>›</span></div>
+        </div>
+        <Nav active="profile"></Nav>
+      </section>
+    </div>
+  </div>
+</main>
+
+
+<div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head"><h3 id="modalTitle">—</h3><button class="modal-close" id="modalClose" aria-label="Fermer">×</button></div>
+    <div id="modalBody"></div>
+  </div>
+</div>
+<input type="file" id="importFile" accept="application/json" class="hidden" aria-label="Importer une sauvegarde JSON">
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<script src="./icons-ui.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

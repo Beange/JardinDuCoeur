@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V178",
+  "auditId": "french-bulk-fifth-pass-v178",
+  "purpose": "Passage groupé de 20 structures encore en attente; promotion uniquement sur traduction française publiée, complète, traçable et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "N-005",
+      "N-006",
+      "N-009",
+      "N-011",
+      "N-013",
+      "N-015",
+      "N-016",
+      "N-017",
+      "N-020",
+      "N-023",
+      "N-026",
+      "N-027",
+      "N-029",
+      "N-030",
+      "N-034",
+      "N-050",
+      "N-051",
+      "N-054",
+      "N-055",
+      "N-056"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "N-056"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "N-056",
+      "primaryRef": "Sahih al-Bukhari 6382",
+      "narrator": "Jabir",
+      "publishedFrenchTranslation": "Jâbir ibn 'Abdillâh (qu'Allah l'agrée) relate : Le messager d'Allah (sur lui la paix et le salut) nous apprenait à consulter Allah dans toute chose, comme il nous apprenait les sourates du Coran. Il disait : \"quand quelqu'un pense à faire quelque chose, qu'il accomplisse deux unités de prière, en dehors de ce qui est obligatoire et dise ensuite : « ô, Allah ! Je Te consulte par Ton savoir, je Te demande de la force par Ta force et j'implore Ton immense grâce. Car Tu peux, alors que je ne peux pas, Tu sais, alors que je ne sais pas et Tu es le grand connaisseur des invisibles. Ô, Allah ! Si Tu sais que cette chose est bonne pour ma religion, ma vie et mon avenir - ou : \"mon présent et mon avenir\" - alors destine-la moi, facilite-la moi et fais en une bénédiction pour moi. Et si Tu sais que cette chose est mauvaise pour ma religion, ma vie et mon avenir - ou : \"mon présent et mon avenir\" - alors détourne-la de moi et détourne-moi d'elle; destine-moi le bien où qu'il soit et fais que j'en sois satisfait\". Il dit : \"et il cite la chose qu'il veut faire.\"",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/downloads/pdf/Hadeethenc_fr/Hadeethenc_fr_part3.pdf",
+      "sourceHadithId": 780,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "historical-fr-pdf-1438-12-30",
+      "sourceReferenceDisplayed": "Authentique; références HadeethEnc incluant Sahih al-Bukhari 6382",
+      "sourceGradeDisplayed": "Authentique",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "N-005",
+    "N-006",
+    "N-009",
+    "N-011",
+    "N-013",
+    "N-015",
+    "N-016",
+    "N-017",
+    "N-020",
+    "N-023",
+    "N-026",
+    "N-027",
+    "N-029",
+    "N-030",
+    "N-034",
+    "N-050",
+    "N-051",
+    "N-054",
+    "N-055"
+  ],
+  "heldCount": 19,
+  "notes": [
+    "N-056: identité confirmée par le rapporteur Jâbir, le matn complet de l’istikhârah et la référence bibliographique HadeethEnc incluant Sahih al-Bukhari 6382. La traduction française verbatim provient de la publication PDF historique HadeethEnc.",
+    "N-005, N-009 et N-016 restent notamment bloqués par un avertissement explicite de révision déjà constaté; les autres ne sont pas promus sans preuve française satisfaisant simultanément tous les critères."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 74,
+    "pendingPublishedFrenchCanonicalEntries": 66
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

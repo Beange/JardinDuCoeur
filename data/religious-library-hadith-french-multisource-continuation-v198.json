@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V198",
+  "auditId": "HADITH_FRENCH_MULTISOURCE_CONTINUATION_V198",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-005",
+      "RC-006",
+      "RC-046",
+      "RC-057",
+      "RC-065"
+    ],
+    "reviewedCount": 5
+  },
+  "promotedCanonicalIds": [
+    "RC-005",
+    "RC-006",
+    "RC-046",
+    "RC-057",
+    "RC-065"
+  ],
+  "heldCanonicalIds": [],
+  "sourceDocument": {
+    "publisher": "IslamHouse.com",
+    "title": "Les 40 hadiths de l’imam An-Nawawi",
+    "translator": "Rachid Maach",
+    "url": "https://d1.islamhouse.com/data/fr/ih_books/single/fr-40-hadiths.pdf",
+    "edition": "1ère édition, 2021",
+    "rightsNotice": "Libre de droits"
+  },
+  "findings": [
+    {
+      "canonicalId": "RC-005",
+      "primaryRef": "Sahih Muslim 1907a",
+      "decision": "PROMOTE",
+      "reason": "Hadith 1 des 40 d’An-Nawawi; narrateur ʿUmar, matn des intentions et de la hijra; recoupé avec Muslim 1907a / Bukhari 1."
+    },
+    {
+      "canonicalId": "RC-006",
+      "primaryRef": "Sahih al-Bukhari 13",
+      "decision": "PROMOTE",
+      "reason": "Hadith 13 des 40 d’An-Nawawi; Anas et matn concordent avec Bukhari 13 / Muslim 45a."
+    },
+    {
+      "canonicalId": "RC-046",
+      "primaryRef": "Sahih al-Bukhari 2989",
+      "decision": "PROMOTE",
+      "reason": "Hadith 26 des 40 d’An-Nawawi; Abû Hurayrah et les cinq éléments distinctifs concordent avec Bukhari 2989 / Muslim 1009."
+    },
+    {
+      "canonicalId": "RC-057",
+      "primaryRef": "Sahih al-Bukhari 6416",
+      "decision": "PROMOTE",
+      "reason": "Hadith 40 des 40 d’An-Nawawi; Ibn ʿUmar, conseil étranger/voyageur et suite matin/soir-santé/mort concordent exactement avec Bukhari 6416."
+    },
+    {
+      "canonicalId": "RC-065",
+      "primaryRef": "Sahih Muslim 2564a",
+      "decision": "PROMOTE",
+      "reason": "Hadith 35 des 40 d’An-Nawawi; Abû Hurayrah et le long matn fraternité/jalousie/taqwâ/inviolabilité concordent avec Muslim 2564a."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 90,
+    "pendingPublishedFrenchCanonicalEntries": 50
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "revisionWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

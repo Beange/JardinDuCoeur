@@ -1,0 +1,2159 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V79",
+  "auditId": "GAP-RECOVERY-AUDIT-V70-CUMULATIVE-001-071",
+  "purpose": "Audit contrôlé cumulatif de récupération sur GAP-001..GAP-071 à partir des matériaux locaux. Aucun objet religieux n’est assigné sans preuve spécifique.",
+  "scope": {
+    "gapRange": [
+      "GAP-001",
+      "GAP-071"
+    ],
+    "gapCount": 71,
+    "evidenceBoundary": "LOCAL_PROJECT_MATERIALS",
+    "webLookupPerformed": false,
+    "webLookupReason": "Impossible de rechercher une identité religieuse déterminée sans aucun indice propre; une recherche thématique libre risquerait de fabriquer une correspondance.",
+    "batches": [
+      {
+        "batch": "V63-BATCH-001",
+        "range": [
+          "GAP-001",
+          "GAP-010"
+        ],
+        "count": 10
+      },
+      {
+        "batch": "V64-BATCH-002",
+        "range": [
+          "GAP-011",
+          "GAP-020"
+        ],
+        "count": 10
+      },
+      {
+        "batch": "V65-BATCH-003",
+        "range": [
+          "GAP-021",
+          "GAP-030"
+        ],
+        "count": 10
+      },
+      {
+        "batch": "V66-BATCH-004",
+        "range": [
+          "GAP-031",
+          "GAP-040"
+        ],
+        "count": 10
+      },
+      {
+        "batch": "V67-BATCH-005",
+        "range": [
+          "GAP-041",
+          "GAP-050"
+        ],
+        "count": 10
+      },
+      {
+        "batch": "V68-BATCH-006",
+        "range": [
+          "GAP-051",
+          "GAP-060"
+        ],
+        "count": 10
+      },
+      {
+        "batch": "V69-BATCH-007",
+        "range": [
+          "GAP-061",
+          "GAP-070"
+        ],
+        "count": 10
+      },
+      {
+        "batch": "V70-BATCH-008",
+        "range": [
+          "GAP-071",
+          "GAP-071"
+        ],
+        "count": 1
+      }
+    ]
+  },
+  "method": {
+    "checks": [
+      "présence d’un H-ID",
+      "présence d’un R-ID",
+      "référence religieuse explicite",
+      "narrateur ou matn associé au GAP",
+      "occurrences résiduelles du GAP-ID hors registres administratifs"
+    ],
+    "identityThreshold": "Une identité n’est matérialisée que si des preuves spécifiques relient le GAP à un objet religieux déterminé."
+  },
+  "results": [
+    {
+      "gapId": "GAP-001",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "README.md",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "ETAT-DU-PROJET.md",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-data-contract-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "docs/VALIDATION-RELEASE-V54.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-RELEASE-V58.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-HADITH-CONSOLIDATION-V59.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-STRUCTURE.txt",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "docs/VALIDATION-HADITH-CONSOLIDATION-V45.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-RELEASE-V60.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-RELEASE-V56.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-RELEASE-V57.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-HADITH-CONSOLIDATION-V43.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-RELEASE-V55.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-HADITH-CONSOLIDATION-V46.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        },
+        {
+          "path": "docs/VALIDATION-HADITH-CONSOLIDATION-V44.txt",
+          "classification": "REVIEWED_NONIDENTITY_MENTION"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-002",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-003",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-004",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-005",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-006",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-007",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-008",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-009",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-010",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-011",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-012",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-013",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-014",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-015",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-016",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-017",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-018",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-019",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-020",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-021",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-022",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-023",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-024",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-025",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-026",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-027",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-028",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-029",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-030",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-031",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-032",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-033",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-034",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-035",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-036",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-037",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-038",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-039",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-040",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-041",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-042",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-043",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-044",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-045",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-046",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-047",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-048",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-049",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-050",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-051",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-052",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-053",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-054",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-055",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-056",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-057",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-058",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-059",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-060",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-061",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-062",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-063",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-064",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-065",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-066",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-067",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-068",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-069",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-070",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les occurrences trouvées sont administratives; aucune identité n’est inférée."
+    },
+    {
+      "gapId": "GAP-071",
+      "priorStatus": "UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "reference": null,
+      "localOccurrences": [
+        {
+          "path": "data/religious-library-corpus-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-gaps-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-hadith-coverage-ledger-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        },
+        {
+          "path": "data/religious-library-referential-integrity-v1.json",
+          "classification": "ADMINISTRATIVE_ECHO"
+        }
+      ],
+      "recoverableIdentityEvidenceFound": false,
+      "disposition": "REMAINS_UNMATERIALIZED_IDENTITY_UNKNOWN",
+      "reason": "Aucun indice religieux propre (référence, H-ID, R-ID, narrateur ou matn) n’est disponible pour établir une identité. Les autres occurrences locales sont des mentions administratives ou des rapports de validation historiques; aucune identité n’est inférée."
+    }
+  ],
+  "summary": {
+    "auditedGaps": 71,
+    "newReligiousIdentitiesRecovered": 0,
+    "gapsRemainingAfterAudit": 71,
+    "hadithCanonicalStructuresAfterAudit": 69,
+    "materializedStructuresTotalAfterAudit": 112,
+    "canonicalTargetTotal": 183
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "historicalMappingsInvented": false,
+    "gapIdentityInvented": false,
+    "r077StatusChanged": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

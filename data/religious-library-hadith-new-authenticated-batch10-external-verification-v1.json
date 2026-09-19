@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-BATCH10-EXTERNAL-VERIFICATION-V1",
+  "purpose": "External exact-reference verification and duplicate adjudication for N-045..N-047.",
+  "entries": [
+    {
+      "id": "N-045",
+      "inheritedCandidateReference": "Sahih al-Bukhari 6471",
+      "verifiedReference": "Sahih al-Bukhari 6475",
+      "inBookReference": "Book 81, Hadith 64",
+      "narrator": "Abu Huraira",
+      "themeVerified": "good speech or silence; neighbor; guest",
+      "result": "CORRECTED_AND_REJECTED_DUPLICATE",
+      "duplicateOf": [
+        "RC-007",
+        "RC-037"
+      ],
+      "source": "Sunnah.com"
+    },
+    {
+      "id": "N-046",
+      "inheritedCandidateReference": "Sahih Muslim 2693",
+      "verifiedReference": "Sahih Muslim 2700a, 2700b",
+      "inBookReference": "Book 48, Hadith 49",
+      "narrator": "Al-Agharr Abu Muslim from Abu Huraira and Abu Sa'id al-Khudri",
+      "themeVerified": "dhikr gathering; angels; mercy; tranquility; Allah mentions them",
+      "result": "CORRECTED_AND_REJECTED_DUPLICATE",
+      "duplicateOf": [
+        "RC-059"
+      ],
+      "source": "Sunnah.com"
+    },
+    {
+      "id": "N-047",
+      "inheritedCandidateReference": "Sahih al-Bukhari 6019",
+      "verifiedReference": "Sahih Muslim 2699a",
+      "inBookReference": "Book 48, Hadith 48",
+      "narrator": "Abu Huraira",
+      "themeVerified": "relieving distress; easing hardship; helping one's brother; knowledge and Qur'an gathering",
+      "result": "CORRECTED_AND_REJECTED_DUPLICATE",
+      "duplicateOf": [
+        "RC-059"
+      ],
+      "source": "Sunnah.com"
+    }
+  ],
+  "assertions": {
+    "newCanonicalStructures": 39,
+    "historicalHIdsRecovered": 0,
+    "canonicalCoverageUnchanged": true,
+    "hadithCanonicalStructures": 108,
+    "remainingUnmaterializedPositions": 32
+  }
+}

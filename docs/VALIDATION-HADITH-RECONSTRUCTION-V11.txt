@@ -1,0 +1,25 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V11 — CORRECTION D'AUDIT
+
+H-ID historiques récupérés .............. 13/140
+H-ID historiques non retrouvés ......... 127/140
+Candidats reconstruction bruts ......... 82/127
+Nouveaux candidats V11 .................. 0
+Places brutes restantes ................ 45
+
+CORRECTIONS
+R-080 : Bukhari 5984 -> Bukhari 5991 ..... CORRIGÉ
+         in-book: Book 78, Hadith 22
+R-082 : Bukhari 5991 -> Bukhari 6009 ..... CORRIGÉ
+         in-book: Book 78, Hadith 40
+
+CONFIRMATIONS
+R-039 : Bukhari 6114, Book 78 H141 ........ CONFIRMÉ
+R-040 : Muslim 2609a, Book 45 H140 ........ CONFIRMÉ
+
+Aucun ancien H-ID inventé ................ PASS
+countsAsEntry=false ...................... PASS
+productionReady=false .................... PASS
+randomHome=false ......................... PASS
+provenance française ..................... PENDING
+
+V11 privilégie la correction des références avant toute nouvelle extension.

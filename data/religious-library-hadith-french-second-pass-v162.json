@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V162",
+  "auditId": "religious-library-hadith-french-second-pass-v162",
+  "purpose": "Second passage ciblé des entrées en attente; promotion uniquement des traductions françaises HadeethEnc vérifiées sans avertissement explicite de révision.",
+  "counts": {
+    "newlyPromoted": 1,
+    "publishedFrenchCanonicalEntries": 42,
+    "pendingPublishedFrenchCanonicalEntries": 98
+  },
+  "promoted": [
+    {
+      "canonicalId": "N-004",
+      "primaryRef": "Sahih Muslim 2162a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5343",
+      "sourceHadithId": 5343,
+      "matchingBasis": "matn arabe + rapporteur Abû Hurayrah + collection Muslim + référence affichée 2162; suffixe canonique 2162a non distingué par HadeethEnc",
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "heldForRevisionWarning": [
+    {
+      "canonicalId": "N-005",
+      "primaryRef": "Sahih Muslim 2586a",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/4969",
+      "reason": "La page française affiche explicitement que la traduction a besoin de plus de révision et de vérification."
+    }
+  ],
+  "notPromoted": [],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

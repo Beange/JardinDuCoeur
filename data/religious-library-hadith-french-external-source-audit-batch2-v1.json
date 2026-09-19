@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V142",
+  "registerId": "JDC-HADITH-FRENCH-EXTERNAL-SOURCE-AUDIT-BATCH2-V1",
+  "purpose": "Audit externe des sources françaises publiées pour RC-006 et RC-007, sans promotion lorsque la page officielle porte un avertissement de révision ou ne matérialise pas exactement la référence primaire canonique.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "sourceTranslationVersion": "v1.17.0",
+  "counts": {
+    "canonicalStructuresAudited": 2,
+    "officialFrenchPagesLocated": 2,
+    "pagesWithExplicitRevisionWarning": 2,
+    "exactPrimaryReferencesDisplayed": 1,
+    "translationsPromoted": 0
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-006",
+      "primaryRef": "Sahih al-Bukhari 13",
+      "sourceHadithId": 4717,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/4717",
+      "sourceReferenceDisplayed": "Sahîh Al Bukhârî - 13",
+      "sourceGradeDisplayed": "Authentique; rapporté par Al Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": true,
+      "revisionWarning": "Cette traduction a besoin d’être davantage révisée et vérifiée.",
+      "decision": "BLOCKED_EXPLICIT_REVISION_WARNING",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-007",
+      "primaryRef": "Sahih al-Bukhari 6018",
+      "parallelRef": "Sahih Muslim 47a",
+      "sourceHadithId": 5437,
+      "officialFrenchUrl": "https://hadeethenc.com/fr/browse/hadith/5437",
+      "sourceReferenceDisplayed": "Sahîh Muslim - 47",
+      "sourceGradeDisplayed": "Authentique; rapporté par Al Bukhârî et Muslim",
+      "explicitRevisionWarningObserved": true,
+      "revisionWarning": "Cette traduction a besoin d’être davantage révisée et vérifiée.",
+      "decision": "BLOCKED_EXPLICIT_REVISION_WARNING_AND_PRIMARY_REFERENCE_NOT_DISPLAYED",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

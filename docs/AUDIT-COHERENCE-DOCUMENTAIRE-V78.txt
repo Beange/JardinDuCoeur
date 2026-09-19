@@ -1,0 +1,31 @@
+JARDIN DU CŒUR — AUDIT DE COHÉRENCE DOCUMENTAIRE V78
+
+OBJET
+Vérifier que les documents et pointeurs décrivant l’état courant ne contiennent pas de référence de release ou de fichier devenue fausse, sans modifier les archives historiques.
+
+ANOMALIE CONFIRMÉE
+- Le manifeste courant indiquait hadithUnmappedClosureAudit = V75.
+- Il pointait vers docs/AUDIT-HADITH-UNMAPPED-CLOSURE-V75.txt.
+- La clôture UM réelle a été effectuée en V74.
+- Le fichier existant et autoritatif est docs/AUDIT-HADITH-UNMAPPED-CLOSURE-V74.txt.
+
+CORRECTION V78
+- Le libellé courant est corrigé de V75 vers V74.
+- Le pointeur courant est corrigé vers docs/AUDIT-HADITH-UNMAPPED-CLOSURE-V74.txt.
+- Le fichier historique V74 lui-même n’est pas réécrit.
+- Aucun objet religieux, mapping H-ID/R-ID, GAP, référence, matn ou narrateur n’est modifié.
+- R-077 reste REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED.
+
+ÉTAT RELIGIEUX INCHANGÉ
+- Qur’an : 43/43 dossiers.
+- Hadith : 69/140 structures canoniques matérialisées.
+- GAP : 71.
+- Total matérialisé : 112/183.
+- R-ID : 81/82 absorbés; R-077 quarantiné.
+- H-ID historiques récupérés : 13; 127 non récupérés et non inventés.
+- full183ObjectSerialization=PENDING.
+- productionReady=false.
+- index.html inchangé.
+
+DISPOSITION
+DOCUMENTARY_POINTER_CORRECTED_NO_RELIGIOUS_CHANGE

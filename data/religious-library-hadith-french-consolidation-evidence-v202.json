@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V202",
+  "registerId": "hadith-french-consolidation-evidence-v202",
+  "purpose": "Poursuivre matériellement la consolidation des 50 hadiths français restants sans suppression ni promotion non autorisée.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-022"
+    ],
+    "reviewedCount": 1
+  },
+  "counts": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 90,
+    "preservedFrenchToConsolidate": 50,
+    "newFinalPromotions": 0,
+    "newFullFrenchMatchesRecorded": 1
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-022",
+      "primaryRef": "Sahih al-Bukhari 5675",
+      "parallelRefs": [
+        "Sahih Muslim 2191a"
+      ],
+      "status": "FULL_FRENCH_MATCH_FOUND_REUSE_RIGHTS_HOLD",
+      "canonicalIdentityVerified": true,
+      "frenchSourceFound": true,
+      "fullMatnMatch": true,
+      "sources": [
+        {
+          "publisher": "IslamEnc / Encyclopédie islamique",
+          "url": "https://islamenc.com/fr/books/509",
+          "displayedReference": "Al Bukhârî n°5675",
+          "role": "AUTHORIZED_ECOSYSTEM_CANDIDATE_DOCUMENT"
+        },
+        {
+          "publisher": "Sunnah.com",
+          "url": "https://sunnah.com/bukhari/75/35",
+          "displayedReference": "Sahih al-Bukhari 5675; Book 75, Hadith 35",
+          "role": "CANONICAL_IDENTITY_CROSSCHECK"
+        }
+      ],
+      "decision": "PRESERVE_AND_HOLD",
+      "reason": "Le français complet et la référence exacte sont retrouvés, mais les droits/conditions de réutilisation de ce texte précis ne sont pas établis au niveau requis pour une republication canonique."
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "nonPolicySourcePromoted": false,
+    "canonicalReligiousIdentityChanged": false,
+    "canonicalHadithLoss": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

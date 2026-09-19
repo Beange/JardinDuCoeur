@@ -1,0 +1,828 @@
+{
+  "schemaVersion": 1,
+  "status": "work-in-progress",
+  "target": {
+    "total": 183,
+    "hadith": 140,
+    "quran": 43
+  },
+  "materialized": 30,
+  "quranSourceStandard": {
+    "provider": "QuranEnc",
+    "translation": "La traduction en français - Muhammad Hamidullah",
+    "version": "1.0.2",
+    "versionDate": "2025-07-02"
+  },
+  "entries": [
+    {
+      "id": "quran-094-005",
+      "type": "quran",
+      "canonical": true,
+      "reference": "94:5",
+      "surah": "As Sharh",
+      "arabicFull": "فَإِنَّ مَعَ ٱلۡعُسۡرِ يُسۡرًا",
+      "translationFull": "A côté de la difficulté est, certes, une facilité !",
+      "homeExcerpt": "A côté de la difficulté est, certes, une facilité !",
+      "excerptOf": "translationFull",
+      "themes": [
+        "difficulte",
+        "facilite",
+        "esperance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/en/browse/french_hameedullah/94/5"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-013-028",
+      "type": "quran",
+      "canonical": true,
+      "reference": "13:28",
+      "surah": "Ar Ra'd",
+      "arabicFull": "ٱلَّذِينَ ءَامَنُواْ وَتَطۡمَئِنُّ قُلُوبُهُم بِذِكۡرِ ٱللَّهِۗ أَلَا بِذِكۡرِ ٱللَّهِ تَطۡمَئِنُّ ٱلۡقُلُوبُ",
+      "translationFull": "ceux qui ont cru, et dont les cœurs se tranquillisent à l'évocation d'Allah. N'est ce point par l'évocation d'Allah que se tranquillisent les cœurs ?",
+      "homeExcerpt": "N'est ce point par l'évocation d'Allah que se tranquillisent les cœurs ?",
+      "excerptOf": "translationFull",
+      "themes": [
+        "dhikr",
+        "coeur",
+        "apaisement"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/13/28"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-002-286",
+      "type": "quran",
+      "canonical": true,
+      "reference": "2:286",
+      "surah": "Al Baqarah",
+      "arabicFull": "لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
+      "translationFull": "Allah n’impose à aucune âme une charge supérieure à sa capacité. Elle sera récompensée du bien qu’elle aura fait, punie du mal qu’elle aura fait. Seigneur ! Ne nous châtie pas s’il nous arrive d’oublier ou de commettre une erreur. Seigneur ! Ne nous charge pas d’un fardeau lourd comme Tu as chargé ceux qui vécurent avant nous. Seigneur ! Ne nous impose pas ce que nous ne pouvons supporter, efface nos fautes, pardonne-nous et fais nous miséricorde. Tu es Notre Maître, accorde-nous donc la victoire sur les peuples infidèles.",
+      "homeExcerpt": "Allah n’impose à aucune âme une charge supérieure à sa capacité.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "capacite",
+        "misericorde",
+        "invocation"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/2/286"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-002-186",
+      "type": "quran",
+      "canonical": true,
+      "reference": "2:186",
+      "surah": "Al Baqarah",
+      "arabicFull": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌۖ أُجِيبُ دَعۡوَةَ ٱلدَّاعِ إِذَا دَعَانِۖ فَلۡيَسۡتَجِيبُواْ لِي وَلۡيُؤۡمِنُواْ بِي لَعَلَّهُمۡ يَرۡشُدُونَ",
+      "translationFull": "Et quand Mes serviteurs t’interrogent sur Moi, alors Je suis tout proche: Je réponds à l’appel de celui qui M’invoque quand il M’invoque. Qu’ils répondent donc à Mon appel, et qu’ils croient en Moi, afin qu’ils soient bien guidés.",
+      "homeExcerpt": "Je suis tout proche: Je réponds à l’appel de celui qui M’invoque quand il M’invoque.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "invocation",
+        "proximite",
+        "guidance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/2/186"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-003-159",
+      "type": "quran",
+      "canonical": true,
+      "reference": "3:159",
+      "surah": "Al 'Imran",
+      "arabicFull": "فَبِمَا رَحۡمَةٖ مِّنَ ٱللَّهِ لِنتَ لَهُمۡۖ وَلَوۡ كُنتَ فَظًّا غَلِيظَ ٱلۡقَلۡبِ لَٱنفَضُّواْ مِنۡ حَوۡلِكَۖ فَٱعۡفُ عَنۡهُمۡ وَٱسۡتَغۡفِرۡ لَهُمۡ وَشَاوِرۡهُمۡ فِي ٱلۡأَمۡرِۖ فَإِذَا عَزَمۡتَ فَتَوَكَّلۡ عَلَى ٱللَّهِۚ إِنَّ ٱللَّهَ يُحِبُّ ٱلۡمُتَوَكِّلِينَ",
+      "translationFull": "C’est par quelque miséricorde de la part d’Allah que tu (Muḥammad) as été si doux envers eux! Mais si tu avais été rude, au cœur dur, ils se seraient enfuis de ton entourage. Pardonne-leur donc, et implore pour eux le pardon (d’Allah). Et consulte-les à propos des affaires; puis, une fois que tu t’es décidé, confie-toi donc à Allah. Allah aime, en vérité, ceux qui Lui font confiance.",
+      "homeExcerpt": "puis, une fois que tu t’es décidé, confie-toi donc à Allah.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "confiance",
+        "consultation",
+        "douceur"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/3/159"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-003-173",
+      "type": "quran",
+      "canonical": true,
+      "reference": "3:173",
+      "surah": "Al 'Imran",
+      "arabicFull": "ٱلَّذِينَ قَالَ لَهُمُ ٱلنَّاسُ إِنَّ ٱلنَّاسَ قَدۡ جَمَعُواْ لَكُمۡ فَٱخۡشَوۡهُمۡ فَزَادَهُمۡ إِيمَٰنٗا وَقَالُواْ حَسۡبُنَا ٱللَّهُ وَنِعۡمَ ٱلۡوَكِيلُ",
+      "translationFull": "Certes, ceux auxquels l’on disait : \"Les gens se sont rassemblés contre vous; craignez-les !\" - Cela accrut leur foi - et ils dirent : \"Allah nous suffit; et Il est notre meilleur garant !\"",
+      "homeExcerpt": "Allah nous suffit; et Il est notre meilleur garant !",
+      "excerptOf": "translationFull",
+      "themes": [
+        "confiance",
+        "foi",
+        "crainte"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/3/173"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-029-069",
+      "type": "quran",
+      "canonical": true,
+      "reference": "29:69",
+      "surah": "Al 'Ankabut",
+      "arabicFull": "وَٱلَّذِينَ جَٰهَدُواْ فِينَا لَنَهۡدِيَنَّهُمۡ سُبُلَنَاۚ وَإِنَّ ٱللَّهَ لَمَعَ ٱلۡمُحۡسِنِينَ",
+      "translationFull": "Et quant à ceux qui luttent pour Notre cause, Nous les guiderons certes sur Nos sentiers, Allah est en vérité avec les bienfaisants.",
+      "homeExcerpt": "Et quant à ceux qui luttent pour Notre cause, Nous les guiderons certes sur Nos sentiers",
+      "excerptOf": "translationFull",
+      "themes": [
+        "effort",
+        "guidance",
+        "bienfaisance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/29/69"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-094-006",
+      "type": "quran",
+      "canonical": true,
+      "reference": "94:6",
+      "surah": "As Sharh",
+      "arabicFull": "إِنَّ مَعَ ٱلۡعُسۡرِ يُسۡرٗا",
+      "translationFull": "A côté de la difficulté, est certes, une facilité !",
+      "homeExcerpt": "A côté de la difficulté, est certes, une facilité !",
+      "excerptOf": "translationFull",
+      "themes": [
+        "difficulte",
+        "facilite",
+        "esperance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/94/6"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-039-053",
+      "type": "quran",
+      "canonical": true,
+      "reference": "39:53",
+      "surah": "Az Zumar",
+      "arabicFull": "۞ قُلۡ يَٰعِبَادِيَ ٱلَّذِينَ أَسۡرَفُواْ عَلَىٰٓ أَنفُسِهِمۡ لَا تَقۡنَطُواْ مِن رَّحۡمَةِ ٱللَّهِۚ إِنَّ ٱللَّهَ يَغۡفِرُ ٱلذُّنُوبَ جَمِيعًاۚ إِنَّهُۥ هُوَ ٱلۡغَفُورُ ٱلرَّحِيمُ",
+      "translationFull": "Dis : \"Ô Mes serviteurs qui avez commis des excès à votre propre détriment, ne désespérez pas de la miséricorde d’Allah. Car Allah pardonne tous les péchés. Oui, c’est Lui le Pardonneur, le Très Miséricordieux.\"",
+      "homeExcerpt": "ne désespérez pas de la miséricorde d’Allah.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "misericorde",
+        "pardon",
+        "esperance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/39/53"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-002-152",
+      "type": "quran",
+      "canonical": true,
+      "reference": "2:152",
+      "surah": "Al Baqarah",
+      "arabicFull": "فَٱذۡكُرُونِيٓ أَذۡكُرۡكُمۡ وَٱشۡكُرُواْ لِي وَلَا تَكۡفُرُونِ",
+      "translationFull": "Souvenez-vous de Moi donc, Je Me souviendrai de vous. Remerciez- Moi et ne soyez pas ingrats envers Moi !",
+      "homeExcerpt": "Souvenez-vous de Moi donc, Je Me souviendrai de vous.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "dhikr",
+        "gratitude",
+        "souvenir"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/2/152"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-040-060",
+      "type": "quran",
+      "canonical": true,
+      "reference": "40:60",
+      "surah": "Ghâfir",
+      "arabicFull": "وَقَالَ رَبُّكُمُ ٱدۡعُونِيٓ أَسۡتَجِبۡ لَكُمۡۚ إِنَّ ٱلَّذِينَ يَسۡتَكۡبِرُونَ عَنۡ عِبَادَتِي سَيَدۡخُلُونَ جَهَنَّمَ دَاخِرِينَ",
+      "translationFull": "Et votre Seigneur dit : \"Appelez-Moi, Je vous répondrai. Ceux qui, par orgueil, se refusent à M’adorer entreront bientôt dans l’Enfer, humiliés.\"",
+      "homeExcerpt": "Appelez-Moi, Je vous répondrai.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "invocation",
+        "adoration",
+        "reponse"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/40/60"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-057-004",
+      "type": "quran",
+      "canonical": true,
+      "reference": "57:4",
+      "surah": "Al Hadîd",
+      "arabicFull": "هُوَ ٱلَّذِي خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ فِي سِتَّةِ أَيَّامٖ ثُمَّ ٱسۡتَوَىٰ عَلَى ٱلۡعَرۡشِۖ يَعۡلَمُ مَا يَلِجُ فِي ٱلۡأَرۡضِ وَمَا يَخۡرُجُ مِنۡهَا وَمَا يَنزِلُ مِنَ ٱلسَّمَآءِ وَمَا يَعۡرُجُ فِيهَاۖ وَهُوَ مَعَكُمۡ أَيۡنَ مَا كُنتُمۡۚ وَٱللَّهُ بِمَا تَعۡمَلُونَ بَصِيرٞ",
+      "translationFull": "C’est Lui qui a créé les cieux et la Terre en six jours puis Il S’est établi sur le Trône ; Il sait ce qui pénètre dans la terre et ce qui en sort, et ce qui descend du ciel et ce qui y monte, et Il est avec vous où que vous soyez. Et Allah observe parfaitement ce que vous faites.",
+      "homeExcerpt": "et Il est avec vous où que vous soyez.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "presence",
+        "science",
+        "confiance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/57/4"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-065-003",
+      "type": "quran",
+      "canonical": true,
+      "reference": "65:3",
+      "surah": "At Talâq",
+      "arabicFull": "وَيَرۡزُقۡهُ مِنۡ حَيۡثُ لَا يَحۡتَسِبُۚ وَمَن يَتَوَكَّلۡ عَلَى ٱللَّهِ فَهُوَ حَسۡبُهُۥٓۚ إِنَّ ٱللَّهَ بَٰلِغُ أَمۡرِهِۦۚ قَدۡ جَعَلَ ٱللَّهُ لِكُلِّ شَيۡءٖ قَدۡرٗا",
+      "translationFull": "et lui accordera Ses dons par [des moyens] sur lesquels il ne comptait pas. Et quiconque place sa confiance en Allah, Il [Allah] lui suffit. Allah atteint ce qu’Il Se propose, et Allah a assigné une mesure à chaque chose.",
+      "homeExcerpt": "Et quiconque place sa confiance en Allah, Il [Allah] lui suffit.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "confiance",
+        "subsistance",
+        "decret"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/65/3"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-093-003",
+      "type": "quran",
+      "canonical": true,
+      "reference": "93:3",
+      "surah": "Ad Dhuhâ",
+      "arabicFull": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "translationFull": "Ton Seigneur ne t’a ni abandonné, ni détesté.",
+      "homeExcerpt": "Ton Seigneur ne t’a ni abandonné, ni détesté.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "reconfort",
+        "esperance",
+        "proximite"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/93/3"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-093-005",
+      "type": "quran",
+      "canonical": true,
+      "reference": "93:5",
+      "surah": "Ad Dhuhâ",
+      "arabicFull": "وَلَسَوۡفَ يُعۡطِيكَ رَبُّكَ فَتَرۡضَىٰٓ",
+      "translationFull": "Ton Seigneur t’accordera certes [Ses faveurs], et alors tu seras satisfait.",
+      "homeExcerpt": "Ton Seigneur t’accordera certes [Ses faveurs], et alors tu seras satisfait.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "esperance",
+        "faveur",
+        "satisfaction"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/93/5"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-012-087",
+      "type": "quran",
+      "canonical": true,
+      "reference": "12:87",
+      "surah": "Yûsuf",
+      "arabicFull": "يَٰبَنِيَّ ٱذۡهَبُواْ فَتَحَسَّسُواْ مِن يُوسُفَ وَأَخِيهِ وَلَا تَاْيۡـَٔسُواْ مِن رَّوۡحِ ٱللَّهِۖ إِنَّهُۥ لَا يَاْيۡـَٔسُ مِن رَّوۡحِ ٱللَّهِ إِلَّا ٱلۡقَوۡمُ ٱلۡكَٰفِرُونَ",
+      "translationFull": "Ô mes fils ! Partez et enquérez-vous de Joseph et de son frère ! Et ne désespérez pas de la miséricorde d’Allah. Ce sont seulement les gens mécréants qui désespèrent de la miséricorde d’Allah.”",
+      "homeExcerpt": "Et ne désespérez pas de la miséricorde d’Allah.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "esperance",
+        "misericorde",
+        "perseverance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/12/87"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-016-128",
+      "type": "quran",
+      "canonical": true,
+      "reference": "16:128",
+      "surah": "An Nahl",
+      "arabicFull": "إِنَّ ٱللَّهَ مَعَ ٱلَّذِينَ ٱتَّقَواْ وَّٱلَّذِينَ هُم مُّحۡسِنُونَ",
+      "translationFull": "Certes, Allah est avec ceux qui Le craignent et ceux qui sont bienfaisants.",
+      "homeExcerpt": "Certes, Allah est avec ceux qui Le craignent et ceux qui sont bienfaisants.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "taqwa",
+        "bienfaisance",
+        "presence-divine"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/16/128"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-008-046",
+      "type": "quran",
+      "canonical": true,
+      "reference": "8:46",
+      "surah": "Al Anfâl",
+      "arabicFull": "وَأَطِيعُواْ ٱللَّهَ وَرَسُولَهُۥ وَلَا تَنَٰزَعُواْ فَتَفۡشَلُواْ وَتَذۡهَبَ رِيحُكُمۡۖ وَٱصۡبِرُوٓاْۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّٰبِرِينَ",
+      "translationFull": "Et obéissez à Allah et à Son Messager ! Et ne vous disputez pas, sinon vous fléchirez et perdrez votre force. Et soyez endurants, car Allah est avec les endurants.",
+      "homeExcerpt": "Et soyez endurants, car Allah est avec les endurants.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "patience",
+        "unite",
+        "obeissance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/8/46"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-020-046",
+      "type": "quran",
+      "canonical": true,
+      "reference": "20:46",
+      "surah": "Tâ Hâ",
+      "arabicFull": "قَالَ لَا تَخَافَآۖ إِنَّنِي مَعَكُمَآ أَسۡمَعُ وَأَرَىٰ",
+      "translationFull": "Il dit: \"Ne craignez rien. Je suis avec vous: J’entends et Je vois.",
+      "homeExcerpt": "Ne craignez rien. Je suis avec vous: J’entends et Je vois.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "confiance",
+        "reassurance",
+        "presence-divine"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/20/46"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-020-114",
+      "type": "quran",
+      "canonical": true,
+      "reference": "20:114",
+      "surah": "Tâ Hâ",
+      "arabicFull": "فَتَعَٰلَى ٱللَّهُ ٱلۡمَلِكُ ٱلۡحَقُّۗ وَلَا تَعۡجَلۡ بِٱلۡقُرۡءَانِ مِن قَبۡلِ أَن يُقۡضَىٰٓ إِلَيۡكَ وَحۡيُهُۥۖ وَقُل رَّبِّ زِدۡنِي عِلۡمٗا",
+      "translationFull": "Que soit exalté Allah, le Vrai Souverain ! Ne te hâte pas [de réciter] le Coran avant que ne te soit achevée sa révélation . Et dis: “Mon Seigneur! Accroît mon savoir ! ”",
+      "homeExcerpt": "Et dis: “Mon Seigneur! Accroît mon savoir ! ”",
+      "excerptOf": "translationFull",
+      "themes": [
+        "savoir",
+        "invocation",
+        "coran"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/20/114"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-033-003",
+      "type": "quran",
+      "canonical": true,
+      "reference": "33:3",
+      "surah": "Al Ahzâb",
+      "arabicFull": "وَتَوَكَّلۡ عَلَى ٱللَّهِۚ وَكَفَىٰ بِٱللَّهِ وَكِيلٗا",
+      "translationFull": "Et place ta confiance en Allah. Allah te suffit comme protecteur.",
+      "homeExcerpt": "Et place ta confiance en Allah. Allah te suffit comme protecteur.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "tawakkul",
+        "confiance",
+        "protection"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/33/3"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-039-036",
+      "type": "quran",
+      "canonical": true,
+      "reference": "39:36",
+      "surah": "Az Zumar",
+      "arabicFull": "أَلَيۡسَ ٱللَّهُ بِكَافٍ عَبۡدَهُۥۖ وَيُخَوِّفُونَكَ بِٱلَّذِينَ مِن دُونِهِۦۚ وَمَن يُضۡلِلِ ٱللَّهُ فَمَا لَهُۥ مِنۡ هَادٖ",
+      "translationFull": "Allah ne suffit-Il pas à Son esclave [comme soutien] ? Et ils te font peur avec ce qui est en dehors de Lui. Et quiconque Allah égare n’a point de guide.",
+      "homeExcerpt": "Allah ne suffit-Il pas à Son esclave [comme soutien] ?",
+      "excerptOf": "translationFull",
+      "themes": [
+        "suffisance-divine",
+        "confiance",
+        "guidance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/39/36"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-009-051",
+      "type": "quran",
+      "canonical": true,
+      "reference": "9:51",
+      "surah": "At Tawbah",
+      "arabicFull": "قُل لَّن يُصِيبَنَآ إِلَّا مَا كَتَبَ ٱللَّهُ لَنَا هُوَ مَوۡلَىٰنَاۚ وَعَلَى ٱللَّهِ فَلۡيَتَوَكَّلِ ٱلۡمُؤۡمِنُونَ",
+      "translationFull": "Dis : \"Rien ne nous atteindra, en dehors de ce qu’Allah a prescrit pour nous. Il est notre Maître. Et c’est en Allah que les croyants doivent mettre leur confiance.\"",
+      "homeExcerpt": "Rien ne nous atteindra, en dehors de ce qu’Allah a prescrit pour nous.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "destin",
+        "tawakkul",
+        "confiance"
+      ],
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/9/51"
+      },
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-003-008",
+      "type": "quran",
+      "canonical": true,
+      "reference": "3:8",
+      "surah": "Al 'Imran",
+      "arabicFull": "رَبَّنَا لَا تُزِغۡ قُلُوبَنَا بَعۡدَ إِذۡ هَدَيۡتَنَا وَهَبۡ لَنَا مِن لَّدُنكَ رَحۡمَةًۚ إِنَّكَ أَنتَ ٱلۡوَهَّابُ",
+      "translationFull": "Seigneur ! Ne laisse pas dévier nos cœurs après que Tu nous aies guidés; et accorde-nous Ta miséricorde. C’est Toi, certes, le Grand Donateur !",
+      "homeExcerpt": "Seigneur ! Ne laisse pas dévier nos cœurs après que Tu nous aies guidés; et accorde-nous Ta miséricorde.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "guidance",
+        "misericorde",
+        "invocation"
+      ],
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/3/8"
+      },
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-007-056",
+      "type": "quran",
+      "canonical": true,
+      "reference": "7:56",
+      "surah": "Al A'raf",
+      "arabicFull": "وَلَا تُفۡسِدُواْ فِي ٱلۡأَرۡضِ بَعۡدَ إِصۡلَٰحِهَا وَٱدۡعُوهُ خَوۡفٗا وَطَمَعًاۚ إِنَّ رَحۡمَتَ ٱللَّهِ قَرِيبٞ مِّنَ ٱلۡمُحۡسِنِينَ",
+      "translationFull": "Et ne semez pas la corruption sur la Terre après qu’elle ait été réformée. Et invoquez-Le avec crainte et espoir, certes la miséricorde d’Allah est proche des bienfaisants.",
+      "homeExcerpt": "la miséricorde d’Allah est proche des bienfaisants.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "misericorde",
+        "bienfaisance",
+        "invocation"
+      ],
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/7/56"
+      },
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-014-007",
+      "type": "quran",
+      "canonical": true,
+      "reference": "14:7",
+      "surah": "Ibrahim",
+      "arabicFull": "وَإِذۡ تَأَذَّنَ رَبُّكُمۡ لَئِن شَكَرۡتُمۡ لَأَزِيدَنَّكُمۡۖ وَلَئِن كَفَرۡتُمۡ إِنَّ عَذَابِي لَشَدِيدٞ",
+      "translationFull": "Et lorsque votre Seigneur proclama : \"Si vous êtes reconnaissants, très certainement J’augmenterai [Mes bienfaits] pour vous. Mais si vous êtes ingrats , alors Mon châtiment sera terrible !\"",
+      "homeExcerpt": "Si vous êtes reconnaissants, très certainement J’augmenterai [Mes bienfaits] pour vous.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "gratitude",
+        "bienfaits",
+        "reconnaissance"
+      ],
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/14/7"
+      },
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-018-010",
+      "type": "quran",
+      "canonical": true,
+      "reference": "18:10",
+      "surah": "Al Kahf",
+      "arabicFull": "إِذۡ أَوَى ٱلۡفِتۡيَةُ إِلَى ٱلۡكَهۡفِ فَقَالُواْ رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحۡمَةٗ وَهَيِّئۡ لَنَا مِنۡ أَمۡرِنَا رَشَدٗا",
+      "translationFull": "Quand ces jeunes gens se réfugièrent dans la caverne, ils dirent : \"Ô notre Seigneur ! Donne-nous de Ta part une miséricorde ! Et assure nous la droiture dans tout ce qui nous concerne.\"",
+      "homeExcerpt": "Ô notre Seigneur ! Donne-nous de Ta part une miséricorde ! Et assure nous la droiture dans tout ce qui nous concerne.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "misericorde",
+        "droiture",
+        "invocation"
+      ],
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/fr/browse/french_hameedullah/18/10"
+      },
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-025-074",
+      "type": "quran",
+      "canonical": true,
+      "reference": "25:74",
+      "surah": "Al Furqâne",
+      "arabicFull": "وَٱلَّذِينَ يَقُولُونَ رَبَّنَا هَبۡ لَنَا مِنۡ أَزۡوَٰجِنَا وَذُرِّيَّٰتِنَا قُرَّةَ أَعۡيُنٖ وَٱجۡعَلۡنَا لِلۡمُتَّقِينَ إِمَامًا",
+      "translationFull": "et ceux qui disent : “Notre Seigneur! Donne-nous, en nos épouses et nos descendants, la joie des yeux, et fais de nous un guide pour les pieux !”",
+      "homeExcerpt": "Notre Seigneur! Donne-nous, en nos épouses et nos descendants, la joie des yeux, et fais de nous un guide pour les pieux !",
+      "excerptOf": "translationFull",
+      "themes": [
+        "famille",
+        "invocation",
+        "piete"
+      ],
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/en/browse/french_hameedullah/25/74"
+      },
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-028-024",
+      "type": "quran",
+      "canonical": true,
+      "reference": "28:24",
+      "surah": "Al Qasas",
+      "arabicFull": "فَسَقَىٰ لَهُمَا ثُمَّ تَوَلَّىٰٓ إِلَى ٱلظِّلِّ فَقَالَ رَبِّ إِنِّي لِمَآ أَنزَلۡتَ إِلَيَّ مِنۡ خَيۡرٖ فَقِيرٞ",
+      "translationFull": "Il abreuva [les bêtes] pour elles, puis retourna à l’ombre et dit : \"Seigneur ! J’ai grand besoin du bien que tu feras descendre vers moi.\"",
+      "homeExcerpt": "Seigneur ! J’ai grand besoin du bien que tu feras descendre vers moi.",
+      "excerptOf": "translationFull",
+      "themes": [
+        "invocation",
+        "besoin",
+        "bienfaits"
+      ],
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://old.quranenc.com/fr/browse/french_hameedullah/28"
+      },
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "verified": true,
+      "productionReady": true
+    },
+    {
+      "id": "quran-089-027-028",
+      "type": "quran",
+      "canonical": true,
+      "reference": "89:27-28",
+      "surah": "Al Fajr",
+      "arabicFull": "يَٰٓأَيَّتُهَا ٱلنَّفۡسُ ٱلۡمُطۡمَئِنَّةُ ٱرۡجِعِيٓ إِلَىٰ رَبِّكِ رَاضِيَةٗ مَّرۡضِيَّةٗ",
+      "translationFull": "\"ô toi, âme apaisée, retourne vers ton Seigneur, satisfaite et agréée ;",
+      "homeExcerpt": "ô toi, âme apaisée, retourne vers ton Seigneur, satisfaite et agréée ;",
+      "excerptOf": "translationFull",
+      "themes": [
+        "apaisement",
+        "retour-a-allah",
+        "satisfaction"
+      ],
+      "source": {
+        "provider": "QuranEnc",
+        "translator": "Muhammad Hamidullah",
+        "version": "1.0.2",
+        "versionDate": "2025-07-02",
+        "url": "https://quranenc.com/en/browse/french_hameedullah/89-2"
+      },
+      "homeEligibility": "standard",
+      "randomHome": true,
+      "verified": true,
+      "productionReady": true
+    }
+  ]
+}

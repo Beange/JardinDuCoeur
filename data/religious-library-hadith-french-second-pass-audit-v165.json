@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V165",
+  "auditId": "french-second-pass-v165",
+  "purpose": "Second passage ciblé des structures françaises en attente.",
+  "promotedCanonicalIds": [
+    "N-007",
+    "N-085",
+    "N-088"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "N-007",
+      "primaryRef": "Sahih al-Bukhari 6006",
+      "narrator": "Abû Hurayrah",
+      "publishedFrenchTranslation": "Abû Hurayrah (qu'Allah l'agrée) relate que le Messager d'Allah (sur lui la paix et le salut) a dit : « Celui qui entretient une veuve ou un pauvre est semblable à celui qui combat dans le sentier d'Allah » ; et je crois qu'il a également dit : « à celui qui prie sans s’arrêter et au jeûneur qui jamais ne rompt son jeûne. »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/3135",
+      "sourceHadithId": 3135,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Sahîh Al-Bukhârî - 5661; Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bukhârî et Muslim",
+      "identityEvidence": "Même matn arabe et même rapporteur Abû Hurayrah; HadeethEnc affiche Bukhari 5661 et l’attribution conjointe Al-Bukhârî/Muslim, tandis que la structure canonique retient Bukhari 6006.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-085",
+      "primaryRef": "Sahih al-Bukhari 2363",
+      "narrator": "Abû Hurayrah",
+      "publishedFrenchTranslation": "Abû Hurayrah (qu'Allah l'agrée) relate : « Pendant qu’un homme parcourait un chemin, il eut une grande soif. Il trouva un puits et y descendit pour se désaltérer. Ensuite, il remonta et c’est alors qu’il vit un chien haleter en léchant le sable humide à cause de sa soif intense. L’homme s’est alors dit : \" Ce chien a aussi soif que moi ! \" Il redescendit donc dans le puits, remplit sa chaussure d’eau, la saisit entre ses dents, puis donna à boire au chien. Allah lui en sut gré et lui pardonna ses péchés. Les Compagnons demandèrent : \" Ô Messager d’Allah ! Serons-nous [aussi] rétribués pour les bienfaits dispensés aux animaux ? \" Alors, le Prophète (sur lui la paix et le salut) leur répondit : \" Oui ! Tout bienfait dispensé à un être vivant sera récompensé. \" »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/10100",
+      "sourceHadithId": 10100,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Rapporté par Al-Bûkhârî; Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Al-Bûkhârî; Rapporté par Al-Bukhârî et Muslim",
+      "identityEvidence": "Même matn arabe, même rapporteur Abû Hurayrah et même récit de l’homme abreuvant le chien; HadeethEnc publie plusieurs versions authentiques dont la première est attribuée conjointement à Al-Bukhârî et Muslim. La structure canonique retient Bukhari 2363.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    },
+    {
+      "canonicalId": "N-088",
+      "primaryRef": "Sahih Muslim 2565a",
+      "narrator": "Abû Hurayrah",
+      "publishedFrenchTranslation": "« Les portes du Paradis sont ouvertes le lundi et le jeudi, et on pardonne alors à tout serviteur qui n’associe rien à Allah, à l’exception d’un homme qui est en conflit avec son frère. On dit alors : \" Laissez du temps à ces deux-là, jusqu’à ce qu’ils se réconcilient, laissez du temps à ces deux-là, jusqu’à ce qu’ils se réconcilient. \" »",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5908",
+      "sourceHadithId": 5908,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "v1.17.0",
+      "sourceReferenceDisplayed": "Rapporté par Muslim (version incluse sur la fiche)",
+      "sourceGradeDisplayed": "Authentique; Rapporté par Muslim",
+      "identityEvidence": "La fiche HadeethEnc réunit plusieurs versions d’Abû Hurayrah. La deuxième version arabe et française correspond au matn canonique Muslim 2565a sur l’ouverture des portes du Paradis le lundi et le jeudi et le report du pardon pour deux personnes en conflit.",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "held": [],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "sourceWarningIgnored": false,
+    "runtimeChanged": false
+  }
+}

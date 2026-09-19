@@ -1,0 +1,1743 @@
+{
+  "schemaVersion": 1,
+  "ledgerId": "CORPUS-COVERAGE-183-V1",
+  "project": "Jardin du Cœur",
+  "purpose": "Administrative coverage index for the 183 target positions. It references only already-verified Q-ID, RC-ID and administrative GAP-ID; it does not create or infer religious identity.",
+  "canonicalTarget": 183,
+  "counts": {
+    "quranDossiers": 43,
+    "hadithCoverageSlots": 140,
+    "hadithCanonicalStructures": 140,
+    "hadithAdministrativeGaps": 0,
+    "materializedReligiousStructures": 183,
+    "unmaterializedPositions": 0
+  },
+  "policy": {
+    "administrativeIndexOnly": true,
+    "full183ReligiousObjectSerialization": false,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "gapSlotsCarryNoReferenceNarratorOrMatn": true,
+    "productionReady": false
+  },
+  "slots": [
+    {
+      "coverageSlot": "CORPUS-COVERAGE-001",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-001",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-002",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-002",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-003",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-003",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-004",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-004",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-005",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-005",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-006",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-006",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-007",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-007",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-008",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-008",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-009",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-009",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-010",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-010",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-011",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-011",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-012",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-012",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-013",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-013",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-014",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-014",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-015",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-015",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-016",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-016",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-017",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-017",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-018",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-018",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-019",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-019",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-020",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-020",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-021",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-021",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-022",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-022",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-023",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-023",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-024",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-024",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-025",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-025",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-026",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-026",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-027",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-027",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-028",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-028",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-029",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-029",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-030",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-030",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-031",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-031",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-032",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-032",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-033",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-033",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-034",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-034",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-035",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-035",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-036",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-036",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-037",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-037",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-038",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-038",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-039",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-039",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-040",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-040",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-041",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-041",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-042",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-042",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-043",
+      "corpusPart": "quran",
+      "status": "CONFIRMED_QURAN_DOSSIER",
+      "quranId": "Q-043",
+      "hadithCoverageSlot": null,
+      "canonicalId": null,
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-044",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-001",
+      "canonicalId": "RC-001",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-045",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-002",
+      "canonicalId": "RC-002",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-046",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-003",
+      "canonicalId": "RC-003",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-047",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-004",
+      "canonicalId": "RC-004",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-048",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-005",
+      "canonicalId": "RC-005",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-049",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-006",
+      "canonicalId": "RC-006",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-050",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-007",
+      "canonicalId": "RC-007",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-051",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-008",
+      "canonicalId": "RC-008",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-052",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-009",
+      "canonicalId": "RC-009",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-053",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-010",
+      "canonicalId": "RC-010",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-054",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-011",
+      "canonicalId": "RC-011",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-055",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-012",
+      "canonicalId": "RC-012",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-056",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-013",
+      "canonicalId": "RC-013",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-057",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-014",
+      "canonicalId": "RC-014",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-058",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-015",
+      "canonicalId": "RC-015",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-059",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-016",
+      "canonicalId": "RC-016",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-060",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-017",
+      "canonicalId": "RC-017",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-061",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-018",
+      "canonicalId": "RC-018",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-062",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-019",
+      "canonicalId": "RC-019",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-063",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-020",
+      "canonicalId": "RC-020",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-064",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-021",
+      "canonicalId": "RC-021",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-065",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-022",
+      "canonicalId": "RC-022",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-066",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-023",
+      "canonicalId": "RC-023",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-067",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-024",
+      "canonicalId": "RC-024",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-068",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-025",
+      "canonicalId": "RC-025",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-069",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-026",
+      "canonicalId": "RC-026",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-070",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-027",
+      "canonicalId": "RC-027",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-071",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-028",
+      "canonicalId": "RC-028",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-072",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-029",
+      "canonicalId": "RC-029",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-073",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-030",
+      "canonicalId": "RC-030",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-074",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-031",
+      "canonicalId": "RC-031",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-075",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-032",
+      "canonicalId": "RC-032",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-076",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-033",
+      "canonicalId": "RC-033",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-077",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-034",
+      "canonicalId": "RC-034",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-078",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-035",
+      "canonicalId": "RC-035",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-079",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-036",
+      "canonicalId": "RC-036",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-080",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-037",
+      "canonicalId": "RC-037",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-081",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-038",
+      "canonicalId": "RC-038",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-082",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-039",
+      "canonicalId": "RC-039",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-083",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-040",
+      "canonicalId": "RC-040",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-084",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-041",
+      "canonicalId": "RC-041",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-085",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-042",
+      "canonicalId": "RC-042",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-086",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-043",
+      "canonicalId": "RC-043",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-087",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-044",
+      "canonicalId": "RC-044",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-088",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-045",
+      "canonicalId": "RC-045",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-089",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-046",
+      "canonicalId": "RC-046",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-090",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-047",
+      "canonicalId": "RC-047",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-091",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-048",
+      "canonicalId": "RC-048",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-092",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-049",
+      "canonicalId": "RC-049",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-093",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-050",
+      "canonicalId": "RC-050",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-094",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-051",
+      "canonicalId": "RC-051",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-095",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-052",
+      "canonicalId": "RC-052",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-096",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-053",
+      "canonicalId": "RC-053",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-097",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-054",
+      "canonicalId": "RC-054",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-098",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-055",
+      "canonicalId": "RC-055",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-099",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-056",
+      "canonicalId": "RC-056",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-100",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-057",
+      "canonicalId": "RC-057",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-101",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-058",
+      "canonicalId": "RC-058",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-102",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-059",
+      "canonicalId": "RC-059",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-103",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-060",
+      "canonicalId": "RC-060",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-104",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-061",
+      "canonicalId": "RC-061",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-105",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-062",
+      "canonicalId": "RC-062",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-106",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-063",
+      "canonicalId": "RC-063",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-107",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-064",
+      "canonicalId": "RC-064",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-108",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-065",
+      "canonicalId": "RC-065",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-109",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-066",
+      "canonicalId": "RC-066",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-110",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-067",
+      "canonicalId": "RC-067",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-111",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-068",
+      "canonicalId": "RC-068",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-112",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-069",
+      "canonicalId": "RC-069",
+      "gapId": null
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-113",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-070",
+      "canonicalId": "N-001",
+      "gapId": "GAP-001",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-114",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-071",
+      "canonicalId": "N-002",
+      "gapId": "GAP-002",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-115",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-072",
+      "canonicalId": "N-003",
+      "gapId": "GAP-003",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-116",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-073",
+      "canonicalId": "N-004",
+      "gapId": "GAP-004",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-117",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-074",
+      "canonicalId": "N-005",
+      "gapId": "GAP-005",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-118",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-075",
+      "canonicalId": "N-006",
+      "gapId": "GAP-006",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-119",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-076",
+      "canonicalId": "N-007",
+      "gapId": "GAP-007",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-120",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-077",
+      "canonicalId": "N-008",
+      "gapId": "GAP-008",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-121",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-078",
+      "canonicalId": "N-009",
+      "gapId": "GAP-009",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-122",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-079",
+      "canonicalId": "N-011",
+      "gapId": "GAP-010",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-123",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-080",
+      "canonicalId": "N-013",
+      "gapId": "GAP-011",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-124",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-081",
+      "canonicalId": "N-015",
+      "gapId": "GAP-012",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-125",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-082",
+      "canonicalId": "N-016",
+      "gapId": "GAP-013",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-126",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-083",
+      "canonicalId": "N-017",
+      "gapId": "GAP-014",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-127",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-084",
+      "canonicalId": "N-018",
+      "gapId": "GAP-015",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-128",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-085",
+      "canonicalId": "N-019",
+      "gapId": "GAP-016",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-129",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-086",
+      "canonicalId": "N-020",
+      "gapId": "GAP-017",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-130",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-087",
+      "canonicalId": "N-021",
+      "gapId": "GAP-018",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-131",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-088",
+      "canonicalId": "N-022",
+      "gapId": "GAP-019",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-132",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-089",
+      "canonicalId": "N-023",
+      "gapId": "GAP-020",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-133",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-090",
+      "canonicalId": "N-025",
+      "gapId": "GAP-021",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-134",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-091",
+      "canonicalId": "N-026",
+      "gapId": "GAP-022",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-135",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-092",
+      "canonicalId": "N-027",
+      "gapId": "GAP-023",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-136",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-093",
+      "canonicalId": "N-029",
+      "gapId": "GAP-024",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-137",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-094",
+      "canonicalId": "N-030",
+      "gapId": "GAP-025",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-138",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-095",
+      "canonicalId": "N-033",
+      "gapId": "GAP-026",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-139",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-096",
+      "canonicalId": "N-034",
+      "gapId": "GAP-027",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-140",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-097",
+      "canonicalId": "N-035",
+      "gapId": "GAP-028",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-141",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-098",
+      "canonicalId": "N-036",
+      "gapId": "GAP-029",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-142",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-099",
+      "canonicalId": "N-037",
+      "gapId": "GAP-030",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-143",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-100",
+      "canonicalId": "N-038",
+      "gapId": "GAP-031",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-144",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-101",
+      "canonicalId": "N-039",
+      "gapId": "GAP-032",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-145",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-102",
+      "canonicalId": "N-040",
+      "gapId": "GAP-033",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-146",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-103",
+      "canonicalId": "N-048",
+      "gapId": "GAP-034",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-147",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-104",
+      "canonicalId": "N-049",
+      "gapId": "GAP-035",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-148",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-105",
+      "canonicalId": "N-050",
+      "gapId": "GAP-036",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-149",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-106",
+      "canonicalId": "N-051",
+      "gapId": "GAP-037",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-150",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-107",
+      "canonicalId": "N-052",
+      "gapId": "GAP-038",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-151",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-108",
+      "canonicalId": "N-053",
+      "gapId": "GAP-039",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-152",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-109",
+      "canonicalId": "N-054",
+      "gapId": "GAP-040",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-153",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-110",
+      "canonicalId": "N-055",
+      "gapId": "GAP-041",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-154",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-111",
+      "canonicalId": "N-056",
+      "gapId": "GAP-042",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-155",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-112",
+      "canonicalId": "N-057",
+      "gapId": "GAP-043",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-156",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-113",
+      "canonicalId": "N-058",
+      "gapId": "GAP-044",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-157",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-114",
+      "canonicalId": "N-059",
+      "gapId": "GAP-045",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-158",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-115",
+      "canonicalId": "N-060",
+      "gapId": "GAP-046",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-159",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-116",
+      "canonicalId": "N-061",
+      "gapId": "GAP-047",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-160",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-117",
+      "canonicalId": "N-062",
+      "gapId": "GAP-048",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-161",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-118",
+      "canonicalId": "N-063",
+      "gapId": "GAP-049",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-162",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-119",
+      "canonicalId": "N-064",
+      "gapId": "GAP-050",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-163",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-120",
+      "canonicalId": "N-065",
+      "gapId": "GAP-051",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-164",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-121",
+      "canonicalId": "N-066",
+      "gapId": "GAP-052",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-165",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-122",
+      "canonicalId": "N-067",
+      "gapId": "GAP-053",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-166",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-123",
+      "canonicalId": "N-068",
+      "gapId": "GAP-054",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-167",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-124",
+      "canonicalId": "N-069",
+      "gapId": "GAP-055",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-168",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-125",
+      "canonicalId": "N-070",
+      "gapId": "GAP-056",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-169",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-126",
+      "canonicalId": "N-071",
+      "gapId": "GAP-057",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-170",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-127",
+      "canonicalId": "N-075",
+      "gapId": "GAP-058",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-171",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-128",
+      "canonicalId": "N-076",
+      "gapId": "GAP-059",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-172",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-129",
+      "canonicalId": "N-077",
+      "gapId": "GAP-060",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-173",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-130",
+      "canonicalId": "N-078",
+      "gapId": "GAP-061",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-174",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-131",
+      "canonicalId": "N-079",
+      "gapId": "GAP-062",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-175",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-132",
+      "canonicalId": "N-080",
+      "gapId": "GAP-063",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-176",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-133",
+      "canonicalId": "N-081",
+      "gapId": "GAP-064",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-177",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-134",
+      "canonicalId": "N-082",
+      "gapId": "GAP-065",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-178",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-135",
+      "canonicalId": "N-083",
+      "gapId": "GAP-066",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-179",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-136",
+      "canonicalId": "N-084",
+      "gapId": "GAP-067",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-180",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-137",
+      "canonicalId": "N-085",
+      "gapId": "GAP-068",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-181",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-138",
+      "canonicalId": "N-086",
+      "gapId": "GAP-069",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-182",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-139",
+      "canonicalId": "N-087",
+      "gapId": "GAP-070",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    },
+    {
+      "coverageSlot": "CORPUS-COVERAGE-183",
+      "corpusPart": "hadith",
+      "status": "CONFIRMED_NEW_AUTHENTICATED_HADITH_STRUCTURE",
+      "quranId": null,
+      "hadithCoverageSlot": "HADITH-COVERAGE-140",
+      "canonicalId": "N-088",
+      "gapId": "GAP-071",
+      "gapFillPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY"
+    }
+  ]
+}

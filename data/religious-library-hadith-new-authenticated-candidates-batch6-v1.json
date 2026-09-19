@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH6-V1",
+  "purpose": "Sixth authenticated batch, source-reverified and conservatively adjudicated for promotion in V99.",
+  "selectionPolicy": {
+    "preferredCollections": [
+      "Sahih al-Bukhari",
+      "Sahih Muslim"
+    ],
+    "antiDuplicationAgainstCurrent94ExactRefs": true,
+    "thematicPromotionDeferred": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 4,
+    "existingCanonicalStructures": 94,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 46,
+    "promotedCanonicalStructures": 2,
+    "rejectedAsDuplicateExistingCanon": 2,
+    "remainingUnfilledTargetAfterPromotion": 44
+  },
+  "candidates": [
+    {
+      "id": "N-031",
+      "primaryRef": "Sahih al-Bukhari 6010",
+      "inBookReference": "Book 78, Hadith 41",
+      "theme": "baiser des enfants — l’absence de miséricorde est blâmée",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6010",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "auditReason": "Same substantive mercy-toward-children family already represented by RC-031.",
+      "sourceVerificationRelease": "V99",
+      "duplicateOf": "RC-031"
+    },
+    {
+      "id": "N-032",
+      "primaryRef": "Sahih al-Bukhari 6017",
+      "inBookReference": "Book 78, Hadith 48",
+      "theme": "nourrir l’affamé, visiter le malade et libérer le captif",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:6017",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 0,
+      "productionReady": false,
+      "auditDecision": "REJECTED_DUPLICATE_EXISTING_CANON",
+      "auditReason": "Visiting the sick is already canonical in N-017 and feeding/helping needs is substantially represented by existing social-help structures.",
+      "sourceVerificationRelease": "V99",
+      "duplicateOf": "N-017/RC-046/RC-053"
+    },
+    {
+      "id": "N-033",
+      "primaryRef": "Sahih Muslim 2708a",
+      "inBookReference": "Book 48, Hadith 55",
+      "theme": "invocation de pardon — demander pardon pour faute, ignorance, excès et ce qu’Allah connaît mieux",
+      "narrator": "Abu Musa",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2708a",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V99",
+      "auditReason": "Distinct comprehensive supplication for forgiveness covering fault, ignorance, excess and what Allah knows better; no current canonical supplication has this content.",
+      "sourceVerificationRelease": "V99"
+    },
+    {
+      "id": "N-034",
+      "primaryRef": "Sahih Muslim 2713a",
+      "inBookReference": "Book 48, Hadith 60",
+      "theme": "invocation avant le sommeil — Seigneur des cieux et de la terre, protection contre le mal de toute créature",
+      "narrator": "Abu Huraira",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2713a",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V99",
+      "auditReason": "Distinct bedtime supplication seeking protection from the evil of creatures; no current canonical structure represents this sleep-specific protection invocation.",
+      "sourceVerificationRelease": "V99"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  },
+  "auditSummary": {
+    "promoted": [
+      "N-033",
+      "N-034"
+    ],
+    "rejectedDuplicates": [
+      "N-031",
+      "N-032"
+    ],
+    "historicalRecoveryClaimed": false
+  }
+}

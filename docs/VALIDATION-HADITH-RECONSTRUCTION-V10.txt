@@ -1,0 +1,23 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V10
+
+H-ID historiques récupérés .............. 13/140
+H-ID historiques non retrouvés ......... 127/140
+
+Candidats reconstruction bruts ......... 82/127
+Nouveaux V10 ............................ 8
+Places brutes restantes ................ 45
+
+Familles renforcées :
+RF-27 parole / voisin / hospitalité
+RF-28 douceur / rifq
+RF-29 liens familiaux
+RF-30 miséricorde
+
+Aucun ancien H-ID inventé ............... PASS
+countsAsEntry=false ..................... PASS
+productionReady=false ................... PASS
+randomHome=false ........................ PASS
+provenance française .................... PENDING
+
+ATTENTION : le nombre brut de candidats n'est pas le futur nombre canonique.
+Les parallèles et recouvrements doivent être consolidés en +1 canonique.

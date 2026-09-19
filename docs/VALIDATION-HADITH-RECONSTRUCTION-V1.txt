@@ -1,0 +1,19 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V1
+
+Candidats de reconstruction .......... 10
+Comptés dans les 140 .................. 0
+Ancien H-ID inventé ................... 0
+Références primaires revérifiées ...... 10/10
+IDs R-* uniques ....................... PASS
+countsAsEntry=false ................... PASS
+oldCanonicalHId=null .................. PASS
+productionReady=false ................. PASS
+randomHome=false ...................... PASS
+Texte français publié/provenance ...... PENDING
+
+Familles de relations documentées :
+- RF-01 : Muslim 130 / 131a — apparentés, non fusionnés.
+- RF-02 : Bukhari 6464/6465/6466 + Muslim 783b/2818a — famille thématique,
+  relation exacte variant/parallel/related à décider après audit de relation.
+
+Le compteur canonique hadith reste donc 13/140 récupérés.

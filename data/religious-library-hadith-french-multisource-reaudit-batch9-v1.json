@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V150",
+  "registerId": "JDC-HADITH-FRENCH-MULTISOURCE-REAUDIT-BATCH9-V1",
+  "purpose": "Réaduit multi-source de RC-014 avec séparation stricte entre authenticité/traçabilité du texte français et droit de réutilisation; aucune traduction synthétisée.",
+  "auditDate": "2026-09-16",
+  "entries": [
+    {
+      "canonicalId": "RC-014",
+      "primaryRef": "Sahih al-Bukhari 2079",
+      "parallelRef": "Sahih Muslim 1532",
+      "narrator": "Hakim ibn Hizam",
+      "sourcePublisher": "IslamHouse.com",
+      "sourceWork": "3000 hadiths et citations coraniques (tirés du recueil de Al-Boukhary)",
+      "sourceAuthor": "Mohammed Yacine KASSAB",
+      "sourceUrl": "https://islamhouse.com/read/fr/3-000-hadiths-et-citations-coraniques-tir%C3%A9s-du-recueil-de-al-boukhary-173247",
+      "sourceSection": "Des conséquences désastreuses qui résultent de la vente réalisée par le mensonge et la supercherie",
+      "identityEvidence": "Le passage français est attribué à Hakem Ben Hizam et correspond au matn de Bukhari 2079 / Muslim 1532 sur le droit d’option, la franchise, le mensonge et la bénédiction de la vente.",
+      "frenchTextLocated": true,
+      "frenchTextTraceable": true,
+      "sourceReuseNotice": "Tous droits de reproduction, de traduction ou d’adaptation réservés",
+      "reuseAuthorizationEstablished": false,
+      "decision": "EN_ATTENTE_REUSE_AUTHORIZATION",
+      "productionReady": false,
+      "note": "Le texte français est traçable et son identité religieuse est établie, mais il n'est pas copié dans le registre canonique publié faute d'autorisation de réutilisation établie."
+    }
+  ],
+  "counts": {
+    "reaudited": 1,
+    "traceableFrenchTextsLocated": 1,
+    "newlyVerifiedReusableFrench": 0,
+    "stillEnAttente": 1
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "unauthorizedTextCopiedIntoCanonicalRegister": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

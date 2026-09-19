@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V180",
+  "auditId": "french-bulk-seventh-pass-v180",
+  "purpose": "Ré-audit groupé de 20 structures encore en attente; promotion uniquement sur traduction française publiée, complète, traçable et sans avertissement explicite de révision.",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "RC-053",
+      "RC-055",
+      "RC-056",
+      "RC-061",
+      "RC-069",
+      "N-058",
+      "N-064",
+      "N-070",
+      "N-075",
+      "N-078",
+      "N-080",
+      "N-083",
+      "N-086",
+      "N-011",
+      "N-013",
+      "RC-049",
+      "RC-050",
+      "RC-051",
+      "RC-052",
+      "RC-041"
+    ],
+    "reviewedCount": 20
+  },
+  "promotedCanonicalIds": [
+    "RC-053"
+  ],
+  "promotions": [
+    {
+      "canonicalId": "RC-053",
+      "primaryRef": "Sahih al-Bukhari 6022",
+      "narrator": "Abû Mûsâ Al Ach’arî",
+      "publishedFrenchTranslation": "Abû Mûsâ Al Ach’arî (qu’Allah l’agrée) relate que le Messager d’Allah (sur lui la paix et le salut) a dit : « Il incombe à tout musulman de faire l’aumône. » - « S’il ne trouve rien à donner ? » interrogea une personne. - « Qu’il travaille alors de ses mains afin d’en profiter et de faire ensuite l’aumône. » - « Et s’il en est incapable ? » lui demanda-t-on. - « Qu’il aide le besogneux affligé. » répondit-il. - « Et s’il n’en a pas la capacité ? » - « Qu’il ordonne donc le convenable ou le bien ! » - « Et s’il ne le fait pas ? » - « Qu’il s’abstienne de faire du mal, cela sera pour lui une aumône. » finit par conclure le messager.",
+      "sourcePublisher": "HadeethEnc.com",
+      "sourceUrl": "https://hadeethenc.com/downloads/pdf/Hadeethenc_fr/Hadeethenc_fr_part6.pdf",
+      "sourceHadithId": 6370,
+      "sourceLanguage": "fr",
+      "sourceTranslationVersion": "HadeethEnc_fr_part6-1438H",
+      "sourceReferenceDisplayed": "Rapporté par Al-Bukhârî et Muslim",
+      "sourceGradeDisplayed": "Authentique",
+      "explicitRevisionWarningObserved": false,
+      "reuseMode": "VERBATIM_WITH_PUBLISHER_SOURCE_AND_VERSION_ATTRIBUTION",
+      "productionReady": true
+    }
+  ],
+  "heldCanonicalIds": [
+    "RC-055",
+    "RC-056",
+    "RC-061",
+    "RC-069",
+    "N-058",
+    "N-064",
+    "N-070",
+    "N-075",
+    "N-078",
+    "N-080",
+    "N-083",
+    "N-086",
+    "N-011",
+    "N-013",
+    "RC-049",
+    "RC-050",
+    "RC-051",
+    "RC-052",
+    "RC-041"
+  ],
+  "heldCount": 19,
+  "notes": [
+    "RC-053: publication française historique HadeethEnc retrouvée dans Hadeethenc_fr_part6, hadith unifié 6370; Abû Mûsâ Al Ach’arî, matn complet, degré Authentique et attribution conjointe Al-Bukhârî/Muslim.",
+    "La concordance canonique avec Sahih al-Bukhari 6022 est confirmée indépendamment par le même rapporteur et le même matn arabe intégral.",
+    "Les 19 autres structures du lot restent en attente faute de satisfaire simultanément identité, complétude, provenance et absence d’avertissement explicite de révision."
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 76,
+    "pendingPublishedFrenchCanonicalEntries": 64
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "revisionWarningIgnored": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

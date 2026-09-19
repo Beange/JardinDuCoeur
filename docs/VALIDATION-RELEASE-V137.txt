@@ -1,0 +1,11 @@
+Jardin du Cœur — validation ciblée de la release V137
+
+Résultat : PASS
+Contrôles : 169
+Réussites : 169
+Échecs : 0
+
+Points contrôlés : inventaire éditorial de 140 structures hadith; alignement exact avec les 69 identifiants hérités et 71 identifiants du supplément; 0 notice prête avec texte français publié et provenance dans les registres canoniques; 69 notices héritées sans champ canonique de texte français; 71 notices du supplément explicitement PENDING; absence de traduction synthétisée; intégration runtime non autorisée; couverture structurelle maintenue à 140/140 et 183/183; R-077 historique quarantiné; index.html inchangé.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 169 | PASS: 169 | FAIL: 0

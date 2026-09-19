@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V79",
+  "purpose": "Targeted source-evidence audit of the sole unresolved reconstruction candidate R-077. Compares the inherited bad reference and thematically plausible source texts without assigning a replacement identity absent provenance proof.",
+  "subject": {
+    "reconstructionId": "R-077",
+    "oldCanonicalHId": null,
+    "inheritedReference": "Sahih al-Bukhari 6014",
+    "inheritedSourceUrl": "https://sunnah.com/bukhari:6014",
+    "inheritedThemes": [
+      "misericorde",
+      "humanite"
+    ],
+    "inheritedAuditSummaryFr": "Transmission sur la miséricorde envers les créatures et la miséricorde d’Allah.",
+    "inheritedNarrator": null,
+    "inheritedMatn": null,
+    "inheritedAlternateReference": null
+  },
+  "verifiedComparisons": [
+    {
+      "reference": "Sahih al-Bukhari 6014",
+      "sourceUrl": "https://sunnah.com/bukhari:6014",
+      "sourceFinding": "Hadith of Aisha about Jibril repeatedly recommending the neighbor.",
+      "relationToInheritedSummary": "REFERENCE_MISMATCH",
+      "identityInferenceAllowed": false,
+      "reason": "The subject does not match the inherited mercy summary."
+    },
+    {
+      "reference": "Sahih al-Bukhari 7376",
+      "sourceUrl": "https://sunnah.com/bukhari:7376",
+      "sourceFinding": "Narrated by Jarir bin Abdullah; mercy toward mankind is linked to Allah showing mercy.",
+      "relationToInheritedSummary": "STRONG_THEMATIC_MATCH_BUT_ALREADY_ASSIGNED",
+      "alreadyRepresentedAs": "R-045 / canonical structure already present",
+      "identityInferenceAllowed": false,
+      "reason": "Thematic fit does not prove that R-077 is a duplicate of the already assigned R-045."
+    },
+    {
+      "reference": "Jami` at-Tirmidhi 1924",
+      "sourceUrl": "https://sunnah.com/tirmidhi:1924",
+      "sourceFinding": "Narrated by Abdullah bin Amr; the merciful are shown mercy by Ar-Rahman and are commanded to show mercy on earth.",
+      "relationToInheritedSummary": "THEMATIC_MATCH_DIFFERENT_ROUTE_AND_CONTENT",
+      "identityInferenceAllowed": false,
+      "reason": "No inherited narrator, wording, route, or alternate reference links R-077 to this transmission."
+    },
+    {
+      "reference": "Sahih al-Bukhari 6469",
+      "sourceUrl": "https://sunnah.com/bukhari:6469",
+      "sourceFinding": "Narrated by Abu Huraira; Allah created one hundred mercies and sent one part among all creatures.",
+      "relationToInheritedSummary": "THEMATIC_MATCH_HUNDRED_MERCIES_FAMILY",
+      "representedInCurrentProjectReferenceSet": false,
+      "identityInferenceAllowed": false,
+      "reason": "The inherited summary is too generic to distinguish this family from other mercy traditions."
+    },
+    {
+      "reference": "Sahih Muslim 2752b/2752c",
+      "sourceUrl": "https://sunnah.com/muslim/50/21",
+      "sourceFinding": "Abu Huraira route in the hundred-mercies family; one mercy is among creation while the remainder is reserved by Allah.",
+      "relationToInheritedSummary": "THEMATIC_MATCH_HUNDRED_MERCIES_FAMILY",
+      "representedInCurrentProjectReferenceSet": false,
+      "identityInferenceAllowed": false,
+      "reason": "No provenance field in R-077 identifies this collection, narrator, or wording."
+    },
+    {
+      "reference": "Sahih Muslim 2753a",
+      "sourceUrl": "https://sunnah.com/muslim/50/23",
+      "sourceFinding": "Salman al-Farisi route in the hundred-mercies family; one mercy underlies mutual mercy among creation and ninety-nine are reserved for the Day of Resurrection.",
+      "relationToInheritedSummary": "THEMATIC_MATCH_HUNDRED_MERCIES_FAMILY",
+      "representedInCurrentProjectReferenceSet": false,
+      "identityInferenceAllowed": false,
+      "reason": "The summary alone cannot identify this distinct route."
+    }
+  ],
+  "evidenceLimitations": [
+    "No historical H-ID is attached to R-077.",
+    "No narrator is preserved for R-077.",
+    "No Arabic matn or distinctive phrase is preserved for R-077.",
+    "No alternate source reference or collection clue is preserved for R-077.",
+    "The inherited French audit summary is thematic rather than identity-unique.",
+    "Multiple authentic traditions fit the broad mercy theme, so thematic similarity cannot establish identity."
+  ],
+  "disposition": {
+    "status": "REFERENCE_MISMATCH_UNRESOLVED_QUARANTINED",
+    "replacementReference": null,
+    "newHistoricalHId": null,
+    "gapAssigned": null,
+    "canonicalStructureCreated": false,
+    "reason": "The inherited Bukhari 6014 reference is demonstrably mismatched, but available provenance cannot uniquely identify the intended hadith among several thematically plausible transmissions."
+  },
+  "assertions": {
+    "inheritedReferenceMismatchConfirmed": true,
+    "thematicCandidatesAreNotIdentityProof": true,
+    "r077Remapped": false,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "full183ObjectSerialization": "PENDING",
+    "productionReady": false
+  },
+  "sourceAccessDate": "2026-09-12"
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "V109 delta against V108: verifies and promotes N-048..N-050; canonical coverage becomes 105/140.",
+  "parentRelease": {
+    "release": "V108",
+    "archive": "Jardin-du-Coeur-PWA-hadith-consolidation-v108.zip",
+    "sha256": "9f1188ac879711e493186e258fcfc33c30c42bbf91d8a18f3f05ae7148de7677"
+  },
+  "scope": {
+    "policy": "HASH_STABLE_INPUTS_ONLY",
+    "unchangedStableFileCount": 5,
+    "releaseMetadataExcluded": true
+  },
+  "unchangedStableFiles": [
+    {
+      "path": "data/religious-library-quran-canonical.json",
+      "parentSha256": "20fc0c151720e960693d1229e9ccf4ac3a7f1dea43f1a6090bf4062a59522293",
+      "currentSha256": "20fc0c151720e960693d1229e9ccf4ac3a7f1dea43f1a6090bf4062a59522293",
+      "bytes": 72951,
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "data/religious-library-hadith-canonical-consolidation-v44.json",
+      "parentSha256": "2b6f4346ca9c48c18556604d88d7583e268345c735a25914f2b2e145229e11a5",
+      "currentSha256": "2b6f4346ca9c48c18556604d88d7583e268345c735a25914f2b2e145229e11a5",
+      "bytes": 59780,
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "data/religious-library-hadith-reconstruction-v11.json",
+      "parentSha256": "a5ec82eac8fd0545e9fdc7c244e7a01ea2348b062969800497b1d2d2f5cbb6af",
+      "currentSha256": "a5ec82eac8fd0545e9fdc7c244e7a01ea2348b062969800497b1d2d2f5cbb6af",
+      "bytes": 85692,
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "historique/07-index-final-consolide.html",
+      "parentSha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+      "currentSha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+      "bytes": 706831,
+      "status": "UNCHANGED"
+    },
+    {
+      "path": "index.html",
+      "parentSha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+      "currentSha256": "177a7c9f88907befc63aa4ef747ca56ffffd647f45e92d900461b981a7ad7241",
+      "bytes": 706831,
+      "status": "UNCHANGED"
+    }
+  ],
+  "expectedReleaseMetadataChanges": [
+    "data/religious-library-release-package-hygiene-v1.json",
+    "data/religious-library-referential-integrity-v1.json",
+    "data/religious-library-data-contract-v1.json",
+    "data/religious-library-target-manifest.json",
+    "tools/validate_project.py",
+    "data/religious-library-release-build-v1.json",
+    "data/religious-library-release-delta-v1.json",
+    "data/religious-library-release-file-inventory-v1.json",
+    "data/religious-library-release-provenance-v1.json",
+    "data/religious-library-release-coherence-v1.json",
+    "data/religious-library-corpus-integrity-v1.json",
+    "docs/VALIDATION-STRUCTURE.txt",
+    "docs/VALIDATION-RELEASE-V58.txt",
+    "docs/FILES-SHA256.txt",
+    "README.md",
+    "ETAT-DU-PROJET.md",
+    "data/religious-library-release-json-integrity-v1.json",
+    "data/religious-library-release-archive-fileset-v1.json",
+    "tools/build_release_zip.py",
+    "data/religious-library-release-zip-reproducibility-v1.json",
+    "data/religious-library-release-reproducibility-attestation-v1.json",
+    "tools/verify_release_reproducibility.py",
+    "docs/AUDIT-HADITH-IDENTITY-CLUES-V72.txt",
+    "docs/AUDIT-HADITH-TEXTUAL-CLUES-V73.txt",
+    "data/religious-library-hadith-unmapped-closure-audit-v1.json",
+    "docs/AUDIT-HADITH-UNMAPPED-CLOSURE-V74.txt",
+    "data/religious-library-hadith-decision-residue-audit-v1.json",
+    "data/religious-library-hadith-r077-evidence-audit-v1.json",
+    "data/religious-library-current-path-integrity-v1.json",
+    "data/religious-library-provenance-summary-integrity-v1.json",
+    "data/religious-library-current-audit-coverage-v1.json",
+    "data/religious-library-release-protection-set-audit-v1.json",
+    "data/religious-library-hadith-related-ref-semantics-v1.json",
+    "data/religious-library-hadith-reference-provenance-ledger-v1.json",
+    "data/religious-library-hadith-reference-context-semantics-v1.json",
+    "data/religious-library-internal-provenance-exhaustion-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-v1.json",
+    "data/religious-library-hadith-new-authenticated-canonical-supplement-v1.json",
+    "data/religious-library-hadith-coverage-gaps-v1.json",
+    "data/religious-library-hadith-coverage-ledger-v1.json",
+    "data/religious-library-corpus-coverage-ledger-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch2-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch3-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch4-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch5-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch6-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch7-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch8-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch9-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch10-v1.json",
+    "data/religious-library-hadith-new-authenticated-batch10-external-verification-v1.json",
+    "data/religious-library-hadith-new-authenticated-candidates-batch11-v1.json"
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "indexHtmlByteIdenticalToParent": true,
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true
+  },
+  "religiousCoverageChanges": [
+    "N-048..N-050 promoted",
+    "105/140 hadith structures",
+    "35 positions unmaterialized",
+    "148/183 religious structures"
+  ]
+}

@@ -1,0 +1,18 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V2
+
+Ancien registre canonique :
+- H-ID certains récupérés .............. 13/140
+- H-ID anciens encore non retrouvés .... 127/140
+
+Registre de reconstruction séparé :
+- Candidats ré-audités ................. 18
+- dont lot V1 .......................... 10
+- nouveaux lot V2 ...................... 8
+- anciens H-ID inventés ................ 0
+- countsAsEntry dans les 140 ........... 0
+- productionReady ...................... false pour les 18
+- randomHome ........................... false pour les 18
+- provenance traduction française ...... PENDING
+
+Le nombre 18/127 mesure seulement l'avancement du registre de remplacement.
+Il NE signifie PAS que 18 anciens H-ID ont été retrouvés.

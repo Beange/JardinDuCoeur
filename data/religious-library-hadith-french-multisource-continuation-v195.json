@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V195",
+  "auditId": "HADITH_FRENCH_MULTISOURCE_CONTINUATION_V195",
+  "auditDate": "2026-09-17",
+  "scope": {
+    "reviewedCanonicalIds": [
+      "N-053",
+      "N-030",
+      "N-024"
+    ],
+    "reviewedCount": 3
+  },
+  "promotedCanonicalIds": [
+    "N-053"
+  ],
+  "heldCanonicalIds": [
+    "N-030",
+    "N-024"
+  ],
+  "findings": [
+    {
+      "canonicalId": "N-053",
+      "primaryRef": "Sahih Muslim 2696",
+      "decision": "PROMOTE",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/6112",
+      "reason": "Fiche française HadeethEnc directe : Sa'd, bédouin, dhikr puis invocation pardon/miséricorde/guidée/subsistance; degré Authentique et référence Sahih Muslim 2696; aucun avertissement explicite de révision observé."
+    },
+    {
+      "canonicalId": "N-030",
+      "primaryRef": "Sahih Muslim 2702",
+      "decision": "HELD",
+      "reason": "La recherche a retrouvé la fiche HadeethEnc dans plusieurs langues mais n’a pas établi dans cette passe une fiche française directe admissible; aucune traduction intermédiaire n’est utilisée."
+    },
+    {
+      "canonicalId": "N-024",
+      "primaryRef": "Sahih al-Bukhari 6016",
+      "decision": "HELD",
+      "reason": "La recherche a retrouvé une fiche HadeethEnc non française; aucune traduction française publiée admissible n’a été établie dans cette passe."
+    }
+  ],
+  "countsAfter": {
+    "canonicalHadithStructures": 140,
+    "publishedFrenchCanonicalEntries": 84,
+    "pendingPublishedFrenchCanonicalEntries": 56
+  },
+  "assertions": {
+    "translationSynthesized": false,
+    "partialTranslationPromoted": false,
+    "canonicalReligiousIdentityChanged": false,
+    "runtimeChanged": false,
+    "runtimeIntegrationAuthorized": false
+  }
+}

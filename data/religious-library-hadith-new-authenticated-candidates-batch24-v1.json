@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "sourceRelease": "V134",
+  "targetRelease": "V135",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH24-V1",
+  "verificationDate": "2026-09-16",
+  "purpose": "Twenty-fourth externally verified candidate batch, promoted after full-canon structural and thematic audit in V135.",
+  "counts": {
+    "candidateStructures": 2,
+    "existingCanonicalHadithStructures": 140,
+    "targetHadithStructures": 140,
+    "remainingUnmaterializedPositions": 0,
+    "canonicalCountImpactUntilPromotion": 2
+  },
+  "candidates": [
+    {
+      "id": "N-087",
+      "primaryRef": "Sahih al-Bukhari 5534",
+      "inBookReference": "Book 72, Hadith 59",
+      "narrator": "Abu Musa",
+      "themeVerified": "A good companion and a bad companion are compared to a musk seller and a bellows blower: one brings benefit or a pleasant scent, while the other may burn clothes or leave a bad smell.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/bukhari:5534",
+      "relationReview": {
+        "relatedCanonicalIds": [
+          "RC-019"
+        ],
+        "relatedReferences": [
+          "Sunan Abi Dawud 4811"
+        ],
+        "classification": "RELATED_NOT_DUPLICATE",
+        "reason": "Both concern companionship, but Bukhari 5534 illustrates the concrete influence of good and bad company through the musk seller and bellows blower, whereas Abu Dawud 4811 states that a person follows the religion of a close friend."
+      },
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V135",
+      "canonicalCountImpact": 1
+    },
+    {
+      "id": "N-088",
+      "primaryRef": "Sahih Muslim 2565a",
+      "inBookReference": "Book 45, Hadith 43",
+      "narrator": "Abu Huraira",
+      "themeVerified": "The gates of Paradise are opened on Mondays and Thursdays and forgiveness is granted to those who do not associate partners with Allah, except two people at enmity, whose case is deferred until they reconcile.",
+      "source": "Sunnah.com",
+      "sourceUrl": "https://sunnah.com/muslim:2565a",
+      "referenceVerified": true,
+      "exactReferenceDuplicateInCurrentCanon": false,
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "status": "NEW_AUTHENTICATED_CANONICAL_STRUCTURE",
+      "productionReady": false,
+      "auditDecision": "PROMOTED_V135",
+      "canonicalCountImpact": 1
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "r077Remapped": false,
+    "noThemeOnlyIdentityInference": true,
+    "productionReady": false,
+    "full183ObjectSerialization": "COMPLETE"
+  }
+}

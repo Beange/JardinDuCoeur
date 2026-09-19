@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "purpose": "V89 release-build contract. Closes the current-state coherence graph; no religious identity or runtime change.",
+  "phases": [
+    {
+      "order": 1,
+      "id": "stable-inputs",
+      "action": "Read stable corpus/runtime inputs without modification",
+      "inputs": [
+        "data/religious-library-quran-canonical.json",
+        "data/religious-library-hadith-canonical-consolidation-v44.json",
+        "data/religious-library-hadith-coverage-gaps-v1.json",
+        "data/religious-library-hadith-coverage-ledger-v1.json",
+        "data/religious-library-hadith-reconstruction-v11.json",
+        "historique/07-index-final-consolide.html",
+        "index.html"
+      ]
+    },
+    {
+      "order": 2,
+      "id": "v12-audit-closure",
+      "action": "Close the 11 historical V12 high-confidence PENDING family decisions against canonical V44; preserve V12 source and infer no H-ID",
+      "output": "data/religious-library-hadith-v12-audit-closure-v1.json"
+    },
+    {
+      "order": 3,
+      "id": "decision-residue-audit",
+      "action": "Classify related/rejected/unresolved/quarantined decision residues in canonical V44; preserve explicit exclusions and leave R-077 quarantined",
+      "output": "data/religious-library-hadith-decision-residue-audit-v1.json"
+    },
+    {
+      "order": 4,
+      "id": "r077-evidence-audit",
+      "action": "Compare R-077 inherited reference/summary against verified source texts; do not remap without identity proof",
+      "output": "data/religious-library-hadith-r077-evidence-audit-v1.json"
+    },
+    {
+      "order": 5,
+      "id": "data-contract",
+      "action": "Generate/verify machine-readable shape and identifier contract; infer no religious identity",
+      "output": "data/religious-library-data-contract-v1.json"
+    },
+    {
+      "order": 6,
+      "id": "referential-integrity",
+      "action": "Generate/verify cross-file identifier resolution and reconstruction membership; infer no religious identity",
+      "output": "data/religious-library-referential-integrity-v1.json"
+    },
+    {
+      "order": 7,
+      "id": "global-coverage-ledger",
+      "action": "Verify 183-position administrative coverage index from existing Q-ID and hadith ledger; infer no religious identity",
+      "output": "data/religious-library-corpus-coverage-ledger-v1.json"
+    },
+    {
+      "order": 8,
+      "id": "package-hygiene",
+      "action": "Scan release tree for transient/cache/editor-backup files and symbolic links; infer no religious identity",
+      "output": "data/religious-library-release-package-hygiene-v1.json"
+    },
+    {
+      "order": 9,
+      "id": "json-integrity",
+      "action": "Verify UTF-8/strict JSON parsing, duplicate-key prohibition and top-level shape across data/*.json",
+      "output": "data/religious-library-release-json-integrity-v1.json"
+    },
+    {
+      "order": 10,
+      "id": "semantic-integrity",
+      "action": "Verify critical JSON root types and exact root-key sets",
+      "output": "data/religious-library-release-semantic-integrity-v1.json"
+    },
+    {
+      "order": 11,
+      "id": "semantic-digest",
+      "action": "Compute project-canonical JSON SHA-256 digests for stable JSON inputs; ignore formatting-only changes",
+      "output": "data/religious-library-release-semantic-digest-v1.json"
+    },
+    {
+      "order": 12,
+      "id": "archive-fileset",
+      "action": "Generate/verify exhaustive regular-file path set for the release tree; reject missing or unexpected files",
+      "output": "data/religious-library-release-archive-fileset-v1.json"
+    },
+    {
+      "order": 13,
+      "id": "current-state-coherence",
+      "action": "Close and verify current-state metadata/documentation graph; infer no religious identity",
+      "output": "data/religious-library-current-state-coherence-v1.json"
+    },
+    {
+      "order": 14,
+      "id": "target-manifest",
+      "action": "Update release-status pointers only; do not alter religious identities",
+      "output": "data/religious-library-target-manifest.json"
+    },
+    {
+      "order": 15,
+      "id": "validator",
+      "action": "Update validation rules before inventory hashing",
+      "output": "tools/validate_project.py"
+    },
+    {
+      "order": 16,
+      "id": "release-delta",
+      "action": "Record stable-input delta against V107 parent.",
+      "output": "data/religious-library-release-delta-v1.json"
+    },
+    {
+      "order": 17,
+      "id": "inventory",
+      "action": "Hash selected stable/admin inputs; inventory excludes recursive release metadata",
+      "output": "data/religious-library-release-file-inventory-v1.json"
+    },
+    {
+      "order": 18,
+      "id": "release-coherence",
+      "action": "Verify release metadata declare one coherent current/parent release state",
+      "output": "data/religious-library-release-coherence-v1.json"
+    },
+    {
+      "order": 19,
+      "id": "provenance",
+      "action": "Bind V108 to parent V107 and current release metadata.",
+      "output": "data/religious-library-release-provenance-v1.json"
+    },
+    {
+      "order": 20,
+      "id": "integrity-snapshot",
+      "action": "Hash critical corpus/release files after all prior metadata is stable",
+      "output": "data/religious-library-corpus-integrity-v1.json"
+    },
+    {
+      "order": 21,
+      "id": "validation-report",
+      "action": "Run validator and capture report",
+      "output": "docs/VALIDATION-STRUCTURE.txt"
+    },
+    {
+      "order": 22,
+      "id": "package-hashes",
+      "action": "Generate FILES-SHA256 excluding itself",
+      "output": "docs/FILES-SHA256.txt"
+    },
+    {
+      "order": 23,
+      "id": "zip-reproducibility",
+      "action": "Verify deterministic ZIP build parameters and exact file-set boundary",
+      "output": "data/religious-library-release-zip-reproducibility-v1.json"
+    },
+    {
+      "order": 24,
+      "id": "reproducibility-attestation",
+      "action": "Verify two independent deterministic ZIP builds and emit observed SHA-256 evidence outside the archive to avoid self-reference",
+      "output": "external: Jardin-du-Coeur-PWA-hadith-consolidation-v108-reproducibility-report.json"
+    },
+    {
+      "order": 25,
+      "id": "zip",
+      "action": "Build final ZIP twice with tools/build_release_zip.py, compare SHA-256, then integrity-test final ZIP"
+    }
+  ],
+  "hashBoundaryRules": {
+    "inventoryExcludes": [
+      "data/religious-library-corpus-integrity-v1.json",
+      "data/religious-library-release-delta-v1.json",
+      "data/religious-library-release-file-inventory-v1.json",
+      "data/religious-library-release-provenance-v1.json",
+      "data/religious-library-release-coherence-v1.json"
+    ],
+    "integritySnapshotMayHashReleaseMetadata": true,
+    "filesSha256ExcludesSelf": true,
+    "zipHashStoredOutsideArchive": true,
+    "deltaAttestationHashesStableInputsOnly": true,
+    "archiveFileSetPathsOnly": true,
+    "deterministicZipMetadata": true,
+    "zipBuilder": "tools/build_release_zip.py"
+  },
+  "runtimePolicy": {
+    "indexHtmlMustRemainByteIdenticalToParent": true,
+    "indexHtmlMustEqualHistoricalFinalSnapshot": true
+  },
+  "religiousDataPolicy": {
+    "noInventedHistoricalMappings": true,
+    "noInventedGapIdentity": true,
+    "full183ObjectSerialization": "PENDING",
+    "productionReady": false
+  }
+}

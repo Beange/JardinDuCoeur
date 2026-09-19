@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V83",
+  "purpose": "Auditer et documenter l'asymétrie résiduelle entre inventaire sélectionné, fichiers critiques et graphe de cohérence.",
+  "finding": {
+    "classification": "RELEASE_PROTECTION_SET_ASYMMETRY",
+    "v82": {
+      "inventoryCount": 30,
+      "criticalCount": 33,
+      "criticalNotInventory": [
+        "data/religious-library-release-build-v1.json",
+        "data/religious-library-release-coherence-v1.json",
+        "data/religious-library-release-delta-v1.json",
+        "data/religious-library-release-file-inventory-v1.json",
+        "data/religious-library-release-provenance-v1.json"
+      ],
+      "inventoryNotCritical": [
+        "historique/07-index-final-consolide.html",
+        "tools/validate_project.py"
+      ]
+    },
+    "policy": "V83 aligns non-recursive release protection targets. Self/mutually recursive hash relationships (inventory↔provenance and integrity self-reference) are explicitly excluded; deterministic archive reproducibility protects the complete fileset.",
+    "religiousCorpusImpact": false
+  },
+  "assertions": {
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "newHistoricalHIdsRecovered": 0,
+    "gapsAssigned": 0,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

@@ -1,0 +1,11 @@
+Jardin du Cœur — validation ciblée de la release V121
+
+Résultat : PASS
+Contrôles : 80
+Réussites : 80
+Échecs : 0
+
+Points contrôlés : promotion unique de N-066 à N-068; relations non duplicatives de N-067 et N-068; couverture 123/140 hadiths et 166/183 structures; 17 positions restantes; aucun H-ID attribué; traduction française PENDING; productionReady=false; R-077 quarantiné; index.html inchangé; manifeste et JSON cohérents.
+
+Commande : python tools/validate_project.py
+Résumé machine : Checks: 80 | PASS: 80 | FAIL: 0

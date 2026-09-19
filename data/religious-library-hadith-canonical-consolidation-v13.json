@@ -1,0 +1,82 @@
+{
+  "registerId": "hadith-canonical-consolidation-v13",
+  "source": "reconstruction-v11 + consolidation-v12",
+  "canonicalStructuralEntries": [
+    {
+      "canonicalId": "RC-001",
+      "primary": "R-029",
+      "primaryRef": "Sahih al-Bukhari 10",
+      "parallels": [
+        "R-030"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 40"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "sécurité de la langue et de la main",
+      "note": "Même enseignement central; Bukhari conserve en plus la clause sur le muhājir."
+    },
+    {
+      "canonicalId": "RC-002",
+      "primary": "R-039",
+      "primaryRef": "Sahih al-Bukhari 6114",
+      "parallels": [
+        "R-040"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 2609a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "maîtrise de soi dans la colère",
+      "note": "Formulation centrale parallèle confirmée."
+    },
+    {
+      "canonicalId": "RC-003",
+      "primary": "R-047",
+      "primaryRef": "Sahih Muslim 2564c",
+      "parallels": [
+        "R-048"
+      ],
+      "parallelRefs": [
+        "Sunan Ibn Majah 4143"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED",
+      "theme": "cœurs, actes, apparence et biens",
+      "note": "Transmission parallèle confirmée; Ibn Majah 4143 est gradé Sahih (Darussalam) sur la source consultée."
+    },
+    {
+      "canonicalId": "RC-004",
+      "primary": "R-055",
+      "primaryRef": "Sahih al-Bukhari 1413",
+      "parallels": [
+        "R-056"
+      ],
+      "parallelRefs": [
+        "Sahih Muslim 1016a"
+      ],
+      "status": "CANONICAL_STRUCTURE_CONFIRMED_WITH_CONTEXT_DIFFERENCE",
+      "theme": "demi-datte et protection contre le Feu",
+      "note": "Même noyau sur la demi-datte; Bukhari 1413 inclut explicitement l'alternative de la bonne parole, tandis que Muslim 1016a dans cette route s'arrête à la demi-datte."
+    }
+  ],
+  "counts": {
+    "canonicalStructuresConfirmed": 4,
+    "rawCandidatesConsumed": 8,
+    "rawCandidatesTotal": 82,
+    "rawCandidatesNotYetConsolidated": 74
+  },
+  "corrections": [
+    {
+      "id": "R-059",
+      "from": "Sahih al-Bukhari 5678",
+      "to": "Sahih al-Bukhari 5675",
+      "reason": "La formule de guérison 'Lord of the people...' est référencée Bukhari 5675 dans la source vérifiée."
+    }
+  ],
+  "productionPolicy": {
+    "publishedFrenchTranslation": "PENDING",
+    "productionReady": false,
+    "historicalHIdAssigned": false,
+    "runtimeMigration": false
+  }
+}

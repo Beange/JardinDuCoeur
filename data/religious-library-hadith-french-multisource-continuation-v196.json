@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V196",
+  "auditId": "HADITH_FRENCH_MULTISOURCE_CONTINUATION_V196",
+  "auditDate": "2026-09-17",
+  "scope": {"reviewedCanonicalIds": ["N-030", "N-024"], "reviewedCount": 2},
+  "promotedCanonicalIds": [],
+  "heldCanonicalIds": ["N-030", "N-024"],
+  "findings": [
+    {
+      "canonicalId": "N-030",
+      "primaryRef": "Sahih Muslim 2702",
+      "decision": "HELD",
+      "reason": "La fiche HadeethEnc 4809 est vérifiable en anglais et confirme le matn arabe, le degré Authentique et Sahih Muslim 2702, mais l'URL française directe /fr/browse/hadith/4809 retourne 404 lors de cette passe. Aucune traduction intermédiaire n'est utilisée."
+    },
+    {
+      "canonicalId": "N-024",
+      "primaryRef": "Sahih al-Bukhari 6016",
+      "decision": "HELD",
+      "reason": "La fiche HadeethEnc 66268 est vérifiable en anglais et confirme le matn arabe, le degré Authentique et Sahih al-Bukhari 6016, mais l'URL française directe /fr/browse/hadith/66268 retourne 404 lors de cette passe. Aucune traduction intermédiaire n'est utilisée."
+    }
+  ],
+  "countsAfter": {"canonicalHadithStructures": 140, "publishedFrenchCanonicalEntries": 84, "pendingPublishedFrenchCanonicalEntries": 56},
+  "assertions": {"translationSynthesized": false, "partialTranslationPromoted": false, "canonicalReligiousIdentityChanged": false, "runtimeChanged": false, "runtimeIntegrationAuthorized": false}
+}

@@ -1,0 +1,19 @@
+JARDIN DU CŒUR — VALIDATION RELEASE V52
+
+Objet: cohérence transversale des métadonnées de release, sans modification du corpus religieux ni du runtime.
+
+Résultats:
+- Validateur consolidé: 137/137 PASS.
+- Release courante cohérente: V52.
+- Parent cohérent: V51.
+- 43 dossiers Qur’an.
+- 69 structures hadith canoniques.
+- 71 GAP administratifs.
+- 140 positions hadith comptabilisées.
+- 112/183 structures religieuses matérialisées.
+- 81/82 R-ID absorbés; R-077 quarantiné.
+- Aucun mapping historique inventé.
+- Aucune identité religieuse attribuée aux GAP.
+- index.html inchangé par rapport à V51 et égal au snapshot historique final.
+- full183ObjectSerialization=PENDING.
+- productionReady=false.

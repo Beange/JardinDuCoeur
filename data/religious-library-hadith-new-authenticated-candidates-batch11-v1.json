@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V112",
+  "registerId": "JDC-HADITH-NEW-AUTHENTICATED-CANDIDATES-BATCH11-V1",
+  "purpose": "Eleventh candidate batch, externally verified and promoted after exact-reference and duplicate adjudication.",
+  "selectionPolicy": {
+    "preferredCollections": [
+      "Sahih al-Bukhari",
+      "Sahih Muslim"
+    ],
+    "exactReferenceVerificationRequiredBeforePromotion": true,
+    "duplicateCheckRequiredBeforePromotion": true,
+    "historicalHIdRecoveryClaimed": false,
+    "publishedFrenchTranslationPolicy": "PENDING"
+  },
+  "counts": {
+    "candidateStructures": 3,
+    "existingCanonicalStructures": 105,
+    "targetHadithStructures": 140,
+    "remainingUnfilledTarget": 35
+  },
+  "candidates": [
+    {
+      "id": "N-048",
+      "primaryRefCandidate": "Sahih al-Bukhari 6000",
+      "themeCandidate": "Allah divided mercy into one hundred parts, kept ninety-nine with Him, and sent one part to earth; creation shows mercy through that one part",
+      "narratorCandidate": "Abu Huraira",
+      "sourceUrlCandidate": "https://sunnah.com/bukhari:6000",
+      "source": "Sunnah.com",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_EXTERNAL_VERIFICATION_COMPLETE",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "inBookReference": "Book 78, Hadith 31",
+      "auditDecision": "PROMOTED_V109"
+    },
+    {
+      "id": "N-049",
+      "primaryRefCandidate": "Sahih Muslim 2751a",
+      "themeCandidate": "Allah's mercy predominates His wrath",
+      "narratorCandidate": "Abu Huraira",
+      "sourceUrlCandidate": "https://sunnah.com/muslim:2751a",
+      "source": "Sunnah.com",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_EXTERNAL_VERIFICATION_COMPLETE",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "inBookReference": "Book 50, Hadith 17",
+      "auditDecision": "PROMOTED_V109"
+    },
+    {
+      "id": "N-050",
+      "primaryRefCandidate": "Sahih al-Bukhari 7405",
+      "themeCandidate": "Allah says that He is as His servant thinks of Him and is with the servant when the servant remembers Him",
+      "narratorCandidate": "Abu Huraira",
+      "sourceUrlCandidate": "https://sunnah.com/bukhari:7405",
+      "source": "Sunnah.com",
+      "kind": "newAuthenticatedCorpusCandidate",
+      "historicalHId": null,
+      "reconstructionRId": null,
+      "identityPolicy": "NEW_CORPUS_IDENTITY_NOT_HISTORICAL_RECOVERY",
+      "referenceVerified": true,
+      "verificationStatus": "EXACT_EXTERNAL_VERIFICATION_COMPLETE",
+      "publishedFrenchTranslation": null,
+      "frenchTextStatus": "PENDING_PUBLISHED_FRENCH_PROVENANCE",
+      "canonicalCountImpactUntilPromoted": 1,
+      "productionReady": false,
+      "inBookReference": "Book 97, Hadith 34",
+      "auditDecision": "PROMOTED_V109"
+    }
+  ],
+  "assertions": {
+    "religiousCorpusChanged": true,
+    "runtimeChanged": false,
+    "candidatesNotYetCanonical": false,
+    "newHistoricalHIdsRecovered": 0,
+    "historicalHIdsStillUnrecovered": 127,
+    "r077Remapped": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}

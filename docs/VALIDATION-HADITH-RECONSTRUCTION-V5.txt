@@ -1,0 +1,22 @@
+JARDIN DU CŒUR — HADITH RECONSTRUCTION V5
+
+H-ID historiques certains .............. 13/140
+H-ID historiques non retrouvés ......... 127/140
+
+Candidats reconstruction bruts ......... 44/127
+Nouveaux V5 ............................. 6
+Places brutes restantes ................ 83
+
+Familles de déduplication ajoutées :
+- force / colère
+- hospitalité / parole / parenté
+- douceur / rifq (famille élargie)
+
+Aucun ancien H-ID inventé ............... PASS
+countsAsEntry=false ..................... PASS
+productionReady=false ................... PASS
+randomHome=false ........................ PASS
+provenance française .................... PENDING
+
+Le compteur 44/127 reste un compteur de candidats,
+et non un compteur canonique après déduplication.

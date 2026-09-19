@@ -1,0 +1,12 @@
+JARDIN DU COEUR — VALIDATION HADITH CONSOLIDATION V27
+
+Lot: R-049, R-050, R-054
+Structure: RC-046
+References verified against Sunnah.com on 2026-09-12.
+- R-049: Sahih al-Bukhari 2989 — Abu Hurayra; sadaqah for every joint/day: justice, assistance with mount/luggage, good word, steps to prayer, removal of harm.
+- R-050: Sahih al-Bukhari 2891 — Abu Hurayra via Hammam; closely parallel route: mount/luggage, good word, steps to prayer, road guidance.
+- R-054: Sahih Muslim 1009 — Abu Hurayra via Hammam; same core as Bukhari 2989 nearly item-for-item.
+Decision: consolidate all three R-ID into RC-046, preserving wording differences as parallel routes (+0).
+No reference correction required.
+Counts: 57/82 R-ID consumed; 25 remaining; 46 canonical structures total (33 reconstruction + 13 historical).
+French published translation: PENDING. productionReady: false. index.html not modified.

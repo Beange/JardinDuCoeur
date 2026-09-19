@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V147",
+  "registerId": "JDC-HADITH-FRENCH-EXTERNAL-SOURCE-AUDIT-BATCH7-V1",
+  "purpose": "Audit externe français de RC-014 et RC-015; aucune promotion sans page française officielle HadeethEnc et correspondance canonique exacte vérifiable.",
+  "auditDate": "2026-09-16",
+  "publisherReviewed": "HadeethEnc.com — Encyclopédie des paroles prophétiques traduites",
+  "primaryReferenceCrossCheck": "Sunnah.com",
+  "counts": {
+    "canonicalStructuresAudited": 2,
+    "officialFrenchPagesLocated": 0,
+    "exactPrimaryReferencesDisplayed": 0,
+    "translationsPromoted": 0,
+    "entriesPendingExactReferenceResolution": 2
+  },
+  "entries": [
+    {
+      "canonicalId": "RC-014",
+      "primaryRef": "Sahih al-Bukhari 2079",
+      "parallels": ["Sahih al-Bukhari 2082"],
+      "relatedRefs": ["Sahih al-Bukhari 2087", "Sahih al-Bukhari 2088"],
+      "rejectedRefs": ["Sahih al-Bukhari 2086"],
+      "officialFrenchUrl": null,
+      "exactPrimaryReferenceDisplayed": false,
+      "primaryReferenceExternallyConfirmed": true,
+      "decision": "PENDING_OFFICIAL_FRENCH_PAGE_RESOLUTION",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    },
+    {
+      "canonicalId": "RC-015",
+      "primaryRef": "Sahih Muslim 2865d",
+      "variants": ["Sahih Muslim 2865a", "Sahih Muslim 2865b", "Sahih Muslim 2865c"],
+      "officialFrenchUrl": null,
+      "exactPrimaryReferenceDisplayed": false,
+      "primaryReferenceExternallyConfirmed": true,
+      "decision": "PENDING_OFFICIAL_FRENCH_PAGE_RESOLUTION",
+      "publishedFrenchTranslation": null,
+      "productionReady": false
+    }
+  ],
+  "assertions": {
+    "translationSynthesized": false,
+    "translationModified": false,
+    "referenceNumberInferredFromHadeethEnc": false,
+    "runtimeChanged": false,
+    "productionIntegrationAuthorized": false
+  }
+}

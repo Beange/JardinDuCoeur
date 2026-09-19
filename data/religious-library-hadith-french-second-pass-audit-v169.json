@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "project": "Jardin du Coeur",
+  "release": "V169",
+  "auditId": "french-second-pass-rc016-rc031-v1",
+  "scope": {
+    "canonicalIds": [
+      "RC-016",
+      "RC-031"
+    ],
+    "result": "2 promoted"
+  },
+  "promoted": [
+    {
+      "canonicalId": "RC-016",
+      "primaryRef": "Sahih Muslim 2749",
+      "hadeethEncId": "5454",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5454",
+      "identityEvidence": [
+        "Arabic matn concordant",
+        "narrator Abu Huraira concordant",
+        "Sahih Muslim 2749 displayed",
+        "French translation published"
+      ],
+      "explicitRevisionWarningObserved": false
+    },
+    {
+      "canonicalId": "RC-031",
+      "primaryRef": "Sahih al-Bukhari 5997",
+      "hadeethEncId": "5440",
+      "sourceUrl": "https://hadeethenc.com/fr/browse/hadith/5440",
+      "identityEvidence": [
+        "Arabic matn concordant",
+        "narrator Abu Huraira concordant",
+        "Al-Bukhari and Muslim attribution displayed",
+        "exact Sahih al-Bukhari 5997 confirmed by primary-reference cross-check",
+        "French translation published"
+      ],
+      "explicitRevisionWarningObserved": false
+    }
+  ],
+  "countsAfter": {
+    "verified": 61,
+    "waiting": 79
+  },
+  "policy": "No synthetic French translation; verbatim published French only."
+}

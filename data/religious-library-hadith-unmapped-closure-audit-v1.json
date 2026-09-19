@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "project": "Jardin du Cœur",
+  "release": "V79",
+  "status": "UNMAPPED_REGISTER_STRUCTURALLY_CONSUMED_NO_HID_RECOVERY",
+  "purpose": "Audit the legacy UM-001..UM-010 register against the current canonical structural consolidation. Establish structural coverage only; never infer a historical H-ID from UM membership.",
+  "sourceRegister": "data/religious-library-hadith-unmapped-candidates.json",
+  "canonicalRegister": "data/religious-library-hadith-canonical-consolidation-v44.json",
+  "counts": {
+    "umCandidates": 10,
+    "structurallyRepresented": 10,
+    "unrepresented": 0,
+    "historicalHIdsRecovered": 0,
+    "gapsAssigned": 0
+  },
+  "entries": [
+    {
+      "umId": "UM-001",
+      "primaryRef": "Sahih Muslim 130",
+      "representedInRc": "RC-047",
+      "reconstructionId": "R-001",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-002",
+      "primaryRef": "Sahih Muslim 131a",
+      "representedInRc": "RC-048",
+      "reconstructionId": "R-002",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-003",
+      "primaryRef": "Sahih Muslim 1907a",
+      "representedInRc": "RC-005",
+      "reconstructionId": "R-003",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-004",
+      "primaryRef": "Sahih Muslim 1053a",
+      "representedInRc": "RC-042",
+      "reconstructionId": "R-004",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-005",
+      "primaryRef": "Sahih Muslim 2326",
+      "representedInRc": "RC-068",
+      "reconstructionId": "R-005",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-006",
+      "primaryRef": "Sahih al-Bukhari 6464",
+      "representedInRc": "RC-028",
+      "reconstructionId": "R-006",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-007",
+      "primaryRef": "Sahih al-Bukhari 6465",
+      "representedInRc": "RC-029",
+      "reconstructionId": "R-007",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-008",
+      "primaryRef": "Sahih Muslim 783b",
+      "representedInRc": "RC-029",
+      "reconstructionId": "R-008",
+      "representationRole": "parallelRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-009",
+      "primaryRef": "Sahih Muslim 2818a",
+      "representedInRc": "RC-028",
+      "reconstructionId": "R-009",
+      "representationRole": "parallelRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    },
+    {
+      "umId": "UM-010",
+      "primaryRef": "Sahih al-Bukhari 6466",
+      "representedInRc": "RC-030",
+      "reconstructionId": "R-010",
+      "representationRole": "primaryRef",
+      "historicalHId": null,
+      "gapId": null,
+      "disposition": "STRUCTURALLY_REPRESENTED_HISTORICAL_IDENTITY_STILL_UNKNOWN"
+    }
+  ],
+  "assertions": {
+    "allUmCandidatesStructurallyRepresented": true,
+    "umIdsRemainTechnicalOnly": true,
+    "noUmIdPromotedToHistoricalHId": true,
+    "noGapIdentityInvented": true,
+    "religiousCorpusChanged": false,
+    "runtimeChanged": false,
+    "productionReady": false,
+    "full183ObjectSerialization": "PENDING"
+  }
+}
