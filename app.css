@@ -1288,3 +1288,6 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px soli
 .today-progress-track .jdc-progress-98{width:98%}
 .today-progress-track .jdc-progress-99{width:99%}
 .today-progress-track .jdc-progress-100{width:100%}
+
+/* Respecter le masquage de l’écran de verrouillage */
+.lock-screen[hidden]{display:none}
