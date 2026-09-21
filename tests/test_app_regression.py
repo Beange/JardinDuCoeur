@@ -34,11 +34,45 @@ class AppRegression(unittest.TestCase):
             self.assertIn(f'data-book-lesson="book-wadiiyya-{lesson}"', self.js)
             self.assertIn(f"id:'book-wadiiyya-{lesson}'", self.js)
 
+    def test_update_persists_before_reload(self):
+        self.assertIn('if(!persistBeforeLeave())', self.js)
+        self.assertIn('refreshingFromServiceWorker=true;location.reload()', self.js)
+
     def test_version_is_consistent(self):
-        self.assertIn("const APP_VERSION = '2.1.12'", self.js)
-        self.assertIn('const BUILD_VERSION = 268', self.js)
-        self.assertIn('Version 2.1.12 PWA · build 268', self.index)
-        self.assertIn("const CACHE = 'jardin-du-coeur-v268'", self.sw)
+        self.assertIn("const APP_VERSION = '2.1.22'", self.js)
+        self.assertIn('const BUILD_VERSION = 309', self.js)
+        self.assertIn('Version 2.1.22 PWA · build 309', self.index)
+        self.assertIn("const CACHE = 'jardin-du-coeur-v309'", self.sw)
+
+    def test_v273_cycle_listen_is_useful(self):
+        cycle_listen=text('cycle-listen.js')
+        self.assertIn('data-cycle-action="listen"', self.index)
+        self.assertIn("action==='listen'", self.js)
+        self.assertIn('Récitations du Coran', cycle_listen)
+        self.assertIn('Cours & rappels', cycle_listen)
+        self.assertNotIn('Écouter la parole du jour', cycle_listen)
+        self.assertIn("'./cycle-listen.js'", self.sw)
+
+    def test_v271_authentic_dua_and_reference_dedup(self):
+        dua=text('dua-library.js')
+        self.assertIn("id:'q1-6'", dua)
+        self.assertIn('Coran 1:6 · QuranEnc / Muhammad Hamidullah', dua)
+        self.assertIn('refs.has(r)', dua)
+
+    def test_v270_dua_source_filters(self):
+        self.assertIn('id="duaSources"', self.index)
+        self.assertIn('Du‘â du Coran', self.index)
+        self.assertIn('Du‘â de la Sunna', self.index)
+        self.assertIn("d.grade.includes('Coran')?'Coran':'Sunna'", self.js)
+
+    def test_v269_dua_library_is_expanded_and_deduplicated(self):
+        dua=text('dua-library.js')
+        self.assertEqual(dua.count("grade:'📖 Coran'"), 8)
+        self.assertIn('window.JDC_DUA_LIBRARY_ADDITIONS', dua)
+        self.assertIn('texts.has(key)', dua)
+        self.assertIn('ids.has(d.id)', dua)
+        self.assertIn('./dua-library.js', self.index)
+        self.assertIn("'./dua-library.js'", self.sw)
 
     def test_v239_input_resume_and_exit_persistence(self):
         self.assertIn("let lastActiveField = '';", self.js)
@@ -117,7 +151,7 @@ class AppRegression(unittest.TestCase):
 
     def test_no_inline_daily_base64_regression(self):
         self.assertNotIn('data:image/jpeg;base64',self.js)
-        self.assertLess(len(self.js.encode()),150000)
+        self.assertLess(len(self.js.encode()),180000)  # budget raised for the PIN-lock security feature (audit fix)
 
     def test_service_worker_update_contract(self):
         self.assertIn("event.data.type === 'SKIP_WAITING'",self.sw)

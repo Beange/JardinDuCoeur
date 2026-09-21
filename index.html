@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'none'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jardin du Cœur</title>
 <meta name="theme-color" content="#174f45">
@@ -22,6 +23,17 @@
 <link rel="stylesheet" href="./app.css">
 </head>
 <body>
+<div id="lockScreen" class="lock-screen" hidden>
+  <div class="lock-card">
+    <span class="svg-icon lock-icon" data-icon="lock" aria-hidden="true"></span>
+    <h2>Jardin du Cœur</h2>
+    <p class="subtle">Entre ton code pour continuer</p>
+    <label class="sr-only" for="lockPinInput">Code de verrouillage</label>
+    <input id="lockPinInput" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="8" autocomplete="off" placeholder="Code">
+    <button class="primary" id="lockUnlockBtn" type="button">Déverrouiller</button>
+    <p id="lockError" class="lock-error" hidden>Code incorrect</p>
+  </div>
+</div>
 <a class="skip-link" href="#appMain">Aller au contenu</a>
 <main class="app-shell" id="appMain">
   <div class="device-wrap">
@@ -30,7 +42,7 @@
 
       <!-- 1 -->
       <section class="screen active" data-screen="1">
-        <div class="screen-head home-screen-head"><button class="iconbtn" id="homeHistoryBtn" aria-label="Historique récent"><span class="svg-icon" data-icon="clock"></span></button><strong class="home-screen-title">Aujourd’hui</strong><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="screen-head home-screen-head"><button class="iconbtn" id="homeHistoryBtn" aria-label="Historique récent"><span class="svg-icon" data-icon="clock"></span></button><strong class="home-screen-title">Aujourd’hui</strong><button class="iconbtn" data-action="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
         <div class="home-hero" id="dailyHero">
           <div class="home-greeting">
             <div class="salam serif">As-salāmu ‘alaykum ♡</div>
@@ -58,16 +70,16 @@
         <div class="card home-start-card">
           <div class="home-card-kicker">MON POINT DE DÉPART</div>
           <div class="section-title"><span class="icon-orb pink"><span class="svg-icon" data-icon="heart"></span></span> Mon intention du jour</div>
-          <div class="subtle" style="margin:-2px 0 7px">Quelle intention souhaites-tu garder près de ton cœur aujourd’hui ?</div>
+          <div class="subtle jdc-inline-1">Quelle intention souhaites-tu garder près de ton cœur aujourd’hui ?</div>
           <textarea id="intent" data-field="intention" placeholder="Aujourd’hui, j’aimerais…" aria-label="Mon intention du jour"></textarea>
-          <button class="secondary" id="intentionHelpBtn" type="button" style="margin:7px 0 8px">Besoin d’inspiration ?</button>
-          <button class="primary" id="startDayBtn" type="button" onclick="startOrContinueDay()">Commencer ma journée</button><div class="journey-hint" id="homeJourneyHint" aria-live="polite">Commence par tes prières et ta lecture du jour.</div>
+          <button class="secondary jdc-inline-2" id="intentionHelpBtn" type="button">Besoin d’inspiration ?</button>
+          <button class="primary" id="startDayBtn" type="button" data-action="startOrContinueDay()">Commencer ma journée</button><div class="journey-hint" id="homeJourneyHint" aria-live="polite">Commence par tes prières et ta lecture du jour.</div>
         </div>
         <div class="card home-prayer-preview" id="homePrayerPreview">
           <div class="home-card-kicker">MES REPÈRES</div>
           <div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="prayer"></span></span> Mes prières aujourd’hui</div>
-          <div class="subtle" style="margin:-2px 0 9px">Fajr · Dhuhr · ‘Asr · Maghrib · ‘Ishā’</div>
-          <button class="secondary" type="button" onclick="selectedDate=todayKey();renderSelectedDay();go(2)">Voir et renseigner mes prières</button>
+          <div class="subtle jdc-inline-3">Fajr · Dhuhr · ‘Asr · Maghrib · ‘Ishā’</div>
+          <button class="secondary" type="button" data-action="selectedDate=todayKey();renderSelectedDay();go(2)">Voir et renseigner mes prières</button>
         </div>
         <div class="card home-today-dashboard" id="homeTodayDashboard" aria-labelledby="homeTodayTitle">
           <div class="home-card-kicker">MA CONTINUITÉ</div>
@@ -85,7 +97,7 @@
 
       <!-- 2 -->
       <section class="screen" data-screen="2">
-        <div class="screen-head"><button class="iconbtn" id="dayBasicsBackBtn" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma journée</h2><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="screen-head"><button class="iconbtn" id="dayBasicsBackBtn" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma journée</h2><button class="iconbtn" data-action="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
         <div class="journal-view-mode" data-journal-mode-notice hidden></div>
         <div class="day-basics-intro"><span class="day-basics-kicker">MES REPÈRES DU JOUR</span><p>Renseigne simplement ce qui compte maintenant. Tu pourras compléter le reste plus tard.</p></div>
         <div class="datebar"><button class="round" id="prevDay" aria-label="Jour précédent">‹</button><div class="center"><strong id="journalDate">—</strong><span id="journalHijri">—</span><button class="date-today-link" id="journalTodayBtn" type="button">Aujourd’hui</button></div><button class="round" id="nextDay" aria-label="Jour suivant">›</button></div>
@@ -109,7 +121,7 @@
 
       <!-- 3 -->
       <section class="screen" data-screen="3">
-        <div class="screen-head"><button class="iconbtn" onclick="go(2)" aria-label="Retour aux prières"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma journée</h2><span></span></div>
+        <div class="screen-head"><button class="iconbtn" data-action="go(2)" aria-label="Retour aux prières"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma journée</h2><span></span></div>
         <div class="journal-view-mode" data-journal-mode-notice hidden></div>
         <div class="day-context" aria-live="polite"><strong id="dayDetailsDate">—</strong><div class="day-context-actions"><button type="button" id="dayDetailsTodayBtn">Aujourd’hui</button><button type="button" id="dayDetailsJournalBtn">Voir dans le journal</button></div></div>
         <div class="heart-page-intro" aria-labelledby="heartPageTitle"><span class="heart-page-kicker">MES REPÈRES INTÉRIEURS</span><strong id="heartPageTitle">Ce que mon cœur porte</strong><p>Quelques mots suffisent. Tu peux renseigner seulement ce qui compte aujourd’hui.</p></div>
@@ -123,7 +135,7 @@
         <div class="card">
           <div class="section-title"><span class="icon-orb green"><span class="svg-icon" data-icon="heart-fill"></span></span> Ma journée en un mot</div>
           <div class="subtle">Choisis un mot pour résumer ta journée</div>
-          <div class="word-chips" style="margin-top:8px"><button class="chip" data-word="Apaisante">Apaisante</button><button class="chip" data-word="Difficile">Difficile</button><button class="chip" data-word="Bénie">Bénie</button><button class="chip" data-word="Ordinaire">Ordinaire</button></div>
+          <div class="word-chips jdc-inline-4"><button class="chip" data-word="Apaisante">Apaisante</button><button class="chip" data-word="Difficile">Difficile</button><button class="chip" data-word="Bénie">Bénie</button><button class="chip" data-word="Ordinaire">Ordinaire</button></div>
           <div class="day-flow-actions"><button class="secondary" type="button" id="dayBackToBasicsBtn">Prières & Qur’an</button><button class="primary" type="button" id="dayToMuhasabahBtn">Continuer vers ma muhâsabah</button></div>
         </div>
         <Nav active="journal"></Nav>
@@ -150,7 +162,7 @@
 
       <!-- 5 -->
       <section class="screen" data-screen="5">
-        <div class="screen-head"><button class="iconbtn" id="journalHistoryBtn" aria-label="Historique récent"><span class="svg-icon" data-icon="clock"></span></button><h2>Mon journal</h2><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="screen-head"><button class="iconbtn" id="journalHistoryBtn" aria-label="Historique récent"><span class="svg-icon" data-icon="clock"></span></button><h2>Mon journal</h2><button class="iconbtn" data-action="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
         <div class="journal-intro"><strong>Retrouve le fil de tes journées</strong><span>Choisis une date pour relire tes repères, puis ouvre la journée seulement si tu veux aller plus loin.</span></div>
         <div class="calendar-top" aria-label="Vue du journal"><button class="active" aria-current="true">Jour</button><button disabled aria-disabled="true" title="Vue à venir">Semaine</button><button disabled aria-disabled="true" title="Vue à venir">Mois</button><button disabled aria-disabled="true" title="Vue à venir">Année</button></div>
         <div class="card journal-calendar-card">
@@ -162,11 +174,11 @@
           <div class="section-title journal-summary-head"><span id="summaryDate">—</span><small id="summaryContext">—</small></div>
           <div class="journal-selected-nav" aria-label="Naviguer entre les journées"><button class="round" id="journalPrevDay" type="button" aria-label="Journée précédente">‹</button><button class="journal-today-shortcut" id="journalSelectedTodayBtn" type="button">Revenir à aujourd’hui</button><button class="round" id="journalNextDay" type="button" aria-label="Journée suivante">›</button></div>
           <div id="journalReview" class="journal-review" aria-live="polite"></div>
-          <div class="summary-item" data-open-screen="2"><div class="ico"><span class="svg-icon" data-icon="target"></span></div><div><strong>Ma journée</strong><small id="summaryDay">Aucune entrée</small></div><span style="margin-left:auto">›</span></div>
-          <div class="summary-item" data-open-screen="3"><div class="ico" style="background:#f6e3e7"><span class="svg-icon" data-icon="heart"></span></div><div><strong>Ce que mon cœur porte</strong><small id="summaryHeart">Aucune note</small></div><span style="margin-left:auto">›</span></div>
-          <div class="summary-item" data-open-screen="2"><div class="ico"><span class="svg-icon" data-icon="book"></span></div><div><strong>Ma lecture du Qur’an</strong><small id="summaryQuran">Non renseignée</small></div><span style="margin-left:auto">›</span></div>
-          <div class="summary-item" data-open-screen="3"><div class="ico" style="background:#f6e1d6"><span class="svg-icon" data-icon="heart-fill"></span></div><div><strong>Ma gratitude</strong><small id="summaryGratitude">Non renseignée</small></div><span style="margin-left:auto">›</span></div>
-          <div class="summary-item" data-open-screen="4"><div class="ico" style="background:#eef1f7"><span class="svg-icon" data-icon="moon"></span></div><div><strong>Ma muhâsabah</strong><small id="summaryMuhasabah">Non renseignée</small></div><span style="margin-left:auto">›</span></div>
+          <div class="summary-item" data-open-screen="2"><div class="ico"><span class="svg-icon" data-icon="target"></span></div><div><strong>Ma journée</strong><small id="summaryDay">Aucune entrée</small></div><spanclass="jdc-inline-5">›</span></div>
+          <div class="summary-item" data-open-screen="3"><div class="ico jdc-inline-6"><span class="svg-icon" data-icon="heart"></span></div><div><strong>Ce que mon cœur porte</strong><small id="summaryHeart">Aucune note</small></div><spanclass="jdc-inline-5">›</span></div>
+          <div class="summary-item" data-open-screen="2"><div class="ico"><span class="svg-icon" data-icon="book"></span></div><div><strong>Ma lecture du Qur’an</strong><small id="summaryQuran">Non renseignée</small></div><spanclass="jdc-inline-5">›</span></div>
+          <div class="summary-item" data-open-screen="3"><div class="ico jdc-inline-7"><span class="svg-icon" data-icon="heart-fill"></span></div><div><strong>Ma gratitude</strong><small id="summaryGratitude">Non renseignée</small></div><spanclass="jdc-inline-5">›</span></div>
+          <div class="summary-item" data-open-screen="4"><div class="ico jdc-inline-8"><span class="svg-icon" data-icon="moon"></span></div><div><strong>Ma muhâsabah</strong><small id="summaryMuhasabah">Non renseignée</small></div><spanclass="jdc-inline-5">›</span></div>
         </div>
         <div class="journal-open-actions"><button class="secondary journal-open-day" id="journalOpenDayBtn" type="button">Consulter cette journée</button><button class="primary journal-edit-day" id="journalEditDayBtn" type="button">Modifier cette journée</button></div>
         <div class="card journal-recent-card"><div class="section-title journal-recent-title"><span>Mes dernières journées</span><small>Accès rapide</small></div><div id="journalRecent"></div></div>
@@ -175,12 +187,13 @@
 
       <!-- 6 -->
       <section class="screen" data-screen="6">
-        <div class="screen-head"><button class="iconbtn" onclick="go(5)" aria-label="Retour au journal"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Mes du‘â</h2><span></span></div>
+        <div class="screen-head"><button class="iconbtn" data-action="go(5)" aria-label="Retour au journal"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Mes du‘â</h2><span></span></div>
         <div class="dua-page-intro"><span class="dua-page-kicker">INVOQUER · GARDER · RETROUVER</span><strong>Un espace pour tes du‘â</strong><p>Parcours la bibliothèque, garde tes favorites ou écris les tiennes.</p></div>
         <label class="dua-search-label" for="duaSearch">Rechercher</label><div class="searchbar dua-searchbar"><span aria-hidden="true">⌕</span><input id="duaSearch" type="search" placeholder="Titre, thème ou mot-clé…" autocomplete="off"><button class="plus" id="addDuaBtn" aria-label="Écrire une nouvelle du‘â" title="Écrire une nouvelle du‘â"><span class="svg-icon" data-icon="plus"></span></button></div>
         <div class="tabs dua-tabs" id="duaTabs" role="tablist" aria-label="Afficher les du‘â"><button class="active" data-dua-tab="library" role="tab" aria-selected="true">Bibliothèque</button><button data-dua-tab="mine" role="tab" aria-selected="false">Mes du‘â</button><button data-dua-tab="favorites" role="tab" aria-selected="false">Favoris</button></div>
         <div class="dua-filter-head"><span>Filtrer par thème</span><small id="duaViewHint">Invocations de la bibliothèque</small></div>
-        <div class="chips dua-category-chips" id="duaCategories" aria-label="Thèmes de du‘â"><button class="chip active" data-category="Toutes" aria-pressed="true">Toutes</button><button class="chip" data-category="Matin & soir" aria-pressed="false">Matin & soir</button><button class="chip" data-category="Protection" aria-pressed="false">Protection</button><button class="chip" data-category="Pardon" aria-pressed="false">Pardon</button><button class="chip" data-category="Parents" aria-pressed="false">Parents</button><button class="chip" data-category="Famille" aria-pressed="false">Famille</button><button class="chip" data-category="Santé" aria-pressed="false">Santé</button></div>
+        <div class="chips dua-source-chips" id="duaSources" aria-label="Origine des du‘â"><button class="chip active" data-dua-source="Toutes sources" aria-pressed="true">Toutes sources</button><button class="chip" data-dua-source="Coran" aria-pressed="false">Du‘â du Coran</button><button class="chip" data-dua-source="Sunna" aria-pressed="false">Du‘â de la Sunna</button></div>
+        <div class="chips dua-category-chips" id="duaCategories" aria-label="Thèmes de du‘â"><button class="chip active" data-category="Toutes" aria-pressed="true">Toutes</button><button class="chip" data-category="Matin & soir" aria-pressed="false">Matin & soir</button><button class="chip" data-category="Protection" aria-pressed="false">Protection</button><button class="chip" data-category="Pardon" aria-pressed="false">Pardon</button><button class="chip" data-category="Guidance" aria-pressed="false">Guidance</button><button class="chip" data-category="Espérance" aria-pressed="false">Espérance</button><button class="chip" data-category="Savoir" aria-pressed="false">Savoir</button><button class="chip" data-category="Parents" aria-pressed="false">Parents</button><button class="chip" data-category="Famille" aria-pressed="false">Famille</button><button class="chip" data-category="Santé" aria-pressed="false">Santé</button></div>
         <div class="dua-results-head"><strong id="duaResultsTitle">Bibliothèque</strong><span id="duaResultsCount" aria-live="polite"></span></div>
         <div class="card dua-list-card" id="duaList" role="region" aria-labelledby="duaResultsTitle"></div>
         <Nav active="duas"></Nav>
@@ -188,9 +201,9 @@
 
       <!-- 7 -->
       <section class="screen" data-screen="7">
-        <div class="screen-head"><button class="iconbtn" onclick="go(1)" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Mon cycle</h2><button class="iconbtn" onclick="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="screen-head"><button class="iconbtn" data-action="go(1)" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Mon cycle</h2><button class="iconbtn" data-action="go(10)" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
         <div class="cycle-page-intro"><span class="cycle-page-kicker">SUIVI PERSONNEL</span><strong>Observer mon cycle avec simplicité</strong><p>Enregistre uniquement les dates que tu observes. Les estimations restent des repères indicatifs.</p></div>
-        <div class="tabs cycle-tabs" id="cycleTabs" role="tablist" aria-label="Vue du cycle"><button class="active" data-cycle-tab="today" role="tab" aria-selected="true">Aujourd’hui</button><button data-cycle-tab="calendar" role="tab" aria-selected="false">Calendrier</button><button onclick="go(8)">Comprendre</button></div>
+        <div class="tabs cycle-tabs" id="cycleTabs" role="tablist" aria-label="Vue du cycle"><button class="active" data-cycle-tab="today" role="tab" aria-selected="true">Aujourd’hui</button><button data-cycle-tab="calendar" role="tab" aria-selected="false">Calendrier</button><button data-action="go(8)">Comprendre</button></div>
         <div id="cycleTodayPanel">
           <div class="cycle-banner"><div class="cycle-botanical" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div><span class="cycle-banner-label">ÉTAT DU JOUR</span><h3 id="cycleHeadline">Mon cycle</h3><p id="cycleSubline">Tu peux noter manuellement le début d’une période.</p></div><span class="cycle-banner-arrow" aria-hidden="true">›</span></div>
           <div class="card cycle-control">
@@ -212,7 +225,7 @@
               <button class="action" type="button" data-cycle-action="sadaqah"><span class="svg-icon" data-icon="hands-heart"></span><span>Sadaqah</span></button><button class="action" type="button" data-cycle-action="journal"><span class="svg-icon" data-icon="notebook"></span><span>Journal</span></button><button class="action" type="button" data-cycle-action="care"><span class="svg-icon" data-icon="heart-fill"></span><span>Prendre soin de moi</span></button>
             </div>
           </div>
-          <div class="card soft-sand clickable" id="ramadanMakeupCard"><div class="row" style="padding:0;border:0"><div><strong class="serif">☾ Ramadan</strong><div class="subtle" id="ramadanMakeupText">Jeûnes à rattraper : 0 jour</div></div><span>›</span></div></div>
+          <div class="card soft-sand clickable" id="ramadanMakeupCard"><div class="row jdc-inline-9"><div><strong class="serif">☾ Ramadan</strong><div class="subtle" id="ramadanMakeupText">Jeûnes à rattraper : 0 jour</div></div><span>›</span></div></div>
         </div>
         <div id="cycleCalendarPanel" class="hidden">
           <div class="card cycle-calendar-card">
@@ -222,7 +235,7 @@
             <div class="cycle-legend"><span><i class="legend-dot saved"></i>Période enregistrée</span><span><i class="legend-dot estimate"></i>Période estimée</span></div>
           </div>
           <div class="card cycle-history-card"><div class="section-title"><span>Mes périodes</span><small class="cycle-section-help">Historique enregistré</small></div><div id="cycleHistory" class="cycle-history"></div><button class="mini-btn cycle-add-past" id="cycleAddPastBtnCalendar">+ Ajouter une période passée</button></div>
-          <div class="subtle" style="padding:0 4px">Les dates estimées sont indicatives et calculées à partir des périodes que tu as enregistrées. Elles ne déterminent pas à elles seules un statut médical ou juridique religieux.</div>
+          <div class="subtle jdc-inline-10">Les dates estimées sont indicatives et calculées à partir des périodes que tu as enregistrées. Elles ne déterminent pas à elles seules un statut médical ou juridique religieux.</div>
         </div>
         <Nav active="cycle"></Nav>
       </section>
@@ -230,7 +243,7 @@
       <!-- 8 -->
       <section class="screen" data-screen="8">
         <div class="screen-head">
-          <button class="iconbtn" onclick="go(7)" aria-label="Retour à Mon cycle"><span class="svg-icon" data-icon="chevron-left"></span></button>
+          <button class="iconbtn" data-action="go(7)" aria-label="Retour à Mon cycle"><span class="svg-icon" data-icon="chevron-left"></span></button>
           <h2>Comprendre & vivre sa foi</h2><span></span>
         </div>
 
@@ -254,7 +267,7 @@
           <button class="faith-path" type="button" data-faith-path="books"><span>📚</span><span><strong>Leçons tirées d’ouvrages</strong><small>Bibliographie contrôlée · idées reformulées · références visibles</small></span><span aria-hidden="true">›</span></button>
         </div>
 
-        <div class="faith-editorial-card" role="note"><strong>Comment une leçon est publiée</strong><span>Question concrète → réponse courte → explication → sources → divergences éventuelles → application → à retenir.</span></div>
+        <div class="faith-editorial-card" role="note"><strong>Comment une leçon est publiée</strong><span>Réponse courte → repères → nuances ou avis éventuels → application → sources visibles.</span></div>
 
         <div class="learn-section-title faith-section-head"><span>Explorer par thème</span><small>Choisis un repère</small></div>
         <div class="learn-grid" id="faithCategories">
@@ -264,6 +277,7 @@
           <button class="learn-card" aria-pressed="false" data-faith-category="ramadan"><span class="learn-emoji">✨</span><strong>Ramadan au féminin</strong><small>Cycle · jeûne · rattrapage · spiritualité</small></button>
           <button class="learn-card" aria-pressed="false" data-faith-category="life"><span class="learn-emoji">🌿</span><strong>Ma vie de femme musulmane</strong><small>Célibat · mariage · maternité · séparation · ménopause</small></button>
           <button class="learn-card" aria-pressed="false" data-faith-category="women"><span class="learn-emoji">📖</span><strong>Femmes qui nous inspirent</strong><small>Parcours documentés de femmes de l’histoire islamique</small></button>
+          <button class="learn-card" aria-pressed="false" data-faith-category="books"><span class="learn-emoji">📚</span><strong>Leçons d’ouvrages</strong><small>Enseignements attribués · références bibliographiques visibles</small></button>
         </div>
 
         <div class="learn-section-title faith-section-head"><span>Questions & repères</span><small id="faithResultsCount" aria-live="polite">—</small></div>
@@ -278,7 +292,7 @@
 
 <!-- 9 -->
       <section class="screen" data-screen="9">
-        <div class="screen-head"><button class="iconbtn" onclick="go(5)" aria-label="Retour au journal"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma muhâsabah</h2><span></span></div>
+        <div class="screen-head"><button class="iconbtn" data-action="go(5)" aria-label="Retour au journal"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Ma muhâsabah</h2><span></span></div>
         <div class="reflection-page-intro">
           <span class="reflection-page-kicker">PRENDRE DU RECUL</span>
           <strong>Relire une période avec douceur</strong>
@@ -303,29 +317,30 @@
 
       <!-- 10 -->
       <section class="screen" data-screen="10">
-        <div class="screen-head"><button class="iconbtn" onclick="go(1)" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Moi</h2><button class="iconbtn" id="profileSettingsBtn" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
+        <div class="screen-head"><button class="iconbtn" data-action="go(1)" aria-label="Retour à l’accueil"><span class="svg-icon" data-icon="chevron-left"></span></button><h2>Moi</h2><button class="iconbtn" id="profileSettingsBtn" aria-label="Paramètres"><span class="svg-icon" data-icon="settings"></span></button></div>
         <div class="profile-page-intro"><span class="profile-page-kicker">MON ESPACE</span><strong>Mes repères et mes réglages</strong><p>Retrouve ici ta progression, tes espaces personnels et les réglages de l’application.</p></div>
         <div class="card profile-identity-card">
-          <div class="profile-top"><div class="avatar" aria-hidden="true"></div><div><div class="serif" style="font-size:15px" id="profileDisplayName">Mon espace personnel</div><div class="subtle">Toujours un pas vers Allah ♡</div></div><button class="mini-btn profile-name-action" id="profileNameBtn" type="button">Modifier le nom</button></div>
+          <div class="profile-top"><div class="avatar" aria-hidden="true"></div><div><div class="serif jdc-inline-11" id="profileDisplayName">Mon espace personnel</div><div class="subtle">Toujours un pas vers Allah ♡</div></div><button class="mini-btn profile-name-action" id="profileNameBtn" type="button">Modifier le nom</button></div>
         </div>
         <div class="profile-section-label">Mon chemin</div>
         <div class="card settings-list profile-settings-group">
-          <div class="row profile-action" data-profile-panel="progress"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="target"></span></div><div style="flex:1"><strong>Ma progression</strong><small>Journal · habitudes · objectifs</small></div><span>›</span></div>
-          <div class="row profile-action" data-profile-panel="objectives"><div class="setting-ico" style="background:linear-gradient(145deg,#fff4e9,#ecc6a3);color:#9e5e2d"><span class="svg-icon" data-icon="heart-fill"></span></div><div style="flex:1"><strong>Mes objectifs</strong><small>Mon chemin vers Allah</small></div><span>›</span></div>
-          <div class="row profile-action" data-profile-panel="habits"><div class="setting-ico" style="background:linear-gradient(145deg,#eff8ef,#bfdec4);color:#347246"><span class="svg-icon" data-icon="leaf"></span></div><div style="flex:1"><strong>Mes habitudes</strong><small>Cultiver ce qui me fait du bien</small></div><span>›</span></div>
-          <div class="row profile-action" data-profile-panel="garden"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="leaf"></span></div><div style="flex:1"><strong>Mon jardin</strong><small>Intentions et choses à cultiver</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="progress"><div class="setting-ico jdc-inline-12"><span class="svg-icon" data-icon="target"></span></div><div class="jdc-inline-13"><strong>Ma progression</strong><small>Journal · habitudes · objectifs</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="objectives"><div class="setting-ico jdc-inline-14"><span class="svg-icon" data-icon="heart-fill"></span></div><div class="jdc-inline-13"><strong>Mes objectifs</strong><small>Mon chemin vers Allah</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="habits"><div class="setting-ico jdc-inline-15"><span class="svg-icon" data-icon="leaf"></span></div><div class="jdc-inline-13"><strong>Mes habitudes</strong><small>Cultiver ce qui me fait du bien</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="garden"><div class="setting-ico jdc-inline-12"><span class="svg-icon" data-icon="leaf"></span></div><div class="jdc-inline-13"><strong>Mon jardin</strong><small>Intentions et choses à cultiver</small></div><span>›</span></div>
         </div>
         <div class="profile-section-label">Mes espaces</div>
         <div class="card settings-list profile-settings-group">
-          <div class="row profile-action" data-profile-panel="notes"><div class="setting-ico" style="background:linear-gradient(145deg,#f3f8fb,#cbdae4);color:#3b647a"><span class="svg-icon" data-icon="notebook"></span></div><div style="flex:1"><strong>Mes notes</strong><small>Un espace libre</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="notes"><div class="setting-ico jdc-inline-16"><span class="svg-icon" data-icon="notebook"></span></div><div class="jdc-inline-13"><strong>Mes notes</strong><small>Un espace libre</small></div><span>›</span></div>
         </div>
         <div class="profile-section-label">Application & données</div>
         <div class="card settings-list profile-settings-group">
-          <div class="row profile-action" data-profile-panel="appearance"><div class="setting-ico" style="background:linear-gradient(145deg,#fff0f3,#eac2ca);color:#a6314b"><span class="svg-icon" data-icon="heart"></span></div><div style="flex:1"><strong>Thème et apparence</strong><small>Clair / Sombre</small></div><span>›</span></div>
-          <div class="row profile-action" data-profile-panel="privacy"><div class="setting-ico" style="background:linear-gradient(145deg,#f2f6fb,#c8d6e6);color:#365a7a"><span class="svg-icon" data-icon="lock"></span></div><div style="flex:1"><strong>Confidentialité</strong><small>Données conservées sur cet appareil</small></div><span>›</span></div>
-          <div class="row profile-action" data-profile-panel="install"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="upload"></span></div><div style="flex:1"><strong>Installer l’application</strong><small>Ajouter Jardin du Cœur à l’écran d’accueil</small></div><span>›</span></div>
-          <div class="row profile-action" data-profile-panel="backup"><div class="setting-ico" style="background:linear-gradient(145deg,#f3f8fb,#cbdae4);color:#3b647a"><span class="svg-icon" data-icon="upload"></span></div><div style="flex:1"><strong>Sauvegarde / Export</strong><small>Exporter ou restaurer mon journal</small></div><span>›</span></div>
-          <div class="row profile-action" data-profile-panel="about"><div class="setting-ico" style="background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250"><span class="svg-icon" data-icon="info"></span></div><div style="flex:1"><strong>À propos</strong><small>Version 2.1.12 PWA · build 268</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="appearance"><div class="setting-ico jdc-inline-17"><span class="svg-icon" data-icon="heart"></span></div><div class="jdc-inline-13"><strong>Thème et apparence</strong><small>Clair / Sombre</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="privacy"><div class="setting-ico jdc-inline-18"><span class="svg-icon" data-icon="lock"></span></div><div class="jdc-inline-13"><strong>Confidentialité</strong><small>Données conservées sur cet appareil</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="lock"><div class="setting-ico jdc-inline-18"><span class="svg-icon" data-icon="lock"></span></div><div class="jdc-inline-13"><strong>Verrouillage</strong><small>Protéger l’ouverture par un code</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="install"><div class="setting-ico jdc-inline-12"><span class="svg-icon" data-icon="upload"></span></div><div class="jdc-inline-13"><strong>Installer l’application</strong><small>Ajouter Jardin du Cœur à l’écran d’accueil</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="backup"><div class="setting-ico jdc-inline-16"><span class="svg-icon" data-icon="upload"></span></div><div class="jdc-inline-13"><strong>Sauvegarde / Export</strong><small>Exporter ou restaurer mon journal</small></div><span>›</span></div>
+          <div class="row profile-action" data-profile-panel="about"><div class="setting-ico jdc-inline-12"><span class="svg-icon" data-icon="info"></span></div><div class="jdc-inline-13"><strong>À propos</strong><small>Version 2.1.22 PWA · build 309</small></div><span>›</span></div>
         </div>
         <Nav active="profile"></Nav>
       </section>
@@ -344,6 +359,8 @@
 <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
 <script src="./icons-ui.js"></script>
+<script src="./dua-library.js"></script>
+<script src="./cycle-listen.js"></script>
 <script src="./app.js"></script>
 </body>
 </html>

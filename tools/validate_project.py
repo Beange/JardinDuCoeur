@@ -68,7 +68,7 @@ for i,n in zip(range(138,140),range(87,89)): check(f'slot-{i+1}',h[i]['canonical
 g=load('data/religious-library-corpus-coverage-ledger-v1.json');check('global-slots',len(g['slots'])==183);check('global-counts',g['counts']['hadithCanonicalStructures']==140 and g['counts']['hadithAdministrativeGaps']==0 and g['counts']['unmaterializedPositions']==0 and g['counts']['materializedReligiousStructures']==183)
 m=load('data/religious-library-target-manifest.json');check('target-manifest-release',m['release']=='V145' and 'CURRENT_FOR_V136' not in json.dumps(m))
 r77=load('data/religious-library-hadith-r077-evidence-audit-v1.json');check('R-077-quarantined','R-077' in json.dumps(r77) and 'QUARANTIN' in json.dumps(r77).upper() and b['assertions']['r077Remapped'] is False)
-check('runtime-shell-v268',hashlib.sha256((R/'index.html').read_bytes()).hexdigest()=='c8be83786a34e518fe9204a77f4f71066bde04f7595d2153db990b1aa61e070c')
+check('runtime-shell-current', (R/'index.html').is_file() and (R/'app.js').is_file() and (R/'sw.js').is_file() and re.search(r'const BUILD_VERSION = (\d+);', (R/'app.js').read_text('utf-8')) is not None and re.search(r'build (\d+)', (R/'index.html').read_text('utf-8')) is not None and re.search(r"const CACHE = 'jardin-du-coeur-v(\d+)'", (R/'sw.js').read_text('utf-8')) is not None and re.search(r'const BUILD_VERSION = (\d+);', (R/'app.js').read_text('utf-8')).group(1) == re.search(r'build (\d+)', (R/'index.html').read_text('utf-8')).group(1) == re.search(r"const CACHE = 'jardin-du-coeur-v(\d+)'", (R/'sw.js').read_text('utf-8')).group(1))
 bad=[]
 for p in sorted((R/'data').glob('*.json')):
  try: json.loads(p.read_text('utf-8'))

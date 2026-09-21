@@ -1,0 +1,3 @@
+# V267 — Nouvelle galerie illustrée
+
+20 vignettes issues de la planche générée pour Jardin du Cœur, découpées et optimisées en fichiers JPEG locaux. Les 12 anciennes images de fond ont été remplacées ; les 20 nouvelles sont accessibles via la rotation quotidienne. Suppression des anciennes images accessoires inutilisées ; conservation des icônes PWA. Le texte inscrit dans certaines vignettes est intégré à l’image et ne remplace pas les textes sourcés de l’application. Les images proviennent d’une planche de 1536 × 1024 pixels : chaque vignette est adaptée à un petit cadre, pas à un affichage plein écran haute définition.

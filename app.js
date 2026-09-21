@@ -3,7 +3,7 @@ function navMarkup(active){
 const items=[
 ['today','home','Aujourd’hui',1],['journal','notebook','Journal',5],['duas','dua','Du‘â',6],['cycle','cycle','Mon cycle',7],['profile','user','Moi',10]
 ];
-return '<nav class="bottom-nav" aria-label="Navigation principale">'+items.map(i=>`<button class="${active===i[0]?'active':''}" ${active===i[0]?'aria-current="page"':''} onclick="go(${i[3]})" aria-label="${i[2]}"><span class="svg-icon" data-icon="${i[1]}"></span><span>${i[2]}</span></button>`).join('')+'</nav>';
+return '<nav class="bottom-nav" aria-label="Navigation principale">'+items.map(i=>`<button class="${active===i[0]?'active':''}" ${active===i[0]?'aria-current="page"':''} data-nav-target="${i[3]}" aria-label="${i[2]}"><span class="svg-icon" data-icon="${i[1]}"></span><span>${i[2]}</span></button>`).join('')+'</nav>';
 }
 function renderIcons(){
 document.querySelectorAll('.svg-icon[data-icon]').forEach(el=>{
@@ -12,6 +12,10 @@ const body=ICONS[name]||ICONS.info;
 el.innerHTML=`<svg viewBox="0 0 24 24" aria-hidden="true">${body}</svg>`;
 });
 }
+document.addEventListener('click', event => {
+  const button = event.target.closest('button[data-nav-target]');
+  if (button) go(Number(button.dataset.navTarget), button);
+});
 document.querySelectorAll('Nav').forEach(n=>{
 const active=n.getAttribute('active');
 n.outerHTML=navMarkup(active);
@@ -84,15 +88,12 @@ const now = new Date();
 const start = new Date(now.getFullYear(), 0, 0);
 const dayOfYear = Math.floor((now - start) / 86400000);
 const index = dayOfYear % DAILY_MOSQUE_BACKGROUNDS.length;
-document.documentElement.style.setProperty(
-'--daily-mosque-bg',
-`url("${DAILY_MOSQUE_BACKGROUNDS[index]}")`
-);
+document.documentElement.dataset.dailyMosque=String(index);
 }
 applyDailyMosqueBackground();
 const STORAGE_KEY = 'jardin-du-coeur-v1';
-const APP_VERSION = '2.1.12';
-const BUILD_VERSION = 268;
+const APP_VERSION = '2.1.22';
+const BUILD_VERSION = 309;
 const UI_SESSION_KEY = STORAGE_KEY + '-ui-session';
 const RECOVERY_KEY = STORAGE_KEY + '-recovery';
 const DATA_SCHEMA_VERSION = 1;
@@ -111,6 +112,70 @@ try{localStorage.setItem(key,value);return true}catch(err){console.error('Jardin
 }
 function safeStorageRemove(key){
 try{localStorage.removeItem(key);return true}catch(err){console.error('Jardin du Cœur — suppression locale impossible',err);reportStorageFailure();return false}
+}
+const LOCK_KEY = STORAGE_KEY + '-lock';
+function getLockConfig(){
+try{const raw=safeStorageGet(LOCK_KEY); if(!raw)return null; const c=JSON.parse(raw); if(!c||typeof c.salt!=='string'||typeof c.hash!=='string')return null; return c;}catch(_e){return null}
+}
+async function sha256Hex(text){
+const bytes=new TextEncoder().encode(text);
+const digest=await crypto.subtle.digest('SHA-256',bytes);
+return Array.from(new Uint8Array(digest)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+function randomSaltHex(){
+const arr=new Uint8Array(16); crypto.getRandomValues(arr);
+return Array.from(arr).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+async function setLockPin(pin){
+const salt=randomSaltHex();
+const hash=await sha256Hex(salt+pin);
+return safeStorageSet(LOCK_KEY,JSON.stringify({salt,hash}));
+}
+function removeLockPin(){ return safeStorageRemove(LOCK_KEY); }
+async function verifyLockPin(pin){
+const cfg=getLockConfig(); if(!cfg)return true;
+const hash=await sha256Hex(cfg.salt+pin);
+return hash===cfg.hash;
+}
+let lockFailCount=0;
+function initLockScreen(){
+const cfg=getLockConfig();
+const overlay=document.getElementById('lockScreen');
+const appMain=document.getElementById('appMain');
+if(!cfg||!overlay||!appMain) return;
+appMain.hidden=true;
+overlay.hidden=false;
+const input=document.getElementById('lockPinInput');
+const errorEl=document.getElementById('lockError');
+const unlockBtn=document.getElementById('lockUnlockBtn');
+const attempt=async()=>{
+const pin=(input.value||'').trim();
+if(!pin)return;
+unlockBtn.disabled=true;
+const ok=await verifyLockPin(pin);
+unlockBtn.disabled=false;
+if(ok){
+lockFailCount=0;
+overlay.hidden=true;
+appMain.hidden=false;
+input.value='';
+errorEl.hidden=true;
+input.blur();
+}else{
+lockFailCount++;
+errorEl.hidden=false;
+input.value='';
+input.focus();
+if(lockFailCount>=3){
+const delayMs=Math.min(1000*2**(lockFailCount-3),15000);
+unlockBtn.disabled=true; input.disabled=true;
+setTimeout(()=>{unlockBtn.disabled=false; input.disabled=false; input.focus();},delayMs);
+}
+}
+};
+unlockBtn?.addEventListener('click',attempt);
+input?.addEventListener('keydown',e=>{if(e.key==='Enter')attempt()});
+requestAnimationFrame(()=>input?.focus());
 }
 const state = loadState();
 let selectedDate = todayKey();
@@ -463,7 +528,7 @@ function dailySceneFor(k=todayKey()){return dateFromKey(k).getDay()}
 function renderHomeDaily(){
 const q=dailyQuoteFor(todayKey()), scene=dailySceneFor(todayKey());
 const landscape=document.getElementById('dailyLandscape'); if(!landscape)return;
-landscape.dataset.scene=String(scene);landscape.style.setProperty('--weekday-bg',`url("${DAILY_BACKGROUNDS[scene]}")`);landscape.setAttribute('aria-label',`Paysage du ${DAILY_SCENES[scene].toLowerCase()}`);
+landscape.dataset.scene=String(scene);landscape.setAttribute('aria-label',`Paysage du ${DAILY_SCENES[scene].toLowerCase()}`);
 document.getElementById('dailyQuoteText').textContent=`« ${q.fr} »`;
 document.getElementById('dailyQuoteRef').textContent=`Coran · ${q.surah} ${q.ref}${q.excerpt?' · extrait':''}`;
 const d=dayData(todayKey());
@@ -484,7 +549,7 @@ const total=habits.length+activeObjectives.length+1;
 const done=doneHabits+(journalComplete?1:0);
 const remaining=Math.max(0,total-done), pct=total?Math.round(done/total*100):0;
 progress.textContent=remaining===0?'Tout est à jour pour aujourd’hui':`${done}/${total} faits · ${remaining} à poursuivre`;
-const bar=document.getElementById('homeTodayProgressBar'); if(bar)bar.style.width=`${pct}%`;
+const bar=document.getElementById('homeTodayProgressBar'); if(bar){bar.className=`jdc-progress-${pct}`;bar.setAttribute("aria-valuenow",String(pct));}
 const nextLabel=document.getElementById('homeTodayNextLabel'), nextHint=document.getElementById('homeTodayNextHint');
 if(nextLabel)nextLabel.textContent=journey.label;
 if(nextHint)nextHint.textContent=journey.hint;
@@ -512,8 +577,8 @@ const q=dailyQuoteFor(todayKey());
 openModal(`Coran · ${q.surah} ${q.ref}`,`<div class="quote-arabic">${q.ar}</div><div class="quote-fr">« ${escapeHtml(q.fr)} »</div><div class="quote-source">Traduction française : Muhammad Hamidullah (référence affichée via Quran.com).${q.excerpt?' L’accueil affiche un extrait clairement signalé.':''}</div><a class="primary quote-context-link" href="${q.url}" target="_blank" rel="noopener noreferrer">Lire dans son contexte</a>`);
 }
 document.getElementById('dailyQuoteCard').addEventListener('click',openDailyQuote);
-document.getElementById('intentionHelpBtn').addEventListener('click',()=>openModal('Besoin d’inspiration ?',`<p class="subtle" style="font-size:10px;line-height:1.6">Ces pistes sont volontairement neutres : elles ne prescrivent aucune intention religieuse.</p><div class="card" style="margin:8px 0">Quel comportement aimerais-tu particulièrement soigner aujourd’hui ?</div><div class="card" style="margin:8px 0">À quoi aimerais-tu accorder plus d’attention ?</div><div class="card" style="margin:8px 0">Quelle qualité aimerais-tu cultiver aujourd’hui ?</div>`));
-let duaCategory='Toutes', duaTab='library', editingDuaId=null;
+document.getElementById('intentionHelpBtn').addEventListener('click',()=>openModal('Besoin d’inspiration ?',`<p class="subtle jdc-inline-1">Ces pistes sont volontairement neutres : elles ne prescrivent aucune intention religieuse.</p><div class="card jdc-inline-2">Quel comportement aimerais-tu particulièrement soigner aujourd’hui ?</div><div class="card jdc-inline-2">À quoi aimerais-tu accorder plus d’attention ?</div><div class="card jdc-inline-2">Quelle qualité aimerais-tu cultiver aujourd’hui ?</div>`));
+let duaCategory='Toutes',duaSource='Toutes sources',duaTab='library',editingDuaId=null;
 const DUA_LIBRARY=[
 {id:'q17-24',title:'Pour mes parents',category:'Parents',tags:['parents','famille','miséricorde'],arabic:'رَبِّ ٱرْحَمْهُمَا كَمَا رَبَّيَانِى صَغِيرًا',translit:'Rabbi-rḥamhumā kamā rabbayānī ṣaghīrā.',fr:'Seigneur, fais-leur miséricorde comme ils m’ont élevé lorsque j’étais petit.',source:'Coran 17:24',grade:'📖 Coran'},
 {id:'q14-41',title:'Pour mes parents et les croyants',category:'Parents',tags:['parents','pardon','au-delà'],arabic:'رَبَّنَا ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ ٱلْحِسَابُ',translit:'Rabbanā-ghfir lī wa li-wālidayya wa lil-mu’minīna yawma yaqūmu-l-ḥisāb.',fr:'Notre Seigneur, pardonne-moi, ainsi qu’à mes parents et aux croyants, le Jour où aura lieu le Jugement.',source:'Coran 14:41',grade:'📖 Coran'},
@@ -525,7 +590,8 @@ const DUA_LIBRARY=[
 {id:'hisn85',title:'Protection contre le mal de soi et de Shayṭān',category:'Protection',tags:['protection','shaitan','matin','soir'],arabic:'اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ',translit:'Allāhumma ‘ālima-l-ghaybi wash-shahādah, fāṭira-s-samāwāti wa-l-arḍ…',fr:'Ô Allah, Connaisseur de l’invisible et du visible, Créateur des cieux et de la terre… je cherche refuge auprès de Toi contre le mal de mon âme et contre le mal de Shayṭān.',source:'Hisn al-Muslim 85 · at-Tirmidhī / Abū Dāwūd',grade:'✓ Sahih'},
 {id:'hisn88',title:'Confier toutes mes affaires à Allah',category:'Matin & soir',tags:['matin','soir','difficulté','aide'],arabic:'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ أَصْلِحْ لِي شَأْنِي كُلَّهُ وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ',translit:'Yā Ḥayyu yā Qayyūmu bi-raḥmatika astaghīth, aṣliḥ lī sha’nī kullah, wa lā takilnī ilā nafsī ṭarfata ‘ayn.',fr:'Ô Vivant, Ô Subsistant, par Ta miséricorde je demande secours. Améliore pour moi toutes mes affaires et ne me laisse pas livré à moi-même, même le temps d’un clin d’œil.',source:'Hisn al-Muslim 88 · al-Ḥākim',grade:'✓ Sahih'}
 ];
-function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
+window.JDC_mergeDuas?.(DUA_LIBRARY);
+function uid(){ if(typeof crypto!=='undefined'&&typeof crypto.randomUUID==='function') return crypto.randomUUID(); return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
 function escapeHtml(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove('show'),2200)}
 let modalReturnFocus=null;
@@ -534,11 +600,23 @@ function openModal(title, body){
 modalReturnFocus=document.activeElement instanceof HTMLElement?document.activeElement:null;
 document.getElementById('modalTitle').textContent=title;document.getElementById('modalBody').innerHTML=body;
 const backdrop=document.getElementById('modalBackdrop');backdrop.classList.add('show');backdrop.setAttribute('aria-hidden','false');
+modalInitialFields=modalFieldSnapshot();
 requestAnimationFrame(()=>{(modalFocusable()[0]||document.getElementById('modalClose')).focus()});
+}
+// Un formulaire modal peut contenir des saisies non encore copiées dans state.
+let modalInitialFields=[];
+function modalFieldSnapshot(){
+return [...document.querySelectorAll('#modalBody input,#modalBody textarea,#modalBody select')].map(el=>({value:el.value,checked:el.checked}));
+}
+function hasUnsavedModalFields(){
+if(!document.getElementById('modalBackdrop').classList.contains('show'))return false;
+const current=modalFieldSnapshot();
+return current.length!==modalInitialFields.length||current.some((field,i)=>field.value!==modalInitialFields[i].value||field.checked!==modalInitialFields[i].checked);
 }
 function closeModal(){
 const backdrop=document.getElementById('modalBackdrop');backdrop.classList.remove('show');backdrop.setAttribute('aria-hidden','true');
 if(modalReturnFocus&&document.contains(modalReturnFocus)) modalReturnFocus.focus(); modalReturnFocus=null;
+if(pendingUpdateRegistration){const registration=pendingUpdateRegistration;pendingUpdateRegistration=null;queueMicrotask(()=>{if(!document.getElementById('modalBackdrop').classList.contains('show'))showUpdateReady(registration);else pendingUpdateRegistration=registration;});}
 }
 document.addEventListener('keydown',e=>{
 const backdrop=document.getElementById('modalBackdrop'); if(!backdrop.classList.contains('show'))return;
@@ -550,29 +628,19 @@ document.getElementById('modalBackdrop').addEventListener('click',e=>{if(e.targe
 function openCycleNote(kind){
 const d=dayData(todayKey());
 if(kind==='sadaqah'){
-openModal('Ma sadaqah',`<p class="subtle">Note une action de bien que tu souhaites faire ou que tu as faite aujourd’hui.</p><textarea id="cycleActionNote" style="min-height:120px" placeholder="Mon action aujourd’hui…">${escapeHtml(d.sadaqah||'')}</textarea><div class="modal-actions"><button class="primary" id="saveCycleAction">Enregistrer</button></div>`);
+openModal('Ma sadaqah',`<p class="subtle">Note une action de bien que tu souhaites faire ou que tu as faite aujourd’hui.</p><textarea id="cycleActionNote" class="jdc-inline-3" placeholder="Mon action aujourd’hui…">${escapeHtml(d.sadaqah||'')}</textarea><div class="modal-actions"><button class="primary" id="saveCycleAction">Enregistrer</button></div>`);
 document.getElementById('saveCycleAction').onclick=()=>{d.sadaqah=document.getElementById('cycleActionNote').value;saveState();closeModal();toast('Sadaqah enregistrée')};
 return;
 }
-openModal('Prendre soin de moi',`<p class="subtle">Choisis un petit geste réaliste pour prendre soin de toi aujourd’hui.</p><textarea id="cycleActionNote" style="min-height:120px" placeholder="Ex. me reposer, marcher un peu, boire de l’eau…">${escapeHtml(d.selfCare||'')}</textarea><div class="modal-actions"><button class="primary" id="saveCycleAction">Enregistrer</button></div>`);
+openModal('Prendre soin de moi',`<p class="subtle">Choisis un petit geste réaliste pour prendre soin de toi aujourd’hui.</p><textarea id="cycleActionNote" class="jdc-inline-3" placeholder="Ex. me reposer, marcher un peu, boire de l’eau…">${escapeHtml(d.selfCare||'')}</textarea><div class="modal-actions"><button class="primary" id="saveCycleAction">Enregistrer</button></div>`);
 document.getElementById('saveCycleAction').onclick=()=>{d.selfCare=document.getElementById('cycleActionNote').value;saveState();closeModal();toast('Geste enregistré')};
-}
-function listenDailyQuote(){
-const q=dailyQuoteFor(todayKey());
-if(!('speechSynthesis' in window)){toast('Lecture audio non disponible sur cet appareil');return;}
-window.speechSynthesis.cancel();
-const u=new SpeechSynthesisUtterance(q.fr);u.lang='fr-FR';u.rate=.9;
-window.speechSynthesis.speak(u);
-openModal('Écouter la parole du jour',`<p class="quote-fr">« ${escapeHtml(q.fr)} »</p><p class="subtle">Lecture vocale de la traduction française par ton appareil.</p><div class="modal-actions"><button class="secondary" id="stopDailySpeech">Arrêter</button><button class="primary" id="replayDailySpeech">Réécouter</button></div>`);
-document.getElementById('stopDailySpeech').onclick=()=>window.speechSynthesis.cancel();
-document.getElementById('replayDailySpeech').onclick=()=>{window.speechSynthesis.cancel();const x=new SpeechSynthesisUtterance(q.fr);x.lang='fr-FR';x.rate=.9;window.speechSynthesis.speak(x)};
 }
 document.querySelector('.screen[data-screen="7"] .action-grid').addEventListener('click',e=>{
 const b=e.target.closest('[data-cycle-action]');if(!b)return;
 const action=b.dataset.cycleAction;
 if(action==='dua'){go(6);return;}
 if(action==='dhikr'){go(3);setTimeout(()=>document.querySelector('[data-field="dhikr"]')?.focus(),250);return;}
-if(action==='listen'){listenDailyQuote();return;}
+if(action==='listen'){openCycleListenHub();return;}
 if(action==='study'){go(8);return;}
 if(action==='sadaqah'){openCycleNote('sadaqah');return;}
 if(action==='journal'){go(5);return;}
@@ -586,6 +654,7 @@ const q=(document.getElementById('duaSearch').value||'').toLowerCase().trim();
 const root=document.getElementById('duaList'),count=document.getElementById('duaResultsCount'),title=document.getElementById('duaResultsTitle'),hint=document.getElementById('duaViewHint');
 document.querySelectorAll('#duaTabs [data-dua-tab]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.duaTab===duaTab)));
 document.querySelectorAll('#duaCategories [data-category]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.category===duaCategory)));
+document.querySelectorAll('#duaSources [data-dua-source]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.duaSource===duaSource)));
 if(duaTab==='mine'){
 if(title)title.textContent='Mes du‘â';if(hint)hint.textContent='Tes invocations personnelles';
 const list=state.duas.filter(d=>{const hay=(d.title+' '+d.text+' '+d.category).toLowerCase();return (!q||hay.includes(q))&&(duaCategory==='Toutes'||d.category===duaCategory)});
@@ -594,16 +663,16 @@ if(!list.length){root.innerHTML='<div class="empty-state dua-empty-state"><stron
 root.innerHTML=list.sort((a,b)=>(b.updatedAt||b.createdAt||'').localeCompare(a.updatedAt||a.createdAt||'')).map(d=>`<div class="dua-item" data-dua-id="${d.id}" tabindex="0"><div class="dua-ico"><span class="svg-icon" data-icon="dua"></span></div><div class="dua-item-copy"><strong>${escapeHtml(d.title||'Sans titre')}</strong><p><span class="dua-category-label">${escapeHtml(d.category||'Autre')}</span>${escapeHtml(truncate(d.text,62))}</p></div><div class="dua-actions"><button class="heart" data-fav="${d.id}" aria-label="${d.favorite?'Retirer des favoris':'Ajouter aux favoris'}">${d.favorite?'♥':'♡'}</button><button class="edit-small" data-edit="${d.id}" aria-label="Modifier ${escapeHtml(d.title||'cette du‘â')}">✎</button></div></div>`).join('');renderIcons();return;
 }
 if(title)title.textContent=duaTab==='favorites'?'Favoris':'Bibliothèque';if(hint)hint.textContent=duaTab==='favorites'?'Les invocations que tu as gardées':'Invocations de la bibliothèque';
-const list=DUA_LIBRARY.filter(d=>{const hay=(d.title+' '+d.category+' '+d.tags.join(' ')+' '+d.fr+' '+d.translit).toLowerCase();const cat=duaCategory==='Toutes'||d.category===duaCategory||d.tags.some(t=>t.toLowerCase()===duaCategory.toLowerCase());const fav=duaTab!=='favorites'||isLibraryFav(d.id);return cat&&fav&&(!q||hay.includes(q))});
+const list=DUA_LIBRARY.filter(d=>{const hay=(d.title+' '+d.category+' '+d.tags.join(' ')+' '+d.fr+' '+d.translit).toLowerCase();const cat=duaCategory==='Toutes'||d.category===duaCategory||d.tags.some(t=>t.toLowerCase()===duaCategory.toLowerCase());const sourceType=d.grade.includes('Coran')?'Coran':'Sunna';const source=duaSource==='Toutes sources'||duaSource===sourceType;const fav=duaTab!=='favorites'||isLibraryFav(d.id);return cat&&source&&fav&&(!q||hay.includes(q))});
 if(count)count.textContent=`${list.length} ${list.length>1?'résultats':'résultat'}`;
 if(!list.length){root.innerHTML='<div class="empty-state dua-empty-state"><strong>Aucune du‘â trouvée</strong><span>Essaie un autre mot ou un autre thème.</span></div>';return}
 root.innerHTML=list.map(d=>`<div class="dua-item" data-library-dua="${d.id}" tabindex="0"><div class="dua-ico"><span class="svg-icon" data-icon="dua"></span></div><div class="dua-item-copy"><strong>${escapeHtml(d.title)}</strong><p><span class="dua-category-label">${escapeHtml(d.category)}</span>${escapeHtml(d.grade)}<br>${escapeHtml(d.source)}</p></div><div class="dua-actions"><button class="heart" data-library-fav="${d.id}" aria-label="${isLibraryFav(d.id)?'Retirer des favoris':'Ajouter aux favoris'}">${isLibraryFav(d.id)?'♥':'♡'}</button></div></div>`).join('');renderIcons();
 }
-function openLibraryDua(id){const d=DUA_LIBRARY.find(x=>x.id===id);if(!d)return;openModal(d.title,`<div dir="rtl" style="font-size:23px;line-height:1.9;text-align:right;margin:8px 0 14px">${escapeHtml(d.arabic)}</div><p style="font-size:11px;line-height:1.65"><em>${escapeHtml(d.translit)}</em></p><p style="font-size:11px;line-height:1.65">${escapeHtml(d.fr)}</p>${d.note?`<p class="subtle"><strong>Quand / répétition :</strong> ${escapeHtml(d.note)}</p>`:''}<p class="subtle"><strong>${escapeHtml(d.grade)}</strong><br>${escapeHtml(d.source)}</p><div class="toolbar-row"><button class="mini-btn primary-mini" id="listenLibraryDua">🔊 Écouter</button><button class="mini-btn" id="copyLibraryDua">Copier</button><button class="mini-btn" id="favLibraryDua">${isLibraryFav(d.id)?'♥ Favori':'♡ Favori'}</button></div>`);document.getElementById('listenLibraryDua').onclick=()=>{if(!('speechSynthesis'in window))return toast('Lecture vocale indisponible');speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(d.arabic);u.lang='ar';speechSynthesis.speak(u)};document.getElementById('copyLibraryDua').onclick=async()=>{try{await navigator.clipboard.writeText(`${d.arabic}\n${d.translit}\n${d.fr}\n${d.source}`);toast('Du‘â copiée')}catch(e){toast('Copie indisponible')}};document.getElementById('favLibraryDua').onclick=()=>{toggleLibraryFav(d.id);closeModal()}}
-function openDuaEditor(id=null){editingDuaId=id;const d=id?state.duas.find(x=>x.id===id):{title:'',text:'',category:'Moi',favorite:false};openModal(id?'Modifier ma du‘â':'Nouvelle du‘â',`<label>Titre</label><input id="duaTitleInput" value="${escapeHtml(d?.title||'')}" placeholder="Ex : Pour ma famille"><label>Catégorie</label><select id="duaCategoryInput">${['Moi','Famille','Santé','Études','Travail','Mariage','Autre'].map(c=>`<option ${d?.category===c?'selected':''}>${c}</option>`).join('')}</select><label>Ma du‘â</label><textarea id="duaTextInput" style="min-height:130px" placeholder="Écris ici…">${escapeHtml(d?.text||'')}</textarea><label style="display:flex;gap:8px;align-items:center"><input id="duaFavInput" type="checkbox" style="width:auto" ${d?.favorite?'checked':''}> Ajouter aux favoris</label><div class="modal-actions">${id?'<button class="mini-btn danger-btn" id="deleteDuaBtn">Supprimer</button>':''}<button class="primary" id="saveDuaBtn">Enregistrer</button></div>`);document.getElementById('saveDuaBtn').onclick=()=>{const title=document.getElementById('duaTitleInput').value.trim(),text=document.getElementById('duaTextInput').value.trim();if(!title&&!text){toast('Écris au moins un titre ou une du‘â');return}if(id)Object.assign(d,{title:title||'Sans titre',text,category:document.getElementById('duaCategoryInput').value,favorite:document.getElementById('duaFavInput').checked,updatedAt:new Date().toISOString()});else state.duas.push({id:uid(),title:title||'Sans titre',text,category:document.getElementById('duaCategoryInput').value,favorite:document.getElementById('duaFavInput').checked,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()});saveState();renderDuas();closeModal();toast('Du‘â enregistrée')};if(id)document.getElementById('deleteDuaBtn').onclick=()=>{if(confirm('Supprimer cette du‘â ?')){state.duas=state.duas.filter(x=>x.id!==id);saveState();renderDuas();closeModal();toast('Du‘â supprimée')}}}
+function openDuaEditor(id=null){editingDuaId=id;const d=id?state.duas.find(x=>x.id===id):{title:'',text:'',category:'Moi',favorite:false};openModal(id?'Modifier ma du‘â':'Nouvelle du‘â',`<label>Titre</label><input id="duaTitleInput" value="${escapeHtml(d?.title||'')}" placeholder="Ex : Pour ma famille"><label>Catégorie</label><select id="duaCategoryInput">${['Moi','Famille','Santé','Études','Travail','Mariage','Autre'].map(c=>`<option ${d?.category===c?'selected':''}>${c}</option>`).join('')}</select><label>Ma du‘â</label><textarea id="duaTextInput" class="jdc-inline-4" placeholder="Écris ici…">${escapeHtml(d?.text||'')}</textarea><label class="jdc-inline-5"><input id="duaFavInput" type="checkbox" class="jdc-inline-6" ${d?.favorite?'checked':''}> Ajouter aux favoris</label><div class="modal-actions">${id?'<button class="mini-btn danger-btn" id="deleteDuaBtn">Supprimer</button>':''}<button class="primary" id="saveDuaBtn">Enregistrer</button></div>`);document.getElementById('saveDuaBtn').onclick=()=>{const title=document.getElementById('duaTitleInput').value.trim(),text=document.getElementById('duaTextInput').value.trim();if(!title&&!text){toast('Écris au moins un titre ou une du‘â');return}if(id)Object.assign(d,{title:title||'Sans titre',text,category:document.getElementById('duaCategoryInput').value,favorite:document.getElementById('duaFavInput').checked,updatedAt:new Date().toISOString()});else state.duas.push({id:uid(),title:title||'Sans titre',text,category:document.getElementById('duaCategoryInput').value,favorite:document.getElementById('duaFavInput').checked,createdAt:new Date().toISOString(),updatedAt:new Date().toISOString()});saveState();renderDuas();closeModal();toast('Du‘â enregistrée')};if(id)document.getElementById('deleteDuaBtn').onclick=()=>{if(confirm('Supprimer cette du‘â ?')){state.duas=state.duas.filter(x=>x.id!==id);saveState();renderDuas();closeModal();toast('Du‘â supprimée')}}}
 document.getElementById('addDuaBtn').addEventListener('click',()=>openDuaEditor());
 document.getElementById('duaSearch').addEventListener('input',renderDuas);
 document.getElementById('duaCategories').addEventListener('click',e=>{const b=e.target.closest('[data-category]');if(!b)return;duaCategory=b.dataset.category;document.querySelectorAll('#duaCategories .chip').forEach(x=>x.classList.toggle('active',x===b));renderDuas()});
+document.getElementById('duaSources').addEventListener('click',e=>{const b=e.target.closest('[data-dua-source]');if(!b)return;duaSource=b.dataset.duaSource;document.querySelectorAll('#duaSources .chip').forEach(x=>x.classList.toggle('active',x===b));renderDuas()});
 document.getElementById('duaTabs').addEventListener('click',e=>{const b=e.target.closest('[data-dua-tab]');if(!b)return;duaTab=b.dataset.duaTab;document.querySelectorAll('#duaTabs button').forEach(x=>x.classList.toggle('active',x===b));renderDuas()});
 document.getElementById('duaList').addEventListener('click',e=>{const lf=e.target.closest('[data-library-fav]'),li=e.target.closest('[data-library-dua]'),fav=e.target.closest('[data-fav]'),edit=e.target.closest('[data-edit]'),item=e.target.closest('[data-dua-id]');if(lf){e.stopPropagation();toggleLibraryFav(lf.dataset.libraryFav);return}if(li){openLibraryDua(li.dataset.libraryDua);return}if(fav){e.stopPropagation();const d=state.duas.find(x=>x.id===fav.dataset.fav);d.favorite=!d.favorite;saveState();renderDuas();return}if(edit){e.stopPropagation();openDuaEditor(edit.dataset.edit);return}if(item)openDuaEditor(item.dataset.duaId)});
 let cycleCursor=new Date(new Date().getFullYear(),new Date().getMonth(),1,12);
@@ -687,7 +756,7 @@ document.getElementById('faithArticleList')?.scrollIntoView({block:'start',behav
 toast(`Parcours : ${path.title}`);
 }
 function openFaithBooks(){
-openModal('Ouvrages & enseignements',`<div class="faith-reader faith-books-reader"><div class="faith-status faith-verified" style="display:inline-block">Bibliographie contrôlée · étape 1</div><p><strong>Les ouvrages complètent l’étude : ils ne remplacent ni le Coran ni la Sunna.</strong></p><p>Chaque leçon issue d’un livre distingue ce que l’auteur documente, les sources primaires utilisées et les éventuelles questions de fiqh.</p><div class="faith-book-list"><article class="faith-book-card"><span class="faith-book-tag">Histoire du savoir</span><strong>Al-Muḥaddithāt: The Women Scholars in Islam</strong><small>Muḥammad Akram Nadwī · Interface Publications · 2007 (éd. révisée 2013)</small><p>Étude consacrée aux femmes savantes et transmettrices du hadith dans l’histoire islamique.</p><button class="mini-btn" type="button" data-book-lesson="book-muhaddithat">Lire la première leçon</button></article><article class="faith-book-card"><span class="faith-book-tag">Fiqh du cycle</span><strong>A Treatise on Women’s Natural Types of Bleeding</strong><small>Muḥammad ibn Ṣāliḥ al-‘Uthaymīn · traité sur ḥayḍ, istiḥāḍa et nifās</small><p>Ouvrage de fiqh retenu comme ressource d’étude comparative. Ses conclusions juridiques seront attribuées à l’auteur et comparées aux sources et, si nécessaire, à d’autres avis avant d’être transformées en leçons.</p><button class="mini-btn" type="button" data-book-lesson="book-natural-bleeding">Lire la leçon de méthode</button></article><article class="faith-book-card faith-book-featured"><span class="faith-book-tag">Vie quotidienne & science</span><strong>Conseils aux femmes musulmanes — suivi de questions-réponses</strong><small>Umm ‘Abdillah Al-Wâdi‘iyya · préface de Cheikh Muqbil · édition française Dar Al Muslim</small><p>Thèmes vérifiés dans les notices françaises : prière, pudeur, enfants, vie conjugale, science, temps et sincérité. Sources vérifiées séparément.</p><div class="faith-book-actions"><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-time">Temps</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-knowledge">Science</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-sisters">Conseil</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-children">Enfants & transmission</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-sincerity">Intention</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-modesty">Pudeur</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-family">Vie familiale</button></div></article></div><div class="faith-book-method"><strong>Méthode</strong><span>Identifier l’édition → vérifier les références → reformuler sans copier → attribuer les avis → signaler les divergences → relier à une situation concrète.</span></div></div>`);
+openModal('Ouvrages & enseignements',`<div class="faith-reader faith-books-reader"><div class="faith-status faith-verified jdc-inline-7">Bibliographie contrôlée · étape 1</div><p><strong>Les ouvrages complètent l’étude : ils ne remplacent ni le Coran ni la Sunna.</strong></p><p>Chaque leçon issue d’un livre distingue ce que l’auteur documente, les sources primaires utilisées et les éventuelles questions de fiqh.</p><div class="faith-book-list"><article class="faith-book-card"><span class="faith-book-tag">Histoire du savoir</span><strong>Al-Muḥaddithāt: The Women Scholars in Islam</strong><small>Muḥammad Akram Nadwī · Interface Publications · 2007 (éd. révisée 2013)</small><p>Étude consacrée aux femmes savantes et transmettrices du hadith dans l’histoire islamique.</p><button class="mini-btn" type="button" data-book-lesson="book-muhaddithat">Lire la première leçon</button></article><article class="faith-book-card"><span class="faith-book-tag">Fiqh du cycle</span><strong>A Treatise on Women’s Natural Types of Bleeding</strong><small>Muḥammad ibn Ṣāliḥ al-‘Uthaymīn · traité sur ḥayḍ, istiḥāḍa et nifās</small><p>Ouvrage de fiqh retenu comme ressource d’étude comparative. Ses conclusions juridiques seront attribuées à l’auteur et comparées aux sources et, si nécessaire, à d’autres avis avant d’être transformées en leçons.</p><button class="mini-btn" type="button" data-book-lesson="book-natural-bleeding">Lire la leçon de méthode</button></article><article class="faith-book-card faith-book-featured"><span class="faith-book-tag">Vie quotidienne & science</span><strong>Conseils aux femmes musulmanes — suivi de questions-réponses</strong><small>Umm ‘Abdillah Al-Wâdi‘iyya · préface de Cheikh Muqbil · édition française Dar Al Muslim</small><p>Thèmes vérifiés dans les notices françaises : prière, pudeur, enfants, vie conjugale, science, temps et sincérité. Sources vérifiées séparément.</p><div class="faith-book-actions"><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-time">Temps</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-knowledge">Science</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-sisters">Conseil</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-children">Enfants & transmission</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-sincerity">Intention</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-modesty">Pudeur</button><button class="mini-btn" type="button" data-book-lesson="book-wadiiyya-family">Vie familiale</button></div></article></div><div class="faith-book-method"><strong>Méthode</strong><span>Identifier l’édition → vérifier les références → reformuler sans copier → attribuer les avis → signaler les divergences → relier à une situation concrète.</span></div></div>`);
 document.getElementById('modalBody')?.addEventListener('click',e=>{const b=e.target.closest('[data-book-lesson]');if(!b)return;const id=b.dataset.bookLesson;closeModal();setTimeout(()=>openFaithArticle(id),0)});
 }
 const FAITH_ARTICLES=[
@@ -706,15 +775,15 @@ sections:[
 ['Poser des questions','Les récits transmis par ‘Â’isha montrent aussi des femmes venant demander des explications sur des questions concrètes de pratique.'],
 ['Pour mon Jardin','Apprendre peut commencer simplement : noter une question, chercher sa source et distinguer ce que le texte dit de l’interprétation qu’on en donne.']
 ],
-sources:[['Sahih al-Bukhari 101–102','https://sunnah.com/bukhari/3/43-44'],['Sahih Muslim — Livre des menstruations','https://sunnah.com/muslim/3']]},
+sources:[['Sahih al-Bukhari 101','https://sunnah.com/bukhari:101'],['Sahih Muslim 335c','https://sunnah.com/muslim:335c']]},
 {id:'woman-rights',cat:'woman',title:'Mes droits : mahr, biens & héritage',sub:'Quelques principes explicitement mentionnés dans le Coran',status:'verified',
 summary:'Le Coran ordonne de remettre aux épouses leur mahr, reconnaît aux femmes une part de ce qu’elles acquièrent et établit pour elles des parts successorales.',
 sections:[
 ['Le mahr','Le Coran 4:4 demande de donner aux épouses leur dot (mahr). Le texte précise également le cas où l’épouse en abandonne volontairement une partie.'],
 ['Biens et acquisition','En 4:32, le Coran mentionne une part de ce que les hommes acquièrent et une part de ce que les femmes acquièrent.'],
-['Héritage','Le Coran 4:7 affirme qu’aux femmes, comme aux hommes, revient une part de ce que laissent parents et proches. Les parts concrètes dépendent ensuite de la configuration successorale : cette fiche ne remplace donc pas l’étude du cas précis.']
+['Héritage','Le Coran 4:7 affirme qu’aux femmes, comme aux hommes, revient une part de ce que laissent parents et proches. Les versets 4:11–12 détaillent plusieurs configurations. Les parts concrètes dépendent de la situation successorale : cette fiche ne sert donc pas de calculateur.']
 ],
-sources:[['Coran 4:4 — mahr','https://quran.com/fr/les-femmes/4'],['Coran 4:32 — acquisition','https://quran.com/fr/les-femmes/32'],['Coran 4:7 — héritage','https://quran.com/fr/les-femmes/7']]},
+sources:[['Coran 4:4 — mahr','https://quran.com/4/4'],['Coran 4:32 — acquisition','https://quran.com/4/32'],['Coran 4:7 — principe successoral','https://quran.com/4/7'],['Coran 4:11–12 — parts successorales','https://quran.com/4/11-12']]},
 {id:'woman-family',cat:'woman',title:'Consentement au mariage',sub:'Le consentement doit être recherché',status:'verified',
 summary:'Des hadiths authentiques rapportent qu’une femme précédemment mariée doit être consultée et qu’une vierge doit également être sollicitée pour son accord.',
 sections:[
@@ -722,21 +791,21 @@ sections:[
 ['À ne pas transformer en raccourci','Ces textes ne doivent pas être utilisés pour présenter l’absence de parole comme un consentement lorsqu’une personne refuse, subit une contrainte ou n’est pas libre de décider. La fiche expose ici le texte de référence ; les questions de validité juridique détaillées demandent une étude plus complète.']
 ],
 sources:[['Sahih Muslim 1419–1421','https://sunnah.com/muslim/16/74-85']]},
-{id:'book-muhaddithat',cat:'women',title:'Les femmes ont aussi porté et transmis le savoir',sub:'Leçon tirée d’Al-Muḥaddithāt de Muḥammad Akram Nadwī',status:'verified',origin:'book',
-summary:'Al-Muḥaddithāt documente la présence de femmes dans l’étude et la transmission du hadith à travers l’histoire islamique. La leçon à en tirer n’est pas qu’« apprendre est permis » : rechercher, préserver et transmettre un savoir fiable peut faire partie d’une vie musulmane active.',
+{id:'book-muhaddithat',cat:'books',title:'Les femmes ont aussi transmis le savoir',sub:'Leçon tirée d’Al-Muḥaddithāt de Muḥammad Akram Nadwī',status:'verified',origin:'book',
+summary:'Al-Muḥaddithāt présente le rôle de femmes savantes dans l’étude et la transmission du hadith au cours de l’histoire islamique. Cette fiche distingue le travail historique de l’auteur des sources religieuses primaires.',
 sections:[
-['Ce que documente l’ouvrage','L’ouvrage est une introduction anglaise au vaste travail biographique de l’auteur sur les femmes savantes du hadith. Sa présentation décrit des femmes qui étudiaient, voyageaient pour le savoir, enseignaient et accordaient des autorisations de transmission.'],
-['À relier aux sources primaires','Cette histoire du savoir rejoint des hadiths où des femmes demandent directement un temps d’enseignement et interrogent sur leur pratique. L’ouvrage sert ici de source historique secondaire ; les hadiths restent affichés séparément comme sources primaires.'],
+['Ce que présente l’ouvrage','Selon la présentation officielle de l’auteur, le livre introduit son vaste travail biographique consacré aux femmes spécialistes du hadith. Il décrit notamment des femmes qui étudiaient, enseignaient, voyageaient pour rechercher le savoir et accordaient des autorisations de transmission.'],
+['Un exemple dans une source primaire','Dans Sahih al-Bukhari 101, des femmes demandent au Prophète ﷺ de leur réserver un temps d’enseignement, estimant que les hommes occupaient déjà une grande partie de son temps. Il accepte leur demande.'],
 ['Pour ma vie','Je peux traiter mes questions religieuses comme de vraies questions de connaissance : les noter, chercher des références, demander quand je ne sais pas et transmettre seulement ce que j’ai vérifié.'],
-['Prudence éditoriale','Cette fiche résume une idée documentée par l’ouvrage et sa présentation bibliographique ; elle ne reproduit pas ses pages ni ne transforme toutes les analyses de l’auteur en règles religieuses.']
+['Prudence éditoriale','Le livre est un travail historique attribué à son auteur. Il n’est pas présenté comme une source équivalente au Coran ou aux hadiths, et cette fiche ne prétend pas résumer l’ensemble de l’ouvrage.']
 ],
-sources:[['Al-Muḥaddithāt — présentation de l’auteur','https://akramnadwi.com/books/al-muhaddithat-the-women-scholars-in-islam/'],['Al-Muḥaddithāt — notice bibliographique','https://books.google.com/books?id=vJoQAQAAIAAJ'],['Sahih al-Bukhari 101–102 — demande d’enseignement','https://sunnah.com/bukhari/3/43-44']]},
-{id:'book-wadiiyya-time',cat:'women',title:'Préserver mon temps',sub:'Conseils aux femmes',status:'verified',origin:'book',summary:'L’ouvrage valorise l’usage utile du temps. Al-‘Aṣr le relie à la foi, aux bonnes œuvres, à la vérité et à la patience.',sections:[['Pour ma vie','Protéger un temps réaliste pour adoration, apprentissage, proches et repos. Une journée imparfaite compte.']],sources:[['Notice de l’ouvrage','https://www.alhidayah.fr/edition-dar-al-muslim/618-conseils-aux-femmes-musulmanes-edition-dar-al-muslim-9782356353863.html'],['Coran 103:1–3','https://quran.com/103']]},
-{id:'book-wadiiyya-knowledge',cat:'women',title:'Chercher une science bénéfique',sub:'Apprendre avec soin',status:'verified',origin:'book',summary:'L’ouvrage encourage la science religieuse. Sahih al-Bukhari 101 rapporte que des femmes demandèrent au Prophète ﷺ un temps d’enseignement.',sections:[['Ma méthode','Question → source → distinguer texte et avis → demander à une personne qualifiée si nécessaire.']],sources:[['Thèmes de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Sahih al-Bukhari 101','https://sunnah.com/bukhari:101']]},
-{id:'book-wadiiyya-sisters',cat:'women',title:'Se conseiller entre sœurs',sub:'Conseiller avec douceur',status:'verified',origin:'book',summary:'La préface met en avant le conseil entre femmes. Le Coran 9:71 décrit croyants et croyantes comme alliés et mentionne l’encouragement au convenable.',sections:[['Conseil responsable','Vérifier, distinguer règle et avis, écouter l’autre et orienter vers plus qualifié quand il le faut.']],sources:[['Présentation de l’ouvrage','https://lamaktaba.fr/index.php/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses-umm-abdillah-al-wadiiyya'],['Coran 9:71','https://quran.com/fr/le-repentir/71']]},
-{id:'book-wadiiyya-sincerity',cat:'women',title:'Renouveler mon intention',sub:'Sincérité et adoration',status:'verified',origin:'book',summary:'La sincérité figure parmi les thèmes présentés pour Conseils aux femmes musulmanes. Cette leçon originale relie ce thème au Coran 98:5 ; elle ne prétend pas citer une page du livre.',sections:[['Dans ma journée','Avant une action, je peux prendre un instant pour examiner mon intention sans transformer chaque geste en source d’inquiétude.'],['D’où vient cette leçon ?','Thème signalé dans la présentation bibliographique ; application quotidienne rédigée par Jardin du Cœur, non attribuée mot pour mot à l’auteure.']],sources:[['Présentation bibliographique de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Coran 98:5','https://quran.com/98/5']]},
-{id:'book-wadiiyya-modesty',cat:'women',title:'La pudeur avec connaissance et dignité',sub:'Pudeur et respect',status:'verified',origin:'book',summary:'La pudeur est un thème annoncé de l’ouvrage. Le Coran 24:30–31 s’adresse aux croyants et aux croyantes ; les détails d’application peuvent faire l’objet d’interprétations juridiques.',sections:[['Pour ma vie','Étudier les textes et leurs interprétations avec sérieux, sans utiliser la pudeur pour humilier autrui ou minimiser sa dignité.'],['Prudence','Cette fiche n’énonce pas une règle vestimentaire exhaustive et ne présente pas un avis particulier comme consensus.']],sources:[['Présentation bibliographique de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Coran 24:30–31','https://quran.com/24/30-31']]},
-{id:'book-wadiiyya-family',cat:'women',title:'Bienveillance dans la vie familiale',sub:'Époux et enfants',status:'verified',origin:'book',summary:'Vie conjugale et éducation des enfants sont des thèmes annoncés de l’ouvrage. Le Coran 30:21 mentionne affection et miséricorde entre époux ; cette leçon propose une réflexion, pas une décision juridique individuelle.',sections:[['Dans la relation','Privilégier une parole respectueuse, une écoute réciproque et une répartition discutée des responsabilités.'],['Pour les enfants','Accompagner l’apprentissage avec patience et continuer soi-même à apprendre.'],['Sécurité','Aucun conseil sur la patience ou la vie familiale ne justifie la violence ni l’abandon d’une personne en danger. Pour une question juridique personnelle, consulter une personne qualifiée.']],sources:[['Présentation bibliographique de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Coran 30:21','https://quran.com/30/21']]},
+sources:[['Al-Muḥaddithāt — présentation de l’auteur','https://akramnadwi.com/books/al-muhaddithat-the-women-scholars-in-islam/'],['Sahih al-Bukhari 101 — demande d’enseignement','https://sunnah.com/bukhari:101']]},
+{id:'book-wadiiyya-time',cat:'women',title:'Donner du sens à mon temps',sub:'Foi · œuvres bonnes · vérité · patience',status:'verified',origin:'book',summary:'La sourate Al-‘Aṣr évoque le temps, la perte de l’être humain, puis quatre repères : la foi, les œuvres bonnes, le conseil mutuel dans la vérité et le conseil mutuel dans la patience.',sections:[['Ce que dit le texte','Le passage ne propose pas une méthode d’organisation quotidienne ni un programme de productivité. Il rattache la réussite à la foi, aux œuvres bonnes, à la vérité et à la patience.'],['Une application réaliste','Préserver son temps ne signifie pas remplir chaque minute. Je peux choisir une action utile et adaptée à ma situation : adorer Allah, apprendre, accomplir une responsabilité, soutenir une personne ou prendre un repos nécessaire. Cette application est une proposition de Jardin du Cœur.'],['Pour mon Jardin','Quelle action bonne et réaliste mérite une place dans ma journée ?'],['Point de vigilance','Le repos ne doit pas être présenté comme du temps perdu et une journée imparfaite ne constitue pas un échec spirituel. La notice du livre documente l’ouvrage, mais ne suffit pas à attribuer cette leçon précise à l’auteure.']],sources:[['Notice de l’ouvrage','https://www.alhidayah.fr/edition-dar-al-muslim/618-conseils-aux-femmes-musulmanes-edition-dar-al-muslim-9782356353863.html'],['Coran 103:1–3','https://quran.com/103']]},
+{id:'book-wadiiyya-knowledge',cat:'women',title:'Chercher une science bénéfique',sub:'Apprendre avec méthode et transmettre avec prudence',status:'verified',origin:'book',summary:'La présentation de Conseils aux femmes musulmanes cite l’apprentissage religieux parmi les thèmes de l’ouvrage. Un hadith authentique montre également des femmes demandant directement un temps pour apprendre.',sections:[['Des femmes actrices de leur apprentissage','Dans Sahih al-Bukhari 101, des femmes demandent au Prophète ﷺ de leur réserver une journée d’enseignement. Il accepte leur demande.'],['Une méthode prudente','Formuler la question, identifier la source, distinguer le texte de son explication, vérifier l’authenticité et le contexte, puis consulter une personne compétente lorsque le sujet comporte des divergences ou concerne une situation personnelle. Cette méthode est proposée par Jardin du Cœur.'],['Transmettre avec responsabilité','Ne pas savoir n’est pas une faute. Une information incertaine ne doit cependant pas être présentée comme une règle religieuse certaine.']],sources:[['Notice de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Sahih al-Bukhari 101','https://sunnah.com/bukhari:101']]},
+{id:'book-wadiiyya-sisters',cat:'women',title:'Se conseiller avec bienveillance',sub:'Entraide · vérification · respect des limites',status:'verified',origin:'book',summary:'Les croyants et les croyantes sont décrits dans le Coran comme alliés les uns des autres. Le conseil peut être une forme d’entraide s’il repose sur une connaissance vérifiée et respecte la dignité de la personne.',sections:[['Un soutien réciproque','Le Coran 9:71 associe croyants et croyantes : ils sont alliés les uns des autres et encouragent ce qui est convenable. Le verset ne limite pas cette responsabilité aux femmes entre elles.'],['Avant de conseiller','Je peux vérifier si la personne souhaite recevoir mon conseil, si ce que je vais dire est établi, s’il s’agit d’un texte, d’une interprétation ou d’un avis personnel, et si je suis la bonne personne pour répondre. Cette méthode est proposée par Jardin du Cœur.'],['Conseiller n’est pas contrôler','Le conseil ne donne pas le droit de surveiller la vie privée, d’imposer une opinion personnelle, de rabaisser ou de diffuser les fautes supposées d’une autre personne. Orienter vers une personne qualifiée peut être la réponse la plus responsable.']],sources:[['Présentation de l’ouvrage','https://lamaktaba.fr/index.php/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses-umm-abdillah-al-wadiiyya'],['Coran 9:71','https://quran.com/9/71']]},
+{id:'book-wadiiyya-sincerity',cat:'women',title:'Renouveler mon intention',sub:'Sincérité sans inquiétude excessive',status:'verified',origin:'book',summary:'Le Coran appelle à adorer Allah avec sincérité. Un hadith authentique enseigne que les actes sont considérés selon les intentions, sans demander une analyse incessante de chaque pensée.',sections:[['La sincérité dans l’adoration','Le Coran 98:5 appelle à adorer Allah en Lui vouant sincèrement le culte, puis cite la prière et la zakat. Le verset concerne explicitement l’adoration.'],['Les actes et les intentions','Sahih al-Bukhari 1 enseigne que les actes dépendent des intentions et que chacun obtient selon ce qu’il a eu l’intention d’accomplir.'],['Une pratique simple','Avant une action importante, je peux me demander brièvement pourquoi je souhaite la faire, rectifier mon intention puis agir. Cette pratique est proposée par Jardin du Cœur.'],['À ne pas transformer en obsession','Une intention n’a pas besoin d’être formulée à voix haute. Les pensées involontaires ne doivent pas empêcher d’agir, et l’application ne juge jamais la sincérité d’une personne.']],sources:[['Notice de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Coran 98:5','https://quran.com/98/5'],['Sahih al-Bukhari 1','https://sunnah.com/bukhari:1']]},
+{id:'book-wadiiyya-modesty',cat:'women',title:'La pudeur avec connaissance et dignité',sub:'Une responsabilité qui concerne hommes et femmes',status:'verified',origin:'book',summary:'Le Coran demande d’abord aux croyants, puis aux croyantes, de baisser leur regard et de préserver leur chasteté. Le passage adressé aux femmes comporte aussi des indications sur la parure et le vêtement.',sections:[['Une responsabilité partagée','Le verset 24:30 s’adresse aux hommes croyants et le verset suivant aux femmes croyantes. Il serait inexact de présenter la pudeur comme une exigence uniquement féminine.'],['Ce que dit le passage','Le texte mentionne le regard, la chasteté, la parure, le voile rabattu sur la poitrine, certaines personnes devant lesquelles la parure peut être montrée et le retour collectif vers Allah. Les détails de mise en œuvre demandent une étude de fiqh.'],['Pudeur et dignité','La pudeur ne signifie pas avoir honte de son corps, renoncer à poser une question intime nécessaire, accepter la contrainte ou la violence, ni rendre une femme responsable du comportement fautif d’autrui. Cette clarification est une précaution éditoriale.'],['Pour mon Jardin','Comment préserver mes limites et respecter celles des autres sans juger leur valeur ?']],sources:[['Notice de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Coran 24:30–31','https://quran.com/24/30-31']]},
+{id:'book-wadiiyya-family',cat:'women',title:'Construire une relation conjugale bienveillante',sub:'Affection · miséricorde · traitement convenable · sécurité',status:'verified',origin:'book',summary:'Le Coran décrit la relation conjugale à travers la tranquillité, l’affection et la miséricorde. Il demande également aux époux de se comporter convenablement envers leurs épouses.',sections:[['Affection et miséricorde','Le Coran 30:21 présente comme un signe d’Allah la tranquillité recherchée auprès de l’époux ou de l’épouse ainsi que l’affection et la miséricorde placées entre eux. Il ne promet pas une vie sans difficulté.'],['Un comportement convenable','Le Coran 4:19 interdit notamment d’hériter des femmes contre leur volonté, de leur nuire pour reprendre ce qui leur a été donné, et demande de vivre avec elles convenablement.'],['Des repères concrets','Parler sans humiliation ni menace, écouter, discuter des attentes et des responsabilités, reconnaître ses torts et rechercher une aide compétente lorsque le conflit persiste sont des propositions de Jardin du Cœur.'],['Sécurité','Les appels à la patience ou à la préservation du couple ne justifient jamais la violence, la contrainte ou la mise en danger. Une personne menacée doit pouvoir chercher de l’aide et se mettre en sécurité.']],sources:[['Notice de l’ouvrage','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Coran 30:21','https://quran.com/30/21'],['Coran 4:19','https://quran.com/4/19']]},
 {id:'book-wadiiyya-children',cat:'women',title:'Accompagner les enfants dans l’apprentissage',sub:'Transmission, patience et exemple',status:'verified',origin:'book',summary:'L’éducation des enfants fait partie des thèmes annoncés de Conseils aux femmes musulmanes. Cette leçon originale propose des repères de transmission et distingue la notice du livre des textes religieux cités séparément.',sections:[['Une responsabilité partagée','Le Coran 66:6 appelle les croyants à veiller sur eux-mêmes et leur famille. La transmission et les soins ne doivent pas être présentés comme la seule responsabilité de la mère.'],['Enseigner avec bienveillance','Le Coran 31:13–19 présente les conseils de Luqmân à son enfant : foi, prière, conduite envers autrui et modération. Le passage est un support de réflexion, non une méthode éducative exhaustive.'],['Une petite pratique','Choisir ensemble une question, lire une source adaptée à l’âge, accueillir les questions et reconnaître quand une réponse demande une vérification.'],['Respect et sécurité','Adapter l’apprentissage à l’âge et aux besoins de chaque enfant ; ne pas confondre éducation religieuse et intimidation ou violence.'],['Attribution','Le thème général est attesté dans la notice bibliographique ; les conseils pratiques sont une rédaction originale de Jardin du Cœur, sans citation ni pagination inventée du livre.']],sources:[['Notice de Conseils aux femmes musulmanes','https://maktaba-al-wasatiyya.com/produit/conseils-aux-femmes-musulmanes-suivi-de-questions-reponses/'],['Coran 66:6','https://quran.com/66/6'],['Coran 31:13–19','https://quran.com/31/13-19']]},
 {id:'book-natural-bleeding',cat:'body',title:'Cycle : apprendre à distinguer avant de conclure',sub:'Leçon de méthode tirée du traité de Muḥammad ibn Ṣāliḥ al-‘Uthaymīn',status:'verified',origin:'book',
 summary:'Le traité A Treatise on Women’s Natural Types of Bleeding organise son étude autour de trois catégories — ḥayḍ, istiḥāḍa et nifās — et de leurs conséquences juridiques. Jardin du Cœur en retient d’abord une méthode : identifier la situation avant d’appliquer une règle.',
@@ -781,14 +850,14 @@ sections:[
 ['En cas de doute','Conserve tes observations et expose le cas complet à une personne qualifiée pour la question religieuse. Si le saignement t’inquiète sur le plan physique, demande aussi un avis médical plutôt que d’attendre une conclusion de l’application.']
 ],
 sources:[['Sahih al-Bukhari 228 — istiḥâḍa','https://sunnah.com/bukhari/4/94'],['Sahih Muslim — Livre des menstruations','https://sunnah.com/muslim/3']]},
-{id:'body-quran',cat:'body',title:'Coran pendant les menstruations',sub:'Une question sur laquelle existent plusieurs avis',status:'verified',
-summary:'La récitation du Coran pendant les menstruations fait l’objet de divergences juridiques. Jardin du Cœur ne présente donc pas une position unique comme si elle était unanimement admise.',
+{id:'body-quran',cat:'body',title:'Coran pendant les menstruations',sub:'Une question juridique à documenter précisément',status:'pending',
+summary:'Cette fiche reste en préparation. Réciter, écouter, lire une traduction, utiliser un téléphone et toucher un exemplaire physique du muṣḥaf sont des questions distinctes qui demandent des références juridiques précises.',
 sections:[
-['Pourquoi la fiche signale une divergence','Des présentations juridiques contemporaines rapportant les écoles classiques exposent une position restrictive chez des juristes hanafites et shaféites, avec des nuances concernant les versets récités comme invocation ou rappel. D’autres avis autorisent la récitation dans certaines conditions.'],
-['Ce que l’application fait','Cette fiche sert à signaler honnêtement l’existence de plusieurs avis. Elle ne choisit pas à ta place l’avis juridique que tu dois suivre. Pour une application pratique détaillée à ta situation, tu peux te référer à une personne qualifiée de confiance.'],
-['À distinguer','Réciter, écouter, lire une traduction et toucher un exemplaire physique du muṣḥaf sont des questions qui ne doivent pas être confondues : elles peuvent recevoir des traitements juridiques distincts.']
+['Pourquoi elle reste en préparation','Les liens précédemment affichés étaient des présentations secondaires insuffisantes pour documenter avec précision l’ensemble des avis et leurs preuves.'],
+['À distinguer','Réciter de mémoire, écouter, lire une traduction, consulter un texte sur téléphone et toucher le muṣḥaf ne doivent pas être confondus.'],
+['En attendant','Jardin du Cœur ne choisit pas un avis à ta place. Pour une application personnelle, réfère-toi à une personne qualifiée de confiance.']
 ],
-sources:[['Présentation d’un avis shaféite — IslamQA.org','https://islamqa.org/shafii/qibla-shafii/33355/reciting-quran-during-menstruation/'],['Présentation d’avis hanafites — IslamQA.org','https://islamqa.org/hanafi/fatwacentre/179159/reciting-quran-and-manzil-during-menstruation/'],['Présentation d’avis divergents (arabe) — IslamQA.info','https://islamqa.info/ar/answers/2564']]},
+sources:[]},
 {id:'body-istihada',cat:'body',title:'Comprendre l’istihâda',sub:'Distinguer menstruations et saignement hors menstruation',status:'verified',
 summary:'Des hadiths distinguent explicitement l’istihâda des menstruations. Dans le cas rapporté de Fâtimah bint Abî Hubaysh, le saignement continu n’entraîne pas l’arrêt permanent de la prière.',
 sections:[
@@ -798,14 +867,14 @@ sections:[
 ],
 sources:[['Sunan an-Nasa’i 359','https://sunnah.com/nasai/3/11'],['Sunan Abi Dawud 280','https://sunnah.com/abudawud/1/280']]},
 {id:'body-nifas',cat:'body',title:'Comprendre le nifâs',sub:'Le saignement post-partum et la reprise de la pratique',status:'verified',
-summary:'Le nifâs désigne le saignement lié à l’accouchement. Un récit d’Umm Salama rapporte que les femmes en nifâs, à l’époque du Prophète, restaient jusqu’à quarante jours sans reprendre la prière.',
+summary:'Le nifâs désigne le saignement lié à l’accouchement. Des récits d’Umm Salama mentionnent une durée de quarante jours à l’époque du Prophète, sans faire de cette durée un compteur automatique pour chaque situation.',
 sections:[
 ['Le texte de référence','Umm Salama rapporte qu’au temps du Messager d’Allah, les femmes en saignement post-partum attendaient quarante jours. Le hadith est rapporté notamment dans Sunan Ibn Majah 648.'],
-['Ce que cette fiche ne simplifie pas','Les cas de fin du saignement avant cette durée, de reprise, ou de saignements prolongés demandent des distinctions de fiqh. La mention de quarante jours ne doit donc pas être transformée par l’application en diagnostic ou en compteur automatique.'],
+['Ce que cette fiche ne simplifie pas','La pureté peut être constatée avant quarante jours. Les cas de reprise ou de saignements au-delà de cette durée demandent des distinctions de fiqh et peuvent faire l’objet de divergences. La durée citée ne devient donc ni diagnostic ni compteur automatique.'],
 ['Dans Jardin du Cœur','Le suivi du cycle ne classe pas automatiquement un saignement post-partum. Une future extension dédiée au post-partum devra rester séparée du calendrier menstruel ordinaire.'],
 ['Santé et fiqh','Après un accouchement, une question religieuse et une question médicale peuvent coexister. L’application ne remplace ni une consultation médicale ni un avis religieux qualifié pour une situation particulière.']
 ],
-sources:[['Sunan Ibn Majah 648 — nifâs','https://sunnah.com/ibnmajah:648']]},
+sources:[['Sunan Abi Dawud 311 — nifâs','https://sunnah.com/abudawud:311'],['Sunan Ibn Majah 648 — nifâs','https://sunnah.com/ibnmajah:648'],['Jami‘ at-Tirmidhi 139 — nifâs','https://sunnah.com/tirmidhi:139']]},
 {id:'body-uncertain',cat:'body',title:'Quand je ne sais pas comment classer un saignement',sub:'Ne pas laisser une estimation décider à ma place',status:'verified',
 summary:'Les sources distinguent menstruation et istiḥāḍa. Lorsqu’une situation ne correspond pas clairement à l’habitude, Jardin du Cœur doit aider à conserver les faits sans fabriquer une conclusion religieuse.',
 sections:[
@@ -815,11 +884,12 @@ sections:[
 ['Si le saignement inquiète','Un saignement inhabituel, important ou préoccupant relève aussi de la santé. Cette fiche donne un repère religieux général et ne cherche pas à expliquer médicalement la cause du saignement.']
 ],
 sources:[['Sunan an-Nasa’i 359 — distinction menstruation/istiḥāḍa','https://sunnah.com/nasai/3/11'],['Sunan Abi Dawud 280 — reprise de la prière','https://sunnah.com/abudawud/1/280']]},
-{id:'body-purity-signs',cat:'body',title:'Reconnaître la fin des règles',sub:'Pureté constatée, ghusl et reprise de la prière',status:'verified',
-summary:'La reprise de la prière est liée à la fin des menstruations et à la purification. L’application ne déduit jamais cette fin d’une estimation de calendrier.',
+{id:'body-purity-signs',cat:'body',title:'Reconnaître la fin des règles',sub:'Une fiche à compléter avec une référence directe',status:'pending',
+summary:'La reprise de la prière est liée à la fin des menstruations et à la purification. La description détaillée des signes de pureté reste en préparation jusqu’à l’ajout d’une référence directe suffisamment précise.',
 sections:[
 ['Le principe établi','Dans Sahih al-Bukhari, le Prophète indique de délaisser la prière pendant les menstruations puis, lorsqu’elles prennent fin, de se laver et de reprendre la prière. Sahih Muslim rapporte également cette reprise après le bain dans des cas de saignement hors menstruation.'],
 ['Observer plutôt que prédire','Une date prévue n’est pas une preuve de fin de règles. Jardin du Cœur te laisse enregistrer ce que tu as réellement observé et ne transforme jamais une estimation en décision religieuse.'],
+['Pourquoi la fiche reste en préparation','Les références affichées établissent la reprise après la fin des règles, mais ne documentent pas directement tous les signes précis souvent cités. La fiche n’ajoute donc pas ces détails sans source exacte.'],
 ['Quand la situation est inhabituelle','Un saignement persistant ou difficile à classer peut relever d’une question de fiqh plus précise et, s’il est inhabituel ou préoccupant, mérite aussi un avis médical.']
 ],
 sources:[['Sahih al-Bukhari 331','https://sunnah.com/bukhari/6/35'],['Sahih Muslim 334e','https://sunnah.com/muslim/3']]},
@@ -840,7 +910,7 @@ sections:[
 ],
 sources:[['Sahih Muslim 335c','https://sunnah.com/muslim/3/85']]},
 {id:'spiritual-distance',cat:'spiritual',title:'Quand je me sens loin d’Allah',sub:'Espérance, retour et proximité',status:'verified',
-summary:'Le Coran associe l’éloignement ressenti à une invitation à revenir sans désespérer de la miséricorde d’Allah.',
+summary:'Le Coran n’emploie pas ici l’expression d’un éloignement ressenti. Il interdit de désespérer de la miséricorde d’Allah, appelle au retour vers Lui et affirme Sa proximité.',
 sections:[
 ['Ne pas désespérer','En 39:53, le Coran s’adresse à ceux qui ont commis des excès contre eux-mêmes et leur demande de ne pas désespérer de la miséricorde d’Allah. Le verset suivant appelle à revenir vers Lui.'],
 ['Allah est proche','En 2:186, Allah affirme Sa proximité et qu’Il répond à l’appel de celui qui L’invoque.'],
@@ -848,13 +918,63 @@ sections:[
 ],
 sources:[['Coran 39:53–54','https://quran.com/fr/39/53-54'],['Coran 2:186','https://quran.com/fr/la-vache/186']]},
 {id:'spiritual-dua',cat:'spiritual',title:'Du‘â & espérance',sub:'Invoquer Allah et garder l’espérance',status:'verified',
-summary:'Le Coran présente l’invocation comme une relation directe avec Allah : « Je suis tout proche » et « Je réponds à l’appel de celui qui M’invoque ».',
+summary:'Le Coran affirme la proximité d’Allah et qu’Il répond à l’appel de celui qui L’invoque. Les sources ne promettent pas que chaque demande recevra immédiatement la forme exacte attendue.',
 sections:[
 ['L’invocation','Le verset 2:186 relie proximité, invocation, réponse à l’appel, foi et orientation.'],
-['L’espérance','Le verset 39:53 interdit de désespérer de la miséricorde d’Allah, même après avoir commis des fautes.'],
+['Persévérer sans imposer un résultat','Sahih Muslim 2735a met en garde contre l’impatience consistant à dire que l’on a invoqué sans recevoir de réponse. Ce texte encourage la persévérance ; il ne garantit pas un résultat immédiat ou identique à la demande.'],
 ['Dans Jardin du Cœur','Tes du‘â personnelles restent privées et ne sont pas analysées pour te recommander des contenus. Tu peux simplement les écrire, les relire et les confier à Allah.']
 ],
-sources:[['Coran 2:186','https://quran.com/fr/la-vache/186'],['Coran 39:53','https://quran.com/fr/les-groupes/53']]},
+sources:[['Coran 2:186','https://quran.com/2/186'],['Sahih Muslim 2735a','https://sunnah.com/muslim:2735a']]},
+{id:'spiritual-dua-acceptance',cat:'spiritual',title:'Les causes qui favorisent l’exaucement de l’invocation',sub:'Attitudes · moments propices · vigilance',status:'verified',
+summary:'Des textes authentiques enseignent des attitudes et des moments favorables à l’invocation. Ils n’en font pas une formule mécanique garantissant une réponse immédiate ou exactement conforme à la demande.',
+sections:[
+['Commencer avec respect','Un récit jugé bon et authentique rapporte que le Prophète ﷺ a enseigné de commencer par louer Allah, puis de prier sur le Prophète ﷺ, avant de présenter sa demande.'],
+['Un exemple authentique','اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَى آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ.\n\nTranslittération : Allâhumma salli ‘alâ Muhammad wa ‘alâ âli Muhammad, kamâ sallayta ‘alâ âli Ibrâhîm, innaka Hamîdun Majîd. Allâhumma bârik ‘alâ Muhammad wa ‘alâ âli Muhammad, kamâ bârakta ‘alâ âli Ibrâhîm, innaka Hamîdun Majîd.\n\nSens : Ô Allah, accorde Tes bénédictions à Muhammad et à la famille de Muhammad, comme Tu les as accordées à la famille d’Abraham. Tu es certes Digne de louange et de gloire. Ô Allah, bénis Muhammad et la famille de Muhammad, comme Tu as béni la famille d’Abraham. Tu es certes Digne de louange et de gloire.'],
+['Demander avec résolution','Sahih al-Bukhari 6338 enseigne à ne pas formuler la demande en disant : « si Tu veux » ; il faut demander avec résolution. Cela exprime la confiance dans la puissance et la générosité d’Allah, sans prétendre obtenir nécessairement la forme précise souhaitée.'],
+['Une demande licite et patiente','Sahih Muslim 2735c relie la réponse à une invocation qui ne porte ni sur un péché ni sur la rupture des liens familiaux, et met en garde contre l’abandon causé par l’impatience.'],
+['Des moments particulièrement favorables','Les sources mentionnent notamment la prosternation, le dernier tiers de la nuit et le temps entre l’adhân et l’iqâma comme des moments où multiplier les invocations.'],
+['Veiller à ce qui est licite','Sahih Muslim 1015 évoque une personne qui invoque avec insistance alors que sa nourriture, sa boisson et ses vêtements proviennent de l’illicite. Le récit invite à prendre au sérieux la licéité de ses ressources.'],
+['À retenir','Ces causes invitent à la sincérité, à la patience et à une vie cohérente. Elles ne doivent servir ni à promettre un résultat automatique, ni à culpabiliser une personne dont l’attente se prolonge.']
+],
+sources:[['Jami‘ at-Tirmidhi 3477','https://sunnah.com/tirmidhi:3477'],['Sahih al-Bukhari 6357','https://sunnah.com/bukhari:6357'],['Sahih Muslim 406a','https://sunnah.com/muslim:406a'],['Sahih al-Bukhari 6338','https://sunnah.com/bukhari:6338'],['Sahih Muslim 2735c','https://sunnah.com/muslim:2735c'],['Sahih Muslim 482','https://sunnah.com/muslim:482'],['Sahih al-Bukhari 1145','https://sunnah.com/bukhari:1145'],['Sunan Abi Dawud 521','https://sunnah.com/abudawud:521'],['Sahih Muslim 1015','https://sunnah.com/muslim:1015']]},
+{id:'spiritual-prayer',cat:'spiritual',title:'Retrouver un lien vivant avec la prière',sub:'Présence · régularité · lien avec Allah',status:'verified',
+summary:'Le Coran relie la prière au rappel d’Allah et à l’éloignement de ce qui est blâmable. La prosternation est aussi décrite dans un hadith authentique comme un moment de proximité particulière avec Allah.',
+sections:[
+['Réponse courte','La prière n’est pas présentée comme une simple tâche à cocher : le Coran l’associe au rappel d’Allah et à une transformation du comportement.'],
+['Repère','Le verset 29:45 ordonne de réciter ce qui a été révélé et d’accomplir la prière ; il indique que la prière préserve de la turpitude et du blâmable.'],
+['Application','Choisir une prière de la journée et préparer quelques minutes de calme avant de commencer peut aider à lui redonner une place consciente. Cette proposition d’organisation n’est pas une règle religieuse.'],
+['À retenir','Une difficulté de concentration ne permet pas à l’application de juger la valeur ou l’acceptation d’une prière. Il reste possible de revenir avec douceur et régularité.']
+],
+sources:[['Coran 29:45','https://quran.com/29/45'],['Sahih Muslim 482','https://sunnah.com/muslim:482']]},
+{id:'spiritual-dhikr',cat:'spiritual',title:'Le dhikr dans ma journée',sub:'Se rappeler Allah dans les moments ordinaires',status:'verified',
+summary:'Le Coran associe le rappel d’Allah à l’apaisement des cœurs. Cette fiche invite à lui faire une place simple dans la journée, sans promettre un résultat émotionnel immédiat.',
+sections:[
+['Réponse courte','Le dhikr est un rappel d’Allah qui peut accompagner les moments ordinaires de la journée.'],
+['Repères','Le verset 13:28 décrit les croyants dont les cœurs trouvent l’apaisement dans le rappel d’Allah. Les versets 33:41–42 appellent les croyants à beaucoup se rappeler Allah et à Le glorifier matin et soir.'],
+['Nuance','Ce verset n’autorise pas à culpabiliser une personne qui reste anxieuse ou en détresse. Une souffrance persistante peut aussi nécessiter un accompagnement humain ou médical.'],
+['Application','Associer un court moment de rappel à une habitude déjà présente peut aider à installer une continuité. Il s’agit d’une suggestion pratique, pas d’une obligation supplémentaire.']
+],
+sources:[['Coran 13:28','https://quran.com/13/28'],['Coran 33:41–42','https://quran.com/33/41-42']]},
+{id:'spiritual-steadiness',cat:'spiritual',title:'Avancer avec constance',sub:'Des actes réalistes et réguliers',status:'verified',
+summary:'La constance ne signifie pas tout faire à la fois. Des hadiths authentiques valorisent les œuvres régulières, même lorsqu’elles sont peu nombreuses.',
+sections:[
+['Réponse courte','Une petite œuvre tenue dans le temps peut être préférable à un élan trop lourd qui s’interrompt rapidement.'],
+['Repères','Sahih al-Bukhari 6464 rapporte que les œuvres les plus aimées d’Allah sont les plus régulières, même si elles sont peu nombreuses. Sahih al-Bukhari 6465 invite à accomplir les œuvres dont on est capable.'],
+['Application','Choisir une pratique réaliste, la noter et l’ajuster sans culpabilisation permet de rechercher la continuité plutôt que la quantité.']
+],
+sources:[['Sahih al-Bukhari 6464','https://sunnah.com/bukhari:6464'],['Sahih al-Bukhari 6465','https://sunnah.com/bukhari:6465']]},
+{id:'spiritual-tawakkul',cat:'spiritual',title:'Comprendre et vivre le tawakkul',sub:'Agir · faire confiance · accueillir le résultat',status:'verified',
+summary:'Le tawakkul consiste à placer sa confiance en Allah tout en accomplissant les moyens licites qui dépendent de soi. Il ne signifie ni rester passive, ni exiger qu’un événement se déroule exactement comme on l’espère.',
+sections:[
+['Qu’est-ce que le tawakkul ?','Le Coran présente la confiance en Allah comme une qualité des croyants en 8:2. Le terme désigne ici une disposition du cœur : s’en remettre à son Seigneur. Cette fiche ne prétend pas résumer toutes les explications savantes du concept.'],
+['Décider puis faire confiance','En 3:159, le Coran mentionne la consultation, puis la décision, puis l’ordre de placer sa confiance en Allah. Cet enchaînement montre que réflexion, choix et tawakkul ne s’opposent pas.'],
+['Prendre les moyens','Le hadith de l’oiseau rapporte que celui-ci part le matin le ventre vide et revient rassasié. Le texte associe ainsi la confiance en Allah à un départ et à un mouvement réels ; l’idée que le tawakkul exclurait toute action ne correspond pas à cet exemple.'],
+['Confier ce qui échappe à mon contrôle','Le verset 65:3 affirme qu’Allah suffit à celui qui place sa confiance en Lui et rappelle qu’Allah a assigné une mesure à toute chose. Faire ce qui dépend de soi n’oblige pas le résultat à correspondre à son souhait.'],
+['Ce que le tawakkul n’est pas','Ce n’est ni négliger une responsabilité, ni refuser un conseil, une aide ou un soin, ni nier la peur et la tristesse. Éprouver une émotion difficile ne permet pas à l’application de juger la qualité de la confiance d’une personne.'],
+['Une mise en pratique','1. Nommer clairement la situation. 2. Distinguer ce qui dépend de moi de ce qui m’échappe. 3. Choisir un moyen licite et réaliste. 4. Agir. 5. Invoquer Allah et Lui confier le résultat. Cette méthode est une proposition pratique de Jardin du Cœur, pas un rituel religieux.'],
+['Pour mon Jardin','Quel pas juste puis-je accomplir aujourd’hui ? Qu’est-ce que je dois ensuite accepter de ne pas maîtriser ?']
+],
+sources:[['Coran 8:2','https://quran.com/8/2'],['Coran 3:159','https://quran.com/3/159'],['Coran 65:3','https://quran.com/65/3'],['Jami‘ at-Tirmidhi 2344 — hasan','https://sunnah.com/tirmidhi:2344']]},
 {id:'ramadan-period',cat:'ramadan',title:'Règles, prière & jeûne : le rattrapage',sub:'Distinguer la prière du jeûne à rattraper',status:'verified',
 summary:'Le récit de ‘Â’isha transmis dans Sahih Muslim distingue les prières manquées pendant les menstruations, qui ne sont pas rattrapées, du jeûne qui fait l’objet d’un rattrapage dans la tradition rapportée.',
 sections:[
@@ -876,10 +996,10 @@ summary:'Le célibat n’empêche pas de construire une vie de foi, de savoir, d
 sections:[
 ['Ma valeur ne dépend pas d’un statut matrimonial','Le Coran 33:35 associe hommes et femmes dans les qualités de foi et dans la promesse de pardon et de récompense. Le texte ne conditionne pas cette valeur spirituelle au mariage.'],
 ['Construire pendant l’attente','Apprendre, travailler sur son caractère, prendre soin de ses liens, développer ses compétences et nourrir sa relation avec Allah sont des chemins qui ont leur valeur propre. Cette partie est une proposition de réflexion de Jardin du Cœur, pas une règle juridique.'],
-['Face à la pression','Une pression familiale ou sociale ne remplace pas ton consentement. Les récits de Sahih Muslim sur le mariage indiquent que la femme doit être consultée.'],
+['Pendant le célibat','Le Coran 24:33 invite les personnes qui ne trouvent pas les moyens de se marier à rester chastes jusqu’à ce qu’Allah les enrichisse de Sa grâce. Le verset ne présente pas leur vie comme dépourvue de valeur dans l’attente.'],
 ['Pour mon Jardin','Qu’est-ce que je veux cultiver dans ma vie maintenant, indépendamment de la date d’un éventuel mariage ?']
 ],
-sources:[['Coran 33:35','https://quran.com/33/35'],['Sahih Muslim 1421b','https://sunnah.com/muslim/16/79']]},
+sources:[['Coran 33:35','https://quran.com/33/35'],['Coran 24:33','https://quran.com/24/33']]},
 {id:'life-marriage',cat:'life',title:'Je me prépare au mariage',sub:'Consentement · mahr · affection · miséricorde',status:'verified',
 summary:'Les sources présentent plusieurs repères utiles avant le mariage : le consentement de la femme doit être recherché, le mahr lui est remis, et le Coran décrit la vie conjugale par la tranquillité, l’affection et la miséricorde.',
 sections:[
@@ -890,8 +1010,28 @@ sections:[
 ['Questions à réfléchir avant de s’engager','Comment parlons-nous de la foi, de l’argent, du travail, de la famille, des enfants, des responsabilités et des désaccords ? Puis-je exprimer un désaccord ou un refus librement ? Ces questions sont proposées comme réflexion personnelle, pas comme critères automatiques de validité religieuse.']
 ],
 sources:[['Coran 4:4 — mahr','https://quran.com/fr/4/4'],['Coran 30:21 — affection et miséricorde','https://quran.com/fr/les-romains/21'],['Coran 4:19 — vie commune','https://quran.com/fr/les-femmes/19'],['Sahih Muslim 1421b — consentement','https://sunnah.com/muslim/16/79']]},
-{id:'life-mother',cat:'life',title:'Grossesse, maternité & post-partum',sub:'Des contenus distincts du suivi médical',status:'prep'},
-{id:'life-menopause',cat:'life',title:'Ménopause & nouvelle étape',sub:'Cycle · pratique · spiritualité',status:'prep'},
+{id:'life-before-marriage',cat:'life',title:'Une relation avant le mariage',sub:'Sentiments · limites · démarche claire · sécurité',status:'verified',
+summary:'Avant le nikâh, deux personnes ne sont pas encore époux. Les sentiments involontaires ne sont pas assimilés aux actes choisis ; la fiche propose des repères pour avancer sans banaliser ni humilier.',
+sections:[['Distinguer les sentiments des actes','Éprouver un attachement n’est pas la même chose que choisir un comportement. Le Coran 17:32 demande de ne pas approcher la relation sexuelle illicite ; les versets 24:30–31 s’adressent aux hommes et aux femmes concernant le regard et la chasteté.'],['Si le projet de mariage est sérieux','Clarifier l’intention, vérifier la compatibilité sur les sujets essentiels et associer rapidement des proches ou personnes de confiance peut rendre la démarche plus claire. Ces modalités sont une application contemporaine proposée par Jardin du Cœur, pas une formulation littérale des textes.'],['Préserver des limites','Le tête-à-tête isolé est interdit dans Sahih al-Bukhari 5233. Les échanges numériques ne sont pas mentionnés dans ce hadith ; fixer des limites sur leur contenu, leur fréquence et leur caractère secret constitue donc une application prudente, non une citation.'],['Si des limites ont été franchies','Le Coran 39:53 interdit de désespérer de la miséricorde d’Allah. Revenir vers Allah n’oblige pas à épouser une personne pour « réparer » la situation. Le consentement au mariage doit rester libre.'],['Sécurité','Pression, menaces, surveillance, chantage, demandes d’images intimes ou isolement sont des signaux d’alerte. La religion ne doit pas servir à imposer une relation ou un mariage.']],sources:[['Coran 17:32','https://quran.com/17/32'],['Coran 24:30–31','https://quran.com/24/30-31'],['Sahih al-Bukhari 5233 — isolement','https://sunnah.com/bukhari:5233'],['Coran 39:53','https://quran.com/39/53'],['Sahih Muslim 1421b — consentement','https://sunnah.com/muslim:1421b']]},
+{id:'life-mother',cat:'life',title:'Grossesse & maternité',sub:'Reconnaître l’épreuve sans idéaliser ni diagnostiquer',status:'verified',
+summary:'Le Coran reconnaît explicitement la peine liée à la grossesse, à l’accouchement et au sevrage. Cette reconnaissance n’est ni une injonction à tout supporter seule, ni un avis médical.',
+sections:[
+['Réponse courte','Les textes coraniques mentionnent l’effort et la vulnérabilité liés à la maternité ; ils permettent d’en reconnaître le poids sans réduire la femme à ce rôle.'],
+['Repères','Le Coran 31:14 évoque la mère qui porte son enfant faiblesse sur faiblesse. Le verset 46:15 mentionne la grossesse et l’accouchement vécus dans la peine.'],
+['Santé et fiqh','Une douleur, un saignement ou une détresse psychique relève d’un professionnel de santé. Pour une question de prière, jeûne ou nifâs propre à une situation, l’application ne produit pas de décision juridique automatique.'],
+['Application','Demander du soutien, répartir les responsabilités et préserver un temps de repos ne diminuent pas la valeur spirituelle d’une personne. Cette phrase est un repère de bienveillance, pas une règle juridique.']
+],
+sources:[['Coran 31:14','https://quran.com/31/14'],['Coran 46:15','https://quran.com/46/15']]},
+{id:'life-menopause',cat:'life',title:'Ménopause & nouvelle étape',sub:'Une transition corporelle, pas une diminution spirituelle',status:'verified',
+summary:'Le Coran reconnaît l’existence des femmes qui ne menstruent plus. La fin des règles change certaines questions pratiques, mais elle ne diminue ni la foi, ni la valeur, ni la possibilité d’accomplir de bonnes œuvres.',
+sections:[
+['Réponse courte','La ménopause est une étape de vie reconnue dans le texte coranique. Elle ne constitue pas un statut spirituel inférieur.'],
+['Repère textuel','Le Coran 65:4 mentionne les femmes qui n’ont plus de menstruations dans le contexte précis du délai de viduité. Cette fiche ne généralise pas ce verset à d’autres règles.'],
+['Nuance juridique','Les règles détaillées relatives à un saignement inhabituel ou au délai de viduité dépendent de la situation. L’application invite à consulter une personne qualifiée au lieu de conclure à partir du calendrier.'],
+['Santé','Des changements de cycle ou des saignements après la ménopause relèvent aussi d’une évaluation médicale ; Jardin du Cœur ne pose aucun diagnostic.'],
+['À retenir','Cette nouvelle étape peut être vécue sans culpabilisation : les actes de foi et les œuvres utiles ne sont pas limités à une période de la vie.']
+],
+sources:[['Coran 65:4 — contexte du délai de viduité','https://quran.com/65/4'],['Coran 16:97 — œuvre bonne, homme ou femme','https://quran.com/16/97'],['NHS — Postmenopausal bleeding','https://www.nhs.uk/conditions/post-menopausal-bleeding/']]},
 {id:'women-khadija',cat:'women',title:'Khadîja',sub:'Présence, confiance et soutien aux débuts de la révélation',status:'verified',
 summary:'Le récit du début de la révélation place Khadîja au cœur de ce moment : le Prophète revient auprès d’elle bouleversé, elle le rassure puis l’accompagne chez Waraqa ibn Nawfal.',
 sections:[
@@ -900,52 +1040,59 @@ sections:[
 ['Ce que la source permet de retenir','Ces récits documentent sa présence et son soutien dans un moment fondateur. Cette fiche évite d’ajouter des détails biographiques populaires qui ne sont pas établis par les références affichées.']
 ],
 sources:[['Sahih al-Bukhari 3','https://sunnah.com/bukhari:3'],['Sahih al-Bukhari 3817','https://sunnah.com/bukhari:3817'],['Sahih al-Bukhari 3818','https://sunnah.com/bukhari:3818']]},
-{id:'women-aisha',cat:'women',title:'‘Â’isha',sub:'Transmission, questions et enseignement',status:'verified',
-summary:'De nombreux récits religieux nous sont transmis par ‘Â’isha. Les sources la montrent aussi répondant directement à des questions de pratique.',
+{id:'women-aisha',cat:'women',title:'‘Â’isha',sub:'Transmettre, questionner et expliquer',status:'verified',
+summary:'Des récits authentiques montrent ‘Â’isha transmettant des enseignements et répondant à des questions concrètes sur la pratique religieuse.',
 sections:[
-['Transmettre','Le récit du commencement de la révélation dans Sahih al-Bukhari 3 est transmis par ‘Â’isha. De nombreux autres récits des recueils canoniques portent également sa transmission.'],
+['Transmettre avec précision','Le récit détaillé du commencement de la révélation dans Sahih al-Bukhari 3 est transmis par ‘Â’isha. La fiche ne laisse pas entendre qu’elle a personnellement assisté aux événements de la grotte de Hirâ.'],
 ['Répondre aux questions','Dans Sahih Muslim 335c, Mu‘âdha interroge ‘Â’isha sur la différence entre le rattrapage du jeûne et celui de la prière pendant les menstruations. ‘Â’isha répond en se référant à la pratique vécue à l’époque du Prophète.'],
-['Pourquoi ce portrait est utile','Son exemple permet de montrer une femme présente dans la transmission et l’explication du savoir religieux, sans transformer son histoire en récit idéalisé ou inventé.']
+['Ce que son exemple montre','Les femmes participent pleinement à la transmission et à l’explication du savoir religieux. Poser une question sincère pour comprendre permet d’apprendre avec davantage de justesse. La fiche distingue ce qu’une personne observe de ce qu’elle transmet.']
 ],
-sources:[['Sahih al-Bukhari 3','https://sunnah.com/bukhari:3'],['Sahih Muslim 335c','https://sunnah.com/muslim/3/85']]},
-{id:'women-maryam',cat:'women',title:'Maryam',sub:'Une femme nommée et honorée dans le Coran',status:'verified',
-summary:'Maryam occupe une place singulière dans le Coran. En 3:42, les anges lui annoncent qu’Allah l’a choisie et purifiée.',
+sources:[['Sahih al-Bukhari 3','https://sunnah.com/bukhari:3'],['Sahih Muslim 335c','https://sunnah.com/muslim:335c']]},
+{id:'women-maryam',cat:'women',title:'Maryam',sub:'Choisie, éprouvée et honorée',status:'verified',
+summary:'Maryam occupe une place singulière dans le Coran. Elle y est choisie et purifiée par Allah, appelée à l’adoration, puis confrontée à une épreuve décrite sans cacher son angoisse.',
 sections:[
-['Ce que dit le texte','Le Coran 3:42 rapporte l’annonce des anges à Maryam : Allah l’a choisie, purifiée et distinguée parmi les femmes.'],
-['Son récit','Les passages qui suivent racontent l’annonce concernant ‘Îsâ. La sourate 19, qui porte le nom de Maryam, développe également son récit.'],
-['Ce que je peux méditer','Cette fiche ne cherche pas à inventer des détails biographiques. Elle part des textes eux-mêmes : foi, épreuve, confiance et place donnée à Maryam dans le récit coranique.']
+['Choisie et appelée à adorer','Les anges annoncent à Maryam qu’Allah l’a choisie et purifiée. Le verset suivant l’appelle à se consacrer à son Seigneur, à se prosterner et à s’incliner avec ceux qui s’inclinent.'],
+['Chercher refuge auprès d’Allah','Lorsqu’un homme se présente devant elle, avant qu’elle sache qu’il s’agit du messager envoyé par Allah, Maryam cherche refuge auprès du Tout Miséricordieux. La fiche n’ajoute aucune parole au récit.'],
+['Une souffrance que le Coran ne minimise pas','Au moment de l’accouchement, Maryam exprime une détresse profonde. Le Coran rapporte sa souffrance, puis le réconfort et les ressources qui lui sont accordés.'],
+['À méditer','Être honorée par Allah ne signifie pas être préservée de toute peur ou souffrance. Cette fiche ne transforme pas son histoire en injonction demandant aux femmes de subir silencieusement leurs difficultés.']
 ],
-sources:[['Coran 3:42','https://quran.com/3/42'],['Sourate Maryam (19)','https://quran.com/fr/maryam']]}
+sources:[['Coran 3:42–43','https://quran.com/3/42-43'],['Coran 19:16–26','https://quran.com/19/16-26']]}
 ];
+FAITH_ARTICLES.forEach(a=>{if(a.origin==='book'&&a.id!=='book-natural-bleeding')a.cat='books'});
+// Ces fiches ont été consolidées dans des articles plus complets. Les conserver
+// dans les données évite de casser d’anciens favoris, sans les afficher en double.
+const FAITH_ARCHIVED_IDS=new Set(['woman-family','body-end','body-istihada','ramadan-period','ramadan-spirit']);
+function visibleFaithArticles(){return FAITH_ARTICLES.filter(a=>!FAITH_ARCHIVED_IDS.has(a.id))}
 let faithCategory='all';
 function faithFavs(){state.profile=state.profile||{};state.profile.faithFavorites=Array.isArray(state.profile.faithFavorites)?state.profile.faithFavorites:[];return state.profile.faithFavorites}
 function renderFaithArticles(categorySet=null){
 const root=document.getElementById('faithArticleList');if(!root)return;
 const q=(document.getElementById('faithSearch')?.value||'').trim().toLowerCase();
-const items=FAITH_ARTICLES.filter(a=>(categorySet?categorySet.includes(a.cat):(faithCategory==='all'||a.cat===faithCategory))&&(!q||`${a.title} ${a.sub} ${a.summary||''}`.toLowerCase().includes(q)));
+const items=visibleFaithArticles().filter(a=>(categorySet?categorySet.includes(a.cat):(faithCategory==='all'||a.cat===faithCategory))&&(!q||`${a.title} ${a.sub} ${a.summary||''}`.toLowerCase().includes(q)));
 const count=document.getElementById('faithResultsCount');if(count)count.textContent=`${items.length} ${items.length>1?'fiches':'fiche'}`;
-root.innerHTML=items.length?items.map(a=>`<button class="faith-row" data-faith-id="${a.id}"><span class="faith-row-copy"><strong>${escapeHtml(a.title)}</strong><small>${escapeHtml(a.sub)}</small></span><span class="faith-row-meta"><span class="faith-status ${a.status==='verified'?'faith-verified':''}">${a.status==='verified'?'✓ Sourcée':'En préparation'}</span><span class="faith-row-arrow" aria-hidden="true">›</span></span></button>`).join(''):`<div class="learn-empty"><strong>Aucune fiche trouvée</strong><span>Essaie un autre mot ou choisis un thème ci-dessus.</span></div>`;
+root.innerHTML=items.length?items.map(a=>`<button class="faith-row" data-faith-id="${a.id}"><span class="faith-row-copy"><strong>${escapeHtml(a.title)}</strong><small>${escapeHtml(a.sub)}</small></span><span class="faith-row-meta"><span class="faith-status ${a.status==='verified'?'faith-verified':''}">${a.status==='verified'?(a.cat==='books'?'✓ Ouvrage documenté':a.id==='body-quran'?'✓ Avis documentés':'✓ Sources primaires'):'En préparation'}</span><span class="faith-row-arrow" aria-hidden="true">›</span></span></button>`).join(''):`<div class="learn-empty"><strong>Aucune fiche trouvée</strong><span>Essaie un autre mot ou choisis un thème ci-dessus.</span></div>`;
 }
 function openFaithArticle(id){
 const a=FAITH_ARTICLES.find(x=>x.id===id);if(!a)return;
 const fav=faithFavs().includes(id);
 if(a.status!=='verified'){
-openModal(a.title,`<div class="faith-reader"><div class="faith-status" style="display:inline-block;margin-bottom:10px">🕊️ Contenu en préparation</div><p><strong>${escapeHtml(a.sub)}</strong></p><p>Cette fiche n’est pas encore publiée comme contenu religieux. Elle sera rédigée après vérification de ses références et, lorsqu’il existe plusieurs avis reconnus, ceux-ci seront présentés clairement.</p></div>`);
+openModal(a.title,`<div class="faith-reader"><div class="faith-status jdc-inline-8">🕊️ Contenu en préparation</div><p><strong>${escapeHtml(a.sub)}</strong></p><p>Cette fiche n’est pas encore publiée comme contenu religieux. Elle sera rédigée après vérification de ses références et, lorsqu’il existe plusieurs avis reconnus, ceux-ci seront présentés clairement.</p></div>`);
 return;
 }
 const sections=(a.sections||[]).map(s=>`<section class="faith-reader-section"><h4>${escapeHtml(s[0])}</h4><p>${escapeHtml(s[1])}</p></section>`).join('');
 const sources=(a.sources||[]).map(s=>`<a class="faith-source" href="${s[1]}" target="_blank" rel="noopener noreferrer">${escapeHtml(s[0])} ↗</a>`).join('');
-openModal(a.title,`<article class="faith-reader"><div class="faith-status faith-verified" style="display:inline-block">✓ Sources vérifiées</div><p class="faith-summary">${escapeHtml(a.summary||'')}</p>${sections}<section class="faith-reader-section"><h4>Sources & références</h4><div class="faith-sources">${sources}</div><small>Révision éditoriale : septembre 2026</small></section><div class="modal-actions"><button class="primary" id="faithFavToggle">${fav?'Retirer de mes lectures':'♡ Garder dans mes lectures'}</button></div></article>`);
+const sourceLabel=a.cat==='books'?'✓ Leçon d’ouvrage documentée':a.id==='body-quran'?'✓ Avis juridiques documentés':'✓ Sources primaires vérifiées';
+openModal(a.title,`<article class="faith-reader"><div class="faith-status faith-verified jdc-inline-7">${sourceLabel}</div><p class="faith-summary">${escapeHtml(a.summary||'')}</p>${sections}<section class="faith-reader-section"><h4>Sources & références</h4><div class="faith-sources">${sources}</div><small>Révision éditoriale : septembre 2026</small></section><div class="modal-actions"><button class="primary" id="faithFavToggle">${fav?'Retirer de mes lectures':'♡ Garder dans mes lectures'}</button></div></article>`);
 document.getElementById('faithFavToggle').onclick=()=>{const f=faithFavs(),i=f.indexOf(id);if(i>=0)f.splice(i,1);else f.push(id);saveState();closeModal();toast(i>=0?'Lecture retirée':'Lecture gardée')};
 }
 document.getElementById('faithArticleList')?.addEventListener('click',e=>{const b=e.target.closest('[data-faith-id]');if(b)openFaithArticle(b.dataset.faithId)});
 document.getElementById('faithSearch')?.addEventListener('input',()=>{faithCategory='all';document.querySelectorAll('[data-faith-category]').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false')});renderFaithArticles()});
 document.querySelectorAll('[data-faith-category]').forEach(b=>b.addEventListener('click',()=>{faithCategory=b.dataset.faithCategory;document.querySelectorAll('[data-faith-category]').forEach(x=>{const selected=x===b;x.classList.toggle('active',selected);x.setAttribute('aria-pressed',String(selected))});renderFaithArticles()}));
-document.getElementById('faithFavoritesBtn')?.addEventListener('click',()=>{const fav=faithFavs();const items=FAITH_ARTICLES.filter(a=>fav.includes(a.id));openModal('Mes lectures',items.length?items.map(a=>`<button class="faith-row" data-modal-faith="${a.id}"><span><strong>${escapeHtml(a.title)}</strong><small>${escapeHtml(a.sub)}</small></span><span>›</span></button>`).join(''):'<p class="subtle">Aucune lecture gardée pour le moment.</p>');document.getElementById('modalBody')?.addEventListener('click',e=>{const b=e.target.closest('[data-modal-faith]');if(b){closeModal();setTimeout(()=>openFaithArticle(b.dataset.modalFaith),0)}})});
+document.getElementById('faithFavoritesBtn')?.addEventListener('click',()=>{const fav=faithFavs();const items=visibleFaithArticles().filter(a=>fav.includes(a.id));openModal('Mes lectures',items.length?items.map(a=>`<button class="faith-row" data-modal-faith="${a.id}"><span><strong>${escapeHtml(a.title)}</strong><small>${escapeHtml(a.sub)}</small></span><span>›</span></button>`).join(''):'<p class="subtle">Aucune lecture gardée pour le moment.</p>');document.getElementById('modalBody')?.addEventListener('click',e=>{const b=e.target.closest('[data-modal-faith]');if(b){closeModal();setTimeout(()=>openFaithArticle(b.dataset.modalFaith),0)}})});
 document.getElementById('faithBooksBtn')?.addEventListener('click',openFaithBooks);
 document.querySelectorAll('[data-faith-path]').forEach(b=>b.addEventListener('click',()=>openFaithPath(b.dataset.faithPath)));
 document.getElementById('cycleLearnBtn')?.addEventListener('click',()=>openFaithPath('cycle'));
-document.getElementById('faithMethodBtn')?.addEventListener('click',()=>openModal('Sources & méthodologie','<div class="faith-reader"><p>Les fiches marquées <strong>✓ Sourcée</strong> ont été rédigées à partir des références affichées dans la fiche. Les autres restent en préparation.</p><p>Lorsqu’une question comporte des divergences juridiques reconnues, la fiche doit les présenter explicitement avant d’être publiée.</p><p class="subtle">Jardin du Cœur est un outil de journal et d’information. Son calendrier et ses estimations ne déterminent pas à eux seuls un statut médical ou juridique religieux.</p></div>'));
+document.getElementById('faithMethodBtn')?.addEventListener('click',()=>openModal('Sources & méthodologie','<div class="faith-reader"><p>Le statut distingue désormais <strong>les sources primaires</strong>, <strong>les avis juridiques documentés</strong> et <strong>les leçons issues d’ouvrages</strong>. Une référence visible ne transforme pas automatiquement une interprétation en consensus.</p><p>Lorsqu’une question comporte des divergences juridiques reconnues, la fiche les présente explicitement ou reste en préparation.</p><p class="subtle">Jardin du Cœur est un outil de journal et d’information. Son calendrier et ses estimations ne déterminent pas à eux seuls un statut médical ou juridique religieux.</p></div>'));
 renderFaithArticles();
 let reflectionPeriod='week', reflectionCursor=new Date();
 function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
@@ -982,7 +1129,7 @@ openModal('Mes objectifs',`<p class="subtle">${active.length} objectif${active.l
 document.getElementById('addObjectiveItem').onclick=()=>{const v=document.getElementById('newObjectiveItem').value.trim();if(!v)return;state.profile.objectives.push({id:uid(),text:v,done:false,createdAt:todayKey(),completedAt:null});saveState();renderHomeTodayDashboard();toast('Objectif ajouté');objectivesPanel()};
 document.getElementById('newObjectiveItem').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();document.getElementById('addObjectiveItem').click()}});
 document.getElementById('objectiveList').onchange=e=>{if(e.target.matches('[data-objective-check]')){const o=state.profile.objectives.find(x=>x.id===e.target.dataset.objectiveCheck);if(!o)return;o.done=e.target.checked;o.completedAt=o.done?todayKey():null;saveState();renderHomeTodayDashboard();toast(o.done?'Objectif terminé':'Objectif réactivé');objectivesPanel()}};
-document.getElementById('objectiveList').onclick=e=>{const b=e.target.closest('[data-objective-del]');if(!b)return;const i=state.profile.objectives.findIndex(x=>x.id===b.dataset.objectiveDel);if(i>=0&&confirm('Supprimer cet objectif ?')){state.profile.objectives.splice(i,1);saveState();renderHomeTodayDashboard();toast(o.done?'Objectif terminé':'Objectif réactivé');objectivesPanel()}};
+document.getElementById('objectiveList').onclick=e=>{const b=e.target.closest('[data-objective-del]');if(!b)return;const i=state.profile.objectives.findIndex(x=>x.id===b.dataset.objectiveDel);if(i>=0&&confirm('Supprimer cet objectif ?')){state.profile.objectives.splice(i,1);saveState();renderHomeTodayDashboard();toast('Objectif supprimé');objectivesPanel()}};
 }
 function habitStats(habit){
 const checkins=habit.checkins||{}; let streak=0; const d=new Date();
@@ -996,8 +1143,8 @@ const arr=state.profile.habits||[], today=todayKey();
 openModal('Mes habitudes',`<p class="subtle">Coche uniquement ce que tu as fait aujourd’hui. Le suivi est conservé jour après jour.</p><div id="habitList">${arr.map((h,i)=>{const st=habitStats(h);return `<div class="list-editor-item habit-item"><input type="checkbox" aria-label="Fait aujourd’hui : ${escapeHtml(h.text)}" data-habit-check="${i}" ${(h.checkins||{})[today]?'checked':''}><div class="grow"><strong>${escapeHtml(h.text)}</strong><small class="habit-stats">${st.streak} jour${st.streak>1?'s':''} de suite · ${st.last7}/7 derniers jours</small></div><button data-habit-del="${i}" aria-label="Supprimer ${escapeHtml(h.text)}">×</button></div>`}).join('')||'<div class="empty-state"><strong>Aucune habitude pour le moment.</strong><br><span>Commence par une habitude simple et réaliste.</span></div>'}</div><div class="toolbar-row"><input id="newHabitItem" placeholder="Ajouter une habitude…"><button class="mini-btn primary-mini" id="addHabitItem">Ajouter</button></div>`);
 document.getElementById('addHabitItem').onclick=()=>{const v=document.getElementById('newHabitItem').value.trim();if(!v)return;state.profile.habits.push({id:uid(),text:v,checkins:{}});saveState();renderHomeTodayDashboard();toast('Habitude ajoutée');habitsPanel()};
 document.getElementById('newHabitItem').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();document.getElementById('addHabitItem').click()}});
-document.getElementById('habitList').onchange=e=>{if(e.target.matches('[data-habit-check]')){const h=state.profile.habits[Number(e.target.dataset.habitCheck)];h.checkins=h.checkins||{};if(e.target.checked)h.checkins[today]=true;else delete h.checkins[today];saveState();renderHomeTodayDashboard();toast(e.target.checked?'Habitude cochée pour aujourd’hui':'Validation retirée');habitsPanel()}};
-document.getElementById('habitList').onclick=e=>{const del=e.target.closest('[data-habit-del]');if(del&&confirm('Supprimer cette habitude et son historique ?')){state.profile.habits.splice(Number(del.dataset.habitDel),1);saveState();renderHomeTodayDashboard();toast(e.target.checked?'Habitude cochée pour aujourd’hui':'Validation retirée');habitsPanel()}};
+document.getElementById('habitList').onchange=e=>{if(e.target.matches('[data-habit-check]')){const h=state.profile.habits[Number(e.target.dataset.habitCheck)];h.checkins=h.checkins||{};if(e.target.checked)h.checkins[today]=true;else delete h.checkins[today];saveState();renderHomeTodayDashboard();toast(e.target.checked?'Habitude cochée pour aujourd’hui':'Habitude décochée pour aujourd’hui');habitsPanel()}};
+document.getElementById('habitList').onclick=e=>{const del=e.target.closest('[data-habit-del]');if(del&&confirm('Supprimer cette habitude et son historique ?')){state.profile.habits.splice(Number(del.dataset.habitDel),1);saveState();renderHomeTodayDashboard();toast('Habitude supprimée');habitsPanel()}};
 }
 function progressSnapshot(daysCount=7){
 const end=new Date(), start=new Date(); start.setDate(end.getDate()-daysCount+1);
@@ -1024,7 +1171,7 @@ return `${delta>0?'↑':'↓'} ${Math.abs(delta)}${suffix} par rapport aux 7 jou
 function progressPanel(){
 const week=progressSnapshot(7), previousWeek=progressSnapshotRange(7,7), month=progressSnapshot(30);
 const pct=(n,d)=>d?Math.round(n/d*100):0;
-const metric=(label,value,detail,percent,trend='')=>`<div class="progress-metric"><div class="progress-metric-head"><strong>${label}</strong><span>${value}</span></div><div class="progress-track" aria-hidden="true"><i style="width:${Math.max(0,Math.min(100,percent))}%"></i></div><small>${detail}</small>${trend?`<small class="progress-trend">${trend}</small>`:''}</div>`;
+const metric=(label,value,detail,percent,trend='')=>`<div class="progress-metric"><div class="progress-metric-head"><strong>${label}</strong><span>${value}</span></div><div class="progress-track" aria-hidden="true"><i class="jdc-inline-9"></i></div><small>${detail}</small>${trend?`<small class="progress-trend">${trend}</small>`:''}</div>`;
 const journalTrend=trendLabel(week.journalDays,previousWeek.journalDays);
 const habitTrend=week.habitPossible&&previousWeek.habitPossible?trendLabel(week.habitRate,previousWeek.habitRate,' pts'):'';
 openModal('Ma progression',`<p class="subtle">Un aperçu simple de ta régularité, sans score global ni classement.</p><div class="progress-period-title">7 derniers jours</div>${metric('Journal',week.journalDays+'/7',week.journalDays+' jour'+(week.journalDays>1?'s':'')+' commencé'+(week.journalDays>1?'s':''),pct(week.journalDays,7),journalTrend)}${metric('Habitudes',week.habitPossible?week.habitRate+' %':'—',week.habitPossible?week.habitChecks+' validations sur '+week.habitPossible:'Aucune habitude à suivre',week.habitRate,habitTrend)}<div class="progress-period-title">30 derniers jours</div>${metric('Journal',month.journalDays+'/30',month.journalDays+' jour'+(month.journalDays>1?'s':'')+' commencé'+(month.journalDays>1?'s':''),pct(month.journalDays,30))}${metric('Habitudes',month.habitPossible?month.habitRate+' %':'—',month.habitPossible?month.habitChecks+' validations sur '+month.habitPossible:'Aucune habitude à suivre',month.habitRate)}<div class="progress-objectives"><strong>Objectifs</strong><span>${month.active} en cours · ${month.completed} terminé${month.completed>1?'s':''}</span></div><div class="progress-actions"><button class="mini-btn" data-progress-go="journal">Ouvrir le journal</button><button class="mini-btn" data-progress-go="habits">Mes habitudes</button><button class="mini-btn" data-progress-go="objectives">Mes objectifs</button></div><p class="subtle progress-note">Ces tendances comparent uniquement tes données locales récentes. Elles ne constituent ni un score ni une évaluation.</p>`);
@@ -1038,29 +1185,46 @@ if(name==='objectives') return objectivesPanel();
 if(name==='habits') return habitsPanel();
 if(name==='garden') return listPanel('Mon jardin','garden','Ce que je veux cultiver…');
 if(name==='notes'){
-openModal('Mes notes',`<textarea id="profileNotes" style="min-height:220px" placeholder="Écris librement…">${escapeHtml(state.profile.notes||'')}</textarea><div class="modal-actions"><button class="primary" id="saveProfileNotes">Enregistrer</button></div>`);
+openModal('Mes notes',`<textarea id="profileNotes" class="jdc-inline-10" placeholder="Écris librement…">${escapeHtml(state.profile.notes||'')}</textarea><div class="modal-actions"><button class="primary" id="saveProfileNotes">Enregistrer</button></div>`);
 document.getElementById('saveProfileNotes').onclick=()=>{state.profile.notes=document.getElementById('profileNotes').value;saveState();closeModal();toast('Notes enregistrées')};return;
 }
 if(name==='appearance'){
 openModal('Thème et apparence',`<label>Thème</label><select id="themeSelect"><option value="light">Clair</option><option value="dark" ${state.profile.theme==='dark'?'selected':''}>Sombre</option></select><div class="modal-actions"><button class="primary" id="saveTheme">Appliquer</button></div>`);
 document.getElementById('saveTheme').onclick=()=>{state.profile.theme=document.getElementById('themeSelect').value;saveState();applyTheme();closeModal()};return;
 }
-if(name==='privacy') return openModal('Confidentialité',`<p style="font-size:11px;line-height:1.6">Les données de cette version sont enregistrées localement dans le navigateur de cet appareil. Elles ne sont pas synchronisées vers un compte distant.</p><p class="subtle">Pense à exporter une sauvegarde avant d’effacer les données du navigateur ou de changer d’appareil.</p>`);
+if(name==='privacy') return openModal('Confidentialité',`<p class="jdc-inline-11">Les données de cette version sont enregistrées localement dans le navigateur de cet appareil. Elles ne sont pas synchronisées vers un compte distant.</p><p class="subtle">Pense à exporter une sauvegarde avant d’effacer les données du navigateur ou de changer d’appareil.</p>`);
+if(name==='lock'){
+const hasLock=Boolean(getLockConfig());
+openModal('Verrouillage',`<p class="subtle">${hasLock?'Un code protège actuellement l’ouverture de l’application sur cet appareil.':'Ajoute un code pour empêcher l’ouverture directe de ton journal si quelqu’un d’autre utilise cet appareil.'}</p><label>Nouveau code (4 à 8 chiffres)<input id="lockPinNew" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="8" autocomplete="off"></label><label>Confirme le code<input id="lockPinConfirm" type="password" inputmode="numeric" pattern="[0-9]*" maxlength="8" autocomplete="off"></label><p id="lockSetupError" class="lock-error" hidden>Les codes ne correspondent pas ou sont trop courts (4 chiffres minimum).</p><div class="modal-actions"><button class="primary" id="lockSaveBtn">${hasLock?'Modifier le code':'Activer le verrouillage'}</button>${hasLock?'<button class="mini-btn danger-btn" id="lockRemoveBtn">Désactiver le verrouillage</button>':''}</div>`);
+document.getElementById('lockSaveBtn').onclick=async()=>{
+const a=document.getElementById('lockPinNew').value.trim();
+const b=document.getElementById('lockPinConfirm').value.trim();
+const err=document.getElementById('lockSetupError');
+if(a.length<4||a!==b){err.hidden=false;return}
+await setLockPin(a);
+closeModal();toast('Verrouillage activé');
+};
+document.getElementById('lockRemoveBtn')?.addEventListener('click',()=>{
+if(!confirm('Retirer le code de verrouillage sur cet appareil ?'))return;
+removeLockPin();closeModal();toast('Verrouillage désactivé');
+});
+return;
+}
 if(name==='install') {
 if(deferredInstallPrompt){deferredInstallPrompt.prompt();deferredInstallPrompt.userChoice.finally(()=>{deferredInstallPrompt=null;closeModal()});return;}
 const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
 const help=isIOS?'Sur iPhone/iPad : ouvre le menu Partager de Safari puis choisis « Sur l’écran d’accueil ».':'Si aucun bouton d’installation n’apparaît, ouvre le menu de ton navigateur puis choisis « Installer l’application » ou « Ajouter à l’écran d’accueil ».';
-return openModal('Installer Jardin du Cœur',`<p style="font-size:11px;line-height:1.6">${help}</p><p class="subtle">L’installation fonctionne lorsque l’application est servie en HTTPS, par exemple via GitHub Pages.</p>`);
+return openModal('Installer Jardin du Cœur',`<p class="jdc-inline-11">${help}</p><p class="subtle">L’installation fonctionne lorsque l’application est servie en HTTPS, par exemple via GitHub Pages.</p>`);
 }
 if(name==='backup'){
 const hasRecovery=Boolean(safeStorageGet(RECOVERY_KEY));
-openModal('Sauvegarde / Export',`<p class="subtle">Exporte une copie JSON de toutes tes données ou restaure une sauvegarde. Avant tout import, une copie de récupération des données actuelles est conservée sur cet appareil jusqu’au prochain import ou effacement volontaire.</p><div class="toolbar-row"><button class="mini-btn primary-mini" id="exportDataBtn">Exporter</button><button class="mini-btn" id="importDataBtn">Importer</button></div>${hasRecovery?'<button class="mini-btn" style="width:100%;margin-top:8px" id="restoreRecoveryBtn">Restaurer la copie de récupération</button>':''}<button class="mini-btn danger-btn" style="width:100%;margin-top:8px" id="clearDataBtn">Effacer toutes mes données</button>`);
+openModal('Sauvegarde / Export',`<p class="subtle">Exporte une copie JSON de toutes tes données ou restaure une sauvegarde. Avant tout import, une copie de récupération des données actuelles est conservée sur cet appareil jusqu’au prochain import ou effacement volontaire.</p><div class="toolbar-row"><button class="mini-btn primary-mini" id="exportDataBtn">Exporter</button><button class="mini-btn" id="importDataBtn">Importer</button></div>${hasRecovery?'<button class="mini-btn jdc-inline-12" id="restoreRecoveryBtn">Restaurer la copie de récupération</button>':''}<button class="mini-btn danger-btn jdc-inline-12" id="clearDataBtn">Effacer toutes mes données</button>`);
 document.getElementById('exportDataBtn').onclick=exportData;
 document.getElementById('importDataBtn').onclick=()=>document.getElementById('importFile').click();
 document.getElementById('restoreRecoveryBtn')?.addEventListener('click',restoreRecoveryData);
 document.getElementById('clearDataBtn').onclick=()=>{if(confirm('Effacer définitivement toutes les données locales de Jardin du Cœur sur cet appareil ?')){safeStorageRemove(STORAGE_KEY);safeStorageRemove(RECOVERY_KEY);safeStorageRemove(UI_SESSION_KEY);location.reload()}};return;
 }
-if(name==='about') return openModal('À propos',`<p style="font-size:11px;line-height:1.6"><strong>Jardin du Cœur</strong><br>Version ${APP_VERSION} PWA · build ${BUILD_VERSION}</p><p class="subtle">Journal personnel, local-first. Les contenus religieux détaillés doivent être vérifiés et sourcés avant publication.</p>`);
+if(name==='about') return openModal('À propos',`<p class="jdc-inline-11"><strong>Jardin du Cœur</strong><br>Version ${APP_VERSION} PWA · build ${BUILD_VERSION}</p><p class="subtle">Journal personnel, local-first. Les contenus religieux détaillés doivent être vérifiés et sourcés avant publication.</p>`);
 }
 document.querySelectorAll('[data-profile-panel]').forEach(r=>r.addEventListener('click',()=>openProfilePanel(r.dataset.profilePanel)));
 function openProfileNameEditor(){
@@ -1116,8 +1280,8 @@ function persistBeforeLeave(){
 saveUiSession();
 try{
 const serialized=JSON.stringify(state);
-safeStorageSet(STORAGE_KEY,serialized);
-}catch(err){console.error('Jardin du Cœur — sauvegarde de sortie impossible',err)}
+return safeStorageSet(STORAGE_KEY,serialized);
+}catch(err){console.error('Jardin du Cœur — sauvegarde de sortie impossible',err);return false}
 }
 window.addEventListener('pagehide',persistBeforeLeave);
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')persistBeforeLeave()});
@@ -1129,17 +1293,25 @@ requestAnimationFrame(()=>{el.focus({preventScroll:true});el.scrollIntoView({blo
 }
 let deferredInstallPrompt=null;
 let refreshingFromServiceWorker=false;
+let pendingUpdateRegistration=null;
 function showUpdateReady(registration){
 if(!registration.waiting)return;
-openModal('Mise à jour disponible',`<p style="font-size:11px;line-height:1.6">Une nouvelle version de Jardin du Cœur est prête. Tes données locales sont conservées.</p><div class="modal-actions"><button class="primary" id="applyAppUpdate">Mettre à jour</button></div>`);
-document.getElementById('applyAppUpdate').onclick=()=>registration.waiting.postMessage({type:'SKIP_WAITING'});
+// Ne pas remplacer une fenêtre de saisie : le bouton de mise à jour reste accessible après sa fermeture.
+if(document.getElementById('modalBackdrop').classList.contains('show')){
+  pendingUpdateRegistration=registration;
+  toast('Mise à jour prête : termine ou ferme cette fenêtre pour la consulter.');
+  return;
+}
+pendingUpdateRegistration=null;
+openModal('Mise à jour disponible',`<p class="jdc-inline-11">Une nouvelle version de Jardin du Cœur est prête. Tes données locales sont conservées.</p><div class="modal-actions"><button class="primary" id="applyAppUpdate">Mettre à jour</button></div>`);
+document.getElementById('applyAppUpdate').onclick=()=>{closeModal();registration.waiting.postMessage({type:'SKIP_WAITING'})};
 }
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstallPrompt=e});
 window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;toast('Jardin du Cœur est installé')});
 window.addEventListener('offline',()=>toast('Mode hors ligne — tes données locales restent disponibles'));
 window.addEventListener('online',()=>toast('Connexion rétablie'));
 if('serviceWorker' in navigator){
-navigator.serviceWorker.addEventListener('controllerchange',()=>{if(refreshingFromServiceWorker)return;refreshingFromServiceWorker=true;location.reload()});
+navigator.serviceWorker.addEventListener('controllerchange',()=>{if(refreshingFromServiceWorker)return;if(hasUnsavedModalFields()){toast('Mise à jour prête : enregistre ou copie ta saisie avant de recharger la page.');return;}if(!persistBeforeLeave()){toast('Mise à jour prête, mais sauvegarde impossible : reste sur cette page et exporte tes données avant de recharger.');return;}refreshingFromServiceWorker=true;location.reload()});
 window.addEventListener('load',async()=>{
 try{
 const registration=await navigator.serviceWorker.register('./sw.js');
@@ -1161,6 +1333,7 @@ console.error('Jardin du Cœur — promesse rejetée',event.reason);
 toast('Une opération n’a pas pu aboutir. Réessaie dans un instant.');
 });
 renderDuas();renderCycle();renderReflection();renderProfileName();applyTheme();renderHomeDaily();
+initLockScreen();
 const restoredUiSession=loadUiSession();
 if(restoredUiSession){
 selectedDate=restoredUiSession.selectedDate;
@@ -1172,3 +1345,13 @@ renderSelectedDay();
 renderCalendar();
 if(restoredUiSession && restoredUiSession.screen!==1) go(restoredUiSession.screen);
 if(restoredUiSession) restoreLastActiveField(restoredUiSession);
+
+// Actions déclaratives : aucun gestionnaire JavaScript inline dans le HTML.
+document.addEventListener('click', event => {
+  const button = event.target.closest('[data-action]');
+  if (!button) return;
+  const action = button.dataset.action;
+  if (action === 'startOrContinueDay()') startOrContinueDay();
+  else if (action === 'selectedDate=todayKey();renderSelectedDay();go(2)') { selectedDate=todayKey(); renderSelectedDay(); go(2); }
+  else { const match = /^go\((\d+)\)$/.exec(action); if (match) go(Number(match[1])); }
+});

@@ -1,0 +1,1 @@
+V283 : navigation servie depuis le shell precache de la version active pour eviter un melange HTML/JS/CSS pendant les mises a jour. Cache v283. Aucun changement des cles de stockage utilisateur. Limites : pas de test navigateur mobile ni migration reelle; CSP frame-ancestors doit etre configuree en en-tete HTTP par hebergeur.

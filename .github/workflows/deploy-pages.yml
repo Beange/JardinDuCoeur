@@ -29,7 +29,7 @@ jobs:
         run: |
           rm -rf _site
           mkdir -p _site/icons _site/assets/daily
-          cp index.html app.css app.js icons-ui.js sw.js manifest.webmanifest .nojekyll _site/
+          cp index.html app.css app.js icons-ui.js dua-library.js cycle-listen.js sw.js manifest.webmanifest .nojekyll _site/
           cp icons/icon-192.png icons/icon-512.png icons/icon-maskable-512.png _site/icons/
           cp assets/daily/daily-*.jpg _site/assets/daily/
           python tools/check_pages_artifact.py _site

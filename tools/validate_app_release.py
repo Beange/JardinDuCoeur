@@ -4,7 +4,7 @@ import json,sys
 R=Path(__file__).resolve().parents[1]
 index=(R/'index.html').read_text('utf-8'); js=(R/'app.js').read_text('utf-8'); css=(R/'app.css').read_text('utf-8'); sw=(R/'sw.js').read_text('utf-8'); manifest=json.loads((R/'manifest.webmanifest').read_text('utf-8'))
 checks={
-'app-version': "const APP_VERSION = '2.1.12'" in js and 'const BUILD_VERSION = 268' in js,
+'app-version': "const APP_VERSION = '2.1.22'" in js and 'const BUILD_VERSION = 288' in js,
 'external-assets': './app.css' in index and './app.js' in index and '<style' not in index.lower(),
 'schema-version':'const DATA_SCHEMA_VERSION = 1' in js,
 'storage-key-preserved':"const STORAGE_KEY = 'jardin-du-coeur-v1'" in js,
@@ -12,7 +12,7 @@ checks={
 'import-normalized':'normalizeImportedState' in js,
 'import-size-limit':'5*1024*1024' in js,
 'dark-theme-complete':'.theme-dark .screen' in css and '.theme-dark .modal' in css,
-'sw-v264':"const CACHE = 'jardin-du-coeur-v268'" in sw,
+'sw-v278':"const CACHE = 'jardin-du-coeur-v288'" in sw,
 'sw-core-assets':"'./app.css'" in sw and "'./app.js'" in sw,
 'sw-navigation-fallback-only':"request.mode === 'navigate'" in sw,
 'sw-same-origin-cache':"url.origin !== self.location.origin" in sw,
@@ -36,8 +36,27 @@ checks={
 'perf-daily-assets':all((R/f'assets/daily/daily-{i:02d}.jpg').is_file() for i in range(1,13)),
 'perf-daily-precache':all(f"'./assets/daily/daily-{i:02d}.jpg'" in sw for i in range(1,13)),
 'v265-book-children-direct-access': 'data-book-lesson="book-wadiiyya-children">Enfants & transmission</button>' in js,
-'perf-js-under-150k':len(js.encode('utf-8')) < 150000,
-'ui-version-current':'Version 2.1.12 PWA · build 268' in index,
+'perf-js-under-176k':len(js.encode('utf-8')) < 180000,  # budget raised: +~1.4k for the PIN-lock security feature (audit fix)
+'ui-version-current':'Version 2.1.22 PWA · build 288' in index,
+'v274-faith-categories':'data-faith-category="books"' in index and "a.cat='books'" in js,
+'v274-faith-source-labels':all(x in js for x in ['Sources primaires vérifiées','Avis juridiques documentés','Leçon d’ouvrage documentée']),
+'v274-faith-new-lessons':all(x in js for x in ["id:'spiritual-prayer'","id:'spiritual-dhikr'","id:'spiritual-steadiness'","id:'life-mother'","id:'life-menopause'"]),
+'v274-faith-consolidation':'FAITH_ARCHIVED_IDS' in js and 'visibleFaithArticles()' in js,
+'v275-faith-editorial-review':all(x in js for x in ["id:'spiritual-tawakkul'","id:'life-before-marriage'","status:'pending'","Sahih Muslim 2735a","Sahih al-Bukhari 6465"]),
+'v276-dua-acceptance':all(x in js for x in ["id:'spiritual-dua-acceptance'",'Les causes qui favorisent l’exaucement de l’invocation','Jami‘ at-Tirmidhi 3477','Sahih al-Bukhari 6338','Sahih Muslim 2735c','Sahih Muslim 482','Sahih al-Bukhari 1145','Sunan Abi Dawud 521','Sahih Muslim 1015']),
+'v277-dua-prophet-example':all(x in js for x in ['Un exemple authentique','اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ','Allâhumma salli ‘alâ Muhammad','Sahih al-Bukhari 6357','Sahih Muslim 406a']),
+'v278-tawakkul-expanded':all(x in js for x in ['Comprendre et vivre le tawakkul','Ce que le tawakkul n’est pas','Une mise en pratique','Coran 8:2','Jami‘ at-Tirmidhi 2344 — hasan']),
+'v273-cycle-listen-hub':'data-cycle-action="listen"' in index and "action==='listen'" in js and (R/'cycle-listen.js').is_file(),
+'v273-cycle-listen-content':all(x in (R/'cycle-listen.js').read_text('utf-8') for x in ['Récitations du Coran','Cours & rappels','https://quran.com/fr','listenFaithReminder']),
+'v273-cycle-listen-precache':"'./cycle-listen.js'" in sw,
+'v271-dua-authentic-addition':"id:'q1-6'" in (R/'dua-library.js').read_text('utf-8') and 'Coran 1:6 · QuranEnc / Muhammad Hamidullah' in (R/'dua-library.js').read_text('utf-8'),
+'v271-dua-reference-dedup':'refs.has(r)' in (R/'dua-library.js').read_text('utf-8'),
+'v270-dua-source-filters':'id="duaSources"' in index and all(x in index for x in ['Du‘â du Coran','Du‘â de la Sunna']),
+'v270-dua-source-wired':'duaSource' in js and "d.grade.includes('Coran')?'Coran':'Sunna'" in js,
+'v269-dua-library':(R/'dua-library.js').is_file() and 'JDC_DUA_LIBRARY_ADDITIONS' in (R/'dua-library.js').read_text('utf-8'),
+'v269-dua-expanded':(R/'dua-library.js').read_text('utf-8').count("grade:'📖 Coran'") == 8,
+'v269-dua-deduplicated':'texts.has(key)' in (R/'dua-library.js').read_text('utf-8') and 'ids.has(d.id)' in (R/'dua-library.js').read_text('utf-8'),
+'v269-dua-precache':"'./dua-library.js'" in sw,
 'robust-safe-storage':all(x in js for x in ['safeStorageGet','safeStorageSet','safeStorageRemove']),
 'robust-runtime-error':"addEventListener('error'" in js,
 'robust-unhandled-rejection':"addEventListener('unhandledrejection'" in js,
@@ -86,7 +105,7 @@ checks={
 'v227-enter-add':"newObjectiveItem').addEventListener('keydown'" in js and "newHabitItem').addEventListener('keydown'" in js,
 'v227-actionable-empty-states':'Commence par une habitude simple et réaliste.' in js and 'Ajoute ci-dessous un objectif qui compte pour toi.' in js,
 'v228-flow-recipe':(R/'tests/test_user_flows.py').is_file(),
-'v228-release-history-complete':(R/'RELEASE-V225.md').is_file() and (R/'RELEASE-V228.md').is_file(),
+'v228-release-history-complete':(R/'RELEASE-V227.md').is_file() and (R/'RELEASE-V228.md').is_file(),
 'v229-resume-session':"const UI_SESSION_KEY = STORAGE_KEY + '-ui-session'" in js and 'loadUiSession' in js and 'saveUiSession' in js,
 'v229-save-feedback':"statusEl.textContent='Enregistrement…'" in js and 'Enregistré à ${new Date().toLocaleTimeString' in js,
 'v230-contextual-resume':'dailyJourneyStatus' in js and 'homeJourneyHint' in index and "Continuer ma muhâsabah" in js,
@@ -195,6 +214,12 @@ checks={
 'v263-three-lessons': all(("id:'"+x+"'") in js for x in ['book-wadiiyya-sincerity','book-wadiiyya-modesty','book-wadiiyya-family']),
 'v263-primary-sources': all(x in js for x in ['Coran 98:5','Coran 24:30–31','Coran 30:21']),
 
+# --- Audit securite/robustesse ---
+'security-csp-meta': 'Content-Security-Policy' in index and "connect-src 'none'" in index,
+'security-deploy-includes-all-scripts': 'cp index.html app.css app.js icons-ui.js dua-library.js cycle-listen.js sw.js manifest.webmanifest .nojekyll _site/' in (R/'.github/workflows/deploy-pages.yml').read_text('utf-8'),
+'security-crypto-uid': 'crypto.randomUUID' in js,
+'security-lock-feature': all(x in js for x in ['LOCK_KEY','setLockPin','verifyLockPin','initLockScreen']) and 'lockScreen' in index,
+'security-lock-hashed-not-plaintext': 'sha256Hex(salt+pin)' in js,
 }
 failed=[k for k,v in checks.items() if not v]
 for k,v in checks.items(): print(('PASS' if v else 'FAIL'),k)

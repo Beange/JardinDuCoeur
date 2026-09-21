@@ -1,0 +1,1 @@
+V281 — Suppression des attributs style dans les fragments HTML générés par app.js et dua-library.js; classes CSS externalisées. Cache v281. Vérifier les propriétés CSS dynamiques en navigateur sous CSP.

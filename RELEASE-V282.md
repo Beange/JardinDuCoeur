@@ -1,0 +1,1 @@
+V282 : suppression des trois écritures CSS dynamiques via element.style; utilisation de sélecteurs CSS pour le fond quotidien, le paysage et la progression. Synchronisation du build, du cache et du test de version. Les données utilisateur et leur clé de stockage restent inchangées. Validation navigateur et migration réelle non effectuées.

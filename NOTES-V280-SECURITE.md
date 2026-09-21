@@ -1,0 +1,1 @@
+V280 : styles statiques HTML déplacés dans app.css ; CSP style-src self et style-src-attr none ; cache versionné v280. La politique CSP via meta ne protège pas frame-ancestors : configurer cet en-tête sur le serveur. Tests navigateur et migrations V279 vers V280 restent nécessaires.

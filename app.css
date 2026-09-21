@@ -1109,3 +1109,182 @@ input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px soli
 
 /* V261 — Conseils aux femmes musulmanes : parcours de leçons */
 .faith-book-featured{border-style:solid}.faith-book-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:3px}.faith-book-actions .mini-btn{margin-top:0}.theme-dark .faith-book-featured{border-color:#53675d}@media(max-width:380px){.faith-book-actions{display:grid;grid-template-columns:1fr}.faith-book-actions .mini-btn{width:100%}}
+
+/* Audit sécurité — écran de verrouillage par code */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.lock-screen{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:var(--cream);padding:24px}
+.lock-card{width:100%;max-width:280px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;background:var(--paper);border-radius:20px;padding:28px 22px;box-shadow:var(--shadow)}
+.lock-icon{width:34px;height:34px;color:var(--forest)}
+.lock-card h2{margin:0;font-family:Georgia,serif;font-size:16px;color:var(--forest)}
+.lock-card input{width:100%;text-align:center;letter-spacing:.3em;font-size:16px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+.lock-card .primary{width:100%}
+.lock-error{color:#b3403f;font-size:11px;margin:0}
+.theme-dark .lock-screen{background:#1b241f}
+.theme-dark .lock-card{background:#232f28;box-shadow:none;border:1px solid #3a4942}
+.theme-dark .lock-card input{background:#1b241f;border-color:#3a4942;color:#e7ece9}
+
+/* Styles statiques extraits des attributs HTML pour la CSP V280 */
+.jdc-inline-1{margin:-2px 0 7px}
+.jdc-inline-2{margin:7px 0 8px}
+.jdc-inline-3{margin:-2px 0 9px}
+.jdc-inline-4{margin-top:8px}
+.jdc-inline-5{margin-left:auto}
+.jdc-inline-6{background:#f6e3e7}
+.jdc-inline-7{background:#f6e1d6}
+.jdc-inline-8{background:#eef1f7}
+.jdc-inline-9{padding:0;border:0}
+.jdc-inline-10{padding:0 4px}
+.jdc-inline-11{font-size:15px}
+.jdc-inline-12{background:linear-gradient(145deg,#eef7f0,#b8d9c0);color:#2e7250}
+.jdc-inline-13{flex:1}
+.jdc-inline-14{background:linear-gradient(145deg,#fff4e9,#ecc6a3);color:#9e5e2d}
+.jdc-inline-15{background:linear-gradient(145deg,#eff8ef,#bfdec4);color:#347246}
+.jdc-inline-16{background:linear-gradient(145deg,#f3f8fb,#cbdae4);color:#3b647a}
+.jdc-inline-17{background:linear-gradient(145deg,#fff0f3,#eac2ca);color:#a6314b}
+.jdc-inline-18{background:linear-gradient(145deg,#f2f6fb,#c8d6e6);color:#365a7a}
+
+/* V281: styles auparavant injectés dans les fragments HTML. */
+.jdc-inline-1{font-size:10px;line-height:1.6}
+.jdc-inline-2{margin:8px 0}
+.jdc-inline-3{min-height:120px}
+.jdc-inline-4{min-height:130px}
+.jdc-inline-5{display:flex;gap:8px;align-items:center}
+.jdc-inline-6{width:auto}
+.jdc-inline-7{display:inline-block}
+.jdc-inline-8{display:inline-block;margin-bottom:10px}
+.jdc-inline-9{width:${Math.max(0,Math.min(100,percent))}%}
+.jdc-inline-10{min-height:220px}
+.jdc-inline-11{font-size:11px;line-height:1.6}
+.jdc-inline-12{width:100%;margin-top:8px}
+.jdc-inline-13{font-size:23px;line-height:1.9;text-align:right;margin:8px 0 14px}
+.jdc-inline-14{font-size:11px;line-height:1.65}
+
+/* V282: valeurs dynamiques exprimées par classes/attributs CSS, sans style inline. */
+:root[data-daily-mosque="0"]{--daily-mosque-bg:url("./assets/daily/daily-01.jpg")}
+:root[data-daily-mosque="1"]{--daily-mosque-bg:url("./assets/daily/daily-02.jpg")}
+:root[data-daily-mosque="2"]{--daily-mosque-bg:url("./assets/daily/daily-03.jpg")}
+:root[data-daily-mosque="3"]{--daily-mosque-bg:url("./assets/daily/daily-04.jpg")}
+:root[data-daily-mosque="4"]{--daily-mosque-bg:url("./assets/daily/daily-05.jpg")}
+:root[data-daily-mosque="5"]{--daily-mosque-bg:url("./assets/daily/daily-06.jpg")}
+:root[data-daily-mosque="6"]{--daily-mosque-bg:url("./assets/daily/daily-07.jpg")}
+:root[data-daily-mosque="7"]{--daily-mosque-bg:url("./assets/daily/daily-08.jpg")}
+:root[data-daily-mosque="8"]{--daily-mosque-bg:url("./assets/daily/daily-09.jpg")}
+:root[data-daily-mosque="9"]{--daily-mosque-bg:url("./assets/daily/daily-10.jpg")}
+:root[data-daily-mosque="10"]{--daily-mosque-bg:url("./assets/daily/daily-11.jpg")}
+:root[data-daily-mosque="11"]{--daily-mosque-bg:url("./assets/daily/daily-12.jpg")}
+:root[data-daily-mosque="12"]{--daily-mosque-bg:url("./assets/daily/daily-13.jpg")}
+:root[data-daily-mosque="13"]{--daily-mosque-bg:url("./assets/daily/daily-14.jpg")}
+:root[data-daily-mosque="14"]{--daily-mosque-bg:url("./assets/daily/daily-15.jpg")}
+:root[data-daily-mosque="15"]{--daily-mosque-bg:url("./assets/daily/daily-16.jpg")}
+:root[data-daily-mosque="16"]{--daily-mosque-bg:url("./assets/daily/daily-17.jpg")}
+:root[data-daily-mosque="17"]{--daily-mosque-bg:url("./assets/daily/daily-18.jpg")}
+:root[data-daily-mosque="18"]{--daily-mosque-bg:url("./assets/daily/daily-19.jpg")}
+:root[data-daily-mosque="19"]{--daily-mosque-bg:url("./assets/daily/daily-20.jpg")}
+#dailyLandscape[data-scene="0"]{--weekday-bg:url("./assets/daily/daily-01.jpg")}
+#dailyLandscape[data-scene="1"]{--weekday-bg:url("./assets/daily/daily-02.jpg")}
+#dailyLandscape[data-scene="2"]{--weekday-bg:url("./assets/daily/daily-03.jpg")}
+#dailyLandscape[data-scene="3"]{--weekday-bg:url("./assets/daily/daily-04.jpg")}
+#dailyLandscape[data-scene="4"]{--weekday-bg:url("./assets/daily/daily-05.jpg")}
+#dailyLandscape[data-scene="5"]{--weekday-bg:url("./assets/daily/daily-06.jpg")}
+#dailyLandscape[data-scene="6"]{--weekday-bg:url("./assets/daily/daily-07.jpg")}
+.today-progress-track .jdc-progress-0{width:0%}
+.today-progress-track .jdc-progress-1{width:1%}
+.today-progress-track .jdc-progress-2{width:2%}
+.today-progress-track .jdc-progress-3{width:3%}
+.today-progress-track .jdc-progress-4{width:4%}
+.today-progress-track .jdc-progress-5{width:5%}
+.today-progress-track .jdc-progress-6{width:6%}
+.today-progress-track .jdc-progress-7{width:7%}
+.today-progress-track .jdc-progress-8{width:8%}
+.today-progress-track .jdc-progress-9{width:9%}
+.today-progress-track .jdc-progress-10{width:10%}
+.today-progress-track .jdc-progress-11{width:11%}
+.today-progress-track .jdc-progress-12{width:12%}
+.today-progress-track .jdc-progress-13{width:13%}
+.today-progress-track .jdc-progress-14{width:14%}
+.today-progress-track .jdc-progress-15{width:15%}
+.today-progress-track .jdc-progress-16{width:16%}
+.today-progress-track .jdc-progress-17{width:17%}
+.today-progress-track .jdc-progress-18{width:18%}
+.today-progress-track .jdc-progress-19{width:19%}
+.today-progress-track .jdc-progress-20{width:20%}
+.today-progress-track .jdc-progress-21{width:21%}
+.today-progress-track .jdc-progress-22{width:22%}
+.today-progress-track .jdc-progress-23{width:23%}
+.today-progress-track .jdc-progress-24{width:24%}
+.today-progress-track .jdc-progress-25{width:25%}
+.today-progress-track .jdc-progress-26{width:26%}
+.today-progress-track .jdc-progress-27{width:27%}
+.today-progress-track .jdc-progress-28{width:28%}
+.today-progress-track .jdc-progress-29{width:29%}
+.today-progress-track .jdc-progress-30{width:30%}
+.today-progress-track .jdc-progress-31{width:31%}
+.today-progress-track .jdc-progress-32{width:32%}
+.today-progress-track .jdc-progress-33{width:33%}
+.today-progress-track .jdc-progress-34{width:34%}
+.today-progress-track .jdc-progress-35{width:35%}
+.today-progress-track .jdc-progress-36{width:36%}
+.today-progress-track .jdc-progress-37{width:37%}
+.today-progress-track .jdc-progress-38{width:38%}
+.today-progress-track .jdc-progress-39{width:39%}
+.today-progress-track .jdc-progress-40{width:40%}
+.today-progress-track .jdc-progress-41{width:41%}
+.today-progress-track .jdc-progress-42{width:42%}
+.today-progress-track .jdc-progress-43{width:43%}
+.today-progress-track .jdc-progress-44{width:44%}
+.today-progress-track .jdc-progress-45{width:45%}
+.today-progress-track .jdc-progress-46{width:46%}
+.today-progress-track .jdc-progress-47{width:47%}
+.today-progress-track .jdc-progress-48{width:48%}
+.today-progress-track .jdc-progress-49{width:49%}
+.today-progress-track .jdc-progress-50{width:50%}
+.today-progress-track .jdc-progress-51{width:51%}
+.today-progress-track .jdc-progress-52{width:52%}
+.today-progress-track .jdc-progress-53{width:53%}
+.today-progress-track .jdc-progress-54{width:54%}
+.today-progress-track .jdc-progress-55{width:55%}
+.today-progress-track .jdc-progress-56{width:56%}
+.today-progress-track .jdc-progress-57{width:57%}
+.today-progress-track .jdc-progress-58{width:58%}
+.today-progress-track .jdc-progress-59{width:59%}
+.today-progress-track .jdc-progress-60{width:60%}
+.today-progress-track .jdc-progress-61{width:61%}
+.today-progress-track .jdc-progress-62{width:62%}
+.today-progress-track .jdc-progress-63{width:63%}
+.today-progress-track .jdc-progress-64{width:64%}
+.today-progress-track .jdc-progress-65{width:65%}
+.today-progress-track .jdc-progress-66{width:66%}
+.today-progress-track .jdc-progress-67{width:67%}
+.today-progress-track .jdc-progress-68{width:68%}
+.today-progress-track .jdc-progress-69{width:69%}
+.today-progress-track .jdc-progress-70{width:70%}
+.today-progress-track .jdc-progress-71{width:71%}
+.today-progress-track .jdc-progress-72{width:72%}
+.today-progress-track .jdc-progress-73{width:73%}
+.today-progress-track .jdc-progress-74{width:74%}
+.today-progress-track .jdc-progress-75{width:75%}
+.today-progress-track .jdc-progress-76{width:76%}
+.today-progress-track .jdc-progress-77{width:77%}
+.today-progress-track .jdc-progress-78{width:78%}
+.today-progress-track .jdc-progress-79{width:79%}
+.today-progress-track .jdc-progress-80{width:80%}
+.today-progress-track .jdc-progress-81{width:81%}
+.today-progress-track .jdc-progress-82{width:82%}
+.today-progress-track .jdc-progress-83{width:83%}
+.today-progress-track .jdc-progress-84{width:84%}
+.today-progress-track .jdc-progress-85{width:85%}
+.today-progress-track .jdc-progress-86{width:86%}
+.today-progress-track .jdc-progress-87{width:87%}
+.today-progress-track .jdc-progress-88{width:88%}
+.today-progress-track .jdc-progress-89{width:89%}
+.today-progress-track .jdc-progress-90{width:90%}
+.today-progress-track .jdc-progress-91{width:91%}
+.today-progress-track .jdc-progress-92{width:92%}
+.today-progress-track .jdc-progress-93{width:93%}
+.today-progress-track .jdc-progress-94{width:94%}
+.today-progress-track .jdc-progress-95{width:95%}
+.today-progress-track .jdc-progress-96{width:96%}
+.today-progress-track .jdc-progress-97{width:97%}
+.today-progress-track .jdc-progress-98{width:98%}
+.today-progress-track .jdc-progress-99{width:99%}
+.today-progress-track .jdc-progress-100{width:100%}
