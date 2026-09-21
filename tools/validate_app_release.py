@@ -4,7 +4,7 @@ import json,sys
 R=Path(__file__).resolve().parents[1]
 index=(R/'index.html').read_text('utf-8'); js=(R/'app.js').read_text('utf-8'); css=(R/'app.css').read_text('utf-8'); sw=(R/'sw.js').read_text('utf-8'); manifest=json.loads((R/'manifest.webmanifest').read_text('utf-8'))
 checks={
-'app-version': "const APP_VERSION = '2.1.22'" in js and 'const BUILD_VERSION = 288' in js,
+'app-version': "const APP_VERSION = '2.1.22'" in js and 'const BUILD_VERSION = 309' in js,
 'external-assets': './app.css' in index and './app.js' in index and '<style' not in index.lower(),
 'schema-version':'const DATA_SCHEMA_VERSION = 1' in js,
 'storage-key-preserved':"const STORAGE_KEY = 'jardin-du-coeur-v1'" in js,
@@ -12,7 +12,7 @@ checks={
 'import-normalized':'normalizeImportedState' in js,
 'import-size-limit':'5*1024*1024' in js,
 'dark-theme-complete':'.theme-dark .screen' in css and '.theme-dark .modal' in css,
-'sw-v278':"const CACHE = 'jardin-du-coeur-v288'" in sw,
+'sw-v278':"const CACHE = 'jardin-du-coeur-v309'" in sw,
 'sw-core-assets':"'./app.css'" in sw and "'./app.js'" in sw,
 'sw-navigation-fallback-only':"request.mode === 'navigate'" in sw,
 'sw-same-origin-cache':"url.origin !== self.location.origin" in sw,
@@ -37,7 +37,7 @@ checks={
 'perf-daily-precache':all(f"'./assets/daily/daily-{i:02d}.jpg'" in sw for i in range(1,13)),
 'v265-book-children-direct-access': 'data-book-lesson="book-wadiiyya-children">Enfants & transmission</button>' in js,
 'perf-js-under-176k':len(js.encode('utf-8')) < 180000,  # budget raised: +~1.4k for the PIN-lock security feature (audit fix)
-'ui-version-current':'Version 2.1.22 PWA · build 288' in index,
+'ui-version-current':'Version 2.1.22 PWA · build 309' in index,
 'v274-faith-categories':'data-faith-category="books"' in index and "a.cat='books'" in js,
 'v274-faith-source-labels':all(x in js for x in ['Sources primaires vérifiées','Avis juridiques documentés','Leçon d’ouvrage documentée']),
 'v274-faith-new-lessons':all(x in js for x in ["id:'spiritual-prayer'","id:'spiritual-dhikr'","id:'spiritual-steadiness'","id:'life-mother'","id:'life-menopause'"]),
